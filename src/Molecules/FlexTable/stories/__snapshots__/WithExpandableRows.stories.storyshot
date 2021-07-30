@@ -56,738 +56,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   flex: 0 20px;
 }
 
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c22 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c26 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c27 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c23 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c19 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c25 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #282823;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c25,
-.c25[type='button'],
-.c25[type='reset'],
-.c25[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c25::-moz-focus-inner,
-.c25[type='button']::-moz-focus-inner,
-.c25[type='reset']::-moz-focus-inner,
-.c25[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c25:-moz-focusring,
-.c25[type='button']:-moz-focusring,
-.c25[type='reset']:-moz-focusring,
-.c25[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.c7 {
-  width: inherit;
-}
-
-.c9 {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c13 {
-  overflow: hidden;
-  padding-top: 4px !important;
-  padding-bottom: 4px;
-}
-
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c15 {
-  padding-top: 0 !important;
-  padding-bottom: 0;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c2 > *:first-child {
-  padding-left: 0;
-}
-
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c12 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c12:hover {
-  background: #F5F5F5;
-}
-
-.c12 > *:first-child {
-  padding-left: 0;
-}
-
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c3 {
-  border-bottom: 1px solid #282823;
-  z-index: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-}
-
-.c5 {
-  overflow: hidden;
-  padding-top: 4px !important;
-  padding-bottom: 4px;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c24:hover {
-  cursor: pointer;
-}
-
-@media (min-width:760px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:976px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:1280px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media not all and (max-width:975px) {
-  .c18 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c21 {
-    display: none !important;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <div
-    className="c1 c2 c3"
-    role="row"
-  >
-    <div
-      className="c4 c5"
-      role="columnheader"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c8 c9"
-        >
-          Header 1
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c5"
-      role="columnheader"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c8 c9"
-        >
-          Header 2
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c5"
-      role="columnheader"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c8 c9"
-        >
-          Header 3
-        </span>
-      </div>
-    </div>
-    <div
-      className="c10 c5 c11"
-      role="columnheader"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c8 c9"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1 c12"
-    role="row"
-  >
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          Disabled
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          Disabled
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          Disabled
-        </span>
-      </div>
-    </div>
-    <div
-      className="c10 c13 c15 c11"
-      role="cell"
-    >
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c19"
-        >
-          <svg
-            aria-hidden="true"
-            className="c20"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c19"
-        >
-          <svg
-            aria-hidden="true"
-            className="c22 c23"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-            />
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="c1 c12 c24"
-    onClick={[Function]}
-    role="row"
-  >
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          Entire...
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          ...row...
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4 c13"
-      role="cell"
-    >
-      <div
-        className="c6 c7"
-      >
-        <span
-          className="c14 c9"
-        >
-          ...clickable
-        </span>
-      </div>
-    </div>
-    <div
-      className="c10 c13 c15 c11"
-      role="cell"
-    >
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c25 c17 c18"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c19"
-        >
-          <svg
-            aria-hidden="true"
-            className="c26"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c25 c17 c21"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c19"
-        >
-          <svg
-            aria-hidden="true"
-            className="c27 c23"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-            />
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expanded Table 1`] = `
-.c30 {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 8px;
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c10 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
-}
-
-.c33 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c35 {
-  box-sizing: border-box;
-  -webkit-flex: 0 0 50%;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-}
-
-.c38 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
-.c38 > * {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.c38 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c39 {
-  box-sizing: border-box;
-}
-
-.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -801,7 +70,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   display: block;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -843,22 +112,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-}
-
-.c28 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c32 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .c8 {
@@ -879,7 +136,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1007,43 +264,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   line-height: 20px;
 }
 
-.c36 {
-  overflow: hidden;
-  text-align: left;
-}
-
-.c37 {
-  overflow: hidden;
-  text-align: right;
-}
-
-.c40 {
-  max-width: 300px;
-  padding-bottom: 20px;
-  display: list-item;
-}
-
-.c34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c13 {
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
-}
-
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .c15 {
@@ -1059,16 +283,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c31 {
-  background: #FFFFFF;
-}
-
-.c29 {
-  border-left: 2px solid #0046FF;
-  border-bottom: 1px solid #EBEBE8;
-  display: block;
+  margin-left: -4px;
 }
 
 .c2 {
@@ -1076,8 +291,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1086,17 +300,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c12 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1107,28 +316,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
 
 .c12 > *:first-child {
   padding-left: 0;
-}
-
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c27 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
-  border-left: 2px solid #0046FF;
-}
-
-.c27 > *:first-child {
-  padding-left: 0;
-}
-
-.c27 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -1149,27 +336,8 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   position: relative;
 }
 
-.c41 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c42 {
-  margin-bottom: 4px;
-}
-
-@media (min-width:976px) {
-  .c30 {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-  }
+.c23:hover {
+  cursor: pointer;
 }
 
 @media (min-width:760px) {
@@ -1211,14 +379,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   }
 }
 
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c17 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
@@ -1338,17 +525,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1362,17 +549,825 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12 c23"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Entire...
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          ...row...
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          ...clickable
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c24 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c25"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c24 c20"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c26 c22"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expanded Table 1`] = `
+.c29 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c32 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c34 {
+  box-sizing: border-box;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.c37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.c37 > * {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.c37 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c38 {
+  box-sizing: border-box;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c25 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c22 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c27 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c31 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c23 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c23,
+.c23[type='button'],
+.c23[type='reset'],
+.c23[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c23::-moz-focus-inner,
+.c23[type='button']::-moz-focus-inner,
+.c23[type='reset']::-moz-focus-inner,
+.c23[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c23:-moz-focusring,
+.c23[type='button']:-moz-focusring,
+.c23[type='reset']:-moz-focusring,
+.c23[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c7 {
+  width: inherit;
+}
+
+.c9 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c35 {
+  overflow: hidden;
+  text-align: left;
+}
+
+.c36 {
+  overflow: hidden;
+  text-align: right;
+}
+
+.c39 {
+  max-width: 300px;
+  padding-bottom: 20px;
+  display: list-item;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c13 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c15 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+}
+
+.c30 {
+  background: #FFFFFF;
+}
+
+.c28 {
+  border-left: 2px solid #0046FF;
+  border-bottom: 1px solid #EBEBE8;
+  display: block;
+}
+
+.c2 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: auto;
+  padding-left: 8px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2 > *:first-child {
+  padding-left: 0;
+}
+
+.c12 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: auto;
+  padding-left: 8px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c12 > *:first-child {
+  padding-left: 0;
+}
+
+.c26 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: auto;
+  padding-left: 8px;
+  border-left: 2px solid #0046FF;
+}
+
+.c26 > *:first-child {
+  padding-left: 0;
+}
+
+.c3 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c5 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c40 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c41 {
+  margin-bottom: 4px;
+}
+
+@media (min-width:976px) {
+  .c29 {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c17 {
+    display: none !important;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c20 {
+    display: none !important;
+  }
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Disabled
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Disabled
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Disabled
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1439,17 +1434,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c24"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1463,17 +1458,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c25 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1489,7 +1484,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     </div>
   </div>
   <div
-    className="c1 c27"
+    className="c1 c26"
     role="row"
   >
     <div
@@ -1540,17 +1535,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     >
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c24"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1565,17 +1560,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
       </button>
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c26 c28"
+            className="c25 c27"
             direction="up"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1591,24 +1586,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     </div>
   </div>
   <div
-    className="c29"
+    className="c28"
     role="row"
   >
     <div
-      className="c30 c31"
+      className="c29 c30"
       role="cell"
     >
       <div
-        className="c18"
+        className="c17"
       >
         <ul
-          className="c32"
+          className="c31"
         >
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1616,12 +1611,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c8 c9"
                 >
-                  This is a reaaaallllyyy loooong label demonstrating truncation
+                  Label 1
                 </span>
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1630,16 +1625,16 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1652,7 +1647,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1667,10 +1662,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1683,7 +1678,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1698,10 +1693,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1714,7 +1709,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1729,10 +1724,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1745,7 +1740,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1760,10 +1755,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1776,7 +1771,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1791,10 +1786,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1807,7 +1802,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1822,10 +1817,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1838,7 +1833,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1853,10 +1848,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1869,7 +1864,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1884,10 +1879,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1900,7 +1895,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1915,10 +1910,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1931,7 +1926,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1946,10 +1941,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1962,7 +1957,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -1977,10 +1972,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -1993,7 +1988,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2008,10 +2003,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2024,7 +2019,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2039,10 +2034,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2055,7 +2050,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2070,10 +2065,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2086,7 +2081,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2101,10 +2096,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2117,7 +2112,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2132,10 +2127,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2148,7 +2143,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2163,10 +2158,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2179,7 +2174,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2194,10 +2189,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c32 c33"
           >
             <div
-              className="c35 c36"
+              className="c34 c35"
             >
               <div
                 className="c6"
@@ -2210,7 +2205,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c34 c36"
               textAlign="right"
             >
               <div
@@ -2227,19 +2222,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
         </ul>
       </div>
       <div
-        className="c21"
+        className="c20"
       >
         <ul
-          className="c32 c38"
+          className="c31 c37"
         >
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2247,7 +2242,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                   <span
                     className="c8 c9"
                   >
-                    This is a reaaaallllyyy loooong label demonstrating truncation
+                    Label 1
                   </span>
                 </div>
               </div>
@@ -2257,19 +2252,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2293,13 +2288,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2323,13 +2318,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2353,13 +2348,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2383,13 +2378,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2413,13 +2408,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2443,13 +2438,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2473,13 +2468,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2503,13 +2498,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2533,13 +2528,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2563,13 +2558,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2593,13 +2588,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2623,13 +2618,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2653,13 +2648,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2683,13 +2678,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2713,13 +2708,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2743,13 +2738,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2773,13 +2768,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2803,13 +2798,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c38 c39"
           >
             <div
-              className="c41"
+              className="c40"
             >
               <div
-                className="c42"
+                className="c41"
               >
                 <div
                   className="c6"
@@ -2888,17 +2883,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c24"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -2912,17 +2907,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c25 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -2989,17 +2984,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c24"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -3013,17 +3008,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c23 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c25 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -3097,7 +3092,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   flex: 0 20px;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3111,7 +3106,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   display: block;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3125,7 +3120,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -3149,7 +3144,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3232,16 +3227,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   padding-bottom: 4px;
 }
 
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -3255,6 +3240,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
 .c2 {
@@ -3262,8 +3248,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3272,17 +3257,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c12 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: pointer;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3293,10 +3273,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
 
 .c12 > *:first-child {
   padding-left: 0;
-}
-
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -3356,14 +3332,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   }
 }
 
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c17 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
@@ -3484,17 +3479,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -3508,17 +3503,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -3586,17 +3581,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -3610,17 +3605,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -3639,7 +3634,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
 `;
 
 exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 1`] = `
-.c30 {
+.c31 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
@@ -3696,12 +3691,42 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: none;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: none;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-flex: 0 20px;
   -ms-flex: 0 20px;
   flex: 0 20px;
 }
 
-.c33 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3713,14 +3738,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   justify-content: space-between;
 }
 
-.c35 {
+.c36 {
   box-sizing: border-box;
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
 
-.c38 {
+.c39 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3733,20 +3758,20 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   margin-right: -20px;
 }
 
-.c38 > * {
+.c39 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c38 > *:not(:first-child) {
+.c39 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c39 {
+.c40 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3760,7 +3785,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: block;
 }
 
-.c22 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3768,20 +3793,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   width: 16px;
   height: 16px;
   fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -3793,6 +3804,20 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c27 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 16px;
   height: 16px;
   fill: #282823;
@@ -3802,19 +3827,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: block;
 }
 
-.c23 {
+.c24 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c28 {
+.c29 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c32 {
+.c33 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -3829,7 +3854,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 1.5;
 }
 
-.c14 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3838,7 +3863,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 1.5;
 }
 
-.c19 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3847,7 +3872,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3876,29 +3901,29 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: not-allowed;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c24 {
+.c25 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3927,25 +3952,25 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   cursor: pointer;
 }
 
-.c24,
-.c24[type='button'],
-.c24[type='reset'],
-.c24[type='submit'] {
+.c25,
+.c25[type='button'],
+.c25[type='reset'],
+.c25[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c24::-moz-focus-inner,
-.c24[type='button']::-moz-focus-inner,
-.c24[type='reset']::-moz-focus-inner,
-.c24[type='submit']::-moz-focus-inner {
+.c25::-moz-focus-inner,
+.c25[type='button']::-moz-focus-inner,
+.c25[type='reset']::-moz-focus-inner,
+.c25[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c24:-moz-focusring,
-.c24[type='button']:-moz-focusring,
-.c24[type='reset']:-moz-focusring,
-.c24[type='submit']:-moz-focusring {
+.c25:-moz-focusring,
+.c25[type='button']:-moz-focusring,
+.c25[type='reset']:-moz-focusring,
+.c25[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3966,46 +3991,36 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 20px;
 }
 
-.c36 {
+.c37 {
   overflow: hidden;
   text-align: left;
 }
 
-.c37 {
+.c38 {
   overflow: hidden;
   text-align: right;
 }
 
-.c40 {
+.c41 {
   max-width: 300px;
   padding-bottom: 20px;
   display: list-item;
 }
 
-.c34 {
+.c35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c13 {
+.c15 {
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
 }
 
 .c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
   -webkit-align-self: stretch;
@@ -4013,18 +4028,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   align-self: stretch;
 }
 
-.c11 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
-.c31 {
+.c32 {
   background: #FFFFFF;
 }
 
-.c29 {
+.c30 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -4035,8 +4051,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -4045,49 +4060,35 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c12 {
+.c14 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c12:hover {
+.c14:hover {
   background: #F5F5F5;
 }
 
-.c12 > *:first-child {
+.c14 > *:first-child {
   padding-left: 0;
 }
 
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c27 {
+.c28 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid #0046FF;
 }
 
-.c27 > *:first-child {
+.c28 > *:first-child {
   padding-left: 0;
-}
-
-.c27 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -4108,7 +4109,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   position: relative;
 }
 
-.c41 {
+.c42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4118,12 +4119,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   flex-direction: column;
 }
 
-.c42 {
+.c43 {
   margin-bottom: 4px;
 }
 
 @media (min-width:976px) {
-  .c30 {
+  .c31 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -4170,14 +4171,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   }
 }
 
+@media (min-width:976px) {
+  .c12 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c19 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c22 {
     display: none !important;
   }
 }
@@ -4219,7 +4239,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </div>
     </div>
     <div
-      className="c4 c5"
+      className="c10 c5"
       role="columnheader"
     >
       <div
@@ -4233,7 +4253,21 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </div>
     </div>
     <div
-      className="c10 c5 c11"
+      className="c11 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 4
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c5 c13"
       role="columnheader"
     >
       <div
@@ -4246,68 +4280,82 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c1 c12"
+    className="c1 c14"
     role="row"
   >
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c10 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Disabled
         </span>
       </div>
     </div>
     <div
-      className="c10 c13 c15 c11"
+      className="c11 c15"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c16 c9"
+        >
+          Hidden
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c15 c17 c13"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c18 c19"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c21"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -4321,17 +4369,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c18 c22"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c23 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -4347,68 +4395,82 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c1 c12"
+    className="c1 c14"
     role="row"
   >
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c10 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable
         </span>
       </div>
     </div>
     <div
-      className="c10 c13 c15 c11"
+      className="c11 c15"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c16 c9"
+        >
+          Hidden
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c15 c17 c13"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c19"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c26"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -4422,17 +4484,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c22"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c27 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -4448,68 +4510,82 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c1 c27"
+    className="c1 c28"
     role="row"
   >
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c10 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with initial state
         </span>
       </div>
     </div>
     <div
-      className="c10 c13 c15 c11"
+      className="c11 c15"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c16 c9"
+        >
+          Hidden
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c15 c17 c13"
       role="cell"
     >
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c19"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c26"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -4524,17 +4600,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c22"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c26 c28"
+            className="c27 c29"
             direction="up"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -4550,24 +4626,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c29"
+    className="c30"
     role="row"
   >
     <div
-      className="c30 c31"
+      className="c31 c32"
       role="cell"
     >
       <div
-        className="c18"
+        className="c19"
       >
         <ul
-          className="c32"
+          className="c33"
         >
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4575,30 +4651,30 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c8 c9"
                 >
-                  This is a reaaaallllyyy loooong label demonstrating truncation
+                  Label 1
                 </span>
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4611,14 +4687,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4626,10 +4702,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4642,14 +4718,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4657,10 +4733,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4673,14 +4749,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4688,10 +4764,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4704,14 +4780,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4719,10 +4795,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4735,14 +4811,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4750,10 +4826,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4766,14 +4842,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4781,10 +4857,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4797,14 +4873,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4812,10 +4888,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4828,14 +4904,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4843,10 +4919,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4859,14 +4935,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4874,10 +4950,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4890,14 +4966,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4905,10 +4981,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4921,14 +4997,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4936,10 +5012,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4952,14 +5028,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4967,10 +5043,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -4983,14 +5059,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -4998,10 +5074,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5014,14 +5090,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5029,10 +5105,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5045,14 +5121,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5060,10 +5136,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5076,14 +5152,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5091,10 +5167,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5107,14 +5183,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5122,10 +5198,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5138,14 +5214,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5153,10 +5229,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c33 c34"
+            className="c34 c35"
           >
             <div
-              className="c35 c36"
+              className="c36 c37"
             >
               <div
                 className="c6"
@@ -5169,14 +5245,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c35 c37"
+              className="c36 c38"
               textAlign="right"
             >
               <div
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5186,19 +5262,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
         </ul>
       </div>
       <div
-        className="c21"
+        className="c22"
       >
         <ul
-          className="c32 c38"
+          className="c33 c39"
         >
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5206,7 +5282,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                   <span
                     className="c8 c9"
                   >
-                    This is a reaaaallllyyy loooong label demonstrating truncation
+                    Label 1
                   </span>
                 </div>
               </div>
@@ -5214,21 +5290,21 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5244,7 +5320,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5252,13 +5328,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5274,7 +5350,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5282,13 +5358,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5304,7 +5380,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5312,13 +5388,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5334,7 +5410,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5342,13 +5418,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5364,7 +5440,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5372,13 +5448,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5394,7 +5470,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5402,13 +5478,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5424,7 +5500,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5432,13 +5508,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5454,7 +5530,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5462,13 +5538,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5484,7 +5560,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5492,13 +5568,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5514,7 +5590,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5522,13 +5598,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5544,7 +5620,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5552,13 +5628,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5574,7 +5650,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5582,13 +5658,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5604,7 +5680,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5612,13 +5688,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5634,7 +5710,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5642,13 +5718,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5664,7 +5740,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5672,13 +5748,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5694,7 +5770,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5702,13 +5778,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5724,7 +5800,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5732,13 +5808,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5754,7 +5830,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5762,13 +5838,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c39 c40"
+            className="c40 c41"
           >
             <div
-              className="c41"
+              className="c42"
             >
               <div
-                className="c42"
+                className="c43"
               >
                 <div
                   className="c6"
@@ -5784,7 +5860,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 className="c6"
               >
                 <span
-                  className="c14 c9"
+                  className="c16 c9"
                 >
                   42100000000
                 </span>
@@ -5796,68 +5872,82 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c1 c12"
+    className="c1 c14"
     role="row"
   >
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c10 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable component items
         </span>
       </div>
     </div>
     <div
-      className="c10 c13 c15 c11"
+      className="c11 c15"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c16 c9"
+        >
+          Hidden
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c15 c17 c13"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c19"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c26"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -5871,17 +5961,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c22"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c27 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -5897,68 +5987,82 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c1 c12"
+    className="c1 c14"
     role="row"
   >
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c4 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c4 c13"
+      className="c10 c15"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c14 c9"
+          className="c16 c9"
         >
           Expandable with children
         </span>
       </div>
     </div>
     <div
-      className="c10 c13 c15 c11"
+      className="c11 c15"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c16 c9"
+        >
+          Hidden
+        </span>
+      </div>
+    </div>
+    <div
+      className="c12 c15 c17 c13"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c19"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c26"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -5972,17 +6076,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c24 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c25 c22"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c26 c23"
+            className="c27 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -6001,7 +6105,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 `;
 
 exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table Different Font Size On Mobile 1`] = `
-.c25 {
+.c24 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
@@ -6063,7 +6167,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   flex: 0 20px;
 }
 
-.c28 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6075,14 +6179,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   justify-content: space-between;
 }
 
-.c30 {
+.c29 {
   box-sizing: border-box;
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
 
-.c33 {
+.c32 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6095,20 +6199,20 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   margin-right: -20px;
 }
 
-.c33 > * {
+.c32 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c33 > *:not(:first-child) {
+.c32 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c34 {
+.c33 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6122,7 +6226,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: block;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6136,13 +6240,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c27 {
+.c26 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6166,7 +6270,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -6243,23 +6347,23 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   line-height: 20px;
 }
 
-.c31 {
+.c30 {
   overflow: hidden;
   text-align: left;
 }
 
-.c32 {
+.c31 {
   overflow: hidden;
   text-align: right;
 }
 
-.c35 {
+.c34 {
   max-width: 300px;
   padding-bottom: 20px;
   display: list-item;
 }
 
-.c29 {
+.c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6270,16 +6374,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
-}
-
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .c15 {
@@ -6295,13 +6389,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
-.c26 {
+.c25 {
   background: #FFFFFF;
 }
 
-.c24 {
+.c23 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -6312,8 +6407,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -6322,26 +6416,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c12 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid #0046FF;
 }
 
 .c12 > *:first-child {
   padding-left: 0;
-}
-
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -6362,7 +6447,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   position: relative;
 }
 
-.c36 {
+.c35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6372,12 +6457,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   flex-direction: column;
 }
 
-.c37 {
+.c36 {
   margin-bottom: 4px;
 }
 
 @media (min-width:976px) {
-  .c25 {
+  .c24 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -6424,14 +6509,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   }
 }
 
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c17 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
@@ -6558,17 +6662,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     >
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -6583,17 +6687,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
       </button>
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="up"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -6609,24 +6713,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     </div>
   </div>
   <div
-    className="c24"
+    className="c23"
     role="row"
   >
     <div
-      className="c25 c26"
+      className="c24 c25"
       role="cell"
     >
       <div
-        className="c18"
+        className="c17"
       >
         <ul
-          className="c27"
+          className="c26"
         >
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6634,12 +6738,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c8 c9"
                 >
-                  This is a reaaaallllyyy loooong label demonstrating truncation
+                  Label 1
                 </span>
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6648,16 +6752,16 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6670,7 +6774,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6685,10 +6789,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6701,7 +6805,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6716,10 +6820,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6732,7 +6836,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6747,10 +6851,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6763,7 +6867,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6778,10 +6882,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6794,7 +6898,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6809,10 +6913,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6825,7 +6929,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6840,10 +6944,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6856,7 +6960,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6871,10 +6975,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6887,7 +6991,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6902,10 +7006,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6918,7 +7022,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6933,10 +7037,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6949,7 +7053,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6964,10 +7068,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -6980,7 +7084,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -6995,10 +7099,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7011,7 +7115,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7026,10 +7130,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7042,7 +7146,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7057,10 +7161,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7073,7 +7177,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7088,10 +7192,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7104,7 +7208,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7119,10 +7223,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7135,7 +7239,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7150,10 +7254,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7166,7 +7270,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7181,10 +7285,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7197,7 +7301,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7212,10 +7316,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -7228,7 +7332,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -7245,19 +7349,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
         </ul>
       </div>
       <div
-        className="c21"
+        className="c20"
       >
         <ul
-          className="c27 c33"
+          className="c26 c32"
         >
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7265,7 +7369,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                   <span
                     className="c8 c9"
                   >
-                    This is a reaaaallllyyy loooong label demonstrating truncation
+                    Label 1
                   </span>
                 </div>
               </div>
@@ -7275,19 +7379,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  These values are super long to also demonstrate truncation
+                  42100000000
                 </span>
               </div>
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7311,13 +7415,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7341,13 +7445,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7371,13 +7475,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7401,13 +7505,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7431,13 +7535,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7461,13 +7565,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7491,13 +7595,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7521,13 +7625,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7551,13 +7655,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7581,13 +7685,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7611,13 +7715,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7641,13 +7745,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7671,13 +7775,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7701,13 +7805,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7731,13 +7835,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7761,13 +7865,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7791,13 +7895,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7821,13 +7925,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
             </div>
           </li>
           <li
-            className="c34 c35"
+            className="c33 c34"
           >
             <div
-              className="c36"
+              className="c35"
             >
               <div
-                className="c37"
+                className="c36"
               >
                 <div
                   className="c6"
@@ -7858,7 +7962,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 `;
 
 exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand Item On Desktop 1`] = `
-.c25 {
+.c24 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
@@ -7920,7 +8024,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   flex: 0 20px;
 }
 
-.c28 {
+.c27 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7932,14 +8036,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   justify-content: space-between;
 }
 
-.c30 {
+.c29 {
   box-sizing: border-box;
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
 
-.c34 {
+.c33 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7952,20 +8056,20 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   margin-right: -20px;
 }
 
-.c34 > * {
+.c33 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c34 > *:not(:first-child) {
+.c33 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c35 {
+.c34 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7979,7 +8083,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   display: block;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7993,13 +8097,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c27 {
+.c26 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -8023,7 +8127,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -8100,36 +8204,36 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   line-height: 20px;
 }
 
-.c31 {
+.c30 {
   overflow: hidden;
   text-align: left;
 }
 
-.c32 {
+.c31 {
   overflow: hidden;
   text-align: right;
 }
 
-.c36 {
+.c35 {
   max-width: 300px;
   padding-bottom: 20px;
   display: list-item;
 }
 
-.c39 {
+.c38 {
   max-width: 300px;
   padding-bottom: 20px;
   display: list-item;
 }
 
-.c29 {
+.c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c33 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8140,16 +8244,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
-}
-
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .c15 {
@@ -8165,13 +8259,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
-.c26 {
+.c25 {
   background: #FFFFFF;
 }
 
-.c24 {
+.c23 {
   border-left: 2px solid #0046FF;
   border-bottom: 1px solid #EBEBE8;
   display: block;
@@ -8182,8 +8277,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8192,26 +8286,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c12 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid #0046FF;
 }
 
 .c12 > *:first-child {
   padding-left: 0;
-}
-
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -8232,7 +8317,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   position: relative;
 }
 
-.c37 {
+.c36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8242,12 +8327,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   flex-direction: column;
 }
 
-.c38 {
+.c37 {
   margin-bottom: 4px;
 }
 
 @media (min-width:976px) {
-  .c25 {
+  .c24 {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -8294,26 +8379,45 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   }
 }
 
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c17 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
 
 @media (min-width:976px) {
-  .c39 {
+  .c38 {
     display: none;
   }
 }
 
 @media (min-width:976px) {
-  .c33 {
+  .c32 {
     display: none;
   }
 }
@@ -8433,17 +8537,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
     >
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -8458,17 +8562,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
       </button>
       <button
         aria-expanded={true}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="up"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -8484,24 +8588,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
     </div>
   </div>
   <div
-    className="c24"
+    className="c23"
     role="row"
   >
     <div
-      className="c25 c26"
+      className="c24 c25"
       role="cell"
     >
       <div
-        className="c18"
+        className="c17"
       >
         <ul
-          className="c27"
+          className="c26"
         >
           <li
-            className="c28 c29"
+            className="c27 c28"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -8514,7 +8618,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -8529,10 +8633,10 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
             </div>
           </li>
           <li
-            className="c28 c33"
+            className="c27 c32"
           >
             <div
-              className="c30 c31"
+              className="c29 c30"
             >
               <div
                 className="c6"
@@ -8545,7 +8649,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
               </div>
             </div>
             <div
-              className="c30 c32"
+              className="c29 c31"
               textAlign="right"
             >
               <div
@@ -8562,19 +8666,19 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
         </ul>
       </div>
       <div
-        className="c21"
+        className="c20"
       >
         <ul
-          className="c27 c34"
+          className="c26 c33"
         >
           <li
-            className="c35 c36"
+            className="c34 c35"
           >
             <div
-              className="c37"
+              className="c36"
             >
               <div
-                className="c38"
+                className="c37"
               >
                 <div
                   className="c6"
@@ -8598,13 +8702,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
             </div>
           </li>
           <li
-            className="c35 c39"
+            className="c34 c38"
           >
             <div
-              className="c37"
+              className="c36"
             >
               <div
-                className="c38"
+                className="c37"
               >
                 <div
                   className="c6"
@@ -8702,7 +8806,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   flex: 0 20px;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8716,7 +8820,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8730,7 +8834,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   display: block;
 }
 
-.c24 {
+.c23 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -8754,7 +8858,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -8837,16 +8941,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   padding-bottom: 4px;
 }
 
-.c18 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c16 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -8860,6 +8954,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
 .c2 {
@@ -8867,8 +8962,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8877,17 +8971,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c13 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8898,10 +8987,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
 
 .c13 > *:first-child {
   padding-left: 0;
-}
-
-.c13 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -8976,14 +9061,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   }
 }
 
+@media (min-width:976px) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c19 {
+  .c18 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c22 {
+  .c21 {
     display: none !important;
   }
 }
@@ -8995,35 +9099,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
 }
 
 @media (min-width:976px) {
-  .c2 {
-    padding-right: 4px;
-    padding-left: 2px;
+  .c2 > * {
+    padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c2 > *:first-child {
+  .c2 > * > *:first-child {
     padding-left: 0;
   }
 
-  .c2 > *:nth-last-child(2) {
+  .c2 > * > *:nth-last-child(2) {
     padding-right: 0;
   }
 }
 
 @media (min-width:976px) {
-  .c13 {
-    padding-right: 4px;
-    padding-left: 2px;
+  .c13 > * {
+    padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c13 > *:first-child {
+  .c13 > * > *:first-child {
     padding-left: 0;
   }
 
-  .c13 > *:nth-last-child(2) {
+  .c13 > * > *:nth-last-child(2) {
     padding-right: 0;
   }
 }
@@ -9255,17 +9357,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c17 c18 c19"
+        className="NormalizedButton__Button-ey7f5x-0 c17 c18"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c20"
+          className="c19"
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c20"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -9279,17 +9381,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c17 c18 c22"
+        className="NormalizedButton__Button-ey7f5x-0 c17 c21"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c20"
+          className="c19"
         >
           <svg
             aria-hidden="true"
-            className="c23 c24"
+            className="c22 c23"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -9363,7 +9465,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   flex: 0 20px;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -9377,7 +9479,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   display: block;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -9391,7 +9493,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   display: block;
 }
 
-.c23 {
+.c22 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -9415,7 +9517,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -9498,16 +9600,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   padding-bottom: 4px;
 }
 
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -9521,6 +9613,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -4px;
 }
 
 .c2 {
@@ -9528,8 +9621,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -9538,17 +9630,12 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   padding-left: 0;
 }
 
-.c2 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .c12 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: pointer;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -9561,31 +9648,22 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   padding-left: 0;
 }
 
-.c12 > *:nth-last-child(1) {
-  padding-right: 0;
-}
-
-.c24 {
+.c23 {
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-left: 8px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c24:hover {
+.c23:hover {
   background: #F5F5F5;
 }
 
-.c24 > *:first-child {
+.c23 > *:first-child {
   padding-left: 0;
-}
-
-.c24 > *:nth-last-child(1) {
-  padding-right: 0;
 }
 
 .c3 {
@@ -9645,14 +9723,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   }
 }
 
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c18 {
+  .c17 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
@@ -9773,17 +9870,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -9797,17 +9894,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -9875,17 +9972,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -9899,17 +9996,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -9977,17 +10074,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -10001,17 +10098,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -10079,17 +10176,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -10103,17 +10200,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -10129,7 +10226,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     </div>
   </div>
   <div
-    className="c1 c24"
+    className="c1 c23"
     role="row"
   >
     <div
@@ -10180,17 +10277,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -10204,17 +10301,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -10230,7 +10327,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     </div>
   </div>
   <div
-    className="c1 c24"
+    className="c1 c23"
     role="row"
   >
     <div
@@ -10281,17 +10378,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c18"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c20"
+            className="c19"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -10305,17 +10402,17 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c16 c17 c21"
+        className="NormalizedButton__Button-ey7f5x-0 c16 c20"
         disabled={false}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c19"
+          className="c18"
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"

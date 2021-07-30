@@ -128,6 +128,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
 
 .c20 {
   display: none;
+  margin-left: -4px;
 }
 
 .c4 {
@@ -135,8 +136,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -233,6 +233,25 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -590,6 +609,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
 
 .c24 {
   display: none;
+  margin-left: -4px;
 }
 
 .c4 {
@@ -597,8 +617,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -699,6 +718,25 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c23 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -1047,6 +1085,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
 
 .c21 {
   display: none;
+  margin-left: -4px;
 }
 
 .c4 {
@@ -1054,8 +1093,7 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1152,6 +1190,25 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c20 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 

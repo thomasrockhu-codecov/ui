@@ -74,7 +74,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   flex: 0 20px;
 }
 
-.c23 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -88,7 +88,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -102,7 +102,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c26 {
+.c25 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -135,7 +135,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -218,16 +218,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-bottom: 4px;
 }
 
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c18 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -238,6 +228,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c14 {
   display: none;
+  margin-left: -4px;
 }
 
 .c4 {
@@ -245,8 +236,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -264,8 +254,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -358,14 +347,33 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
+@media (min-width:976px) {
+  .c13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c24 {
+  .c23 {
     display: none !important;
   }
 }
@@ -374,6 +382,12 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c14 {
+    margin-left: -20px;
   }
 }
 
@@ -500,17 +514,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -524,17 +538,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -601,17 +615,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -625,17 +639,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -715,7 +729,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   flex: 0 20px;
 }
 
-.c23 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -729,7 +743,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -743,7 +757,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c26 {
+.c25 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -776,7 +790,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -859,26 +873,16 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-bottom: 4px;
 }
 
-.c28 {
+.c27 {
   overflow: hidden;
   padding-top: 0px !important;
   padding-bottom: 0px;
 }
 
-.c30 {
+.c29 {
   overflow: hidden;
   padding-top: 8px !important;
   padding-bottom: 8px;
-}
-
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .c18 {
@@ -891,6 +895,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c15 {
   display: none;
+  margin-left: -4px;
 }
 
 .c6 {
@@ -898,8 +903,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -917,8 +921,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -949,13 +952,13 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-bottom: 4px;
 }
 
-.c27 {
+.c26 {
   overflow: hidden;
   padding-top: 0px !important;
   padding-bottom: 0px;
 }
 
-.c29 {
+.c28 {
   overflow: hidden;
   padding-top: 8px !important;
   padding-bottom: 8px;
@@ -1012,14 +1015,33 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
+@media (min-width:976px) {
+  .c14 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c24 {
+  .c23 {
     display: none !important;
   }
 }
@@ -1163,17 +1185,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1187,17 +1209,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1264,17 +1286,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1288,17 +1310,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1332,7 +1354,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         role="row"
       >
         <div
-          className="c8 c27"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1346,7 +1368,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c27"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1360,7 +1382,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c27"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1374,7 +1396,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c27 c15"
+          className="c14 c26 c15"
           role="columnheader"
         >
           <div
@@ -1391,7 +1413,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         role="row"
       >
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1405,7 +1427,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1419,7 +1441,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1433,22 +1455,22 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c28 c18 c15"
+          className="c14 c27 c18 c15"
           role="cell"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1462,17 +1484,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1492,7 +1514,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         role="row"
       >
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1506,7 +1528,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1520,7 +1542,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c28"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1534,22 +1556,22 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c28 c18 c15"
+          className="c14 c27 c18 c15"
           role="cell"
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1563,17 +1585,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1713,17 +1735,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1737,17 +1759,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1814,17 +1836,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1838,17 +1860,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1879,7 +1901,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       role="row"
     >
       <div
-        className="c8 c29"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -1893,7 +1915,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c29"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -1907,7 +1929,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c29"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -1921,7 +1943,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c29 c15"
+        className="c14 c28 c15"
         role="columnheader"
       >
         <div
@@ -1938,7 +1960,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       role="row"
     >
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -1952,7 +1974,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -1966,7 +1988,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -1980,22 +2002,22 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c30 c18 c15"
+        className="c14 c29 c18 c15"
         role="cell"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2009,17 +2031,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2039,7 +2061,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       role="row"
     >
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2053,7 +2075,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2067,7 +2089,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c30"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2081,22 +2103,22 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c30 c18 c15"
+        className="c14 c29 c18 c15"
         role="cell"
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c23"
+              className="c22"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2110,17 +2132,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c22"
+            className="c21"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2200,7 +2222,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   flex: 0 20px;
 }
 
-.c23 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2214,7 +2236,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2228,7 +2250,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c26 {
+.c25 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -2261,7 +2283,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.5;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2338,7 +2360,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 20px;
 }
 
-.c27 {
+.c26 {
   font-size: 12px;
   line-height: 16px;
 }
@@ -2347,16 +2369,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
-}
-
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .c18 {
@@ -2369,6 +2381,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c15 {
   display: none;
+  margin-left: -4px;
 }
 
 .c6 {
@@ -2376,8 +2389,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2395,8 +2407,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2478,14 +2489,33 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
+@media (min-width:976px) {
+  .c14 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c21 {
+  .c20 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c24 {
+  .c23 {
     display: none !important;
   }
 }
@@ -2631,17 +2661,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c20"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c23"
+                  className="c22"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2655,17 +2685,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
             </button>
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c23"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c25 c26"
+                  className="c24 c25"
                   direction="down"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
@@ -2732,17 +2762,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c20"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c23"
+                  className="c22"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2756,17 +2786,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
             </button>
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c23"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c25 c26"
+                  className="c24 c25"
                   direction="down"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
@@ -2807,7 +2837,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c12 c27"
+                className="c12 c26"
               >
                 Header 1
               </span>
@@ -2821,7 +2851,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c12 c27"
+                className="c12 c26"
               >
                 Header 2
               </span>
@@ -2835,7 +2865,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c12 c27"
+                className="c12 c26"
               >
                 Header 3
               </span>
@@ -2849,7 +2879,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c12 c27"
+                className="c12 c26"
               />
             </div>
           </div>
@@ -2866,7 +2896,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 1-1
               </span>
@@ -2880,7 +2910,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 1-2
               </span>
@@ -2894,7 +2924,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 1-3
               </span>
@@ -2906,17 +2936,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c20"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c23"
+                  className="c22"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2930,17 +2960,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
             </button>
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c23"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c25 c26"
+                  className="c24 c25"
                   direction="down"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
@@ -2967,7 +2997,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 2-1
               </span>
@@ -2981,7 +3011,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 2-2
               </span>
@@ -2995,7 +3025,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
               className="c10 c11"
             >
               <span
-                className="c3 c27"
+                className="c3 c26"
               >
                 Cell 2-3
               </span>
@@ -3007,17 +3037,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c20"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c23"
+                  className="c22"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -3031,17 +3061,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
             </button>
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+              className="NormalizedButton__Button-ey7f5x-0 c19 c23"
               disabled={true}
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 <svg
                   aria-hidden="true"
-                  className="c25 c26"
+                  className="c24 c25"
                   direction="down"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
@@ -3178,17 +3208,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -3202,17 +3232,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -3279,17 +3309,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         >
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c23"
+                className="c22"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -3303,17 +3333,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </button>
           <button
             aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
+            className="NormalizedButton__Button-ey7f5x-0 c19 c23"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c22"
+              className="c21"
             >
               <svg
                 aria-hidden="true"
-                className="c25 c26"
+                className="c24 c25"
                 direction="down"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -3389,7 +3419,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   flex: 0 20px;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3403,7 +3433,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c24 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3417,7 +3447,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -3450,7 +3480,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.5;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3459,7 +3489,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.4285714285714286;
 }
 
-.c28 {
+.c27 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3542,16 +3572,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-bottom: 8px;
 }
 
-.c19 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c17 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -3562,6 +3582,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c14 {
   display: none;
+  margin-left: -4px;
 }
 
 .c5 {
@@ -3569,8 +3590,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3588,8 +3608,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3614,7 +3633,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   top: 0px;
 }
 
-.c26 {
+.c25 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -3625,7 +3644,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-bottom: 8px;
 }
 
-.c27 {
+.c26 {
   overflow: hidden;
   padding-top: 8px !important;
   padding-bottom: 8px;
@@ -3682,14 +3701,33 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
+@media (min-width:976px) {
+  .c13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
+}
+
 @media not all and (max-width:975px) {
-  .c20 {
+  .c19 {
     display: none !important;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c23 {
+  .c22 {
     display: none !important;
   }
 }
@@ -3723,7 +3761,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 }
 
 @media (min-width:976px) {
-  .c27 {
+  .c26 {
     padding-top: 0px !important;
     padding-bottom: 0px;
   }
@@ -3858,17 +3896,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c18 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c18 c19"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c21"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3882,17 +3920,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c18 c19 c23"
+          className="NormalizedButton__Button-ey7f5x-0 c18 c22"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c24 c25"
+              className="c23 c24"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3959,17 +3997,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c18 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c18 c19"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c21"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3983,17 +4021,17 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c18 c19 c23"
+          className="NormalizedButton__Button-ey7f5x-0 c18 c22"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c20"
           >
             <svg
               aria-hidden="true"
-              className="c24 c25"
+              className="c23 c24"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4009,60 +4047,60 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       </div>
     </div>
     <div
-      className="c4 c5 c26"
+      className="c4 c5 c25"
       role="row"
     >
       <div
-        className="c7 c27"
+        className="c7 c26"
         role="cell"
       >
         <div
           className="c9 c10"
         >
           <span
-            className="c28 c12"
+            className="c27 c12"
           >
             Footer 1
           </span>
         </div>
       </div>
       <div
-        className="c7 c27"
+        className="c7 c26"
         role="cell"
       >
         <div
           className="c9 c10"
         >
           <span
-            className="c28 c12"
+            className="c27 c12"
           >
             Footer 2
           </span>
         </div>
       </div>
       <div
-        className="c7 c27"
+        className="c7 c26"
         role="cell"
       >
         <div
           className="c9 c10"
         >
           <span
-            className="c28 c12"
+            className="c27 c12"
           >
             Footer 3
           </span>
         </div>
       </div>
       <div
-        className="c13 c27 c14"
+        className="c13 c26 c14"
         role="cell"
       >
         <div
           className="c9 c10"
         >
           <span
-            className="c28 c12"
+            className="c27 c12"
           />
         </div>
       </div>
