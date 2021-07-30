@@ -1,11 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Button, Icon, Media } from '../../../../index';
-
-const StyledButton = styled(Button)`
-  flex: 1;
-  justify-content: flex-end;
-`;
 
 const SmallScreenExpandButton: React.FC<{
   className?: string;
@@ -14,7 +8,7 @@ const SmallScreenExpandButton: React.FC<{
   onClick: () => void;
   size: number;
 }> = ({ className, expanded, disabled, onClick, size }) => (
-  <StyledButton
+  <Button
     className={className}
     variant="neutral"
     onClick={onClick}
@@ -26,7 +20,7 @@ const SmallScreenExpandButton: React.FC<{
     ) : (
       <Icon.ChevronDown size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     )}
-  </StyledButton>
+  </Button>
 );
 
 const LargeScreenExpandButton: React.FC<{
@@ -36,7 +30,7 @@ const LargeScreenExpandButton: React.FC<{
   onClick: () => void;
   size: number;
 }> = ({ className, expanded, disabled, onClick, size }) => (
-  <StyledButton
+  <Button
     className={className}
     variant="neutral"
     onClick={onClick}
@@ -48,7 +42,7 @@ const LargeScreenExpandButton: React.FC<{
       size={size}
       fill={(t) => (disabled ? t.color.disabled : t.color.text)}
     />
-  </StyledButton>
+  </Button>
 );
 
 export const ExpandButton: React.FC<{

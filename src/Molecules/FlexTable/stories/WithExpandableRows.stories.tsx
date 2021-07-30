@@ -18,11 +18,11 @@ export default {
 const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     // Make the first item really long
-    if (itemIndex === 0) {
-      const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
-      const value = 'These values are super long to also demonstrate truncation';
-      return [...acc, { label, value }];
-    }
+    // if (itemIndex === 0) {
+    //   const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
+    //   const value = 'These values are super long to also demonstrate truncation';
+    //   return [...acc, { label, value }];
+    // }
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
     const label = renderComponent
@@ -64,37 +64,67 @@ export const ExpandedTable = () => {
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        <FlexTable.Header columnId="column3" justifyContent="flex-end">
+          Header 3
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column4" hidden>
+          Header 4
+        </FlexTable.Header>
       </FlexTable.HeaderRow>
 
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Disabled
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden>
+          Hidden
+        </FlexTable.Cell>
       </FlexTable.Row>
 
       <FlexTable.Row expandItems={expandItemsText}>
         <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Expandable
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden>
+          Hidden
+        </FlexTable.Cell>
       </FlexTable.Row>
 
       <FlexTable.Row expandItems={expandItemsText} initiallyExpanded>
         <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Expandable with initial state
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden>
+          Hidden
+        </FlexTable.Cell>
       </FlexTable.Row>
 
       <FlexTable.Row expandItems={expandItemsComponents}>
         <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Expandable component items
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden>
+          Hidden
+        </FlexTable.Cell>
       </FlexTable.Row>
 
       <FlexTable.Row expandItems={expandItemsText} expandChildren={expandChildrenComponents}>
         <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Expandable with children
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden>
+          Hidden
+        </FlexTable.Cell>
       </FlexTable.Row>
     </FlexTable>
   );

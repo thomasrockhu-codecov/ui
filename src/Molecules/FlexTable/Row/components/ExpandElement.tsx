@@ -6,9 +6,11 @@ import { ExpandCell } from '../../Cell/ExpandCell';
 import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../../shared/constants';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { getStylesForSizes } from '../../shared';
+import { Theme } from '../../../../theme/theme.types';
 
 type ScreenSizeConfigurableProps = {
   expandable: boolean;
+  columnDistance: number;
 };
 
 type StyledExpandCellProps = {
@@ -26,6 +28,11 @@ const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
   return 'display: none;';
 };
 
+// this negative left margin is to compensate for the padding (right) on the previous cell to prevent misalignment
+const getColumnDistanceStyles = (p: ScreenSizeConfigurableProps & { theme: Theme }) => `
+  margin-left: ${p.theme.spacing.unit(-p.columnDistance / 2)}px;
+`;
+
 const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
   ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
     (p: StyledExpandCellProps) => ({
@@ -37,6 +44,7 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
     }),
     {
       expandable: getExpandableStyles,
+      columnDistance: getColumnDistanceStyles,
     },
   )}
 `;
@@ -48,7 +56,10 @@ export const ExpandElement: React.FC<
     setExpand: (expanded: boolean) => void;
   }
 > = ({ rowType, expanded = false, onExpandToggle, setExpand, disabled }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable<'expandable'>('expandable');
+  const { xs, sm, md, lg, xl } = useFlexTable<'expandable' | 'columnDistance'>(
+    'expandable',
+    'columnDistance',
+  );
 
   const expandProps =
     rowType === 'content'
