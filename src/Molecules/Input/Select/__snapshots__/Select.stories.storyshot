@@ -11820,6 +11820,342 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c12 {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    multiple={true}
+    onChange={[Function]}
+    value={
+      Array [
+        "2",
+        "3",
+      ]
+    }
+  >
+    <option
+      label="Placeholder"
+      value=""
+    />
+    <option
+      label="First account"
+      value="1"
+    />
+    <option
+      label="Second acc 2"
+      value="2"
+    />
+    <option
+      label="Third 3"
+      value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              Label 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="Label"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Label: 2 items"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="input-1"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c10 c11"
+              >
+                <div
+                  className="c2 c12"
+                >
+                  <span
+                    className="c7 c13"
+                  >
+                    2 selected along with a very long text for reference of truncation
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 .c0 {
   padding-top: 160px;
