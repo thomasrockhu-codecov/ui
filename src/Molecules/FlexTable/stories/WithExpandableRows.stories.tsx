@@ -18,11 +18,11 @@ export default {
 const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     // Make the first item really long
-    // if (itemIndex === 0) {
-    //   const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
-    //   const value = 'These values are super long to also demonstrate truncation';
-    //   return [...acc, { label, value }];
-    // }
+    if (itemIndex === 0) {
+      const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
+      const value = 'These values are super long to also demonstrate truncation';
+      return [...acc, { label, value }];
+    }
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
     const label = renderComponent
