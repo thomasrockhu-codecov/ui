@@ -75,9 +75,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -261,6 +261,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -425,9 +428,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -453,6 +456,14 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
 @media (min-width:976px) {
   .c21 {
     display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c21 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -20964,9 +20975,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c21 {
@@ -21173,6 +21184,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
 .c19 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c3 {
@@ -21310,9 +21324,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -21362,6 +21376,14 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c19 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -121446,9 +121468,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c23 {
@@ -121655,6 +121677,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
 .c21 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c5 {
@@ -121797,9 +121822,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -121849,6 +121874,14 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c21 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 

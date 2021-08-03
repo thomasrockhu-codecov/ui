@@ -99,9 +99,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c34 {
@@ -286,6 +286,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 .c22 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -428,9 +431,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -450,6 +453,14 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c22 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -1149,9 +1160,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c27 {
@@ -1321,6 +1332,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 .c15 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -1441,9 +1455,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -1463,6 +1477,14 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c15 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -2030,9 +2052,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c23 {
@@ -2190,6 +2212,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
 .c15 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -2310,9 +2335,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -2332,6 +2357,14 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c15 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -2832,9 +2865,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -2992,6 +3025,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
 .c14 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -3127,9 +3163,9 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -3149,6 +3185,14 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c14 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 

@@ -51,9 +51,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -284,6 +284,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -392,9 +395,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -407,6 +410,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
 @media not all and (min-width:976px) {
   .c20 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -737,9 +748,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c32 {
@@ -1050,6 +1061,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c30 {
@@ -1200,9 +1214,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -1215,6 +1229,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
 @media not all and (min-width:976px) {
   .c20 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -1611,7 +1633,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c8 c9"
                 >
-                  Label 1
+                  This is a reaaaallllyyy loooong label demonstrating truncation
                 </span>
               </div>
             </div>
@@ -1625,7 +1647,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -2242,7 +2264,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                   <span
                     className="c8 c9"
                   >
-                    Label 1
+                    This is a reaaaallllyyy loooong label demonstrating truncation
                   </span>
                 </div>
               </div>
@@ -2252,7 +2274,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -3087,9 +3109,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -3241,6 +3263,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -3345,9 +3370,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -3360,6 +3385,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
 @media not all and (min-width:976px) {
   .c20 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -3721,9 +3754,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c34 {
@@ -4034,6 +4067,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c32 {
@@ -4184,9 +4220,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -4199,6 +4235,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 @media not all and (min-width:976px) {
   .c22 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c13 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -4651,7 +4695,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c8 c9"
                 >
-                  Label 1
+                  This is a reaaaallllyyy loooong label demonstrating truncation
                 </span>
               </div>
             </div>
@@ -4665,7 +4709,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c16 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -5282,7 +5326,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                   <span
                     className="c8 c9"
                   >
-                    Label 1
+                    This is a reaaaallllyyy loooong label demonstrating truncation
                   </span>
                 </div>
               </div>
@@ -5292,7 +5336,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c16 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -6162,9 +6206,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c27 {
@@ -6390,6 +6434,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c25 {
@@ -6522,9 +6569,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -6544,6 +6591,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   .c9 {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -6738,7 +6793,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c8 c9"
                 >
-                  Label 1
+                  This is a reaaaallllyyy loooong label demonstrating truncation
                 </span>
               </div>
             </div>
@@ -6752,7 +6807,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -7369,7 +7424,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                   <span
                     className="c8 c9"
                   >
-                    Label 1
+                    This is a reaaaallllyyy loooong label demonstrating truncation
                   </span>
                 </div>
               </div>
@@ -7379,7 +7434,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  42100000000
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -8019,9 +8074,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c27 {
@@ -8260,6 +8315,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c25 {
@@ -8392,9 +8450,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -8419,6 +8477,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
 @media (min-width:976px) {
   .c32 {
     display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -8801,9 +8867,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c20 {
@@ -8955,6 +9021,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -9074,9 +9143,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -9095,6 +9164,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
 @media (min-width:976px) {
   .c12 {
     display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c12 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -9460,9 +9537,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -9614,6 +9691,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   display: -ms-flexbox;
   display: flex;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -9736,9 +9816,9 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -9751,6 +9831,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
 @media not all and (min-width:976px) {
   .c20 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 

@@ -46,7 +46,11 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
       expandable: getExpandableStyles,
       columnDistance: getColumnDistanceStyles,
     },
-  )}
+  )};
+  flex: 0 ${(p) => p.theme.spacing.unit(5)}px;
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    flex: 0 ${(p) => p.theme.spacing.unit(10)}px;
+  }
 `;
 
 export const ExpandElement: React.FC<

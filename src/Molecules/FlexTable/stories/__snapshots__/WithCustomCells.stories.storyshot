@@ -51,9 +51,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c20 {
@@ -211,6 +211,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 .c11 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -323,9 +326,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -338,6 +341,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 @media not all and (min-width:976px) {
   .c21 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -615,9 +626,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c16 {
@@ -798,6 +809,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 .c20 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -943,9 +957,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -958,6 +972,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 @media not all and (min-width:976px) {
   .c30 {
     display: none !important;
+  }
+}
+
+@media (min-width:976px) {
+  .c20 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 

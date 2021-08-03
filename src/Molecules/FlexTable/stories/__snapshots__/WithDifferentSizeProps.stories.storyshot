@@ -69,9 +69,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -229,6 +229,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c14 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -360,9 +363,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -388,6 +391,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 @media (min-width:760px) {
   .c14 {
     margin-left: -20px;
+  }
+}
+
+@media (min-width:976px) {
+  .c14 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -724,9 +735,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -896,6 +907,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c15 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c6 {
@@ -1028,9 +1042,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -1050,6 +1064,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c15 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -2217,9 +2239,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -2382,6 +2404,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c15 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c6 {
@@ -2502,9 +2527,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -2524,6 +2549,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c15 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -3414,9 +3447,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c21 {
@@ -3583,6 +3616,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c14 {
   display: none;
   margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c5 {
@@ -3714,9 +3750,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex: 0 40px;
-    -ms-flex: 0 40px;
-    flex: 0 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -3750,6 +3786,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   .c16 {
     padding-top: 0px !important;
     padding-bottom: 0px;
+  }
+}
+
+@media (min-width:976px) {
+  .c14 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
