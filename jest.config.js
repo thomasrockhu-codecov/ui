@@ -1,5 +1,6 @@
 module.exports = {
   testMatch: ['**/*.test.ts', '**/*.test.tsx'],
+  setupFilesAfterEnv: ['<rootDir>/jest.mocks.js'],
   setupFiles: ['./jest.enzyme.js'],
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testEnvironment: 'jest-environment-jsdom-fourteen',
