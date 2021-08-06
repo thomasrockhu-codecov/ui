@@ -88,6 +88,7 @@ export type ThemeColors = {
   buyActive: RawColor['ctaPressed'];
   /** white */
   buttonText: RawColor['white'];
+  buttonTextLight: RawColor['white'];
   /** cta */
   borderActive: RawColor['cta'];
   /** white */

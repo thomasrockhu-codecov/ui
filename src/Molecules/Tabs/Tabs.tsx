@@ -20,7 +20,7 @@ const StyledButton = styled(NormalizedElements.Button)`
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: ${(p) => p.theme.color.buttonText};
+  color: ${(p) => p.theme.color.buttonTextLight};
 `;
 
 const Title: TitleComponent = ({
