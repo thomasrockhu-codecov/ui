@@ -306,6 +306,60 @@ export const preselectedOptions = () =>
     );
   });
 
+export const passingTruncatedComponents = () =>
+  createElement(() => {
+    // These styles need to be applied in order for the custom component to truncate in the input
+    const StyledFlexbox = styled(Flexbox)`
+      width: 100%;
+      padding-left: 8px;
+      padding-right: 20px;
+    `;
+
+    const EllipsizingText = styled(Typography)`
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    `;
+
+    // This component you need to redefine for your particular case
+    // Why isn't this implemented in the component? Because depending of what you put inside the EllipsizingText it may or may not kill the Truncation
+    // That's just how truncation works, it needs a parent and child with specific props
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <StyledFlexbox container alignItems="center">
+          <EllipsizingText type="secondary">
+            {/* adding Box or Flexbox child here will kill the Truncation, but overflow will still be hidden */}
+            {selectedCount === 0
+              ? machineState.context.placeholder
+              : `${selectedCount} selected along with a very long text for reference of truncation`}
+          </EllipsizingText>
+        </StyledFlexbox>
+      );
+    }, []);
+
+    const [values, setValues] = useState([
+      // Non-referentially equal options
+      { ...accountOptions[1] },
+      { ...accountOptions[2] },
+    ]);
+
+    return (
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        value={values}
+        // @ts-ignore
+        onChange={setValues}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
+    );
+  });
+
 export const multiSelectUncontrolled = () =>
   createElement(() => {
     // This component you need to redefine for your particular case
