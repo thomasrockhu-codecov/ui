@@ -53,10 +53,8 @@ export const parameters = {
 setIntlConfig({
   locales: ['sv', 'nb', 'da', 'fi', 'en'],
   defaultLocale: 'en',
-  getMessages: () => {
-  },
-  getFormats: () => {
-  },
+  getMessages: () => {},
+  getFormats: () => {},
   // Solves problem with snapshots for time component
   timeZone: 'UTC',
 });

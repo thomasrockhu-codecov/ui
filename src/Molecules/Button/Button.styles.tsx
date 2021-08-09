@@ -91,10 +91,10 @@ export const secondaryStyles = css<InnerProps>`
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
-    const color = customColor || p.theme.color.cta;
+    const color = customColor || p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.cta;
 
     return `
-      color: ${p.disabled ? p.theme.color.disabledText : customColor || p.theme.color.cta};
+      color: ${p.disabled ? p.theme.color.disabledText : color};
       ${getBorder(p.disabled ? 'transparent' : color)}
 
       ${
@@ -128,10 +128,12 @@ export const neutralStyles = css<InnerProps>`
   background-color: transparent;
 
   ${(p) => {
-    const color = p.$colorFn && p.$colorFn(p.theme);
+    const color = p.theme.isDarkMode
+      ? p.theme.color.buttonTextLight
+      : (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.text;
 
     return `
-      color: ${p.disabled ? p.theme.color.disabledText : color || p.theme.color.text}
+      color: ${p.disabled ? p.theme.color.disabledText : color}
     `;
   }};
 `;

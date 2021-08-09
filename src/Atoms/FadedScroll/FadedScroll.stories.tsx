@@ -1,6 +1,7 @@
 import React from 'react';
+import { useDarkMode } from 'storybook-dark-mode';
 import styled from 'styled-components';
-import { FadedScroll, List, ListItem } from '../..';
+import { FadedScroll, List, ListItem, Typography } from '../..';
 import docs from './FadedScroll.mdx';
 
 export default {
@@ -28,79 +29,159 @@ const StyledListItem = styled(ListItem)`
 
 const content = (
   <List>
-    <StyledListItem>Lorem ipsum dolor sit amet</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Class aptent taciti sociosqu</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Quisque ac ullamcorper eros</StyledListItem>
-    <StyledListItem>Etiam urna elit, mollis vel arcu id</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Lorem ipsum dolor sit amet</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Class aptent taciti sociosqu</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Quisque ac ullamcorper eros</StyledListItem>
-    <StyledListItem>Etiam urna elit, mollis vel arcu id</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Lorem ipsum dolor sit amet</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Class aptent taciti sociosqu</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Quisque ac ullamcorper eros</StyledListItem>
-    <StyledListItem>Etiam urna elit, mollis vel arcu id</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Lorem ipsum dolor sit amet</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Class aptent taciti sociosqu</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
-    <StyledListItem>Quisque ac ullamcorper eros</StyledListItem>
-    <StyledListItem>Etiam urna elit, mollis vel arcu id</StyledListItem>
-    <StyledListItem>Sed consequat erat lacinia</StyledListItem>
-    <StyledListItem>Aliquam bibendum tortor dui</StyledListItem>
+    <StyledListItem>
+      <Typography>Lorem ipsum dolor sit amet</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Class aptent taciti sociosqu</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Quisque ac ullamcorper eros</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Etiam urna elit, mollis vel arcu id</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Lorem ipsum dolor sit amet</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Class aptent taciti sociosqu</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Quisque ac ullamcorper eros</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Etiam urna elit, mollis vel arcu id</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Lorem ipsum dolor sit amet</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Class aptent taciti sociosqu</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Quisque ac ullamcorper eros</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Etiam urna elit, mollis vel arcu id</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Lorem ipsum dolor sit amet</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Class aptent taciti sociosqu</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Quisque ac ullamcorper eros</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Etiam urna elit, mollis vel arcu id</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Sed consequat erat lacinia</Typography>
+    </StyledListItem>
+    <StyledListItem>
+      <Typography>Aliquam bibendum tortor dui</Typography>
+    </StyledListItem>
   </List>
 );
 
-export const defaultStory = () => <FadedScroll maxHeight={40}>{content}</FadedScroll>;
+export const DefaultStory = () => (
+  <FadedScroll backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'} maxHeight={40}>
+    {content}
+  </FadedScroll>
+);
 
-defaultStory.story = {
+DefaultStory.story = {
   name: 'Default, using maxHeight prop',
 };
 
-export const withAutoHeightOfScrollableArea = () => (
-  <FadedScrollWithHeightDesktopOnly>{content}</FadedScrollWithHeightDesktopOnly>
+export const WithAutoHeightOfScrollableArea = () => (
+  <FadedScrollWithHeightDesktopOnly backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}>
+    {content}
+  </FadedScrollWithHeightDesktopOnly>
 );
 
-withAutoHeightOfScrollableArea.story = {
+WithAutoHeightOfScrollableArea.story = {
   name: 'With height of scrollable area being whatever is available',
 };
 
-export const withHeightOfFadeChanged = () => (
-  <FadedScroll fadeHeight={5} maxHeight={45}>
+export const WithHeightOfFadeChanged = () => (
+  <FadedScroll
+    backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}
+    fadeHeight={5}
+    maxHeight={45}
+  >
     {content}
   </FadedScroll>
 );
 
-withHeightOfFadeChanged.story = {
+WithHeightOfFadeChanged.story = {
   name: 'With height of fade changed',
 };
 
-export const withMobileFadeEnabled = () => (
-  <FadedScrollWithHeight enableMobileFade>{content}</FadedScrollWithHeight>
+export const WithMobileFadeEnabled = () => (
+  <FadedScrollWithHeight backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'} enableMobileFade>
+    {content}
+  </FadedScrollWithHeight>
 );
 
-withMobileFadeEnabled.story = {
+WithMobileFadeEnabled.story = {
   name: 'With mobile fade enabled',
 };
 
-export const withTopFadeDisabled = () => (
-  <FadedScroll maxHeight={45} disableTopFade>
+export const WithTopFadeDisabled = () => (
+  <FadedScroll
+    backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}
+    maxHeight={45}
+    disableTopFade
+  >
     {content}
   </FadedScroll>
 );
 
-withTopFadeDisabled.story = {
+WithTopFadeDisabled.story = {
   name: 'With top fade disabled',
 };

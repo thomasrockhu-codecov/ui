@@ -15,6 +15,7 @@ export type Props = {
    */
   enableMobileFade?: boolean;
   disableTopFade?: boolean;
+  backgroundColor?: string;
   ref?: React.Ref<HTMLDivElement>;
 };
 

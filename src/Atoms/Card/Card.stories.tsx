@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Card.types';
 
-import { Card } from '../..';
+import { Card, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 const StyledContent = styled.div`
@@ -24,7 +24,9 @@ export default {
 
 export const basicCard = () => (
   <Card>
-    <Content>A Card as a div containing content</Content>
+    <Content>
+      <Typography>A Card as a div containing content</Typography>
+    </Content>
   </Card>
 );
 
@@ -35,7 +37,9 @@ export const cardRenderedWithDifferentHtmlTags = () => (
         title: 'Section',
         component: (
           <Card as="section">
-            <Content>A Card as a section containing content</Content>
+            <Content>
+              <Typography>A Card as a section containing content</Typography>
+            </Content>
           </Card>
         ),
       },
@@ -43,7 +47,9 @@ export const cardRenderedWithDifferentHtmlTags = () => (
         title: 'Article',
         component: (
           <Card as="article">
-            <Content>A Card as a article containing content</Content>
+            <Content>
+              <Typography>A Card as a article containing content</Typography>
+            </Content>
           </Card>
         ),
       },
@@ -57,7 +63,9 @@ cardRenderedWithDifferentHtmlTags.story = {
 
 export const cardWithBar = () => (
   <Card barColor={(t) => t.color.shareville}>
-    <Content>A Card as a div containing content</Content>
+    <Content>
+      <Typography>A Card as a div containing content</Typography>
+    </Content>
   </Card>
 );
 
