@@ -77,6 +77,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     breakpoints,
     color,
     isHighContrastMode: a11yColors,
+    isDarkMode: darkColors,
     media: {
       between: (s1, s2) => {
         const number1 = isNumber(s1) ? s1 : s1.size;

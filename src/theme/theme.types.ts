@@ -445,4 +445,5 @@ export type Theme = {
     overlayInModal: 600;
   };
   isHighContrastMode: boolean;
+  isDarkMode: boolean;
 };
