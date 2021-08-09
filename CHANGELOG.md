@@ -1,3 +1,12 @@
+## [6.22.3](https://github.com/nordnet/ui/compare/v6.22.2...v6.22.3) (2021-08-09)
+
+
+### Bug Fixes
+
+* 🐛 flextable expandable row misalignment ([fbee138](https://github.com/nordnet/ui/commit/fbee138))
+* used themespacing ([4c28905](https://github.com/nordnet/ui/commit/4c28905))
+* using theme units in constants causes type AND snapshot issue. Since the flex props 20px and 40px were only used by the expanded element, I moved it into the styling of the ExpandElement. Now we can use theme units ([665f6d2](https://github.com/nordnet/ui/commit/665f6d2))
+
 ## [6.22.2](https://github.com/nordnet/ui/compare/v6.22.1...v6.22.2) (2021-08-09)
 
 
