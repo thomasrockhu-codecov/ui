@@ -1,3 +1,11 @@
+## [6.22.2](https://github.com/nordnet/ui/compare/v6.22.1...v6.22.2) (2021-08-09)
+
+
+### Bug Fixes
+
+* added missing snapshots ([c34e44d](https://github.com/nordnet/ui/commit/c34e44d))
+* **Input.Select stories:** added a story for truncating a custom selected element ([03d79d1](https://github.com/nordnet/ui/commit/03d79d1))
+
 ## [6.22.1](https://github.com/nordnet/ui/compare/v6.22.0...v6.22.1) (2021-08-05)
 
 
