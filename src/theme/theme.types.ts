@@ -221,6 +221,8 @@ export type ThemeColors = {
   listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];
+  /** white */
+  menuText: RawColor['white'];
   /** brandGreen */
   menuAccent1: RawColor['brandGreen'];
   /** brandTurquoise */
