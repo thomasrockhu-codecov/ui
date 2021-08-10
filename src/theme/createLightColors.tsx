@@ -42,7 +42,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     bulbBackground: rawColor.brandGreen,
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.white,
-    buttonTextLight: rawColor.gray2,
+    buttonTextLight: rawColor.gray7,
     buy: rawColor.cta,
     buyActive: rawColor.ctaPressed,
     borderActive: rawColor.cta,
