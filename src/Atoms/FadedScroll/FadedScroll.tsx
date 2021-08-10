@@ -54,6 +54,7 @@ export const FadedScroll: Component & {
   fadeHeight = 13,
   maxHeight,
   backgroundColor = '#ffffff',
+  backgroundColorDarkMode = '#282823',
 }) => {
   const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
   const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect<HTMLDivElement>();
@@ -69,6 +70,7 @@ export const FadedScroll: Component & {
       intersectionBottomRatio={intersectionBottomRatio}
       maxHeight={maxHeight}
       backgroundColor={backgroundColor}
+      backgroundColorDarkMode={backgroundColorDarkMode}
     >
       <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
         <Content ref={contentRef}>
