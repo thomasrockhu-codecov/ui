@@ -38,6 +38,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     bubbleBorder: rawColor.gray7,
     bubbleSecondaryText: rawColor.gray7,
     tableBorder: rawColor.gray0,
+    bulbForeground: rawColor.gray0,
     bulbBackground: rawColor.brandGreen,
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.gray0,

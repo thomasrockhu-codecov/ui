@@ -80,6 +80,8 @@ export type ThemeColors = {
   textLight: RawColor['white'];
   /** gray2 */
   label: RawColor['gray2'];
+  /** gray0 */
+  bulbForeground: RawColor['gray0'];
   /** brandGreen */
   bulbBackground: RawColor['brandGreen'];
   /** cta */
