@@ -15,13 +15,13 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
     rawColor.complementaryPink1,
     rawColor.complementaryTurquoise1,
-    rawColor.complementaryTurquoise1,
+    rawColor.complementaryTurquoise2,
     rawColor.complementaryGreen1,
     rawColor.brandPink,
     rawColor.complementaryGreen2,
-    rawColor.complementaryTurquoise2,
+    rawColor.complementaryBlue1,
     rawColor.complementaryPink2,
-    rawColor.complementaryTurquoise2,
+    rawColor.complementaryBlue2,
     rawColor.gray1,
   ];
 
@@ -184,7 +184,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     paletteGreen: rawColor.palettes.green,
     paletteBlue: rawColor.palettes.blue,
     paletteTurquoise: rawColor.palettes.turquoise,
-    paletteLineGraph: [rawColor.cta, rawColor.index, ...lineColors],
+    paletteLineGraph: [rawColor.complementaryTurquoise1, rawColor.index, ...lineColors],
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
