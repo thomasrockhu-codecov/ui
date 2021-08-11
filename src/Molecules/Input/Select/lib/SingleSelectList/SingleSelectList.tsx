@@ -107,7 +107,7 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
       ? ''
       : `
 &:hover { 
-  background: ${p.theme.color.background};
+  background: ${p.theme.color.inputHover};
 }
 `}
 `;
@@ -130,7 +130,7 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   `
       : ''}
   background: ${(p) => {
-    if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.backgroundInput;
     return p.theme.color.selectOptionBackground;
   }};
   ${hoverIfNotKeyboardNav}

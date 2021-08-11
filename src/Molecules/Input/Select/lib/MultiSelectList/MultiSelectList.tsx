@@ -25,7 +25,7 @@ const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: b
       ? ''
       : `
 &:hover { 
-  background: ${p.theme.color.background};
+  background: ${p.theme.color.inputHover};
   input + ${Checkbox.components.CheckmarkBox} {
     &::before {
       border: 1px solid ${p.theme.color.cta};
@@ -50,7 +50,7 @@ box-sizing: border-box;
 
   white-space: nowrap;
   background: ${(p) => {
-    if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.backgroundInput;
     return p.theme.color.selectOptionBackground;
   }};
   cursor: pointer;

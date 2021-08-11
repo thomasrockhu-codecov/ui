@@ -94,6 +94,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
     inputBorder: rawColor.gray4,
     inputBorderHover: rawColor.gray1,
+    inputHover: rawColor.gray7,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),

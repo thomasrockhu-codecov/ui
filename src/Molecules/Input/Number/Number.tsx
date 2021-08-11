@@ -122,6 +122,10 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   padding: ${(p) =>
     p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
+  color: ${(p) => p.theme.color.text};
+  &:disabled {
+    color: ${(p) => p.theme.color.disabledText};
+  }
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
   ${(p) =>

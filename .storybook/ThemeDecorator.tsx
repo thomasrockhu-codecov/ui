@@ -19,7 +19,7 @@ const getTheme = (darkMode) => {
 const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;
-    background: ${(p) => p.theme.color.backgroundInput};
+    background: ${(p) => p.theme.color.buttonTextLight};
 }
 
 #root {

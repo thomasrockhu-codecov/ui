@@ -185,6 +185,8 @@ export type ThemeColors = {
   inputBorder: RawColor['gray4'];
   /** gray1 */
   inputBorderHover: RawColor['gray1'];
+  /** gray7 */
+  inputHover: RawColor['gray7'];
   /** white */
   tableRowBackground: RawColor['white'];
   /** gray7 */
