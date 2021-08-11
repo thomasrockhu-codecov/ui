@@ -319,6 +319,10 @@ export type ThemeColors = {
   progressBarActive: RawColor['cta'];
   /** gray4 */
   progressBarNext: RawColor['gray4'];
+  /** gray5 */
+  graphVolume: RawColor['gray5'];
+  /** gray4 */
+  graphVolumeHover: RawColor['gray4'];
   /** gray6 */
   indexFundsBackground: RawColor['gray6'];
   /** brandBlue */

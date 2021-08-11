@@ -154,6 +154,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     progressBarFailure: rawColor.negative,
     progressBarWarning: rawColor.index,
     progressBarNext: rawColor.gray4,
+    graphVolume: rawColor.gray5,
+    graphVolumeHover: rawColor.gray4,
     indexFundsBackground: rawColor.gray6,
     indexFundsNorwegianAccent: rawColor.brandBlue,
     indexFundsFinnishAccent: [
