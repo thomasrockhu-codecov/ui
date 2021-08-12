@@ -15,7 +15,7 @@ const StyledCalendarDay = styled(Box)<{
   $isLastDay?: boolean;
   $withGutter?: boolean;
 }>`
-  background: ${({ theme }) => theme.color.backgroundInput};
+  background: ${({ theme }) => theme.color.inputBackground};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;

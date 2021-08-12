@@ -50,7 +50,7 @@ box-sizing: border-box;
 
   white-space: nowrap;
   background: ${(p) => {
-    if (p.focused && p.isKeyboardNavigation) return p.theme.color.backgroundInput;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.inputBackground;
     return p.theme.color.selectOptionBackground;
   }};
   cursor: pointer;

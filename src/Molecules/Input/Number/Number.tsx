@@ -29,7 +29,7 @@ const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`

@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItem from '../ListItem';
-import { List } from '../..';
+import { List, Typography } from '../..';
 
 export default {
   title: 'Atoms / List',
@@ -11,9 +11,15 @@ export default {
 
 export const basicUnorderedList = () => (
   <List>
-    <ListItem>List item</ListItem>
-    <ListItem>List item</ListItem>
-    <ListItem>List item</ListItem>
+    <ListItem>
+      <Typography>List item</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item</Typography>
+    </ListItem>
   </List>
 );
 
@@ -23,9 +29,15 @@ basicUnorderedList.story = {
 
 export const basicOrderedList = () => (
   <List as="ol">
-    <ListItem>List item 1</ListItem>
-    <ListItem>List item 2</ListItem>
-    <ListItem>List item 3</ListItem>
+    <ListItem>
+      <Typography>List item 1</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item 2</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item 3</Typography>
+    </ListItem>
   </List>
 );
 
@@ -35,9 +47,15 @@ basicOrderedList.story = {
 
 export const SeparatedList = () => (
   <List separated>
-    <ListItem>List item 1</ListItem>
-    <ListItem>List item 2</ListItem>
-    <ListItem>List item 3</ListItem>
+    <ListItem>
+      <Typography>List item 1</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item 2</Typography>
+    </ListItem>
+    <ListItem>
+      <Typography>List item 3</Typography>
+    </ListItem>
   </List>
 );
 

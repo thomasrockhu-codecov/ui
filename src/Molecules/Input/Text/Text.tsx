@@ -11,11 +11,27 @@ const height = css<Size>`
   height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
+const darkmodeAutocompleteStyles = css`
+  ${(p) =>
+    p.theme.isDarkMode
+      ? `
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+          border: 1px solid ${p.theme.color.inputBorder};
+          background-color: ${p.theme.color.inputBackground};
+          -webkit-text-fill-color: ${p.theme.color.text};
+          -webkit-box-shadow: 0 0 0px 1000px ${p.theme.color.inputBackground} inset;
+          transition: background-color 5000s ease-in-out 0s;
+        }`
+      : ''}
+`;
+
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -103,8 +119,10 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   ${borderStyles}
   ${background}
   ${placeholderNormalization}
-  ${(p) =>
-    p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : ''}
+  ${darkmodeAutocompleteStyles}
+  ${(
+    p,
+  ) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
