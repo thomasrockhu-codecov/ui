@@ -28,6 +28,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
+    
     background: rawColor.black,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
@@ -90,7 +91,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     inputBorderError: rawColor.negative,
     inputBorderHover: rawColor.gray1,
     inputBorderSuccess: rawColor.positive,
-    inputHover: rawColor.gray1,
+    inputHover: rawColor.gray2,
     
     investmentPredictionGraphBlue: rawColor.complementaryTurquoise2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
