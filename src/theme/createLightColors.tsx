@@ -1,11 +1,12 @@
 import Color from 'color';
-// import accessabilityColors from "./accessabilityColors";
+import accessabilityColors from './accessabilityColors';
 import defaultColors from './defaultColors';
 import { RawColors, ThemeColors, ThemeColorsVersion } from './theme.types';
 
 export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
   switch (scheme) {
-    // case 'a11y': return accessabilityColors;
+    case 'a11y':
+      return accessabilityColors;
     default:
       return defaultColors;
   }
