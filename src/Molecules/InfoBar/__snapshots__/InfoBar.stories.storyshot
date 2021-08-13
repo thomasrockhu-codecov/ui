@@ -261,23 +261,27 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   display: block;
 }
 
-.c17 {
+.c18 {
   fill: #282823;
 }
 
-.c18 {
+.c19 {
   fill: #00D200;
 }
 
-.c15 {
+.c16 {
   fill: #FF1900;
 }
 
-.c14 {
+.c15 {
   fill: #FFFFFF;
 }
 
 .c8 {
+  fill: #FFFFFF;
+}
+
+.c13 {
   fill: #FFFFFF;
 }
 
@@ -339,21 +343,21 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   background: #FF1900;
   color: #FFFFFF;
 }
 
-.c13 span {
+.c14 span {
   color: inherit;
 }
 
-.c13 a {
+.c14 a {
   font-weight: bold;
   color: #FFFFFF;
 }
 
-.c13 button {
+.c14 button {
   display: block;
   padding: 0;
   background: none;
@@ -361,21 +365,21 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   cursor: pointer;
 }
 
-.c16 {
+.c17 {
   background: #00D200;
   color: #282823;
 }
 
-.c16 span {
+.c17 span {
   color: inherit;
 }
 
-.c16 a {
+.c17 a {
   font-weight: bold;
   color: #282823;
 }
 
-.c16 button {
+.c17 button {
   display: block;
   padding: 0;
   background: none;
@@ -588,8 +592,8 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
                   d="M46 0l46 89.3913043H0z"
                 />
                 <path
+                  className="c13"
                   d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-                  fill="#FFF"
                 />
               </svg>
             </div>
@@ -620,7 +624,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c13"
+    className="c14"
   >
     <div
       className="c2"
@@ -650,11 +654,11 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
                   fillRule="evenodd"
                 >
                   <polygon
-                    className="c14"
+                    className="c15"
                     points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
                   />
                   <path
-                    className="c15"
+                    className="c16"
                     d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
                   />
                 </g>
@@ -687,7 +691,7 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   </code>
   <br />
   <div
-    className="c16"
+    className="c17"
   >
     <div
       className="c2"
@@ -717,11 +721,11 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
                   fillRule="evenodd"
                 >
                   <path
-                    className="c17"
+                    className="c18"
                     d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
                   />
                   <path
-                    className="c18"
+                    className="c19"
                     d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
                   />
                 </g>

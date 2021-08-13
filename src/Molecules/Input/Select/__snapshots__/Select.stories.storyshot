@@ -3172,13 +3172,13 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
-.c15 {
+.c16 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3190,7 +3190,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3198,7 +3198,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   display: flex;
 }
 
-.c23 {
+.c24 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3207,13 +3207,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c8 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3227,7 +3227,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3236,29 +3236,38 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3267,7 +3276,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3276,7 +3285,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3285,7 +3294,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c25 {
+.c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3294,7 +3303,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c19 {
+.c20 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -3311,13 +3320,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c9 {
+.c10 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -3326,15 +3335,15 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c9:focus-within {
+.c10:focus-within {
   border-color: #0046FF;
 }
 
-.c9.focus-within {
+.c10.focus-within {
   border-color: #0046FF;
 }
 
-.c20 {
+.c21 {
   height: 40px;
   border: 1px solid #FF1900;
   position: relative;
@@ -3343,19 +3352,19 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c20:hover {
+.c21:hover {
   border-color: #4B4B46;
 }
 
-.c20:focus-within {
+.c21:focus-within {
   border-color: #0046FF;
 }
 
-.c20.focus-within {
+.c21.focus-within {
   border-color: #0046FF;
 }
 
-.c24 {
+.c25 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -3364,19 +3373,19 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c24:hover {
+.c25:hover {
   border-color: #4B4B46;
 }
 
-.c24:focus-within {
+.c25:focus-within {
   border-color: #0046FF;
 }
 
-.c24.focus-within {
+.c25.focus-within {
   border-color: #0046FF;
 }
 
-.c26 {
+.c27 {
   height: 40px;
   border: 1px solid #00D200;
   position: relative;
@@ -3385,24 +3394,24 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c26:hover {
+.c27:hover {
   border-color: #4B4B46;
 }
 
-.c26:focus-within {
+.c27:focus-within {
   border-color: #0046FF;
 }
 
-.c26.focus-within {
+.c27.focus-within {
   border-color: #0046FF;
 }
 
-.c14 {
+.c15 {
   height: 100%;
   width: 100%;
 }
 
-.c12 {
+.c13 {
   background: #EBEBE8;
   width: 100%;
   height: 100%;
@@ -3422,11 +3431,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c12:active {
+.c13:active {
   color: inherit;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -3446,11 +3455,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c21:active {
+.c22:active {
   color: inherit;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3458,7 +3467,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-align: left;
 }
 
-.c16 {
+.c17 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -3470,11 +3479,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c6 {
+.c7 {
   width: 200px;
   display: inline-block;
 }
@@ -3547,13 +3556,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Disabled
+      <span
+        className="c3"
+      >
+        Disabled
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={true}
           onChange={[Function]}
         >
@@ -3611,31 +3624,31 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c9"
+                className="c10"
                 disabled={true}
                 label="User account"
                 onBlur={[Function]}
@@ -3643,13 +3656,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c12"
+                    className="c12 c13"
                     data-testid="input-select-button"
                     disabled={true}
                     form=""
@@ -3660,13 +3673,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3676,7 +3689,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3702,13 +3715,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Error
+      <span
+        className="c3"
+      >
+        Error
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -3766,31 +3783,31 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="error-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c20"
+                className="c21"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -3798,13 +3815,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -3815,13 +3832,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3831,7 +3848,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3845,10 +3862,10 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c22"
+                  className="c23"
                 >
                   <div
-                    className="c23"
+                    className="c24"
                   >
                     Error: 
                   </div>
@@ -3868,13 +3885,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Info
+      <span
+        className="c3"
+      >
+        Info
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -3932,31 +3953,31 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="info-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c24"
+                className="c25"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -3964,13 +3985,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -3981,13 +4002,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3997,7 +4018,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -4011,7 +4032,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c25"
+                  className="c26"
                 >
                   Some extra info
                 </span>
@@ -4029,13 +4050,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Success
+      <span
+        className="c3"
+      >
+        Success
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -4093,31 +4118,31 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="success-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c26"
+                className="c27"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -4125,13 +4150,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -4142,13 +4167,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -4158,7 +4183,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -12841,13 +12866,13 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Size S 1`] = `
-.c15 {
+.c16 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12859,7 +12884,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12867,7 +12892,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   display: flex;
 }
 
-.c23 {
+.c24 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -12876,13 +12901,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c8 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -12896,7 +12921,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -12905,29 +12930,38 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -12936,7 +12970,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -12945,7 +12979,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -12954,7 +12988,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c25 {
+.c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -12963,7 +12997,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c19 {
+.c20 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -12980,13 +13014,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c9 {
+.c10 {
   height: 32px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -12995,15 +13029,15 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c9:focus-within {
+.c10:focus-within {
   border-color: #0046FF;
 }
 
-.c9.focus-within {
+.c10.focus-within {
   border-color: #0046FF;
 }
 
-.c20 {
+.c21 {
   height: 32px;
   border: 1px solid #FF1900;
   position: relative;
@@ -13012,19 +13046,19 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c20:hover {
+.c21:hover {
   border-color: #4B4B46;
 }
 
-.c20:focus-within {
+.c21:focus-within {
   border-color: #0046FF;
 }
 
-.c20.focus-within {
+.c21.focus-within {
   border-color: #0046FF;
 }
 
-.c24 {
+.c25 {
   height: 32px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -13033,19 +13067,19 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c24:hover {
+.c25:hover {
   border-color: #4B4B46;
 }
 
-.c24:focus-within {
+.c25:focus-within {
   border-color: #0046FF;
 }
 
-.c24.focus-within {
+.c25.focus-within {
   border-color: #0046FF;
 }
 
-.c26 {
+.c27 {
   height: 32px;
   border: 1px solid #00D200;
   position: relative;
@@ -13054,24 +13088,24 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c26:hover {
+.c27:hover {
   border-color: #4B4B46;
 }
 
-.c26:focus-within {
+.c27:focus-within {
   border-color: #0046FF;
 }
 
-.c26.focus-within {
+.c27.focus-within {
   border-color: #0046FF;
 }
 
-.c14 {
+.c15 {
   height: 100%;
   width: 100%;
 }
 
-.c12 {
+.c13 {
   background: #EBEBE8;
   width: 100%;
   height: 100%;
@@ -13091,11 +13125,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-align: initial;
 }
 
-.c12:active {
+.c13:active {
   color: inherit;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -13115,11 +13149,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-align: initial;
 }
 
-.c21:active {
+.c22:active {
   color: inherit;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -13127,7 +13161,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-align: left;
 }
 
-.c16 {
+.c17 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -13139,11 +13173,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c6 {
+.c7 {
   width: 200px;
   display: inline-block;
 }
@@ -13216,13 +13250,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Disabled
+      <span
+        className="c3"
+      >
+        Disabled
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={true}
           onChange={[Function]}
         >
@@ -13280,31 +13318,31 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c9"
+                className="c10"
                 disabled={true}
                 label="User account"
                 onBlur={[Function]}
@@ -13313,13 +13351,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c12"
+                    className="c12 c13"
                     data-testid="input-select-button"
                     disabled={true}
                     form=""
@@ -13330,13 +13368,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -13346,7 +13384,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -13372,13 +13410,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Error
+      <span
+        className="c3"
+      >
+        Error
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -13436,31 +13478,31 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="error-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c20"
+                className="c21"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -13469,13 +13511,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -13486,13 +13528,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -13502,7 +13544,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -13516,10 +13558,10 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c22"
+                  className="c23"
                 >
                   <div
-                    className="c23"
+                    className="c24"
                   >
                     Error: 
                   </div>
@@ -13539,13 +13581,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Info
+      <span
+        className="c3"
+      >
+        Info
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -13603,31 +13649,31 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="info-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c24"
+                className="c25"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -13636,13 +13682,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -13653,13 +13699,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -13669,7 +13715,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -13683,7 +13729,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c25"
+                  className="c26"
                 >
                   Some extra info
                 </span>
@@ -13701,13 +13747,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Success
+      <span
+        className="c3"
+      >
+        Success
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -13765,31 +13815,31 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
           />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="success-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c26"
+                className="c27"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -13798,13 +13848,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -13815,13 +13865,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -13831,7 +13881,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"

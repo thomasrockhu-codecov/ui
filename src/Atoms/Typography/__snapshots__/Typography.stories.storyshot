@@ -164,11 +164,20 @@ exports[`Storyshots Atoms / Typography Caption 1`] = `
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 10px;
   line-height: 1.6;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -245,11 +254,15 @@ exports[`Storyshots Atoms / Typography Caption 1`] = `
     <div
       className="c2"
     >
-      Caption Default
+      <span
+        className="c3"
+      >
+        Caption Default
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
       >
         Caption text
       </span>
@@ -262,11 +275,15 @@ exports[`Storyshots Atoms / Typography Caption 1`] = `
     <div
       className="c2"
     >
-      Caption with bold text
+      <span
+        className="c3"
+      >
+        Caption with bold text
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
       >
         Caption bold text
       </span>
@@ -398,7 +415,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Default
+      <span
+        className="c3"
+      >
+        Default
+      </span>
     </div>
     <div>
       <span
@@ -415,7 +436,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: text
+      <span
+        className="c3"
+      >
+        Color: text
+      </span>
     </div>
     <div>
       <span
@@ -432,7 +457,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: positive
+      <span
+        className="c3"
+      >
+        Color: positive
+      </span>
     </div>
     <div>
       <span
@@ -449,7 +478,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: negative
+      <span
+        className="c3"
+      >
+        Color: negative
+      </span>
     </div>
     <div>
       <span
@@ -466,7 +499,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: warning
+      <span
+        className="c3"
+      >
+        Color: warning
+      </span>
     </div>
     <div>
       <span
@@ -483,7 +520,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: cta
+      <span
+        className="c3"
+      >
+        Color: cta
+      </span>
     </div>
     <div>
       <span
@@ -500,7 +541,11 @@ exports[`Storyshots Atoms / Typography Colors 1`] = `
     <div
       className="c2"
     >
-      Color: label
+      <span
+        className="c3"
+      >
+        Color: label
+      </span>
     </div>
     <div>
       <span
@@ -518,12 +563,21 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
   font-weight: 800;
   font-size: 46px;
   line-height: 1.0434782608695652;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -590,14 +644,14 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
 }
 
 @media (min-width:760px) {
-  .c3 {
+  .c4 {
     font-size: 48px;
     line-height: 1.0833333333333333;
   }
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 48px;
     line-height: 1.0833333333333333;
   }
@@ -614,11 +668,15 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
     <div
       className="c2"
     >
-      Hero Default
+      <span
+        className="c3"
+      >
+        Hero Default
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
       >
         Hero text
       </span>
@@ -631,11 +689,15 @@ exports[`Storyshots Atoms / Typography Hero 1`] = `
     <div
       className="c2"
     >
-      With bold font weight
+      <span
+        className="c3"
+      >
+        With bold font weight
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
       >
         Hero text
       </span>
@@ -740,7 +802,11 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
     <div
       className="c2"
     >
-      Primary default
+      <span
+        className="c3"
+      >
+        Primary default
+      </span>
     </div>
     <div>
       <span
@@ -757,7 +823,11 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
     <div
       className="c2"
     >
-      Primary with bold text
+      <span
+        className="c3"
+      >
+        Primary with bold text
+      </span>
     </div>
     <div>
       <span
@@ -774,7 +844,11 @@ exports[`Storyshots Atoms / Typography Primary 1`] = `
     <div
       className="c2"
     >
-      Primary with extrabold text
+      <span
+        className="c3"
+      >
+        Primary with extrabold text
+      </span>
     </div>
     <div>
       <span
@@ -793,11 +867,20 @@ exports[`Storyshots Atoms / Typography Secondary 1`] = `
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -874,11 +957,15 @@ exports[`Storyshots Atoms / Typography Secondary 1`] = `
     <div
       className="c2"
     >
-      Secondary
+      <span
+        className="c3"
+      >
+        Secondary
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
       >
         Secondary text
       </span>
@@ -891,11 +978,15 @@ exports[`Storyshots Atoms / Typography Secondary 1`] = `
     <div
       className="c2"
     >
-      Secondary with bold text
+      <span
+        className="c3"
+      >
+        Secondary with bold text
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
       >
         Secondary bold text
       </span>
@@ -910,11 +1001,20 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -991,11 +1091,15 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
     <div
       className="c2"
     >
-      Tertiary Default
+      <span
+        className="c3"
+      >
+        Tertiary Default
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
       >
         Tertiary text
       </span>
@@ -1008,11 +1112,15 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
     <div
       className="c2"
     >
-      Tertiary with bold text
+      <span
+        className="c3"
+      >
+        Tertiary with bold text
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
       >
         Tertiary bold text
       </span>
@@ -1088,12 +1196,21 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
   font-weight: 800;
   font-size: 24px;
   line-height: 1.1666666666666667;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1102,7 +1219,7 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
   line-height: 1.1666666666666667;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1169,13 +1286,6 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
 }
 
 @media (min-width:760px) {
-  .c3 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:760px) {
   .c4 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -1184,6 +1294,13 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
 
 @media (min-width:760px) {
   .c5 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
@@ -1200,24 +1317,11 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
     <div
       className="c2"
     >
-      Title1 Default
-    </div>
-    <div>
       <span
         className="c3"
       >
-        Title1 text
+        Title1 Default
       </span>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      With regular font weight
     </div>
     <div>
       <span
@@ -1234,11 +1338,36 @@ exports[`Storyshots Atoms / Typography Title1 1`] = `
     <div
       className="c2"
     >
-      With bold font weight
+      <span
+        className="c3"
+      >
+        With regular font weight
+      </span>
     </div>
     <div>
       <span
         className="c5"
+      >
+        Title1 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        With bold font weight
+      </span>
+    </div>
+    <div>
+      <span
+        className="c6"
       >
         Title1 text
       </span>
@@ -1252,12 +1381,21 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.2;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1266,7 +1404,7 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
   line-height: 1.2;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1333,13 +1471,6 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
 }
 
 @media (min-width:760px) {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
   .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
@@ -1348,6 +1479,13 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
 
 @media (min-width:760px) {
   .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -1364,24 +1502,11 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
     <div
       className="c2"
     >
-      Title2 Default
-    </div>
-    <div>
       <span
         className="c3"
       >
-        Title2 text
+        Title2 Default
       </span>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      With regular font weight
     </div>
     <div>
       <span
@@ -1398,11 +1523,36 @@ exports[`Storyshots Atoms / Typography Title2 1`] = `
     <div
       className="c2"
     >
-      With bold font weight
+      <span
+        className="c3"
+      >
+        With regular font weight
+      </span>
     </div>
     <div>
       <span
         className="c5"
+      >
+        Title2 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        With bold font weight
+      </span>
+    </div>
+    <div>
+      <span
+        className="c6"
       >
         Title2 text
       </span>
@@ -1416,12 +1566,21 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1430,7 +1589,7 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1497,13 +1656,6 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
 }
 
 @media (min-width:760px) {
-  .c3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
@@ -1512,6 +1664,13 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
 
 @media (min-width:760px) {
   .c5 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -1528,24 +1687,11 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
     <div
       className="c2"
     >
-      Title3 Default
-    </div>
-    <div>
       <span
         className="c3"
       >
-        Title3 text
+        Title3 Default
       </span>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      With regular font weight
     </div>
     <div>
       <span
@@ -1562,11 +1708,36 @@ exports[`Storyshots Atoms / Typography Title3 1`] = `
     <div
       className="c2"
     >
-      With bold font weight
+      <span
+        className="c3"
+      >
+        With regular font weight
+      </span>
     </div>
     <div>
       <span
         className="c5"
+      >
+        Title3 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        With bold font weight
+      </span>
+    </div>
+    <div>
+      <span
+        className="c6"
       >
         Title3 text
       </span>
@@ -1653,7 +1824,11 @@ exports[`Storyshots Atoms / Typography aria attributes 1`] = `
     <div
       className="c2"
     >
-      with aria-hidden
+      <span
+        className="c3"
+      >
+        with aria-hidden
+      </span>
     </div>
     <div>
       <span

@@ -418,7 +418,7 @@ exports[`Storyshots Molecules / Input / Textarea Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -430,13 +430,22 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -445,7 +454,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -454,7 +463,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -463,7 +472,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -480,55 +489,55 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   background-color: #FFFFFF;
 }
 
-.c8:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c8:focus {
+.c9:focus {
   border-color: #0046FF;
 }
 
-.c8::-webkit-input-placeholder {
+.c9::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c9::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c9:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c9::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c9:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c9:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c9:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c9:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -601,29 +610,33 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
     <div
       className="c2"
     >
-      Long values
+      <span
+        className="c3"
+      >
+        Long values
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
       >
         <label
-          className="c4"
+          className="c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               Too long label, goes into ellipsis. Consider smaller label or bigger input 
             </div>
             <span
-              className="c7"
+              className="c8"
             >
               <textarea
-                className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                className="NormalizedTextarea__Textarea-i5on9-0 c9"
                 placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                 rows={3}
               />
@@ -632,7 +645,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c9"
+            className="c10"
           >
             This is much necessary info wow
           </span>
@@ -647,29 +660,33 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
     <div
       className="c2"
     >
-      Long extraInfo
+      <span
+        className="c3"
+      >
+        Long extraInfo
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
       >
         <label
-          className="c4"
+          className="c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               Small label 
             </div>
             <span
-              className="c7"
+              className="c8"
             >
               <textarea
-                className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                className="NormalizedTextarea__Textarea-i5on9-0 c9"
                 placeholder=""
                 rows={3}
               />
@@ -678,7 +695,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c9"
+            className="c10"
           >
             Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
           </span>
@@ -1623,7 +1640,7 @@ Array [
       Required
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1635,13 +1652,22 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1650,7 +1676,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1659,7 +1685,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1676,55 +1702,55 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c8:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c8:focus {
+.c9:focus {
   border-color: #0046FF;
 }
 
-.c8::-webkit-input-placeholder {
+.c9::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::-moz-placeholder {
+.c9::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:-ms-input-placeholder {
+.c9:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8::placeholder {
+.c9::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c8:disabled::-webkit-input-placeholder {
+.c9:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::-moz-placeholder {
+.c9:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled:-ms-input-placeholder {
+.c9:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c8:disabled::placeholder {
+.c9:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -1801,29 +1827,33 @@ Array [
       <div
         className="c2"
       >
-        Default (without star)
+        <span
+          className="c3"
+        >
+          Default (without star)
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <textarea
-                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c9"
                   placeholder="Placeholder"
                   required={true}
                   rows={3}
@@ -1841,29 +1871,33 @@ Array [
       <div
         className="c2"
       >
-        With star
+        <span
+          className="c3"
+        >
+          With star
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label *
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <textarea
-                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c9"
                   placeholder="Placeholder"
                   required={true}
                   rows={3}

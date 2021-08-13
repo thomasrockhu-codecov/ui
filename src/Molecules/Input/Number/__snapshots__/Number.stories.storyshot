@@ -149,6 +149,7 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -207,6 +208,10 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -450,6 +455,7 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -503,6 +509,10 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -759,6 +769,7 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -817,6 +828,10 @@ exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -952,7 +967,7 @@ Array [
       Variant = "quiet"
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -964,7 +979,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +995,7 @@ Array [
   flex-grow: 1;
 }
 
-.c18 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -996,7 +1011,7 @@ Array [
   align-items: center;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1005,13 +1020,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c23 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1025,7 +1040,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1034,7 +1058,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1043,7 +1067,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1052,12 +1076,12 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c20 {
+.c21 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1065,7 +1089,7 @@ Array [
   right: 8px;
 }
 
-.c22 {
+.c23 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1073,7 +1097,7 @@ Array [
   left: 8px;
 }
 
-.c10 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1086,6 +1110,7 @@ Array [
   height: auto;
   padding: 0px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -1096,90 +1121,94 @@ Array [
   font-weight: bold;
 }
 
-.c10:hover {
+.c11:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c10:focus {
+.c11:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c10:focus {
+.c11:focus {
   border-width: 1px;
 }
 
-.c10::-webkit-input-placeholder {
+.c11::-webkit-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::-moz-placeholder {
+.c11::-moz-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:-ms-input-placeholder {
+.c11:-ms-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::placeholder {
+.c11::placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:focus::-webkit-input-placeholder {
+.c11:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:focus::-moz-placeholder {
+.c11:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c10:focus:-ms-input-placeholder {
+.c11:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:focus::placeholder {
+.c11:focus::placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::-webkit-input-placeholder {
+.c11:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::-moz-placeholder {
+.c11:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled:-ms-input-placeholder {
+.c11:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::placeholder {
+.c11:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled {
+.c11:disabled {
   color: #A0A09B;
 }
 
-.c10:focus {
+.c11:disabled {
+  color: #A0A09B;
+}
+
+.c11:focus {
   padding-left: 8px;
   padding-right: 0px;
 }
 
-.c10:-webkit-autofill {
+.c11:-webkit-autofill {
   -webkit-text-fill-color: #0046FF;
 }
 
-.c12 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1193,6 +1222,7 @@ Array [
   height: auto;
   padding: 0px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -1201,112 +1231,6 @@ Array [
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
-}
-
-.c12:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c12:focus {
-  border-width: 1px;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12::-moz-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12:-ms-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12::placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12:focus::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus::placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled {
-  color: #A0A09B;
-}
-
-.c12:focus {
-  padding-left: 8px;
-  padding-right: 0px;
-}
-
-.c12:-webkit-autofill {
-  -webkit-text-fill-color: #0046FF;
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 0 0 2px 0;
-  height: auto;
-  padding: 0px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.c13:hover {
-  border-color: #4B4B46;
-  z-index: 2;
 }
 
 .c13:focus {
@@ -1378,6 +1302,10 @@ Array [
   color: #A0A09B;
 }
 
+.c13:disabled {
+  color: #A0A09B;
+}
+
 .c13:focus {
   padding-left: 8px;
   padding-right: 0px;
@@ -1387,7 +1315,118 @@ Array [
   -webkit-text-fill-color: #0046FF;
 }
 
-.c16 {
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #FF1900;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: auto;
+  padding: 0px;
+  width: 100%;
+  color: #282823;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c14:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c14:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c14:focus {
+  border-width: 1px;
+}
+
+.c14::-webkit-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::-moz-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14:-ms-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c14:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled {
+  color: #A0A09B;
+}
+
+.c14:disabled {
+  color: #A0A09B;
+}
+
+.c14:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c14:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
+}
+
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1400,116 +1439,12 @@ Array [
   height: auto;
   padding: 0px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.c16:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c16:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c16:focus {
-  border-width: 1px;
-}
-
-.c16::-webkit-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c16::-moz-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c16:-ms-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c16::placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c16:focus::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c16:focus::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c16:focus:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c16:focus::placeholder {
-  color: #A0A09B;
-}
-
-.c16:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c16:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c16:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c16:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c16:disabled {
-  color: #A0A09B;
-}
-
-.c16:focus {
-  padding-left: 8px;
-  padding-right: 0px;
-}
-
-.c16:-webkit-autofill {
-  -webkit-text-fill-color: #0046FF;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 0 0 2px 0;
-  height: auto;
-  padding: 0px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
@@ -1589,20 +1524,20 @@ Array [
   color: #A0A09B;
 }
 
+.c17:disabled {
+  color: #A0A09B;
+}
+
 .c17:focus {
   padding-left: 8px;
-  padding-right: 32px;
+  padding-right: 0px;
 }
 
 .c17:-webkit-autofill {
   -webkit-text-fill-color: #0046FF;
 }
 
-.c17:focus + .c19 {
-  padding-right: 8px;
-}
-
-.c21 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1615,6 +1550,121 @@ Array [
   height: auto;
   padding: 0px;
   width: 100%;
+  color: #282823;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c18:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c18:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c18:focus {
+  border-width: 1px;
+}
+
+.c18::-webkit-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::-moz-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18:-ms-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled {
+  color: #A0A09B;
+}
+
+.c18:disabled {
+  color: #A0A09B;
+}
+
+.c18:focus {
+  padding-left: 8px;
+  padding-right: 32px;
+}
+
+.c18:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
+}
+
+.c18:focus + .c20 {
+  padding-right: 8px;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 0 0 2px 0;
+  height: auto;
+  padding: 0px;
+  width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   padding-top: 8px;
@@ -1625,99 +1675,103 @@ Array [
   font-weight: bold;
 }
 
-.c21:hover {
+.c22:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c21:focus {
+.c22:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c21:focus {
+.c22:focus {
   border-width: 1px;
 }
 
-.c21::-webkit-input-placeholder {
+.c22::-webkit-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21::-moz-placeholder {
+.c22::-moz-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21:-ms-input-placeholder {
+.c22:-ms-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21::placeholder {
+.c22::placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21:focus::-webkit-input-placeholder {
+.c22:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c21:focus::-moz-placeholder {
+.c22:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c21:focus:-ms-input-placeholder {
+.c22:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c21:focus::placeholder {
+.c22:focus::placeholder {
   color: #A0A09B;
 }
 
-.c21:disabled::-webkit-input-placeholder {
+.c22:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c21:disabled::-moz-placeholder {
+.c22:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c21:disabled:-ms-input-placeholder {
+.c22:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c21:disabled::placeholder {
+.c22:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c21:disabled {
+.c22:disabled {
   color: #A0A09B;
 }
 
-.c21:focus {
+.c22:disabled {
+  color: #A0A09B;
+}
+
+.c22:focus {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c21:-webkit-autofill {
+.c22:-webkit-autofill {
   -webkit-text-fill-color: #0046FF;
 }
 
-.c21:focus + .c19 {
+.c22:focus + .c20 {
   padding-right: 8px;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
 
-.c11 {
+.c12 {
   width: 100%;
   display: inline-block;
 }
@@ -1794,35 +1848,39 @@ Array [
       <div
         className="c2"
       >
-        Default
+        <span
+          className="c3"
+        >
+          Default
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -1846,35 +1904,39 @@ Array [
       <div
         className="c2"
       >
-        Full width
+        <span
+          className="c3"
+        >
+          Full width
+        </span>
       </div>
       <div>
         <div
-          className="c11"
+          className="c12"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -1898,35 +1960,39 @@ Array [
       <div
         className="c2"
       >
-        Disabled
+        <span
+          className="c3"
+        >
+          Disabled
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
                 disabled={true}
                 id="insert-unique-id"
                 inputMode="decimal"
@@ -1951,36 +2017,40 @@ Array [
       <div
         className="c2"
       >
-        Error
+        <span
+          className="c3"
+        >
+          Error
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
                 aria-invalid={true}
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -1996,10 +2066,10 @@ Array [
           </span>
           <div>
             <span
-              className="c14"
+              className="c15"
             >
               <div
-                className="c15"
+                className="c16"
               >
                 Error: 
               </div>
@@ -2016,35 +2086,39 @@ Array [
       <div
         className="c2"
       >
-        Success
+        <span
+          className="c3"
+        >
+          Success
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2068,35 +2142,39 @@ Array [
       <div
         className="c2"
       >
-        Right addon
+        <span
+          className="c3"
+        >
+          Right addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2108,7 +2186,7 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c18 c19 c20"
+                className="c19 c20 c21"
                 position="right"
                 variant="quiet"
               >
@@ -2126,35 +2204,39 @@ Array [
       <div
         className="c2"
       >
-        Left addon
+        <span
+          className="c3"
+        >
+          Left addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2166,12 +2248,12 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c18 c19 c22"
+                className="c19 c20 c23"
                 position="left"
               >
                 <svg
                   aria-hidden="true"
-                  className="c23"
+                  className="c24"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2184,7 +2266,7 @@ Array [
                 </svg>
               </div>
               <div
-                className="c18 c19 c20"
+                className="c19 c20 c21"
                 position="right"
                 variant="quiet"
               >
@@ -2243,7 +2325,7 @@ Array [
       Required
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2255,7 +2337,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2271,7 +2353,7 @@ Array [
   flex-grow: 1;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2280,13 +2362,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2300,7 +2382,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2309,7 +2400,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2318,12 +2409,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c10 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c11 {
+.c12 {
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -2350,6 +2441,55 @@ Array [
   flex: 1 0 auto;
 }
 
+.c12:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c12:active:enabled {
+  background-color: #0046FF;
+}
+
+.c12:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  color: #282823;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
 .c11:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2364,95 +2504,51 @@ Array [
   border-width: 1px;
 }
 
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10:focus {
-  border-width: 1px;
-}
-
-.c10::-webkit-input-placeholder {
+.c11::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::-moz-placeholder {
+.c11::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:-ms-input-placeholder {
+.c11:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::placeholder {
+.c11::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:disabled::-webkit-input-placeholder {
+.c11:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::-moz-placeholder {
+.c11:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled:-ms-input-placeholder {
+.c11:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::placeholder {
+.c11:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c3 {
+.c11:disabled {
+  color: #A0A09B;
+}
+
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -2529,35 +2625,39 @@ Array [
       <div
         className="c2"
       >
-        Default (without star)
+        <span
+          className="c3"
+        >
+          Default (without star)
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2570,19 +2670,19 @@ Array [
                 variant="normal"
               />
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2595,19 +2695,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2631,35 +2731,39 @@ Array [
       <div
         className="c2"
       >
-        With star
+        <span
+          className="c3"
+        >
+          With star
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label *
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2672,19 +2776,19 @@ Array [
                 variant="normal"
               />
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2697,19 +2801,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2891,6 +2995,7 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -2949,6 +3054,10 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -3197,6 +3306,7 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -3255,6 +3365,10 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -3508,6 +3622,7 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -3566,6 +3681,10 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -3783,6 +3902,7 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   padding-top: 8px;
@@ -3841,6 +3961,10 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -4064,6 +4188,7 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -4122,6 +4247,10 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -4379,6 +4508,7 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -4437,6 +4567,10 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -4707,6 +4841,7 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -4765,6 +4900,10 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -5035,6 +5174,7 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -5093,6 +5233,10 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -5342,6 +5486,7 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -5400,6 +5545,10 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 }
 
 .c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled {
   color: #A0A09B;
 }
 
@@ -5665,6 +5814,7 @@ Array [
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -5723,6 +5873,10 @@ Array [
 }
 
 .c10:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c10:disabled {
   color: #A0A09B;
 }
 
@@ -6026,6 +6180,7 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -6084,6 +6239,10 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 }
 
 .c10:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c10:disabled {
   color: #A0A09B;
 }
 
@@ -6368,6 +6527,7 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -6426,6 +6586,10 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -6597,6 +6761,7 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -6655,6 +6820,10 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -6736,7 +6905,7 @@ Array [
       Placeholders
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6748,7 +6917,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6764,7 +6933,7 @@ Array [
   flex-grow: 1;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6780,7 +6949,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c20 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -6789,13 +6958,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6809,7 +6978,7 @@ Array [
   display: block;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6823,7 +6992,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -6832,7 +7010,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -6841,12 +7019,12 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c10 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -6854,7 +7032,7 @@ Array [
   right: 8px;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -6862,7 +7040,7 @@ Array [
   left: 8px;
 }
 
-.c18 {
+.c19 {
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -6889,106 +7067,32 @@ Array [
   flex: 1 0 auto;
 }
 
-.c18:hover {
+.c19:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c18:focus {
+.c19:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c18:focus {
+.c19:focus {
   border-width: 1px;
 }
 
-.c18:first-of-type {
+.c19:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c18:active:enabled {
+.c19:active:enabled {
   background-color: #0046FF;
 }
 
-.c18:active:enabled svg {
+.c19:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10:focus {
-  border-width: 1px;
-}
-
-.c10::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c10::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c10:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c10::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c10:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c10:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c10:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c10:disabled::placeholder {
-  color: #A0A09B;
 }
 
 .c11 {
@@ -7004,10 +7108,12 @@ Array [
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
 }
 
 .c11:hover {
@@ -7064,7 +7170,11 @@ Array [
   color: #A0A09B;
 }
 
-.c14 {
+.c11:disabled {
+  color: #A0A09B;
+}
+
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -7077,6 +7187,85 @@ Array [
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c12:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   padding-top: 8px;
@@ -7084,61 +7273,65 @@ Array [
   padding-left: 32px;
 }
 
-.c14:hover {
+.c15:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c14:focus {
+.c15:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c14:focus {
+.c15:focus {
   border-width: 1px;
 }
 
-.c14::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::placeholder {
+.c15::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:disabled::-webkit-input-placeholder {
+.c15:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::-moz-placeholder {
+.c15:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled:-ms-input-placeholder {
+.c15:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::placeholder {
+.c15:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c17 {
+.c15:disabled {
+  color: #A0A09B;
+}
+
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -7151,6 +7344,7 @@ Array [
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -7158,61 +7352,65 @@ Array [
   z-index: 1;
 }
 
-.c17:hover {
+.c18:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c17:focus {
+.c18:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c17:focus {
+.c18:focus {
   border-width: 1px;
 }
 
-.c17::-webkit-input-placeholder {
+.c18::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::-moz-placeholder {
+.c18::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17:-ms-input-placeholder {
+.c18:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::placeholder {
+.c18::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17:disabled::-webkit-input-placeholder {
+.c18:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled::-moz-placeholder {
+.c18:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled:-ms-input-placeholder {
+.c18:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled::placeholder {
+.c18:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c3 {
+.c18:disabled {
+  color: #A0A09B;
+}
+
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -7289,35 +7487,39 @@ Array [
       <div
         className="c2"
       >
-        Default
+        <span
+          className="c3"
+        >
+          Default
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -7341,35 +7543,39 @@ Array [
       <div
         className="c2"
       >
-        With right addon
+        <span
+          className="c3"
+        >
+          With right addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -7382,7 +7588,7 @@ Array [
                 variant="normal"
               />
               <div
-                className="c12 c13"
+                className="c13 c14"
                 position="right"
                 variant="normal"
               >
@@ -7400,35 +7606,39 @@ Array [
       <div
         className="c2"
       >
-        With left addon
+        <span
+          className="c3"
+        >
+          With left addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -7441,12 +7651,12 @@ Array [
                 variant="normal"
               />
               <div
-                className="c12 c15"
+                className="c13 c16"
                 position="left"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="c17"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7470,35 +7680,39 @@ Array [
       <div
         className="c2"
       >
-        With steppers (placeholder removed)
+        <span
+          className="c3"
+        >
+          With steppers (placeholder removed)
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -7510,19 +7724,19 @@ Array [
                 variant="normal"
               />
               <button
-                className="c18"
+                className="c19"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="c20"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="c21"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7535,19 +7749,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c18"
+                className="c19"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="c20"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="c21"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7675,6 +7889,7 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: left;
   box-sizing: border-box;
   padding-top: 8px;
@@ -7732,6 +7947,10 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -7820,7 +8039,7 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7832,7 +8051,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7848,7 +8067,7 @@ Array [
   flex-grow: 1;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -7857,13 +8076,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7877,7 +8096,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -7886,7 +8114,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -7895,7 +8123,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -7904,12 +8132,12 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c11 {
+.c12 {
   width: 32px;
   height: 32px;
   background-color: #FFFFFF;
@@ -7936,6 +8164,55 @@ Array [
   flex: 1 0 auto;
 }
 
+.c12:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c12:active:enabled {
+  background-color: #0046FF;
+}
+
+.c12:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: 32px;
+  padding: 8px;
+  width: 100%;
+  color: #282823;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
 .c11:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -7950,165 +8227,47 @@ Array [
   border-width: 1px;
 }
 
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c10:focus {
-  border-width: 1px;
-}
-
-.c10::-webkit-input-placeholder {
+.c11::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::-moz-placeholder {
+.c11::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:-ms-input-placeholder {
+.c11:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10::placeholder {
+.c11::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c10:disabled::-webkit-input-placeholder {
+.c11:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::-moz-placeholder {
+.c11:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled:-ms-input-placeholder {
+.c11:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c10:disabled::placeholder {
+.c11:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c14:focus {
-  border-width: 1px;
-}
-
-.c14::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled::placeholder {
+.c11:disabled {
   color: #A0A09B;
 }
 
@@ -8119,13 +8278,14 @@ Array [
   margin: 0;
   overflow: visible;
   background-color: #FFFFFF;
-  border: 1px solid #FF1900;
+  border: 1px solid #BCBCB6;
   position: relative;
   border-width: 1px;
   height: 32px;
   padding: 8px;
   width: 100%;
-  text-align: center;
+  color: #282823;
+  text-align: left;
   box-sizing: border-box;
   margin: 0 -1px;
   min-width: 0;
@@ -8186,7 +8346,90 @@ Array [
   color: #A0A09B;
 }
 
-.c3 {
+.c15:disabled {
+  color: #A0A09B;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  border: 1px solid #FF1900;
+  position: relative;
+  border-width: 1px;
+  height: 32px;
+  padding: 8px;
+  width: 100%;
+  color: #282823;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c16:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c16:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c16:focus {
+  border-width: 1px;
+}
+
+.c16::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled {
+  color: #A0A09B;
+}
+
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -8263,35 +8506,39 @@ Array [
       <div
         className="c2"
       >
-        Default
+        <span
+          className="c3"
+        >
+          Default
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -8303,20 +8550,20 @@ Array [
                 variant="normal"
               />
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -8329,20 +8576,20 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -8366,35 +8613,39 @@ Array [
       <div
         className="c2"
       >
-        No steppers
+        <span
+          className="c3"
+        >
+          No steppers
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -8417,36 +8668,40 @@ Array [
       <div
         className="c2"
       >
-        Error
+        <span
+          className="c3"
+        >
+          Error
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
             htmlFor="insert-unique-id"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
             </span>
           </label>
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8 c9"
+              className="c9 c10"
             >
               <input
                 aria-invalid={true}
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -8458,20 +8713,20 @@ Array [
                 variant="normal"
               />
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -8484,20 +8739,20 @@ Array [
                 </svg>
               </button>
               <button
-                className="c11"
+                className="c12"
                 onClick={[Function]}
                 size="s"
                 type="button"
               >
                 <div
-                  className="c12"
+                  className="c13"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -8513,10 +8768,10 @@ Array [
           </span>
           <div>
             <span
-              className="c16"
+              className="c17"
             >
               <div
-                className="c12"
+                className="c13"
               >
                 Error: 
               </div>
@@ -8691,6 +8946,7 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -8749,6 +9005,10 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -8998,6 +9258,7 @@ Array [
   height: 40px;
   padding: 8px;
   width: 100%;
+  color: #282823;
   text-align: center;
   box-sizing: border-box;
   margin: 0 -1px;
@@ -9056,6 +9317,10 @@ Array [
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 

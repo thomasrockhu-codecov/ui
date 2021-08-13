@@ -313,7 +313,11 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
     <div
       className="c2"
     >
-      Black
+      <span
+        className="c3"
+      >
+        Black
+      </span>
     </div>
     <div>
       <span
@@ -338,7 +342,11 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
     <div
       className="c2"
     >
-      Blue
+      <span
+        className="c3"
+      >
+        Blue
+      </span>
     </div>
     <div>
       <span
@@ -363,7 +371,11 @@ exports[`Storyshots Molecules / Link With color prop 1`] = `
     <div
       className="c2"
     >
-      Inherit
+      <span
+        className="c3"
+      >
+        Inherit
+      </span>
     </div>
     <div>
       <div
@@ -593,7 +605,11 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
     <div
       className="c2"
     >
-      Link
+      <span
+        className="c3"
+      >
+        Link
+      </span>
     </div>
     <div>
       <span
@@ -618,7 +634,11 @@ exports[`Storyshots Molecules / Link With display prop 1`] = `
     <div
       className="c2"
     >
-      Button
+      <span
+        className="c3"
+      >
+        Button
+      </span>
     </div>
     <div>
       <span
@@ -846,7 +866,11 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
     <div
       className="c2"
     >
-      Link
+      <span
+        className="c3"
+      >
+        Link
+      </span>
     </div>
     <div>
       <span
@@ -871,7 +895,11 @@ exports[`Storyshots Molecules / Link With underline 1`] = `
     <div
       className="c2"
     >
-      Button
+      <span
+        className="c3"
+      >
+        Button
+      </span>
     </div>
     <div>
       <span
