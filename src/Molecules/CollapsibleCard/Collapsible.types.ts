@@ -3,6 +3,7 @@ import React from 'react';
 type RenderFunc = (collapsed: boolean) => React.ReactNode;
 
 export type CollapsibleProps = {
+  className?: string;
   title: React.ReactNode;
   collapsedInitial?: boolean;
   heading?: 'h1' | 'h2' | 'h3';

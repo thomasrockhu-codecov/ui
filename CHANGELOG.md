@@ -1,3 +1,96 @@
+## [6.22.3](https://github.com/nordnet/ui/compare/v6.22.2...v6.22.3) (2021-08-09)
+
+
+### Bug Fixes
+
+* 🐛 flextable expandable row misalignment ([fbee138](https://github.com/nordnet/ui/commit/fbee138))
+* used themespacing ([4c28905](https://github.com/nordnet/ui/commit/4c28905))
+* using theme units in constants causes type AND snapshot issue. Since the flex props 20px and 40px were only used by the expanded element, I moved it into the styling of the ExpandElement. Now we can use theme units ([665f6d2](https://github.com/nordnet/ui/commit/665f6d2))
+
+## [6.22.2](https://github.com/nordnet/ui/compare/v6.22.1...v6.22.2) (2021-08-09)
+
+
+### Bug Fixes
+
+* added missing snapshots ([c34e44d](https://github.com/nordnet/ui/commit/c34e44d))
+* **Input.Select stories:** added a story for truncating a custom selected element ([03d79d1](https://github.com/nordnet/ui/commit/03d79d1))
+
+## [6.22.1](https://github.com/nordnet/ui/compare/v6.22.0...v6.22.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* wrap onclose prop in useeffect ([a523dc5](https://github.com/nordnet/ui/commit/a523dc5))
+
+# [6.22.0](https://github.com/nordnet/ui/compare/v6.21.0...v6.22.0) (2021-07-26)
+
+
+### Features
+
+* **TP-16009:** add compability of data-prevent-order-side-panel-click-outside to Link, LinkSell, LinkBuy, Button ([1481df1](https://github.com/nordnet/ui/commit/1481df1))
+* **TP-16009:** disabled eslint warning ([97728ec](https://github.com/nordnet/ui/commit/97728ec))
+* **TP-16009:** updated snapshot ([0fdb354](https://github.com/nordnet/ui/commit/0fdb354))
+
+# [6.21.0](https://github.com/nordnet/ui/compare/v6.20.3...v6.21.0) (2021-07-23)
+
+
+### Features
+
+* 🎸 add className prop to CollapsibleCard ([581a2ec](https://github.com/nordnet/ui/commit/581a2ec))
+
+## [6.20.3](https://github.com/nordnet/ui/compare/v6.20.2...v6.20.3) (2021-07-22)
+
+
+### Bug Fixes
+
+* 🐛 prevent double expand chevron on flextable row mount ([2f09911](https://github.com/nordnet/ui/commit/2f09911))
+
+## [6.20.2](https://github.com/nordnet/ui/compare/v6.20.1...v6.20.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* 🐛 Fixed onBlur and onFocus in the Phone Input component ([2e7664b](https://github.com/nordnet/ui/commit/2e7664b))
+* 🐛 Switched to storybook actions in phone stories ([e71a567](https://github.com/nordnet/ui/commit/e71a567))
+* 🐛 Updated snapshots ([8e47339](https://github.com/nordnet/ui/commit/8e47339))
+
+## [6.20.1](https://github.com/nordnet/ui/compare/v6.20.0...v6.20.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* 🐛 Default phoneNumber value added to initial state ([ecabda9](https://github.com/nordnet/ui/commit/ecabda9))
+
+# [6.20.0](https://github.com/nordnet/ui/compare/v6.19.10...v6.20.0) (2021-07-16)
+
+
+### Features
+
+* 🎸 Phone input returns additional metadata onChange ([27ffd40](https://github.com/nordnet/ui/commit/27ffd40))
+
+## [6.19.10](https://github.com/nordnet/ui/compare/v6.19.9...v6.19.10) (2021-07-15)
+
+
+### Bug Fixes
+
+* revert to addListener in Media ([78f535a](https://github.com/nordnet/ui/commit/78f535a))
+
+## [6.19.9](https://github.com/nordnet/ui/compare/v6.19.8...v6.19.9) (2021-07-15)
+
+
+### Bug Fixes
+
+* restore to styled div outside render ([926e815](https://github.com/nordnet/ui/commit/926e815))
+* update deprecated event listener ([197e798](https://github.com/nordnet/ui/commit/197e798))
+
+## [6.19.8](https://github.com/nordnet/ui/compare/v6.19.7...v6.19.8) (2021-07-13)
+
+
+### Bug Fixes
+
+* **CssGrid:** stop warning about potential ie11 problems, we dont support it anymore ([af713fd](https://github.com/nordnet/ui/commit/af713fd))
+* **IconBase:** omit focus from being passed down to svg ([4b39fb5](https://github.com/nordnet/ui/commit/4b39fb5))
+
 ## [6.19.7](https://github.com/nordnet/ui/compare/v6.19.6...v6.19.7) (2021-06-22)
 
 

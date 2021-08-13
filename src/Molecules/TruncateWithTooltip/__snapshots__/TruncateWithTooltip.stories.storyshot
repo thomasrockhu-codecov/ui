@@ -179,9 +179,9 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c24 {
@@ -198,7 +198,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   display: block;
 }
 
-.c25 {
+.c26 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -212,7 +212,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   display: block;
 }
 
-.c26 {
+.c27 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -328,16 +328,6 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   padding-bottom: 4px;
 }
 
-.c22 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c20 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -348,6 +338,10 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
 
 .c16 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -355,8 +349,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -374,8 +367,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -457,6 +449,37 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   }
 }
 
+@media (min-width:976px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c22 {
+    display: none !important;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c25 {
+    display: none !important;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
@@ -464,12 +487,12 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   }
 }
 
-@media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) {
-
+@media (min-width:976px) {
+  .c16 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -647,7 +670,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c25"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -657,7 +680,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c26 c27"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -762,7 +785,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c25"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -772,7 +795,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c26 c27"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -877,7 +900,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c25"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -887,7 +910,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c26 c27"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
