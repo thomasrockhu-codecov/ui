@@ -1455,6 +1455,112 @@ export const GroupedOptions = () => {
   );
 };
 
+export const GroupedOptionsMultiselect = () => {
+  const options = [
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+
+    return (
+      <FlexedBox px={2}>
+        <Typography type="secondary">
+          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+        </Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect"
+      options={options}
+      label="Grouped options multiselect"
+      placeholder="Select options"
+      components={{ SelectedValue: CustomSelectedValue }}
+      multiselect
+    />
+  );
+};
+
+export const GroupedOptionsMultiselectControlled = () => {
+  const [value, setValue] = useState([]);
+  const options = [
+    {
+      label: `Select All`,
+      value: null,
+      [Input.Select.SYMBOL_ALL]: true,
+    },
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    const allSelected = machineState.context.selectedItems.some((x) => x[Input.Select.SYMBOL_ALL]);
+
+    const label = (() => {
+      if (allSelected) {
+        return 'All selected';
+      }
+      if (selectedCount === 0) {
+        return machineState.context.placeholder;
+      }
+      return `${selectedCount} selected`;
+    })();
+
+    return (
+      <FlexedBox px={2}>
+        <Typography type="secondary">{label}</Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect-test"
+      options={options}
+      value={value}
+      // @ts-ignore
+      onChange={setValue}
+      components={{
+        SelectedValue: CustomSelectedValue,
+      }}
+      multiselect
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
 export const onAColouredBackground = () => (
   <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
     <Input.Select
