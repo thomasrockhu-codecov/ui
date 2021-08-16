@@ -1,3 +1,11 @@
+## [6.22.4](https://github.com/nordnet/ui/compare/v6.22.3...v6.22.4) (2021-08-16)
+
+
+### Bug Fixes
+
+* make fullScreenMobile prop transient ([34ae0d4](https://github.com/nordnet/ui/commit/34ae0d4))
+* storyshots ([f5e4098](https://github.com/nordnet/ui/commit/f5e4098))
+
 ## [6.22.3](https://github.com/nordnet/ui/compare/v6.22.2...v6.22.3) (2021-08-09)
 
 
