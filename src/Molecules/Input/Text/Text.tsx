@@ -19,10 +19,8 @@ const darkmodeAutocompleteStyles = css`
         &:-webkit-autofill:hover,
         &:-webkit-autofill:focus {
           border: 1px solid ${p.theme.color.inputBorder};
-          background-color: ${p.theme.color.inputBackground};
           -webkit-text-fill-color: ${p.theme.color.text};
           -webkit-box-shadow: 0 0 0px 1000px ${p.theme.color.inputBackground} inset;
-          transition: background-color 5000s ease-in-out 0s;
         }`
       : ''}
 `;
