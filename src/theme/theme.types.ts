@@ -175,6 +175,8 @@ export type ThemeColors = {
   /** gray2 */
   label: RawColor['gray2'];
   /** complementaryTurquoise1 */
+  lineScaleValueColor: RawColor['complementaryTurquoise1'];
+  /** complementaryTurquoise1 */
   listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];

@@ -29,7 +29,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
-    
+
     background: rawColor.gray7,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
@@ -104,6 +104,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
 
     label: rawColor.gray2,
+    lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     loanRatesGraphColor2: rawColor.complementaryBlue2,
     marketingCardMortageHighlight: rawColor.brandTurquoise,
@@ -163,7 +164,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
-    
+
     segmentedControlBackground: rawColor.gray7,
 
     selectionCardBorder: rawColor.gray5,
