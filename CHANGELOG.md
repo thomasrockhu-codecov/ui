@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/nordnet/ui/compare/v7.0.0...v7.1.0) (2021-08-17)
+
+
+### Features
+
+* dark mode, fixing the prereöeae of 7.0.0 ([25a700f](https://github.com/nordnet/ui/commit/25a700f))
+
 # [7.0.0](https://github.com/nordnet/ui/compare/v6.23.0...v7.0.0) (2021-08-17)
 
 
