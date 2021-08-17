@@ -1,3 +1,37 @@
+# [6.23.0](https://github.com/nordnet/ui/compare/v6.22.4...v6.23.0) (2021-08-17)
+
+
+### Bug Fixes
+
+* a few more icon fixes ([3c567f4](https://github.com/nordnet/ui/commit/3c567f4))
+* adjusing more color ([728ae38](https://github.com/nordnet/ui/commit/728ae38))
+* adjusing more colors ([afee17c](https://github.com/nordnet/ui/commit/afee17c))
+* adjusing more colors ([102323c](https://github.com/nordnet/ui/commit/102323c))
+* adjusing more colors ([2ca4b9a](https://github.com/nordnet/ui/commit/2ca4b9a))
+* allow sell to be a color on buttons ([50e8833](https://github.com/nordnet/ui/commit/50e8833))
+* build fixed ([863c5f3](https://github.com/nordnet/ui/commit/863c5f3))
+* change around color ([6d7bdb1](https://github.com/nordnet/ui/commit/6d7bdb1))
+* change hover again ([03d2ae6](https://github.com/nordnet/ui/commit/03d2ae6))
+* graph colors ([6000439](https://github.com/nordnet/ui/commit/6000439))
+* graph colors ([71e7548](https://github.com/nordnet/ui/commit/71e7548))
+* high-contrast colors actually working in light mode ([2ec3f20](https://github.com/nordnet/ui/commit/2ec3f20))
+* input colors ([fd40ba0](https://github.com/nordnet/ui/commit/fd40ba0))
+* mess around with dark color ([1ce9e45](https://github.com/nordnet/ui/commit/1ce9e45))
+* mess around with dark color ([cfd4e23](https://github.com/nordnet/ui/commit/cfd4e23))
+* move dark and light mode to correct files ([70c0522](https://github.com/nordnet/ui/commit/70c0522))
+* remove not neccessary css props ([7bcbe13](https://github.com/nordnet/ui/commit/7bcbe13))
+* some more icons behave better in dark mode ([9a8a9c4](https://github.com/nordnet/ui/commit/9a8a9c4))
+* storybook now respects darkmode with bg colours ([d37d871](https://github.com/nordnet/ui/commit/d37d871))
+* storyshots ([985b2cf](https://github.com/nordnet/ui/commit/985b2cf))
+* update storyshots ([b282b1f](https://github.com/nordnet/ui/commit/b282b1f))
+* update storyshots ([a268da5](https://github.com/nordnet/ui/commit/a268da5))
+
+
+### Features
+
+* dark mode ([706c906](https://github.com/nordnet/ui/commit/706c906))
+* wip, laid some groundwork for dark mode, still need more info on actual colors ([863942d](https://github.com/nordnet/ui/commit/863942d))
+
 ## [6.22.4](https://github.com/nordnet/ui/compare/v6.22.3...v6.22.4) (2021-08-16)
 
 
