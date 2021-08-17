@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListItem } from '../..';
+import { ListItem, Typography } from '../..';
 
 export default {
   title: 'Atoms / ListItem',
@@ -10,7 +10,9 @@ export default {
 
 export const basicListItem = () => (
   <ul>
-    <ListItem>List item</ListItem>
+    <ListItem>
+      <Typography>List item</Typography>
+    </ListItem>
   </ul>
 );
 

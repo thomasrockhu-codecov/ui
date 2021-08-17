@@ -29,7 +29,7 @@ basicPill.story = {
 };
 
 export const pillWithBar = () => (
-  <Pill barColor={(t) => t.color.indicatorPillColor8}>
+  <Pill barColor={(t) => t.color.background}>
     <Flexbox container gutter={1} alignItems="center">
       <Flexbox item>
         <Button type="button" variant="neutral">
@@ -52,7 +52,7 @@ pillWithBar.story = {
   name: 'Pill with colored bar',
 };
 export const pillWithNoPadding = () => (
-  <Pill barColor={(t) => t.color.indicatorPillColor8} noPadding>
+  <Pill barColor={(t) => t.color.background} noPadding>
     <Typography type="tertiary" weight="bold">
       OMXS30
     </Typography>{' '}

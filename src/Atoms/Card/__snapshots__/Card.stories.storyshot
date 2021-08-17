@@ -6,6 +6,15 @@ exports[`Storyshots Atoms / Card Basic Card 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c1 {
   height: 50vh;
   display: -webkit-box;
@@ -28,15 +37,28 @@ exports[`Storyshots Atoms / Card Basic Card 1`] = `
   <div
     className="c1"
   >
-    A Card as a div containing content
+    <span
+      className="c2"
+    >
+      A Card as a div containing content
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
-.c3 {
+.c4 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -96,7 +118,7 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
   align-self: center;
 }
 
-.c4 {
+.c5 {
   height: 50vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,16 +145,24 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
     <div
       className="c2"
     >
-      Section
+      <span
+        className="c3"
+      >
+        Section
+      </span>
     </div>
     <div>
       <section
-        className="c3"
+        className="c4"
       >
         <div
-          className="c4"
+          className="c5"
         >
-          A Card as a section containing content
+          <span
+            className="c3"
+          >
+            A Card as a section containing content
+          </span>
         </div>
       </section>
     </div>
@@ -144,16 +174,24 @@ exports[`Storyshots Atoms / Card Card rendered with different html tags 1`] = `
     <div
       className="c2"
     >
-      Article
+      <span
+        className="c3"
+      >
+        Article
+      </span>
     </div>
     <div>
       <article
-        className="c3"
+        className="c4"
       >
         <div
-          className="c4"
+          className="c5"
         >
-          A Card as a article containing content
+          <span
+            className="c3"
+          >
+            A Card as a article containing content
+          </span>
         </div>
       </article>
     </div>
@@ -179,6 +217,15 @@ exports[`Storyshots Atoms / Card Card with colored top bar 1`] = `
   left: 0;
 }
 
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c1 {
   height: 50vh;
   display: -webkit-box;
@@ -201,7 +248,11 @@ exports[`Storyshots Atoms / Card Card with colored top bar 1`] = `
   <div
     className="c1"
   >
-    A Card as a div containing content
+    <span
+      className="c2"
+    >
+      A Card as a div containing content
+    </span>
   </div>
 </div>
 `;

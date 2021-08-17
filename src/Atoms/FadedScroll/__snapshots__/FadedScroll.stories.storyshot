@@ -6,7 +6,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
   overflow-x: hidden;
 }
 
-.c7 {
+.c8 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -34,6 +34,15 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
   display: block;
 }
 
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c6 {
   padding: 8px;
 }
@@ -55,7 +64,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
     z-index: 1;
     opacity: 0;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
   }
 }
 
@@ -76,7 +85,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
     z-index: 1;
     opacity: 0;
     bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
   }
 }
 
@@ -106,166 +115,294 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
       </ul>
       <div
-        className="c7"
+        className="c8"
       />
     </div>
   </div>
@@ -278,7 +415,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
   overflow-x: hidden;
 }
 
-.c7 {
+.c8 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -306,6 +443,15 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
   display: block;
 }
 
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c6 {
   padding: 8px;
 }
@@ -327,7 +473,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
     z-index: 1;
     opacity: 0;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
   }
 }
 
@@ -348,7 +494,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
     z-index: 1;
     opacity: 0;
     bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
   }
 }
 
@@ -378,166 +524,294 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c7"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c7"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c7"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c7"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c7"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c5 c6"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c7"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
       </ul>
       <div
-        className="c7"
+        className="c8"
       />
     </div>
   </div>
@@ -577,7 +851,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
   overflow-x: hidden;
 }
 
-.c8 {
+.c9 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -605,6 +879,15 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
   display: block;
 }
 
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c7 {
   padding: 8px;
 }
@@ -626,7 +909,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
     z-index: 1;
     opacity: 0;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
   }
 }
 
@@ -647,7 +930,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
     z-index: 1;
     opacity: 0;
     bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
   }
 }
 
@@ -693,166 +976,294 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
       </ul>
       <div
-        className="c8"
+        className="c9"
       />
     </div>
   </div>
@@ -893,7 +1304,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   z-index: 1;
   opacity: 0;
   top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
 }
 
 .c0::after {
@@ -908,7 +1319,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   z-index: 1;
   opacity: 0;
   bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
 }
 
 .c2 {
@@ -937,7 +1348,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   overflow-x: hidden;
 }
 
-.c8 {
+.c9 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -963,6 +1374,15 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 
 .c6 {
   display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c1 {
@@ -991,166 +1411,294 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c8"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c8"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c8"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c8"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c8"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c6 c7"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c8"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
       </ul>
       <div
-        className="c8"
+        className="c9"
       />
     </div>
   </div>
@@ -1163,7 +1711,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
   overflow-x: hidden;
 }
 
-.c6 {
+.c7 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -1180,6 +1728,15 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
 
 .c4 {
   display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c5 {
@@ -1203,7 +1760,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
     z-index: 1;
     opacity: 0;
     bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
   }
 }
 
@@ -1230,166 +1787,294 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
         <li
           className="c4 c5"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c6"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c6"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c6"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c6"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c6"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c6"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c6"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c6"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c6"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Lorem ipsum dolor sit amet
+          <span
+            className="c6"
+          >
+            Lorem ipsum dolor sit amet
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Class aptent taciti sociosqu
+          <span
+            className="c6"
+          >
+            Class aptent taciti sociosqu
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Quisque ac ullamcorper eros
+          <span
+            className="c6"
+          >
+            Quisque ac ullamcorper eros
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Etiam urna elit, mollis vel arcu id
+          <span
+            className="c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Sed consequat erat lacinia
+          <span
+            className="c6"
+          >
+            Sed consequat erat lacinia
+          </span>
         </li>
         <li
           className="c4 c5"
         >
-          Aliquam bibendum tortor dui
+          <span
+            className="c6"
+          >
+            Aliquam bibendum tortor dui
+          </span>
         </li>
       </ul>
       <div
-        className="c6"
+        className="c7"
       />
     </div>
   </div>

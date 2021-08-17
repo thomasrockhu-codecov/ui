@@ -67,7 +67,7 @@ const Indicator = styled('span').withConfig({
     theme.spacing.unit(4)}px;
   white-space: nowrap;
   text-align: center;
-  background: ${(p) => p.valueColor || p.theme.color.indicatorPillColor2};
+  background: ${(p) => p.valueColor || p.theme.color.background};
   color: ${({ theme }) => theme.color.textLight};
 `;
 
@@ -123,7 +123,7 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     border-left: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-top: ${({ theme }) => theme.spacing.unit(TRIANGLE_TOP_BORDER_SIZE)}px solid
-      ${(p) => p.valueColor || p.theme.color.indicatorPillColor2};
+      ${(p) => p.valueColor || p.theme.color.background};
   }
 `;
 

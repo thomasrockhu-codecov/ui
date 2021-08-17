@@ -29,7 +29,7 @@ const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -122,6 +122,10 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   padding: ${(p) =>
     p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
+  color: ${(p) => p.theme.color.text};
+  &:disabled {
+    color: ${(p) => p.theme.color.disabledText};
+  }
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
   ${(p) =>

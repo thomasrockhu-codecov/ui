@@ -7,4 +7,4 @@ export type Props = {
   invalidValue?: string;
 };
 
-export type DateTimeComponent = React.FunctionComponent<Props>;
+export type DateTimeComponent = React.FC<Props>;

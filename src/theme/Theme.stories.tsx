@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import MD from 'react-markdown';
 import { propOr } from 'ramda';
 import { createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr } from '..';
-import { rawColor } from './theme';
+import defaultColors from './defaultColors';
+import accessabilityColors from './accessabilityColors';
 import colorDocs from './Colors.md';
-import { Display } from '../common/Display';
 
 const Color = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(14)}px;
@@ -47,6 +47,7 @@ export const documentation = () => <MD source={colorDocs} />;
 
 export const colorsSemantic = () => {
   const a11yTheme = createTheme({ a11yColors: true });
+  const darkTheme = createTheme({ darkColors: true });
   return (
     <Table>
       <Thead>
@@ -54,6 +55,7 @@ export const colorsSemantic = () => {
           <Th>Name</Th>
           <Th>Default</Th>
           <Th>A11y</Th>
+          <Th>Dark</Th>
         </Tr>
       </Thead>
       <Tbody>
@@ -62,6 +64,7 @@ export const colorsSemantic = () => {
             <Td>{title}</Td>
             <Td>{colorWithValue(theme.color[title])}</Td>
             <Td>{colorWithValue(a11yTheme.color[title])}</Td>
+            <Td>{colorWithValue(darkTheme.color[title])}</Td>
           </Tr>
         ))}
       </Tbody>
@@ -77,18 +80,29 @@ export const colorsPalette = () => {
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-      <h1>⚠️ Internal object, use colors (semantic)</h1>
-      <Display
-        items={Object.entries(rawColor)?.map(([title, color]) => ({
-          title,
-          component: (
-            <>
-              <Color $color={color} />
-              <>{color}</>
-            </>
-          ),
-        }))}
-      />
+      <h1>⚠️ Internal object, use colors (semantic)</h1>(
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
+            <Th>Dark</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {Object.keys(defaultColors)
+            ?.filter((title) => title !== 'palettes')
+            ?.map((title) => (
+              <Tr key={`theme-${title}`}>
+                <Td>{title}</Td>
+                <Td>{colorWithValue(defaultColors[title])}</Td>
+                <Td>{colorWithValue(accessabilityColors[title])}</Td>
+              </Tr>
+            ))}
+        </Tbody>
+      </Table>
+      );
     </>
   );
 };

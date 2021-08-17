@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms / Spinner Colors 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,7 +78,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Default
+      <span
+        className="c3"
+      >
+        Default
+      </span>
     </div>
     <div />
   </div>
@@ -80,7 +93,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Color: text
+      <span
+        className="c3"
+      >
+        Color: text
+      </span>
     </div>
     <div />
   </div>
@@ -91,7 +108,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Color: positive
+      <span
+        className="c3"
+      >
+        Color: positive
+      </span>
     </div>
     <div />
   </div>
@@ -102,7 +123,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Color: negative
+      <span
+        className="c3"
+      >
+        Color: negative
+      </span>
     </div>
     <div />
   </div>
@@ -113,7 +138,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Color: warning
+      <span
+        className="c3"
+      >
+        Color: warning
+      </span>
     </div>
     <div />
   </div>
@@ -124,7 +153,11 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
     <div
       className="c2"
     >
-      Color: label
+      <span
+        className="c3"
+      >
+        Color: label
+      </span>
     </div>
     <div />
   </div>

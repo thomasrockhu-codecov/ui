@@ -27,7 +27,7 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
   padding-top: 0;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -52,7 +52,11 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
   display: block;
 }
 
-.c5 {
+.c3 {
+  fill: #FFFFFF;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -61,7 +65,7 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -77,7 +81,7 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
+.c5 {
   width: 100%;
 }
 
@@ -100,20 +104,20 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
         d="M46 0l46 89.3913043H0z"
       />
       <path
+        className="c3"
         d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-        fill="#FFF"
       />
     </svg>
     <div
-      className="c3 c4"
+      className="c4 c5"
     >
       <span
-        className="c5"
+        className="c6"
       >
         Warning, complex child
       </span>
       <span
-        className="c6"
+        className="c7"
       >
         <p>
           The message can also be structured as a more complex item than just a string
@@ -558,7 +562,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different scopes 1`] = `
 `;
 
 exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -575,16 +579,16 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   margin-right: -6px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 6px;
   padding-right: 6px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -595,7 +599,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -609,7 +613,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -623,7 +627,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -637,27 +641,40 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c18 {
+.c20 {
   fill: #00D200;
 }
 
-.c19 {
+.c21 {
+  fill: #FFF;
+}
+
+.c15 {
   fill: #FFF;
 }
 
 .c14 {
-  fill: #FFF;
-}
-
-.c13 {
   fill: #FF1900;
 }
 
-.c6 {
+.c7 {
   fill: #FFFFFF;
 }
 
-.c9 {
+.c18 {
+  fill: #FFFFFF;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -666,7 +683,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -675,35 +692,35 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   background-color: #F5F5F5;
   border-left: 4px solid #0046FF;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   background-color: #F5F5F5;
   border-left: 4px solid #FF1900;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c15 {
+.c16 {
   background-color: #F5F5F5;
   border-left: 4px solid #FFCF00;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c17 {
+.c19 {
   background-color: #F5F5F5;
   border-left: 4px solid #00D200;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   width: 100%;
 }
 
@@ -775,19 +792,23 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
     <div
       className="c2"
     >
-      info
+      <span
+        className="c3"
+      >
+        info
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c6"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -797,20 +818,20 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
               d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
             />
             <polygon
-              className="c6"
+              className="c7"
               points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
             />
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Info
             </span>
             <span
-              className="c10"
+              className="c11"
             >
               This is an information message
             </span>
@@ -826,19 +847,23 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
     <div
       className="c2"
     >
-      error
+      <span
+        className="c3"
+      >
+        error
+      </span>
     </div>
     <div>
       <div
-        className="c11"
+        className="c12"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -849,25 +874,25 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
               fillRule="evenodd"
             >
               <polygon
-                className="c13"
+                className="c14"
                 points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
               />
               <path
-                className="c14"
+                className="c15"
                 d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
               />
             </g>
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Error
             </span>
             <span
-              className="c10"
+              className="c11"
             >
               This is an error message
             </span>
@@ -883,19 +908,23 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
     <div
       className="c2"
     >
-      warning
+      <span
+        className="c3"
+      >
+        warning
+      </span>
     </div>
     <div>
       <div
-        className="c15"
+        className="c16"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c16"
+            className="c17"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -905,20 +934,20 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
               d="M46 0l46 89.3913043H0z"
             />
             <path
+              className="c18"
               d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-              fill="#FFF"
             />
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Warning
             </span>
             <span
-              className="c10"
+              className="c11"
             >
               This is a warning message
             </span>
@@ -934,19 +963,23 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
     <div
       className="c2"
     >
-      success
+      <span
+        className="c3"
+      >
+        success
+      </span>
     </div>
     <div>
       <div
-        className="c17"
+        className="c19"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c13"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -957,25 +990,25 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c18"
+                className="c20"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c19"
+                className="c21"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               Success
             </span>
             <span
-              className="c10"
+              className="c11"
             >
               This is a success message
             </span>
@@ -988,7 +1021,7 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
 `;
 
 exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1005,16 +1038,16 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
   margin-right: -6px;
 }
 
-.c4 > * {
+.c5 > * {
   padding-left: 6px;
   padding-right: 6px;
 }
 
-.c4 > *:not(:first-child) {
+.c5 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1025,7 +1058,7 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1039,11 +1072,20 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
   display: block;
 }
 
-.c6 {
+.c7 {
   fill: #FFFFFF;
 }
 
-.c9 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1052,7 +1094,7 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1061,14 +1103,14 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   background-color: #F5F5F5;
   border-left: 4px solid #0046FF;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   width: 100%;
 }
 
@@ -1140,19 +1182,23 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
     <div
       className="c2"
     >
-      With title
+      <span
+        className="c3"
+      >
+        With title
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c6"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1162,20 +1208,20 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
               d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
             />
             <polygon
-              className="c6"
+              className="c7"
               points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
             />
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c9"
+              className="c10"
             >
               This is a title
             </span>
             <span
-              className="c10"
+              className="c11"
             >
               This message has a title
             </span>
@@ -1191,19 +1237,23 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
     <div
       className="c2"
     >
-      Without title
+      <span
+        className="c3"
+      >
+        Without title
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
         scope="module"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c5"
+            className="c6"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1213,15 +1263,15 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
               d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
             />
             <polygon
-              className="c6"
+              className="c7"
               points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
             />
           </svg>
           <div
-            className="c7 c8"
+            className="c8 c9"
           >
             <span
-              className="c10"
+              className="c11"
             >
               This message does not have a title
             </span>
