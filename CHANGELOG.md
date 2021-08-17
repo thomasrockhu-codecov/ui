@@ -1,3 +1,10 @@
+## [7.1.1](https://github.com/nordnet/ui/compare/v7.1.0...v7.1.1) (2021-08-17)
+
+
+### Bug Fixes
+
+* 🐛 flextable styling syntax error in row ([1d73526](https://github.com/nordnet/ui/commit/1d73526))
+
 # [7.1.0](https://github.com/nordnet/ui/compare/v7.0.0...v7.1.0) (2021-08-17)
 
 
