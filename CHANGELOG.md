@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/nordnet/ui/compare/v6.23.0...v7.0.0) (2021-08-17)
+
+
+### Features
+
+* dark mode ([d164206](https://github.com/nordnet/ui/commit/d164206))
+
+
+### BREAKING CHANGES
+
+* Colors have been renamed, update accordingly
+
 # [6.23.0](https://github.com/nordnet/ui/compare/v6.22.4...v6.23.0) (2021-08-17)
 
 
