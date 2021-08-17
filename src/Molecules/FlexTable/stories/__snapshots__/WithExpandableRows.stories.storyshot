@@ -9176,33 +9176,33 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
 }
 
 @media (min-width:976px) {
-  .c2 > * {
+  .c2 {
     padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c2 > * > *:first-child {
+  .c2 > *:first-child {
     padding-left: 0;
   }
 
-  .c2 > * > *:nth-last-child(2) {
+  .c2 > *:nth-last-child(2) {
     padding-right: 0;
   }
 }
 
 @media (min-width:976px) {
-  .c13 > * {
+  .c13 {
     padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c13 > * > *:first-child {
+  .c13 > *:first-child {
     padding-left: 0;
   }
 
-  .c13 > * > *:nth-last-child(2) {
+  .c13 > *:nth-last-child(2) {
     padding-right: 0;
   }
 }

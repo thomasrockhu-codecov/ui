@@ -468,33 +468,33 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
 }
 
 @media (min-width:976px) {
-  .c4 > * {
+  .c4 {
     padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c4 > * > *:first-child {
+  .c4 > *:first-child {
     padding-left: 0;
   }
 
-  .c4 > * > *:nth-last-child(2) {
+  .c4 > *:nth-last-child(2) {
     padding-right: 0;
   }
 }
 
 @media (min-width:976px) {
-  .c22 > * {
+  .c22 {
     padding-left: 0px;
     border-left: 2px solid transparent;
     border-bottom: 1px solid #EBEBE8;
   }
 
-  .c22 > * > *:first-child {
+  .c22 > *:first-child {
     padding-left: 0;
   }
 
-  .c22 > * > *:nth-last-child(2) {
+  .c22 > *:nth-last-child(2) {
     padding-right: 0;
   }
 }

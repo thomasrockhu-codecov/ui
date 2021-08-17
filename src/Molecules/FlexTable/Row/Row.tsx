@@ -33,8 +33,8 @@ const getExpandableStyles = (
   &:first-child {
     padding-left: 0;
   }
-
   ${!p.expandable ? '&:nth-last-child(2) { padding-right: 0; }' : ''}
+ }
 `;
 
 type ScreenSizeConfigurableProps = { expandable: boolean };
