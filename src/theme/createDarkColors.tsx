@@ -27,77 +27,84 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
-    
+
     background: rawColor.black,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
-  
+
     barScaleActiveBar: rawColor.complementaryTurquoise1,
     barScaleInactiveBar: rawColor.gray6,
-  
+
     borderActive: rawColor.brandTurquoise,
-  
+
     bubbleBackground: rawColor.gray1,
     bubbleBorder: rawColor.gray2,
     bubbleSecondaryText: rawColor.gray7,
-  
+
     bulbBackground: rawColor.brandGreen,
     bulbForeground: rawColor.gray0,
-  
+
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.gray0,
     buttonTextLight: rawColor.white,
-  
+
     buy: rawColor.brandTurquoise,
     buyActive: rawColor.ctaPressed,
-  
+
     card: rawColor.gray0,
     cta: rawColor.brandTurquoise,
-  
+
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
-  
+
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
-  
+
     disabledBackground: rawColor.gray1,
     disabledText: rawColor.gray3,
-  
+
     divider: rawColor.gray1,
     emptyState: rawColor.gray4,
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
-    
+
     generationSavingsTimelineColor1: rawColor.complementaryGreen1,
     generationSavingsTimelineColor2: rawColor.complementaryPink1,
     generationSavingsTimelineColor3: rawColor.brandTurquoise,
     generationSavingsTimelineColor4: rawColor.complementaryTurquoise1,
-    
+
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
-    
+
     indexFundsBackground: rawColor.gray6,
-    indexFundsFinnishAccent: [rawColor.brandPink, rawColor.brandTurquoise, rawColor.complementaryTurquoise2, rawColor.black, rawColor.complementaryTurquoise1],
+    indexFundsFinnishAccent: [
+      rawColor.brandPink,
+      rawColor.brandTurquoise,
+      rawColor.complementaryTurquoise2,
+      rawColor.black,
+      rawColor.complementaryTurquoise1,
+    ],
     indexFundsNorwegianAccent: rawColor.brandTurquoise,
-    
+
     inputBackground: rawColor.gray2,
     inputBorder: rawColor.gray4,
     inputBorderError: rawColor.negative,
     inputBorderHover: rawColor.gray1,
     inputBorderSuccess: rawColor.positive,
     inputHover: rawColor.gray2,
-    
+
     investmentPredictionGraphBlue: rawColor.complementaryTurquoise2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
     investmentPredictionGraphPink: rawColor.complementaryPink1,
     investmentPredictionGraphTurquoise: rawColor.complementaryTurquoise2,
-    
+
     label: rawColor.gray3,
+    lineScaleValueColor: rawColor.complementaryTurquoise1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(),
     loanRatesGraphColor2: rawColor.complementaryTurquoise2,
     marketingCardMortageHighlight: rawColor.brandTurquoise,
@@ -108,16 +115,16 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     menuAccent4: rawColor.brandPink,
     menuAccent5: rawColor.brandTurquoise,
     menuText: rawColor.white,
-    
+
     messageCentralFaqButtonBorder: rawColor.gray4,
     messageCentralFaqIcon: rawColor.gray5,
-    
+
     modalBackdrop: Color(rawColor.gray2).alpha(0.63).rgb().string(),
     module: rawColor.black,
-    
+
     negative: rawColor.negative,
     negativeBlackBackground: rawColor.negative,
-    
+
     onboardingAccentBlue: rawColor.brandTurquoise,
     onboardingAccentGreen: rawColor.brandGreen,
     onboardingAccentPink: rawColor.brandPink,
@@ -132,7 +139,13 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     paletteBlue: rawColor.palettes.blue,
     paletteGreen: rawColor.palettes.green,
     paletteLineGraph: [rawColor.complementaryTurquoise1, rawColor.index, ...lineColors],
-    paletteMap: [rawColor.complementaryTurquoise2, rawColor.complementaryTurquoise1, rawColor.brandTurquoise, rawColor.gray1, rawColor.gray3],
+    paletteMap: [
+      rawColor.complementaryTurquoise2,
+      rawColor.complementaryTurquoise1,
+      rawColor.brandTurquoise,
+      rawColor.gray1,
+      rawColor.gray3,
+    ],
     palettePink: rawColor.palettes.pink,
     paletteTurquoise: rawColor.palettes.turquoise,
 
@@ -153,7 +166,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     searchText: rawColor.gray7,
 
     segmentedControlBackground: rawColor.gray1,
-    
+
     selectionCardBorder: rawColor.gray5,
     selectionCardText: rawColor.gray2,
     selectOptionBackground: rawColor.gray1,
@@ -194,30 +207,33 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.gray0,
     tableRowHover: rawColor.gray1,
-    
+
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
-    
+
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.negative,
     timelineNext: rawColor.gray4,
     timelineSuccess: rawColor.positive,
     timelineWarning: rawColor.index,
-    
+
     transferPendingIconColor: rawColor.index,
     transferProgressBar1: rawColor.brandPink,
     transferProgressBar2: rawColor.positive,
     transferProgressBar3: rawColor.gray5,
     transferProgressBarText1: rawColor.gray1,
     transferProgressBarText2: rawColor.gray2,
-    transferStatusBannerBackground1: Color(rawColor.complementaryTurquoise1)      .alpha(0.1)      .rgb()      .string(),
+    transferStatusBannerBackground1: Color(rawColor.complementaryTurquoise1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
     transferStatusBannerBackground2: Color(rawColor.complementaryPink1).alpha(0.1).rgb().string(),
     transferStatusBannerBackground3: Color(rawColor.index).alpha(0.1).rgb().string(),
     transferStatusBannerChevron: rawColor.gray0,
     transferStatusBannerText1: rawColor.complementaryTurquoise1,
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
-    
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
