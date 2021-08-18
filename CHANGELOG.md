@@ -1,3 +1,10 @@
+## [7.1.2](https://github.com/nordnet/ui/compare/v7.1.1...v7.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* add linescale color ([1afb61d](https://github.com/nordnet/ui/commit/1afb61d))
+
 ## [7.1.1](https://github.com/nordnet/ui/compare/v7.1.0...v7.1.1) (2021-08-17)
 
 
