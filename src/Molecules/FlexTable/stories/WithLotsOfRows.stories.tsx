@@ -1,8 +1,5 @@
 import React, { useMemo, useState } from 'react';
 import R from 'ramda';
-import styled from 'styled-components';
-import { FixedSizeList as List } from 'react-window';
-import AutoSizer from 'react-virtualized-auto-sizer';
 import { number } from '@storybook/addon-knobs';
 import FlexTable from '../FlexTable';
 import { Box, Typography } from '../../..';
@@ -61,10 +58,10 @@ export const BigTable = () => {
       const rowsLength = number('Number of rows', 100);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-        rowsLength,
-        columnsLength,
-      ]);
+      const tableData = useMemo(
+        () => generateTableData(rowsLength, columnsLength),
+        [rowsLength, columnsLength],
+      );
       const sortedData = useMemo(() => {
         if (sort.sortOrder === 'none') {
           return tableData;
@@ -117,114 +114,16 @@ export const BigTable = () => {
   );
 };
 
-const VirtualizedRow: any = styled(FlexTable.Row).attrs({
-  style: (p: { style: React.CSSProperties }) => p.style,
-})``;
-
-const VirtualizedTableRow = React.memo(({ data, style }: any) => (
-  <VirtualizedRow style={style}>
-    {Object.keys(R.omit(['rowId'], data))?.map((valueKey, index) => (
-      <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
-        {data[valueKey].value}
-      </FlexTable.Cell>
-    ))}
-  </VirtualizedRow>
-));
-
-const VirtualizedBigTableRow = ({ data: items, index, style }: any) => (
-  <VirtualizedTableRow key={items[index].rowId} data={items[index]} style={style} />
-);
-
-const FullHeightDiv = styled.div`
-  display: flex;
-  flex: 1 0;
-  height: 100vh;
-`;
-
-export const VirtualizedTable = () => {
-  const VirtualizedTableExample = () => {
-    const ReactComponent = () => {
-      const rowsLength = number('Number of rows', 100);
-      const columnsLength = number('Number of columns', 10);
-      const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-        rowsLength,
-        columnsLength,
-      ]);
-      const sortedData = useMemo(() => {
-        if (sort.sortOrder === 'none') {
-          return tableData;
-        }
-        const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-        return tableData.slice(0).sort((rowA, rowB) => {
-          if (sort.sortOrder === 'ascending') {
-            return getValue(rowB).localeCompare(getValue(rowA));
-          }
-
-          if (sort.sortOrder === 'descending') {
-            return getValue(rowA).localeCompare(getValue(rowB));
-          }
-
-          return 0;
-        });
-      }, [tableData, sort]);
-
-      return (
-        <FullHeightDiv>
-          <FlexTable>
-            <FlexTable.HeaderRow>
-              {[...Array(columnsLength)]?.map((_, index) => (
-                <FlexTable.Header
-                  columnId={`column${index + 1}`}
-                  key={`column${index + 1}`}
-                  sortable
-                  onSort={(columnId, nextSortOrder) => {
-                    setSort({ columnId, sortOrder: nextSortOrder });
-                  }}
-                >
-                  Header {index + 1}
-                </FlexTable.Header>
-              ))}
-            </FlexTable.HeaderRow>
-            <AutoSizer>
-              {({ height, width }: any) => (
-                <List
-                  height={height}
-                  width={width}
-                  itemData={sortedData}
-                  itemCount={sortedData.length}
-                  itemSize={25}
-                  overscanCount={10}
-                >
-                  {VirtualizedBigTableRow}
-                </List>
-              )}
-            </AutoSizer>
-          </FlexTable>
-        </FullHeightDiv>
-      );
-    };
-    return <ReactComponent />;
-  };
-
-  return (
-    <StyledBackground>
-      <Typography type="title3">Virtualized FlexTable</Typography>
-      <VirtualizedTableExample />
-    </StyledBackground>
-  );
-};
-
 export const BigTableWithoutStickyHeader = () => {
   const BigTableWithoutStickyHeaderExample = () => {
     const ReactComponent = () => {
       const rowsLength = number('Number of rows', 500);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-        rowsLength,
-        columnsLength,
-      ]);
+      const tableData = useMemo(
+        () => generateTableData(rowsLength, columnsLength),
+        [rowsLength, columnsLength],
+      );
       const sortedData = useMemo(() => {
         const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
         return tableData.sort((rowA, rowB) => {
@@ -275,10 +174,10 @@ export const MultipleBigTablesWithStickyHeaders = () => {
     const rowsLength = number('Number of rows', 100);
     const columnsLength = number('Number of columns', 5);
     const [sort, setSort] = useState<any>({});
-    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-      rowsLength,
-      columnsLength,
-    ]);
+    const tableData = useMemo(
+      () => generateTableData(rowsLength, columnsLength),
+      [rowsLength, columnsLength],
+    );
     const sortedData = useMemo(() => {
       const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
       return tableData.sort((rowA, rowB) => {

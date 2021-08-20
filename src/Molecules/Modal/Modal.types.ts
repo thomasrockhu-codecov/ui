@@ -18,13 +18,13 @@ export type InnerProps = {
 
 export type BackdropProps = {
   onClick: (e: React.ChangeEvent<HTMLElement>) => void;
-  fullScreenMobile?: boolean;
+  $fullScreenMobile?: boolean;
 };
 
 export type DialogProps = {
   show: boolean;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
-  fullScreenMobile?: boolean;
+  $fullScreenMobile?: boolean;
   isStatusModal?: boolean;
 };
 

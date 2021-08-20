@@ -23,7 +23,9 @@ module.exports = {
         },
       },
     },
+    'storybook-dark-mode',
   ],
+
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
     config.entry.unshift(require.resolve('focus-within-polyfill'));

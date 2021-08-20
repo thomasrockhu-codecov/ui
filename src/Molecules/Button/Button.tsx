@@ -105,7 +105,9 @@ export const Button: React.ForwardRefExoticComponent<
 
   if (colorFromTheme && (isPrimary(variant) || isSecondary(variant))) {
     assert(
-      colorFromTheme === theme.color.cta || colorFromTheme === theme.color.negative,
+      colorFromTheme === theme.color.cta ||
+        colorFromTheme === theme.color.negative ||
+        colorFromTheme === theme.color.sell,
       'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` for primary and secondary variant.',
     );
   }

@@ -14,9 +14,7 @@ const getExpandableStyles = (
     theme: Theme;
   },
 ) => `
-  padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
-  padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
-
+  padding-left: ${p.expandable ? p.theme.spacing.unit(2) : 0}px;
   border-left: ${p.theme.spacing.unit(0.5)}px solid ${
   p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
 };
@@ -30,16 +28,13 @@ const getExpandableStyles = (
    }
    return `border-bottom: 1px solid ${p.separatorColor(p.theme)};`;
  })()}
-   
-  & > * {
-    &:first-child {
-      padding-left: 0;
-    }
 
-    &:nth-last-child(${p.expandable ? 1 : 2}) {
-      padding-right: 0;
-    }
+ & > * {
+  &:first-child {
+    padding-left: 0;
   }
+  ${!p.expandable ? '&:nth-last-child(2) { padding-right: 0; }' : ''}
+ }
 `;
 
 type ScreenSizeConfigurableProps = { expandable: boolean };
@@ -118,9 +113,13 @@ const Row: RowComponent = ({
     );
   }
 
-  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<'expandable'>(
-    'expandable',
-  );
+  const {
+    xs: xsRow,
+    sm: smRow,
+    md: mdRow,
+    lg: lgRow,
+    xl: xlRow,
+  } = useFlexTable<'expandable'>('expandable');
   const {
     xs: xsFlexbox,
     sm: smFlexbox,

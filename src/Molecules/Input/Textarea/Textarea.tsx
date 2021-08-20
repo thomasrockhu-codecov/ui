@@ -10,7 +10,7 @@ const hasError = (error?: Props['error']) => error && error !== '';
 
 const background = css<Pick<Props, 'disabled'>>`
   background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`

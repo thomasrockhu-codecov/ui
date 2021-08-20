@@ -164,6 +164,7 @@ Array [
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -486,6 +487,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -921,6 +923,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c10,
@@ -1323,6 +1326,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -1650,6 +1654,7 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c12,
@@ -1702,6 +1707,18 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
   }
 }
 
+@media not all and (min-width:760px) {
+  .c3 {
+    display: none !important;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c5 {
+    display: none !important;
+  }
+}
+
 @media (min-width:760px) {
   .c4 {
     font-size: 24px;
@@ -1713,18 +1730,6 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
   .c6 {
     font-size: 20px;
     line-height: 1.2;
-  }
-}
-
-@media not all and (min-width:760px) {
-  .c3 {
-    display: none;
-  }
-}
-
-@media not all and (max-width:759px) {
-  .c5 {
-    display: none;
   }
 }
 
@@ -1975,6 +1980,7 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,

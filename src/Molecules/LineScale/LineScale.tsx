@@ -61,13 +61,11 @@ const Indicator = styled('span').withConfig({
   padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   ${(p) => p.leftCollision && leftCollisionStyle}
   ${(p) => p.rightCollision && rightCollisionStyle}
-  ${(p) =>
-    !p.leftCollision && !p.rightCollision && transformStyle}
-  height: ${({ theme }) =>
-    theme.spacing.unit(4)}px;
+  ${(p) => !p.leftCollision && !p.rightCollision && transformStyle}
+  height: ${({ theme }) => theme.spacing.unit(4)}px;
   white-space: nowrap;
   text-align: center;
-  background: ${(p) => p.valueColor || p.theme.color.indicatorPillColor2};
+  background: ${(p) => p.valueColor || p.theme.color.lineScaleValueColor};
   color: ${({ theme }) => theme.color.textLight};
 `;
 
@@ -80,10 +78,8 @@ const AverageLabel = styled('span').withConfig({
   margin-right: ${(p) => p.averageValue}%;
   ${(p) => p.leftCollision && leftCollisionStyle}
   ${(p) => p.rightCollision && rightCollisionStyle}
-  ${(p) =>
-    !p.leftCollision && !p.rightCollision && transformStyle}
-  padding: 2px ${({ theme }) =>
-    theme.spacing.unit(1.5)}px;
+  ${(p) => !p.leftCollision && !p.rightCollision && transformStyle}
+  padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   white-space: nowrap;
   text-align: center;
   color: ${({ theme }) => theme.color.label};
@@ -123,7 +119,7 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     border-left: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-top: ${({ theme }) => theme.spacing.unit(TRIANGLE_TOP_BORDER_SIZE)}px solid
-      ${(p) => p.valueColor || p.theme.color.indicatorPillColor2};
+      ${(p) => p.valueColor || p.theme.color.lineScaleValueColor};
   }
 `;
 

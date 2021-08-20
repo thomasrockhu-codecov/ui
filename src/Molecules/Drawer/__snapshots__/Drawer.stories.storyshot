@@ -716,7 +716,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="6val-Drawer"
+              id="11val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -1152,7 +1152,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="5val-Drawer"
+              id="9val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -1476,7 +1476,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="9val-Drawer"
+              id="17val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -1782,7 +1782,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="4val-Drawer"
+              id="7val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -2124,7 +2124,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="2val-Drawer"
+              id="3val-Drawer"
             >
               <div
                 className="c1"
@@ -2673,7 +2673,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="10val-Drawer"
+              id="19val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -2979,7 +2979,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="7val-Drawer"
+              id="13val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -3355,6 +3355,445 @@ Array [
       />
     </div>
   </div>,
+  .c0 {
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+      data-custom-prevent-click-outside={true}
+      onClick={[Function]}
+      type="button"
+    >
+      Buy
+    </button>
+  </div>,
+  .c0 {
+  background-color: transparent;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c1:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c1:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="NormalizedButton__Button-sc-ey7f5x-0 c1"
+      data-custom-prevent-click-outside={true}
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="c2"
+        >
+          Buy Button
+        </span>
+      </span>
+    </button>
+  </div>,
+  .c0 {
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 {
+  color: #0046FF;
+  padding: 2px 4px;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0046FF;
+}
+
+.c2:active {
+  background-color: #0030B2;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+      data-custom-prevent-click-outside={true}
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c3"
+      >
+        Buy Link
+      </span>
+    </button>
+  </div>,
+  .c0 {
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 {
+  color: #FF1900;
+  padding: 2px 4px;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF1900;
+}
+
+.c2:active {
+  background-color: #B20300;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+      data-custom-prevent-click-outside={true}
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c3"
+      >
+        Sell Link
+      </span>
+    </button>
+  </div>,
   .c8 {
   background-color: transparent;
 }
@@ -3396,15 +3835,6 @@ Array [
   line-height: 1.5;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -3412,6 +3842,15 @@ Array [
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .c3 {
@@ -3569,7 +4008,7 @@ Array [
             onTouchStart={[Function]}
           >
             <span
-              id="8val-Drawer"
+              id="15val-Drawer"
             >
               <h2
                 className="c1 c2"

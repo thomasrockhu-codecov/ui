@@ -31,6 +31,7 @@ export const LinkBuy: LinkBuyComponent = ({
   target,
   to,
   rel,
+  ...rest
 }) => (
   <StyledLink
     {...(disabled ? { as: 'span' as any } : {})}
@@ -40,6 +41,7 @@ export const LinkBuy: LinkBuyComponent = ({
     to={to}
     target={target}
     rel={rel}
+    {...rest}
   >
     <Typography type="secondary" weight="bold" color="inherit">
       {children}

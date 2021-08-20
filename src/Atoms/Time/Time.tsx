@@ -1,5 +1,6 @@
-import { useIntl } from 'react-intl';
 import React from 'react';
+import { useIntl } from 'react-intl';
+import styled from 'styled-components';
 import { isValidDateTimeNumber } from '../../common/utils';
 import { TimeComponent } from './Time.types';
 
@@ -15,12 +16,18 @@ const timeOptions = {
   second: 'numeric' as FormatDateOptionSecond,
 };
 
+const StyledSpan = styled.span`
+  color: ${(p) => p.theme.color.text};
+`;
+
 const Time: TimeComponent = ({ value, invalidValue = '-' }) => {
   const intl = useIntl();
   return isValidDateTimeNumber(value) ? (
-    <time>{intl.formatTime(value, timeOptions)}</time>
+    <StyledSpan>
+      <time>{intl.formatTime(value, timeOptions)}</time>
+    </StyledSpan>
   ) : (
-    <>{invalidValue}</>
+    <StyledSpan>{invalidValue}</StyledSpan>
   );
 };
 

@@ -43,7 +43,10 @@ export const fadeTopStyles = css<InternalProps & Props>`
   &::before {
     ${fadeStyles}
     top: 0;
-    background: linear-gradient(0deg, #ffffff00 0%, #ffffffff 100%);
+    background: ${(p) =>
+      p.theme.isDarkMode
+        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}00 0%, ${p.backgroundColorDarkMode}ff 100%)`
+        : `linear-gradient(0deg, ${p.backgroundColor}00 0%, ${p.backgroundColor}ff 100%)`};
     ${(p) => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
   }
 `;
@@ -60,7 +63,10 @@ export const fadeBottomStyles = css<InternalProps & Props>`
   &::after {
     ${fadeStyles}
     bottom: 0;
-    background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
+    background: ${(p) =>
+      p.theme.isDarkMode
+        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}ff 0%, ${p.backgroundColorDarkMode}00 100%)`
+        : `linear-gradient(0deg, ${p.backgroundColor}ff 0%, ${p.backgroundColor}00 100%)`};
     ${(p) =>
       isNumber(p.intersectionBottomRatio) ? `opacity: ${1 - p.intersectionBottomRatio}` : ''};
   }

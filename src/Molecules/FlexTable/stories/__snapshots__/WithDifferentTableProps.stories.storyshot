@@ -51,9 +51,9 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -70,7 +70,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   display: block;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -84,7 +84,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   display: block;
 }
 
-.c21 {
+.c22 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -191,16 +191,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   padding-bottom: 4px;
 }
 
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -211,6 +201,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
 
 .c11 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -218,8 +212,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -237,8 +230,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -312,12 +304,43 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c17 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c20 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -459,7 +482,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -469,7 +492,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -560,7 +583,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -570,7 +593,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -661,7 +684,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -671,7 +694,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -740,9 +763,9 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -773,7 +796,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   display: block;
 }
 
-.c22 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -787,7 +810,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   display: block;
 }
 
-.c23 {
+.c24 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -945,16 +968,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   padding-bottom: 4px;
 }
 
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c18 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -965,6 +978,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
 
 .c11 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -972,8 +989,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -991,8 +1007,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1066,12 +1081,43 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c20 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c22 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -1253,7 +1299,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1263,7 +1309,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c23 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1382,7 +1428,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1392,7 +1438,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c23 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1511,7 +1557,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1521,7 +1567,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c22 c23"
+            className="c23 c24"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1625,9 +1671,9 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c25 {
@@ -1644,7 +1690,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   display: block;
 }
 
-.c26 {
+.c27 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1658,7 +1704,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   display: block;
 }
 
-.c27 {
+.c28 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -1783,16 +1829,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   padding-bottom: 4px;
 }
 
-.c23 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c21 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -1803,6 +1839,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
 
 .c17 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c8 {
@@ -1810,8 +1850,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1829,8 +1868,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1911,12 +1949,43 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c23 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c26 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c17 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -2132,7 +2201,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c22 c23"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c22 c26"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -2142,7 +2211,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
         >
           <svg
             aria-hidden="true"
-            className="c26 c27"
+            className="c27 c28"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -2211,9 +2280,9 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -2230,7 +2299,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   display: block;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2244,7 +2313,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   display: block;
 }
 
-.c21 {
+.c22 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -2277,7 +2346,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   line-height: 1.4285714285714286;
 }
 
-.c24 {
+.c25 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2360,16 +2429,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   padding-bottom: 4px;
 }
 
-.c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -2380,6 +2439,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
 
 .c11 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -2387,8 +2450,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2406,8 +2468,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2432,7 +2493,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   top: 0px;
 }
 
-.c22 {
+.c23 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -2443,7 +2504,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   padding-bottom: 4px;
 }
 
-.c23 {
+.c24 {
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
@@ -2492,12 +2553,43 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c17 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c20 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -2639,7 +2731,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -2649,7 +2741,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -2740,7 +2832,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -2750,7 +2842,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -2841,7 +2933,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -2851,7 +2943,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
         >
           <svg
             aria-hidden="true"
-            className="c20 c21"
+            className="c21 c22"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -2867,60 +2959,60 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     </div>
   </div>
   <div
-    className="c1 c2 c22"
+    className="c1 c2 c23"
     role="row"
   >
     <div
-      className="c4 c23"
+      className="c4 c24"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c24 c9"
+          className="c25 c9"
         >
           Footer 1
         </span>
       </div>
     </div>
     <div
-      className="c4 c23"
+      className="c4 c24"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c24 c9"
+          className="c25 c9"
         >
           Footer 2
         </span>
       </div>
     </div>
     <div
-      className="c4 c23"
+      className="c4 c24"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c24 c9"
+          className="c25 c9"
         >
           Footer 3
         </span>
       </div>
     </div>
     <div
-      className="c10 c23 c11"
+      className="c10 c24 c11"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c24 c9"
+          className="c25 c9"
         />
       </div>
     </div>
@@ -2979,9 +3071,9 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -2998,7 +3090,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   display: block;
 }
 
-.c23 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3012,7 +3104,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   display: block;
 }
 
-.c24 {
+.c25 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -3128,16 +3220,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   padding-bottom: 4px;
 }
 
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c18 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -3148,6 +3230,10 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
 
 .c14 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c5 {
@@ -3155,8 +3241,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3174,8 +3259,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -3260,6 +3344,37 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   }
 }
 
+@media (min-width:976px) {
+  .c13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c20 {
+    display: none !important;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c23 {
+    display: none !important;
+  }
+}
+
 @media (min-width:760px) {
   .c2 {
     font-size: 20px;
@@ -3267,12 +3382,12 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   }
 }
 
-@media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) {
-
+@media (min-width:976px) {
+  .c14 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -3426,7 +3541,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -3436,7 +3551,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
         >
           <svg
             aria-hidden="true"
-            className="c23 c24"
+            className="c24 c25"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
