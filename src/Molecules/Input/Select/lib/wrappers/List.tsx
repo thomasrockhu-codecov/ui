@@ -30,7 +30,7 @@ const getStylesForPlacement = (placement: string) => {
 
 const StyledListWrapper = styled.div<any>`
   transform: translate3d(0, 0, 0);
-  position: ${(p) => (p.$fullscreenOnMobile ? 'none' : 'absolute')};
+  position: ${(p) => (p.$fullscreenOnMobile ? 'static' : 'absolute')};
   ${(p) => getStylesForPlacement(p.placement)}
   ${(p) => getStylesForPosition(p.listPosition)}
   z-index: 4;

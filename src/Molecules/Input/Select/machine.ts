@@ -54,7 +54,6 @@ export type Context = {
   actions: Array<Action>;
   disableSearchComponent: boolean;
   fullscreenOnMobile: boolean;
-  titleOnFullscreen: string;
 };
 
 export const SelectMachine = Machine<Context>(
@@ -83,7 +82,6 @@ export const SelectMachine = Machine<Context>(
       uncommittedSelectedItems: [] as Array<any>,
       disableSearchComponent: false,
       fullscreenOnMobile: false,
-      titleOnFullscreen: '',
     },
     on: {
       [ACTION_TYPES.SYNC]: {

@@ -107,7 +107,6 @@ const Select = (props: Props) => {
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
-      titleOnFullscreen: props.titleOnFullscreen,
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -157,7 +156,6 @@ const Select = (props: Props) => {
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
-      titleOnFullscreen: props.titleOnFullscreen,
     },
     [
       send,
@@ -176,7 +174,6 @@ const Select = (props: Props) => {
       props.searchQuery,
       props.disableSearchComponent,
       isFullscreenOnMobile,
-      props.titleOnFullscreen,
     ],
   );
 
@@ -254,8 +251,6 @@ const Select = (props: Props) => {
   const multiselect = machineState.context.multiselect;
   const disableSearchComponent = machineState.context.disableSearchComponent;
   const isFullScreenMode = machineState.context.fullscreenOnMobile;
-
-  const titleOnFullscreen = machineState.context.titleOnFullscreen;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
   const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
@@ -356,7 +351,7 @@ const Select = (props: Props) => {
             </ListWrapperComponent>
           )}
           {isOpen && isFullScreenMode && (
-            <Modal open={isOpen} title={titleOnFullscreen}>
+            <Modal open={isOpen} title={label}>
               <ListWrapperComponent
                 component={ListFullScreen}
                 triggerElement={selectWrapperRef}

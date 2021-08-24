@@ -109,7 +109,6 @@ export type Props = {
    * possibility to display list items(options) in Modal
    */
   fullscreenOnMobile?: boolean;
-  titleOnFullscreen?: string;
 };
 
 export type OptionItem = {

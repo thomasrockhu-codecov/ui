@@ -281,7 +281,6 @@ export const withModalTitleFullScreenOnMobile = () => (
     placeholder="Placeholder"
     labelTooltip="Tooltip for select field"
     fullscreenOnMobile
-    titleOnFullscreen="Lorem Ipsum"
   />
 );
 
