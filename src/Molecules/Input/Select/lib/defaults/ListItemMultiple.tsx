@@ -1,5 +1,6 @@
 import React from 'react';
 import { Option } from '../MultiSelectList/MultiSelectList';
+import { OptionGroup } from '../OptionGroup';
 
 import { useSelectMachineFromContext } from '../context';
 import { SYMBOL_ALL } from '../constants';
@@ -20,7 +21,9 @@ export const ListItem = ({ index }: { index: number }) => {
   const focused = state.context.itemFocusIdx === index;
   const selectAll = option[SYMBOL_ALL];
 
-  return (
+  return option.options ? (
+    <OptionGroup label={option.label} index={index} />
+  ) : (
     <Option
       selected={selected}
       disabled={option.disabled}

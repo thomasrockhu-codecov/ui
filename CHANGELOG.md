@@ -1,3 +1,15 @@
+# [7.2.0](https://github.com/nordnet/ui/compare/v7.1.2...v7.2.0) (2021-08-24)
+
+
+### Bug Fixes
+
+* 🐛 change to transient prop and static styled component ([5608c33](https://github.com/nordnet/ui/commit/5608c33))
+
+
+### Features
+
+* **input-select:** add multi select with grouping ([18be5d9](https://github.com/nordnet/ui/commit/18be5d9))
+
 ## [7.1.2](https://github.com/nordnet/ui/compare/v7.1.1...v7.1.2) (2021-08-18)
 
 

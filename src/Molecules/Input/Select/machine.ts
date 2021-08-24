@@ -542,7 +542,7 @@ export const SelectMachine = Machine<Context>(
         uncommittedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             if (e.type === ACTION_TYPES.SELECT_ITEM) {
-              const activeOptions = ctx.options.filter((x) => !x.disabled);
+              const activeOptions = ctx.options.filter((x) => !x.options && !x.disabled);
               // @ts-ignore
               if (e.payload[SYMBOL_ALL]) {
                 return activeOptions;

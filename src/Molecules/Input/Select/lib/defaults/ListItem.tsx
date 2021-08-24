@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelectMachineFromContext } from '../context';
-import { Optgroup, Option } from '../SingleSelectList/SingleSelectList';
+import { Option } from '../SingleSelectList/SingleSelectList';
+import { OptionGroup } from '../OptionGroup';
 
 export const ListItem: React.FC<{
   index: number;
@@ -20,7 +21,7 @@ export const ListItem: React.FC<{
       );
 
   return option.options ? (
-    <Optgroup label={option.label} index={index} />
+    <OptionGroup label={option.label} index={index} />
   ) : (
     <Option
       selected={selected}
