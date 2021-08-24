@@ -6,6 +6,7 @@ import { SYMBOL_ALL } from '../constants';
 
 export const ListItem = ({ index }: { index: number }) => {
   const [state] = useSelectMachineFromContext();
+  const { fullscreenOnMobile } = state.context;
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
   const option = state.context.visibleOptions[index];
 
@@ -28,6 +29,7 @@ export const ListItem = ({ index }: { index: number }) => {
       focused={focused}
       selectAll={selectAll}
       isKeyboardNavigation={isKeyboardNavigation}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 };

@@ -4,7 +4,6 @@ import { Flexbox, Typography } from '../../../../..';
 // Need to import it directly
 // Otherwise causes circular deps problems
 import { Checkbox } from '../../../Checkbox';
-import { useSelectMachineFromContext } from '../context';
 
 const FullHeightFlexbox = styled(Flexbox)`
   height: 100%;
@@ -101,10 +100,8 @@ export const Option: React.FC<OptionProps> = ({
   focused,
   selectAll,
   isKeyboardNavigation,
+  fullscreenOnMobile,
 }) => {
-  const [state] = useSelectMachineFromContext();
-  const { fullscreenOnMobile } = state.context;
-
   return (
     <StyledOption
       selected={selected}

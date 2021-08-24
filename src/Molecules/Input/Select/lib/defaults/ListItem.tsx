@@ -6,6 +6,7 @@ export const ListItem: React.FC<{
   index: number;
 }> = ({ index }) => {
   const [state] = useSelectMachineFromContext();
+  const { fullscreenOnMobile } = state.context;
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
 
   const option = state.context.visibleOptions[index];
@@ -28,6 +29,7 @@ export const ListItem: React.FC<{
       value={option.value}
       focused={focused}
       isKeyboardNavigation={isKeyboardNavigation}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 };

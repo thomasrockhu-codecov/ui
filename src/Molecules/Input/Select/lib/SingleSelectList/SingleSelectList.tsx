@@ -10,7 +10,6 @@ import {
   Separator,
   Typography,
 } from '../../../../..';
-import { useSelectMachineFromContext } from '../context';
 
 type ListProps = {
   searchComponent?: React.ReactNode;
@@ -171,10 +170,8 @@ export const Option: React.FC<OptionProps> = ({
   focused,
   onClick,
   isKeyboardNavigation,
+  fullscreenOnMobile,
 }) => {
-  const [state] = useSelectMachineFromContext();
-  const { fullscreenOnMobile } = state.context;
-
   return (
     <StyledOption
       selected={selected}
