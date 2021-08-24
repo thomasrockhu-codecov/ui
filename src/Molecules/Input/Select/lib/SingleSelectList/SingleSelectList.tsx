@@ -10,6 +10,7 @@ import {
   Separator,
   Typography,
 } from '../../../../..';
+import { useSelectMachineFromContext } from '../context';
 
 type ListProps = {
   searchComponent?: React.ReactNode;
@@ -99,6 +100,7 @@ type OptionProps = {
   value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
+  fullScreenOnMobileForOptions?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
@@ -106,7 +108,7 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
     p.isKeyboardNavigation
       ? ''
       : `
-&:hover { 
+&:hover {
   background: ${p.theme.color.inputHover};
 }
 `}
@@ -115,12 +117,23 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
-  padding-right: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-left: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+
+  ${(p) =>
+    !p.fullScreenOnMobileForOptions
+      ? `
+			padding-right: ${p.theme.spacing.unit(3)}px;
+			padding-left: ${p.theme.spacing.unit(3)}px;
+			padding-top: ${p.theme.spacing.unit(1)}px;
+			padding-bottom: ${p.theme.spacing.unit(1)}px;
+			height: ${p.theme.spacing.unit(6)}px;
+	`
+      : `
+			padding-right: ${p.theme.spacing.unit(1)}px;
+			padding-left: ${p.theme.spacing.unit(1)}px;
+			height: ${p.theme.spacing.unit(10)}px;
+			border-bottom: 1px solid ${p.theme.color.divider};
+	`}
   color: ${(p) => (p.selected ? p.theme.color.cta : p.theme.color.text)};
-  height: ${(p) => p.theme.spacing.unit(6)}px;
   outline: none;
   white-space: nowrap;
   ${(p) =>
@@ -158,26 +171,32 @@ export const Option: React.FC<OptionProps> = ({
   focused,
   onClick,
   isKeyboardNavigation,
-}) => (
-  <StyledOption
-    selected={selected}
-    disabled={disabled}
-    focused={focused}
-    onClick={onClick}
-    type="secondary"
-    color="inherit"
-    isKeyboardNavigation={isKeyboardNavigation}
-  >
-    <EllipsizingText>{label}</EllipsizingText>
-    {selected && (
-      <Flexbox item container alignItems="center">
-        <Box pl={2}>
-          <Icon.CheckMark size={4} color={(t) => t.color.cta} />
-        </Box>
-      </Flexbox>
-    )}
-  </StyledOption>
-);
+}) => {
+  const [state] = useSelectMachineFromContext();
+  const { fullScreenOnMobileForOptions } = state.context;
+
+  return (
+    <StyledOption
+      selected={selected}
+      disabled={disabled}
+      focused={focused}
+      onClick={onClick}
+      type="secondary"
+      color="inherit"
+      isKeyboardNavigation={isKeyboardNavigation}
+      fullScreenOnMobileForOptions={fullScreenOnMobileForOptions}
+    >
+      <EllipsizingText>{label}</EllipsizingText>
+      {selected && (
+        <Flexbox item container alignItems="center">
+          <Box pl={2}>
+            <Icon.CheckMark size={4} color={(t) => t.color.cta} />
+          </Box>
+        </Flexbox>
+      )}
+    </StyledOption>
+  );
+};
 
 const StyledOptgroup = styled(Typography)<{ index: number }>`
   display: flex;

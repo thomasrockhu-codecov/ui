@@ -269,6 +269,22 @@ export const overflowStory = () => (
   />
 );
 
+export const withModalTitleFullScreenOnMobile = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+    labelTooltip="Tooltip for select field"
+    fullScreenOnMobileForOptions
+    titleOnFullScreen="Lorem Ipsum"
+  />
+);
+
 export const preselectedOptions = () =>
   createElement(() => {
     // This component you need to redefine for your particular case
@@ -729,6 +745,55 @@ export const multiselectSelectAll = () =>
         multiselect
         label="User account"
         placeholder="Select account"
+      />
+    );
+  });
+
+export const multiselectSelectAllWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const [value, setValue] = useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(
+        (x) => x[Input.Select.SYMBOL_ALL],
+      );
+      let label;
+      if (allSelected) {
+        label = 'All selected';
+      } else if (selectedCount === 0) {
+        label = machineState.context.placeholder;
+      } else {
+        label = `${selectedCount} selected`;
+      }
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">{label}</Typography>
+        </FlexedBox>
+      );
+    }, []);
+    return (
+      <Input.Select
+        id="multiwithall-select"
+        options={[
+          ...accountOptionsAndSelectAll,
+          { value: 21, label: 'Acc21' },
+          { value: 22, label: 'Acc22' },
+          { value: 23, label: 'Acc23' },
+        ]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{
+          SelectedValue: CustomSelectedValue,
+        }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+        fullScreenOnMobileForOptions
       />
     );
   });
@@ -1214,6 +1279,104 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
   });
 
+export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const customComponents = useMemo(
+      () => ({
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
+    // just to have persistent unique keys
+    const counter = createCounter();
+    const hugeOptionsList = useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          ),
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
+    );
+
+    // @ts-ignore
+    const handleChange = (newVal) => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <TrackingContext.Provider
+        value={{
+          track: (componentName, e, props) =>
+            // @ts-ignore
+            action('Tracking')(componentName, e.type, e.payload, props),
+        }}
+      >
+        <Flexbox container justifyContent="flex-start">
+          <Input.Select
+            options={hugeOptionsList}
+            label="User account"
+            id="input-select-search-inside"
+            placeholder="Select account"
+            noFormField
+            showSearch
+            multiselect
+            value={value}
+            width="300px"
+            listMaxHeight="400px"
+            components={customComponents}
+            onChange={handleChange}
+            fullScreenOnMobileForOptions
+            actions={[
+              {
+                label: 'Action',
+                onSelect: action('Action triggered'),
+              },
+            ]}
+          />
+        </Flexbox>
+      </TrackingContext.Provider>
+    );
+  });
+
 export const listPositionedToTheLeft = () =>
   createElement(() => {
     const customComponents = useMemo(
@@ -1375,6 +1538,7 @@ export const insideModal = () => (
       options={accountOptions}
       label="User account"
       placeholder="Select account"
+      fullScreenOnMobileForOptions
       withPortal
     />
   </Modal>

@@ -38,6 +38,7 @@ import {
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
 import { getSingleSelectValue } from './lib/utils';
+import { Modal, useMedia } from '../../../index';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -78,6 +79,11 @@ const Select = (props: Props) => {
     [props.options],
   );
 
+  const smallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.md));
+
+  const isFullScreenOnMobileInitialValue =
+    smallScreen && props.fullScreenOnMobileForOptions && !props.withPortal;
+
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
     context: {
@@ -101,6 +107,8 @@ const Select = (props: Props) => {
       uncommittedSelectedItems: [],
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
+      fullScreenOnMobileForOptions: isFullScreenOnMobileInitialValue || false,
+      titleOnFullScreen: props.titleOnFullScreen,
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -149,6 +157,8 @@ const Select = (props: Props) => {
       id: props.id,
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
+      fullScreenOnMobileForOptions: isFullScreenOnMobileInitialValue || false,
+      titleOnFullScreen: props.titleOnFullScreen,
     },
     [
       send,
@@ -166,6 +176,8 @@ const Select = (props: Props) => {
       props.actions,
       props.searchQuery,
       props.disableSearchComponent,
+      isFullScreenOnMobileInitialValue,
+      props.titleOnFullScreen,
     ],
   );
 
@@ -219,12 +231,16 @@ const Select = (props: Props) => {
   );
 
   /******      Renderers      ******/
-  const { ListItem, List, SelectedValue, Search, Action } = useComponentsWithDefaults(
-    props.components,
-    {
-      multiselect: machineState.context.multiselect,
-    },
-  );
+  const {
+    ListItem,
+    List,
+    ListFullScreen,
+    SelectedValue,
+    Search,
+    Action,
+  } = useComponentsWithDefaults(props.components, {
+    multiselect: machineState.context.multiselect,
+  });
 
   /******      Values from machine      ******/
   const isOpen = machineState.context.open;
@@ -238,6 +254,9 @@ const Select = (props: Props) => {
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
   const disableSearchComponent = machineState.context.disableSearchComponent;
+  const isFullScreenMode = machineState.context.fullScreenOnMobileForOptions;
+
+  const titleOnFullScreen = machineState.context.titleOnFullScreen;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
   const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
@@ -301,7 +320,7 @@ const Select = (props: Props) => {
             state={machineState}
             id={props.id}
           />
-          {isOpen && (
+          {isOpen && !isFullScreenMode && (
             <ListWrapperComponent
               component={List}
               triggerElement={selectWrapperRef}
@@ -336,6 +355,49 @@ const Select = (props: Props) => {
                 />
               ))}
             </ListWrapperComponent>
+          )}
+          {isOpen && isFullScreenMode && (
+            <Modal open={isOpen} title={titleOnFullScreen}>
+              {/* <FadedScroll> */}
+              <ListWrapperComponent
+                component={ListFullScreen}
+                triggerElement={selectWrapperRef}
+                noFormField={props.noFormField}
+                onKeyDown={handleKeyDown}
+                onMouseMove={handleMouseMove}
+                ref={listRef}
+                data-testid="input-select-list"
+                searchComponent={
+                  <SearchWrapper
+                    ref={searchRef}
+                    component={Search}
+                    hideSearch={disableSearchComponent}
+                  />
+                }
+                listPosition={props.listPosition}
+                placement="top"
+                actionsComponent={
+                  machineState.context.actions.length > 0 ? (
+                    <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
+                  ) : null
+                }
+                maxHeight={props.listMaxHeight}
+              >
+                {options?.map((x: any, index: number) => (
+                  <ListItemWrapper
+                    // eslint-disable-next-line react/no-array-index-key
+                    key={index}
+                    index={index}
+                    ref={setItemRef(index) as any}
+                    option={x}
+                    id={props.id}
+                    onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
+                    component={ListItem}
+                  />
+                ))}
+              </ListWrapperComponent>
+              {/* </FadedScroll> */}
+            </Modal>
           )}
         </FormFieldOrFragment>
       </SelectStateContext.Provider>

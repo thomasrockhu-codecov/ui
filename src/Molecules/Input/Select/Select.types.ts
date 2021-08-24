@@ -104,6 +104,12 @@ export type Props = {
    * Disables the possibility to filter options by typing
    */
   disableSearchComponent?: boolean;
+  /**
+   * @default false
+   * possibility to display list items(options) in Modal
+   */
+  fullScreenOnMobileForOptions?: boolean;
+  titleOnFullScreen?: string;
 };
 
 export type OptionItem = {
