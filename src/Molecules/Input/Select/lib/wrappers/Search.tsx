@@ -12,7 +12,7 @@ export const SearchWrapper = React.forwardRef<
   const searchQuery = state.context.searchQuery;
   const showSearch = state.context.showSearch;
   const itemFocusIdx = state.context.itemFocusIdx;
-  const fullScreenOnMobileForOptions = state.context.fullScreenOnMobileForOptions;
+  const fullscreenOnMobile = state.context.fullscreenOnMobile;
 
   const visibleOptionsCount = state.context.visibleOptions.length;
 
@@ -34,7 +34,7 @@ export const SearchWrapper = React.forwardRef<
       hidden={hidden}
       value={searchQuery}
       onChange={handleChange}
-      fullScreenOnMobileForOptions={fullScreenOnMobileForOptions}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 });

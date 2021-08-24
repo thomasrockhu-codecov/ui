@@ -18,7 +18,7 @@ type OptionProps = {
   focused?: boolean;
   selectAll?: boolean;
   isKeyboardNavigation?: boolean;
-  fullScreenOnMobileForOptions?: boolean;
+  fullscreenOnMobile?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: boolean }>`
@@ -46,7 +46,7 @@ border-bottom: 1px solid ${p.theme.color.divider};
 box-sizing: border-box;
 `}
   ${(p) =>
-    !p.fullScreenOnMobileForOptions
+    !p.fullscreenOnMobile
       ? `  padding-right: ${p.theme.spacing.unit(3)}px;
   padding-left: ${p.theme.spacing.unit(3)}px;
 	height: ${p.theme.spacing.unit(7)}px;`
@@ -103,7 +103,7 @@ export const Option: React.FC<OptionProps> = ({
   isKeyboardNavigation,
 }) => {
   const [state] = useSelectMachineFromContext();
-  const { fullScreenOnMobileForOptions } = state.context;
+  const { fullscreenOnMobile } = state.context;
 
   return (
     <StyledOption
@@ -112,7 +112,7 @@ export const Option: React.FC<OptionProps> = ({
       selectAll={selectAll}
       focused={isKeyboardNavigation ? focused : false}
       isKeyboardNavigation={isKeyboardNavigation}
-      fullScreenOnMobileForOptions={fullScreenOnMobileForOptions}
+      fullscreenOnMobile={fullscreenOnMobile}
     >
       <FullHeightFlexbox container alignItems="center" gutter={2}>
         <Flexbox item container alignItems="center" flex="0 0 auto">

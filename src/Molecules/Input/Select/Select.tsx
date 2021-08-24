@@ -79,10 +79,9 @@ const Select = (props: Props) => {
     [props.options],
   );
 
-  const smallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.md));
+  const smallScreen = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
-  const isFullScreenOnMobileInitialValue =
-    smallScreen && props.fullScreenOnMobileForOptions && !props.withPortal;
+  const isFullscreenOnMobile = smallScreen && props.fullscreenOnMobile && !props.withPortal;
 
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
@@ -107,8 +106,8 @@ const Select = (props: Props) => {
       uncommittedSelectedItems: [],
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
-      fullScreenOnMobileForOptions: isFullScreenOnMobileInitialValue || false,
-      titleOnFullScreen: props.titleOnFullScreen,
+      fullscreenOnMobile: isFullscreenOnMobile || false,
+      titleOnFullscreen: props.titleOnFullscreen,
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -157,8 +156,8 @@ const Select = (props: Props) => {
       id: props.id,
       actions: props.actions || [],
       disableSearchComponent: props.disableSearchComponent,
-      fullScreenOnMobileForOptions: isFullScreenOnMobileInitialValue || false,
-      titleOnFullScreen: props.titleOnFullScreen,
+      fullscreenOnMobile: isFullscreenOnMobile || false,
+      titleOnFullscreen: props.titleOnFullscreen,
     },
     [
       send,
@@ -176,8 +175,8 @@ const Select = (props: Props) => {
       props.actions,
       props.searchQuery,
       props.disableSearchComponent,
-      isFullScreenOnMobileInitialValue,
-      props.titleOnFullScreen,
+      isFullscreenOnMobile,
+      props.titleOnFullscreen,
     ],
   );
 
@@ -254,9 +253,9 @@ const Select = (props: Props) => {
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
   const disableSearchComponent = machineState.context.disableSearchComponent;
-  const isFullScreenMode = machineState.context.fullScreenOnMobileForOptions;
+  const isFullScreenMode = machineState.context.fullscreenOnMobile;
 
-  const titleOnFullScreen = machineState.context.titleOnFullScreen;
+  const titleOnFullscreen = machineState.context.titleOnFullscreen;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
   const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
@@ -357,8 +356,7 @@ const Select = (props: Props) => {
             </ListWrapperComponent>
           )}
           {isOpen && isFullScreenMode && (
-            <Modal open={isOpen} title={titleOnFullScreen}>
-              {/* <FadedScroll> */}
+            <Modal open={isOpen} title={titleOnFullscreen}>
               <ListWrapperComponent
                 component={ListFullScreen}
                 triggerElement={selectWrapperRef}
@@ -396,7 +394,6 @@ const Select = (props: Props) => {
                   />
                 ))}
               </ListWrapperComponent>
-              {/* </FadedScroll> */}
             </Modal>
           )}
         </FormFieldOrFragment>

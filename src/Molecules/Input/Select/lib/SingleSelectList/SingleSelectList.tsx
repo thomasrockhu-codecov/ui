@@ -100,7 +100,7 @@ type OptionProps = {
   value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
-  fullScreenOnMobileForOptions?: boolean;
+  fullscreenOnMobile?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
@@ -119,7 +119,7 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   align-items: center;
 
   ${(p) =>
-    !p.fullScreenOnMobileForOptions
+    !p.fullscreenOnMobile
       ? `
 			padding-right: ${p.theme.spacing.unit(3)}px;
 			padding-left: ${p.theme.spacing.unit(3)}px;
@@ -173,7 +173,7 @@ export const Option: React.FC<OptionProps> = ({
   isKeyboardNavigation,
 }) => {
   const [state] = useSelectMachineFromContext();
-  const { fullScreenOnMobileForOptions } = state.context;
+  const { fullscreenOnMobile } = state.context;
 
   return (
     <StyledOption
@@ -184,7 +184,7 @@ export const Option: React.FC<OptionProps> = ({
       type="secondary"
       color="inherit"
       isKeyboardNavigation={isKeyboardNavigation}
-      fullScreenOnMobileForOptions={fullScreenOnMobileForOptions}
+      fullscreenOnMobile={fullscreenOnMobile}
     >
       <EllipsizingText>{label}</EllipsizingText>
       {selected && (

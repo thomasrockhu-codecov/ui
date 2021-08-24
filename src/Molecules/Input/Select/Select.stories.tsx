@@ -280,8 +280,8 @@ export const withModalTitleFullScreenOnMobile = () => (
     label="Label"
     placeholder="Placeholder"
     labelTooltip="Tooltip for select field"
-    fullScreenOnMobileForOptions
-    titleOnFullScreen="Lorem Ipsum"
+    fullscreenOnMobile
+    titleOnFullscreen="Lorem Ipsum"
   />
 );
 
@@ -793,7 +793,7 @@ export const multiselectSelectAllWithFullScreenOnMobile = () =>
         multiselect
         label="User account"
         placeholder="Select account"
-        fullScreenOnMobileForOptions
+        fullscreenOnMobile
       />
     );
   });
@@ -1364,7 +1364,7 @@ export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () 
             listMaxHeight="400px"
             components={customComponents}
             onChange={handleChange}
-            fullScreenOnMobileForOptions
+            fullscreenOnMobile
             actions={[
               {
                 label: 'Action',
@@ -1538,7 +1538,7 @@ export const insideModal = () => (
       options={accountOptions}
       label="User account"
       placeholder="Select account"
-      fullScreenOnMobileForOptions
+      fullscreenOnMobile
       withPortal
     />
   </Modal>

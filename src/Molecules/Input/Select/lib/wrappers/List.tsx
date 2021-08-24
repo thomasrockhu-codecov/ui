@@ -30,12 +30,12 @@ const getStylesForPlacement = (placement: string) => {
 
 const StyledListWrapper = styled.div<any>`
   transform: translate3d(0, 0, 0);
-  position: ${(p) => (p.$fullScreenOnMobileForOptions ? 'none' : 'absolute')};
+  position: ${(p) => (p.$fullscreenOnMobile ? 'none' : 'absolute')};
   ${(p) => getStylesForPlacement(p.placement)}
   ${(p) => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
-  padding: ${(p) => (p.$fullScreenOnMobileForOptions ? 0 : '4px')};
+  padding: ${(p) => (p.$fullscreenOnMobile ? 0 : '4px')};
   width: ${getWidth};
 `;
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
@@ -59,7 +59,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
     ref,
   ) => {
     const [state] = useSelectMachineFromContext();
-    const { fullScreenOnMobileForOptions } = state.context;
+    const { fullscreenOnMobile } = state.context;
 
     return (
       <StyledListWrapper
@@ -73,7 +73,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         width={width}
         listPosition={listPosition}
         placement={placement}
-        $fullScreenOnMobileForOptions={fullScreenOnMobileForOptions}
+        $fullscreenOnMobile={fullscreenOnMobile}
       >
         <Component
           searchComponent={searchComponent}
