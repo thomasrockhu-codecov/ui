@@ -12,7 +12,6 @@ const Color = styled.div<{ $color: string }>`
   height: ${(p) => p.theme.spacing.unit(14)}px;
   background-color: ${(p) => p.$color};
   border: 1px solid #eee;
-  display: ;
 `;
 
 const ColorInArray = styled.div<{ $color: string }>`
@@ -21,7 +20,6 @@ const ColorInArray = styled.div<{ $color: string }>`
   padding: 0;
   background-color: ${(p) => p.$color};
   border: 1px solid #eee;
-  display: ;
 `;
 
 const colorWithValue = (color: string | string[]) =>

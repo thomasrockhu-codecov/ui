@@ -1,9 +1,9 @@
 module.exports = {
   testMatch: ['**/*.test.ts', '**/*.test.tsx'],
   setupFilesAfterEnv: ['<rootDir>/jest.mocks.js'],
-  setupFiles: ['./jest.enzyme.js'],
+  setupFiles: ['./jest.setup.js'],
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
-  testEnvironment: 'jest-environment-jsdom-fourteen',
+  testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'md'],
   transformIgnorePatterns: [
     'node_modules/(?!(@statecharts|@storybook|react-syntax-highlighter)/.*)',
