@@ -38,7 +38,7 @@ const FadedScrollWithoutPaddingBottom = styled(FadedScroll)<
   overflow: hidden;
 `;
 
-const StyledDiv = styled.div<any>`
+const StyledDiv = styled.div`
   width: 100%;
   height: 90vh;
 `;
