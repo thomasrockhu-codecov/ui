@@ -99,6 +99,7 @@ type OptionProps = {
   value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
+  fullscreenOnMobile?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
@@ -106,7 +107,7 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
     p.isKeyboardNavigation
       ? ''
       : `
-&:hover { 
+&:hover {
   background: ${p.theme.color.inputHover};
 }
 `}
@@ -115,12 +116,23 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
-  padding-right: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-left: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+
+  ${(p) =>
+    !p.fullscreenOnMobile
+      ? `
+			padding-right: ${p.theme.spacing.unit(3)}px;
+			padding-left: ${p.theme.spacing.unit(3)}px;
+			padding-top: ${p.theme.spacing.unit(1)}px;
+			padding-bottom: ${p.theme.spacing.unit(1)}px;
+			height: ${p.theme.spacing.unit(6)}px;
+	`
+      : `
+			padding-right: ${p.theme.spacing.unit(1)}px;
+			padding-left: ${p.theme.spacing.unit(1)}px;
+			height: ${p.theme.spacing.unit(10)}px;
+			border-bottom: 1px solid ${p.theme.color.divider};
+	`}
   color: ${(p) => (p.selected ? p.theme.color.cta : p.theme.color.text)};
-  height: ${(p) => p.theme.spacing.unit(6)}px;
   outline: none;
   white-space: nowrap;
   ${(p) =>
@@ -158,6 +170,7 @@ export const Option: React.FC<OptionProps> = ({
   focused,
   onClick,
   isKeyboardNavigation,
+  fullscreenOnMobile,
 }) => (
   <StyledOption
     selected={selected}
@@ -167,6 +180,7 @@ export const Option: React.FC<OptionProps> = ({
     type="secondary"
     color="inherit"
     isKeyboardNavigation={isKeyboardNavigation}
+    fullscreenOnMobile={fullscreenOnMobile}
   >
     <EllipsizingText>{label}</EllipsizingText>
     {selected && (

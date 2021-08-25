@@ -3,12 +3,16 @@ import { useSelectMachineFromContext } from '../context';
 
 export const SearchWrapper = React.forwardRef<
   HTMLInputElement,
-  { component: React.ComponentType<any> }
->(({ component: Component }, ref: React.Ref<HTMLInputElement>) => {
+  {
+    component: React.ComponentType<any>;
+    hideSearch?: boolean;
+  }
+>(({ component: Component, hideSearch }, ref: React.Ref<HTMLInputElement>) => {
   const [state, send] = useSelectMachineFromContext();
   const searchQuery = state.context.searchQuery;
   const showSearch = state.context.showSearch;
   const itemFocusIdx = state.context.itemFocusIdx;
+  const fullscreenOnMobile = state.context.fullscreenOnMobile;
 
   const visibleOptionsCount = state.context.visibleOptions.length;
 
@@ -18,7 +22,7 @@ export const SearchWrapper = React.forwardRef<
     itemInFocusType === 'action' ? itemFocusIdx! - visibleOptionsCount : itemFocusIdx;
 
   const id = state.context.id;
-  const hidden = !showSearch;
+  const hidden = hideSearch || !showSearch;
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     send({ type: 'SEARCH_QUERY_UPDATE', payload: e.target.value });
 
@@ -30,6 +34,7 @@ export const SearchWrapper = React.forwardRef<
       hidden={hidden}
       value={searchQuery}
       onChange={handleChange}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 });
