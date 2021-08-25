@@ -56,8 +56,7 @@ box-sizing: border-box;
 	border-bottom: 1px solid ${p.theme.color.divider};
 `}
 
-  box-sizing: border-box;
-  white-space: nowrap;
+	white-space: nowrap;
   background: ${(p) => {
     if (p.focused && p.isKeyboardNavigation) return p.theme.color.inputBackground;
     return p.theme.color.selectOptionBackground;
