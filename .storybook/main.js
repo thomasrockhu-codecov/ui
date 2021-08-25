@@ -43,7 +43,10 @@ module.exports = {
     config.module.rules.push({
       test: /\.jsx?$/,
       loader: require.resolve('babel-loader'),
-      include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
+      include: [
+        path.resolve(__dirname, '..', 'node_modules', 'use-ssr'),
+        path.resolve(__dirname, '..', 'node_modules', 'color'),
+      ],
     });
 
     config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
