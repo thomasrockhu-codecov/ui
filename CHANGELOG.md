@@ -1,3 +1,16 @@
+# [7.3.0](https://github.com/nordnet/ui/compare/v7.2.0...v7.3.0) (2021-08-25)
+
+
+### Features
+
+* fix snapshot ([2497dd1](https://github.com/nordnet/ui/commit/2497dd1))
+* fixed typography for lable on modal ([78d8303](https://github.com/nordnet/ui/commit/78d8303))
+* remove support for custom title on modal ([5c3f2de](https://github.com/nordnet/ui/commit/5c3f2de))
+* removed any ([71d810a](https://github.com/nordnet/ui/commit/71d810a))
+* removed unnecessary border-box ([52a8db2](https://github.com/nordnet/ui/commit/52a8db2))
+* rename prop name and typo fix ([a7a60df](https://github.com/nordnet/ui/commit/a7a60df))
+* support of fullScreen in mobile for select element ([dc73f87](https://github.com/nordnet/ui/commit/dc73f87))
+
 # [7.2.0](https://github.com/nordnet/ui/compare/v7.1.2...v7.2.0) (2021-08-24)
 
 
