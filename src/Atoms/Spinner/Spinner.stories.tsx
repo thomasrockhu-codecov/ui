@@ -14,7 +14,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Spinner id="defaultSpinner" />
     </div>

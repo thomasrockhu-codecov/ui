@@ -41,7 +41,7 @@ export default {
   title: 'Others / Theme',
 };
 
-export const documentation = () => <MD source={colorDocs} />;
+export const documentation = () => <MD>{colorDocs}</MD>;
 
 export const colorsSemantic = () => {
   const a11yTheme = createTheme({ a11yColors: true });
