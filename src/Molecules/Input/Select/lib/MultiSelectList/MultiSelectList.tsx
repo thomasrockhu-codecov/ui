@@ -101,37 +101,35 @@ export const Option: React.FC<OptionProps> = ({
   selectAll,
   isKeyboardNavigation,
   fullscreenOnMobile,
-}) => {
-  return (
-    <StyledOption
-      selected={selected}
-      disabled={disabled}
-      selectAll={selectAll}
-      focused={isKeyboardNavigation ? focused : false}
-      isKeyboardNavigation={isKeyboardNavigation}
-      fullscreenOnMobile={fullscreenOnMobile}
-    >
-      <FullHeightFlexbox container alignItems="center" gutter={2}>
-        <Flexbox item container alignItems="center" flex="0 0 auto">
-          {/** TODO: revisit a11y here */}
-          <Checkbox16px
-            width="16px"
-            name="example"
-            label=""
-            checked={selected}
-            readOnly
-            visuallyFocused={!disabled && isKeyboardNavigation ? focused : false}
-          />
-        </Flexbox>
-        <FlexboxWidth item container justifyContent="space-between" alignItems="center">
-          <EllipsizingText
-            type="secondary"
-            color={disabled ? (t) => t.color.disabledText : (t) => t.color.text}
-          >
-            {label}
-          </EllipsizingText>
-        </FlexboxWidth>
-      </FullHeightFlexbox>
-    </StyledOption>
-  );
-};
+}) => (
+  <StyledOption
+    selected={selected}
+    disabled={disabled}
+    selectAll={selectAll}
+    focused={isKeyboardNavigation ? focused : false}
+    isKeyboardNavigation={isKeyboardNavigation}
+    fullscreenOnMobile={fullscreenOnMobile}
+  >
+    <FullHeightFlexbox container alignItems="center" gutter={2}>
+      <Flexbox item container alignItems="center" flex="0 0 auto">
+        {/** TODO: revisit a11y here */}
+        <Checkbox16px
+          width="16px"
+          name="example"
+          label=""
+          checked={selected}
+          readOnly
+          visuallyFocused={!disabled && isKeyboardNavigation ? focused : false}
+        />
+      </Flexbox>
+      <FlexboxWidth item container justifyContent="space-between" alignItems="center">
+        <EllipsizingText
+          type="secondary"
+          color={disabled ? (t) => t.color.disabledText : (t) => t.color.text}
+        >
+          {label}
+        </EllipsizingText>
+      </FlexboxWidth>
+    </FullHeightFlexbox>
+  </StyledOption>
+);

@@ -13,7 +13,7 @@ type ListFullScreenProps = {
   placement?: 'bottom' | 'top';
 };
 
-const StyledList = styled(UIList)<any>`
+const StyledList = styled(UIList)<{ role: string }>`
   display: flex;
   flex-direction: column;
   list-style: none;

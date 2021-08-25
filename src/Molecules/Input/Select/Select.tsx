@@ -38,7 +38,7 @@ import {
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
 import { getSingleSelectValue } from './lib/utils';
-import { Modal, useMedia } from '../../../index';
+import { Modal, useMedia, Typography } from '../../../index';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -351,7 +351,14 @@ const Select = (props: Props) => {
             </ListWrapperComponent>
           )}
           {isOpen && isFullScreenMode && (
-            <Modal open={isOpen} title={label}>
+            <Modal
+              open={isOpen}
+              title={
+                <Typography type="title1" weight="bold">
+                  {props.label}
+                </Typography>
+              }
+            >
               <ListWrapperComponent
                 component={ListFullScreen}
                 triggerElement={selectWrapperRef}
