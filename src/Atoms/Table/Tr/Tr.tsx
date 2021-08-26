@@ -8,7 +8,7 @@ const StyledTr = styled.tr<Props>`
   :not(:first-child) {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
-  overflow: 'hidden';
+  overflow: hidden;
 `;
 
 export const Tr: TrComponent = ({ textAlign = 'left', children, className, onClick }) => (
