@@ -18,13 +18,6 @@ export type Props = {
   axisLabel?: React.ReactNode;
 };
 
-export type IndicatorProps = {
-  leftCollision: boolean;
-  rightCollision: boolean;
-};
-
 export type BarProps = {
   isActive: boolean;
 };
-
-export type CheckCollision = (a: HTMLElement, b: HTMLElement) => boolean;
