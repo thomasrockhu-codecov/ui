@@ -9,9 +9,6 @@ const Indicator = styled(Box).withConfig({
   shouldForwardProp: (prop) => !['isActive'].includes(prop),
 })<BarProps>`
   height: ${({ theme }) => theme.spacing.unit(4)}px;
-  margin-left: 2px;
-  margin-right: 2px;
-  flex: 1 1 auto;
   background: ${(p) =>
     p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleInactiveBar};
 `;
@@ -25,7 +22,9 @@ export const BarScale: React.FC<Props> = ({ value = 0, max = 7, axisLabel = null
     <Box mt={1}>
       <Flexbox container gutter={1}>
         {R.range(1, verifiedMaxRating + 1)?.map((bar) => (
-          <Indicator isActive={isActive(bar)} />
+          <Flexbox key={bar} item flex="1 1 auto">
+            <Indicator isActive={isActive(bar)} />
+          </Flexbox>
         ))}
       </Flexbox>
       {axisLabel}
