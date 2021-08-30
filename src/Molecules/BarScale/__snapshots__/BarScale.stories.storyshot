@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
-.c0 {
-  margin-top: 40px;
+exports[`Storyshots Molecules / BarScale Bar Scale Normal 1`] = `
+.c2 {
   background-color: transparent;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,123 +15,30 @@ exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: 0;
-}
-
 .c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  right: 0;
-}
-
-.c7 {
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-  height: 20px;
-  white-space: nowrap;
-  text-align: center;
-  background: #385E9D;
-  color: #FFFFFF;
-}
-
-.c6 {
-  position: relative;
   height: 16px;
   background: #385E9D;
 }
 
-.c6::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-.c9 {
-  position: relative;
+.c4 {
   height: 16px;
   background: #EBEBE8;
-}
-
-.c9::after {
-  display: none;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
 }
 
 <div
@@ -142,512 +48,61 @@ exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
     />
-    <div
-      className="c3"
-    />
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      >
-        <span
-          className="c7"
-        >
-          <span
-            className="c8"
-          >
-            Long Long Long Long text
-          </span>
-        </span>
-        <span
-          className="c8"
-        >
-          1
-        </span>
-      </div>
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c9"
-      />
-    </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / BarScale Bar Scale With Max 1`] = `
-.c0 {
-  margin-top: 40px;
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c1 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: 0;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  right: 0;
-}
-
-.c8 {
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-  height: 20px;
-  white-space: nowrap;
-  text-align: center;
-  background: #385E9D;
-  color: #FFFFFF;
-}
-
-.c6 {
-  position: relative;
-  height: 16px;
-  background: #EBEBE8;
-}
-
-.c6::after {
-  display: none;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-.c7 {
-  position: relative;
-  height: 16px;
-  background: #385E9D;
-}
-
-.c7::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-<div
-  className="c0"
->
   <div
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
     />
-    <div
-      className="c3"
-    />
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c7"
-      >
-        <span
-          className="c8"
-        >
-          <span
-            className="c9"
-          >
-            text
-          </span>
-        </span>
-        <span
-          className="c9"
-        />
-      </div>
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / BarScale Bar Scale With Value And Text 1`] = `
-.c0 {
-  margin-top: 40px;
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c1 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: 0;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  right: 0;
-}
-
-.c8 {
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-  height: 20px;
-  white-space: nowrap;
-  text-align: center;
-  background: #385E9D;
-  color: #FFFFFF;
-}
-
-.c6 {
-  position: relative;
-  height: 16px;
-  background: #EBEBE8;
-}
-
-.c6::after {
-  display: none;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-.c7 {
-  position: relative;
-  height: 16px;
-  background: #385E9D;
-}
-
-.c7::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-<div
-  className="c0"
->
   <div
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
     />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c3"
+      className="c2 c3"
     />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c4"
-    >
-      <div
-        className="c5 c7"
-      >
-        <span
-          className="c8"
-        >
-          <span
-            className="c9"
-          >
-            text
-          </span>
-        </span>
-        <span
-          className="c9"
-        />
-      </div>
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
+      className="c2 c4"
+    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
-.c0 {
-  margin-top: 40px;
+Array [
+  .c2 {
   background-color: transparent;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -657,39 +112,86 @@ exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c3 {
+  height: 16px;
+  background: #385E9D;
 }
 
-.c10 {
+.c4 {
+  height: 16px;
+  background: #EBEBE8;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+  </div>,
+  .c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -701,201 +203,39 @@ exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c1 {
   box-sizing: border-box;
 }
 
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: 0;
-}
-
-.c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  right: 0;
-}
-
-.c8 {
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-  height: 20px;
-  white-space: nowrap;
-  text-align: center;
-  background: #385E9D;
-  color: #FFFFFF;
-}
-
-.c6 {
-  position: relative;
-  height: 16px;
-  background: #EBEBE8;
-}
-
-.c6::after {
-  display: none;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-.c7 {
-  position: relative;
-  height: 16px;
-  background: #385E9D;
-}
-
-.c7::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
 <div
-  className="c0"
->
-  <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-    />
-    <div
-      className="c3"
-    />
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c7"
-      >
-        <span
-          className="c8"
-        >
-          <span
-            className="c9"
-          >
-            some text
-          </span>
-        </span>
-        <span
-          className="c9"
-        />
-      </div>
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
-      />
-    </div>
-  </div>
-  <div
-    className="c10"
-  >
-    <div
-      className="c11"
+      className="c1"
     >
       Low
     </div>
     <div
-      className="c11"
+      className="c1"
     >
       Medium
     </div>
     <div
-      className="c11"
+      className="c1"
     >
       High
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
-exports[`Storyshots Molecules / BarScale Bar Scale Without Show Value 1`] = `
-.c0 {
-  margin-top: 40px;
+exports[`Storyshots Molecules / BarScale Double Bar Scale 1`] = `
+Array [
+  .c2 {
   background-color: transparent;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,199 +245,173 @@ exports[`Storyshots Molecules / BarScale Bar Scale Without Show Value 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c5 {
+.c3 {
+  height: 16px;
+  background: #385E9D;
+}
+
+.c4 {
+  height: 16px;
+  background: #EBEBE8;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+  </div>,
+  <h2>
+    Max of 6
+  </h2>,
+  .c2 {
+  background-color: transparent;
+}
+
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-.c2 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  left: 0;
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .c3 {
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  pointer-events: none;
-  right: 0;
-}
-
-.c8 {
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-  height: 20px;
-  white-space: nowrap;
-  text-align: center;
+  height: 16px;
   background: #385E9D;
-  color: #FFFFFF;
 }
 
-.c6 {
-  position: relative;
+.c4 {
   height: 16px;
   background: #EBEBE8;
 }
 
-.c6::after {
-  display: none;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
-.c7 {
-  position: relative;
-  height: 16px;
-  background: #385E9D;
-}
-
-.c7::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: 4px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #385E9D;
-}
-
 <div
-  className="c0"
->
-  <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-    />
-    <div
-      className="c3"
-    />
-    <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c6"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c6"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c6"
+        className="c2 c4"
       />
     </div>
     <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c6"
+        className="c2 c4"
       />
     </div>
     <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c6"
+        className="c2 c4"
       />
     </div>
     <div
-      className="c4"
+      className="c1"
     >
       <div
-        className="c5 c7"
-      >
-        <span
-          className="c8"
-        >
-          <span
-            className="c9"
-          >
-            text
-          </span>
-        </span>
-        <span
-          className="c9"
-        />
-      </div>
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="c5 c6"
+        className="c2 c4"
       />
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

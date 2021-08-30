@@ -6,25 +6,11 @@ export type Props = {
   /** @default 7 */
   max?: number;
 
-  /** show the number of the active bar */
-  /** @default false */
-  showValue: boolean;
-
-  /** the text in the indicator */
-  indicatorText: string;
-
   /** X axis label */
   /** @default null */
   axisLabel?: React.ReactNode;
 };
 
-export type IndicatorProps = {
-  leftCollision: boolean;
-  rightCollision: boolean;
-};
-
 export type BarProps = {
   isActive: boolean;
 };
-
-export type CheckCollision = (a: HTMLElement, b: HTMLElement) => boolean;
