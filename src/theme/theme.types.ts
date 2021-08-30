@@ -73,6 +73,8 @@ export type ThemeColors = {
   /** gray0 */
   backgroundDark: RawColor['gray0'];
   /** complementaryBlue1 */
+  barGraphHighlight: RawColor['complementaryBlue1'];
+  /** complementaryBlue1 */
   barScaleActiveBar: RawColor['complementaryBlue1'];
   /** gray6 */
   barScaleInactiveBar: RawColor['gray6'];
