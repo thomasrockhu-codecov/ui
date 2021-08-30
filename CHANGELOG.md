@@ -1,3 +1,10 @@
+## [7.3.3](https://github.com/nordnet/ui/compare/v7.3.2...v7.3.3) (2021-08-30)
+
+
+### Bug Fixes
+
+* correct bar height ([91a917b](https://github.com/nordnet/ui/commit/91a917b))
+
 ## [7.3.2](https://github.com/nordnet/ui/compare/v7.3.1...v7.3.2) (2021-08-30)
 
 
