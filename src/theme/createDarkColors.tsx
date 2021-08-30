@@ -32,9 +32,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
 
+    barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
+    
     barScaleActiveBar: rawColor.complementaryTurquoise1,
     barScaleInactiveBar: rawColor.gray6,
-
+    
     borderActive: rawColor.brandTurquoise,
 
     bubbleBackground: rawColor.gray1,
