@@ -1,3 +1,10 @@
+## [7.3.2](https://github.com/nordnet/ui/compare/v7.3.1...v7.3.2) (2021-08-30)
+
+
+### Bug Fixes
+
+* add new bar color ([82b6b27](https://github.com/nordnet/ui/commit/82b6b27))
+
 ## [7.3.1](https://github.com/nordnet/ui/compare/v7.3.0...v7.3.1) (2021-08-30)
 
 
