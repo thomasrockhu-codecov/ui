@@ -8,7 +8,7 @@ import { Box, Flexbox } from '../..';
 const Indicator = styled(Box).withConfig({
   shouldForwardProp: (prop) => !['isActive'].includes(prop),
 })<BarProps>`
-  height: ${({ theme }) => theme.spacing.unit(4)}px;
+  height: ${({ theme }) => theme.spacing.unit(3)}px;
   background: ${(p) =>
     p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleInactiveBar};
 `;
