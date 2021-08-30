@@ -35,10 +35,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     backgroundDark: rawColor.gray0,
 
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
-    
+
     barScaleActiveBar: rawColor.complementaryBlue1,
     barScaleInactiveBar: rawColor.gray6,
-    
+
     borderActive: rawColor.cta,
 
     bubbleBackground: rawColor.white,
@@ -150,6 +150,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     ],
     palettePink: rawColor.palettes.pink,
     paletteTurquoise: rawColor.palettes.turquoise,
+
+    placeholder: rawColor.gray2,
 
     positive: rawColor.positive,
 
