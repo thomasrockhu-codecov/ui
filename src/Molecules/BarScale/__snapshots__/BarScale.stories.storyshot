@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
+exports[`Storyshots Molecules / BarScale Bar Scale Normal 1`] = `
+.c2 {
+  background-color: transparent;
+}
+
 .c0 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c3 {
-  background-color: transparent;
-}
-
-.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -20,28 +15,28 @@ exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c4 {
+.c3 {
   height: 16px;
   background: #385E9D;
 }
 
-.c5 {
+.c4 {
   height: 16px;
   background: #EBEBE8;
 }
@@ -53,279 +48,61 @@ exports[`Storyshots Molecules / BarScale Bar Scale With Long Text 1`] = `
     className="c1"
   >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
+      className="c2 c3"
+    />
   </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / BarScale Bar Scale With Max 1`] = `
-.c0 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c3 {
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c1 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c4 {
-  height: 16px;
-  background: #385E9D;
-}
-
-.c5 {
-  height: 16px;
-  background: #EBEBE8;
-}
-
-<div
-  className="c0"
->
   <div
     className="c1"
   >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
+      className="c2 c3"
+    />
   </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / BarScale Bar Scale With Value And Text 1`] = `
-.c0 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c3 {
-  background-color: transparent;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
-.c1 > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c4 {
-  height: 16px;
-  background: #385E9D;
-}
-
-.c5 {
-  height: 16px;
-  background: #EBEBE8;
-}
-
-<div
-  className="c0"
->
   <div
     className="c1"
   >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
+      className="c2 c3"
+    />
+  </div>
+  <div
+    className="c1"
+  >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
+      className="c2 c4"
+    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
+Array [
+  .c2 {
+  background-color: transparent;
+}
+
 .c0 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c3 {
-  background-color: transparent;
-}
-
-.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -335,23 +112,86 @@ exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c6 {
+.c3 {
+  height: 16px;
+  background: #385E9D;
+}
+
+.c4 {
+  height: 16px;
+  background: #EBEBE8;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+  </div>,
+  .c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -363,109 +203,39 @@ exports[`Storyshots Molecules / BarScale Bar Scale With X Axis 1`] = `
   justify-content: space-between;
 }
 
-.c7 {
+.c1 {
   box-sizing: border-box;
 }
 
-.c4 {
-  height: 16px;
-  background: #385E9D;
-}
-
-.c5 {
-  height: 16px;
-  background: #EBEBE8;
-}
-
 <div
-  className="c0"
->
-  <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c4"
-      />
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3 c5"
-      />
-    </div>
-  </div>
-  <div
-    className="c6"
-  >
-    <div
-      className="c7"
+      className="c1"
     >
       Low
     </div>
     <div
-      className="c7"
+      className="c1"
     >
       Medium
     </div>
     <div
-      className="c7"
+      className="c1"
     >
       High
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
-exports[`Storyshots Molecules / BarScale Bar Scale Without Show Value 1`] = `
+exports[`Storyshots Molecules / BarScale Double Bar Scale 1`] = `
+Array [
+  .c2 {
+  background-color: transparent;
+}
+
 .c0 {
-  margin-top: 4px;
-  background-color: transparent;
-}
-
-.c3 {
-  background-color: transparent;
-}
-
-.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -475,87 +245,173 @@ exports[`Storyshots Molecules / BarScale Bar Scale Without Show Value 1`] = `
   margin-right: -2px;
 }
 
-.c1 > * {
+.c0 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c1 > *:not(:first-child) {
+.c0 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c4 {
+.c3 {
   height: 16px;
   background: #385E9D;
 }
 
-.c5 {
+.c4 {
   height: 16px;
   background: #EBEBE8;
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c4"
+        className="c2 c3"
       />
     </div>
     <div
-      className="c2"
+      className="c1"
     >
       <div
-        className="c3 c5"
+        className="c2 c4"
       />
     </div>
-  </div>
-</div>
+  </div>,
+  <h2>
+    Max of 6
+  </h2>,
+  .c2 {
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  height: 16px;
+  background: #385E9D;
+}
+
+.c4 {
+  height: 16px;
+  background: #EBEBE8;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c3"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2 c4"
+      />
+    </div>
+  </div>,
+]
 `;

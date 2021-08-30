@@ -19,7 +19,7 @@ export const BarScale: React.FC<Props> = ({ value = 0, max = 7, axisLabel = null
   const isActive = (bar: number) => bar <= clampedValue;
 
   return (
-    <Box mt={1}>
+    <>
       <Flexbox container gutter={1}>
         {R.range(1, verifiedMaxRating + 1)?.map((bar) => (
           <Flexbox key={bar} item flex="1 1 auto">
@@ -28,7 +28,7 @@ export const BarScale: React.FC<Props> = ({ value = 0, max = 7, axisLabel = null
         ))}
       </Flexbox>
       {axisLabel}
-    </Box>
+    </>
   );
 };
 
