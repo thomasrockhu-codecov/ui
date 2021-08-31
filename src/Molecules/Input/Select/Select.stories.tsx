@@ -625,7 +625,10 @@ export const multiselect = () =>
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -660,7 +663,10 @@ export const multiselectActions = () =>
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -727,7 +733,12 @@ export const multiselectSelectAll = () =>
       }
       return (
         <FlexedBox px={2}>
-          <Typography type="secondary">{label}</Typography>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
         </FlexedBox>
       );
     }, []);
@@ -770,7 +781,12 @@ export const multiselectSelectAllWithFullScreenOnMobile = () =>
       }
       return (
         <FlexedBox px={2}>
-          <Typography type="secondary">{label}</Typography>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
         </FlexedBox>
       );
     }, []);
@@ -1642,7 +1658,10 @@ export const GroupedOptionsMultiselect = () => {
 
     return (
       <FlexedBox px={2}>
-        <Typography type="secondary">
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
           {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
         </Typography>
       </FlexedBox>
@@ -1702,7 +1721,12 @@ export const GroupedOptionsMultiselectControlled = () => {
 
     return (
       <FlexedBox px={2}>
-        <Typography type="secondary">{label}</Typography>
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
+          {label}
+        </Typography>
       </FlexedBox>
     );
   };
