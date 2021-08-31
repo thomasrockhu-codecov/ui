@@ -1,3 +1,12 @@
+## [7.3.4](https://github.com/nordnet/ui/compare/v7.3.3...v7.3.4) (2021-08-31)
+
+
+### Bug Fixes
+
+* **input-select:** handle placeholder color for multiselect test cases ([5987546](https://github.com/nordnet/ui/commit/5987546))
+* rename placeholder theme color to placeholderText ([6dc936f](https://github.com/nordnet/ui/commit/6dc936f))
+* **input-select:** change placeholder color to gray ([8482b50](https://github.com/nordnet/ui/commit/8482b50))
+
 ## [7.3.3](https://github.com/nordnet/ui/compare/v7.3.2...v7.3.3) (2021-08-30)
 
 
