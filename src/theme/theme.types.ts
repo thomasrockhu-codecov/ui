@@ -231,7 +231,7 @@ export type ThemeColors = {
   palettePink: string[];
   paletteTurquoise: string[];
   /** gray2 */
-  placeholder: RawColor['gray2'];
+  placeholderText: RawColor['gray2'];
   /** positive */
   positive: RawColor['positive'];
   /** gray6 */

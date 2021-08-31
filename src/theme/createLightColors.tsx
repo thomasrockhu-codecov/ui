@@ -151,7 +151,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     palettePink: rawColor.palettes.pink,
     paletteTurquoise: rawColor.palettes.turquoise,
 
-    placeholder: rawColor.gray2,
+    placeholderText: rawColor.gray2,
 
     positive: rawColor.positive,
 

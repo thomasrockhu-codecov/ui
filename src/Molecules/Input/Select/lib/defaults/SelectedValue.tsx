@@ -19,7 +19,7 @@ const EllipsizingText = styled.span<{ $isPlaceholder: boolean }>`
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
-  ${(p) => (p.$isPlaceholder ? `color: ${p.theme.color.placeholder};` : '')}
+  ${(p) => (p.$isPlaceholder ? `color: ${p.theme.color.placeholderText};` : '')}
 `;
 
 const CHEVRON_WIDTH = 20;
