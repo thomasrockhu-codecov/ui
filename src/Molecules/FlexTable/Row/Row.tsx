@@ -113,9 +113,13 @@ const Row: RowComponent = ({
     );
   }
 
-  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<'expandable'>(
-    'expandable',
-  );
+  const {
+    xs: xsRow,
+    sm: smRow,
+    md: mdRow,
+    lg: lgRow,
+    xl: xlRow,
+  } = useFlexTable<'expandable'>('expandable');
   const {
     xs: xsFlexbox,
     sm: smFlexbox,

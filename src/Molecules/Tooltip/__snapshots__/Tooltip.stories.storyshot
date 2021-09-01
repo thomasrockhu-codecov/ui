@@ -122,6 +122,11 @@ exports[`Storyshots Molecules / Tooltip Broken Positioning 1`] = `
       >
         <span
           className="c4"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
         />
         <div
           className="c5 "
@@ -274,6 +279,11 @@ Array [
         >
           <span
             className="c4"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
           />
           <div
             className="c5 "
@@ -593,7 +603,7 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
           onTouchStart={[Function]}
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
             onClick={[Function]}
             type="button"
           >
@@ -1023,6 +1033,11 @@ Array [
         >
           <span
             className="c4"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
           />
           <div
             className="c5 "
@@ -1161,6 +1176,11 @@ Array [
         >
           <span
             className="c4"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
           />
           <div
             className="c5 "

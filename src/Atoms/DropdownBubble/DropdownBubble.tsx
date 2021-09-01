@@ -66,14 +66,12 @@ const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) =>
-      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
+    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) =>
-      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
+    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
   }
 `;
 

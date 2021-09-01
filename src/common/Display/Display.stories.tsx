@@ -12,7 +12,7 @@ export default {
 export const documentation = () => {
   return (
     <>
-      <MD source={docs} />
+      <MD>{docs}</MD>
       <Display
         items={[
           {

@@ -203,7 +203,7 @@ export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>(
       lineHeight={lineHeight}
       weight={weight}
       textAlign={textAlign}
-      {...pickAriaAttributes(props)}
+      {...pickAriaAttributes(props as Record<string, any>)}
     >
       {children}
     </StyledTypography>
