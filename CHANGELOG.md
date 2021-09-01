@@ -1,3 +1,10 @@
+## [7.3.5](https://github.com/nordnet/ui/compare/v7.3.4...v7.3.5) (2021-09-01)
+
+
+### Bug Fixes
+
+* lint issues ([9dc9835](https://github.com/nordnet/ui/commit/9dc9835))
+
 ## [7.3.4](https://github.com/nordnet/ui/compare/v7.3.3...v7.3.4) (2021-08-31)
 
 
