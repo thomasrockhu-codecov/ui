@@ -84,6 +84,14 @@ export const Transfer = () => (
   />
 );
 
+export const UrgentMessage = () => (
+  <Icon.UrgentMessage
+    size={number('Size', 100)}
+    fill={(t) => color('Fill color', t.color.negative)}
+    stroke={(t) => color('Stroke color', t.color.backgroundBlack)}
+  />
+);
+
 inlineStory.story = {
   name: 'Inline',
 };

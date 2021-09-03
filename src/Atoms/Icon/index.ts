@@ -141,6 +141,7 @@ import { ThreeDotsO } from './components/ThreeDotsO';
 import { Trash } from './components/Trash';
 import { Transfer } from './components/Transfer';
 import { TrendlineArrowhead } from './components/TrendlineArrowhead';
+import { UrgentMessage } from './components/UrgentMessage';
 import { Utilities } from './components/Utilities';
 import { WarningCircle } from './components/WarningCircle';
 import { WarningTriangle } from './components/WarningTriangle';
@@ -290,6 +291,7 @@ export default {
   Trash,
   Transfer,
   TrendlineArrowhead,
+  UrgentMessage,
   Utilities,
   WarningCircle,
   WarningTriangle,
