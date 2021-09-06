@@ -68,7 +68,7 @@ export const ShowMore: React.FC<Props> = ({
         {children}
       </StyledDiv>
       {showMoreButton && (
-        <Box pb={4} pt={ellipsis ? 1 : 4}>
+        <Box pb={ellipsis ? 0 : 4} pt={ellipsis ? 1 : 4}>
           <ShowMoreButton onClick={onShowMoreClick} align="left" showMoreText={showMoreText} />
         </Box>
       )}
