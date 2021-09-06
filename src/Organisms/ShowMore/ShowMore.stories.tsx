@@ -12,9 +12,17 @@ export const Default = () => {
   return <ShowMore showMoreText="Show more">{text}</ShowMore>;
 };
 
-export const WithCustomCutOffHeight = () => {
+export const WithGradient = () => {
   return (
     <ShowMore showMoreText="Show much more" cutoffHeight={100}>
+      {text}
+    </ShowMore>
+  );
+};
+
+export const WithEllipsis = () => {
+  return (
+    <ShowMore showMoreText="Show much more" ellipsis linesToClamp={3}>
       {text}
     </ShowMore>
   );
