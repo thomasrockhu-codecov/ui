@@ -69,7 +69,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
 const SelectWrapper = styled.div`
   ${height}
   ${borderStyles}
-  background: ${(p) => p.theme.color.backgroundInput};
+  background: ${(p) => p.theme.color.inputBackground};
   box-sizing: border-box;
   position: relative;
 `;

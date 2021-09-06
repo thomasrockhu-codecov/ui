@@ -51,22 +51,22 @@ exports[`Storyshots Molecules / CardWithTitle CardWithTitle as article (most Car
   }
 }
 
-@media (min-width:760px) {
-  .c3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (min-width:760px) {
   .c2 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c4 {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media (min-width:760px) {
+  .c3 {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -154,22 +154,22 @@ exports[`Storyshots Molecules / CardWithTitle CardWithTitle as section 1`] = `
   }
 }
 
-@media (min-width:760px) {
-  .c3 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (min-width:760px) {
   .c2 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c4 {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media (min-width:760px) {
+  .c3 {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -262,22 +262,22 @@ exports[`Storyshots Molecules / CardWithTitle Cards without padding 1`] = `
   }
 }
 
-@media (min-width:760px) {
-  .c4 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -370,22 +370,22 @@ exports[`Storyshots Molecules / CardWithTitle Default 1`] = `
   }
 }
 
-@media (min-width:760px) {
-  .c4 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -1184,6 +1184,18 @@ exports[`Storyshots Molecules / CardWithTitle With variant big 1`] = `
   }
 }
 
+@media not all and (min-width:760px) {
+  .c3 {
+    display: none !important;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c5 {
+    display: none !important;
+  }
+}
+
 @media (min-width:760px) {
   .c4 {
     font-size: 24px;
@@ -1195,18 +1207,6 @@ exports[`Storyshots Molecules / CardWithTitle With variant big 1`] = `
   .c6 {
     font-size: 20px;
     line-height: 1.2;
-  }
-}
-
-@media not all and (min-width:760px) {
-  .c3 {
-    display: none;
-  }
-}
-
-@media not all and (max-width:759px) {
-  .c5 {
-    display: none;
   }
 }
 

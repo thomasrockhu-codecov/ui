@@ -46,7 +46,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const documentation = () => <MD source={docs} />;
+export const documentation = () => <MD>{docs}</MD>;
 
 export const defaultStory = () => (
   <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>
@@ -170,8 +170,7 @@ export const integrationFadedScrollWithHeightFromParent = () => {
 };
 
 integrationFadedScrollWithHeightFromParent.story = {
-  name:
-    'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
+  name: 'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
 };
 
 export const withoutAllVerticalPadding = () => (

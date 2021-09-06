@@ -273,6 +273,10 @@ export const disabledStory = () => (
         component: <Input.Checkbox name="example" value="blue" label="Blue" disabled />,
         title: 'Not Checked',
       },
+      {
+        component: <Input.Checkbox name="example" value="red" label="Red" />,
+        title: 'Not Disabled',
+      },
     ]}
   />
 );

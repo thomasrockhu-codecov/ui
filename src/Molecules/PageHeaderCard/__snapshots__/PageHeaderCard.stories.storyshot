@@ -349,6 +349,12 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
   }
 }
 
+@media not all and (max-width:759px) {
+  .c6 {
+    display: none !important;
+  }
+}
+
 @media (min-width:760px) {
   .c5 {
     font-size: 28px;
@@ -387,12 +393,6 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
 @media print {
   .c1 {
     max-width: none;
-  }
-}
-
-@media not all and (max-width:759px) {
-  .c6 {
-    display: none;
   }
 }
 
@@ -453,7 +453,7 @@ exports[`Storyshots Molecules / PageHeader Page header with children 1`] = `
                   className="c3"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c11"
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c11"
                     onClick={[Function]}
                     type="button"
                   >

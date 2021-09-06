@@ -269,6 +269,21 @@ export const overflowStory = () => (
   />
 );
 
+export const withModalTitleFullScreenOnMobile = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+    labelTooltip="Tooltip for select field"
+    fullscreenOnMobile
+  />
+);
+
 export const preselectedOptions = () =>
   createElement(() => {
     // This component you need to redefine for your particular case
@@ -282,6 +297,60 @@ export const preselectedOptions = () =>
             {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
           </Typography>
         </FlexedBox>
+      );
+    }, []);
+
+    const [values, setValues] = useState([
+      // Non-referentially equal options
+      { ...accountOptions[1] },
+      { ...accountOptions[2] },
+    ]);
+
+    return (
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        value={values}
+        // @ts-ignore
+        onChange={setValues}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
+    );
+  });
+
+// These styles need to be applied in order for the custom component to truncate in the input
+const StyledFlexbox = styled(Flexbox)`
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 20px;
+`;
+
+const EllipsizingText = styled(Typography)`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+`;
+
+export const passingTruncatedComponents = () =>
+  createElement(() => {
+    // This component you need to redefine for your particular case
+    // Why isn't this implemented in the component? Because depending of what you put inside the EllipsizingText it may or may not kill the Truncation
+    // That's just how truncation works, it needs a parent and child with specific props
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <StyledFlexbox container alignItems="center">
+          <EllipsizingText type="secondary">
+            {/* adding Box or Flexbox child here will kill the Truncation, but overflow will still be hidden */}
+            {selectedCount === 0
+              ? machineState.context.placeholder
+              : `${selectedCount} selected along with a very long text for reference of truncation`}
+          </EllipsizingText>
+        </StyledFlexbox>
       );
     }, []);
 
@@ -556,7 +625,10 @@ export const multiselect = () =>
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -591,7 +663,10 @@ export const multiselectActions = () =>
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -658,7 +733,12 @@ export const multiselectSelectAll = () =>
       }
       return (
         <FlexedBox px={2}>
-          <Typography type="secondary">{label}</Typography>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
         </FlexedBox>
       );
     }, []);
@@ -675,6 +755,60 @@ export const multiselectSelectAll = () =>
         multiselect
         label="User account"
         placeholder="Select account"
+      />
+    );
+  });
+
+export const multiselectSelectAllWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const [value, setValue] = useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(
+        (x) => x[Input.Select.SYMBOL_ALL],
+      );
+      let label;
+      if (allSelected) {
+        label = 'All selected';
+      } else if (selectedCount === 0) {
+        label = machineState.context.placeholder;
+      } else {
+        label = `${selectedCount} selected`;
+      }
+      return (
+        <FlexedBox px={2}>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
+    return (
+      <Input.Select
+        id="multiwithall-select"
+        options={[
+          ...accountOptionsAndSelectAll,
+          { value: 21, label: 'Acc21' },
+          { value: 22, label: 'Acc22' },
+          { value: 23, label: 'Acc23' },
+        ]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{
+          SelectedValue: CustomSelectedValue,
+        }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+        fullscreenOnMobile
       />
     );
   });
@@ -1160,6 +1294,104 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
   });
 
+export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const customComponents = useMemo(
+      () => ({
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
+    // just to have persistent unique keys
+    const counter = createCounter();
+    const hugeOptionsList = useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          ),
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
+    );
+
+    // @ts-ignore
+    const handleChange = (newVal) => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <TrackingContext.Provider
+        value={{
+          track: (componentName, e, props) =>
+            // @ts-ignore
+            action('Tracking')(componentName, e.type, e.payload, props),
+        }}
+      >
+        <Flexbox container justifyContent="flex-start">
+          <Input.Select
+            options={hugeOptionsList}
+            label="User account"
+            id="input-select-search-inside"
+            placeholder="Select account"
+            noFormField
+            showSearch
+            multiselect
+            value={value}
+            width="300px"
+            listMaxHeight="400px"
+            components={customComponents}
+            onChange={handleChange}
+            fullscreenOnMobile
+            actions={[
+              {
+                label: 'Action',
+                onSelect: action('Action triggered'),
+              },
+            ]}
+          />
+        </Flexbox>
+      </TrackingContext.Provider>
+    );
+  });
+
 export const listPositionedToTheLeft = () =>
   createElement(() => {
     const customComponents = useMemo(
@@ -1321,6 +1553,7 @@ export const insideModal = () => (
       options={accountOptions}
       label="User account"
       placeholder="Select account"
+      fullscreenOnMobile
       withPortal
     />
   </Modal>
@@ -1397,6 +1630,120 @@ export const GroupedOptions = () => {
       placeholder="Select option"
       value={valueToSelected(value)}
       onChange={handleChange}
+    />
+  );
+};
+
+export const GroupedOptionsMultiselect = () => {
+  const options = [
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+
+    return (
+      <FlexedBox px={2}>
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
+          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+        </Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect"
+      options={options}
+      label="Grouped options multiselect"
+      placeholder="Select options"
+      components={{ SelectedValue: CustomSelectedValue }}
+      multiselect
+    />
+  );
+};
+
+export const GroupedOptionsMultiselectControlled = () => {
+  const [value, setValue] = useState([]);
+  const options = [
+    {
+      label: `Select All`,
+      value: null,
+      [Input.Select.SYMBOL_ALL]: true,
+    },
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    const allSelected = machineState.context.selectedItems.some((x) => x[Input.Select.SYMBOL_ALL]);
+
+    const label = (() => {
+      if (allSelected) {
+        return 'All selected';
+      }
+      if (selectedCount === 0) {
+        return machineState.context.placeholder;
+      }
+      return `${selectedCount} selected`;
+    })();
+
+    return (
+      <FlexedBox px={2}>
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
+          {label}
+        </Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect-test"
+      options={options}
+      value={value}
+      // @ts-ignore
+      onChange={setValue}
+      components={{
+        SelectedValue: CustomSelectedValue,
+      }}
+      multiselect
+      label="User account"
+      placeholder="Select account"
     />
   );
 };

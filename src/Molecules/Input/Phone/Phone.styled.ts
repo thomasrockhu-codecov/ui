@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Props, Variant } from './Phone.types';
-import { Box, Flexbox } from '../../..';
+import { Box, Flexbox, Typography } from '../../..';
 import { Select } from '../Select';
 import NormalizedElements from '../../../common/NormalizedElements';
 
@@ -10,7 +10,7 @@ const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -143,4 +143,8 @@ export const StyledBox = styled(Box)<{ focused?: boolean; isKeyboardNavigation?:
   }
 `
       : ''}
+`;
+
+export const StyledTypography = styled(Typography)`
+  width: inherit;
 `;

@@ -66,14 +66,12 @@ const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) =>
-      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
+    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    ${(p) =>
-      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
+    ${(p) => getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
   }
 `;
 
@@ -86,6 +84,7 @@ export const DropdownBubble = styled.div<Props>`
   border: 1px solid ${(p) => p.theme.color.bubbleBorder};
   background-color: ${(p) => p.theme.color.bubbleBackground};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
+  color: ${(p) => p.theme.color.text};
   ${bottomAndTopPlacementCss}
   ${triangleCss}
 `;

@@ -15,9 +15,7 @@ import {
 const Container = styled.div<InternalProps & Props>`
   ${containerStyles}
   ${(p) => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
-  ${(
-    p,
-  ) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
+  ${(p) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
 const Scroller = styled.div<Props>`
@@ -53,6 +51,8 @@ export const FadedScroll: Component & {
   enableMobileFade = false,
   fadeHeight = 13,
   maxHeight,
+  backgroundColor = '#ffffff',
+  backgroundColorDarkMode = '#282823',
 }) => {
   const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
   const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect<HTMLDivElement>();
@@ -67,6 +67,8 @@ export const FadedScroll: Component & {
       intersectionTopRatio={intersectionTopRatio}
       intersectionBottomRatio={intersectionBottomRatio}
       maxHeight={maxHeight}
+      backgroundColor={backgroundColor}
+      backgroundColorDarkMode={backgroundColorDarkMode}
     >
       <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
         <Content ref={contentRef}>

@@ -51,9 +51,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c20 {
@@ -70,7 +70,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -84,7 +84,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   display: block;
 }
 
-.c22 {
+.c23 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -200,16 +200,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   padding-bottom: 4px;
 }
 
-.c18 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c16 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -220,6 +210,10 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 
 .c11 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -227,8 +221,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -246,8 +239,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -321,12 +313,43 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c18 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c21 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c11 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -444,7 +467,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -468,7 +491,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c17 c21"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -478,7 +501,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c21 c22"
+            className="c22 c23"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -498,6 +521,10 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 
 exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] = `
 .c24 {
+  color: #282823;
+}
+
+.c25 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -603,9 +630,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c16 {
@@ -623,7 +650,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   vertical-align: middle;
 }
 
-.c29 {
+.c30 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -637,7 +664,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   display: block;
 }
 
-.c30 {
+.c32 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -651,7 +678,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   display: block;
 }
 
-.c31 {
+.c33 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -675,7 +702,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   line-height: 1.5;
 }
 
-.c28 {
+.c29 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -684,7 +711,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c34 {
+.c36 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -693,7 +720,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   line-height: 1.5;
 }
 
-.c26 {
+.c27 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -722,25 +749,25 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   cursor: not-allowed;
 }
 
-.c26,
-.c26[type='button'],
-.c26[type='reset'],
-.c26[type='submit'] {
+.c27,
+.c27[type='button'],
+.c27[type='reset'],
+.c27[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c26::-moz-focus-inner,
-.c26[type='button']::-moz-focus-inner,
-.c26[type='reset']::-moz-focus-inner,
-.c26[type='submit']::-moz-focus-inner {
+.c27::-moz-focus-inner,
+.c27[type='button']::-moz-focus-inner,
+.c27[type='reset']::-moz-focus-inner,
+.c27[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c26:-moz-focusring,
-.c26[type='button']:-moz-focusring,
-.c26[type='reset']:-moz-focusring,
-.c26[type='submit']:-moz-focusring {
+.c27:-moz-focusring,
+.c27[type='button']:-moz-focusring,
+.c27[type='reset']:-moz-focusring,
+.c27[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -775,17 +802,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   padding-bottom: 4px;
 }
 
-.c27 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c25 {
+.c26 {
   padding-top: 0 !important;
   padding-bottom: 0;
   -webkit-align-self: stretch;
@@ -795,6 +812,10 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 
 .c20 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c2 {
@@ -802,8 +823,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -821,8 +841,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -847,7 +866,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   top: 0px;
 }
 
-.c32 {
+.c34 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -873,7 +892,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   padding-bottom: 4px;
 }
 
-.c33 {
+.c35 {
   overflow: hidden;
   padding-top: 4px !important;
   padding-bottom: 4px;
@@ -929,12 +948,43 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c28 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
+  .c31 {
+    display: none !important;
+  }
+}
 
+@media (min-width:976px) {
+  .c20 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
+  }
 }
 
 <div
@@ -1070,9 +1120,13 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="c23 c9"
         >
-          <time>
-            7/10/2020, 12:53
-          </time>
+          <span
+            className="c24"
+          >
+            <time>
+              7/10/2020, 12:53
+            </time>
+          </span>
         </span>
       </div>
     </div>
@@ -1102,7 +1156,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
           className="c23 c9"
         >
           <svg
-            className="c24"
+            className="c25"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1160,22 +1214,22 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c22 c25 c20"
+      className="c19 c22 c26 c20"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c27 c28"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c28"
+          className="c29"
         >
           <svg
             aria-hidden="true"
-            className="c29"
+            className="c30"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1189,17 +1243,17 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c27 c31"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c28"
+          className="c29"
         >
           <svg
             aria-hidden="true"
-            className="c30 c31"
+            className="c32 c33"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1228,9 +1282,13 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
         <span
           className="c23 c9"
         >
-          <time>
-            7/10/2020, 12:53
-          </time>
+          <span
+            className="c24"
+          >
+            <time>
+              7/10/2020, 12:53
+            </time>
+          </span>
         </span>
       </div>
     </div>
@@ -1260,7 +1318,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
           className="c23 c9"
         >
           <svg
-            className="c24"
+            className="c25"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1309,22 +1367,22 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c22 c25 c20"
+      className="c19 c22 c26 c20"
       role="cell"
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c27 c28"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c28"
+          className="c29"
         >
           <svg
             aria-hidden="true"
-            className="c29"
+            className="c30"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1338,17 +1396,17 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </button>
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c27 c31"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c28"
+          className="c29"
         >
           <svg
             aria-hidden="true"
-            className="c30 c31"
+            className="c32 c33"
             direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -1364,30 +1422,30 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
     </div>
   </div>
   <div
-    className="c1 c2 c32"
+    className="c1 c2 c34"
     role="row"
   >
     <div
-      className="c4 c33"
+      className="c4 c35"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c34 c9"
+          className="c36 c9"
         />
       </div>
     </div>
     <div
-      className="c10 c33"
+      className="c10 c35"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c34 c9"
+          className="c36 c9"
         >
           
           400
@@ -1395,26 +1453,26 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c4 c33"
+      className="c4 c35"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c34 c9"
+          className="c36 c9"
         />
       </div>
     </div>
     <div
-      className="c18 c33"
+      className="c18 c35"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c34 c9"
+          className="c36 c9"
         >
           
           25
@@ -1423,14 +1481,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c33 c20"
+      className="c19 c35 c20"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c34 c9"
+          className="c36 c9"
         />
       </div>
     </div>

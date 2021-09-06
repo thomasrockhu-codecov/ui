@@ -184,7 +184,7 @@ Array [
       Disabled
     </span>
   </div>,
-  .c7 {
+  .c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,13 +196,22 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -211,7 +220,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -220,7 +229,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   width: 18px;
   height: 18px;
   border: 1px solid #BCBCB6;
@@ -232,8 +241,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c10::before,
-.c10::after {
+.c11::before,
+.c11::after {
   content: '';
   display: block;
   position: absolute;
@@ -245,26 +254,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c10::before {
+.c11::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c10::after {
+.c11::after {
   width: 11px;
   height: 11px;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c9 {
+.c6:hover .c10 {
   border-color: #4B4B46;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -272,32 +281,32 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9::after {
+.c9:checked + .c10::after {
   background: #0046FF;
 }
 
-.c8[disabled] + .c9 {
+.c9[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c8:checked[disabled] + .c9 {
+.c9:checked[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c8:checked[disabled] + .c9::after {
+.c9:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
-.c8:focus + .c9::before {
+.c9:focus + .c10::before {
   border: 1px solid #0046FF;
 }
 
-.c12 {
+.c13 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c3 {
+.c4 {
   width: auto;
   display: inline-block;
 }
@@ -374,24 +383,28 @@ Array [
       <div
         className="c2"
       >
-        Checked
+        <span
+          className="c3"
+        >
+          Checked
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4 c5"
+            className="c5 c6"
             hidden={false}
           >
             <span
-              className="c6"
+              className="c7"
             >
               <div
-                className="c7"
+                className="c8"
               >
                 <input
-                  className="c8"
+                  className="c9"
                   defaultChecked={true}
                   disabled={true}
                   name="example"
@@ -399,10 +412,10 @@ Array [
                   value="green"
                 />
                 <div
-                  className="c9 c10"
+                  className="c10 c11"
                 />
                 <span
-                  className="c11 c12"
+                  className="c12 c13"
                 >
                   Green
                 </span>
@@ -419,34 +432,38 @@ Array [
       <div
         className="c2"
       >
-        Not Checked
+        <span
+          className="c3"
+        >
+          Not Checked
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4 c5"
+            className="c5 c6"
             hidden={false}
           >
             <span
-              className="c6"
+              className="c7"
             >
               <div
-                className="c7"
+                className="c8"
               >
                 <input
-                  className="c8"
+                  className="c9"
                   disabled={true}
                   name="example"
                   type="radio"
                   value="blue"
                 />
                 <div
-                  className="c9 c10"
+                  className="c10 c11"
                 />
                 <span
-                  className="c11 c12"
+                  className="c12 c13"
                 >
                   Blue
                 </span>
@@ -1937,7 +1954,7 @@ Array [
       Required
     </span>
   </div>,
-  .c7 {
+  .c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1949,13 +1966,22 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c6 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1964,7 +1990,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1973,7 +1999,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   width: 18px;
   height: 18px;
   border: 1px solid #BCBCB6;
@@ -1985,8 +2011,8 @@ Array [
   flex-shrink: 0;
 }
 
-.c10::before,
-.c10::after {
+.c11::before,
+.c11::after {
   content: '';
   display: block;
   position: absolute;
@@ -1998,26 +2024,26 @@ Array [
   transform: translate(-50%,-50%);
 }
 
-.c10::before {
+.c11::before {
   width: 100%;
   height: 100%;
   padding: 2px;
 }
 
-.c10::after {
+.c11::after {
   width: 11px;
   height: 11px;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c9 {
+.c6:hover .c10 {
   border-color: #4B4B46;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -2025,32 +2051,32 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9::after {
+.c9:checked + .c10::after {
   background: #0046FF;
 }
 
-.c8[disabled] + .c9 {
+.c9[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c8:checked[disabled] + .c9 {
+.c9:checked[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c8:checked[disabled] + .c9::after {
+.c9:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
-.c8:focus + .c9::before {
+.c9:focus + .c10::before {
   border: 1px solid #0046FF;
 }
 
-.c12 {
+.c13 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c3 {
+.c4 {
   width: auto;
   display: inline-block;
 }
@@ -2127,34 +2153,38 @@ Array [
       <div
         className="c2"
       >
-        Default (without star)
+        <span
+          className="c3"
+        >
+          Default (without star)
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4 c5"
+            className="c5 c6"
             hidden={false}
           >
             <span
-              className="c6"
+              className="c7"
             >
               <div
-                className="c7"
+                className="c8"
               >
                 <input
-                  className="c8"
+                  className="c9"
                   name="example"
                   required={true}
                   type="radio"
                   value="green"
                 />
                 <div
-                  className="c9 c10"
+                  className="c10 c11"
                 />
                 <span
-                  className="c11 c12"
+                  className="c12 c13"
                 >
                   Green
                 </span>
@@ -2171,34 +2201,38 @@ Array [
       <div
         className="c2"
       >
-        With star
+        <span
+          className="c3"
+        >
+          With star
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4 c5"
+            className="c5 c6"
             hidden={false}
           >
             <span
-              className="c6"
+              className="c7"
             >
               <div
-                className="c7"
+                className="c8"
               >
                 <input
-                  className="c8"
+                  className="c9"
                   name="example"
                   required={true}
                   type="radio"
                   value="green"
                 />
                 <div
-                  className="c9 c10"
+                  className="c10 c11"
                 />
                 <span
-                  className="c11 c12"
+                  className="c12 c13"
                 >
                   Green *
                 </span>

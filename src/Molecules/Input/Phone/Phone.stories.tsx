@@ -1,8 +1,10 @@
-/* eslint-disable no-console */
 import React from 'react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
+import { actions } from '@storybook/addon-actions';
 
 import { Flexbox, Input } from '../../..';
+
+const { onBlur, onFocus, onChange } = actions('onBlur', 'onFocus', 'onChange');
 
 export default {
   title: 'Molecules / Input / Phone',
@@ -19,7 +21,7 @@ export const defaultStory = () => (
     placeholder="123 456 789"
     size={select('Size', { Small: 's', Normal: undefined }, undefined)}
     disabled={boolean('Disabled', false)}
-    onChange={console.log}
+    onChange={onChange}
   />
 );
 
@@ -29,6 +31,7 @@ defaultStory.story = {
 
 export const prefilledDefaultValues = () => (
   <Input.Phone
+    onChange={onChange}
     name="disabled-example"
     label="Phone number"
     defaultValue={{ countryCode: '46', phoneNumber: '123 456 789' }}
@@ -44,7 +47,7 @@ export const autoFocus = () => (
     name="default-example"
     label="Phone number"
     placeholder="123 456 789"
-    onChange={console.log}
+    onChange={onChange}
     autoFocus
   />
 );
@@ -58,7 +61,7 @@ export const fullWidth = () => (
     name="full-width-example"
     label="Phone number"
     placeholder="123 456 789"
-    onChange={console.log}
+    onChange={onChange}
     width="100%"
   />
 );
@@ -72,7 +75,7 @@ export const withHelpText = () => (
     name="with-help-text-example"
     label="Phone number"
     placeholder="123 456 789"
-    onChange={console.log}
+    onChange={onChange}
     extraInfo="Please fill in your phone number"
   />
 );
@@ -86,7 +89,7 @@ export const hasError = () => (
     name="has-error-example"
     label="Phone number"
     placeholder="123 456 789"
-    onChange={console.log}
+    onChange={onChange}
     error="Incorrect phone number"
   />
 );
@@ -100,7 +103,7 @@ export const hasSuccess = () => (
     name="has-success-example"
     label="Phone number"
     placeholder="123 456 789"
-    onChange={console.log}
+    onChange={onChange}
     success
   />
 );
@@ -143,11 +146,28 @@ export const enableSearchComponent = () => (
     placeholder="123 456 789"
     size={select('Size', { Small: 's', Normal: undefined }, undefined)}
     disabled={boolean('Disabled', false)}
-    onChange={console.log}
+    onChange={onChange}
     disableSearchComponent={false}
   />
 );
 
 enableSearchComponent.story = {
   name: 'Enable search component',
+};
+
+export const withBlurAndFocus = () => (
+  <Input.Phone
+    name="on-blur-example"
+    label="Phone number"
+    placeholder="123 456 789"
+    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
+    disabled={boolean('Disabled', false)}
+    onChange={onChange}
+    onBlur={onBlur}
+    onFocus={onFocus}
+  />
+);
+
+withBlurAndFocus.story = {
+  name: 'With blur and focus function',
 };

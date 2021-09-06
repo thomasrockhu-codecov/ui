@@ -95,7 +95,7 @@ exports[`Storyshots Molecules / Avatar Best practice, with element as children 1
 `;
 
 exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
-.c3 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -111,7 +111,16 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -120,7 +129,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   line-height: 1.6;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -129,7 +138,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -138,7 +147,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c4 {
+.c5 {
   background-color: #282823;
   width: 24px;
   height: 24px;
@@ -146,7 +155,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   border-radius: 50%;
 }
 
-.c6 {
+.c7 {
   background-color: #282823;
   width: 32px;
   height: 32px;
@@ -154,7 +163,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
   border-radius: 50%;
 }
 
-.c8 {
+.c9 {
   background-color: #282823;
   width: 56px;
   height: 56px;
@@ -220,7 +229,7 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -237,14 +246,18 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
     <div
       className="c2"
     >
-      Size \`s\`
+      <span
+        className="c3"
+      >
+        Size \`s\`
+      </span>
     </div>
     <div>
       <div
-        className="c3 c4"
+        className="c4 c5"
       >
         <span
-          className="c5"
+          className="c6"
         >
           ASK
         </span>
@@ -258,14 +271,18 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
     <div
       className="c2"
     >
-      Size \`m\` (default)
+      <span
+        className="c3"
+      >
+        Size \`m\` (default)
+      </span>
     </div>
     <div>
       <div
-        className="c3 c6"
+        className="c4 c7"
       >
         <span
-          className="c7"
+          className="c8"
         >
           ASK
         </span>
@@ -279,14 +296,18 @@ exports[`Storyshots Molecules / Avatar Different sizes 1`] = `
     <div
       className="c2"
     >
-      Size \`l\`
+      <span
+        className="c3"
+      >
+        Size \`l\`
+      </span>
     </div>
     <div>
       <div
-        className="c3 c8"
+        className="c4 c9"
       >
         <span
-          className="c9"
+          className="c10"
         >
           ASK
         </span>

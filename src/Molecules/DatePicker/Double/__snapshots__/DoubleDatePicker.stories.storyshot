@@ -34,7 +34,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -59,7 +59,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -68,7 +72,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -84,7 +88,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -110,20 +114,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -162,7 +166,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,7 +191,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -196,7 +204,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -212,7 +220,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -238,20 +246,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>
@@ -369,7 +377,7 @@ Array [
       className="c1"
     >
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c2"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
         onClick={[Function]}
         type="button"
       >
@@ -386,7 +394,7 @@ Array [
       className="c1"
     >
       <button
-        className="NormalizedButton__Button-ey7f5x-0 c2"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
         onClick={[Function]}
         type="button"
       >
@@ -749,7 +757,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -774,7 +782,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -783,7 +795,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -799,7 +811,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -825,20 +837,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -877,7 +889,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -902,7 +914,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -911,7 +927,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -927,7 +943,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -953,20 +969,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>
@@ -1309,7 +1325,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1334,7 +1350,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1343,7 +1363,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1359,7 +1379,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -1385,20 +1405,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -1437,7 +1457,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1462,7 +1482,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1471,7 +1495,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1487,7 +1511,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -1513,20 +1537,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>
@@ -1868,7 +1892,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1893,7 +1917,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1902,7 +1930,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1918,7 +1946,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -1944,20 +1972,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -1996,7 +2024,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2021,7 +2049,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2030,7 +2062,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2046,7 +2078,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -2072,20 +2104,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>
@@ -2428,7 +2460,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2453,7 +2485,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2462,7 +2498,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2478,7 +2514,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -2504,20 +2540,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -2556,7 +2592,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2581,7 +2617,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2590,7 +2630,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2606,7 +2646,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -2632,20 +2672,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>
@@ -2988,7 +3028,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3013,7 +3053,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3022,7 +3066,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3038,7 +3082,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -3064,20 +3108,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             The double variant has a specific user case in mind
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
           </span>
@@ -3116,7 +3160,7 @@ Array [
   padding-top: 0;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3141,7 +3185,11 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3150,7 +3198,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3166,7 +3214,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   width: 100%;
 }
 
@@ -3192,20 +3240,20 @@ Array [
             d="M46 0l46 89.3913043H0z"
           />
           <path
+            className="c4"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-            fill="#FFF"
           />
         </svg>
         <div
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Use at own risk
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             Arrow navigation is yet to be implemented
           </span>

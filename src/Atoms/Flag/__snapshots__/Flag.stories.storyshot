@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms / Flag Available flags 1`] = `
-.c3 {
+.c4 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -9,13 +9,22 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
   overflow: hidden;
 }
 
-.c4 {
+.c5 {
   height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 26.666666666666668px;
   overflow: hidden;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -86,11 +95,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      ca
+      <span
+        className="c3"
+      >
+        ca
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -121,11 +134,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      de
+      <span
+        className="c3"
+      >
+        de
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -159,11 +176,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      eu
+      <span
+        className="c3"
+      >
+        eu
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -276,11 +297,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      fr
+      <span
+        className="c3"
+      >
+        fr
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -315,11 +340,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      ru
+      <span
+        className="c3"
+      >
+        ru
+      </span>
     </div>
     <div>
       <svg
-        className="c4"
+        className="c5"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -354,11 +383,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      gb
+      <span
+        className="c3"
+      >
+        gb
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -411,11 +444,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      dk
+      <span
+        className="c3"
+      >
+        dk
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -445,11 +482,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      fi
+      <span
+        className="c3"
+      >
+        fi
+      </span>
     </div>
     <div>
       <svg
-        className="c4"
+        className="c5"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -479,11 +520,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      no
+      <span
+        className="c3"
+      >
+        no
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -521,11 +566,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      se
+      <span
+        className="c3"
+      >
+        se
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -572,11 +621,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      us
+      <span
+        className="c3"
+      >
+        us
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -668,11 +721,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      jp
+      <span
+        className="c3"
+      >
+        jp
+      </span>
     </div>
     <div>
       <svg
-        className="c4"
+        className="c5"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -719,11 +776,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      cn
+      <span
+        className="c3"
+      >
+        cn
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -782,11 +843,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      in
+      <span
+        className="c3"
+      >
+        in
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -824,11 +889,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      za
+      <span
+        className="c3"
+      >
+        za
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -894,11 +963,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      hk
+      <span
+        className="c3"
+      >
+        hk
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1006,11 +1079,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      br
+      <span
+        className="c3"
+      >
+        br
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1076,11 +1153,15 @@ exports[`Storyshots Atoms / Flag Available flags 1`] = `
     <div
       className="c2"
     >
-      au
+      <span
+        className="c3"
+      >
+        au
+      </span>
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"

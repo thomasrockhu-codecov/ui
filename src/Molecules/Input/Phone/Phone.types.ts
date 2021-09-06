@@ -42,7 +42,7 @@ export type Props = {
   required?: boolean;
   maxLength?: number;
   visuallyEmphasiseRequired?: boolean;
-  onChange?: (val: string) => void;
+  onChange?: (aggregatedValue: string, countryCode?: string, phoneNumber?: string) => void;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;

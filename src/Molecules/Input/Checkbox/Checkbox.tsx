@@ -29,7 +29,7 @@ const CheckmarkBox = styled(Flexbox)<{ size: number }>`
   width: ${(p) => p.theme.spacing.unit(p.size)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
-  background: ${(p) => p.theme.color.backgroundInput};
+  background: ${(p) => p.theme.color.inputBackground};
   position: relative;
   flex-shrink: 0;
 
@@ -66,7 +66,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
     background: ${(p) => p.theme.color.cta};
 
     svg {
-      fill: ${(p) => p.theme.color.backgroundInput};
+      fill: ${(p) => p.theme.color.inputBackground};
     }
   }
 

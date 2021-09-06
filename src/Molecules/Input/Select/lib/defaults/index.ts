@@ -8,10 +8,12 @@ import { SelectedValue } from './SelectedValue';
 import { ListItem as ListItemMultiple } from './ListItemMultiple';
 import { SelectedValue as SelectedValueMultiple } from './SelectedValueMultiple';
 import { List } from './List';
+import { ListFullScreen } from './ListFullScreen';
 
 export const defaultComponents = {
   ListItem,
   List,
+  ListFullScreen,
   Search,
   SelectedValue,
   Action,
@@ -20,6 +22,7 @@ export const defaultComponents = {
 export const defaultComponentsMultiselect = {
   ListItem: ListItemMultiple,
   List,
+  ListFullScreen,
   Search,
   SelectedValue: SelectedValueMultiple,
   Action,

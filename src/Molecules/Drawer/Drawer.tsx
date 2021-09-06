@@ -10,6 +10,7 @@ import { useOnClickOutside } from '../../common/Hooks';
 import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
 
 const CROSS_SIZE = 5;
+const PADDING_MOBILE = 3;
 const PADDING = 5;
 const displayName = 'Drawer';
 const PREVENT_CLICK_OUTSIDE_ATTRIBUTE = 'drawerPreventClickOutside';
@@ -46,13 +47,23 @@ const Content = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: ${(p) => p.theme.spacing.unit(PADDING)}px;
+
   padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px;
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  }
 `;
 
 const Footer = styled.div`
   margin-top: auto;
   padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px ${(p) => p.theme.spacing.unit(PADDING)}px
     ${(p) => p.theme.spacing.unit(PADDING)}px;
+
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
+      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
+      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  }
 `;
 
 const H2 = styled.h2`
@@ -64,6 +75,14 @@ const TitleWrapper = styled.div`
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
+
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: ${(p) =>
+      `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(
+        PADDING_MOBILE,
+      )}px 0 ${p.theme.spacing.unit(PADDING_MOBILE)}px`};
+  }
+
   margin-bottom: ${(p) => p.theme.spacing.unit(2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CROSS_SIZE)}px;
   flex: 0 0 auto;

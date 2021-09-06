@@ -34,7 +34,7 @@ const Wrapper = styled.div``;
 const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
-  background-color: ${(p) => p.theme.color.backgroundInput};
+  background-color: ${(p) => p.theme.color.inputBackground};
 
   &::before {
     content: '';

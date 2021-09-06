@@ -12,7 +12,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Development value={50} currency="SEK" />
     </div>
@@ -86,12 +86,12 @@ export const withDifferentColors = () => (
     items={[
       {
         title: 'Positive value',
-        component: <Development value={50} positiveColor={(c) => c.colorA11y.positive} />,
+        component: <Development value={50} positiveColor={(c) => c.color.positive} />,
       },
       { title: 'Zero value', component: <Development value={0} /> },
       {
         title: 'Negative value',
-        component: <Development value={-200} negativeColor={(c) => c.colorA11y.negative} />,
+        component: <Development value={-200} negativeColor={(c) => c.color.negative} />,
       },
     ]}
   />

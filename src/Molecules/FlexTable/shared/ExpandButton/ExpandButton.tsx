@@ -1,40 +1,48 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Button, Icon, Media } from '../../../../index';
 
-const StyledButton = styled(Button)`
-  flex: 1;
-  justify-content: flex-end;
-`;
-
 const SmallScreenExpandButton: React.FC<{
+  className?: string;
   expanded: boolean;
   disabled: boolean;
   onClick: () => void;
   size: number;
-}> = ({ expanded, disabled, onClick, size }) => (
-  <StyledButton variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
+}> = ({ className, expanded, disabled, onClick, size }) => (
+  <Button
+    className={className}
+    variant="neutral"
+    onClick={onClick}
+    aria-expanded={expanded}
+    disabled={disabled}
+  >
     {expanded ? (
       <Icon.ChevronUp size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     ) : (
       <Icon.ChevronDown size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     )}
-  </StyledButton>
+  </Button>
 );
 
 const LargeScreenExpandButton: React.FC<{
+  className?: string;
   expanded: boolean;
   disabled: boolean;
   onClick: () => void;
   size: number;
-}> = ({ expanded, disabled, onClick, size }) => (
-  <StyledButton variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
+}> = ({ className, expanded, disabled, onClick, size }) => (
+  <Button
+    className={className}
+    variant="neutral"
+    onClick={onClick}
+    aria-expanded={expanded}
+    disabled={disabled}
+  >
     <Icon.ThinChevron
       direction={expanded ? 'up' : 'down'}
       size={size}
       fill={(t) => (disabled ? t.color.disabled : t.color.text)}
     />
-  </StyledButton>
+  </Button>
 );
 
 export const ExpandButton: React.FC<{
@@ -45,25 +53,28 @@ export const ExpandButton: React.FC<{
   <>
     <Media
       query={(t) => t.media.lessThan(t.breakpoints.md)}
-      as={() => (
+      as={({ className }) => (
         <SmallScreenExpandButton
+          className={className}
           expanded={expanded}
           disabled={disabled}
           onClick={onClick}
           size={2}
         />
       )}
-    ></Media>
+    />
+
     <Media
       query={(t) => t.media.greaterThan(t.breakpoints.md)}
-      as={() => (
+      as={({ className }) => (
         <LargeScreenExpandButton
+          className={className}
           expanded={expanded}
           disabled={disabled}
           onClick={onClick}
           size={4}
         />
       )}
-    ></Media>
+    />
   </>
 );

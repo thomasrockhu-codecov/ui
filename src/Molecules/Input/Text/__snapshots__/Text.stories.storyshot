@@ -1263,7 +1263,7 @@ exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1275,13 +1275,22 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1290,7 +1299,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1299,7 +1308,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1308,7 +1317,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1328,64 +1337,64 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   background-color: #FFFFFF;
 }
 
-.c9:focus {
+.c10:focus {
   border-width: 1px;
 }
 
-.c9:hover {
+.c10:hover {
   border-color: #4B4B46;
 }
 
-.c9:focus {
+.c10:focus {
   border-color: #0046FF;
 }
 
-.c9::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::placeholder {
+.c10::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:disabled::-webkit-input-placeholder {
+.c10:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::-moz-placeholder {
+.c10:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled:-ms-input-placeholder {
+.c10:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::placeholder {
+.c10:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8 {
+.c9 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -1458,32 +1467,36 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
     <div
       className="c2"
     >
-      Long values
+      <span
+        className="c3"
+      >
+        Long values
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
       >
         <label
-          className="c4"
+          className="c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               Too long label, goes into ellipsis. Consider smaller label or bigger input 
             </div>
             <span
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               >
                 <input
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   type="text"
                   variant="normal"
@@ -1494,7 +1507,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c10"
+            className="c11"
           >
             This is much necessary info wow
           </span>
@@ -1509,32 +1522,36 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
     <div
       className="c2"
     >
-      Long extraInfo
+      <span
+        className="c3"
+      >
+        Long extraInfo
+      </span>
     </div>
     <div>
       <div
-        className="c3"
+        className="c4"
       >
         <label
-          className="c4"
+          className="c5"
           hidden={false}
         >
           <span
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               Small label 
             </div>
             <span
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               >
                 <input
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                   placeholder=""
                   type="text"
                   variant="normal"
@@ -1545,7 +1562,7 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c10"
+            className="c11"
           >
             Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
           </span>
@@ -2127,7 +2144,7 @@ Array [
       Full width inputs
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2139,7 +2156,7 @@ Array [
   align-items: center;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2155,13 +2172,13 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2175,7 +2192,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2184,7 +2210,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2193,7 +2219,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -2203,7 +2229,7 @@ Array [
   left: 0;
 }
 
-.c15 {
+.c16 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -2211,78 +2237,6 @@ Array [
   padding-right: 4px;
   position: absolute;
   right: 4px;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:focus {
-  border-width: 1px;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c9:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c9:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c9:disabled::placeholder {
-  color: #A0A09B;
 }
 
 .c10 {
@@ -2303,7 +2257,6 @@ Array [
   border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
-  padding-left: 32px;
 }
 
 .c10:focus {
@@ -2358,7 +2311,80 @@ Array [
   color: #A0A09B;
 }
 
-.c14 {
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c11:focus {
+  border-width: 1px;
+}
+
+.c11:hover {
+  border-color: #4B4B46;
+}
+
+.c11:focus {
+  border-color: #0046FF;
+}
+
+.c11::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2379,64 +2405,64 @@ Array [
   padding-right: 40px;
 }
 
-.c14:focus {
+.c15:focus {
   border-width: 1px;
 }
 
-.c14:hover {
+.c15:hover {
   border-color: #4B4B46;
 }
 
-.c14:focus {
+.c15:focus {
   border-color: #0046FF;
 }
 
-.c14::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::placeholder {
+.c15::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:disabled::-webkit-input-placeholder {
+.c15:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::-moz-placeholder {
+.c15:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled:-ms-input-placeholder {
+.c15:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::placeholder {
+.c15:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8 {
+.c9 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c4 {
   width: 100%;
   display: inline-block;
 }
@@ -2513,32 +2539,36 @@ Array [
       <div
         className="c2"
       >
-        Default
+        <span
+          className="c3"
+        >
+          Default
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
@@ -2557,44 +2587,48 @@ Array [
       <div
         className="c2"
       >
-        Left addon
+        <span
+          className="c3"
+        >
+          Left addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
                   />
                   <div
-                    className="c11 c12"
+                    className="c12 c13"
                     position="left"
                     variant="normal"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c13"
+                      className="c14"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -2620,38 +2654,42 @@ Array [
       <div
         className="c2"
       >
-        Right addon
+        <span
+          className="c3"
+        >
+          Right addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
                   />
                   <div
-                    className="c11 c15"
+                    className="c12 c16"
                     position="right"
                     variant="normal"
                   >
@@ -3024,7 +3062,7 @@ Array [
       Variant = "quiet"
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3036,7 +3074,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3052,7 +3090,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3061,19 +3099,28 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: not-allowed;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3082,7 +3129,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3091,7 +3138,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -3100,7 +3147,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3109,7 +3156,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c21 {
+.c22 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3119,16 +3166,16 @@ Array [
   right: 4px;
 }
 
-.c21:not(:focus) {
+.c22:not(:focus) {
   padding-left: 0;
   padding-right: 0;
 }
 
-.c21:not(:focus) {
+.c22:not(:focus) {
   right: 0;
 }
 
-.c9 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3151,84 +3198,84 @@ Array [
   font-weight: bold;
 }
 
-.c9:focus {
+.c10:focus {
   border-width: 1px;
 }
 
-.c9:hover {
+.c10:hover {
   border-color: #4B4B46;
 }
 
-.c9:focus {
+.c10:focus {
   border-color: #0046FF;
 }
 
-.c9::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::placeholder {
+.c10::placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:focus::-webkit-input-placeholder {
+.c10:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:focus::-moz-placeholder {
+.c10:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c9:focus:-ms-input-placeholder {
+.c10:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:focus::placeholder {
+.c10:focus::placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::-webkit-input-placeholder {
+.c10:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::-moz-placeholder {
+.c10:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled:-ms-input-placeholder {
+.c10:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::placeholder {
+.c10:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled {
+.c10:disabled {
   color: #A0A09B;
 }
 
-.c9:focus {
+.c10:focus {
   padding-left: 8px;
   padding-right: 0px;
 }
 
-.c13 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3253,108 +3300,8 @@ Array [
   cursor: not-allowed;
 }
 
-.c13:focus {
-  border-width: 1px;
-}
-
-.c13:focus {
-  border-color: #0046FF;
-}
-
-.c13::-webkit-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c13::-moz-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c13:-ms-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c13::placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c13:focus::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c13:focus::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c13:focus:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c13:focus::placeholder {
-  color: #A0A09B;
-}
-
-.c13:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c13:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c13:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c13:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c13:disabled {
-  color: #A0A09B;
-}
-
-.c13:focus {
-  padding-left: 8px;
-  padding-right: 0px;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 0px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  border: solid;
-  border-color: #FF1900;
-  border-width: 0 0 2px 0;
-  position: relative;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 .c14:focus {
   border-width: 1px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
 }
 
 .c14:focus {
@@ -3426,7 +3373,7 @@ Array [
   padding-right: 0px;
 }
 
-.c17 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3440,7 +3387,7 @@ Array [
   box-sizing: border-box;
   height: 40px;
   border: solid;
-  border-color: #00D200;
+  border-color: #FF1900;
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
@@ -3449,79 +3396,79 @@ Array [
   font-weight: bold;
 }
 
-.c17:focus {
+.c15:focus {
   border-width: 1px;
 }
 
-.c17:hover {
+.c15:hover {
   border-color: #4B4B46;
 }
 
-.c17:focus {
+.c15:focus {
   border-color: #0046FF;
 }
 
-.c17::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::placeholder {
+.c15::placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17:focus::-webkit-input-placeholder {
+.c15:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:focus::-moz-placeholder {
+.c15:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c17:focus:-ms-input-placeholder {
+.c15:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:focus::placeholder {
+.c15:focus::placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled::-webkit-input-placeholder {
+.c15:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled::-moz-placeholder {
+.c15:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled:-ms-input-placeholder {
+.c15:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled::placeholder {
+.c15:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c17:disabled {
+.c15:disabled {
   color: #A0A09B;
 }
 
-.c17:focus {
+.c15:focus {
   padding-left: 8px;
   padding-right: 0px;
 }
@@ -3540,11 +3487,10 @@ Array [
   box-sizing: border-box;
   height: 40px;
   border: solid;
-  border-color: #BCBCB6;
+  border-color: #00D200;
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-  padding-right: 40px;
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
@@ -3624,24 +3570,125 @@ Array [
 
 .c18:focus {
   padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c19:focus {
+  border-width: 1px;
+}
+
+.c19:hover {
+  border-color: #4B4B46;
+}
+
+.c19:focus {
+  border-color: #0046FF;
+}
+
+.c19::-webkit-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c19::-moz-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c19:-ms-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c19::placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c19:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c19:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c19:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c19:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c19:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c19:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c19:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c19:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c19:disabled {
+  color: #A0A09B;
+}
+
+.c19:focus {
+  padding-left: 8px;
   padding-right: 32px;
 }
 
-.c18:focus + .c20 {
+.c19:focus + .c21 {
   padding-right: 8px;
 }
 
-.c8 {
+.c9 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   display: inline-block;
 }
@@ -3718,32 +3765,36 @@ Array [
       <div
         className="c2"
       >
-        Default
-      </div>
-      <div>
-        <div
+        <span
           className="c3"
         >
+          Default
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3762,32 +3813,36 @@ Array [
       <div
         className="c2"
       >
-        Full width
+        <span
+          className="c3"
+        >
+          Full width
+        </span>
       </div>
       <div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3806,32 +3861,36 @@ Array [
       <div
         className="c2"
       >
-        Disabled
+        <span
+          className="c3"
+        >
+          Disabled
+        </span>
       </div>
       <div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c11"
+            className="c12"
             hidden={false}
           >
             <span
-              className="c12"
+              className="c13"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     disabled={true}
                     type="text"
                     value="0"
@@ -3851,33 +3910,37 @@ Array [
       <div
         className="c2"
       >
-        Error
+        <span
+          className="c3"
+        >
+          Error
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
                     aria-invalid={true}
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3888,10 +3951,10 @@ Array [
           </label>
           <div>
             <span
-              className="c15"
+              className="c16"
             >
               <div
-                className="c16"
+                className="c17"
               >
                 Error: 
               </div>
@@ -3908,32 +3971,36 @@ Array [
       <div
         className="c2"
       >
-        Success
+        <span
+          className="c3"
+        >
+          Success
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3952,38 +4019,42 @@ Array [
       <div
         className="c2"
       >
-        Right addon
+        <span
+          className="c3"
+        >
+          Right addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c19"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
                   />
                   <div
-                    className="c19 c20 c21"
+                    className="c20 c21 c22"
                     position="right"
                     variant="quiet"
                   >
@@ -4044,7 +4115,7 @@ Array [
       Required
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4056,13 +4127,22 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4071,7 +4151,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4080,7 +4160,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4100,64 +4180,64 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c9:focus {
+.c10:focus {
   border-width: 1px;
 }
 
-.c9:hover {
+.c10:hover {
   border-color: #4B4B46;
 }
 
-.c9:focus {
+.c10:focus {
   border-color: #0046FF;
 }
 
-.c9::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::placeholder {
+.c10::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:disabled::-webkit-input-placeholder {
+.c10:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::-moz-placeholder {
+.c10:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled:-ms-input-placeholder {
+.c10:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::placeholder {
+.c10:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8 {
+.c9 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
@@ -4234,32 +4314,36 @@ Array [
       <div
         className="c2"
       >
-        Default (without star)
+        <span
+          className="c3"
+        >
+          Default (without star)
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -4279,32 +4363,36 @@ Array [
       <div
         className="c2"
       >
-        With star
+        <span
+          className="c3"
+        >
+          With star
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label *
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -4979,7 +5067,7 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
     className="c14"
   >
     <button
-      className="NormalizedButton__Button-ey7f5x-0 c15"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c15"
       onClick={[Function]}
       type="button"
     >
@@ -5027,7 +5115,7 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c6 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5039,7 +5127,7 @@ Array [
   align-items: center;
 }
 
-.c15 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5055,7 +5143,7 @@ Array [
   align-items: center;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -5064,13 +5152,13 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c17 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5084,7 +5172,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -5093,7 +5190,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5102,7 +5199,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -5111,7 +5208,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c16 {
+.c17 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -5121,7 +5218,7 @@ Array [
   left: 0;
 }
 
-.c19 {
+.c20 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -5131,7 +5228,7 @@ Array [
   right: 4px;
 }
 
-.c9 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5151,59 +5248,59 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c9:focus {
+.c10:focus {
   border-width: 1px;
 }
 
-.c9:hover {
+.c10:hover {
   border-color: #4B4B46;
 }
 
-.c9:focus {
+.c10:focus {
   border-color: #0046FF;
 }
 
-.c9::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9::placeholder {
+.c10::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c9:disabled::-webkit-input-placeholder {
+.c10:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::-moz-placeholder {
+.c10:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled:-ms-input-placeholder {
+.c10:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c9:disabled::placeholder {
+.c10:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5223,59 +5320,59 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c11:focus {
+.c12:focus {
   border-width: 1px;
 }
 
-.c11:hover {
+.c12:hover {
   border-color: #4B4B46;
 }
 
-.c11:focus {
+.c12:focus {
   border-color: #0046FF;
 }
 
-.c11::-webkit-input-placeholder {
+.c12::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c11::-moz-placeholder {
+.c12::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c11:-ms-input-placeholder {
+.c12:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c11::placeholder {
+.c12::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c11:disabled::-webkit-input-placeholder {
+.c12:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c11:disabled::-moz-placeholder {
+.c12:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c11:disabled:-ms-input-placeholder {
+.c12:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c11:disabled::placeholder {
+.c12:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c14 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5296,59 +5393,59 @@ Array [
   padding-left: 32px;
 }
 
-.c14:focus {
+.c15:focus {
   border-width: 1px;
 }
 
-.c14:hover {
+.c15:hover {
   border-color: #4B4B46;
 }
 
-.c14:focus {
+.c15:focus {
   border-color: #0046FF;
 }
 
-.c14::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14::placeholder {
+.c15::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c14:disabled::-webkit-input-placeholder {
+.c15:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::-moz-placeholder {
+.c15:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled:-ms-input-placeholder {
+.c15:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c14:disabled::placeholder {
+.c15:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c18 {
+.c19 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5369,69 +5466,69 @@ Array [
   padding-right: 40px;
 }
 
-.c18:focus {
+.c19:focus {
   border-width: 1px;
 }
 
-.c18:hover {
+.c19:hover {
   border-color: #4B4B46;
 }
 
-.c18:focus {
+.c19:focus {
   border-color: #0046FF;
 }
 
-.c18::-webkit-input-placeholder {
+.c19::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18::-moz-placeholder {
+.c19::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18:-ms-input-placeholder {
+.c19:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18::placeholder {
+.c19::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18:disabled::-webkit-input-placeholder {
+.c19:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled::-moz-placeholder {
+.c19:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled:-ms-input-placeholder {
+.c19:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled::placeholder {
+.c19:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c8 {
+.c9 {
   position: relative;
   padding: 0px 0;
 }
 
-.c3 {
+.c4 {
   width: 200px;
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   width: 100%;
   display: inline-block;
 }
@@ -5508,32 +5605,36 @@ Array [
       <div
         className="c2"
       >
-        Default
+        <span
+          className="c3"
+        >
+          Default
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
@@ -5552,32 +5653,36 @@ Array [
       <div
         className="c2"
       >
-        Full width
+        <span
+          className="c3"
+        >
+          Full width
+        </span>
       </div>
       <div>
         <div
-          className="c10"
+          className="c11"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
@@ -5596,33 +5701,37 @@ Array [
       <div
         className="c2"
       >
-        Error
+        <span
+          className="c3"
+        >
+          Error
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
                     aria-invalid={true}
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
@@ -5633,10 +5742,10 @@ Array [
           </label>
           <div>
             <span
-              className="c12"
+              className="c13"
             >
               <div
-                className="c13"
+                className="c14"
               >
                 Error: 
               </div>
@@ -5653,44 +5762,48 @@ Array [
       <div
         className="c2"
       >
-        Left addon
+        <span
+          className="c3"
+        >
+          Left addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
                   />
                   <div
-                    className="c15 c16"
+                    className="c16 c17"
                     position="left"
                     variant="normal"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c17"
+                      className="c18"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -5716,38 +5829,42 @@ Array [
       <div
         className="c2"
       >
-        Right addon
+        <span
+          className="c3"
+        >
+          Right addon
+        </span>
       </div>
       <div>
         <div
-          className="c3"
+          className="c4"
         >
           <label
-            className="c4"
+            className="c5"
             hidden={false}
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6"
+                className="c7"
               >
                 Label 
               </div>
               <span
-                className="c7"
+                className="c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c19"
                     placeholder="Placeholder"
                     type="text"
                     variant="normal"
                   />
                   <div
-                    className="c15 c19"
+                    className="c16 c20"
                     position="right"
                     variant="normal"
                   >

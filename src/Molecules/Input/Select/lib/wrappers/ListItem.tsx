@@ -9,7 +9,9 @@ const StyledListItemWrapper = styled.li`
   outline: none;
 `;
 
-type ListItemComponent = React.ComponentType<{ index: number }>;
+type ListItemComponent = React.ComponentType<{
+  index: number;
+}>;
 
 export const ListItemWrapper = React.forwardRef<
   HTMLLIElement,
