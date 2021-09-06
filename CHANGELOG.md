@@ -1,3 +1,21 @@
+# [7.5.0](https://github.com/nordnet/ui/compare/v7.4.0...v7.5.0) (2021-09-06)
+
+
+### Bug Fixes
+
+* trigger rebuild ([dbe1f51](https://github.com/nordnet/ui/commit/dbe1f51))
+* trigger rebuild ([0b8fc11](https://github.com/nordnet/ui/commit/0b8fc11))
+* update snapshots ([2c2d4a8](https://github.com/nordnet/ui/commit/2c2d4a8))
+
+
+### Features
+
+* default false again ([beb376a](https://github.com/nordnet/ui/commit/beb376a))
+* default overflow to true ([e55d884](https://github.com/nordnet/ui/commit/e55d884))
+* fix snapshots ([0740d54](https://github.com/nordnet/ui/commit/0740d54))
+* revert overflow default ([bc8d9f5](https://github.com/nordnet/ui/commit/bc8d9f5))
+* truncate with ellipsis show more ([4995f77](https://github.com/nordnet/ui/commit/4995f77))
+
 # [7.4.0](https://github.com/nordnet/ui/compare/v7.3.5...v7.4.0) (2021-09-06)
 
 
