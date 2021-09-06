@@ -1,3 +1,15 @@
+# [7.4.0](https://github.com/nordnet/ui/compare/v7.3.5...v7.4.0) (2021-09-06)
+
+
+### Bug Fixes
+
+* 🐛 removes hardcoded colors from UrgentMessage ([fc35ae1](https://github.com/nordnet/ui/commit/fc35ae1))
+
+
+### Features
+
+* 🎸 urgent message icon ([c3c7b5f](https://github.com/nordnet/ui/commit/c3c7b5f))
+
 ## [7.3.5](https://github.com/nordnet/ui/compare/v7.3.4...v7.3.5) (2021-09-01)
 
 
