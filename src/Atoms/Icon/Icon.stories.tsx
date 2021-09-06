@@ -1,5 +1,6 @@
 import React from 'react';
 import { number, select, color } from '@storybook/addon-knobs';
+import { Theme } from '../../theme/theme.types';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
@@ -87,8 +88,8 @@ export const Transfer = () => (
 export const UrgentMessage = () => (
   <Icon.UrgentMessage
     size={number('Size', 10)}
-    fill={(t) => color('Fill color', t.color.negative)}
-    stroke={(t) => color('Stroke color', t.color.backgroundBlack)}
+    fill={(t: Theme) => color('Fill color', t.color.negative)}
+    stroke={(t: Theme) => color('Stroke color', t.color.text)}
   />
 );
 
