@@ -61,10 +61,8 @@ const Indicator = styled('span').withConfig({
   padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   ${(p) => p.leftCollision && leftCollisionStyle}
   ${(p) => p.rightCollision && rightCollisionStyle}
-  ${(p) =>
-    !p.leftCollision && !p.rightCollision && transformStyle}
-  height: ${({ theme }) =>
-    theme.spacing.unit(4)}px;
+  ${(p) => !p.leftCollision && !p.rightCollision && transformStyle}
+  height: ${({ theme }) => theme.spacing.unit(4)}px;
   white-space: nowrap;
   text-align: center;
   background: ${(p) => p.valueColor || p.theme.color.lineScaleValueColor};
@@ -80,10 +78,8 @@ const AverageLabel = styled('span').withConfig({
   margin-right: ${(p) => p.averageValue}%;
   ${(p) => p.leftCollision && leftCollisionStyle}
   ${(p) => p.rightCollision && rightCollisionStyle}
-  ${(p) =>
-    !p.leftCollision && !p.rightCollision && transformStyle}
-  padding: 2px ${({ theme }) =>
-    theme.spacing.unit(1.5)}px;
+  ${(p) => !p.leftCollision && !p.rightCollision && transformStyle}
+  padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   white-space: nowrap;
   text-align: center;
   color: ${({ theme }) => theme.color.label};

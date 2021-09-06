@@ -5889,6 +5889,60 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #282823;
+}
+
+.c2 {
+  fill: #0046FF;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 64 64"
+    >
+      <g
+        clipRule="evenodd"
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          className="c1"
+          d="M11 18h29v2H14.72L32 34.688l9.56-8.127 1.42 1.419-4.59 3.901L51 42.81V30h2v16H11V18zm2 24.81l12.61-10.929L13 21.162V42.81zm14.152-9.618L14.681 44h34.638L36.85 33.192 32 37.312l-4.848-4.12z"
+        />
+        <path
+          className="c2"
+          d="M53.414 12h-6.828L42 16.586v6.828L46.586 28h6.828L58 23.414v-6.828L53.414 12zM49 16v5h2v-5h-2zm0 8v-2h2v2h-2z"
+        />
+      </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 <div
     style={
       Object {
@@ -6259,10 +6313,18 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c38 {
-  fill: #FFFFFF;
+  fill: #282823;
 }
 
 .c39 {
+  fill: #FF1900;
+}
+
+.c40 {
+  fill: #FFFFFF;
+}
+
+.c41 {
   fill: #FFFFFF;
 }
 
@@ -12321,6 +12383,54 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       <span
         className="c3"
       >
+        UrgentMessage
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 64 64"
+        >
+          <g
+            clipRule="evenodd"
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              className="c38"
+              d="M11 18h29v2H14.72L32 34.688l9.56-8.127 1.42 1.419-4.59 3.901L51 42.81V30h2v16H11V18zm2 24.81l12.61-10.929L13 21.162V42.81zm14.152-9.618L14.681 44h34.638L36.85 33.192 32 37.312l-4.848-4.12z"
+            />
+            <path
+              className="c39"
+              d="M53.414 12h-6.828L42 16.586v6.828L46.586 28h6.828L58 23.414v-6.828L53.414 12zM49 16v5h2v-5h-2zm0 8v-2h2v2h-2z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
         Utilities
       </span>
     </div>
@@ -12384,15 +12494,15 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           />
           <g>
             <path
-              className="c38"
+              className="c40"
               d="M25.122 22L16.015 5.274 6.876 22h18.246zm-9.11-13.941l6.865 12.608H9.123l6.889-12.608z"
             />
             <path
-              className="c38"
+              className="c40"
               d="M15.333 17.333h1.333v1.333h-1.333z"
             />
             <path
-              className="c38"
+              className="c40"
               d="M16.733 11.439v4.667H15.4v-4.667z"
             />
           </g>
@@ -12434,7 +12544,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M46 0l46 89.3913043H0z"
           />
           <path
-            className="c39"
+            className="c41"
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
           />
         </svg>
@@ -12982,6 +13092,54 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
     className="c1"
     d="M22.173 15H25l5-5-5-5h-2.828l4 4H8v2h18.173l-4 4zM10.828 17H8l-5 5 5 5h2.828l-4-4h18.173v-2H6.828l4-4z"
   />
+</svg>
+`;
+
+exports[`Storyshots Atoms / Icon Urgent Message 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  fill: #282823;
+}
+
+.c2 {
+  fill: #FF1900;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  focusable="false"
+  preserveAspectRatio="xMidYMid meet"
+  role="presentation"
+  viewBox="0 0 64 64"
+>
+  <g
+    clipRule="evenodd"
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      className="c1"
+      d="M11 18h29v2H14.72L32 34.688l9.56-8.127 1.42 1.419-4.59 3.901L51 42.81V30h2v16H11V18zm2 24.81l12.61-10.929L13 21.162V42.81zm14.152-9.618L14.681 44h34.638L36.85 33.192 32 37.312l-4.848-4.12z"
+    />
+    <path
+      className="c2"
+      d="M53.414 12h-6.828L42 16.586v6.828L46.586 28h6.828L58 23.414v-6.828L53.414 12zM49 16v5h2v-5h-2zm0 8v-2h2v2h-2z"
+    />
+  </g>
 </svg>
 `;
 

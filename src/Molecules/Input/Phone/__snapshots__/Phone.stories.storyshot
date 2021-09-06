@@ -388,19 +388,19 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -408,8 +408,8 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -938,19 +938,19 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -958,8 +958,8 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -1489,19 +1489,19 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -1509,8 +1509,8 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -2044,19 +2044,19 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -2064,8 +2064,8 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -2611,19 +2611,19 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -2631,8 +2631,8 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -3173,19 +3173,19 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -3193,8 +3193,8 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -3724,19 +3724,19 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -3744,8 +3744,8 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -4291,19 +4291,19 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -4311,8 +4311,8 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -4897,19 +4897,19 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
               />
               <option
                 label={
-                  <ForwardRef
+                  <Flexbox
                     alignItems="center"
                     container={true}
                     gutter={3}
                   >
-                    <ForwardRef
+                    <Flexbox
                       item={true}
                     >
                       <Icon.Globe
                         size={3}
                       />
-                    </ForwardRef>
-                    <ForwardRef
+                    </Flexbox>
+                    <Flexbox
                       item={true}
                     >
                       <ForwardRef
@@ -4917,8 +4917,8 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                       >
                         +
                       </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
+                    </Flexbox>
+                  </Flexbox>
                 }
                 value=""
               />
@@ -5139,19 +5139,19 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
               />
               <option
                 label={
-                  <ForwardRef
+                  <Flexbox
                     alignItems="center"
                     container={true}
                     gutter={3}
                   >
-                    <ForwardRef
+                    <Flexbox
                       item={true}
                     >
                       <Icon.Globe
                         size={3}
                       />
-                    </ForwardRef>
-                    <ForwardRef
+                    </Flexbox>
+                    <Flexbox
                       item={true}
                     >
                       <ForwardRef
@@ -5159,8 +5159,8 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                       >
                         +
                       </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
+                    </Flexbox>
+                  </Flexbox>
                 }
                 value=""
               />
@@ -5364,19 +5364,19 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
               />
               <option
                 label={
-                  <ForwardRef
+                  <Flexbox
                     alignItems="center"
                     container={true}
                     gutter={3}
                   >
-                    <ForwardRef
+                    <Flexbox
                       item={true}
                     >
                       <Icon.Globe
                         size={3}
                       />
-                    </ForwardRef>
-                    <ForwardRef
+                    </Flexbox>
+                    <Flexbox
                       item={true}
                     >
                       <ForwardRef
@@ -5384,8 +5384,8 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                       >
                         +
                       </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
+                    </Flexbox>
+                  </Flexbox>
                 }
                 value=""
               />
@@ -5589,19 +5589,19 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
               />
               <option
                 label={
-                  <ForwardRef
+                  <Flexbox
                     alignItems="center"
                     container={true}
                     gutter={3}
                   >
-                    <ForwardRef
+                    <Flexbox
                       item={true}
                     >
                       <Icon.Globe
                         size={3}
                       />
-                    </ForwardRef>
-                    <ForwardRef
+                    </Flexbox>
+                    <Flexbox
                       item={true}
                     >
                       <ForwardRef
@@ -5609,8 +5609,8 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                       >
                         +
                       </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
+                    </Flexbox>
+                  </Flexbox>
                 }
                 value=""
               />
@@ -5786,19 +5786,19 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
               
               <option
                 label={
-                  <ForwardRef
+                  <Flexbox
                     alignItems="center"
                     container={true}
                     gutter={3}
                   >
-                    <ForwardRef
+                    <Flexbox
                       item={true}
                     >
                       <Icon.Globe
                         size={3}
                       />
-                    </ForwardRef>
-                    <ForwardRef
+                    </Flexbox>
+                    <Flexbox
                       item={true}
                     >
                       <ForwardRef
@@ -5806,8 +5806,8 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                       >
                         +
                       </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
+                    </Flexbox>
+                  </Flexbox>
                 }
                 value=""
               />
@@ -6368,19 +6368,19 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -6388,8 +6388,8 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />
@@ -6927,19 +6927,19 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
             />
             <option
               label={
-                <ForwardRef
+                <Flexbox
                   alignItems="center"
                   container={true}
                   gutter={3}
                 >
-                  <ForwardRef
+                  <Flexbox
                     item={true}
                   >
                     <Icon.Globe
                       size={3}
                     />
-                  </ForwardRef>
-                  <ForwardRef
+                  </Flexbox>
+                  <Flexbox
                     item={true}
                   >
                     <ForwardRef
@@ -6947,8 +6947,8 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                     >
                       +
                     </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
+                  </Flexbox>
+                </Flexbox>
               }
               value=""
             />

@@ -1,3 +1,38 @@
+# [7.4.0](https://github.com/nordnet/ui/compare/v7.3.5...v7.4.0) (2021-09-06)
+
+
+### Bug Fixes
+
+* 🐛 removes hardcoded colors from UrgentMessage ([fc35ae1](https://github.com/nordnet/ui/commit/fc35ae1))
+
+
+### Features
+
+* 🎸 urgent message icon ([c3c7b5f](https://github.com/nordnet/ui/commit/c3c7b5f))
+
+## [7.3.5](https://github.com/nordnet/ui/compare/v7.3.4...v7.3.5) (2021-09-01)
+
+
+### Bug Fixes
+
+* lint issues ([9dc9835](https://github.com/nordnet/ui/commit/9dc9835))
+
+## [7.3.4](https://github.com/nordnet/ui/compare/v7.3.3...v7.3.4) (2021-08-31)
+
+
+### Bug Fixes
+
+* **input-select:** handle placeholder color for multiselect test cases ([5987546](https://github.com/nordnet/ui/commit/5987546))
+* rename placeholder theme color to placeholderText ([6dc936f](https://github.com/nordnet/ui/commit/6dc936f))
+* **input-select:** change placeholder color to gray ([8482b50](https://github.com/nordnet/ui/commit/8482b50))
+
+## [7.3.3](https://github.com/nordnet/ui/compare/v7.3.2...v7.3.3) (2021-08-30)
+
+
+### Bug Fixes
+
+* correct bar height ([91a917b](https://github.com/nordnet/ui/commit/91a917b))
+
 ## [7.3.2](https://github.com/nordnet/ui/compare/v7.3.1...v7.3.2) (2021-08-30)
 
 

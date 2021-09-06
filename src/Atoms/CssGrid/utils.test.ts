@@ -1,7 +1,7 @@
 import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
 
 describe('getAreasInfo', () => {
-  test('Areas #1 w/gap ', () => {
+  test('Areas #1 w/gap', () => {
     const areas = [
       ['header', 'header', 'header'],
       ['menu', 'content', 'content'],

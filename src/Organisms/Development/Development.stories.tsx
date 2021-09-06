@@ -12,7 +12,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Development value={50} currency="SEK" />
     </div>

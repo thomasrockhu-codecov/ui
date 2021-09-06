@@ -119,8 +119,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${borderStyles}
   ${height}
   ${placeholderNormalization}
-  padding: ${(p) =>
-    p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
   color: ${(p) => p.theme.color.text};
   &:disabled {

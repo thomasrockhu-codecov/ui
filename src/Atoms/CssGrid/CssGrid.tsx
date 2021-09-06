@@ -311,29 +311,29 @@ export const CssGridItem: React.FC<ItemProps> = ({
 );
 CssGridItem.displayName = 'CssGrid.Item';
 
-const generateChildStyles = (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) => (
-  areaName: string,
-): string => {
-  const styles = [];
-  if (!areasInfo[areaName]) {
-    styles.push('display: none; grid-area: none;');
-  } else {
-    const info = areasInfo[areaName];
-    styles.push(`-ms-grid-row: ${info.rowStart};`, `-ms-grid-column: ${info.colStart};`);
-    styles.push(`-ms-grid-column-span: ${info.colSpan};`);
-    styles.push(`-ms-grid-row-span: ${info.rowSpan};`);
-    styles.push(`display: block; grid-area: ${areaName};`);
-  }
+const generateChildStyles =
+  (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) =>
+  (areaName: string): string => {
+    const styles = [];
+    if (!areasInfo[areaName]) {
+      styles.push('display: none; grid-area: none;');
+    } else {
+      const info = areasInfo[areaName];
+      styles.push(`-ms-grid-row: ${info.rowStart};`, `-ms-grid-column: ${info.colStart};`);
+      styles.push(`-ms-grid-column-span: ${info.colSpan};`);
+      styles.push(`-ms-grid-row-span: ${info.rowSpan};`);
+      styles.push(`display: block; grid-area: ${areaName};`);
+    }
 
-  // prettier-ignore
-  return size
+    // prettier-ignore
+    return size
     ? `
     ${theme.media.greaterThan(theme.breakpoints[size])} {
       ${styles.join('\n')}
     }
     `
     : styles.join('\n');
-};
+  };
 
 const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, children, ...props }) => {
   const { sm, md, lg, xl } = props;
@@ -341,13 +341,15 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   type SizeAreaTuple = [undefined | Size, { areas: Props['areas'] }];
   const stylesFnsForChild = useMemo(
     () =>
-      ([
-        [undefined, { areas: props.areas } as any],
-        ['sm', sm],
-        ['md', md],
-        ['lg', lg],
-        ['xl', xl],
-      ] as SizeAreaTuple[])
+      (
+        [
+          [undefined, { areas: props.areas } as any],
+          ['sm', sm],
+          ['md', md],
+          ['lg', lg],
+          ['xl', xl],
+        ] as SizeAreaTuple[]
+      )
         .filter(([_, sizeProps]) => sizeProps !== undefined)
         ?.map(([size], currentSizeIdx, allSizes) => {
           const currentAreas = allSizes
@@ -396,7 +398,7 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
 };
 
-export const CssGridContainer = withTheme(RawCSSGridContainer);
+export const CssGridContainer: React.FC<Props> = withTheme(RawCSSGridContainer);
 CssGridContainer.displayName = 'CssGrid.Container';
 
 export const CssGrid = { Container: CssGridContainer, Item: CssGridItem };

@@ -5,7 +5,7 @@ import {
   fireEvent,
   queryByText as queryElementByText,
   render,
-  waitForDomChange,
+  waitFor,
 } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import '@testing-library/jest-dom/extend-expect';
@@ -55,37 +55,43 @@ test('Single select without custom components', async () => {
 
   const getCurrentActiveDescendant = () =>
     searchInput.attributes.getNamedItem('aria-activedescendant').value;
+
   // But active-descendant points to the first option
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
-  // After ArrowDown pressing, next one should be preselected
-  fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  // After ArrowDown pressing, next one should be preselected
+  fireEvent.keyDown(searchInput, { key: 'ArrowDown' });
+
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  });
 
   // After another double ArrowDown we should be on first item again
   fireEvent.keyDown(list, { key: 'ArrowDown' });
   fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
+  });
 
-  // After typing label of last option, it becomes preselected
-  // Mind timeout here
+  // // After typing label of last option, it becomes preselected
+  // // Mind timeout here
   const option3id = `${INPUT_ID}-option-2`;
   const option3Label = `${testMessage}2`;
   fireEvent.change(searchInput, { target: { value: `${testMessage}2` } });
-  await waitForDomChange({ container: list, timeout: 300 });
-  expect(getCurrentActiveDescendant()).toBe(option3id);
+
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(option3id);
+  });
 
   const preselectedOption = getByText(option3Label);
   fireEvent.click(preselectedOption);
 
-  // Selected item => dropdown in collapsed state
+  // // Selected item => dropdown in collapsed state
   const searchInput2 = queryByTestId('input-select-search-field');
   expect(searchInput2).toBeNull();
 
-  // Label of option should appear inside button
+  // // Label of option should appear inside button
   expect(queryElementByText(button, option3Label)).not.toBeNull();
 });
 
@@ -147,9 +153,10 @@ test('Multi select with actions (also disabled actions)', async () => {
 
   // After ArrowDown pressing, next one should be preselected
   fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  });
 
   const option0 = queryElementByText(list, options[0].label);
 
@@ -167,9 +174,10 @@ test('Multi select with actions (also disabled actions)', async () => {
   fireEvent.keyDown(list, { key: 'ArrowDown' });
   fireEvent.keyDown(list, { key: 'ArrowDown' });
   fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-2`);
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-2`);
+  });
 
   const preselectedAction = getByText(actions[2].label);
   expect(actions[2].onSelect).not.toHaveBeenCalled();
@@ -231,16 +239,18 @@ test('Single select with actions', async () => {
 
   // After ArrowDown pressing, next one should be preselected
   fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+  });
 
   // After another double ArrowDown we should be on FIRST ACTION
   fireEvent.keyDown(list, { key: 'ArrowDown' });
   fireEvent.keyDown(list, { key: 'ArrowDown' });
-  await waitForDomChange({ container: list });
 
-  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-0`);
+  await waitFor(() => {
+    expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-0`);
+  });
 
   const preselectedAction = getByText(actions[0].label);
   expect(actions[0].onSelect).not.toHaveBeenCalled();
@@ -319,10 +329,12 @@ test('Multiselect without custom components and with select all', async () => {
 
   // Press ESC => collapsed state, button in focus
   fireEvent.keyDown(list, { key: 'Escape' });
-  await waitForDomChange({ container: list });
-  const searchInput3 = queryByTestId('input-select-search-field');
-  expect(searchInput3).toBeNull();
-  expect(document.activeElement).toBe(button);
+
+  await waitFor(() => {
+    const searchInput3 = queryByTestId('input-select-search-field');
+    expect(searchInput3).toBeNull();
+    expect(document.activeElement).toBe(button);
+  });
 });
 
 test('Props changes are propagated', () => {
