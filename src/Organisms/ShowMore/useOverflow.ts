@@ -1,7 +1,7 @@
 import { useState, useLayoutEffect } from 'react';
 
 const useOverflow = (ref: React.RefObject<HTMLElement>, deps: React.ReactNode = null) => {
-  const [isOverflowing, setIsOverflowing] = useState(true);
+  const [isOverflowing, setIsOverflowing] = useState(false);
 
   useLayoutEffect(() => {
     const checkIfOverflowing = () => {
