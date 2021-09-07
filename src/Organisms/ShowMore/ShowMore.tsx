@@ -10,33 +10,14 @@ const StyledDiv = styled.div<ContainerProps>`
   position: relative;
   overflow: ${(p) => (p.showMoreButton ? 'hidden' : 'visible')};
 
-  max-height: ${({ showMoreClicked, cutoffHeight, ellipsis }) =>
-    showMoreClicked || ellipsis ? 'none' : `${cutoffHeight}px`};
-
-  ${({ ellipsis, showMoreClicked, showMoreButton, theme, linesToClamp }) =>
-    ellipsis
-      ? `display: -webkit-box;
-  -webkit-line-clamp: ${showMoreClicked ? 'auto' : linesToClamp};
+  display: -webkit-box;
+  -webkit-line-clamp: ${(p) => (p.showMoreClicked ? 'auto' : p.linesToClamp)};
   -webkit-box-orient: vertical;
-  overflow: hidden;`
-      : `
-  &::before {
-    display: ${showMoreButton ? 'block' : 'none'};
-    content: '';
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), ${theme.color.card});
-  }`}
+  overflow: hidden;
 `;
 
 export const ShowMore: React.FC<Props> = ({
   children,
-  cutoffHeight = 200,
-  ellipsis = false,
   linesToClamp = 2,
   onShowMore = () => {},
   showMoreText,
@@ -58,17 +39,15 @@ export const ShowMore: React.FC<Props> = ({
   return (
     <>
       <StyledDiv
-        ellipsis={ellipsis}
         ref={containerRef}
         showMoreButton={showMoreButton}
         showMoreClicked={showMoreClicked}
-        cutoffHeight={cutoffHeight}
         linesToClamp={linesToClamp}
       >
         {children}
       </StyledDiv>
       {showMoreButton && (
-        <Box pt={ellipsis ? 1 : 4}>
+        <Box pt={1}>
           <ShowMoreButton onClick={onShowMoreClick} align="left" showMoreText={showMoreText} />
         </Box>
       )}
