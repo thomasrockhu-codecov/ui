@@ -4,4 +4,6 @@ export type Props = {
   viewedDate: Date;
   onChange: (index: number) => void;
   years?: Number;
+  fullscreenMode?: boolean;
+  selectYearLabel?: string;
 };

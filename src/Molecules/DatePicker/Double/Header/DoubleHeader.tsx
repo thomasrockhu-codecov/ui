@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import format from 'date-fns/format';
 import { addMonths, subMonths } from 'date-fns';
 import { Props } from './DoubleHeader.types';
-import { Box, Flexbox, Icon, Link } from '../../../..';
+import { Box, Flexbox, Icon, Button } from '../../../..';
 import { getLocale } from '../../shared/dateUtils';
 import SelectMonth from '../../shared/components/SelectMonth';
 import SelectYear from '../../shared/components/SelectYear';
@@ -26,6 +26,8 @@ const DoubleHeader: React.FC<Props> = ({
   onMonthChange,
   onYearChange,
   yearSelectLength,
+  selectMonthLabel,
+  selectYearLabel,
 }) => {
   const opts = {
     locale: getLocale(locale),
@@ -48,7 +50,8 @@ const DoubleHeader: React.FC<Props> = ({
     <Flexbox container justifyContent="space-between">
       <YearMonthContainer container justifyContent="center" flex="1">
         <ChevronContainer mt={1} $align="left">
-          <Link
+          <Button
+            variant="neutral"
             aria-label={ariaLabelPreviousText}
             data-testid="datepicker-arrow-left"
             onClick={() => {
@@ -56,7 +59,7 @@ const DoubleHeader: React.FC<Props> = ({
             }}
           >
             <Icon.ThinChevron size={4} direction="left" />
-          </Link>
+          </Button>
         </ChevronContainer>
         <Flexbox container item>
           <SelectMonth
@@ -64,6 +67,7 @@ const DoubleHeader: React.FC<Props> = ({
             locale={locale}
             viewedDate={leftViewedDate}
             onChange={onMonthChange}
+            selectMonthLabel={selectMonthLabel}
           />
           <SelectYear
             id={`${id}-left`}
@@ -71,6 +75,7 @@ const DoubleHeader: React.FC<Props> = ({
             viewedDate={leftViewedDate}
             years={yearSelectLength}
             onChange={onYearChange}
+            selectYearLabel={selectYearLabel}
           />
         </Flexbox>
       </YearMonthContainer>
@@ -82,6 +87,7 @@ const DoubleHeader: React.FC<Props> = ({
             locale={locale}
             viewedDate={rightViewedDate}
             onChange={onMonthChange}
+            selectMonthLabel={selectMonthLabel}
           />
           <SelectYear
             id={`${id}-right`}
@@ -89,10 +95,12 @@ const DoubleHeader: React.FC<Props> = ({
             viewedDate={rightViewedDate}
             years={yearSelectLength}
             onChange={onYearChange}
+            selectYearLabel={selectYearLabel}
           />
         </Flexbox>
         <ChevronContainer $align="right" mt={1}>
-          <Link
+          <Button
+            variant="neutral"
             aria-label={ariaLabelNextText}
             data-testid="datepicker-arrow-right"
             onClick={() => {
@@ -100,7 +108,7 @@ const DoubleHeader: React.FC<Props> = ({
             }}
           >
             <Icon.ThinChevron size={4} direction="right" />
-          </Link>
+          </Button>
         </ChevronContainer>
       </YearMonthContainer>
     </Flexbox>

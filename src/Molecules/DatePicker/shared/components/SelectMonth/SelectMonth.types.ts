@@ -3,4 +3,6 @@ export type Props = {
   locale: string;
   viewedDate: Date;
   onChange: (index: number) => void;
+  fullscreenMode?: boolean;
+  selectMonthLabel?: string;
 };

@@ -1,272 +1,308 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules / DatePicker / Double DatePicker Allow Update While Typing 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c8:focus {
+  border-width: 1px;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c2 {
+  z-index: 1;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  width: 312px;
+  display: inline-block;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <label
+        className="c3"
+        hidden={false}
+      >
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            Allow update while typing 
+          </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="allow-update-on-type-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="allow-update-on-type-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Controlled 1`] = `
 Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
   .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -482,18 +518,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -634,7 +670,7 @@ Array [
                   onKeyDown={[Function]}
                   placeholder="dd/mm/yyyy"
                   type="text"
-                  value=""
+                  value="01/01/2021"
                   variant="normal"
                 />
                 <div
@@ -692,7 +728,7 @@ Array [
                   onKeyDown={[Function]}
                   placeholder="dd/mm/yyyy"
                   type="text"
-                  value=""
+                  value="05/01/2021"
                   variant="normal"
                 />
                 <div
@@ -724,273 +760,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
-Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1064,18 +834,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1181,384 +951,117 @@ Array [
 }
 
 <div>
+  <div
+    className="c0"
+  >
     <div
-      className="c0"
+      className="c1 c2"
     >
-      <div
-        className="c1 c2"
-      >
-        <label
-          className="c3"
-          hidden={false}
-        >
-          <span
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              Label 
-            </div>
-            <span
-              className="c6"
-            >
-              <div
-                className="c7"
-              >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-                  data-testid="datepicker-input-start"
-                  id="input-id-start"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c9 c10"
-                  position="right"
-                  variant="normal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </span>
-          </span>
-        </label>
-      </div>
-      <div
-        className="c1 c2"
+      <label
+        className="c3"
+        hidden={false}
       >
         <span
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-              data-testid="datepicker-input-end"
-              id="input-id-end"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c9 c10"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c11"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Label 
           </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="input-id-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </div>
+      </label>
     </div>
-  </div>,
-]
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="input-id-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Disabled Input 1`] = `
-Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1632,18 +1135,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #A0A09B;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1746,386 +1249,119 @@ Array [
 }
 
 <div>
+  <div
+    className="c0"
+  >
     <div
-      className="c0"
+      className="c1 c2"
     >
-      <div
-        className="c1 c2"
-      >
-        <label
-          className="c3"
-          hidden={false}
-        >
-          <span
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              Disabled input 
-            </div>
-            <span
-              className="c6"
-            >
-              <div
-                className="c7"
-              >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-                  data-testid="datepicker-input-start"
-                  disabled={true}
-                  id="disabled-input-start"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c9 c10"
-                  position="right"
-                  variant="normal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </span>
-          </span>
-        </label>
-      </div>
-      <div
-        className="c1 c2"
+      <label
+        className="c3"
+        hidden={false}
       >
         <span
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-              data-testid="datepicker-input-end"
-              disabled={true}
-              id="disabled-input-end"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c9 c10"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c11"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Disabled input 
           </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                disabled={true}
+                id="disabled-input-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </div>
+      </label>
     </div>
-  </div>,
-]
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            disabled={true}
+            id="disabled-input-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Disallow Single Day Range 1`] = `
-Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2199,18 +1435,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2316,384 +1552,117 @@ Array [
 }
 
 <div>
+  <div
+    className="c0"
+  >
     <div
-      className="c0"
+      className="c1 c2"
     >
-      <div
-        className="c1 c2"
-      >
-        <label
-          className="c3"
-          hidden={false}
-        >
-          <span
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              Label 
-            </div>
-            <span
-              className="c6"
-            >
-              <div
-                className="c7"
-              >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-                  data-testid="datepicker-input-start"
-                  id="input-id-start"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c9 c10"
-                  position="right"
-                  variant="normal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </span>
-          </span>
-        </label>
-      </div>
-      <div
-        className="c1 c2"
+      <label
+        className="c3"
+        hidden={false}
       >
         <span
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-              data-testid="datepicker-input-end"
-              id="input-id-end"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c9 c10"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c11"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Label 
           </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="input-id-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </div>
+      </label>
     </div>
-  </div>,
-]
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="input-id-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Disabled 1`] = `
-Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2767,18 +1736,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -2884,384 +1853,117 @@ Array [
 }
 
 <div>
+  <div
+    className="c0"
+  >
     <div
-      className="c0"
+      className="c1 c2"
     >
-      <div
-        className="c1 c2"
-      >
-        <label
-          className="c3"
-          hidden={false}
-        >
-          <span
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              Disabled dates on same week 
-            </div>
-            <span
-              className="c6"
-            >
-              <div
-                className="c7"
-              >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-                  data-testid="datepicker-input-start"
-                  id="disable-dates-input-start"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c9 c10"
-                  position="right"
-                  variant="normal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </span>
-          </span>
-        </label>
-      </div>
-      <div
-        className="c1 c2"
+      <label
+        className="c3"
+        hidden={false}
       >
         <span
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-              data-testid="datepicker-input-end"
-              id="disable-dates-input-end"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c9 c10"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c11"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Disabled dates on same week 
           </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="disable-dates-input-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </div>
+      </label>
     </div>
-  </div>,
-]
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="disable-dates-input-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Enabled 1`] = `
-Array [
-  .c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            The double variant has a specific user case in mind
-          </span>
-          <span
-            className="c8"
-          >
-            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c2 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  background-color: #F5F5F5;
-  border-left: 4px solid #FFCF00;
-  padding: 4px 12px;
-  box-sizing: border-box;
-}
-
-.c6 {
-  width: 100%;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-      scope="module"
-    >
-      <div
-        className="c2"
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 92 90"
-        >
-          <path
-            d="M46 0l46 89.3913043H0z"
-          />
-          <path
-            className="c4"
-            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          />
-        </svg>
-        <div
-          className="c5 c6"
-        >
-          <span
-            className="c7"
-          >
-            Use at own risk
-          </span>
-          <span
-            className="c8"
-          >
-            Arrow navigation is yet to be implemented
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  .c0 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3335,18 +2037,18 @@ Array [
   display: block;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3452,112 +2154,412 @@ Array [
 }
 
 <div>
+  <div
+    className="c0"
+  >
     <div
-      className="c0"
+      className="c1 c2"
     >
-      <div
-        className="c1 c2"
-      >
-        <label
-          className="c3"
-          hidden={false}
-        >
-          <span
-            className="c4"
-          >
-            <div
-              className="c5"
-            >
-              Only enabled dates in same week 
-            </div>
-            <span
-              className="c6"
-            >
-              <div
-                className="c7"
-              >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-                  data-testid="datepicker-input-start"
-                  id="enable-dates-input-start"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c9 c10"
-                  position="right"
-                  variant="normal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </span>
-          </span>
-        </label>
-      </div>
-      <div
-        className="c1 c2"
+      <label
+        className="c3"
+        hidden={false}
       >
         <span
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
-              data-testid="datepicker-input-end"
-              id="enable-dates-input-end"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c9 c10"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c11"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Only enabled dates in same week 
           </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="enable-dates-input-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </div>
+      </label>
     </div>
-  </div>,
-]
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="enable-dates-input-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / DatePicker / Double DatePicker With Clear Button 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c0 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c8:focus {
+  border-width: 1px;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c2 {
+  z-index: 1;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  width: 312px;
+  display: inline-block;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <label
+        className="c3"
+        hidden={false}
+      >
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            With clear button 
+          </div>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+                data-testid="datepicker-input-start"
+                id="clear-button-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c9 c10"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c11"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <input
+            autoComplete="off"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+            data-testid="datepicker-input-end"
+            id="clear-button-end"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="dd/mm/yyyy"
+            type="text"
+            value=""
+            variant="normal"
+          />
+          <div
+            className="c9 c10"
+            position="right"
+            variant="normal"
+          >
+            <svg
+              aria-hidden="true"
+              className="c11"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
 `;

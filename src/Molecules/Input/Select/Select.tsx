@@ -83,6 +83,9 @@ const Select = (props: Props) => {
 
   const isFullscreenOnMobile = smallScreen && props.fullscreenOnMobile && !props.withPortal;
 
+  const isDisableSearchComponent =
+    isFullscreenOnMobile && !props.showSearch ? true : props.disableSearchComponent;
+
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
     context: {
@@ -105,7 +108,7 @@ const Select = (props: Props) => {
       valueFromProps: props.value,
       uncommittedSelectedItems: [],
       actions: props.actions || [],
-      disableSearchComponent: props.disableSearchComponent,
+      disableSearchComponent: isDisableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
     },
   });
@@ -154,7 +157,7 @@ const Select = (props: Props) => {
       showSearch: props.showSearch || false,
       id: props.id,
       actions: props.actions || [],
-      disableSearchComponent: props.disableSearchComponent,
+      disableSearchComponent: isDisableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
     },
     [
@@ -172,7 +175,7 @@ const Select = (props: Props) => {
       props.id,
       props.actions,
       props.searchQuery,
-      props.disableSearchComponent,
+      isDisableSearchComponent,
       isFullscreenOnMobile,
     ],
   );
@@ -214,7 +217,6 @@ const Select = (props: Props) => {
   /******      Focus management      ******/
   useAutofocus(buttonRef, props.autoFocus);
   useFocusFromMachine(machineState, buttonRef, itemRefs, searchRef);
-  useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
   const { handleBlur, handleFocus } = useOnBlurAndOnFocus(
     machineState,
     send,
@@ -227,16 +229,10 @@ const Select = (props: Props) => {
   );
 
   /******      Renderers      ******/
-  const {
-    ListItem,
-    List,
-    ListFullScreen,
-    SelectedValue,
-    Search,
-    Action,
-  } = useComponentsWithDefaults(props.components, {
-    multiselect: machineState.context.multiselect,
-  });
+  const { ListItem, List, ListFullScreen, SelectedValue, Search, Action } =
+    useComponentsWithDefaults(props.components, {
+      multiselect: machineState.context.multiselect,
+    });
 
   /******      Values from machine      ******/
   const isOpen = machineState.context.open;
@@ -254,6 +250,14 @@ const Select = (props: Props) => {
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
   const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
+
+  useOnClickOutside([listRef, formFieldRef], () => {
+    if (!isFullScreenMode) send({ type: 'BLUR' });
+  });
+
+  const onClose = useCallback(() => {
+    send({ type: 'CLOSE' });
+  }, [send]);
 
   return (
     <div className={props.className}>
@@ -298,7 +302,7 @@ const Select = (props: Props) => {
           id={props.id}
           size={props.size}
           onFocus={handleFocus}
-          onBlur={handleBlur}
+          onBlur={!isFullScreenMode ? handleBlur : undefined}
           width={props.width}
         >
           <SelectedValueWrapper
@@ -358,6 +362,7 @@ const Select = (props: Props) => {
                   {props.label}
                 </Typography>
               }
+              onClose={onClose}
             >
               <ListWrapperComponent
                 component={ListFullScreen}
@@ -368,11 +373,7 @@ const Select = (props: Props) => {
                 ref={listRef}
                 data-testid="input-select-list"
                 searchComponent={
-                  <SearchWrapper
-                    ref={searchRef}
-                    component={Search}
-                    hideSearch={disableSearchComponent}
-                  />
+                  !disableSearchComponent && <SearchWrapper ref={searchRef} component={Search} />
                 }
                 listPosition={props.listPosition}
                 placement="top"

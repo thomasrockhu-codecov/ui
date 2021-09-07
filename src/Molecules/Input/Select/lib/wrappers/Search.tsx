@@ -5,9 +5,8 @@ export const SearchWrapper = React.forwardRef<
   HTMLInputElement,
   {
     component: React.ComponentType<any>;
-    hideSearch?: boolean;
   }
->(({ component: Component, hideSearch }, ref: React.Ref<HTMLInputElement>) => {
+>(({ component: Component }, ref: React.Ref<HTMLInputElement>) => {
   const [state, send] = useSelectMachineFromContext();
   const searchQuery = state.context.searchQuery;
   const showSearch = state.context.showSearch;
@@ -22,7 +21,7 @@ export const SearchWrapper = React.forwardRef<
     itemInFocusType === 'action' ? itemFocusIdx! - visibleOptionsCount : itemFocusIdx;
 
   const id = state.context.id;
-  const hidden = hideSearch || !showSearch;
+  const hidden = !showSearch;
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     send({ type: 'SEARCH_QUERY_UPDATE', payload: e.target.value });
 
