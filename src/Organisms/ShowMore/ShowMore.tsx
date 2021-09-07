@@ -11,7 +11,6 @@ const StyledDiv = styled.div<ContainerProps>`
   display: -webkit-box;
   /* stylelint-disable property-no-vendor-prefix */
   -webkit-line-clamp: ${(p) => (p.showMoreClicked ? 'auto' : p.linesToClamp)};
-  /* stylelint-disable property-no-vendor-prefix */
   -webkit-box-orient: vertical;
   overflow: hidden;
 `;
