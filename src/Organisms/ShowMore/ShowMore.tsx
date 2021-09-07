@@ -7,11 +7,11 @@ import { Props, ContainerProps } from './ShowMore.types';
 import useOverflow from './useOverflow';
 
 const StyledDiv = styled.div<ContainerProps>`
-  position: relative;
-  overflow: ${(p) => (p.showMoreButton ? 'hidden' : 'visible')};
-
+  /* stylelint-disable value-no-vendor-prefix */
   display: -webkit-box;
+  /* stylelint-disable property-no-vendor-prefix */
   -webkit-line-clamp: ${(p) => (p.showMoreClicked ? 'auto' : p.linesToClamp)};
+  /* stylelint-disable property-no-vendor-prefix */
   -webkit-box-orient: vertical;
   overflow: hidden;
 `;
