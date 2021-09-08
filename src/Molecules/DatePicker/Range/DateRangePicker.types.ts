@@ -46,7 +46,7 @@ interface FullscreenProps {
    */
   title: string;
   clearButtonLabel: string;
-  closeButtonLabel: string;
+  confirmButtonLabel: string;
   pickDateLabel?: string;
   fromLabel?: string;
   toLabel?: string;

@@ -219,7 +219,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
                 </Button>
               </Box>
               <Button onClick={onClose} size="l" fullWidth>
-                {props.fullscreenProps.closeButtonLabel}
+                {props.fullscreenProps.confirmButtonLabel}
               </Button>
             </>
           }

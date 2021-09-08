@@ -29,7 +29,7 @@ interface FullscreenProps {
    */
   title: string;
   clearButtonLabel: string;
-  closeButtonLabel: string;
+  confirmButtonLabel: string;
   dateLabel?: string;
 }
 

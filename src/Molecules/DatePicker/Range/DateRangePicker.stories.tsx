@@ -85,7 +85,7 @@ export const FullscreenOnMobile = () => (
     fullscreenOnMobile
     fullscreenProps={{
       title: 'Select a date',
-      closeButtonLabel: 'OK',
+      confirmButtonLabel: 'OK',
       clearButtonLabel: 'Clear dates',
       fromLabel: 'From',
       toLabel: 'To',

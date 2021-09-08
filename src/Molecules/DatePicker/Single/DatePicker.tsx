@@ -190,7 +190,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
                 </Button>
               </Box>
               <Button onClick={onClose} size="l" fullWidth>
-                {props.fullscreenProps.closeButtonLabel}
+                {props.fullscreenProps.confirmButtonLabel}
               </Button>
             </>
           }
