@@ -1,3 +1,10 @@
+## [8.0.1](https://github.com/nordnet/ui/compare/v8.0.0...v8.0.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* 🐛 make UrgentMessage to fix to viewBox ([badc45b](https://github.com/nordnet/ui/commit/badc45b))
+
 # [8.0.0](https://github.com/nordnet/ui/compare/v7.5.1...v8.0.0) (2021-09-08)
 
 
