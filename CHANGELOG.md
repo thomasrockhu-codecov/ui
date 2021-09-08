@@ -1,3 +1,16 @@
+# [8.0.0](https://github.com/nordnet/ui/compare/v7.5.1...v8.0.0) (2021-09-08)
+
+
+### Features
+
+* 🎸 datepicker fullscreen support in mobile, remove variant ([f5926b7](https://github.com/nordnet/ui/commit/f5926b7))
+
+
+### BREAKING CHANGES
+
+* 🧨 variant prop no longer supported, disallowSingleDayRange prop changed to
+allowSingleDayRange
+
 ## [7.5.1](https://github.com/nordnet/ui/compare/v7.5.0...v7.5.1) (2021-09-08)
 
 
