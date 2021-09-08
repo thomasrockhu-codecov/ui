@@ -88,8 +88,8 @@ export const Transfer = () => (
 export const UrgentMessage = () => (
   <Icon.UrgentMessage
     size={number('Size', 10)}
-    fill={(t: Theme) => color('Fill color', t.color.negative)}
-    stroke={(t: Theme) => color('Stroke color', t.color.text)}
+    fill={(t: Theme) => color('Fill color', t.color.text)}
+    stroke={(t: Theme) => color('Stroke color', t.color.negative)}
   />
 );
 
