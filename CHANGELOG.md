@@ -1,3 +1,15 @@
+## [7.5.1](https://github.com/nordnet/ui/compare/v7.5.0...v7.5.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* padding ([f9b4db0](https://github.com/nordnet/ui/commit/f9b4db0))
+* remove bottom padding ([9e18114](https://github.com/nordnet/ui/commit/9e18114))
+* remove extra lint disable ([6ab9c04](https://github.com/nordnet/ui/commit/6ab9c04))
+* remove gradient functionality ([edb57a5](https://github.com/nordnet/ui/commit/edb57a5))
+* style updates ([d4a09dc](https://github.com/nordnet/ui/commit/d4a09dc))
+* update snapshots ([432c564](https://github.com/nordnet/ui/commit/432c564))
+
 # [7.5.0](https://github.com/nordnet/ui/compare/v7.4.0...v7.5.0) (2021-09-06)
 
 
