@@ -198,6 +198,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     value,
     visuallyEmphasiseRequired,
     type,
+    readOnly,
   } = props;
 
   return (
@@ -248,6 +249,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               value,
               type,
               ref,
+              readOnly,
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}

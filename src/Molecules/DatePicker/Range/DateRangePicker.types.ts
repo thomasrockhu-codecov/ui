@@ -7,21 +7,38 @@ export type BaseProps = {
    * @default false
    */
   allowDateUpdateOnType?: boolean;
-  onChange?: (date: Date) => void;
-  onBlur?: (date: Date) => void;
+  onChange?: (date: Date, endDate?: Date | null) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
   id: string;
   selectedDate?: Date;
+  selectedEndDate?: Date;
   inputSize?: 's';
   width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
+  /**
+   * Allow a range starting and ending in the same day to be selected
+   * @default true
+   */
+  allowSingleDayRange?: boolean;
   selectMonthLabel?: string;
   selectYearLabel?: string;
 };
+
+export type PropsWithoutClearButton = BaseProps & {
+  showClearButton?: false;
+  clearButtonLabel?: never;
+};
+
+export type PropsWithClearButton = BaseProps & {
+  showClearButton: true;
+  clearButtonLabel: string;
+};
+
+type PropsWithOrWithoutClearButton = PropsWithoutClearButton | PropsWithClearButton;
 
 interface FullscreenProps {
   /**
@@ -30,17 +47,19 @@ interface FullscreenProps {
   title: string;
   clearButtonLabel: string;
   confirmButtonLabel: string;
-  dateLabel?: string;
+  pickDateLabel?: string;
+  fromLabel?: string;
+  toLabel?: string;
 }
 
-export interface PropsWithFullscreen extends BaseProps {
+export type PropsWithFullscreen = PropsWithOrWithoutClearButton & {
   fullscreenOnMobile: true;
   fullscreenProps: FullscreenProps;
-}
+};
 
-export interface PropsWithoutFullscreen extends BaseProps {
+export type PropsWithoutFullscreen = PropsWithOrWithoutClearButton & {
   fullscreenOnMobile?: false;
   fullscreenProps?: never;
-}
+};
 
 export type Props = PropsWithFullscreen | PropsWithoutFullscreen;

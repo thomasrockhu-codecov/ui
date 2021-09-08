@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useRef, useMemo } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import {
@@ -13,13 +13,9 @@ import { Box, Flexbox, Typography } from '../../../..';
 import { getCalendar, getLocale } from '../../shared/dateUtils';
 import { FlexProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { Props } from './DoubleCalendar.types';
-import {
-  DOUBLE_CALENDAR_GUTTER,
-  NUMBER_OF_VISIBLE_ROWS_DOUBLE,
-  NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
-  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
-} from '../../shared/constants';
+import { DOUBLE_CALENDAR_GUTTER, NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE } from '../../shared/constants';
 import CalendarDay from '../../shared/components/CalendarDay';
+import { useFocusedDate } from '../../shared/hooks';
 
 export const StyledBox = styled(Box)`
   border: 1px solid transparent;
@@ -48,14 +44,9 @@ const DoubleCalendar: React.FC<Props> = ({
   onClick,
   selectedStartDate,
   selectedEndDate,
-  controlledFocus,
+  onMonthChange,
 }) => {
-  const [[focusedWeek, focusedDay], setFocused] = useState<[number | null, number | null]>([
-    null,
-    null,
-  ]);
-  const focusedDateObjRef = useRef<Date | null>(null);
-
+  const calendarRef = useRef<HTMLDivElement>(null);
   const dateIsDisabled = (dateToCheck: Date | null) => {
     const isEnabled = dateToCheck && enableDate?.(dateToCheck);
     const isDisabled = dateToCheck && disableDate?.(dateToCheck);
@@ -65,75 +56,6 @@ const DoubleCalendar: React.FC<Props> = ({
     if (R.isNil(isDisabled)) return !isEnabled;
     return false;
   };
-
-  const calendarDayRefs = useRef(
-    useMemo(() => {
-      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)]?.map(() =>
-        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)]?.map(() => React.createRef<HTMLDivElement>()),
-      );
-    }, []),
-  );
-
-  const handleKeyPress = (event: React.KeyboardEvent) => {
-    event.stopPropagation();
-    // TODO: Implement arrow navigation. Re-implement tests.
-    // Arrow navigation is temporarily removed as it is not completely finished yet.
-    /*
-    if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
-      setFocused([0, 0]);
-    } else {
-      switch (event.key) {
-        case 'ArrowLeft':
-          if (focusedDay > 0) {
-            setFocused([focusedWeek, focusedDay - 1]);
-          } else if (focusedWeek > 0) {
-            setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1]);
-          }
-          break;
-
-        case 'ArrowRight':
-          if (focusedDay < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
-            setFocused([focusedWeek, focusedDay + 1]);
-          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS_SINGLE - 1) {
-            setFocused([focusedWeek + 1, 0]);
-          }
-          break;
-
-        case 'ArrowUp':
-          if (focusedWeek > 0) {
-            setFocused([focusedWeek - 1, focusedDay]);
-          }
-          break;
-
-        case 'ArrowDown':
-          if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS_SINGLE - 1) {
-            setFocused([focusedWeek + 1, focusedDay]);
-          }
-          break;
-
-        case ' ': // Spacebar
-        case 'Enter':
-          if (focusedDateObjRef.current && !dateIsDisabled(focusedDateObjRef.current)) {
-            onClick(new Date(focusedDateObjRef.current));
-          }
-          break;
-
-        default:
-          break;
-      }
-    }
-    */
-  };
-
-  useEffect(() => {
-    if (
-      !R.isNil(focusedWeek) &&
-      !R.isNil(focusedDay) &&
-      !R.isNil(calendarDayRefs.current[focusedWeek][focusedDay].current)
-    ) {
-      calendarDayRefs.current[focusedWeek][focusedDay].current?.focus();
-    }
-  }, [focusedDay, focusedWeek]);
 
   const leftViewedDate = viewedDate;
   const rightViewedDate = addMonths(leftViewedDate, 1);
@@ -156,12 +78,18 @@ const DoubleCalendar: React.FC<Props> = ({
     };
   }, [localeObj, viewedDate]);
 
-  useEffect(() => {
-    if (controlledFocus) setFocused([0, 0]);
-  }, [controlledFocus, setFocused]);
+  const { focusedDate, handleKeyPress, handleFocus } = useFocusedDate({
+    calendarRef,
+    viewedDate,
+    calendar,
+    onMonthChange,
+    dateIsDisabled,
+    onSelectDate: onClick,
+  });
 
   return (
     <Flexbox
+      ref={calendarRef}
       container
       direction="row"
       justifyContent="space-between"
@@ -201,12 +129,11 @@ const DoubleCalendar: React.FC<Props> = ({
                 />
               ) : (
                 <CalendarDay
-                  ref={calendarDayRefs?.current[weekIndex][dayIndex]}
                   withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
                   onFocus={() => {
-                    setFocused([weekIndex, dayIndex]);
-                    focusedDateObjRef.current = day;
+                    handleFocus(day);
                   }}
+                  focused={!!focusedDate && isSameDay(day, focusedDate)}
                   key={day.toString()}
                   date={day}
                   disabled={!!dateIsDisabled(day)}

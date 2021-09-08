@@ -1,27 +1,26 @@
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
-import DatePicker from '../DatePicker';
+import DateRangePicker from './DateRangePicker';
 import { Button, Flexbox } from '../../..';
 
 export default {
-  title: 'Molecules / DatePicker / DatePicker with range',
+  title: 'Molecules / DatePicker / Range DatePicker',
   parameters: {
-    component: DatePicker,
+    component: DateRangePicker,
   },
 };
 
 const dateNow = new Date();
 
 export const Default = () => (
-  <DatePicker id="input-id" label="Label" onChange={action('Range date')} variant="RANGE" />
+  <DateRangePicker id="input-id" label="Label" onChange={action('Range date')} />
 );
 
 export const SameWeekDisabled = () => {
   return (
-    <DatePicker
+    <DateRangePicker
       id="disable-dates-input"
-      variant="RANGE"
       label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
@@ -31,9 +30,8 @@ export const SameWeekDisabled = () => {
 
 export const SameWeekEnabled = () => {
   return (
-    <DatePicker
+    <DateRangePicker
       id="enable-dates-input"
-      variant="RANGE"
       label="Only enabled dates in same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
@@ -42,7 +40,7 @@ export const SameWeekEnabled = () => {
 };
 
 export const Controlled = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(new Date('01/01/2021'));
   const [endDate, setEndDate] = useState(add(startDate, { days: 4 }));
 
   return (
@@ -55,9 +53,8 @@ export const Controlled = () => {
           <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next end date</Button>
         </Flexbox>
       </Flexbox>
-      <DatePicker
+      <DateRangePicker
         id="controlled"
-        variant="RANGE"
         label="Controlled"
         selectedDate={startDate}
         selectedEndDate={endDate}
@@ -72,16 +69,44 @@ export const Controlled = () => {
 };
 
 export const DisabledInput = () => {
-  return <DatePicker id="disabled-input" variant="RANGE" label="Disabled input" disabled />;
+  return <DateRangePicker id="disabled-input" label="Disabled input" disabled />;
 };
 
 export const AllowUpdateWhileTyping = () => {
   return (
-    <DatePicker
-      id="disabled-input"
-      variant="RANGE"
-      allowDateUpdateOnType
-      label="Allow update while typing"
-    />
+    <DateRangePicker id="disabled-input" allowDateUpdateOnType label="Allow update while typing" />
   );
 };
+
+export const FullscreenOnMobile = () => (
+  <DateRangePicker
+    id="fullscreen-on-mobile"
+    label="FullscreenOnMobile"
+    fullscreenOnMobile
+    fullscreenProps={{
+      title: 'Select a date',
+      confirmButtonLabel: 'OK',
+      clearButtonLabel: 'Clear dates',
+      fromLabel: 'From',
+      toLabel: 'To',
+    }}
+  />
+);
+
+export const DisallowSingleDayRange = () => (
+  <DateRangePicker
+    id="disallow-single-day-range"
+    label="Disallow single day range"
+    onChange={action('Range date')}
+    allowSingleDayRange={false}
+  />
+);
+
+export const WithClearButton = () => (
+  <DateRangePicker
+    id="clear-button"
+    label="With clear button"
+    showClearButton
+    clearButtonLabel="Clear Dates"
+  />
+);

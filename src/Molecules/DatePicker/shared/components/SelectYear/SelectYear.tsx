@@ -11,14 +11,23 @@ import { Theme } from '../../../../../theme/theme.types';
 
 /* using styled like this as a workaround for
  Select.test.tsx failing because Input.Select is undefined */
-const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
+const StyledInputSelect = styled((props: React.ComponentProps<typeof Input.Select>) => (
+  <Input.Select {...props} />
+))`
   > div > div > div {
     margin-right: -22px;
     margin-top: -10px;
   }
 `;
 
-const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) => {
+const SelectYear: React.FC<Props> = ({
+  id,
+  viewedDate,
+  onChange,
+  years = 100,
+  fullscreenMode,
+  selectYearLabel = 'Year',
+}) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
   const yearOptions = [...Array(years).keys()]?.map((index: number) => ({
@@ -40,7 +49,7 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
 
         if ((state.value as any).open === 'on') {
           icon = <Icon.ChevronUp size={2} color={(t: Theme) => t.color.svgFill} />;
-        } else if (isHover) {
+        } else if (isHover || fullscreenMode) {
           icon = <Icon.ChevronDown size={2} color={(t: Theme) => t.color.cta} />;
         } else {
           icon = <Box px={1} />;
@@ -64,7 +73,7 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
         );
       },
     }),
-    [viewedDate, isHover, useSelectMachineFromContext],
+    [useSelectMachineFromContext, isHover, fullscreenMode, viewedDate],
   );
 
   const selected = yearOptions.filter((p) => p.value === viewedDate.getFullYear());
@@ -73,7 +82,7 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
       <StyledInputSelect
-        label="Year"
+        label={selectYearLabel}
         id={`${id}-select-year`}
         options={yearOptions}
         noFormField
@@ -82,6 +91,7 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
         value={selected}
         listPosition="left"
         width={`${theme.spacing.unit(25)}px`}
+        fullscreenOnMobile={fullscreenMode}
       />
     </div>
   );

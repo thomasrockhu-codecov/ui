@@ -2,21 +2,24 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTheme } from 'styled-components';
 import { useIntl } from 'react-intl';
 import {
-  Props as SingleDatePickerProps,
+  Props,
+  PropsWithClearButton,
   PropsWithFullscreen,
+  PropsWithoutClearButton,
   PropsWithoutFullscreen,
-} from './DatePicker.types';
+} from './DateRangePicker.types';
 
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import { Box, Button, Icon, Input, Modal, useMedia, Flexbox } from '../../..';
+import Input from '../../Input';
+import { Box, Button, Flexbox, Icon, Modal, useMedia } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
-import { getDateFormat } from '../shared/dateUtils';
-import Header from './Header';
-import Calendar from './Calendar';
-import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
+import { getDateFormat, parseDateString } from '../shared/dateUtils';
+import Header from '../Single/Header';
+import Calendar from '../Single/Calendar';
+import { DEFAULT_INPUT_WIDTH, INPUT_ID_RANGE } from '../shared/constants';
 import { useDatePicker } from '../shared/hooks';
 import {
   StyledDropdownBubble,
@@ -29,13 +32,16 @@ export const isFullscreenMode = (
   isSmallScreen: boolean | null,
 ): props is PropsWithFullscreen => Boolean(props.fullscreenOnMobile) && Boolean(isSmallScreen);
 
-const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((props, ref) => {
+const isWithClearButton = (
+  props: PropsWithoutClearButton | PropsWithClearButton,
+): props is PropsWithClearButton => Boolean(props.showClearButton);
+
+const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
     allowDateUpdateOnType = false,
     onChange,
-    onBlur,
     label,
     disabled,
     disableDate,
@@ -43,9 +49,12 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     id,
     open: openProp = false,
     selectedDate: selectedDateProp,
+    selectedEndDate: selectedEndDateProp,
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
+    allowSingleDayRange,
+    showClearButton,
     fullscreenOnMobile,
     selectMonthLabel,
     selectYearLabel,
@@ -57,6 +66,13 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
     assert(
       isUndefined(enableDate),
       `DatePicker: "enableDate" cannot be used at the same time as "disableDate".`,
+    );
+  }
+
+  if (showClearButton) {
+    assert(
+      !isUndefined(props.clearButtonLabel),
+      `DatePicker: "clearButtonLabel" is required when "showClearButton" is true`,
     );
   }
 
@@ -82,7 +98,9 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
 
   const {
     selectedDate,
+    selectedEndDate,
     inputValue,
+    inputValueEnd,
     handleInputKeyDown,
     handleInputOnChange,
     handleInputOnBlur,
@@ -94,23 +112,16 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   } = useDatePicker({
     id,
     selectedDateProp,
+    selectedEndDateProp,
     enableDate,
     disableDate,
     onChange,
-    onBlur,
     allowDateUpdateOnType,
+    allowSingleDayRange,
+    isRangePicker: true,
   });
 
-  const fullscreenMode = isFullscreenMode(props, isSmallScreen);
-
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
-  const handleClick = useCallback(
-    (date: Date) => {
-      onDateClick(date);
-      if (!fullscreenMode) onClose();
-    },
-    [onDateClick, onClose, fullscreenMode],
-  );
 
   const datepicker = (
     <>
@@ -123,7 +134,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         onMonthChange={onMonthChange}
         onYearChange={onYearChange}
         yearSelectLength={yearSelectLength}
-        fullscreenMode={fullscreenMode}
+        fullscreenMode={isFullscreenMode(props, isSmallScreen)}
         selectMonthLabel={selectMonthLabel}
         selectYearLabel={selectYearLabel}
       />
@@ -133,10 +144,18 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         viewedDate={viewedDate}
         onMonthChange={onMonthChange}
         locale={locale}
-        onClick={handleClick}
+        onClick={onDateClick}
         selectedDate={selectedDate as Date}
-        fullscreenMode={fullscreenMode}
+        selectedEndDate={selectedEndDate as Date}
+        fullscreenMode={isFullscreenMode(props, isSmallScreen)}
       />
+      {isWithClearButton(props) ? (
+        <Box pt={3}>
+          <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+            {props.clearButtonLabel}
+          </Button>
+        </Box>
+      ) : null}
     </>
   );
 
@@ -144,10 +163,20 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    if (!fullscreenMode) {
+    if (!isFullscreenMode(props, isSmallScreen)) {
       setOpen(false);
     }
   });
+
+  const getFormattedDate = useCallback(() => {
+    if (inputValue && !inputValueEnd) {
+      return parseDateString(inputValue, locale) ? `${inputValue} - ` : inputValue;
+    }
+    if (inputValue && inputValueEnd) {
+      return `${inputValue} - ${inputValueEnd}`;
+    }
+    return '';
+  }, [inputValue, inputValueEnd, locale]);
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
@@ -155,10 +184,10 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
         size={inputSize}
         label={label}
         disabled={disabled}
-        id={id}
+        id={INPUT_ID_RANGE(id)}
         data-testid="datepicker-input"
-        placeholder={dateFormat.toLowerCase()}
-        value={inputValue}
+        placeholder={`${dateFormat.toLowerCase()} - ${dateFormat.toLowerCase()}`}
+        value={getFormattedDate()}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
@@ -202,7 +231,16 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
                   <Input.Text
                     id="fromDate"
                     placeholder={inputValue}
-                    label={props.fullscreenProps.dateLabel ?? props.fullscreenProps.title}
+                    label={props.fullscreenProps.fromLabel ?? ''}
+                    width="100%"
+                    readOnly
+                  />
+                </Flexbox>
+                <Flexbox item flex="1">
+                  <Input.Text
+                    id="toDate"
+                    placeholder={inputValueEnd}
+                    label={props.fullscreenProps.toLabel ?? ''}
                     width="100%"
                     readOnly
                   />
@@ -217,4 +255,4 @@ const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((prop
   );
 });
 
-export default DatePicker;
+export default DateRangePicker;

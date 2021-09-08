@@ -16,7 +16,9 @@ const months = [...Array(12).keys()];
 
 /* using styled like this as a workaround for
  Select.test.tsx failing because Input.Select is undefined */
-const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
+const StyledInputSelect = styled((props: React.ComponentProps<typeof Input.Select>) => (
+  <Input.Select {...props} />
+))`
   margin-right: ${({ theme }) => theme.spacing.unit(3)}px;
 
   > div > div > div {
@@ -25,12 +27,20 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   }
 `;
 
-const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
+const SelectMonth: React.FC<Props> = ({
+  id,
+  locale,
+  viewedDate,
+  onChange,
+  fullscreenMode,
+  selectMonthLabel = 'Month',
+}) => {
   const [isHover, setIsHover] = useState(false);
-  const opts = { locale: getLocale(locale) };
   const monthOptions = months?.map((index: number) => ({
     value: index,
-    label: capitalize(format(new Date(viewedDate.getFullYear(), index), 'MMMM', opts)),
+    label: capitalize(
+      format(new Date(viewedDate.getFullYear(), index), 'MMMM', { locale: getLocale(locale) }),
+    ),
   }));
 
   const onChangeHandler = (selected: Array<any>) => {
@@ -47,7 +57,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
 
         if ((state.value as any).open === 'on') {
           icon = <Icon.ChevronUp size={2} color={(t: Theme) => t.color.svgFill} />;
-        } else if (isHover) {
+        } else if (isHover || fullscreenMode) {
           icon = <Icon.ChevronDown size={2} color={(t: Theme) => t.color.cta} />;
         } else {
           icon = <Box px={1} />;
@@ -58,7 +68,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
             <Flexbox item>
               <Box pr={1}>
                 <Typography type="primary" weight="semibold">
-                  {capitalize(format(viewedDate, 'MMMM', opts))}
+                  {capitalize(format(viewedDate, 'MMMM', { locale: getLocale(locale) }))}
                 </Typography>
               </Box>
             </Flexbox>
@@ -71,7 +81,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
         );
       },
     }),
-    [viewedDate, opts, isHover, useSelectMachineFromContext],
+    [useSelectMachineFromContext, isHover, fullscreenMode, viewedDate, locale],
   );
 
   const selected = monthOptions.filter((p) => p.value === viewedDate.getMonth());
@@ -80,7 +90,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
   return (
     <div onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
       <StyledInputSelect
-        label="Month"
+        label={selectMonthLabel}
         id={`${id}-select-month`}
         options={monthOptions}
         noFormField
@@ -89,6 +99,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
         value={selected}
         listPosition="left"
         width={`${theme.spacing.unit(35)}px`}
+        fullscreenOnMobile={fullscreenMode}
       />
     </div>
   );

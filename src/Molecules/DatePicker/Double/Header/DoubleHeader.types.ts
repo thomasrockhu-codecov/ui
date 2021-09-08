@@ -7,4 +7,6 @@ export type Props = {
   onMonthChange: (index: number) => void;
   onYearChange: (year: number) => void;
   yearSelectLength?: number;
+  selectMonthLabel?: string;
+  selectYearLabel?: string;
 };
