@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
-import { useMedia } from '../../../../..';
+import { useMedia } from '../../../../Atoms/Media';
 import { ContextType } from './context';
 import { Context } from '../machine';
 
@@ -17,7 +17,7 @@ export const useFocusFromMachine = (
   searchRef: React.RefObject<HTMLInputElement>,
 ) => {
   const isInButtonFocusState = machineState.matches('interaction.enabled.active.focus.button');
-  const smallerScreen = useMedia((t) => t.media.lessThan(t.breakpoints.lg));
+  const isSmallerScreen = useMedia((t) => t.media.lessThan(t.breakpoints.lg));
   useEffect(() => {
     if (
       machineState.matches('interaction.enabled.active.focus.listItem') &&
@@ -31,7 +31,7 @@ export const useFocusFromMachine = (
           machineState.context.itemFocusIdx !== null &&
           itemRefs[machineState.context.itemFocusIdx] &&
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView &&
-          smallerScreen
+          isSmallerScreen
         ) {
           scrollIntoView(itemRefs[machineState.context.itemFocusIdx!], {
             behavior: 'auto',
