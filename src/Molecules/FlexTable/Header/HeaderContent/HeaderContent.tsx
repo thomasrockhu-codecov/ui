@@ -18,16 +18,24 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   sortOrder,
   onSortClick,
   children,
+  measureFullWidth,
 }) => {
   if (!sortable || sortOrder === null) {
-    return <TextWrapper sorted={false}>{children}</TextWrapper>;
+    return (
+      <TextWrapper sorted={false} measureFullWidth={measureFullWidth}>
+        {children}
+      </TextWrapper>
+    );
   }
 
   return (
     <SortButton onClick={onSortClick}>
       <StyledFlexboxContainer container>
         <CellInlineContainer item>
-          <TextWrapper sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}>
+          <TextWrapper
+            sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
+            measureFullWidth={measureFullWidth}
+          >
             {children}
           </TextWrapper>
         </CellInlineContainer>

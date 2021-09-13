@@ -33,3 +33,6 @@ export type FlexPropsType = Pick<
   | 'xl'
   | 'className'
 >;
+
+export type MeasureElementHorizontalPadding = (node: HTMLElement) => void;
+export type MeasureElementWidth = (node: HTMLDivElement) => void;

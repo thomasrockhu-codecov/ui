@@ -1,7 +1,7 @@
-import { ACTION_SET_INITIAL_SORTING, ACTION_SET_SORTING } from './ColumnProvider';
+import { ACTION_SET_INITIAL_SORTING, ACTION_SET_SORTING, ACTION_SET_WIDTH } from './ColumnProvider';
 import { SortOrder } from '../../Header/HeaderContent/HeaderContent.types';
 
-export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean };
+export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean; width: number };
 export type ColumnsDataState = {
   [columnId: string]: ColumnDataTypes;
 };
@@ -28,4 +28,10 @@ type SetInitialSortingAction = {
   controlledSort: boolean;
 };
 
-export type ColumnActions = SetSortingAction | SetInitialSortingAction;
+type SetWidthAction = {
+  type: typeof ACTION_SET_WIDTH;
+  columnId: string;
+  width: number;
+};
+
+export type ColumnActions = SetSortingAction | SetInitialSortingAction | SetWidthAction;

@@ -10,6 +10,7 @@ import {
   ACTION_SET_INITIAL_SORTING,
   ACTION_SET_SORTING,
   useColumnData,
+  useFittedColumnWidth,
   useFlexCellProps,
 } from '../shared/ColumnProvider';
 import { HeaderContent, SortButton, SortIcon, TextWrapper } from './HeaderContent';
@@ -135,10 +136,15 @@ const Header: HeaderComponent = (props) => {
     }
   };
 
+  const [containerRef, contentRef] = useFittedColumnWidth(columnDispatch);
+
+  const flexWidth = `0 ${columnState?.width}px`;
+
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
     <StyledFlexbox
       className={className}
+      ref={containerRef}
       role="columnheader"
       $xs={xs}
       $sm={sm}
@@ -147,16 +153,19 @@ const Header: HeaderComponent = (props) => {
       $xl={xl}
       {...ariaSorted}
       {...cellFlexProps}
+      {...(flexWidth && { flex: flexWidth })}
     >
       {isElement(children) && children}
       {isFunction(children)
         ? children({ sortable, sortOrder, onSortClick, sorted, columnId })
         : !isElement(children) && (
             <HeaderContent
+              measureFullWidth={contentRef}
               onSortClick={onSortClick}
               sortable={sortable}
               sortOrder={sortOrder}
               sorted={sorted}
+              columnId={columnId}
             >
               {children}
             </HeaderContent>

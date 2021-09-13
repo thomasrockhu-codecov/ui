@@ -10,6 +10,7 @@ import { SORT_ORDER_NONE } from '../constants';
 
 export const ACTION_SET_SORTING = 'SET_SORTING';
 export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
+export const ACTION_SET_WIDTH = 'SET_WIDTH';
 
 export const ColumnDataContext = React.createContext<ColumnsDataState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
@@ -36,7 +37,7 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
         data: {
           ...state.data,
           [action.columnId]: {
-            ...state[action.columnId],
+            ...state.data[action.columnId],
             controlledSort: action.controlledSort,
             sortOrder: action.sortOrder,
           },
@@ -54,6 +55,22 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
           },
         },
       };
+
+    case ACTION_SET_WIDTH:
+      // eslint-disable-next-line no-case-declarations
+      const isWider = (state.data[action.columnId]?.width ?? 0) < action.width;
+      return isWider
+        ? {
+            ...state,
+            data: {
+              ...state.data,
+              [action.columnId]: {
+                ...state.data[action.columnId],
+                width: action.width,
+              },
+            },
+          }
+        : state;
 
     default: {
       throw new Error('Unhandled action type, please check your action');
