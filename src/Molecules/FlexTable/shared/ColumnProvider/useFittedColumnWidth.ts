@@ -11,7 +11,10 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch) => {
   const measureContent: MeasureElementWidth = useCallback(
     (node) => {
       if (node !== null) {
-        const width = node.scrollWidth;
+        const oldWhiteSpace = node.style.whiteSpace;
+        node.style.setProperty('white-space', 'nowrap');
+        const width = Math.ceil(node.getBoundingClientRect().width);
+        node.style.setProperty('white-space', oldWhiteSpace);
 
         if (!dimensionsRef.current.width) dimensionsRef.current.width = width;
         if (dimensionsRef.current.width && dimensionsRef.current.padding) {

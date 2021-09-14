@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, isValidElement } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
@@ -136,15 +136,15 @@ const Header: HeaderComponent = (props) => {
     }
   };
 
-  const [containerRef, contentRef] = useFittedColumnWidth(columnDispatch);
+  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch);
 
-  const flexWidth = `0 ${columnState?.width}px`;
+  const flexWidth = `1 0 ${columnState?.width}px`;
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
     <StyledFlexbox
       className={className}
-      ref={containerRef}
+      ref={measureCellPadding}
       role="columnheader"
       $xs={xs}
       $sm={sm}
@@ -155,12 +155,14 @@ const Header: HeaderComponent = (props) => {
       {...cellFlexProps}
       {...(flexWidth && { flex: flexWidth })}
     >
-      {isElement(children) && children}
+      {isElement(children) &&
+        isValidElement(children) &&
+        React.cloneElement(children, { ref: measureFullWidth })}
       {isFunction(children)
-        ? children({ sortable, sortOrder, onSortClick, sorted, columnId })
+        ? children({ sortable, sortOrder, onSortClick, sorted, columnId, ref: measureFullWidth })
         : !isElement(children) && (
             <HeaderContent
-              measureFullWidth={contentRef}
+              measureFullWidth={measureFullWidth}
               onSortClick={onSortClick}
               sortable={sortable}
               sortOrder={sortOrder}

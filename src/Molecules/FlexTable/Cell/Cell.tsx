@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
@@ -47,28 +47,31 @@ const Cell: CellComponent = (props) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
   const [columnData, columnDispatch] = useColumnData(columnId);
 
-  const [containerRef, measureFullWidth] = useFittedColumnWidth(columnDispatch);
-
+  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch);
   return (
-    <StyledFlexbox
-      className={className}
-      role="cell"
-      $xs={xs}
-      $sm={sm}
-      $md={md}
-      $lg={lg}
-      $xl={xl}
-      {...flexProps}
-      flex={`0 ${columnData?.width}px`}
-      ref={containerRef}
-    >
-      {isElement(children) && children}
-      {isFunction(children)
-        ? children({ columnId })
-        : !isElement(children) && (
-            <TextWrapper measureFullWidth={measureFullWidth}>{children}</TextWrapper>
-          )}
-    </StyledFlexbox>
+    <>
+      <StyledFlexbox
+        className={className}
+        role="cell"
+        $xs={xs}
+        $sm={sm}
+        $md={md}
+        $lg={lg}
+        $xl={xl}
+        {...flexProps}
+        flex={`1 0 ${columnData?.width}px`}
+        ref={measureCellPadding}
+      >
+        {isElement(children) &&
+          isValidElement(children) &&
+          React.cloneElement(children, { ref: measureFullWidth })}
+        {isFunction(children)
+          ? children({ columnId, ref: measureFullWidth })
+          : !isElement(children) && (
+              <TextWrapper measureFullWidth={measureFullWidth}>{children}</TextWrapper>
+            )}
+      </StyledFlexbox>
+    </>
   );
 };
 
