@@ -1,3 +1,10 @@
+## [8.0.4](https://github.com/nordnet/ui/compare/v8.0.3...v8.0.4) (2021-09-14)
+
+
+### Bug Fixes
+
+* 🐛 remove hardcoded english arialLabel ([560fb55](https://github.com/nordnet/ui/commit/560fb55))
+
 ## [8.0.3](https://github.com/nordnet/ui/compare/v8.0.2...v8.0.3) (2021-09-14)
 
 
