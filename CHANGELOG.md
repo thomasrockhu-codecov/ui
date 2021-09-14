@@ -1,3 +1,11 @@
+## [8.0.3](https://github.com/nordnet/ui/compare/v8.0.2...v8.0.3) (2021-09-14)
+
+
+### Bug Fixes
+
+* reverting DISCO-5694 ([678ff32](https://github.com/nordnet/ui/commit/678ff32))
+* reverting DISCO-5694 second commit ([00205ba](https://github.com/nordnet/ui/commit/00205ba))
+
 ## [8.0.2](https://github.com/nordnet/ui/compare/v8.0.1...v8.0.2) (2021-09-13)
 
 
