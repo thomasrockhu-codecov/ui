@@ -1,3 +1,12 @@
+## [8.0.5](https://github.com/nordnet/ui/compare/v8.0.4...v8.0.5) (2021-09-14)
+
+
+### Bug Fixes
+
+* make BarScale more flexible in size ([684e141](https://github.com/nordnet/ui/commit/684e141))
+* story for risk meter ([2d7bed5](https://github.com/nordnet/ui/commit/2d7bed5))
+* updated snapshot ([76fd2ee](https://github.com/nordnet/ui/commit/76fd2ee))
+
 ## [8.0.4](https://github.com/nordnet/ui/compare/v8.0.3...v8.0.4) (2021-09-14)
 
 
