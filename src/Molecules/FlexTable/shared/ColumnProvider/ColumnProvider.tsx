@@ -11,6 +11,7 @@ import { SORT_ORDER_NONE } from '../constants';
 export const ACTION_SET_SORTING = 'SET_SORTING';
 export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
 export const ACTION_SET_WIDTH = 'SET_WIDTH';
+export const ACTION_SET_FIT_CONTENT = 'SET_FIT_CONTENT';
 
 export const ColumnDataContext = React.createContext<ColumnsDataState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
@@ -71,6 +72,18 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
             },
           }
         : state;
+
+    case ACTION_SET_FIT_CONTENT:
+      return {
+        ...state,
+        data: {
+          ...state.data,
+          [action.columnId]: {
+            ...state.data[action.columnId],
+            fitContent: action.payload,
+          },
+        },
+      };
 
     default: {
       throw new Error('Unhandled action type, please check your action');
