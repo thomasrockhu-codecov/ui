@@ -18,8 +18,8 @@ const ChevronContainer = styled(Box)<{ $align: 'left' | 'right' }>`
 `;
 
 const DoubleHeader: React.FC<Props> = ({
-  ariaLabelPrevious = 'Previous month {date}',
-  ariaLabelNext = 'Next month {date}',
+  ariaLabelPrevious = '{date}',
+  ariaLabelNext = '{date}',
   id,
   locale,
   viewedDate,
