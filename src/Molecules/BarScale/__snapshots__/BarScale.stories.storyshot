@@ -1,5 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules / BarScale Bar Scale As Risk Meter 1`] = `
+.c0 {
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.c2 > * {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c4 {
+  height: 16px;
+  background: #385E9D;
+}
+
+.c5 {
+  height: 16px;
+  background: #EBEBE8;
+}
+
+.c1 {
+  width: 54px;
+}
+
+<div
+  className="c0 c1"
+>
+  Risk
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c4"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c4"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c4"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c4"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c5"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c5"
+      />
+    </div>
+    <div
+      className="c3"
+    >
+      <div
+        className="c0 c5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / BarScale Bar Scale Normal 1`] = `
 .c2 {
   background-color: transparent;

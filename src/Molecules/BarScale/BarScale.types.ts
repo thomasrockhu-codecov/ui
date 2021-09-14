@@ -9,8 +9,17 @@ export type Props = {
   /** X axis label */
   /** @default null */
   axisLabel?: React.ReactNode;
+
+  /** Height of bars in units */
+  /** @default 3 */
+  barHeight?: number;
+
+  /** Distance in units between bars */
+  /** @default 1 */
+  gutter?: number;
 };
 
 export type BarProps = {
   isActive: boolean;
+  barHeight: number;
 };
