@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flexbox } from '../..';
+import styled from 'styled-components';
+import { Box, Flexbox } from '../..';
 import docs from './BarScale.mdx';
 import BarScale from '.';
 
@@ -32,4 +33,15 @@ export const BarScaleWithXAxis = () => (
       </Flexbox>
     }
   />
+);
+
+const RiskMeterBox = styled(Box)`
+  width: ${(p) => p.theme.spacing.unit(13.5)}px;
+`;
+
+export const BarScaleAsRiskMeter = () => (
+  <RiskMeterBox>
+    Risk
+    <BarScale value={4} barHeight={4} gutter={0.5} />
+  </RiskMeterBox>
 );
