@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TextComponent } from './Text.types';
+import { TextProps } from './Text.types';
 import { FontSize } from '../shared.types';
 import { Theme } from '../../../../theme/theme.types';
 import { Typography } from '../../../../index';
@@ -47,22 +47,25 @@ const StyledTypography = styled(Typography)<StyledTypographyProps>`
   )}
 `;
 
-const Text: TextComponent = ({ className, color, weight, children }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable<'fontSize'>('fontSize');
-  return (
-    <StyledTypography
-      className={className}
-      color={color}
-      weight={weight}
-      $xs={xs}
-      $sm={sm}
-      $md={md}
-      $lg={lg}
-      $xl={xl}
-    >
-      {children}
-    </StyledTypography>
-  );
-};
+const Text = React.forwardRef<HTMLSpanElement, TextProps>(
+  ({ className, color, weight, children }, ref) => {
+    const { xs, sm, md, lg, xl } = useFlexTable<'fontSize'>('fontSize');
+    return (
+      <StyledTypography
+        className={className}
+        color={color}
+        weight={weight}
+        $xs={xs}
+        $sm={sm}
+        $md={md}
+        $lg={lg}
+        $xl={xl}
+        ref={ref}
+      >
+        {children}
+      </StyledTypography>
+    );
+  },
+);
 
 export default Text;
