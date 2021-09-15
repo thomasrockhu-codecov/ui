@@ -189,7 +189,7 @@ const StyledTypography = styled(CleanSpan)<Props>`
   ${(p) => getTypeStyles(p)}
 `;
 
-export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
+export const Typography = React.forwardRef<HTMLElement, Props>((props, ref) => {
   const { as, className, id, type, color, lineHeight, weight, textAlign, children } = props;
 
   return (
