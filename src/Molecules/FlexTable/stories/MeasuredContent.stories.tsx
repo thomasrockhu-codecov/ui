@@ -20,15 +20,15 @@ export const MeasuredContent = () => (
     <div style={{ width: '800px' }}>
       <FlexTable>
         <FlexTable.HeaderRow>
-          <FlexTable.Header columnId="column1" justifyContent="flex-end">
+          <FlexTable.Header fitContent columnId="column1" justifyContent="flex-end">
             Im just a very very very very very long string here to make your life miserable
           </FlexTable.Header>
           <FlexTable.Header columnId="column2" justifyContent="flex-end">
             <div>Im a div</div>
           </FlexTable.Header>
-          {/* <FlexTable.Header columnId="column3" justifyContent="center">
+          <FlexTable.Header columnId="column3" justifyContent="center">
             <>Im a child string to a fragment</>
-          </FlexTable.Header> */}
+          </FlexTable.Header>
         </FlexTable.HeaderRow>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1" justifyContent="flex-end">
@@ -37,11 +37,11 @@ export const MeasuredContent = () => (
           <FlexTable.Cell columnId="column2" justifyContent="flex-end">
             <div>Im a divitydivitydivity div</div>
           </FlexTable.Cell>
-          {/* <FlexTable.Cell columnId="column3" justifyContent="center">
+          <FlexTable.Cell columnId="column3" justifyContent="center">
             <>
               <div>Im a child div to a fragment</div>
             </>
-          </FlexTable.Cell> */}
+          </FlexTable.Cell>
         </FlexTable.Row>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1" justifyContent="flex-end">
@@ -50,9 +50,9 @@ export const MeasuredContent = () => (
           <FlexTable.Cell columnId="column2" justifyContent="flex-end">
             Cell 2-3
           </FlexTable.Cell>
-          {/* <FlexTable.Cell columnId="column3" justifyContent="center">
+          <FlexTable.Cell columnId="column3" justifyContent="center">
             Cell 2-4
-          </FlexTable.Cell> */}
+          </FlexTable.Cell>
         </FlexTable.Row>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1" justifyContent="flex-end">
@@ -61,9 +61,9 @@ export const MeasuredContent = () => (
           <FlexTable.Cell columnId="column2" justifyContent="flex-end">
             Cell 3-3
           </FlexTable.Cell>
-          {/* <FlexTable.Cell columnId="column3" justifyContent="center">
+          <FlexTable.Cell columnId="column3" justifyContent="center">
             Cell 3-4
-          </FlexTable.Cell> */}
+          </FlexTable.Cell>
         </FlexTable.Row>
       </FlexTable>
     </div>

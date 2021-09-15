@@ -8,6 +8,7 @@ import { SortIcon } from './SortIcon';
 import { SortButton } from './SortButton';
 import { Flexbox } from '../../../..';
 import { CellInlineContainer } from '../../shared';
+import { useColumnData } from '../../shared/ColumnProvider';
 
 const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
@@ -19,10 +20,16 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   onSortClick,
   children,
   measureFullWidth,
+  columnId,
 }) => {
+  const [columnData] = useColumnData(columnId);
   if (!sortable || sortOrder === null) {
     return (
-      <TextWrapper sorted={false} measureFullWidth={measureFullWidth}>
+      <TextWrapper
+        truncate={!columnData?.fitContent}
+        sorted={false}
+        measureFullWidth={measureFullWidth}
+      >
         {children}
       </TextWrapper>
     );
@@ -33,6 +40,7 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
       <StyledFlexboxContainer container>
         <CellInlineContainer item>
           <TextWrapper
+            truncate={!columnData?.fitContent}
             sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
             measureFullWidth={measureFullWidth}
           >

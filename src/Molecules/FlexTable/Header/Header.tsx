@@ -24,6 +24,7 @@ import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
 import { FlexTableContext } from '../shared/FlexTableProvider/FlexTableProvider';
 import { setPersistedSortOrder } from '../shared/persistedSortOrder';
+import { ACTION_SET_FIT_CONTENT } from '../shared/ColumnProvider/ColumnProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -80,6 +81,7 @@ const Header: HeaderComponent = (props) => {
     sortOrder: sortOrderProp,
     onSort = () => {},
     columnId,
+    fitContent,
   } = props;
 
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
@@ -112,6 +114,13 @@ const Header: HeaderComponent = (props) => {
 
   useEffect(() => {
     columnDispatch({
+      type: ACTION_SET_FIT_CONTENT,
+      payload: fitContent,
+    });
+  }, [columnDispatch, fitContent]);
+
+  useEffect(() => {
+    columnDispatch({
       type: ACTION_SET_INITIAL_SORTING,
       sortOrder,
       controlledSort,
@@ -136,9 +145,9 @@ const Header: HeaderComponent = (props) => {
     }
   };
 
-  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch);
+  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch, fitContent);
 
-  const flexWidth = `1 0 ${columnState?.width}px`;
+  const columnFlexWidth = `1 0 ${columnState?.width}px`;
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
@@ -153,7 +162,7 @@ const Header: HeaderComponent = (props) => {
       $xl={xl}
       {...ariaSorted}
       {...cellFlexProps}
-      {...(flexWidth && { flex: flexWidth })}
+      {...(fitContent && { flex: columnFlexWidth })}
     >
       {isElement(children) &&
         isValidElement(children) &&

@@ -47,7 +47,12 @@ const Cell: CellComponent = (props) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
   const [columnData, columnDispatch] = useColumnData(columnId);
 
-  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch);
+  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(
+    columnDispatch,
+    columnData?.fitContent,
+  );
+
+  const columnFlexWidth = `1 0 ${columnData?.width}px`;
   return (
     <>
       <StyledFlexbox
@@ -59,7 +64,7 @@ const Cell: CellComponent = (props) => {
         $lg={lg}
         $xl={xl}
         {...flexProps}
-        flex={`1 0 ${columnData?.width}px`}
+        {...(columnData?.fitContent && { flex: columnFlexWidth })}
         ref={measureCellPadding}
       >
         {isElement(children) &&
@@ -68,7 +73,9 @@ const Cell: CellComponent = (props) => {
         {isFunction(children)
           ? children({ columnId, ref: measureFullWidth })
           : !isElement(children) && (
-              <TextWrapper measureFullWidth={measureFullWidth}>{children}</TextWrapper>
+              <TextWrapper truncate={!columnData?.fitContent} measureFullWidth={measureFullWidth}>
+                {children}
+              </TextWrapper>
             )}
       </StyledFlexbox>
     </>

@@ -11,14 +11,19 @@ export const TextWrapper: TextWrapperComponent = ({
 }) => {
   if (!truncate) {
     return (
-      <Text className={className} weight={weight} color={(t) => t.color.text}>
+      <Text
+        className={className}
+        weight={weight}
+        color={(t) => t.color.text}
+        ref={measureFullWidth}
+      >
         {children}
       </Text>
     );
   }
 
   return (
-    <StyledTruncateTooltip label={children} measureFullWidth={measureFullWidth}>
+    <StyledTruncateTooltip label={children}>
       <Text className={className} weight={weight} color={(t) => t.color.text}>
         {children}
       </Text>

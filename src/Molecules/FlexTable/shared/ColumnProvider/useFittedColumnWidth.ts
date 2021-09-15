@@ -2,7 +2,7 @@ import { useCallback, useRef } from 'react';
 import { MeasureElementWidth, MeasureElementHorizontalPadding } from '../shared.types';
 import { ColumnDispatch } from './ColumnProvider.types';
 
-export const useFittedColumnWidth = (columnDispatch: ColumnDispatch) => {
+export const useFittedColumnWidth = (columnDispatch: ColumnDispatch, fitContent) => {
   const dimensionsRef = useRef<{ width: number | null; padding: number | null }>({
     width: null,
     padding: null,
@@ -11,6 +11,7 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch) => {
   const measureContent: MeasureElementWidth = useCallback(
     (node) => {
       if (node !== null) {
+        if (!fitContent) return;
         const oldWhiteSpace = node.style.whiteSpace;
         node.style.setProperty('white-space', 'nowrap');
         const width = Math.ceil(node.getBoundingClientRect().width);
@@ -25,11 +26,12 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch) => {
         }
       }
     },
-    [columnDispatch],
+    [columnDispatch, fitContent],
   );
 
   const measurePadding: MeasureElementHorizontalPadding = useCallback(
     (node) => {
+      if (!fitContent) return;
       if (node !== null) {
         const paddingLeft = parseInt(
           window.getComputedStyle(node).getPropertyValue('padding-left'),
@@ -50,7 +52,8 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch) => {
         }
       }
     },
-    [columnDispatch],
+    [columnDispatch, fitContent],
   );
+
   return [measurePadding, measureContent];
 };

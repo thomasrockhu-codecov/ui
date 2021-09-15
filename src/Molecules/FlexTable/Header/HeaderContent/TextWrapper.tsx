@@ -15,6 +15,7 @@ export const TextWrapper: TextWrapperComponent = ({
         className={className}
         color={(t) => (sorted ? t.color.text : t.color.label)}
         weight={sorted ? 'bold' : 'regular'}
+        ref={measureFullWidth}
       >
         {children}
       </Text>
@@ -22,7 +23,7 @@ export const TextWrapper: TextWrapperComponent = ({
   }
 
   return (
-    <StyledTruncateTooltip label={children} measureFullWidth={measureFullWidth}>
+    <StyledTruncateTooltip label={children}>
       <Text
         className={className}
         color={(t) => (sorted ? t.color.text : t.color.label)}
