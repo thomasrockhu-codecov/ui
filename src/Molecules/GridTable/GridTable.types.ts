@@ -1,6 +1,6 @@
 export type Header = {
-  title: string;
+  title: React.ReactNode | null;
   columnId: string;
 };
 
-export type Row = Record<string, string>;
+export type Row = Record<string, React.ReactNode>;

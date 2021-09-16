@@ -1,11 +1,12 @@
 import React from 'react';
-import GridTable from '../GridTable';
+import { Button, Development, Link, Typography } from '../../..';
+import GridTableComponent from '../GridTable';
 import { Header, Row } from '../GridTable.types';
 
 export default {
   title: 'Molecules / GridTable / Default Table',
   parameters: {
-    component: GridTable,
+    component: GridTableComponent,
     // docs: {
     //   page: docs,
     // },
@@ -13,20 +14,60 @@ export default {
 };
 
 const headers: Header[] = [
-  { title: '', columnId: 'button' },
-  { title: 'Instrument', columnId: 'instrument' },
-  { title: 'Development', columnId: 'development' },
+  { title: null, columnId: 'button' },
+  { title: <Typography weight="bold">Instrument</Typography>, columnId: 'instrument' },
+  { title: <Typography weight="bold">Development</Typography>, columnId: 'development' },
+  { title: <Typography weight="bold">Comment</Typography>, columnId: 'Comment' },
 ];
 
 const rows: Row[] = [
-  { button: 'btn', instrument: 'Mayo inc.', development: '200%' },
-  { button: 'btn', instrument: 'Pickles AB', development: '-20%' },
-  { button: 'btn', instrument: 'Butter Corp.', development: '15%' },
+  {
+    button: <Button>Köp</Button>,
+    instrument: (
+      <Typography>
+        <Link to="/">Mayo inc.</Link>
+      </Typography>
+    ),
+    development: (
+      <Typography>
+        <Development percentage value={200} />
+      </Typography>
+    ),
+    comment: <Typography>This is a comment</Typography>,
+  },
+  {
+    button: <Button>Köp</Button>,
+    instrument: (
+      <Typography>
+        <Link to="/">Pickles AB</Link>
+      </Typography>
+    ),
+    development: (
+      <Typography>
+        <Development percentage value={-20} />
+      </Typography>
+    ),
+    comment: <Typography>This is a comment</Typography>,
+  },
+  {
+    button: <Button>Köp</Button>,
+    instrument: (
+      <Typography>
+        <Link to="/">Butter Corp.</Link>
+      </Typography>
+    ),
+    development: (
+      <Typography>
+        <Development percentage value={15} />
+      </Typography>
+    ),
+    comment: <Typography>This is a comment</Typography>,
+  },
 ];
 
 export const DefaultStuff = () => {
   const Story = () => {
-    return <GridTable headers={headers} rows={rows} />;
+    return <GridTableComponent headers={headers} rows={rows} minCellWidth={100} />;
   };
 
   return <Story />;
