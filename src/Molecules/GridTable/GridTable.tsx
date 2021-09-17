@@ -1,8 +1,14 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { Button, Icon, Typography } from '../..';
 import { Header, Row } from './GridTable.types';
 
-type GridTableProp = { headers: Header[]; rows: Row[]; minCellWidth: number };
+type GridTableProp = {
+  headers: Header[];
+  rows: Row[];
+  minCellWidth: number;
+  initialColumnSizes?: string[];
+};
 
 const GridTr = styled.tr`
   display: grid;
@@ -17,7 +23,7 @@ const GridTable = styled.table<{ $columnSizes: string }>`
   box-sizing: border-box;
 
   ${GridTr} {
-    grid-template-columns: ${({ $columnSizes }) => $columnSizes};
+    grid-template-columns: ${({ $columnSizes }) => $columnSizes} 20px;
   }
 `;
 
@@ -70,12 +76,56 @@ const ResizeHandle = styled.div<{ $active: boolean }>`
 
 const convertColumnSizes = (columnSizes: string[]) => columnSizes.join(' ');
 
-const GridTableComponent: React.FC<GridTableProp> = ({ headers, rows, minCellWidth }) => {
+const ExpandableRow: React.FC = ({ children }) => (
+  <tr>
+    <td>{children}</td>
+  </tr>
+);
+
+const GridBodyTr: React.FC<{ expandItems: string[] }> = ({ children, expandItems }) => {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <>
+      <GridTr>
+        {children}
+        <GridTd>
+          {expandItems && (
+            <Button variant="neutral" onClick={() => setExpanded(!expanded)}>
+              <Icon.ThinChevron direction="down" size={3} />
+            </Button>
+          )}
+        </GridTd>
+      </GridTr>
+      {expanded && expandItems ? (
+        <ExpandableRow>
+          {Array.isArray(expandItems) ? (
+            <ul>
+              {expandItems.map((item) => (
+                <li>
+                  <Typography>{item}</Typography>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            expandItems
+          )}
+        </ExpandableRow>
+      ) : null}
+    </>
+  );
+};
+
+const GridTableComponent: React.FC<GridTableProp> = ({
+  headers,
+  rows,
+  minCellWidth,
+  initialColumnSizes,
+}) => {
   const [tableHeight, setTableHeight] = useState('auto');
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const tableRef = useRef<HTMLTableElement>(null);
 
-  const [columnSizes, setColumnSizes] = useState(['50px', '1fr', '1fr', '1fr']);
+  const [columnSizes, setColumnSizes] = useState(initialColumnSizes || headers.map(() => '1fr'));
 
   useEffect(() => {
     setTableHeight(`${tableRef.current?.offsetHeight}px`);
@@ -188,11 +238,13 @@ const GridTableComponent: React.FC<GridTableProp> = ({ headers, rows, minCellWid
       </GridTHead>
       <GridTBody>
         {rows.map((row) => (
-          <GridTr>
-            {Object.values(row).map((rowValue) => (
-              <GridTd>{rowValue}</GridTd>
-            ))}
-          </GridTr>
+          <GridBodyTr expandItems={row.expandItems as string[]}>
+            {Object.entries(row)
+              .filter(([key]) => key !== 'expandItems')
+              .map(([, rowValue]) => (
+                <GridTd>{rowValue}</GridTd>
+              ))}
+          </GridBodyTr>
         ))}
       </GridTBody>
     </GridTable>

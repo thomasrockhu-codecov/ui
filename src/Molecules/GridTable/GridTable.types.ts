@@ -4,3 +4,5 @@ export type Header = {
 };
 
 export type Row = Record<string, React.ReactNode>;
+
+export type Row = Record<string, React.ReactNode | string[]>;
