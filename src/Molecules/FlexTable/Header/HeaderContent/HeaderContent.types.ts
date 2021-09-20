@@ -1,5 +1,4 @@
 import React from 'react';
-import { MeasureElementWidth } from '../../shared/shared.types';
 
 export type TextWrapperProps = {
   className?: string;
@@ -11,7 +10,6 @@ export type TextWrapperProps = {
    */
   sorted?: boolean;
   truncate?: boolean;
-  measureFullWidth?: MeasureElementWidth;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
@@ -43,6 +41,5 @@ export type Props = {
   sortable: boolean;
   sortOrder: SortOrder;
   sorted: boolean;
-  measureFullWidth?: MeasureElementWidth;
   columnId: string;
 };

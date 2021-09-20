@@ -6,7 +6,6 @@ export const TextWrapper: TextWrapperComponent = ({
   className,
   sorted,
   truncate = true,
-  measureFullWidth,
   children,
 }) => {
   if (!truncate) {
@@ -15,7 +14,6 @@ export const TextWrapper: TextWrapperComponent = ({
         className={className}
         color={(t) => (sorted ? t.color.text : t.color.label)}
         weight={sorted ? 'bold' : 'regular'}
-        ref={measureFullWidth}
       >
         {children}
       </Text>

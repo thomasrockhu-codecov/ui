@@ -16,6 +16,10 @@ export type FlexTableState = {
    * @default 2
    */
   columnDistance: number;
+  /* TODO: add jsdoc */
+  columnWidthProps?: {
+    [key: string]: { fitContent: boolean };
+  };
   /**
    * Set if header is fixed or follows scroll.
    * @default true

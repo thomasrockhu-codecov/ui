@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, isValidElement } from 'react';
+import React, { useContext, useEffect } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
@@ -24,7 +24,6 @@ import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
 import { FlexTableContext } from '../shared/FlexTableProvider/FlexTableProvider';
 import { setPersistedSortOrder } from '../shared/persistedSortOrder';
-import { ACTION_SET_FIT_CONTENT } from '../shared/ColumnProvider/ColumnProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -81,7 +80,6 @@ const Header: HeaderComponent = (props) => {
     sortOrder: sortOrderProp,
     onSort = () => {},
     columnId,
-    fitContent,
   } = props;
 
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
@@ -89,7 +87,10 @@ const Header: HeaderComponent = (props) => {
   if (contextData === undefined) {
     throw Error('No FlexTable provider, FlexTable rows can only be children of a FlexTable');
   }
-  const { id: tableId, persistSortingOrder } = contextData;
+  const { id: tableId, persistSortingOrder, columnWidthProps } = contextData;
+
+  const columnWidth = columnWidthProps?.[columnId];
+  const fitContent = !!columnWidth?.fitContent;
 
   const [columnState, columnDispatch] = useColumnData(columnId);
 
@@ -111,13 +112,6 @@ const Header: HeaderComponent = (props) => {
   const ariaSorted = sortable ? { 'aria-sort': sortOrder } : {};
   const cellFlexProps = useFlexCellProps(props);
   const controlledSort = sortOrderProp !== undefined;
-
-  useEffect(() => {
-    columnDispatch({
-      type: ACTION_SET_FIT_CONTENT,
-      payload: fitContent,
-    });
-  }, [columnDispatch, fitContent]);
 
   useEffect(() => {
     columnDispatch({
@@ -145,15 +139,15 @@ const Header: HeaderComponent = (props) => {
     }
   };
 
-  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(columnDispatch, fitContent);
+  const measureQwe = useFittedColumnWidth(columnDispatch, fitContent);
 
-  const columnFlexWidth = `1 0 ${columnState?.width}px`;
+  const columnFlexWidth = `0 1 ${columnState?.width}px`;
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
     <StyledFlexbox
       className={className}
-      ref={measureCellPadding}
+      ref={measureQwe}
       role="columnheader"
       $xs={xs}
       $sm={sm}
@@ -164,14 +158,11 @@ const Header: HeaderComponent = (props) => {
       {...cellFlexProps}
       {...(fitContent && { flex: columnFlexWidth })}
     >
-      {isElement(children) &&
-        isValidElement(children) &&
-        React.cloneElement(children, { ref: measureFullWidth })}
+      {isElement(children) && children}
       {isFunction(children)
-        ? children({ sortable, sortOrder, onSortClick, sorted, columnId, ref: measureFullWidth })
+        ? children({ sortable, sortOrder, onSortClick, sorted, columnId })
         : !isElement(children) && (
             <HeaderContent
-              measureFullWidth={measureFullWidth}
               onSortClick={onSortClick}
               sortable={sortable}
               sortOrder={sortOrder}

@@ -1,4 +1,4 @@
-import React, { isValidElement } from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
@@ -9,6 +9,7 @@ import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
 import getStylesForSizes from '../shared/getStylesForSizes';
 import { useFlexTable } from '../shared/FlexTableProvider';
+import { FlexTableContext } from '../shared/FlexTableProvider/FlexTableProvider';
 
 type ScreenSizeConfigurableProps = { density: Density };
 type StyledFlexboxProps = {
@@ -46,13 +47,17 @@ const Cell: CellComponent = (props) => {
   const flexProps = useFlexCellProps(props);
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
   const [columnData, columnDispatch] = useColumnData(columnId);
+  const contextData = useContext(FlexTableContext);
+  if (contextData === undefined) {
+    throw Error('No FlexTable provider, FlexTable rows can only be children of a FlexTable');
+  }
+  const { columnWidthProps } = contextData;
+  const columnWidth = columnWidthProps?.[columnId];
+  const fitContent = !!columnWidth?.fitContent;
 
-  const [measureCellPadding, measureFullWidth] = useFittedColumnWidth(
-    columnDispatch,
-    columnData?.fitContent,
-  );
+  const measureContainer = useFittedColumnWidth(columnDispatch, fitContent);
 
-  const columnFlexWidth = `1 0 ${columnData?.width}px`;
+  const columnFlexWidth = `0 1 ${columnData?.width}px`;
   return (
     <>
       <StyledFlexbox
@@ -64,18 +69,14 @@ const Cell: CellComponent = (props) => {
         $lg={lg}
         $xl={xl}
         {...flexProps}
-        {...(columnData?.fitContent && { flex: columnFlexWidth })}
-        ref={measureCellPadding}
+        {...(fitContent && { flex: columnFlexWidth })}
+        ref={measureContainer}
       >
-        {isElement(children) &&
-          isValidElement(children) &&
-          React.cloneElement(children, { ref: measureFullWidth })}
+        {isElement(children) && children}
         {isFunction(children)
-          ? children({ columnId, ref: measureFullWidth })
+          ? children({ columnId })
           : !isElement(children) && (
-              <TextWrapper truncate={!columnData?.fitContent} measureFullWidth={measureFullWidth}>
-                {children}
-              </TextWrapper>
+              <TextWrapper truncate={!columnData?.fitContent}>{children}</TextWrapper>
             )}
       </StyledFlexbox>
     </>

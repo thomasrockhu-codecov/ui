@@ -1,5 +1,4 @@
 import { InModal, Position } from 'common/PopOver/PopOver.types';
-import { MeasureElementWidth } from '../FlexTable/shared/shared.types';
 
 export type Props = {
   label: React.ReactNode;
@@ -16,7 +15,6 @@ export type Props = {
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;
-  measureFullWidth?: MeasureElementWidth;
   /**
    * @wrapChild
    * Wraps children with a span DOM element.

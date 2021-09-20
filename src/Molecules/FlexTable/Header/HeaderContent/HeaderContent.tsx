@@ -19,17 +19,12 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   sortOrder,
   onSortClick,
   children,
-  measureFullWidth,
   columnId,
 }) => {
   const [columnData] = useColumnData(columnId);
   if (!sortable || sortOrder === null) {
     return (
-      <TextWrapper
-        truncate={!columnData?.fitContent}
-        sorted={false}
-        measureFullWidth={measureFullWidth}
-      >
+      <TextWrapper truncate={!columnData?.fitContent} sorted={false}>
         {children}
       </TextWrapper>
     );
@@ -42,7 +37,6 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
           <TextWrapper
             truncate={!columnData?.fitContent}
             sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
-            measureFullWidth={measureFullWidth}
           >
             {children}
           </TextWrapper>

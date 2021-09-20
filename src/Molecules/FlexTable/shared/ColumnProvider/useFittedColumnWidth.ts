@@ -1,14 +1,9 @@
-import { useCallback, useRef } from 'react';
-import { MeasureElementWidth, MeasureElementHorizontalPadding } from '../shared.types';
+import { useCallback } from 'react';
+import { MeasureElementWidth } from '../shared.types';
 import { ColumnDispatch } from './ColumnProvider.types';
 
-export const useFittedColumnWidth = (columnDispatch: ColumnDispatch, fitContent) => {
-  const dimensionsRef = useRef<{ width: number | null; padding: number | null }>({
-    width: null,
-    padding: null,
-  });
-
-  const measureContent: MeasureElementWidth = useCallback(
+export const useFittedColumnWidth = (columnDispatch: ColumnDispatch, fitContent: boolean) => {
+  const measureContainer: MeasureElementWidth = useCallback(
     (node) => {
       if (node !== null) {
         if (!fitContent) return;
@@ -17,22 +12,6 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch, fitContent)
         const width = Math.ceil(node.getBoundingClientRect().width);
         node.style.setProperty('white-space', oldWhiteSpace);
 
-        if (!dimensionsRef.current.width) dimensionsRef.current.width = width;
-        if (dimensionsRef.current.width && dimensionsRef.current.padding) {
-          columnDispatch({
-            type: 'SET_WIDTH',
-            width: dimensionsRef.current.width + dimensionsRef.current.padding,
-          });
-        }
-      }
-    },
-    [columnDispatch, fitContent],
-  );
-
-  const measurePadding: MeasureElementHorizontalPadding = useCallback(
-    (node) => {
-      if (!fitContent) return;
-      if (node !== null) {
         const paddingLeft = parseInt(
           window.getComputedStyle(node).getPropertyValue('padding-left'),
           10,
@@ -42,18 +21,14 @@ export const useFittedColumnWidth = (columnDispatch: ColumnDispatch, fitContent)
           10,
         );
 
-        if (!dimensionsRef.current?.padding)
-          dimensionsRef.current.padding = paddingLeft + paddingRight;
-        if (dimensionsRef.current.width && dimensionsRef.current.padding) {
-          columnDispatch({
-            type: 'SET_WIDTH',
-            width: dimensionsRef.current.width + dimensionsRef.current.padding,
-          });
-        }
+        columnDispatch({
+          type: 'SET_WIDTH',
+          width: width + paddingLeft + paddingRight,
+        });
       }
     },
     [columnDispatch, fitContent],
   );
 
-  return [measurePadding, measureContent];
+  return measureContainer;
 };

@@ -14,23 +14,18 @@ const StyledDiv = styled.div`
 export const TruncateWithTooltip: TruncateWithTooltipComponent = ({
   children,
   className,
-  measureFullWidth,
   as,
   ...tooltipProps
 }) => {
   const [isTruncated, setIsTruncated] = useState(false);
 
   // TODO: Check truncation again on screen or container resize
-  const measuredRef = useCallback(
-    (node) => {
-      if (node !== null) {
-        if (measureFullWidth) measureFullWidth(node);
-        const truncated = node.clientWidth < node.scrollWidth;
-        setIsTruncated(truncated);
-      }
-    },
-    [measureFullWidth],
-  );
+  const measuredRef = useCallback((node) => {
+    if (node !== null) {
+      const truncated = node.clientWidth < node.scrollWidth;
+      setIsTruncated(truncated);
+    }
+  }, []);
 
   if (!isTruncated) {
     return (

@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useContext, useReducer } from 'react';
 import * as R from 'ramda';
 import {
   ColumnActions,
@@ -7,6 +7,7 @@ import {
   ColumnsState,
 } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
+import { FlexTableContext } from '../FlexTableProvider/FlexTableProvider';
 
 export const ACTION_SET_SORTING = 'SET_SORTING';
 export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
@@ -92,7 +93,16 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
 };
 
 export const ColumnProvider: React.FC = ({ children }) => {
-  const [state, dispatch] = useReducer(columnReducer, { data: {} });
+  const flexTableContextData = useContext(FlexTableContext);
+
+  // re-casting since we aren't allowed to pass only column width props as initial state to columnReducer
+  // we should be though since the sort props are initialized through a dispatch later on
+  const columnWidthProps = flexTableContextData?.columnWidthProps as unknown as ColumnsDataState;
+
+  const [state, dispatch] = useReducer(columnReducer, {
+    data: columnWidthProps,
+  });
+
   return (
     <ColumnDataContext.Provider value={state.data}>
       <ColumnDispatchContext.Provider value={dispatch}>{children}</ColumnDispatchContext.Provider>

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { FlexPropsType, MeasureElementWidth } from '../shared/shared.types';
+import { FlexPropsType } from '../shared/shared.types';
 import { TextWrapper } from './TextWrapper';
 
 type RenderPropArguments = { columnId: string };
@@ -43,7 +43,6 @@ type TextWrapperProps = {
   truncate?: boolean;
   className?: string;
   weight?: string;
-  measureFullWidth?: MeasureElementWidth;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

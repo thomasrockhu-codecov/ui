@@ -75,6 +75,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   className,
   density = 'm',
   columnDistance = 2,
+  columnWidthProps,
   expandable = false,
   stickyHeader = true,
   children,
@@ -91,6 +92,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
     id={htmlProps.id}
     density={density}
     columnDistance={columnDistance}
+    columnWidthProps={columnWidthProps}
     stickyHeader={stickyHeader}
     fontSize={fontSize}
     expandable={expandable}
