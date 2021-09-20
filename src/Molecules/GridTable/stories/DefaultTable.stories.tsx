@@ -1,6 +1,5 @@
 import React from 'react';
 import GridTableComponent from '../GridTable';
-import FlexMoveComponent from '../FlexMoveTable';
 import { generateTableData, defaultHeaders, defaultRows } from './storyData';
 
 export default {
@@ -30,14 +29,6 @@ export const BigTable = () => {
 
   const Story = () => {
     return <GridTableComponent headers={bigTableHeaders} rows={bigTableRows} minCellWidth={100} />;
-  };
-
-  return <Story />;
-};
-
-export const FlexMoveTable = () => {
-  const Story = () => {
-    return <FlexMoveComponent minCellWidth={100} />;
   };
 
   return <Story />;
