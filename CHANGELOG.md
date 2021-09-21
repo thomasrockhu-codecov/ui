@@ -1,3 +1,10 @@
+## [8.0.6](https://github.com/nordnet/ui/compare/v8.0.5...v8.0.6) (2021-09-21)
+
+
+### Bug Fixes
+
+* add sfdr colors ([7fa2059](https://github.com/nordnet/ui/commit/7fa2059))
+
 ## [8.0.5](https://github.com/nordnet/ui/compare/v8.0.4...v8.0.5) (2021-09-14)
 
 
