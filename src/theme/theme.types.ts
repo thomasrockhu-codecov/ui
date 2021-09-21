@@ -46,6 +46,8 @@ export type RawColor = {
   negative: string;
   negativeHover: string;
   negativePressed: string;
+  sfdrArticle8: string;
+  sfdrArticle9: string;
   index: string;
 };
 
@@ -364,6 +366,12 @@ export type ThemeColors = {
   transferStatusBannerText3: RawColor['gray0'];
   /** index */
   warning: RawColor['index'];
+  /** SFDR Article 6 */
+  sfdrArticle6: RawColor['gray3'];
+  /** SFDR Article 8 */
+  sfdrArticle8: RawColor['sfdrArticle8'];
+  /** SFDR Article 9 */
+  sfdrArticle9: RawColor['sfdrArticle9'];
   /** @deprecated * gray3 */
   disabled: RawColor['gray3'];
   /** @deprecated * complementaryBlue2 */

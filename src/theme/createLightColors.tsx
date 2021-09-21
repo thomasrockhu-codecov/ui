@@ -235,6 +235,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
 
+    sfdrArticle6: rawColor.gray3,
+    sfdrArticle8: rawColor.sfdrArticle8,
+    sfdrArticle9: rawColor.sfdrArticle9,
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
