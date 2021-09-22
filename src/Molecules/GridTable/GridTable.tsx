@@ -1,14 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Button, Icon, Typography } from '../..';
-import { Header, Row } from './GridTable.types';
-
-type GridTableProp = {
-  headers: Header[];
-  rows: Row[];
-  minCellWidth: number;
-  initialColumnSizes?: string[];
-};
+import { Header, GridTableProps } from './GridTable.types';
 
 const GridTr = styled.tr`
   display: grid;
@@ -50,7 +43,7 @@ const GridTd = styled.td`
   overflow: hidden;
 `;
 
-const createHeaders = (headers: Header[]) => {
+const addHeaderRefs = (headers: Header[]) => {
   return headers.map((header) => ({
     ...header,
     ref: useRef<HTMLTableCellElement>(null),
@@ -115,7 +108,7 @@ const GridBodyTr: React.FC<{ expandItems: string[] }> = ({ children, expandItems
   );
 };
 
-const GridTableComponent: React.FC<GridTableProp> = ({
+const GridTableComponent: React.FC<GridTableProps> = ({
   headers,
   rows,
   minCellWidth,
@@ -135,7 +128,7 @@ const GridTableComponent: React.FC<GridTableProp> = ({
     setActiveIndex(index);
   };
 
-  const columns = createHeaders(headers);
+  const headerWithRefs = addHeaderRefs(headers);
 
   const mouseMove = useCallback(
     (e: MouseEvent) => {
@@ -144,11 +137,12 @@ const GridTableComponent: React.FC<GridTableProp> = ({
 
       let sizeDiff = 0; // the change in column width (increase active column, decrease the column to the right)
 
-      const newColumnWidth = columns.map((col, i) => {
+      const newColumnWidth = headerWithRefs.map((col, i) => {
+        // TODO: try to figure out how to use scrollWidth instead of getBoundingClientRect (causes weird resize issues in some browsers) as it's much more performant
         const oldWidth = Number(col.ref.current?.getBoundingClientRect().width);
 
         // don't change widths for columns to the left of the active column
-        if (i < activeIndex) return `${oldWidth}px`;
+        if (i < activeIndex) return `${oldWidth}fr`;
 
         // increase/decrease the active column and the reverse for the column to the right
         if (i === activeIndex) {
@@ -161,18 +155,20 @@ const GridTableComponent: React.FC<GridTableProp> = ({
 
             // only increase width if the column to the right has width left to shrink
             if (
-              Number(columns[i + 1].ref.current?.getBoundingClientRect().width) - tempSizeDiff >
+              // TODO: try to figure out how to use scrollWidth instead of getBoundingClientRect (causes weird resize issues in some browsers) as it's much more performant
+              Number(headerWithRefs[i + 1].ref.current?.getBoundingClientRect().width) -
+                tempSizeDiff >
               minCellWidth
             ) {
               sizeDiff = tempSizeDiff;
-              return `${newWidth}px`;
+              return `${newWidth}fr`;
             }
 
-            return `${oldWidth}px`;
+            return `${oldWidth}fr`;
           }
 
           // no change
-          return `${oldWidth}px`;
+          return `${oldWidth}fr`;
         }
 
         // shrink/increase the column directly right to the active column
@@ -181,21 +177,21 @@ const GridTableComponent: React.FC<GridTableProp> = ({
 
           // only increase width if the column to the right has width left to shrink
           if (newWidth >= minCellWidth) {
-            return `${newWidth}px`;
+            return `${newWidth}fr`;
           }
 
           // no change
-          return `${oldWidth}px`;
+          return `${oldWidth}fr`;
         }
 
         // don't resize columns two or more steps to the right of the active column
-        return `${oldWidth}px`;
+        return `${oldWidth}fr`;
       });
 
       // Assign the px values to the table
       setColumnSizes(newColumnWidth);
     },
-    [activeIndex, columns, minCellWidth],
+    [activeIndex, headerWithRefs, minCellWidth],
   );
 
   const removeListeners = useCallback(() => {
@@ -223,15 +219,17 @@ const GridTableComponent: React.FC<GridTableProp> = ({
     <GridTable ref={tableRef} $columnSizes={convertColumnSizes(columnSizes)}>
       <GridTHead>
         <GridTr>
-          {columns.map((header, i) => (
+          {headerWithRefs.map((header, i) => (
             <GridTh ref={header.ref}>
               {header.title}
-              <ResizeHandle
-                style={{ height: tableHeight }}
-                onMouseDown={() => mouseDown(i)}
-                $active={activeIndex === i}
-                role="none" // TODO: nice role plz
-              />
+              {header.columnId !== 'button' && (
+                <ResizeHandle
+                  style={{ height: tableHeight }}
+                  onMouseDown={() => mouseDown(i)}
+                  $active={activeIndex === i}
+                  role="none" // TODO: nice role plz
+                />
+              )}
             </GridTh>
           ))}
         </GridTr>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Typography, Development, Link, Button } from '../../..';
+import { StyledTruncateTooltip } from '../../FlexTable/shared';
 import { Header, Row } from '../GridTable.types';
 
 export const defaultRows: Row[] = [
@@ -92,13 +93,24 @@ export const defaultHeaders: Header[] = [
 
 export const generateTableData = (rowsLength: number, columnsLength: number) => {
   const headers: Header[] = [...Array(columnsLength)].map((_, colIndex) => ({
-    title: `col ${colIndex}`,
+    title: (
+      <StyledTruncateTooltip label={colIndex}>
+        <Typography>{`col ${colIndex}`}</Typography>
+      </StyledTruncateTooltip>
+    ),
     columnId: `col_${colIndex}`,
   }));
 
   const rows: Row[] = [...Array(rowsLength)].map((_, rowIndex) =>
     headers.reduce(
-      (row, { columnId }, colIndex) => ({ ...row, [columnId]: `cell ${rowIndex} - ${colIndex}` }),
+      (row, { columnId }, colIndex) => ({
+        ...row,
+        [columnId]: (
+          <StyledTruncateTooltip label={columnId}>
+            <Typography color={(t) => t.color.text}>{`cell ${rowIndex} - ${colIndex}`}</Typography>
+          </StyledTruncateTooltip>
+        ),
+      }),
       {},
     ),
   );
