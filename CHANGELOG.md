@@ -1,3 +1,11 @@
+## [8.0.7](https://github.com/nordnet/ui/compare/v8.0.6...v8.0.7) (2021-09-23)
+
+
+### Bug Fixes
+
+* move min with to parent ([c5f3618](https://github.com/nordnet/ui/commit/c5f3618))
+* update storyshot ([1d3fb35](https://github.com/nordnet/ui/commit/1d3fb35))
+
 ## [8.0.6](https://github.com/nordnet/ui/compare/v8.0.5...v8.0.6) (2021-09-21)
 
 
