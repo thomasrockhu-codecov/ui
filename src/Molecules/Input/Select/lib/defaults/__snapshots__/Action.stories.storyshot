@@ -75,7 +75,6 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
 
 .c5 {
   cursor: pointer;
-  min-width: 140px;
 }
 
 .c5:hover {
@@ -84,13 +83,11 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
 
 .c10 {
   cursor: pointer;
-  min-width: 140px;
   background: #F5F5F5;
 }
 
 .c11 {
   cursor: not-allowed;
-  min-width: 140px;
 }
 
 .c9 {
