@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
 import { useMedia } from '../../../../../Atoms/Media';
 
@@ -43,11 +43,9 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
-  ${({ theme }) =>
-    theme.media.greaterThan(theme.size.xs) &&
-    css`
-      min-width: ${theme.spacing.unit(41)}px;
-    `}
+  @media (min-width: 360px) {
+    min-width: ${(p) => p.theme.spacing.unit(41)}px;
+  }
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
