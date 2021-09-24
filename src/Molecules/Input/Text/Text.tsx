@@ -118,9 +118,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   ${background}
   ${placeholderNormalization}
   ${darkmodeAutocompleteStyles}
-  ${(
-    p,
-  ) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
+  ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
@@ -200,6 +198,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     value,
     visuallyEmphasiseRequired,
     type,
+    readOnly,
   } = props;
 
   return (
@@ -250,6 +249,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               value,
               type,
               ref,
+              readOnly,
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}

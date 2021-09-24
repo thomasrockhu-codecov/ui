@@ -15,9 +15,7 @@ import {
 const Container = styled.div<InternalProps & Props>`
   ${containerStyles}
   ${(p) => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
-  ${(
-    p,
-  ) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
+  ${(p) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
 const Scroller = styled.div<Props>`

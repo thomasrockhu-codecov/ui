@@ -1,13 +1,11 @@
-type FocusedState = [number | null, number | null];
-
 export type Props = {
   disableDate?: (date: Date) => boolean;
   enableDate?: (date: Date) => boolean;
   locale: string;
   viewedDate: Date;
+  onMonthChange: (index: number) => void;
   onClick: (date: Date) => void;
   selectedDate: Date;
   selectedEndDate?: Date;
-  focusedState: [FocusedState, React.Dispatch<React.SetStateAction<FocusedState>>];
-  setViewedDate: (date: Date) => void;
+  fullscreenMode: boolean;
 };

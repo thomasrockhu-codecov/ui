@@ -34,7 +34,7 @@ export const LinkBuy: LinkBuyComponent = ({
   ...rest
 }) => (
   <StyledLink
-    {...(disabled ? { as: 'span' } : {})}
+    {...(disabled ? { as: 'span' as any } : {})}
     className={className}
     disabled={disabled}
     onClick={onClick}

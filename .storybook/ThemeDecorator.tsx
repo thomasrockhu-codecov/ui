@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { StoryFn } from '@storybook/addons';
 import { ThemeProvider } from 'styled-components';
-import { DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsContainer } from '@storybook/addon-docs';
 import { useDarkMode } from 'storybook-dark-mode';
 import { createGlobalStyle } from 'styled-components';
 import { createTheme } from '../src';

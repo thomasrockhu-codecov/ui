@@ -1,6 +1,6 @@
 import { pickAriaAttributes } from './utils';
 
-test('', () => {
+test('common utils', () => {
   expect(
     pickAriaAttributes({
       'aria-hidden': true,

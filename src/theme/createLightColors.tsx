@@ -34,6 +34,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
 
+    barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
+
     barScaleActiveBar: rawColor.complementaryBlue1,
     barScaleInactiveBar: rawColor.gray6,
 
@@ -149,6 +151,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     palettePink: rawColor.palettes.pink,
     paletteTurquoise: rawColor.palettes.turquoise,
 
+    placeholderText: rawColor.gray2,
+
     positive: rawColor.positive,
 
     privateBankingBannerBackground: rawColor.gray6,
@@ -230,6 +234,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     transferStatusBannerText1: rawColor.complementaryBlue1,
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
+
+    sfdrArticle6: rawColor.gray3,
+    sfdrArticle8: rawColor.sfdrArticle8,
+    sfdrArticle9: rawColor.sfdrArticle9,
 
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,

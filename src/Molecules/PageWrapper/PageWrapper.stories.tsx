@@ -13,7 +13,7 @@ export default {
 
 export const documentation = () => (
   <Typography type="primary">
-    <MD source={docs} />
+    <MD>{docs}</MD>
   </Typography>
 );
 

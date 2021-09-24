@@ -58,10 +58,10 @@ export const BigTable = () => {
       const rowsLength = number('Number of rows', 100);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-        rowsLength,
-        columnsLength,
-      ]);
+      const tableData = useMemo(
+        () => generateTableData(rowsLength, columnsLength),
+        [rowsLength, columnsLength],
+      );
       const sortedData = useMemo(() => {
         if (sort.sortOrder === 'none') {
           return tableData;
@@ -120,10 +120,10 @@ export const BigTableWithoutStickyHeader = () => {
       const rowsLength = number('Number of rows', 500);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-        rowsLength,
-        columnsLength,
-      ]);
+      const tableData = useMemo(
+        () => generateTableData(rowsLength, columnsLength),
+        [rowsLength, columnsLength],
+      );
       const sortedData = useMemo(() => {
         const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
         return tableData.sort((rowA, rowB) => {
@@ -174,10 +174,10 @@ export const MultipleBigTablesWithStickyHeaders = () => {
     const rowsLength = number('Number of rows', 100);
     const columnsLength = number('Number of columns', 5);
     const [sort, setSort] = useState<any>({});
-    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
-      rowsLength,
-      columnsLength,
-    ]);
+    const tableData = useMemo(
+      () => generateTableData(rowsLength, columnsLength),
+      [rowsLength, columnsLength],
+    );
     const sortedData = useMemo(() => {
       const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
       return tableData.sort((rowA, rowB) => {

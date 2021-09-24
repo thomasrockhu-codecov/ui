@@ -374,7 +374,7 @@ test('Select date by typing it in and blur', async () => {
   fireEvent.blur(input);
 
   expect(onBlur).toHaveBeenCalled();
-  expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'));
+  expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'), null);
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
   expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);

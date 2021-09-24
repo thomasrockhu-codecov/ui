@@ -1,6 +1,6 @@
 import React from 'react';
-import { boolean, number, text } from '@storybook/addon-knobs';
-import { Flexbox } from '../..';
+import styled from 'styled-components';
+import { Box, Flexbox } from '../..';
 import docs from './BarScale.mdx';
 import BarScale from '.';
 
@@ -13,43 +13,18 @@ export default {
   },
 };
 
-const getBarScaleProps = ({
-  value = 0,
-  indicatorText = 'Hello world',
-  showValue = false,
-  max = 7,
-} = {}) => ({
-  value: number('Value', value),
-  indicatorText: text('Indicator text', indicatorText),
-  showValue: boolean('showValue', showValue),
-  max: number('max', max),
-});
-
-export const BarScaleWithValueAndText = () => (
-  <BarScale
-    {...getBarScaleProps({
-      value: 2,
-      indicatorText: 'text',
-    })}
-  />
-);
-
-export const BarScaleWithLongText = () => (
-  <BarScale
-    {...getBarScaleProps({
-      value: 1,
-      indicatorText: 'Long Long Long Long text',
-      showValue: true,
-    })}
-  />
+export const BarScaleNormal = () => <BarScale value={6} max={7} />;
+export const DoubleBarScale = () => (
+  <>
+    <BarScale value={6} max={7} />
+    <h2>Max of 6</h2>
+    <BarScale value={2} max={6} />
+  </>
 );
 
 export const BarScaleWithXAxis = () => (
   <BarScale
-    {...getBarScaleProps({
-      value: 6,
-      indicatorText: 'some text',
-    })}
+    value={6}
     axisLabel={
       <Flexbox container justifyContent="space-between">
         <Flexbox item>Low</Flexbox>
@@ -60,23 +35,13 @@ export const BarScaleWithXAxis = () => (
   />
 );
 
-export const BarScaleWithoutShowValue = () => (
-  <BarScale
-    {...getBarScaleProps({
-      value: 6,
-      indicatorText: 'text',
-      showValue: false,
-    })}
-  />
-);
+const RiskMeterBox = styled(Box)`
+  width: ${(p) => p.theme.spacing.unit(13.5)}px;
+`;
 
-export const BarScaleWithMax = () => (
-  <BarScale
-    {...getBarScaleProps({
-      value: 6,
-      indicatorText: 'text',
-      showValue: false,
-      max: 7,
-    })}
-  />
+export const BarScaleAsRiskMeter = () => (
+  <RiskMeterBox>
+    Risk
+    <BarScale value={4} barHeight={4} gutter={0.5} />
+  </RiskMeterBox>
 );

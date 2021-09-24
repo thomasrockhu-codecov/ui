@@ -1,4 +1,0 @@
-diff a/.storybook/ThemeDecorator.tsx b/.storybook/ThemeDecorator.tsx	(rejected hunks)
-@@ -44 +42 @@ export const ThemeDecorator = (storyFn: StoryFn<ReactNode>) => {
--      <GlobalStyle darkMode={theme.isDarkMode}/>
-+      <GlobalStyle darkMode={theme.isDarkMode} />

@@ -14,7 +14,6 @@ background: ${p.theme.color.background};
 `;
 const StyledBoxWithBorder = styled(Box)<any>`
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
-  min-width: ${(p) => p.theme.spacing.unit(35)}px;
   ${(p) =>
     p.focused && p.isKeyboardNavigation
       ? `

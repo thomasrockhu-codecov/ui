@@ -7,25 +7,17 @@ import { Props, ContainerProps } from './ShowMore.types';
 import useOverflow from './useOverflow';
 
 const StyledDiv = styled.div<ContainerProps>`
-  position: relative;
-  overflow: ${(p) => (p.showMoreButton ? 'hidden' : 'visible')};
-  max-height: ${(p) => (p.showMoreClicked ? 'none' : `${p.cutoffHeight}px`)};
-  &::before {
-    display: ${(p) => (p.showMoreButton ? 'block' : 'none')};
-    content: '';
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    background: ${(p) => `linear-gradient(rgba(255, 255, 255, 0), ${p.theme.color.card})`};
-  }
+  /* stylelint-disable value-no-vendor-prefix */
+  display: -webkit-box;
+  /* stylelint-disable property-no-vendor-prefix */
+  -webkit-line-clamp: ${(p) => (p.showMoreClicked ? 'auto' : p.linesToClamp)};
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 `;
 
 export const ShowMore: React.FC<Props> = ({
   children,
-  cutoffHeight = 200,
+  linesToClamp = 2,
   onShowMore = () => {},
   showMoreText,
 }) => {
@@ -49,12 +41,12 @@ export const ShowMore: React.FC<Props> = ({
         ref={containerRef}
         showMoreButton={showMoreButton}
         showMoreClicked={showMoreClicked}
-        cutoffHeight={cutoffHeight}
+        linesToClamp={linesToClamp}
       >
         {children}
       </StyledDiv>
       {showMoreButton && (
-        <Box py={4}>
+        <Box pt={1}>
           <ShowMoreButton onClick={onShowMoreClick} align="left" showMoreText={showMoreText} />
         </Box>
       )}

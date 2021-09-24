@@ -38,6 +38,8 @@ const defaultColors = {
   negativeHover: '#D90E00',
   negativePressed: '#B20300',
   index: '#FFCF00', // Included in Dark Mode
+  sfdrArticle9: '#41A21A',
+  sfdrArticle8: '#85DA62',
 } as RawColor;
 
 const grayPalette = [

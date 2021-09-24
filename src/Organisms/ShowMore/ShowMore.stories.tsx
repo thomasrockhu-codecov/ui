@@ -11,11 +11,3 @@ const text =
 export const Default = () => {
   return <ShowMore showMoreText="Show more">{text}</ShowMore>;
 };
-
-export const WithCustomCutOffHeight = () => {
-  return (
-    <ShowMore showMoreText="Show much more" cutoffHeight={100}>
-      {text}
-    </ShowMore>
-  );
-};

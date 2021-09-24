@@ -1,3 +1,5 @@
-import DatePicker from './DatePicker';
+import SingleDatePicker from './Single';
+import DoubleDatePicker from './Double';
+import { DateRangePicker } from './Range';
 
-export default DatePicker;
+export { SingleDatePicker as DatePicker, DateRangePicker, DoubleDatePicker };

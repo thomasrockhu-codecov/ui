@@ -164,7 +164,7 @@ exports[`Storyshots Molecules / Pagination / Regular 2 pages 1`] = `
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -185,7 +185,7 @@ exports[`Storyshots Molecules / Pagination / Regular 2 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -203,7 +203,7 @@ exports[`Storyshots Molecules / Pagination / Regular 2 pages 1`] = `
     </ul>
     <button
       aria-label="Go to next page"
-      className="NormalizedButton__Button-ey7f5x-0 c5"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c5"
       onClick={[Function]}
       type="button"
     >
@@ -398,7 +398,7 @@ exports[`Storyshots Molecules / Pagination / Regular 12 pages 1`] = `
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -419,7 +419,7 @@ exports[`Storyshots Molecules / Pagination / Regular 12 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -440,7 +440,7 @@ exports[`Storyshots Molecules / Pagination / Regular 12 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -470,7 +470,7 @@ exports[`Storyshots Molecules / Pagination / Regular 12 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 12"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -488,7 +488,7 @@ exports[`Storyshots Molecules / Pagination / Regular 12 pages 1`] = `
     </ul>
     <button
       aria-label="Go to next page"
-      className="NormalizedButton__Button-ey7f5x-0 c5"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c5"
       onClick={[Function]}
       type="button"
     >
@@ -683,7 +683,7 @@ exports[`Storyshots Molecules / Pagination / Regular 999 pages 1`] = `
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -704,7 +704,7 @@ exports[`Storyshots Molecules / Pagination / Regular 999 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -725,7 +725,7 @@ exports[`Storyshots Molecules / Pagination / Regular 999 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -755,7 +755,7 @@ exports[`Storyshots Molecules / Pagination / Regular 999 pages 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 999"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -773,7 +773,7 @@ exports[`Storyshots Molecules / Pagination / Regular 999 pages 1`] = `
     </ul>
     <button
       aria-label="Go to next page"
-      className="NormalizedButton__Button-ey7f5x-0 c5"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c5"
       onClick={[Function]}
       type="button"
     >
@@ -961,7 +961,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
   >
     <button
       aria-label="Go to previous page"
-      className="NormalizedButton__Button-ey7f5x-0 c2"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c2"
       onClick={[Function]}
       type="button"
     >
@@ -992,7 +992,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
         <button
           aria-disabled={false}
           aria-label="Go to Page 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2"
           onClick={[Function]}
           type="button"
         >
@@ -1022,7 +1022,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
         <button
           aria-disabled={false}
           aria-label="Go to Page 4"
-          className="NormalizedButton__Button-ey7f5x-0 c2"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2"
           onClick={[Function]}
           type="button"
         >
@@ -1043,7 +1043,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 5"
-          className="NormalizedButton__Button-ey7f5x-0 c2"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2"
           onClick={[Function]}
           type="button"
         >
@@ -1064,7 +1064,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
         <button
           aria-disabled={false}
           aria-label="Go to Page 6"
-          className="NormalizedButton__Button-ey7f5x-0 c2"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2"
           onClick={[Function]}
           type="button"
         >
@@ -1094,7 +1094,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
         <button
           aria-disabled={false}
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-ey7f5x-0 c2"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2"
           onClick={[Function]}
           type="button"
         >
@@ -1112,7 +1112,7 @@ exports[`Storyshots Molecules / Pagination / Regular Controlled Pagination 1`] =
     </ul>
     <button
       aria-label="Go to next page"
-      className="NormalizedButton__Button-ey7f5x-0 c2"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c2"
       onClick={[Function]}
       type="button"
     >
@@ -1307,7 +1307,7 @@ exports[`Storyshots Molecules / Pagination / Regular Regular 1`] = `
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -1328,7 +1328,7 @@ exports[`Storyshots Molecules / Pagination / Regular Regular 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -1349,7 +1349,7 @@ exports[`Storyshots Molecules / Pagination / Regular Regular 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -1379,7 +1379,7 @@ exports[`Storyshots Molecules / Pagination / Regular Regular 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           onClick={[Function]}
           type="button"
         >
@@ -1397,7 +1397,7 @@ exports[`Storyshots Molecules / Pagination / Regular Regular 1`] = `
     </ul>
     <button
       aria-label="Go to next page"
-      className="NormalizedButton__Button-ey7f5x-0 c5"
+      className="NormalizedButton__Button-sc-ey7f5x-0 c5"
       onClick={[Function]}
       type="button"
     >
