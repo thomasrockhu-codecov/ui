@@ -43,9 +43,8 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
-  @media (min-width: 360px) {
-    min-width: ${(p) => p.theme.spacing.unit(41)}px;
-  }
+  min-width: ${({ theme }) =>
+    theme.media.lessThan(theme.breakpoints.sm) ? 'auto' : `${theme.spacing.unit(41)}px`};
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
