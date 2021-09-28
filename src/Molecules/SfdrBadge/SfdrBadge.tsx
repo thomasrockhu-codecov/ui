@@ -21,6 +21,7 @@ const getSfdrColor = (args: colorProps) => {
   return color;
 };
 
+// using !important as we never want extra padding.
 const StyledSfdrColor = styled.div<colorProps>`
   background-color: ${getSfdrColor};
   display: flex;
@@ -28,7 +29,7 @@ const StyledSfdrColor = styled.div<colorProps>`
   justify-content: center;
   width: ${(p) => p.theme.spacing.unit(5)}px;
   height: ${(p) => p.theme.spacing.unit(5)}px;
-  padding: 0 !important; // We never want extra padding as it will break the styles.
+  padding: 0 !important;
 `;
 
 export const SfdrBadge: React.FC<Props> = ({ value }) => {
