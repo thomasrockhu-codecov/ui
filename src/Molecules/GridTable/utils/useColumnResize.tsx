@@ -1,6 +1,10 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Header } from '../GridTable.types';
+
+export type Header = {
+  columnId: string;
+  title: React.ReactNode | null;
+};
 
 const addHeaderRefs = (headers: Header[]) => {
   return headers.map((header) => ({

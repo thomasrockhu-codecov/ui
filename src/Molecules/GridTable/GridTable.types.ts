@@ -1,13 +1,18 @@
+import styled from 'styled-components';
+import { ExpandableRowComponent } from './components/ExpandableRow/ExpandableRow.types';
+
 export type GridTableProps = {
-  headers: Header[];
-  rows: Row[];
   minCellWidth: number;
   initialColumnSizes?: string[];
 };
 
-export type Header = {
-  title: React.ReactNode | null;
-  columnId: string;
+export type GridTableComponents = {
+  THead: ReturnType<typeof styled.thead>;
+  Th: ReturnType<typeof styled.th>;
+  TBody: ReturnType<typeof styled.tbody>;
+  Tr: ReturnType<typeof styled.tr>;
+  ExpandableRow: ExpandableRowComponent;
+  Td: ReturnType<typeof styled.td>;
 };
 
-export type Row = Record<string, React.ReactNode>;
+export type GridTableComponent = React.FC<GridTableProps>;
