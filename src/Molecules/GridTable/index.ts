@@ -1,3 +1,1 @@
-import GridTable from './GridTable';
-
-export default GridTable;
+export { GridTable } from './GridTable';
