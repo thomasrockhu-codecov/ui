@@ -7,7 +7,7 @@ export type Props = {
   backgroundColor?: ColorFn;
   color?: ColorFn;
   animateOnChange?: boolean;
-  variant?: string;
+  variant?: 'square' | 'circle';
   weight?: string;
 } & HtmlProps;
 
