@@ -1,4 +1,6 @@
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { ColumnsContext } from '../../GridTable';
 
 export const StyledTr = styled.tr`
   display: grid;
@@ -31,12 +33,49 @@ export const StyledTBody = styled.tbody`
   }
 `;
 
-export const StyledTh = styled.th`
+export const StyledTh = styled.th<{ $hidden: boolean | undefined }>`
   position: relative;
   text-align: left;
+  ${({ $hidden }) => ($hidden ? 'display: none;' : '')}
 `;
 
-export const StyledTd = styled.td`
+export const StyledTd = styled.td<{ $hidden: boolean | undefined }>`
   text-align: left;
   overflow: hidden;
+  ${({ $hidden }) => ($hidden ? 'display: none;' : '')}
 `;
+
+const useColumnContext = (columnId: string) => {
+  const columnsConfig = useContext(ColumnsContext);
+  return columnsConfig?.find((columnConfig) => columnConfig.columnId === columnId);
+};
+
+const Cell = ({
+  columnId,
+  isHeaderCell = false,
+  children,
+}: {
+  columnId: string;
+  // eslint-disable-next-line react/require-default-props
+  isHeaderCell?: boolean;
+  children: any;
+}) => {
+  const columnConfig = useColumnContext(columnId);
+  return isHeaderCell ? (
+    <StyledTh $hidden={columnConfig?.hidden}>{children}</StyledTh>
+  ) : (
+    <StyledTd $hidden={columnConfig?.hidden}>{children}</StyledTd>
+  );
+};
+
+export const GridTh = ({ columnId, children }: { columnId: string; children: any }) => {
+  return (
+    <Cell columnId={columnId} isHeaderCell>
+      {children}
+    </Cell>
+  );
+};
+
+export const GridTd = ({ columnId, children }: { columnId: string; children: any }) => {
+  return <Cell columnId={columnId}>{children}</Cell>;
+};

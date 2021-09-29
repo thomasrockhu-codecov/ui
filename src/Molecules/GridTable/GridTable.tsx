@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import {
   StyledTable,
   StyledTBody,
-  StyledTd,
-  StyledTh,
+  // StyledTd,
+  // StyledTh,
   StyledTHead,
   StyledTr,
   ExpandableRow,
 } from './components';
-import { GridTableComponent, GridTableComponents } from './GridTable.types';
+import { GridTh, GridTd } from './components/TableComponents/TabelComponents';
+import { GridTableComponent, GridTableComponents, ColumnConfig } from './GridTable.types';
 
-const convertColumnSizes = (columnSizes: string[]) => columnSizes.join(' ');
+export const ColumnsContext = React.createContext<ColumnConfig[] | undefined>(undefined);
+
+const convertColumnSizes = (columnSizes: string[]) => columnSizes.filter((size) => size).join(' ');
 
 const getColumnCount: (children: any) => number = (children) => {
   if ((Array.isArray(children) ? children[0].type.target : children.type.target) === 'tr') {
@@ -23,18 +26,25 @@ const getColumnCount: (children: any) => number = (children) => {
 
 export const GridTable: GridTableComponent & GridTableComponents = ({
   children,
-
-  initialColumnSizes,
+  columnsConfig,
 }) => {
   const columnCount = getColumnCount(children);
-  const [columnSizes] = useState(initialColumnSizes || Array(columnCount).fill('1fr'));
+  const columnSizesFromConfig = columnsConfig?.map((column) =>
+    column.hidden ? null : column.width,
+  );
 
-  return <StyledTable $columnSizes={convertColumnSizes(columnSizes)}>{children}</StyledTable>;
+  const [columnSizes] = useState(columnSizesFromConfig || Array(columnCount).fill('1fr'));
+
+  return (
+    <StyledTable $columnSizes={convertColumnSizes(columnSizes)}>
+      <ColumnsContext.Provider value={columnsConfig}>{children}</ColumnsContext.Provider>
+    </StyledTable>
+  );
 };
 
 GridTable.THead = StyledTHead;
-GridTable.Th = StyledTh;
+GridTable.Th = GridTh;
 GridTable.TBody = StyledTBody;
 GridTable.Tr = StyledTr;
-GridTable.Td = StyledTd;
+GridTable.Td = GridTd;
 GridTable.ExpandableRow = ExpandableRow;

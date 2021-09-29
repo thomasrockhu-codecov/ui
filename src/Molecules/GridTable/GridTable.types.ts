@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { ExpandableRowComponent } from './components/ExpandableRow/ExpandableRow.types';
 
+export type ColumnConfig = { columnId: string; width?: string; hidden?: boolean };
+
 export type GridTableProps = {
   minCellWidth: number;
-  initialColumnSizes?: string[];
+  // initialColumnSizes?: string[];
+  columnsConfig?: ColumnConfig[];
 };
 
 export type GridTableComponents = {
