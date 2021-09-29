@@ -30,14 +30,14 @@ const Circle: CircleComponent = styled.span<CircleComponentProps>`
   justify-content: center;
   align-items: center;
   background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
-  border-radius: ${(p) => p.theme.spacing.unit(p.size)}px;
+  border-radius: ${(p) => (p.square ? 0 : p.theme.spacing.unit(p.size))}px;
   text-align: center;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   min-width: ${(p) => p.theme.spacing.unit(p.size)}px;
   box-sizing: border-box;
   ${(p) => (p.color ? `color ${p.color(p.theme)};` : '')}
   ${(p) => {
-    const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE;
+    const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE && !p.square;
     return shouldHavePadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px` : '';
   }};
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
@@ -48,6 +48,7 @@ export const Badge: BadgeComponent = ({
   color,
   children,
   animateOnChange = false,
+  bold,
   ...props
 }) => {
   const CircleContent = () => {
@@ -56,7 +57,11 @@ export const Badge: BadgeComponent = ({
     if (isElement(children)) return children;
 
     return (
-      <Typography type="tertiary" color={(t) => (color ? color(t) : t.color.textLight)}>
+      <Typography
+        type="tertiary"
+        color={(t) => (color ? color(t) : t.color.textLight)}
+        weight={bold ? 'bold' : 'regular'}
+      >
         {children}
       </Typography>
     );

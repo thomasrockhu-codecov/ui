@@ -1026,6 +1026,89 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #A0A09B;
+  border-radius: 0px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Square Badge
+    </span>
+    <div
+      className="c0"
+    >
+      <span
+        className="c2"
+        size={5}
+      >
+        <span
+          className="c3"
+        >
+          6
+        </span>
+      </span>
+    </div>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #0046FF;
   border-radius: 20px;
   text-align: center;

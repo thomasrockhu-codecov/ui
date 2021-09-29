@@ -7,6 +7,8 @@ export type Props = {
   backgroundColor?: ColorFn;
   color?: ColorFn;
   animateOnChange?: boolean;
+  square?: boolean;
+  bold?: boolean;
 } & HtmlProps;
 
 export type Circle = Props & {
