@@ -1,3 +1,17 @@
+## [8.0.8](https://github.com/nordnet/ui/compare/v8.0.7...v8.0.8) (2021-09-29)
+
+
+### Bug Fixes
+
+* add sfdr b adge ([003af8f](https://github.com/nordnet/ui/commit/003af8f))
+* better small screen logic ([e32fd6b](https://github.com/nordnet/ui/commit/e32fd6b))
+* clean up branch, remove sfdr stuff ([937fc6c](https://github.com/nordnet/ui/commit/937fc6c))
+* correct styled components syntax ([05f4a48](https://github.com/nordnet/ui/commit/05f4a48))
+* dont use size. hardcode instead ([ac152e0](https://github.com/nordnet/ui/commit/ac152e0))
+* fix and merge master ([9d268c0](https://github.com/nordnet/ui/commit/9d268c0))
+* iphone 5 screen ([cb99021](https://github.com/nordnet/ui/commit/cb99021))
+* move css comment ([5d52dff](https://github.com/nordnet/ui/commit/5d52dff))
+
 ## [8.0.7](https://github.com/nordnet/ui/compare/v8.0.6...v8.0.7) (2021-09-23)
 
 
