@@ -27,7 +27,7 @@ export const CommonBadges = () => {
       <Box my={2}>
         <Typography type="title2">Square Badge</Typography>
         <Box my={2}>
-          <Badge square bold backgroundColor={(t) => t.color.sfdrArticle6}>
+          <Badge variant="square" weight="bold" backgroundColor={(t) => t.color.sfdrArticle6}>
             6
           </Badge>
         </Box>

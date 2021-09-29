@@ -7,14 +7,14 @@ export type Props = {
   backgroundColor?: ColorFn;
   color?: ColorFn;
   animateOnChange?: boolean;
-  square?: boolean;
-  bold?: boolean;
+  variant?: string;
+  weight?: string;
 } & HtmlProps;
 
-export type Circle = Props & {
+export type Wrapper = Props & {
   $animateOnChange?: boolean;
   size: number;
 };
 
 export type BadgeComponent = React.FC<Props>;
-export type CircleComponent = React.FC<Circle>;
+export type WrapperComponent = React.FC<Wrapper>;
