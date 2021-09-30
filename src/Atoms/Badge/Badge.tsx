@@ -1,4 +1,3 @@
-// import { useEffect } from '@storybook/addons';
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Typography } from '../..';
@@ -29,17 +28,17 @@ const Wrapper: WrapperComponent = styled.span<WrapperComponentProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
-  border-radius: ${(p) => (p.variant === 'square' ? 0 : p.theme.spacing.unit(p.size))}px;
   text-align: center;
-  height: ${(p) => p.theme.spacing.unit(p.size)}px;
-  min-width: ${(p) => p.theme.spacing.unit(p.size)}px;
   box-sizing: border-box;
-  ${(p) => (p.color ? `color ${p.color(p.theme)};` : '')}
-  ${(p) => {
-    const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE && p.variant !== 'square';
-    return shouldHavePadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px` : '';
-  }};
+  height: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
+  min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
+  background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
+  ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')};
+  ${(p) => (p.variant !== 'square' ? `border-radius: ${p.theme.spacing.unit(p.badgeSize)}px` : '')};
+  ${(p) =>
+    p.badgeSize === MEDIUM_BADGE_SIZE && p.variant !== 'square'
+      ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px;`
+      : ''};
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
 `;
 
@@ -73,7 +72,7 @@ export const Badge: BadgeComponent = ({
   return (
     <Wrapper
       $animateOnChange={animateOnChange}
-      size={typeof children !== 'undefined' ? MEDIUM_BADGE_SIZE : SMALL_BADGE_SIZE}
+      badgeSize={typeof children !== 'undefined' ? MEDIUM_BADGE_SIZE : SMALL_BADGE_SIZE}
       backgroundColor={backgroundColor}
       {...(textColorOnParent && { color })}
       {...props}

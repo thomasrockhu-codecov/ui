@@ -13,7 +13,7 @@ export type Props = {
 
 export type Wrapper = Props & {
   $animateOnChange?: boolean;
-  size: number;
+  badgeSize: number;
 };
 
 export type BadgeComponent = React.FC<Props>;
