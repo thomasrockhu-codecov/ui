@@ -1,3 +1,14 @@
+## [8.0.9](https://github.com/nordnet/ui/compare/v8.0.8...v8.0.9) (2021-09-30)
+
+
+### Bug Fixes
+
+* allow square and bold on badge ([bc43b66](https://github.com/nordnet/ui/commit/bc43b66))
+* remove size attr, and better styling ([e5cea90](https://github.com/nordnet/ui/commit/e5cea90))
+* type variant explicit ([75084ac](https://github.com/nordnet/ui/commit/75084ac))
+* update props ([6667748](https://github.com/nordnet/ui/commit/6667748))
+* update storyshot ([c26a268](https://github.com/nordnet/ui/commit/c26a268))
+
 ## [8.0.8](https://github.com/nordnet/ui/compare/v8.0.7...v8.0.8) (2021-09-29)
 
 
