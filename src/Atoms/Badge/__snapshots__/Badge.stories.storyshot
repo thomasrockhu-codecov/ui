@@ -1022,6 +1022,28 @@ Array [
   height: 20px;
   min-width: 20px;
   background-color: #A0A09B;
+  padding: 0 6px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  background-color: #85DA62;
+  padding: 0 6px;
 }
 
 .c0 {
@@ -1081,6 +1103,19 @@ Array [
           className="c3"
         >
           6
+        </span>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <span
+        className="c4"
+      >
+        <span
+          className="c3"
+        >
+          Article 8
         </span>
       </span>
     </div>

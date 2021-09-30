@@ -36,7 +36,7 @@ const Wrapper: WrapperComponent = styled.span<WrapperComponentProps>`
   ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')};
   ${(p) => (p.variant !== 'square' ? `border-radius: ${p.theme.spacing.unit(p.badgeSize)}px` : '')};
   ${(p) =>
-    p.badgeSize === MEDIUM_BADGE_SIZE && p.variant !== 'square'
+    p.badgeSize === MEDIUM_BADGE_SIZE
       ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px;`
       : ''};
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
