@@ -36,12 +36,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -83,7 +83,6 @@ Array [
       <span
         aria-label="7 new orders"
         className="c2"
-        size={5}
       >
         <span
           className="c3"
@@ -127,12 +126,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -173,7 +172,6 @@ Array [
       Orders 
       <span
         className="c2"
-        size={5}
       >
         <span
           className="c3"
@@ -201,12 +199,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
   -webkit-animation: scale 0.5s ease-out;
   animation: scale 0.5s ease-out;
@@ -381,7 +379,6 @@ Array [
         </button>
         <span
           className="c7"
-          size={5}
         >
           <span
             className="c8"
@@ -418,12 +415,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -596,7 +593,6 @@ Array [
         </button>
         <span
           className="c7"
-          size={5}
         >
           <span
             className="c8"
@@ -659,12 +655,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -692,7 +688,6 @@ Array [
   >
     <span
       className="c1"
-      size={5}
     >
       <span
         className="c2"
@@ -740,12 +735,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -786,7 +781,6 @@ Array [
       Orders 
       <span
         className="c2"
-        size={5}
       >
         <span
           className="c3"
@@ -830,12 +824,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -865,7 +859,6 @@ Array [
     >
       <span
         className="c2"
-        size={2}
       />
        
       Buy order
@@ -884,12 +877,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FF1900;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #FF1900;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -919,7 +912,6 @@ Array [
     >
       <span
         className="c2"
-        size={2}
       />
        
       Sell order
@@ -938,12 +930,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #A0A09B;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #A0A09B;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -973,7 +965,6 @@ Array [
     >
       <span
         className="c2"
-        size={2}
       />
        
       Exchange order
@@ -1026,12 +1017,93 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
+  background-color: #A0A09B;
+}
+
+.c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Square Badge
+    </span>
+    <div
+      className="c0"
+    >
+      <span
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          6
+        </span>
+      </span>
+    </div>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
   box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1087,7 +1159,6 @@ Array [
     >
       <span
         className="c2"
-        size={5}
       >
         <span
           className="c3"
@@ -1110,12 +1181,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -1161,7 +1232,6 @@ Array [
     >
       <span
         className="c2"
-        size={2}
       />
     </div>
   </div>,
@@ -1178,12 +1248,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #00D200;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #00D200;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1200,12 +1270,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FF1900;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #FF1900;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1222,12 +1292,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #A0A09B;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #A0A09B;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1244,12 +1314,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #00D200;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #00D200;
+  border-radius: 8px;
 }
 
 .c8 {
@@ -1265,12 +1335,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FF1900;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #FF1900;
+  border-radius: 8px;
 }
 
 .c9 {
@@ -1286,12 +1356,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #A0A09B;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #A0A09B;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -1354,7 +1424,6 @@ Array [
       >
         <span
           className="c3"
-          size={5}
         >
           <span
             className="c4"
@@ -1368,7 +1437,6 @@ Array [
       >
         <span
           className="c5"
-          size={5}
         >
           <span
             className="c4"
@@ -1382,7 +1450,6 @@ Array [
       >
         <span
           className="c6"
-          size={5}
         >
           <span
             className="c4"
@@ -1400,7 +1467,6 @@ Array [
       >
         <span
           className="c7"
-          size={2}
         />
       </div>
       <div
@@ -1408,7 +1474,6 @@ Array [
       >
         <span
           className="c8"
-          size={2}
         />
       </div>
       <div
@@ -1416,7 +1481,6 @@ Array [
       >
         <span
           className="c9"
-          size={2}
         />
       </div>
     </div>
@@ -1434,12 +1498,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1499,7 +1563,6 @@ Array [
     >
       <span
         className="c3"
-        size={5}
       >
         <span
           className="c4"
@@ -1522,12 +1585,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1588,7 +1651,6 @@ Array [
     >
       <span
         className="c3"
-        size={5}
       >
         <span
           className="c4"
@@ -1602,7 +1664,6 @@ Array [
     >
       <span
         className="c3"
-        size={5}
       >
         <span
           className="c4"
@@ -1651,13 +1712,13 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
   color: #FFFFFF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1686,7 +1747,6 @@ Array [
     <span
       className="c1"
       color={[Function]}
-      size={5}
     >
       <span
         className="c2"
@@ -1756,13 +1816,13 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 20px;
   text-align: center;
+  box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  box-sizing: border-box;
+  background-color: #0046FF;
   color: #FFFFFF;
+  border-radius: 20px;
   padding: 0 6px;
 }
 
@@ -1807,7 +1867,6 @@ Array [
     <span
       className="c1"
       color={[Function]}
-      size={5}
     >
       <span
         className="c2"
@@ -1882,12 +1941,12 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0046FF;
-  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  box-sizing: border-box;
+  background-color: #0046FF;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -1911,7 +1970,6 @@ Array [
   >
     <span
       className="c1 c2"
-      size={2}
     />
   </div>,
 ]
