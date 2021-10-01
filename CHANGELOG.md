@@ -1,3 +1,12 @@
+## [8.0.10](https://github.com/nordnet/ui/compare/v8.0.9...v8.0.10) (2021-10-01)
+
+
+### Bug Fixes
+
+* allow extra padding on square badge for passed components ([8893e29](https://github.com/nordnet/ui/commit/8893e29))
+* allow rect type for wide sfdr badge ([fa3fccb](https://github.com/nordnet/ui/commit/fa3fccb))
+* update snapshot ([59801b9](https://github.com/nordnet/ui/commit/59801b9))
+
 ## [8.0.9](https://github.com/nordnet/ui/compare/v8.0.8...v8.0.9) (2021-09-30)
 
 
