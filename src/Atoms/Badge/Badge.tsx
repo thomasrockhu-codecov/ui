@@ -34,9 +34,12 @@ const Wrapper: WrapperComponent = styled.span<WrapperComponentProps>`
   min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
   background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
   ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')};
-  ${(p) => (p.variant !== 'square' ? `border-radius: ${p.theme.spacing.unit(p.badgeSize)}px` : '')};
   ${(p) =>
-    p.badgeSize === MEDIUM_BADGE_SIZE
+    p.variant !== 'square' && p.variant !== 'rect'
+      ? `border-radius: ${p.theme.spacing.unit(p.badgeSize)}px`
+      : ''};
+  ${(p) =>
+    p.badgeSize === MEDIUM_BADGE_SIZE && p.variant !== 'square'
       ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px;`
       : ''};
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
