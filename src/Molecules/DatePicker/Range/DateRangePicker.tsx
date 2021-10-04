@@ -13,7 +13,7 @@ import {
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Button, Flexbox, Icon, Modal, useMedia } from '../../..';
+import { Box, Button, Flexbox, OldIcon, Modal, useMedia } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { getDateFormat, parseDateString } from '../shared/dateUtils';
@@ -159,7 +159,7 @@ const DateRangePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => 
     </>
   );
 
-  const inputRightAddon = <Icon.CalendarTwoRows size={6} />;
+  const inputRightAddon = <OldIcon.CalendarTwoRows size={6} />;
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {

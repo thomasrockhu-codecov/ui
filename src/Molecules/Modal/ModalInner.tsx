@@ -8,7 +8,7 @@ import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Flexbox, Icon, useKeyPress } from '../..';
+import { Flexbox, OldIcon, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_MOBILE = 3;
@@ -245,7 +245,7 @@ export const ModalInner: React.FC<Props> = ({
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton type="button" onClick={onClose} $fullScreenMobile={fullScreenMobile}>
-                  <Icon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
+                  <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
               )}
             </Dialog>

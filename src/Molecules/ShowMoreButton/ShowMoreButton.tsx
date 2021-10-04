@@ -1,10 +1,10 @@
 import React from 'react';
 import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
-import { Icon, Link, Flexbox, Spinner, Typography } from '../..';
+import { OldIcon, Link, Flexbox, Spinner, Typography } from '../..';
 import { ShowMoreButtonComponent } from './ShowMoreButton.types';
 
-const StyledIconThinChevron = styled(Icon.Chevron)`
+const StyledIconThinChevron = styled(OldIcon.Chevron)`
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 

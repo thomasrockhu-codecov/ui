@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Pill } from './Pill';
 import docs from './Pill.mdx';
-import { Button, Flexbox, Icon, Typography } from '../..';
+import { Button, Flexbox, OldIcon, Typography } from '../..';
 
 export default {
   title: 'Atoms / Pill',
@@ -41,7 +41,7 @@ export const pillWithBar = () => (
       </Flexbox>
       <Flexbox item>
         <Button type="button" variant="neutral">
-          <Icon.CrossThin size={2} />
+          <OldIcon.CrossThin size={2} />
         </Button>
       </Flexbox>
     </Flexbox>

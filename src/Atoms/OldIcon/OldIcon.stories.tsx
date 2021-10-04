@@ -1,14 +1,14 @@
 import React from 'react';
 import { number, select, color } from '@storybook/addon-knobs';
 import { Theme } from '../../theme/theme.types';
-import { Icon } from '../..';
+import { OldIcon } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
-  title: 'Atoms / Icon',
+  title: 'Atoms / OldIcon',
 };
 
-export const defaultUse = () => <Icon.ArrowRight />;
+export const defaultUse = () => <OldIcon.ArrowRight />;
 
 defaultUse.story = {
   name: 'Default use',
@@ -16,77 +16,77 @@ defaultUse.story = {
 
 export const inlineStory = () => (
   <>
-    You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
+    You can put the <OldIcon.ArrowRight inline /> directly in the text with inline prop!
   </>
 );
 
 const directionKnob = () => select('Direction', ['up', 'right', 'down', 'left'], 'up');
 
-export const thinArrow = () => <Icon.ThinArrow direction={directionKnob()} />;
+export const thinArrow = () => <OldIcon.ThinArrow direction={directionKnob()} />;
 
-export const thinChevron = () => <Icon.ThinChevron direction={directionKnob()} />;
+export const thinChevron = () => <OldIcon.ThinChevron direction={directionKnob()} />;
 
-export const chevron = () => <Icon.Chevron direction={directionKnob()} />;
+export const chevron = () => <OldIcon.Chevron direction={directionKnob()} />;
 
 export const sortArrow = () => (
-  <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
+  <OldIcon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
 );
 
 export const Account = () => (
-  <Icon.Account
+  <OldIcon.Account
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const CalendarO = () => (
-  <Icon.CalendarO
+  <OldIcon.CalendarO
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const FAQ = () => (
-  <Icon.FAQ size={number('Size', 10)} fill={(t) => color('Fill color', t.color.cta)} />
+  <OldIcon.FAQ size={number('Size', 10)} fill={(t) => color('Fill color', t.color.cta)} />
 );
 
 export const Percent = () => (
-  <Icon.Percent
+  <OldIcon.Percent
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const Profile = () => (
-  <Icon.Profile
+  <OldIcon.Profile
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const ThreeDotsO = () => (
-  <Icon.ThreeDotsO
+  <OldIcon.ThreeDotsO
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const TaxPercentage = () => (
-  <Icon.TaxPercentage
+  <OldIcon.TaxPercentage
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const Transfer = () => (
-  <Icon.Transfer
+  <OldIcon.Transfer
     size={number('Size', 10)}
     fill={(t) => color('Fill color', t.color.backgroundBlack)}
   />
 );
 
 export const UrgentMessage = () => (
-  <Icon.UrgentMessage
+  <OldIcon.UrgentMessage
     size={number('Size', 10)}
     fill={(t: Theme) => color('Fill color', t.color.text)}
     stroke={(t: Theme) => color('Stroke color', t.color.negative)}
@@ -98,7 +98,7 @@ inlineStory.story = {
 };
 
 export const differentSizeAndFill = () => (
-  <Icon.ArrowRight size={10} fill={(t) => t.color.positive} />
+  <OldIcon.ArrowRight size={10} fill={(t) => t.color.positive} />
 );
 
 differentSizeAndFill.story = {
@@ -110,16 +110,16 @@ export const withModifiedStroke = () => (
     items={[
       {
         title: 'Star with stroke modified',
-        component: <Icon.Star size={10} stroke={(t) => t.color.positive} />,
+        component: <OldIcon.Star size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'CrossThin with stroke modified',
-        component: <Icon.CrossThin size={10} stroke={(t) => t.color.positive} />,
+        component: <OldIcon.CrossThin size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'CheckMarkCircle with stroke modified',
         component: (
-          <Icon.CheckMarkCircle
+          <OldIcon.CheckMarkCircle
             size={10}
             fill={(t) => t.color.positive}
             stroke={(t) => t.color.negative}
@@ -129,7 +129,7 @@ export const withModifiedStroke = () => (
       {
         title: 'CrossCircle with stroke modified',
         component: (
-          <Icon.CrossCircle
+          <OldIcon.CrossCircle
             size={10}
             fill={(t) => t.color.positive}
             stroke={(t) => t.color.negative}
@@ -139,7 +139,7 @@ export const withModifiedStroke = () => (
       {
         title: 'InfoCircle with stroke modified',
         component: (
-          <Icon.InfoCircle
+          <OldIcon.InfoCircle
             size={10}
             fill={(t) => t.color.positive}
             stroke={(t) => t.color.negative}
@@ -149,7 +149,7 @@ export const withModifiedStroke = () => (
       {
         title: 'WarningTriangle with stroke modified',
         component: (
-          <Icon.WarningTriangle
+          <OldIcon.WarningTriangle
             size={10}
             fill={(t) => t.color.positive}
             stroke={(t) => t.color.negative}
@@ -158,12 +158,16 @@ export const withModifiedStroke = () => (
       },
       {
         title: 'Star24 with both stroke modified',
-        component: <Icon.Star24 size={10} stroke={(t) => t.color.positive} />,
+        component: <OldIcon.Star24 size={10} stroke={(t) => t.color.positive} />,
       },
       {
         title: 'Star24 with both stroke and fill modified',
         component: (
-          <Icon.Star24 size={10} fill={(t) => t.color.positive} stroke={(t) => t.color.positive} />
+          <OldIcon.Star24
+            size={10}
+            fill={(t) => t.color.positive}
+            stroke={(t) => t.color.positive}
+          />
         ),
       },
     ]}
@@ -174,9 +178,9 @@ withModifiedStroke.story = {
   name: 'With modified stroke',
 };
 
-export const availableIcons = () => (
+export const availableOldIcons = () => (
   <Display
-    items={Object?.entries(Icon)?.map(
+    items={Object?.entries(OldIcon)?.map(
       ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
         title: iconName,
         component: (
@@ -189,13 +193,13 @@ export const availableIcons = () => (
   />
 );
 
-availableIcons.story = {
-  name: 'Available icons',
+availableOldIcons.story = {
+  name: 'Available old icons',
 };
 
-export const allIconsColored = () => (
+export const allOldIconsColored = () => (
   <>
-    {Object?.entries(Icon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
+    {Object?.entries(OldIcon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}
@@ -207,6 +211,6 @@ export const allIconsColored = () => (
   </>
 );
 
-allIconsColored.story = {
+allOldIconsColored.story = {
   name: 'All icons (colored)',
 };

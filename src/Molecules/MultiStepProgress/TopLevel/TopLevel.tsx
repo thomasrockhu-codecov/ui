@@ -15,7 +15,7 @@ import {
   STEP_NUMBER_SIZE,
   VERTICAL_PADDING,
 } from '../constants';
-import { Icon, Flexbox, Media } from '../../..';
+import { OldIcon, Flexbox, Media } from '../../..';
 
 const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
 const contentLeftPaddingDesktop =
@@ -235,7 +235,7 @@ export const TopLevel: TopLevelComponent = ({
                             {label}
                           </Flexbox>
                           <Flexbox item>
-                            <Icon.ThinChevron direction="down" />
+                            <OldIcon.ThinChevron direction="down" />
                           </Flexbox>
                         </Flexbox>
                       </Content>

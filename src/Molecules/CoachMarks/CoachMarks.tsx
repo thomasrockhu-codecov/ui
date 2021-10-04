@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
-import { Button, Flexbox, Icon, Media, Typography } from '../..';
+import { Button, Flexbox, OldIcon, Media, Typography } from '../..';
 import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize } from '../../common/Hooks';
@@ -205,7 +205,7 @@ export const CoachMarks: Component = ({
               </FooterFlex>
             </Flexbox>
             <CloseButton variant="neutral" onClick={handleClose}>
-              <Icon.CrossMedium size={CLOSE_ICON_SIZE} />
+              <OldIcon.CrossMedium size={CLOSE_ICON_SIZE} />
             </CloseButton>
           </Bubble>
           <SVG>

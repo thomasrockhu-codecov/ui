@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Icon } from '../../../..';
+import { OldIcon } from '../../../..';
 import { SortIconComponent } from './HeaderContent.types';
 import { SORT_ORDER_NONE } from '../../shared/constants';
 
-const StyledIconChevronDown = styled(Icon.ChevronDown)`
+const StyledIconChevronDown = styled(OldIcon.ChevronDown)`
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
-const StyledIconSortArrow = styled(Icon.SortArrow)`
+const StyledIconSortArrow = styled(OldIcon.SortArrow)`
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { Flexbox, FormField, FormLabel, Icon, Tooltip, Typography } from '../../..';
+import { Flexbox, FormField, FormLabel, OldIcon, Tooltip, Typography } from '../../..';
 import { CheckboxComponent, InternalInputProps, Props } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
@@ -12,7 +12,7 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
   <input ref={ref} {...R.omit(['hasError', 'visuallyFocused'], props)} />
 ));
 
-const TooltipIcon = styled(Icon.Questionmark)`
+const TooltipIcon = styled(OldIcon.Questionmark)`
   display: inline;
   vertical-align: middle;
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
@@ -171,7 +171,7 @@ const Checkbox: CheckboxComponent & { components: typeof components } = (props) 
           />
 
           <CheckmarkBox container alignItems="center" justifyContent="center" size={getSize(size)}>
-            <Icon.CheckMark size={3} color="transparent" />
+            <OldIcon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
 
           <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox, Icon, Typography } from '../../../index';
+import { Button, Flexbox, OldIcon, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
 import PageItems from '../PageItems';
@@ -19,8 +19,7 @@ const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrent
     $isCurrentPage &&
     `background-color: ${theme.color.cta}; cursor: default`}
   ${({ $type, theme }) =>
-    $type === 'chevron' &&
-    `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
+    $type === 'chevron' && `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
 
   &:hover {
     span {
@@ -102,9 +101,9 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label 
   <Flexbox item container alignItems="center">
     <StyledButton $type="chevron" onClick={onClick} aria-label={label}>
       {direction === 'left' ? (
-        <Icon.ChevronLeft inline size={3} />
+        <OldIcon.ChevronLeft inline size={3} />
       ) : (
-        <Icon.ChevronRight inline size={3} />
+        <OldIcon.ChevronRight inline size={3} />
       )}
     </StyledButton>
   </Flexbox>

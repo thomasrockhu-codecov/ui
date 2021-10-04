@@ -10,11 +10,11 @@ import FadedScroll from './Atoms/FadedScroll';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
-import Icon from './Atoms/Icon';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
+import OldIcon from './Atoms/OldIcon';
 import Pill from './Atoms/Pill';
 import Portal from './Atoms/Portal';
 import Separator from './Atoms/Separator';
@@ -116,6 +116,8 @@ export type {
   SortOrder,
 };
 
+const Icon = OldIcon;
+
 /** Runtime code */
 export {
   /** @deprecated */ Select,
@@ -166,6 +168,7 @@ export {
   Modal,
   MultiStepProgress,
   Number,
+  OldIcon,
   PageHeaderCard,
   PageWrapper,
   Pagination,

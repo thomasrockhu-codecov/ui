@@ -1,6 +1,6 @@
 import React from 'react';
 import FlexTable from '../FlexTable';
-import { Button, Flag, Flexbox, Icon, Typography } from '../../..';
+import { Button, Flag, Flexbox, OldIcon, Typography } from '../../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
 import docs from '../FlexTable.mdx';
 
@@ -140,7 +140,7 @@ export const WithActionsColumn = () => (
       <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       <FlexTable.Cell columnId="actionsColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS}>
         <Button variant="neutral">
-          <Icon.ThreeDots />
+          <OldIcon.ThreeDots />
         </Button>
       </FlexTable.Cell>
     </FlexTable.Row>
@@ -150,7 +150,7 @@ export const WithActionsColumn = () => (
       <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       <FlexTable.Cell columnId="actionsColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS}>
         <Button variant="neutral">
-          <Icon.ThreeDots />
+          <OldIcon.ThreeDots />
         </Button>
       </FlexTable.Cell>
     </FlexTable.Row>
@@ -160,7 +160,7 @@ export const WithActionsColumn = () => (
       <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       <FlexTable.Cell columnId="actionsColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS}>
         <Button variant="neutral">
-          <Icon.ThreeDots />
+          <OldIcon.ThreeDots />
         </Button>
       </FlexTable.Cell>
     </FlexTable.Row>

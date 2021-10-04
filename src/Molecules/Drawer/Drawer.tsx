@@ -7,7 +7,7 @@ import { AnimatePresence, motion, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
+import { Button, OldIcon, Portal, Typography, useKeyPress, useMedia } from '../..';
 
 const CROSS_SIZE = 5;
 const PADDING_MOBILE = 3;
@@ -136,7 +136,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
-export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
+export const Drawer = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,
@@ -243,7 +243,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
                     <CloseButton type="button" variant="neutral" onClick={handleClose}>
-                      <Icon.CrossMedium size={4} title={closeButtonTitle} />
+                      <OldIcon.CrossMedium size={4} title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
@@ -256,7 +256,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       </AnimatePresence>
     );
   },
-) as any) as React.FC<Props> & {
+) as any as React.FC<Props> & {
   components: typeof components;
 };
 

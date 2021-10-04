@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Box, Icon } from '../..';
+import { Flexbox, Box, OldIcon } from '../..';
 import Button from '../Button';
 import PageWrapper from '../PageWrapper';
 import { Props } from './BottomWizardBar.types';
@@ -99,7 +99,7 @@ const BottomWizardBar: React.FC<Props> = ({
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
                     <Flexbox container justifyContent="center" alignItems="center" gutter={2}>
-                      <Icon.ThinChevron direction="left" inline color="currentColor" size={4} />
+                      <OldIcon.ThinChevron direction="left" inline color="currentColor" size={4} />
                       {previousText}
                     </Flexbox>
                   </Button>

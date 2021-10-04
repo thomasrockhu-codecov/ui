@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Icon } from '../../../../..';
+import { Box, OldIcon } from '../../../../..';
 import { Text } from '../../../Text';
 import { visuallyHiddenCss } from '../../../../../Atoms/VisuallyHidden';
 
@@ -22,7 +22,7 @@ export const Search = React.forwardRef<
   return (
     <Box px={props.fullscreenOnMobile ? 0 : 3} my={props.hidden ? 0 : 2} mb={props.hidden ? 0 : 1}>
       <StyledInputText
-        leftAddon={<Icon.Search size={4} />}
+        leftAddon={<OldIcon.Search size={4} />}
         label="Search"
         ref={ref}
         size={!props.fullscreenOnMobile ? 's' : undefined}

@@ -7,7 +7,7 @@ import {
   Drawer,
   FadedScroll,
   Flexbox,
-  Icon,
+  OldIcon,
   Typography,
   Link,
   LinkBuy,
@@ -119,7 +119,7 @@ export const withCustomTitle = () => {
           onClose={onClose}
           title={
             <Flexbox container gutter={2} alignItems="center">
-              <Icon.Bank />
+              <OldIcon.Bank />
               <Typography type="title2" as="h2">
                 Custom title
               </Typography>

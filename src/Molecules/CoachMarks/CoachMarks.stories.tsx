@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import { Box, Button, Card, CoachMarks, Flexbox, Icon, Typography } from '../..';
+import { Box, Button, Card, CoachMarks, Flexbox, OldIcon, Typography } from '../..';
 
 const MockItem = styled.div`
   padding: ${(p) => p.theme.spacing.unit(5)}px;
@@ -42,7 +42,7 @@ export const defaultStory = () => {
             steps={[
               {
                 referenceElement,
-                icon: <Icon.Bank size={8} />,
+                icon: <OldIcon.Bank size={8} />,
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 placement: 'bottom',
@@ -112,7 +112,7 @@ export const MultpipleSteps = () => {
               steps={[
                 {
                   referenceElement: referenceElement1,
-                  icon: <Icon.Bank size={8} />,
+                  icon: <OldIcon.Bank size={8} />,
                   title: 'New feature',
                   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                   placement: 'right',

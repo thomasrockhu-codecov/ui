@@ -3,7 +3,7 @@ import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { NumberComponent, Props, Variant } from './Number.types';
-import { Flexbox, FormField, Icon, Typography, VisuallyHidden } from '../../..';
+import { Flexbox, FormField, OldIcon, Typography, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getNumberAsString, getStringAsNumber } from './utils';
 import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
@@ -366,11 +366,11 @@ const NumberInput: NumberComponent & {
             <>
               <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
                 <VisuallyHidden>decrease number by {step}</VisuallyHidden>
-                <Icon.Minus size={3} />
+                <OldIcon.Minus size={3} />
               </Stepper>
               <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
                 <VisuallyHidden>increase number by {step}</VisuallyHidden>
-                <Icon.Plus size={3} />
+                <OldIcon.Plus size={3} />
               </Stepper>
             </>
           )}

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 
-import { Flexbox, Icon, Typography } from '../..';
+import { Flexbox, OldIcon, Typography } from '../..';
 import { Props } from './ProgressBar.types';
 
 const StyledContainer = styled(Flexbox).withConfig({
@@ -156,17 +156,20 @@ const ProgressBar: FC<Props> = ({
     const getStepIcon = () => {
       if (stepDone) {
         return (
-          <Icon.CheckMark color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={4} />
+          <OldIcon.CheckMark
+            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
+            size={4}
+          />
         );
       }
       if (stepActive && failed) {
         return (
-          <Icon.Cross color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={3} />
+          <OldIcon.Cross color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={3} />
         );
       }
       if (stepActive && warning) {
         return (
-          <Icon.WarningTriangleHollow
+          <OldIcon.WarningTriangleHollow
             color={(t) => (colorText ? colorText(t) : t.color.textLight)}
             size={4}
           />

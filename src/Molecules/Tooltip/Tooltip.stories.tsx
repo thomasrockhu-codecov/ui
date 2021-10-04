@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Flexbox, Icon, Modal } from '../..';
+import { Box, Drawer, Flexbox, OldIcon, Modal } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -175,7 +175,7 @@ export const ControlledOpen = () => {
         <Box mt={10}>
           <Tooltip isOpen={isOpen} label="This is a controlled tooltip." position="right">
             <div>
-              <Icon.Pen />
+              <OldIcon.Pen />
             </div>
           </Tooltip>
         </Box>
@@ -197,7 +197,7 @@ export const WrapChild = () => {
             position="right"
             wrapChild
           >
-            <Icon.Pen />
+            <OldIcon.Pen />
           </Tooltip>
         </Box>
       </Flexbox>
@@ -210,7 +210,7 @@ export const WrapChild = () => {
             position="right"
           >
             <div>
-              <Icon.Pen />
+              <OldIcon.Pen />
             </div>
           </Tooltip>
         </Box>
@@ -230,7 +230,7 @@ export const BrokenPositioning = () => {
           label="This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this."
           position="right"
         >
-          <Icon.Pen />
+          <OldIcon.Pen />
         </Tooltip>
       </Box>
     </Flexbox>

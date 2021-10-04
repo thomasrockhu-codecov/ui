@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Button, Flexbox, Icon } from '../../../index';
+import { Box, Button, Flexbox, OldIcon } from '../../../index';
 import { BrowseButtonProps, PaginationCompactProps } from '../Pagination.types';
 
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
@@ -17,7 +17,7 @@ const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
     <StyledButton onClick={onClick} variant="neutral" aria-label={label} $direction={direction}>
-      <Icon.ThinChevron direction={direction} size={4} />
+      <OldIcon.ThinChevron direction={direction} size={4} />
     </StyledButton>
   </Flexbox>
 );

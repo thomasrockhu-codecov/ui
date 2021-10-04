@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Media } from '../../../../index';
+import { Button, OldIcon, Media } from '../../../../index';
 
 const SmallScreenExpandButton: React.FC<{
   className?: string;
@@ -16,9 +16,9 @@ const SmallScreenExpandButton: React.FC<{
     disabled={disabled}
   >
     {expanded ? (
-      <Icon.ChevronUp size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
+      <OldIcon.ChevronUp size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     ) : (
-      <Icon.ChevronDown size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
+      <OldIcon.ChevronDown size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     )}
   </Button>
 );
@@ -37,7 +37,7 @@ const LargeScreenExpandButton: React.FC<{
     aria-expanded={expanded}
     disabled={disabled}
   >
-    <Icon.ThinChevron
+    <OldIcon.ThinChevron
       direction={expanded ? 'up' : 'down'}
       size={size}
       fill={(t) => (disabled ? t.color.disabled : t.color.text)}

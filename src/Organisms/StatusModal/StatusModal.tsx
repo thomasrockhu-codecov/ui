@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Box, Button, Flexbox, Modal, Spinner, Typography, Icon } from '../..';
+import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..';
 import { Props } from './StatusModal.types';
 
 const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, options = {} }) => {
@@ -41,11 +41,11 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
         >
           {loading && <Spinner id={`${id}-spinner`} size={23} />}
           {status === 'SUCCESS' && (
-            <Icon.CheckMarkCircle fill={(t) => t.color.positive} size={23} />
+            <OldIcon.CheckMarkCircle fill={(t) => t.color.positive} size={23} />
           )}
-          {status === 'ERROR' && <Icon.CrossCircle fill={(t) => t.color.negative} size={23} />}
+          {status === 'ERROR' && <OldIcon.CrossCircle fill={(t) => t.color.negative} size={23} />}
           {status === 'WARNING' && (
-            <Icon.WarningTriangle color={(t) => t.color.warning} size={23} />
+            <OldIcon.WarningTriangle color={(t) => t.color.warning} size={23} />
           )}
           <Flexbox container direction="column" alignItems="center" gutter={2}>
             {title && (

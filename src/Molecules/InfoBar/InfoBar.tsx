@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Icon, Typography } from '../..';
+import { Box, Flexbox, OldIcon, Typography } from '../..';
 import PageWrapper from '../PageWrapper';
 import { FnHelper, InfoBarIconProps, InfoBarProps } from './InfoBar.types';
 
@@ -75,35 +75,35 @@ const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
   switch (variant) {
     case 'success':
       return (
-        <Icon.CheckMarkCircle
+        <OldIcon.CheckMarkCircle
           fill={(theme) => textLinkFn({ variant, theme })}
           stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'error':
       return (
-        <Icon.CrossCircle
+        <OldIcon.CrossCircle
           fill={(theme) => textLinkFn({ variant, theme })}
           stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'warning':
       return (
-        <Icon.WarningTriangle
+        <OldIcon.WarningTriangle
           fill={(theme) => textLinkFn({ variant, theme })}
           stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'general':
       return (
-        <Icon.InfoCircle
+        <OldIcon.InfoCircle
           fill={(theme) => textLinkFn({ variant, theme })}
           stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     default:
       return (
-        <Icon.InfoCircle
+        <OldIcon.InfoCircle
           fill={(theme) => textLinkFn({ variant, theme })}
           stroke={(theme) => bgFn({ variant, theme })}
         />
@@ -128,7 +128,7 @@ export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, c
             <Flexbox item>
               <Box pl={2}>
                 <button type="button" onClick={onClose}>
-                  <Icon.Cross size={3} fill={(theme) => textFn({ variant, theme })} />
+                  <OldIcon.Cross size={3} fill={(theme) => textFn({ variant, theme })} />
                 </button>
               </Box>
             </Flexbox>
