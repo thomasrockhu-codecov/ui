@@ -81,20 +81,6 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -124,6 +110,20 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -396,7 +396,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -630,20 +630,6 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -673,6 +659,20 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -946,7 +946,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -1181,20 +1181,6 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -1224,6 +1210,20 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -1497,7 +1497,7 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -1732,20 +1732,6 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   cursor: pointer;
 }
 
-.c19 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -1775,6 +1761,20 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
 .c12[type='reset']:-moz-focusring,
 .c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -2052,7 +2052,7 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -2294,20 +2294,6 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -2337,6 +2323,20 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -2619,7 +2619,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -2865,20 +2865,6 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -2908,6 +2894,20 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3181,7 +3181,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -3414,20 +3414,6 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   cursor: pointer;
 }
 
-.c19 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -3457,6 +3443,20 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
 .c12[type='reset']:-moz-focusring,
 .c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3732,7 +3732,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -3984,20 +3984,6 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -4027,6 +4013,20 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -4299,7 +4299,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -4573,34 +4573,6 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   cursor: pointer;
 }
 
-.c19 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c26 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -4630,6 +4602,34 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
 .c12[type='reset']:-moz-focusring,
 .c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c26 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c3 {
@@ -4905,7 +4905,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                     <Flexbox
                       item={true}
                     >
-                      <OldIcon.Globe
+                      <Icon.Globe
                         size={3}
                       />
                     </Flexbox>
@@ -5147,7 +5147,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                     <Flexbox
                       item={true}
                     >
-                      <OldIcon.Globe
+                      <Icon.Globe
                         size={3}
                       />
                     </Flexbox>
@@ -5372,7 +5372,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                     <Flexbox
                       item={true}
                     >
-                      <OldIcon.Globe
+                      <Icon.Globe
                         size={3}
                       />
                     </Flexbox>
@@ -5597,7 +5597,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                     <Flexbox
                       item={true}
                     >
-                      <OldIcon.Globe
+                      <Icon.Globe
                         size={3}
                       />
                     </Flexbox>
@@ -5794,7 +5794,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                     <Flexbox
                       item={true}
                     >
-                      <OldIcon.Globe
+                      <Icon.Globe
                         size={3}
                       />
                     </Flexbox>
@@ -6060,20 +6060,6 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -6103,6 +6089,20 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -6376,7 +6376,7 @@ exports[`Storyshots Molecules / Input / Phone With blur and focus function 1`] =
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
@@ -6611,20 +6611,6 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   cursor: pointer;
 }
 
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -6654,6 +6640,20 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
 .c11[type='reset']:-moz-focusring,
 .c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -6935,7 +6935,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                   <Flexbox
                     item={true}
                   >
-                    <OldIcon.Globe
+                    <Icon.Globe
                       size={3}
                     />
                   </Flexbox>
