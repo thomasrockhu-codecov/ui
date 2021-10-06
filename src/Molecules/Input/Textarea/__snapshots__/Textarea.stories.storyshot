@@ -2471,10 +2471,7 @@ exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolle
 `;
 
 exports[`Storyshots Molecules / Input / Textarea With max length 20 characters 1`] = `
-Array [
-  <br />,
-  <br />,
-  .c3 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2522,7 +2519,6 @@ Array [
   margin: 0;
   vertical-align: top;
   box-sizing: border-box;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background-color: #FFFFFF;
@@ -2582,35 +2578,32 @@ Array [
 }
 
 <div
-    className="c0"
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
   >
-    <label
-      className="c1"
-      hidden={false}
+    <span
+      className="c2"
     >
-      <span
-        className="c2"
+      <div
+        className="c3"
       >
-        <div
-          className="c3"
-        >
-          Label 
-        </div>
-        <div>
-          <span
-            className="c4"
-          >
-            <textarea
-              className="NormalizedTextarea__Textarea-i5on9-0 c5"
-              maxLength={20}
-              rows={3}
-            />
-          </span>
-        </div>
+        Label 
+      </div>
+      <span
+        className="c4"
+      >
+        <textarea
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
+          maxLength={20}
+          rows={3}
+        />
       </span>
-    </label>
-  </div>,
-]
+    </span>
+  </label>
+</div>
 `;
 
 exports[`Storyshots Molecules / Input / Textarea With resize none 1`] = `
