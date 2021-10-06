@@ -82,6 +82,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
+    icon: rawColor.gray7,
 
     indexFundsBackground: rawColor.gray6,
     indexFundsFinnishAccent: [
@@ -241,7 +242,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle6: rawColor.gray3,
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
-    
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

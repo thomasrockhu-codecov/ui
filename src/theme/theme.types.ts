@@ -150,6 +150,8 @@ export type ThemeColors = {
   guidanceSelectionCardIcon: RawColor['brandPink'];
   /** 10 percent of cta */
   iconBackdropCta: string;
+  /** gray2 */
+  icon: RawColor['gray2'];
   /** gray6 */
   indexFundsBackground: RawColor['gray6'];
   /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */

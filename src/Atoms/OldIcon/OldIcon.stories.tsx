@@ -212,5 +212,5 @@ export const allOldIconsColored = () => (
 );
 
 allOldIconsColored.story = {
-  name: 'All icons (colored)',
+  name: 'All old icons (colored)',
 };
