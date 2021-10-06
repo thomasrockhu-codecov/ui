@@ -1,0 +1,5400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Persistent Tooltip Broken Positioning 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c1 {
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.c9 {
+  background-color: transparent;
+}
+
+.c16 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c5::before {
+  left: 0;
+  top: 0;
+}
+
+.c6 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <svg
+        aria-describedby=""
+        aria-hidden="true"
+        className="c2"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+          transform="rotate(45,7,21) scale(1.35)"
+        />
+      </svg>
+      <portal-dummy>
+        <span
+          className="c3 c4"
+          id=""
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c5"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          />
+          <div
+            className="c6 c7 "
+          >
+            <span
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Broken positioning
+                  </span>
+                  <button
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="c14"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c15 "
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c16"
+                >
+                  <span
+                    className="c17"
+                  >
+                    This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Custom Title And Description 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c8 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c6 {
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c14 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c14 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  box-sizing: border-box;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c11 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      id="nn-persistent-tooltip-22"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <span
+                  className="c9"
+                >
+                  I'm in a box
+                </span>
+              </div>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c10 c11"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c12"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c13 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  I am in a custom jsx description.
+                </span>
+              </div>
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  I am in a custom jsx description too!
+                </span>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Default Story 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-19"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      id="nn-persistent-tooltip-19"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                Default persistent tooltip
+              </span>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Different Positions 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c0 {
+  margin-bottom: 160px;
+  background-color: transparent;
+}
+
+.c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c10::before {
+  left: 0;
+  top: 0;
+}
+
+.c11 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c8 {
+  z-index: 400;
+}
+
+.c8[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c8[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c8[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c8[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
+}
+
+.c18 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <label
+        className="c2"
+        hidden={false}
+      >
+        <span
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            Label 
+          </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                aria-describedby="nn-persistent-tooltip-24"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                type="text"
+                variant="normal"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <portal-dummy>
+      <span
+        className="c8 c9"
+        id="nn-persistent-tooltip-24"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
+        }
+      >
+        <span
+          className="c10"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        />
+        <div
+          className="c11 c12 "
+        >
+          <span
+            className="c13"
+          >
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  Different Positions - Right
+                </span>
+                <button
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c19"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c20 "
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c21"
+              >
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the right
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
+  </div>,
+  .c0 {
+  margin-bottom: 160px;
+  background-color: transparent;
+}
+
+.c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c10::before {
+  left: 0;
+  top: 0;
+}
+
+.c11 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c8 {
+  z-index: 400;
+}
+
+.c8[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c8[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c8[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c8[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
+}
+
+.c18 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <label
+        className="c2"
+        hidden={false}
+      >
+        <span
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            Label 
+          </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                aria-describedby="nn-persistent-tooltip-25"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                type="text"
+                variant="normal"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <portal-dummy>
+      <span
+        className="c8 c9"
+        id="nn-persistent-tooltip-25"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
+        }
+      >
+        <span
+          className="c10"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        />
+        <div
+          className="c11 c12 "
+        >
+          <span
+            className="c13"
+          >
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  Different Positions - Bottom
+                </span>
+                <button
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c19"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c20 "
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c21"
+              >
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the bottom
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
+  </div>,
+  .c0 {
+  margin-bottom: 160px;
+  background-color: transparent;
+}
+
+.c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c10::before {
+  left: 0;
+  top: 0;
+}
+
+.c11 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c8 {
+  z-index: 400;
+}
+
+.c8[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c8[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c8[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c8[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
+}
+
+.c18 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <label
+        className="c2"
+        hidden={false}
+      >
+        <span
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            Label 
+          </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                aria-describedby="nn-persistent-tooltip-26"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                type="text"
+                variant="normal"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <portal-dummy>
+      <span
+        className="c8 c9"
+        id="nn-persistent-tooltip-26"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
+        }
+      >
+        <span
+          className="c10"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        />
+        <div
+          className="c11 c12 "
+        >
+          <span
+            className="c13"
+          >
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  Different Positions - Left
+                </span>
+                <button
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c19"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c20 "
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c21"
+              >
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
+  </div>,
+  .c0 {
+  margin-bottom: 160px;
+  background-color: transparent;
+}
+
+.c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10::before,
+.c10::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c10::before {
+  left: 0;
+  top: 0;
+}
+
+.c11 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c8 {
+  z-index: 400;
+}
+
+.c8[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c8[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c8[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c8[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c9 .c12 {
+  padding: 12px;
+}
+
+.c18 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <label
+        className="c2"
+        hidden={false}
+      >
+        <span
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            Label 
+          </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                aria-describedby="nn-persistent-tooltip-27"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                type="text"
+                variant="normal"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+    <portal-dummy>
+      <span
+        className="c8 c9"
+        id="nn-persistent-tooltip-27"
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
+        }
+      >
+        <span
+          className="c10"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        />
+        <div
+          className="c11 c12 "
+        >
+          <span
+            className="c13"
+          >
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  Different Positions - Top
+                </span>
+                <button
+                  className="NormalizedButton__Button-sc-ey7f5x-0 c17 c18"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c19"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c20 "
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="img"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                        fillRule="evenodd"
+                      />
+                      <title>
+                        Close by clicking X
+                      </title>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                className="c21"
+              >
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the top
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Persistent Tooltip In Drawer 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12:hover {
+  border-color: #4B4B46;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+}
+
+.c12::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c11 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.c5 {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.c0 {
+  padding: 20px 20px 0 20px;
+  margin-bottom: 8px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+@media (max-width:759px) {
+  .c5 {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width:759px) {
+  .c0 {
+    padding: 20px 12px 0 12px;
+  }
+}
+
+<portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div>
+          <div
+            className="c0"
+            onTouchStart={[Function]}
+          >
+            <button
+              className="NormalizedButton__Button-sc-ey7f5x-0 c1 c2"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c4"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <label
+                className="c7"
+                hidden={false}
+              >
+                <span
+                  className="c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    Label 
+                  </div>
+                  <span
+                    className="c10"
+                  >
+                    <div
+                      className="c11"
+                    >
+                      <input
+                        className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                        type="text"
+                        variant="normal"
+                      />
+                    </div>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Styled Subcomponents 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-23"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c7 {
+  background-color: transparent;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3::before,
+.c3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c3::before {
+  left: 0;
+  top: 0;
+}
+
+.c4 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFCF00;
+  border: solid 1px #FF1900;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c5 {
+  padding: 12px;
+}
+
+.c11 {
+  margin-left: 20px;
+}
+
+.c2 .c14 {
+  fill: #282823;
+  width: 8px;
+  height: 8px;
+}
+
+@media (min-width:760px) {
+  .c9 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1 c2"
+      id="nn-persistent-tooltip-23"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c3"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c4 c5 "
+      >
+        <span
+          className="c6"
+        >
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <span
+                className="c9"
+              >
+                I'm in a box
+              </span>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c10 c11"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c12"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c13 c14 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <span
+              className="c15"
+            >
+              The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
+            </span>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip With Max Width 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-20"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 120px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      id="nn-persistent-tooltip-20"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                Persistent tooltip with Max Width
+              </span>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip With Max Width Auto 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              aria-describedby="nn-persistent-tooltip-21"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      id="nn-persistent-tooltip-21"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                Persistent tooltip with max width auto
+              </span>
+              <button
+                className="NormalizedButton__Button-sc-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip Wrap Child 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c1 {
+  margin-top: 80px;
+  background-color: transparent;
+}
+
+.c9 {
+  background-color: transparent;
+}
+
+.c16 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c5::before {
+  left: 0;
+  top: 0;
+}
+
+.c6 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <span
+        aria-describedby="nn-persistent-tooltip-29"
+      >
+        <svg
+          aria-hidden="true"
+          className="c2"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+            transform="rotate(45,7,21) scale(1.35)"
+          />
+        </svg>
+      </span>
+      <portal-dummy>
+        <span
+          className="c3 c4"
+          id="nn-persistent-tooltip-29"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c5"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          />
+          <div
+            className="c6 c7 "
+          >
+            <span
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    With wrapchild prop
+                  </span>
+                  <button
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="c14"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c15 "
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c16"
+                >
+                  <span
+                    className="c17"
+                  >
+                    With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+  .c9 {
+  background-color: transparent;
+}
+
+.c16 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before,
+.c5::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c5::before {
+  left: 0;
+  top: 0;
+}
+
+.c6 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 316px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c4 .c7 {
+  padding: 12px;
+}
+
+.c13 {
+  margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-describedby="nn-persistent-tooltip-30"
+      >
+        <svg
+          aria-hidden="true"
+          className="c2"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+            transform="rotate(45,7,21) scale(1.35)"
+          />
+        </svg>
+      </div>
+      <portal-dummy>
+        <span
+          className="c3 c4"
+          id="nn-persistent-tooltip-30"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c5"
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          />
+          <div
+            className="c6 c7 "
+          >
+            <span
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    With a proper DOM-node as children
+                  </span>
+                  <button
+                    className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="c14"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        className="c15 "
+                        focusable="false"
+                        preserveAspectRatio="xMidYMid meet"
+                        role="img"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                          fillRule="evenodd"
+                        />
+                        <title>
+                          Close by clicking X
+                        </title>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c16"
+                >
+                  <span
+                    className="c17"
+                  >
+                    This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs.
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+]
+`;

@@ -2,17 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
 import { propOr } from 'ramda';
-import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td, Flexbox } from '..';
-import { rawColor } from './theme';
+import { createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr } from '..';
+import defaultColors from './defaultColors';
+import accessabilityColors from './accessabilityColors';
 import colorDocs from './Colors.md';
-import { Display } from '../common/Display';
 
 const Color = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(14)}px;
   height: ${(p) => p.theme.spacing.unit(14)}px;
   background-color: ${(p) => p.$color};
   border: 1px solid #eee;
-  display: ;
 `;
 
 const ColorInArray = styled.div<{ $color: string }>`
@@ -21,20 +20,19 @@ const ColorInArray = styled.div<{ $color: string }>`
   padding: 0;
   background-color: ${(p) => p.$color};
   border: 1px solid #eee;
-  display: ;
 `;
 
 const colorWithValue = (color: string | string[]) =>
   typeof color === 'string' ? (
     <>
       <Color $color={color} />
-      <div>{color}</div>
+      <>{color}</>
     </>
   ) : (
-    color.map((c: string) => (
+    color?.map((c: string) => (
       <Flexbox container gutter={1}>
         <ColorInArray $color={c} />
-        <div>{c}</div>
+        <>{c}</>
       </Flexbox>
     ))
   );
@@ -43,10 +41,11 @@ export default {
   title: 'Others / Theme',
 };
 
-export const documentation = () => <MD source={colorDocs} />;
+export const documentation = () => <MD>{colorDocs}</MD>;
 
 export const colorsSemantic = () => {
   const a11yTheme = createTheme({ a11yColors: true });
+  const darkTheme = createTheme({ darkColors: true });
   return (
     <Table>
       <Thead>
@@ -54,14 +53,16 @@ export const colorsSemantic = () => {
           <Th>Name</Th>
           <Th>Default</Th>
           <Th>A11y</Th>
+          <Th>Dark</Th>
         </Tr>
       </Thead>
       <Tbody>
-        {Object.keys(theme.color).map((title) => (
+        {Object.keys(theme.color)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>{title}</Td>
             <Td>{colorWithValue(theme.color[title])}</Td>
             <Td>{colorWithValue(a11yTheme.color[title])}</Td>
+            <Td>{colorWithValue(darkTheme.color[title])}</Td>
           </Tr>
         ))}
       </Tbody>
@@ -77,18 +78,29 @@ export const colorsPalette = () => {
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-      <h1>⚠️ Internal object, use colors (semantic)</h1>
-      <Display
-        items={Object.entries(rawColor).map(([title, color]) => ({
-          title,
-          component: (
-            <>
-              <Color $color={color} />
-              <div>{color}</div>
-            </>
-          ),
-        }))}
-      />
+      <h1>⚠️ Internal object, use colors (semantic)</h1>(
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
+            <Th>Dark</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {Object.keys(defaultColors)
+            ?.filter((title) => title !== 'palettes')
+            ?.map((title) => (
+              <Tr key={`theme-${title}`}>
+                <Td>{title}</Td>
+                <Td>{colorWithValue(defaultColors[title])}</Td>
+                <Td>{colorWithValue(accessabilityColors[title])}</Td>
+              </Tr>
+            ))}
+        </Tbody>
+      </Table>
+      );
     </>
   );
 };
@@ -107,7 +119,7 @@ export const screenSizes = () => (
       </Tr>
     </Thead>
     <Tbody>
-      {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+      {Object.entries(theme.breakpoints)?.map(([title, breakpoint]) => (
         <Tr key={`breakpoints-${title}`}>
           <Td>{title}</Td>
           <Td>

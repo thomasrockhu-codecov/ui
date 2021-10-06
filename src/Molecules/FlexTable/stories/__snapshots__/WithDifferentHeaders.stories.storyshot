@@ -63,9 +63,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -101,20 +101,20 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c14 {
@@ -128,6 +128,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
 
 .c20 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -135,8 +139,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -236,10 +239,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   }
 }
 
+@media (min-width:976px) {
+  .c19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c20 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -249,7 +279,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   <span
     className="c1"
   >
-    Controlled Sortable Headers
+    Controlled sortable headers
   </span>
   <div
     className="c2"
@@ -519,9 +549,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c19 {
@@ -557,20 +587,20 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   line-height: 1.5;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c9 {
@@ -584,6 +614,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
 
 .c22 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -591,8 +625,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -692,10 +725,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   }
 }
 
+@media (min-width:976px) {
+  .c21 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c22 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -705,7 +765,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   <span
     className="c1"
   >
-    Table Header Variations
+    Table header variations
   </span>
   <div
     className="c2"
@@ -991,9 +1051,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -1029,20 +1089,20 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c14 {
@@ -1056,6 +1116,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c23 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -1063,8 +1127,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1164,10 +1227,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   }
 }
 
+@media (min-width:976px) {
+  .c22 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c23 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -1177,7 +1267,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   <span
     className="c1"
   >
-    Uncontrolled Sortable Headers With Different Alignments
+    Uncontrolled sortable headers with different alignments
   </span>
   <div
     className="c2"
@@ -1455,9 +1545,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -1523,20 +1613,20 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c14 {
@@ -1550,6 +1640,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
 
 .c24 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -1557,8 +1651,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -1662,10 +1755,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   }
 }
 
+@media (min-width:976px) {
+  .c23 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c24 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -1675,7 +1795,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   <span
     className="c1"
   >
-    Sortable Headers – Only Ascending/Descending
+    Sortable headers – only ascending/descending
   </span>
   <div
     className="c2"
@@ -1929,9 +2049,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c22 {
@@ -1948,7 +2068,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c23 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1962,7 +2082,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c24 {
+.c25 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -2002,14 +2122,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .c19 {
@@ -2063,6 +2175,14 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   outline: 1px dotted ButtonText;
 }
 
+.c8 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .c9 {
   width: inherit;
 }
@@ -2078,20 +2198,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   padding-bottom: 4px;
 }
 
-.c20 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c20:focus {
-  outline: none;
-}
-
 .c18 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -2102,6 +2208,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 
 .c14 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -2109,8 +2219,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2128,8 +2237,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -2211,18 +2319,49 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   }
 }
 
-@media not all and (max-width:975px) {
+@media (min-width:976px) {
+  .c13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
 
+@media not all and (max-width:975px) {
+  .c20 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
-
+  .c23 {
+    display: none !important;
+  }
 }
 
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c14 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -2286,7 +2425,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   <span
     className="c1"
   >
-    Sticky Headers For Different ScreenSizes
+    Sticky headers for different screen sizes
   </span>
   <div
     className="c2"
@@ -2439,7 +2578,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2463,7 +2602,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2473,7 +2612,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2562,7 +2701,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2586,7 +2725,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2596,7 +2735,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2685,7 +2824,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2709,7 +2848,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2719,7 +2858,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2808,7 +2947,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2832,7 +2971,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2842,7 +2981,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2931,7 +3070,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2955,7 +3094,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -2965,7 +3104,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3054,7 +3193,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3078,7 +3217,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3088,7 +3227,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3177,7 +3316,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3201,7 +3340,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3211,7 +3350,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3300,7 +3439,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3324,7 +3463,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3334,7 +3473,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3423,7 +3562,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3447,7 +3586,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3457,7 +3596,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3546,7 +3685,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3570,7 +3709,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3580,7 +3719,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3669,7 +3808,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3693,7 +3832,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3703,7 +3842,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3792,7 +3931,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3816,7 +3955,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3826,7 +3965,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3915,7 +4054,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3939,7 +4078,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -3949,7 +4088,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4038,7 +4177,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4062,7 +4201,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4072,7 +4211,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4161,7 +4300,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4185,7 +4324,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4195,7 +4334,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4284,7 +4423,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4308,7 +4447,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4318,7 +4457,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4407,7 +4546,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4431,7 +4570,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4441,7 +4580,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4530,7 +4669,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4554,7 +4693,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4564,7 +4703,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4653,7 +4792,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4677,7 +4816,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4687,7 +4826,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4776,7 +4915,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4800,7 +4939,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4810,7 +4949,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4899,7 +5038,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4923,7 +5062,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -4933,7 +5072,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5022,7 +5161,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5046,7 +5185,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5056,7 +5195,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5145,7 +5284,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5169,7 +5308,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5179,7 +5318,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5268,7 +5407,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5292,7 +5431,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5302,7 +5441,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5391,7 +5530,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5415,7 +5554,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5425,7 +5564,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5514,7 +5653,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5538,7 +5677,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5548,7 +5687,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5637,7 +5776,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5661,7 +5800,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5671,7 +5810,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5760,7 +5899,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5784,7 +5923,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5794,7 +5933,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5883,7 +6022,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5907,7 +6046,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -5917,7 +6056,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6006,7 +6145,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6030,7 +6169,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6040,7 +6179,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6129,7 +6268,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6153,7 +6292,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6163,7 +6302,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6252,7 +6391,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6276,7 +6415,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6286,7 +6425,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6375,7 +6514,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6399,7 +6538,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6409,7 +6548,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6498,7 +6637,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6522,7 +6661,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6532,7 +6671,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6621,7 +6760,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6645,7 +6784,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6655,7 +6794,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6744,7 +6883,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6768,7 +6907,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6778,7 +6917,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6867,7 +7006,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6891,7 +7030,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -6901,7 +7040,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6990,7 +7129,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7014,7 +7153,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7024,7 +7163,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7113,7 +7252,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7137,7 +7276,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7147,7 +7286,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7236,7 +7375,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7260,7 +7399,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7270,7 +7409,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7359,7 +7498,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7383,7 +7522,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7393,7 +7532,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7482,7 +7621,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7506,7 +7645,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7516,7 +7655,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7605,7 +7744,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7629,7 +7768,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7639,7 +7778,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7728,7 +7867,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7752,7 +7891,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7762,7 +7901,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7851,7 +7990,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7875,7 +8014,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7885,7 +8024,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7974,7 +8113,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -7998,7 +8137,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8008,7 +8147,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8097,7 +8236,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8121,7 +8260,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8131,7 +8270,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8220,7 +8359,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8244,7 +8383,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8254,7 +8393,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8343,7 +8482,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8367,7 +8506,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8377,7 +8516,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8466,7 +8605,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8490,7 +8629,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
@@ -8500,7 +8639,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c24 c25"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8600,9 +8739,9 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c17 {
@@ -8638,20 +8777,20 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c14 {
@@ -8665,6 +8804,10 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
 
 .c21 {
   display: none;
+  margin-left: -4px;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
 }
 
 .c4 {
@@ -8672,8 +8815,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   margin-right: 0;
   margin-left: 0;
   cursor: auto;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-left: 0px;
   border-left: 2px solid transparent;
   border-bottom: 1px solid #EBEBE8;
 }
@@ -8773,10 +8915,37 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   }
 }
 
+@media (min-width:976px) {
+  .c20 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c21 {
+    -webkit-flex: 0 40px;
+    -ms-flex: 0 40px;
+    flex: 0 40px;
   }
 }
 
@@ -8786,7 +8955,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   <span
     className="c1"
   >
-    Uncontrolled Sortable Headers
+    Uncontrolled sortable headers
   </span>
   <div
     className="c2"

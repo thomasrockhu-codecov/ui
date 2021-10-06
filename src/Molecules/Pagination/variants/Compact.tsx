@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon, Button } from '../../../index';
-import { PaginationCompactProps, BrowseButtonProps } from '../Pagination.types';
+import { Box, Button, Flexbox, Icon } from '../../../index';
+import { BrowseButtonProps, PaginationCompactProps } from '../Pagination.types';
 
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   display: flex;
@@ -10,7 +10,6 @@ const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   flex-direction: row;
   justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
 `;
@@ -24,6 +23,8 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label 
 );
 
 const Compact: React.FC<PaginationCompactProps> = ({
+  currentPage,
+  numberOfPages,
   onClickPrevious,
   onClickNext,
   previousPageLabel,
@@ -31,8 +32,14 @@ const Compact: React.FC<PaginationCompactProps> = ({
 }) => {
   return (
     <Flexbox container gutter={1}>
-      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
-      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      {currentPage !== 1 && (
+        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      )}
+      {currentPage !== numberOfPages && (
+        <Box ml={currentPage <= 1 ? 9 : 0}>
+          <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+        </Box>
+      )}
     </Flexbox>
   );
 };

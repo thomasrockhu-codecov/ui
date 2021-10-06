@@ -6,6 +6,7 @@ export type CalendarDayProps = {
   disabled?: boolean;
   enabled?: boolean;
   locale: Locale;
+  focused: boolean;
   onClick?: (date: Date) => void;
   onKeyDown: (event: React.KeyboardEvent) => void;
   onFocus: () => void;
@@ -15,4 +16,5 @@ export type CalendarDayProps = {
   isFirstDay?: boolean;
   isLastDay?: boolean;
   withGutter?: boolean;
+  fullscreenMode?: boolean;
 };

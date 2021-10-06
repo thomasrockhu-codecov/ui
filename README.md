@@ -7,7 +7,7 @@
 
 ## Installation
 
-```js
+```bash
 npm install --save @nordnet/ui # or
 yarn add @nordnet/ui
 ```
@@ -22,7 +22,7 @@ import App from './App';
 
 const Root = (
   <ThemeProvider theme={theme}>
-    <App />
+    <App/>
   </ThemeProvider>
 );
 ReactDOM.render(Root, document.getElementById('app'));
@@ -60,7 +60,10 @@ To upgrade to latest `17.1.1` you need to upgrade away from `beta` first:
   > ⚠️ For v16.0.0@beta users only:
   > In v16, a JSON object stored in a Git note is used to keep track of the channels on which a version has been released, the @{channel} suffix is no longer necessary.
 
-  and it essentially will ask you to fix some git internals yourself, but there is a better way. [v16.0.0-beta.39 release notes](https://github.com/semantic-release/semantic-release/releases/tag/v16.0.0-beta.39) offers a script in this gist file https://gist.github.com/pvdlg/6b19e529ee5c1a20645675a44e5b3239. You will have to go through it and make it work.
+  and it essentially will ask you to fix some git internals yourself, but there is a better
+  way. [v16.0.0-beta.39 release notes](https://github.com/semantic-release/semantic-release/releases/tag/v16.0.0-beta.39)
+  offers a script in this gist file https://gist.github.com/pvdlg/6b19e529ee5c1a20645675a44e5b3239. You will have to go
+  through it and make it work.
 
 - https://github.com/semantic-release/semantic-release/releases/tag/v17.0.0
 
@@ -73,10 +76,17 @@ This open source project released by Nordnet is licensed under the MIT license.
 MIT (http://www.opensource.org/licenses/mit-license.php)
 
 [npm-url]: https://npmjs.org/package/@nordnet/ui
+
 [npm-image]: https://img.shields.io/npm/v/@nordnet/ui/latest.svg
+
 [travis-url]: https://travis-ci.com/nordnet/ui/
+
 [travis-image]: https://img.shields.io/travis/com/nordnet/ui.svg?style=flat-square
+
 [codecov-url]: https://codecov.io/gh/nordnet/ui
+
 [codecov-image]: https://img.shields.io/codecov/c/github/nordnet/ui.svg?style=flat-square
+
 [depstat-url]: https://david-dm.org/nordnet/ui
+
 [depstat-image]: https://david-dm.org/nordnet/ui.svg?style=flat-square

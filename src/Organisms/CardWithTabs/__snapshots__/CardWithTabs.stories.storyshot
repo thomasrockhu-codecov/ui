@@ -164,6 +164,7 @@ Array [
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -250,7 +251,7 @@ Array [
           >
             <button
               aria-selected={true}
-              className="NormalizedButton__Button-ey7f5x-0 c9"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c9"
               id="tabs-tab-0"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -276,7 +277,7 @@ Array [
           >
             <button
               aria-selected={false}
-              className="NormalizedButton__Button-ey7f5x-0 c9"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c9"
               id="tabs-tab-1"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -486,6 +487,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -622,7 +624,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -648,7 +650,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -921,6 +923,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c10,
@@ -1073,7 +1076,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c10"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c10"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1099,7 +1102,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c10"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c10"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1323,6 +1326,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -1409,7 +1413,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1435,7 +1439,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with Typography and ex
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1650,6 +1654,7 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c12,
@@ -1704,13 +1709,13 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
 
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1770,7 +1775,7 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c12"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c12"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1796,7 +1801,7 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c12"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c12"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -1975,6 +1980,7 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c9,
@@ -2061,7 +2067,7 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2087,7 +2093,7 @@ exports[`Storyshots Organisms / CardWithTabs with initialActiveTabIndex 1`] = `
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c9"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}

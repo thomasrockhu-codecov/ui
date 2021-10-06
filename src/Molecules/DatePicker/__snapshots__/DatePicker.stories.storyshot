@@ -91,7 +91,6 @@ Array [
   line-height: inherit;
   box-sizing: border-box;
   height: 40px;
-  outline: none;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -166,6 +165,10 @@ Array [
   display: inline-block;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div>
     <div
       className="c0 c1"
@@ -193,6 +196,7 @@ Array [
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="regular-datepicker"
+                onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -314,7 +318,6 @@ Array [
   line-height: inherit;
   box-sizing: border-box;
   height: 40px;
-  outline: none;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -389,6 +392,10 @@ Array [
   display: inline-block;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div>
     <div
       className="c0 c1"
@@ -416,6 +423,7 @@ Array [
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="range-datepicker"
+                onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -446,6 +454,309 @@ Array [
           </span>
         </span>
       </label>
+    </div>
+  </div>,
+  .c0 {
+  margin-top: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Double
+    </span>
+  </div>,
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c2 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c6 {
+  width: 100%;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      scope="module"
+    >
+      <div
+        className="c2"
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 92 90"
+        >
+          <path
+            d="M46 0l46 89.3913043H0z"
+          />
+          <path
+            className="c4"
+            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
+          />
+        </svg>
+        <div
+          className="c5 c6"
+        >
+          <span
+            className="c7"
+          >
+            The double variant has a specific user case in mind
+          </span>
+          <span
+            className="c8"
+          >
+            The intended user case is when the user wants to select two dates relative close to each other, but the second date can overlap to another month. The dates selected should probably not be further apart than two months.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c2 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  background-color: #F5F5F5;
+  border-left: 4px solid #FFCF00;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.c6 {
+  width: 100%;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      scope="module"
+    >
+      <div
+        className="c2"
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 92 90"
+        >
+          <path
+            d="M46 0l46 89.3913043H0z"
+          />
+          <path
+            className="c4"
+            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
+          />
+        </svg>
+        <div
+          className="c5 c6"
+        >
+          <span
+            className="c7"
+          >
+            Use at own risk
+          </span>
+          <span
+            className="c8"
+          >
+            Arrow navigation is yet to be implemented
+          </span>
+        </div>
+      </div>
     </div>
   </div>,
   .c5 {
@@ -563,7 +874,6 @@ Array [
   line-height: inherit;
   box-sizing: border-box;
   height: 40px;
-  outline: none;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -637,6 +947,10 @@ Array [
 .c1 {
   width: 312px;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div>

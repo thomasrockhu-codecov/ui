@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Separator, TabTitle, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerComponent, TitleComponent, ItemProps } from './Tabs.types';
+import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;
@@ -20,6 +20,7 @@ const StyledButton = styled(NormalizedElements.Button)`
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: ${(p) => p.theme.color.buttonTextLight};
 `;
 
 const Title: TitleComponent = ({
@@ -99,19 +100,18 @@ export const Tabs: ContainerComponent & {
 
   if (isControlled) active = activeTabIndex!;
 
-  const handleTitleClick = (i: number, handler?: React.MouseEventHandler) => (
-    e: React.MouseEvent,
-  ) => {
-    if (handler) handler(e);
-    if (!isControlled) setActive(i);
-  };
+  const handleTitleClick =
+    (i: number, handler?: React.MouseEventHandler) => (e: React.MouseEvent) => {
+      if (handler) handler(e);
+      if (!isControlled) setActive(i);
+    };
 
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
 
-  const titles: React.ReactElement<any>[] = [];
-  let contents: React.ReactElement<any> | null = null;
+  const titles: React.ReactElement[] = [];
+  let contents: React.ReactElement | null = null;
 
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;

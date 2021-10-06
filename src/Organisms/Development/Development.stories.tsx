@@ -3,7 +3,7 @@ import MD from 'react-markdown';
 
 import docs from './Development.md';
 import { Development, Typography } from '../../index';
-import { Display } from '../../common/Display/index';
+import { Display } from '../../common/Display';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 export default {
@@ -12,7 +12,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Development value={50} currency="SEK" />
     </div>
@@ -86,12 +86,12 @@ export const withDifferentColors = () => (
     items={[
       {
         title: 'Positive value',
-        component: <Development value={50} positiveColor={(c) => c.colorA11y.positive} />,
+        component: <Development value={50} positiveColor={(c) => c.color.positive} />,
       },
       { title: 'Zero value', component: <Development value={0} /> },
       {
         title: 'Negative value',
-        component: <Development value={-200} negativeColor={(c) => c.colorA11y.negative} />,
+        component: <Development value={-200} negativeColor={(c) => c.color.negative} />,
       },
     ]}
   />
@@ -158,7 +158,7 @@ regressionValueIsNonZeroButRoundedValueIs0.story = {
 };
 
 export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES).map((type) => ({
+  const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
     title: type,
     component: (
       <Typography type={type}>

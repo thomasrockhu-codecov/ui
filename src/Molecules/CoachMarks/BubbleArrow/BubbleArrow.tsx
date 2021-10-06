@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Component, Props, InternalProps } from './BubbleArrow.types';
+import { Component, InternalProps, Props } from './BubbleArrow.types';
 import { TRIANGLE_INDENTATION, TRIANGLE_SIZE } from './consts';
 import { BORDER_SIZE } from '../Bubble/consts';
 
@@ -86,10 +86,8 @@ const Arrow = styled.div<InternalProps>`
 
   ${(p) => (p.$bubblePlacement === 'left' ? arrowRight : '')}
   ${(p) => (p.$bubblePlacement === 'top' ? arrowDown : '')}
-  ${(p) =>
-    p.$bubblePlacement === 'right' ? arrowLeft : ''}
-  ${(p) =>
-    p.$bubblePlacement === 'bottom' ? arrowUp : ''}
+  ${(p) => (p.$bubblePlacement === 'right' ? arrowLeft : '')}
+  ${(p) => (p.$bubblePlacement === 'bottom' ? arrowUp : '')}
 `;
 
 const getArrowPositionStyles = (bubblePlacement: Props['bubblePlacement']) => {

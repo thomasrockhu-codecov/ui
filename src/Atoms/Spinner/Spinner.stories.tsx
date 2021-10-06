@@ -14,7 +14,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Spinner id="defaultSpinner" />
     </div>
@@ -77,20 +77,18 @@ export const colors = () => (
 );
 
 export const regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome = () => (
-  <div>
-    <div>
-      <Typography type="primary">
-        Only the one with green border should be shown. The bug before was that if two spinners had
-        the same size and color, both were hidden.
-      </Typography>
-    </div>
+  <>
+    <Typography type="primary">
+      Only the one with green border should be shown. The bug before was that if two spinners had
+      the same size and color, both were hidden.
+    </Typography>
     <div style={{ display: 'none', border: '1px red solid' }}>
       <Spinner size={8} id="firstSpinner" />
     </div>
     <div style={{ border: '1px green solid' }}>
       <Spinner size={8} id="secondSpinner" />
     </div>
-  </div>
+  </>
 );
 
 regression2SpinnersWithSameColorAndSizeAffectsEachOtherInChrome.story = {

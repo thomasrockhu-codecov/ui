@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import FlexTable from '../FlexTable';
-import { Typography, Flag, Flexbox } from '../../..';
+import { Flag, Flexbox, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
-import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
+import { StyledBackground, StyledFlexboxContainer } from './storiesShared';
 
 export default {
   title: 'Molecules / FlexTable / With different headers',
@@ -63,7 +63,7 @@ export const DefaultTableHeaders = () => {
 
   return (
     <StyledBackground>
-      <Typography type="title3">Table Header Variations</Typography>
+      <Typography type="title3">Table header variations</Typography>
       <DefaultTableHeadersExample />
     </StyledBackground>
   );
@@ -96,7 +96,7 @@ export const UncontrolledSortableHeaders = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Uncontrolled Sortable Headers</Typography>
+      <Typography type="title3">Uncontrolled sortable headers</Typography>
       <UncontrolledSortableHeadersExample />
     </StyledBackground>
   );
@@ -158,7 +158,7 @@ export const ControlledSortableHeaders = () => {
 
   return (
     <StyledBackground>
-      <Typography type="title3">Controlled Sortable Headers</Typography>
+      <Typography type="title3">Controlled sortable headers</Typography>
       <ControlledSortableHeadersExample />
     </StyledBackground>
   );
@@ -226,7 +226,7 @@ export const SortableHeadersOnlyAscendingDescending = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
+      <Typography type="title3">Sortable headers – only ascending/descending</Typography>
       <SortableHeadersOnlyAscendingDescendingExample />
     </StyledBackground>
   );
@@ -255,7 +255,7 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Uncontrolled Sortable Headers With Different Alignments</Typography>
+      <Typography type="title3">Uncontrolled sortable headers with different alignments</Typography>
       <SortableUncontrolledHeaderWithDifferentAlignmentExample />
     </StyledBackground>
   );
@@ -284,7 +284,7 @@ export const StickyHeadersForDifferentScreenSizes = () => {
           </FlexTable.Header>
         </FlexTable.HeaderRow>
 
-        {[...Array(50)].map((_, index) => (
+        {[...Array(50)]?.map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <FlexTable.Row key={index}>
             <FlexTable.Cell columnId="column1">Cell {index + 1}-1</FlexTable.Cell>
@@ -304,7 +304,7 @@ export const StickyHeadersForDifferentScreenSizes = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Sticky Headers For Different ScreenSizes</Typography>
+      <Typography type="title3">Sticky headers for different screen sizes</Typography>
       <StickyHeadersForDifferentScreenSizesExample />
     </StyledBackground>
   );

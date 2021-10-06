@@ -1,14 +1,17 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelectMachineFromContext } from '../context';
 
 export const SearchWrapper = React.forwardRef<
   HTMLInputElement,
-  { component: React.ComponentType<any> }
+  {
+    component: React.ComponentType<any>;
+  }
 >(({ component: Component }, ref: React.Ref<HTMLInputElement>) => {
   const [state, send] = useSelectMachineFromContext();
   const searchQuery = state.context.searchQuery;
   const showSearch = state.context.showSearch;
   const itemFocusIdx = state.context.itemFocusIdx;
+  const fullscreenOnMobile = state.context.fullscreenOnMobile;
 
   const visibleOptionsCount = state.context.visibleOptions.length;
 
@@ -30,6 +33,7 @@ export const SearchWrapper = React.forwardRef<
       hidden={hidden}
       value={searchQuery}
       onChange={handleChange}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 });

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Typography, CollapsibleCard } from '../..';
+import { CollapsibleCard, Typography } from '../..';
 
 const styledText = styled.p`
   margin: 0;
 `;
 
 const ExampleWithOnClick = () => {
-  const [clicked, setClicked] = React.useState(0);
+  const [clicked, setClicked] = useState(0);
   return (
     <CollapsibleCard
       title={`I've been clicked ${clicked} times`}
@@ -62,7 +62,7 @@ collapsedInitially.story = {
 
 export const collapsibleWithCustomComponentAsTitle = () => {
   return (
-    <CollapsibleCard title={<div>Custom title</div>}>
+    <CollapsibleCard title={<>Custom title</>}>
       <Typography type="primary" as={styledText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.
@@ -97,4 +97,90 @@ export const collapsibleWithoutIndicator = () => {
 
 collapsibleWithoutIndicator.story = {
   name: 'Collapsible without indicator',
+};
+
+export const collapsibleWithCustomExpandElementAsAFunction = () => {
+  return (
+    <CollapsibleCard
+      title="Custom expand element (function)"
+      expandElement={(collapsed) => (
+        <Typography type="secondary">{collapsed ? 'Expand' : 'Close'}</Typography>
+      )}
+    >
+      <Typography type="primary" as={styledText}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Typography>
+    </CollapsibleCard>
+  );
+};
+
+collapsibleWithCustomExpandElementAsAFunction.story = {
+  name: 'Collapsible with custom expand element as a function',
+};
+
+export const collapsibleWithCustomExpandElement = () => {
+  return (
+    <CollapsibleCard
+      title="Custom expand element (ReactNode)"
+      expandElement={<Typography type="secondary">Toggle expand</Typography>}
+    >
+      <Typography type="primary" as={styledText}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Typography>
+    </CollapsibleCard>
+  );
+};
+
+collapsibleWithCustomExpandElement.story = {
+  name: 'Collapsible with custom expand element',
+};
+
+export const collapsibleCardWithNoPadding = () => {
+  return (
+    <CollapsibleCard
+      title="Collapsible card with no title row padding"
+      titleRowPaddingX={0}
+      titleRowPaddingY={0}
+      noIndicator
+    >
+      <Typography type="primary" as={styledText}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Typography>
+    </CollapsibleCard>
+  );
+};
+
+collapsibleCardWithNoPadding.story = {
+  name: 'Collapsible card with no title row padding',
+};
+
+export const collapsibleCardWithLotsOfTopAndBottomPadding = () => (
+  <CollapsibleCard
+    title="Collapsible card with lots of top and bottom padding"
+    titleRowPaddingY={10}
+  >
+    <Typography type="primary" as={styledText}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </Typography>
+  </CollapsibleCard>
+);
+
+collapsibleCardWithLotsOfTopAndBottomPadding.story = {
+  name: 'Collapsible card with lots of top and bottom padding',
 };

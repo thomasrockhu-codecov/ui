@@ -22,7 +22,7 @@ export const getAreasInfo = (
     col: areas[0].length,
     row: areas.length,
   };
-  const flatAreas = (R.flatten(areas) as unknown) as string[];
+  const flatAreas = R.flatten(areas) as unknown as string[];
 
   const areaNames = R.uniq(flatAreas);
 
@@ -36,7 +36,7 @@ export const getAreasInfo = (
         };
       const row = Math.trunc(idx / size.col);
       const col = Math.trunc(idx % size.col);
-      // 3 elems in col
+      // 3 elements in column
       // idx = 3
       acc[areaName].coordinates.push({ row, col });
 
@@ -50,8 +50,8 @@ export const getAreasInfo = (
       area: { coordinates: Array<{ row: number; col: number }>; name: string; id: number },
     ) => {
       const { coordinates, name, id } = area;
-      const rows = coordinates.map(R.prop('row'));
-      const cols = coordinates.map(R.prop('col'));
+      const rows = coordinates?.map(R.prop('row'));
+      const cols = coordinates?.map(R.prop('col'));
       let rowStart = minimal(rows) as number;
       let rowSpan = (maximal(rows) as number) - rowStart;
       if (isGapPresented.row) {

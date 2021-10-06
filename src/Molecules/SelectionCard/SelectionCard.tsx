@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Color from 'color';
 import styled, { css } from 'styled-components';
 
-import { Card, Flexbox, Typography, Box, Icon } from '../..';
-import { isElement, isBoolean } from '../../common/utils';
+import { Box, Card, Flexbox, Icon, Typography } from '../..';
+import { isBoolean, isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
 

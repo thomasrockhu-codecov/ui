@@ -2,6 +2,7 @@ export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;
+  darkColors?: boolean;
 };
 type Unit = {
   (times: number): number;
@@ -10,207 +11,129 @@ type Unit = {
 };
 export type RawColor = {
   // BRAND
-  brandBlue: '#00C8F5';
-  brandGreen: '#D2F500';
-  brandPink: '#FF2B83';
-  brandTurquoise: '#00F0E1';
+  brandBlue: string;
+  brandGreen: string;
+  brandPink: string;
+  brandTurquoise: string;
 
   // COMPLEMENTARY BRAND COLOURS
-  complementaryBlue1: '#385E9D';
-  complementaryBlue2: '#131F4F';
-  complementaryGreen1: '#3A913F';
-  complementaryGreen2: '#023C00';
-  complementaryPink1: '#AC135A';
-  complementaryPink2: '#78013A';
-  complementaryTurquoise1: '#009195';
-  complementaryTurquoise2: '#01424C';
+  complementaryBlue1: string;
+  complementaryBlue2: string;
+  complementaryGreen1: string;
+  complementaryGreen2: string;
+  complementaryPink1: string;
+  complementaryPink2: string;
+  complementaryTurquoise1: string;
+  complementaryTurquoise2: string;
 
   // GRAYSCALE PALETTE
-  black: '#000000';
-  gray0: '#282823';
-  gray1: '#4B4B46';
-  gray2: '#6E6E69';
-  gray3: '#A0A09B';
-  gray4: '#BCBCB6';
-  /** @deprecated */ gray5: '#D7D7D2';
-  gray6: '#EBEBE8';
-  gray7: '#F5F5F5';
-  white: '#FFFFFF';
+  black: string;
+  gray0: string;
+  gray1: string;
+  gray2: string;
+  gray3: string;
+  gray4: string;
+  gray5: string;
+  gray6: string;
+  gray7: string;
+  white: string;
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
-  cta: '#0046FF';
-  ctaHover: '#003BD9';
-  ctaPressed: '#0030B2';
-  positive: '#00D200';
-  negative: '#FF1900';
-  negativeHover: '#D90E00';
-  negativePressed: '#B20300';
-  index: '#FFCF00';
+  cta: string;
+  ctaHover: string;
+  ctaPressed: string;
+  positive: string;
+  negative: string;
+  negativeHover: string;
+  negativePressed: string;
+  sfdrArticle8: string;
+  sfdrArticle9: string;
+  index: string;
+};
 
-  // ACCESSIBLE FUNCTIONAL COLORS
-  a11yCta: '#0046FF';
-  a11yCtaPressed: '#003BD9';
-  a11yPositive: '#008A00';
-  a11yNegative: '#AC135A';
-  a11yNegativePressed: '#78013A';
-  a11yIndex: '#DFC700';
+export type RawColors = RawColor & {
+  palettes: {
+    pink: string[];
+    green: string[];
+    blue: string[];
+    turquoise: string[];
+    gray: string[];
+  };
 };
 
 type NumberOrObjectWithNumber = number | { size: number };
 
-type RawColors = RawColor[keyof RawColor];
+export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
-export type ThemeColorsVersion = 'all' | 'default' | 'a11y';
-
-type ChangeableColor<
-  DefaultColor extends RawColors,
-  A11yColor extends RawColors,
-  Version extends ThemeColorsVersion
-> = Version extends 'all'
-  ? DefaultColor | A11yColor
-  : Version extends 'default'
-  ? DefaultColor
-  : A11yColor;
-
-export type ThemeColors<Version extends ThemeColorsVersion> = {
-  /** white */
-  backgroundInput: RawColor['white'];
+export type ThemeColors = {
+  /** gray2 */
+  accordionText: RawColor['gray2'];
   /** gray7 */
   background: RawColor['gray7'];
   /** black */
   backgroundBlack: RawColor['black'];
+  /** gray0 */
+  backgroundDark: RawColor['gray0'];
+  /** complementaryBlue1 */
+  barGraphHighlight: RawColor['complementaryBlue1'];
   /** complementaryBlue1 */
   barScaleActiveBar: RawColor['complementaryBlue1'];
   /** gray6 */
   barScaleInactiveBar: RawColor['gray6'];
-  /** gray0 */
-  text: RawColor['gray0'];
-  /** white */
-  textLight: RawColor['white'];
-  /** gray2 */
-  label: RawColor['gray2'];
-  /** brandGreen */
-  bulbBackground: RawColor['brandGreen'];
   /** cta */
-  buy: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
-  /** ctaPressed */
-  buyActive: ChangeableColor<RawColor['ctaPressed'], RawColor['a11yCtaPressed'], Version>;
-  /** white */
-  buttonText: RawColor['white'];
-  /** cta */
-  borderActive: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
+  borderActive: RawColor['cta'];
   /** white */
   bubbleBackground: RawColor['white'];
   /** gray4 */
   bubbleBorder: RawColor['gray4'];
   /** gray2 */
   bubbleSecondaryText: RawColor['gray2'];
+  /** brandGreen */
+  bulbBackground: RawColor['brandGreen'];
   /** gray0 */
-  tableBorder: RawColor['gray0'];
-  /** negative */
-  sell: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
-  /** negativePressed */
-  sellActive: ChangeableColor<
-    RawColor['negativePressed'],
-    RawColor['a11yNegativePressed'],
-    Version
-  >;
+  bulbForeground: RawColor['gray0'];
+  /** white */
+  buttonSecondaryBackground: RawColor['white'];
+  /** white */
+  buttonText: RawColor['white'];
+  /** white */
+  buttonTextLight: RawColor['white'];
   /** cta */
-  cta: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
+  buy: RawColor['cta'];
+  /** ctaPressed */
+  buyActive: RawColor['ctaPressed'];
+  /** white */
+  card: RawColor['white'];
   /** creditsPiePrimary */
   creditsPiePrimary: RawColor['complementaryPink1'];
   /** creditsPieSecondary */
   creditsPieSecondary: RawColor['complementaryPink2'];
-  /** otherMonthDateText */
-  otherMonthDateText: RawColor['gray4'];
-  /** positive */
-  positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
-  /** negative */
-  negative: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
-  /** negative or brandPink */
-  negativeBlackBackground: ChangeableColor<RawColor['negative'], RawColor['brandPink'], Version>;
-  /** index */
-  warning: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
-  /** white */
-  card: RawColor['white'];
+  /** cta */
+  cta: RawColor['cta'];
   /** gray6 */
-  divider: RawColor['gray6'];
-  /** gray4 */
-  emptyState: RawColor['gray4'];
-  /** gray2 */
-  fundExchange: RawColor['gray2'];
-  /** gray0 */
-  separator: RawColor['gray0'];
-  /** gray0 */
-  backgroundDark: RawColor['gray0'];
-  /** gray1 */
-  searchBackground: RawColor['gray1'];
-  /** gray3 */
-  disabledText: RawColor['gray3'];
-  /** gray6 */
-  disabledBackground: RawColor['gray6'];
-  /** white */
-  buttonSecondaryBackground: RawColor['white'];
-  /** gray2 */
-  accordionText: RawColor['gray2'];
-  /** 63 percent of gray2 */
-  modalBackdrop: string;
-  /** white */
-  module: RawColor['white'];
-  /** 3 percent of black */
-  shadowCard: string;
-  /** 16 percent of black */
-  shadowModal: string;
-  /** 5 percent of black */
-  shadowInput: string;
-  /** 5 percent of black */
-  shadowSwitch: string;
-  /** complementaryGreen1 */
-  shareville: string;
-  /** gray6 */
-  skeleton: RawColor['gray6'];
-  /** black */
-  spinnerBlack: RawColor['black'];
-  /** white */
-  spinnerWhite: RawColor['white'];
-  /** index */
-  starRating: RawColor['index'];
-  /** gray6 */
-  starRatingOff: RawColor['gray6'];
-  /** index */
-  streamingBolt: RawColor['index'];
-  /** gray0 */
-  svgFill: RawColor['gray0'];
-  /** gray2 */
-  svgStroke: RawColor['gray2'];
-  /** white */
-  svgStokeLight: RawColor['white'];
-  /** 10 percent of cta */
-  switchReadOnlyTrackBg: string;
+  dateAvatarBackground1: RawColor['gray6'];
   /** gray7 */
-  switchReadOnlyKnobBg: RawColor['gray7'];
-  /** 10 percent of cta */
-  iconBackdropCta: string;
-  /** gray4 */
-  inputBorder: RawColor['gray4'];
-  /** gray1 */
-  inputBorderHover: RawColor['gray1'];
-  /** white */
-  tableRowBackground: RawColor['white'];
-  /** gray7 */
-  tableRowHover: RawColor['gray7'];
+  dateAvatarBackground2: RawColor['gray7'];
+  /** gray2 */
+  dateAvatarText1: RawColor['gray2'];
+  /** gray0 */
+  dateAvatarText2: RawColor['gray0'];
   /** gray2 */
   datePickerWithinRangeBackground: string;
   /** gray2 */
   datePickerWithinRangeFade: string;
-  /** negative */
-  inputBorderError: RawColor['negative'];
-  /** positive */
-  inputBorderSuccess: RawColor['positive'];
+  /** gray6 */
+  disabledBackground: RawColor['gray6'];
+  /** gray3 */
+  disabledText: RawColor['gray3'];
+  /** gray6 */
+  divider: RawColor['gray6'];
+  /** gray4 */
+  emptyState: RawColor['gray4'];
   /** gray6 */
   flagBorder: RawColor['gray6'];
-  /** white */
-  selectOptionBackground: RawColor['white'];
+  /** gray2 */
+  fundExchange: RawColor['gray2'];
   /** complementaryGreen1 */
   generationSavingsTimelineColor1: RawColor['complementaryGreen1'];
   /** complementaryPink1 */
@@ -219,18 +142,50 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   generationSavingsTimelineColor3: RawColor['brandBlue'];
   /** complementaryBlue1 */
   generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
+  /** gray5 */
+  graphVolume: RawColor['gray5'];
+  /** gray4 */
+  graphVolumeHover: RawColor['gray4'];
   /** brandPink */
   guidanceSelectionCardIcon: RawColor['brandPink'];
+  /** 10 percent of cta */
+  iconBackdropCta: string;
   /** gray6 */
-  orderDepthBackground: RawColor['gray6'];
-  /** gray5 */
-  orderDepthDarkBackground: RawColor['gray5'];
+  indexFundsBackground: RawColor['gray6'];
+  /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
+  indexFundsFinnishAccent: string[];
+  /** brandBlue */
+  indexFundsNorwegianAccent: RawColor['brandBlue'];
+  /** white */
+  inputBackground: RawColor['white'];
+  /** gray4 */
+  inputBorder: RawColor['gray4'];
+  /** negative */
+  inputBorderError: RawColor['negative'];
   /** gray1 */
-  orderAccountLabel: RawColor['gray1'];
+  inputBorderHover: RawColor['gray1'];
+  /** positive */
+  inputBorderSuccess: RawColor['positive'];
+  /** gray7 */
+  inputHover: RawColor['gray7'];
+  /** complementaryBlue2 */
+  investmentPredictionGraphBlue: RawColor['complementaryBlue2'];
+  /** complementaryGreen2 */
+  investmentPredictionGraphGreen: RawColor['complementaryGreen2'];
+  /** complementaryPink1 */
+  investmentPredictionGraphPink: RawColor['complementaryPink1'];
+  /** complementaryTurquoise2 */
+  investmentPredictionGraphTurquoise: RawColor['complementaryTurquoise2'];
+  /** gray2 */
+  label: RawColor['gray2'];
+  /** complementaryTurquoise1 */
+  lineScaleValueColor: RawColor['complementaryTurquoise1'];
   /** complementaryTurquoise1 */
   listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];
+  /** brandTurquoise */
+  marketingCardMortageHighlight: RawColor['brandTurquoise'];
   /** brandGreen */
   menuAccent1: RawColor['brandGreen'];
   /** brandTurquoise */
@@ -241,48 +196,154 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
+  /** white */
+  menuText: RawColor['white'];
+  /** gray4 */
+  messageCentralFaqButtonBorder: RawColor['gray4'];
+  /** gray5 */
+  messageCentralFaqIcon: RawColor['gray5'];
+  /** 63 percent of gray2 */
+  modalBackdrop: string;
+  /** white */
+  module: RawColor['white'];
+  /** negative */
+  negative: RawColor['negative'];
+  /** negative or brandPink */
+  negativeBlackBackground: RawColor['negative'];
+  /** brandBlue */
+  onboardingAccentBlue: RawColor['brandBlue'];
+  /** brandGreen */
+  onboardingAccentGreen: RawColor['brandGreen'];
+  /** brandPink */
+  onboardingAccentPink: RawColor['brandPink'];
+  /** brandTurquoise */
+  onboardingAccentTurquoise: RawColor['brandTurquoise'];
+  /** gray1 */
+  orderAccountLabel: RawColor['gray1'];
+  /** gray6 */
+  orderDepthBackground: RawColor['gray6'];
+  /** gray5 */
+  orderDepthDarkBackground: RawColor['gray5'];
+  /** otherMonthDateText */
+  otherMonthDateText: RawColor['gray4'];
+  paletteBlue: string[];
+  paletteGreen: string[];
+  paletteLineGraph: string[];
+  paletteMap: string[];
+  palettePink: string[];
+  paletteTurquoise: string[];
+  /** gray2 */
+  placeholderText: RawColor['gray2'];
+  /** positive */
+  positive: RawColor['positive'];
+  /** gray6 */
+  privateBankingBannerBackground: RawColor['gray6'];
+  /** white */
+  privateBankingBannerText: RawColor['white'];
+  /** gray6 */
+  privateBankingBannerTitle: RawColor['gray6'];
+  /** cta */
+  progressBarActive: RawColor['cta'];
+  /** positive */
+  progressBarDone: RawColor['positive'];
+  /** positive */
+  progressBarFailure: RawColor['negative'];
+  /** gray4 */
+  progressBarNext: RawColor['gray4'];
+  /** white */
+  progressBarText: RawColor['white'];
+  /** index */
+  progressBarWarning: RawColor['index'];
+  /** gray1 */
+  searchBackground: RawColor['gray1'];
+  /** gray1 */
+  searchText: RawColor['gray7'];
   /** gray5 */
   selectionCardBorder: RawColor['gray5'];
+  /** gray7 */
+  segmentedControlBackground: RawColor['gray7'];
   /** gray2 */
   selectionCardText: RawColor['gray2'];
-  /** cta */
-  sliderColor: RawColor['cta'];
-  /** brandGreen */
-  sliderSecondary: RawColor['brandGreen'];
+  /** white */
+  selectOptionBackground: RawColor['white'];
+  /** negative */
+  sell: RawColor['negative'];
+  /** negativePressed */
+  sellActive: RawColor['negativePressed'];
+  /** gray0 */
+  separator: RawColor['gray0'];
+  /** 3 percent of black */
+  shadowCard: string;
+  /** 5 percent of black */
+  shadowInput: string;
+  /** 16 percent of black */
+  shadowModal: string;
+  /** 5 percent of black */
+  shadowSwitch: string;
+  /** complementaryGreen1 */
+  shareville: string;
   /** gray6 */
-  sliderDisabled: RawColor['gray6'];
+  skeleton: RawColor['gray6'];
   /** gray6 */
   sliderBackgroundColor: RawColor['gray6'];
+  /** cta */
+  sliderColor: RawColor['cta'];
+  /** gray6 */
+  sliderDisabled: RawColor['gray6'];
+  /** brandGreen */
+  sliderSecondary: RawColor['brandGreen'];
+  /** white */
+  sliderThumbBackground: RawColor['white'];
+  /** black */
+  spinnerBlack: RawColor['black'];
+  /** white */
+  spinnerWhite: RawColor['white'];
+  /** index */
+  starRating: RawColor['index'];
+  /** gray6 */
+  starRatingOff: RawColor['gray6'];
   /** cta */
   statusFulfilledBackgroundColor: RawColor['cta'];
   /** white */
   statusFulfilledTextColor: RawColor['white'];
-  /** white */
-  sliderThumbBackground: RawColor['white'];
-  /** gray6 */
-  dateAvatarBackground1: RawColor['gray6'];
-  /** gray7 */
-  dateAvatarBackground2: RawColor['gray7'];
-  /** gray2 */
-  dateAvatarText1: RawColor['gray2'];
+  /** index */
+  streamingBolt: RawColor['index'];
   /** gray0 */
-  dateAvatarText2: RawColor['gray0'];
-  /** index */
-  transferPendingIconColor: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
+  svgFill: RawColor['gray0'];
+  /** white */
+  svgStokeLight: RawColor['white'];
+  /** gray2 */
+  svgStroke: RawColor['gray2'];
+  /** gray7 */
+  switchReadOnlyKnobBg: RawColor['gray7'];
+  /** 10 percent of cta */
+  switchReadOnlyTrackBg: string;
+  /** gray0 */
+  tableBorder: RawColor['gray0'];
+  /** white */
+  tableRowBackground: RawColor['white'];
+  /** gray7 */
+  tableRowHover: RawColor['gray7'];
+  /** gray0 */
+  text: RawColor['gray0'];
+  /** white */
+  textLight: RawColor['white'];
   /** cta */
-  timelineActive: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
-  /** positive */
-  timelineSuccess: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
-  /** index */
-  timelineWarning: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
+  timelineActive: RawColor['cta'];
   /** negative */
-  timelineFailure: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
+  timelineFailure: RawColor['negative'];
   /** gray4 */
   timelineNext: RawColor['gray4'];
-  /** brankPink */
+  /** positive */
+  timelineSuccess: RawColor['positive'];
+  /** index */
+  timelineWarning: RawColor['index'];
+  /** index */
+  transferPendingIconColor: RawColor['index'];
+  /** brandPink */
   transferProgressBar1: RawColor['brandPink'];
   /** positive */
-  transferProgressBar2: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
+  transferProgressBar2: RawColor['positive'];
   /** gray5 */
   transferProgressBar3: RawColor['gray5'];
   /** gray1 */
@@ -295,147 +356,45 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   transferStatusBannerBackground2: string;
   /** 10 percent of index */
   transferStatusBannerBackground3: string;
+  /** gray0 */
+  transferStatusBannerChevron: RawColor['gray0'];
   /** complementaryBlue1 */
   transferStatusBannerText1: RawColor['complementaryBlue1'];
   /** complementaryPink1 */
   transferStatusBannerText2: RawColor['complementaryPink1'];
   /** gray0 */
   transferStatusBannerText3: RawColor['gray0'];
-  /** gray0 */
-  transferStatusBannerChevron: RawColor['gray0'];
-  /** white */
-  progressBarText: RawColor['white'];
-  /** positive */
-  progressBarDone: RawColor['positive'];
-  /** positive */
-  progressBarFailure: RawColor['negative'];
   /** index */
-  progressBarWarning: RawColor['index'];
-  /** cta */
-  progressBarActive: RawColor['cta'];
-  /** gray4 */
-  progressBarNext: RawColor['gray4'];
-  /** gray6 */
-  indexFundsBackground: RawColor['gray6'];
-  /** brandBlue */
-  indexFundsNorwegianAccent: RawColor['brandBlue'];
-  /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
-  indexFundsFinnishAccent: string[];
-  paletteMap: string[];
-  palettePink: string[];
-  paletteGreen: string[];
-  paletteBlue: string[];
-  paletteTurquoise: string[];
-  paletteLineGraph: string[];
-  /** gray6 */
-  privateBankingBannerTitle: RawColor['gray6'];
-  /** white */
-  privateBankingBannerText: RawColor['white'];
-  /** gray6 */
-  privateBankingBannerBackground: RawColor['gray6'];
-  /** @deprecated
-   * gray3 */
+  warning: RawColor['index'];
+  /** SFDR Article 6 */
+  sfdrArticle6: RawColor['gray3'];
+  /** SFDR Article 8 */
+  sfdrArticle8: RawColor['sfdrArticle8'];
+  /** SFDR Article 9 */
+  sfdrArticle9: RawColor['sfdrArticle9'];
+  /** @deprecated * gray3 */
   disabled: RawColor['gray3'];
-  /** @deprecated
-   * complementaryBlue2 */
+  /** @deprecated * complementaryBlue2 */
   mapColor1: RawColor['complementaryBlue2'];
-  /** @deprecated
-   * complementaryBlue1 */
+  /** @deprecated * complementaryBlue1 */
   mapColor2: RawColor['complementaryBlue1'];
-  /** @deprecated
-   * brandBlue */
+  /** @deprecated * brandBlue */
   mapColor3: RawColor['brandBlue'];
-  /** @deprecated
-   * gray1 */
+  /** @deprecated * gray1 */
   mapColor4: RawColor['gray1'];
-  /** @deprecated
-   * gray3 */
+  /** @deprecated * gray3 */
   mapColor5: RawColor['gray3'];
-  /** @deprecated
-   * brandBlue */
-  barChartColor1: RawColor['brandBlue'];
-  /** @deprecated
-   * complementaryBlue2 */
-  barChartColor2: RawColor['complementaryBlue2'];
-  /** @deprecated
-   * complementaryBlue1 */
-  barChartColor3: RawColor['complementaryBlue1'];
-  /** @deprecated
-   * complementaryGreen1 */
-  barChartColor4: RawColor['complementaryGreen1'];
-  /** @deprecated
-   * complementaryPink1 */
-  barChartColor5: RawColor['complementaryPink1'];
-  /** @deprecated
-   * index */
-  barChartColor6: RawColor['index'];
-  /** @deprecated
-   * complementaryGreen1 */
-  barChartColor7: RawColor['complementaryGreen1'];
-  /** @deprecated
-   * brandGreen */
-  columnChartColor1: RawColor['brandGreen'];
-  /** @deprecated
-   * complementaryGreen2 */
-  columnChartColor2: RawColor['complementaryGreen2'];
-  /** @deprecated
-   * complementaryGreen1 */
-  columnChartColor3: RawColor['complementaryGreen1'];
-  /** @deprecated
-   * complementaryTurquoise1 */
-  columnChartColor4: RawColor['complementaryTurquoise1'];
-  /** @deprecated
-   * complementaryTurquoise2 */
-  columnChartColor5: RawColor['complementaryTurquoise2'];
-  /** @deprecated
-   * complementaryPink2 */
-  pieChartColor1: RawColor['complementaryPink2'];
-  /** @deprecated
-   * brandPink */
+  /** @deprecated * brandPink */
   pieChartColor2: RawColor['brandPink'];
-  /** @deprecated
-   * gray4 */
-  pieChartColor3: RawColor['gray4'];
-  /** @deprecated
-   * complementaryPink1 */
-  indicatorPillColor1: RawColor['complementaryPink1'];
-  /** @deprecated
-   * complementaryTurquoise1 */
-  indicatorPillColor2: RawColor['complementaryTurquoise1'];
-  /** @deprecated
-   * complementaryGreen1 */
-  indicatorPillColor3: RawColor['complementaryGreen1'];
-  /** @deprecated
-   * complementaryBlue1 */
-  indicatorPillColor4: RawColor['complementaryBlue1'];
-  /** @deprecated
-   * brandPink */
-  indicatorPillColor5: RawColor['brandPink'];
-  /** @deprecated
-   * brandTurquoise */
-  indicatorPillColor6: RawColor['brandTurquoise'];
-  /** @deprecated
-   * brandBlue */
-  indicatorPillColor7: RawColor['brandBlue'];
-  /** @deprecated
-   * complementaryGreen2 */
-  indicatorPillColor8: RawColor['complementaryGreen2'];
-  /** @deprecated
-   * complementaryBlue2 */
-  indicatorPillColor9: RawColor['complementaryBlue2'];
-  /** @deprecated
-   * complementaryPink2 */
-  indicatorPillColor10: RawColor['complementaryPink2'];
 };
 
 export type ColorSets = {
   /** Semantic names for the colors */
-  color: ThemeColors<'all'>;
-  colorDefault: ThemeColors<'default'>;
-  colorA11y: ThemeColors<'a11y'>;
+  color: ThemeColors;
 };
 
-export type Theme = ColorSets & {
+export type Theme = {
+  color: ThemeColors;
   spacing: {
     /**
      * One unit, all spacing should be handled with this
@@ -508,4 +467,5 @@ export type Theme = ColorSets & {
     overlayInModal: 600;
   };
   isHighContrastMode: boolean;
+  isDarkMode: boolean;
 };

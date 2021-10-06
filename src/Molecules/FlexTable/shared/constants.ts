@@ -6,10 +6,11 @@ export const SORT_ORDER_DESCENDING = 'descending';
 
 export const COLUMN_ID_EXPAND = 'column-expand';
 
-export const ICON_COLUMN_DEFAULT_FLEX_PROPS: Pick<FlexPropsType, 'justifyContent' | 'flex'> = {
+export const ICON_COLUMN_DEFAULT_FLEX_PROPS: FlexPropsType = {
   justifyContent: 'flex-end',
-  // TODO: use theme spacing
-  flex: `0 20px`,
+  md: {
+    justifyContent: 'center',
+  },
 };
 
 export const persistedSortOrderLocalStorageKey = 'flexTableSortOrder';

@@ -1,4 +1,4 @@
-import { Meta, Anchor } from '@storybook/addon-docs/blocks';
+import { Meta, Anchor } from '@storybook/addon-docs';
 import LinkTo from '@storybook/addon-links/react';
 import { name as installationLink } from './2.Installation.stories.mdx';
 import { name as playgroundLink } from './4.Playground.stories.mdx';
@@ -6,11 +6,23 @@ import { Flexbox, Typography, Link, Box, Separator } from '../src';
 
 <Meta title="Design System / Intro" />
 
-<style dangerouslySetInnerHTML={{__html: `.no-text-decoration {
+<style
+  dangerouslySetInnerHTML={{
+    __html: `.no-text-decoration {
     text-decoration: none;
-  }`}} />
-  
-<div style={{height: '60vh',flexDirection: 'column', display:'flex', alignItems:'center', justifyContent:'center'}}>
+  }`,
+  }}
+/>
+
+<div
+  style={{
+    height: '60vh',
+    flexDirection: 'column',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }}
+>
   <Flexbox
     container
     gutter={0}
@@ -82,25 +94,29 @@ import { Flexbox, Typography, Link, Box, Separator } from '../src';
     <Typography type="title1">Design System</Typography>
   </Flexbox>
 
-  <Box mb={4}/>
+  <Box mb={4} />
   <Separator />
-  <Box mb={4}/>
+  <Box mb={4} />
 
   <Typography type="primary">
-    <p style={{textAlign:'center'}}>
-    
-        This project a part of Nordnet's Design System, namely - component kit.
-        Here you can find building blocks for our web UI.<br/>
-        Please read the section on{' '}
-        <LinkTo kind={installationLink} style={{textDecoration:'none'}}>
-          <Link onClick={_=>_} as="span">how to install</Link>
-        </LinkTo>
-        .<br/> Then you can try out all the components in the  <LinkTo kind={playgroundLink} style={{textDecoration:'none'}}>
-          <Link onClick={_=>_} as="span">playground</Link>
-        </LinkTo>
+    <p style={{ textAlign: 'center' }}>
+      This project a part of Nordnet's Design System, namely - component kit. Here you can find
+      building blocks for our web UI.
+      <br />
+      Please read the section on{' '}
+      <LinkTo kind={installationLink} style={{ textDecoration: 'none' }}>
+        <Link onClick={(_) => _} as="span">
+          how to install
+        </Link>
+      </LinkTo>
+      .<br /> Then you can try out all the components in the <LinkTo
+        kind={playgroundLink}
+        style={{ textDecoration: 'none' }}
+      >
+        <Link onClick={(_) => _} as="span">
+          playground
+        </Link>
+      </LinkTo>
     </p>
   </Typography>
-
-
 </div>
-

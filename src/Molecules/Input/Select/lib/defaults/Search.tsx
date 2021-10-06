@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Box, Icon } from '../../../../..';
 import { Text } from '../../../Text';
 import { visuallyHiddenCss } from '../../../../../Atoms/VisuallyHidden';
 
 const StyledInputText = styled(Text)<{ hidden?: boolean; ref?: React.Ref<HTMLInputElement> }>`
-  ${p => (p.hidden ? `${visuallyHiddenCss}` : '')}
+  ${(p) => (p.hidden ? `${visuallyHiddenCss}` : '')}
 `;
 
 export const Search = React.forwardRef<
@@ -16,15 +16,16 @@ export const Search = React.forwardRef<
     hidden: boolean;
     value: string;
     onChange: React.ChangeEventHandler;
+    fullscreenOnMobile: boolean;
   }
 >((props, ref: React.Ref<HTMLInputElement>) => {
   return (
-    <Box px={3} my={props.hidden ? 0 : 2} mb={props.hidden ? 0 : 1}>
+    <Box px={props.fullscreenOnMobile ? 0 : 3} my={props.hidden ? 0 : 2} mb={props.hidden ? 0 : 1}>
       <StyledInputText
         leftAddon={<Icon.Search size={4} />}
         label="Search"
         ref={ref}
-        size="s"
+        size={!props.fullscreenOnMobile ? 's' : undefined}
         hideLabel
         width="100%"
         {...props}

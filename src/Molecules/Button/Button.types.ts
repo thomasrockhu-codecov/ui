@@ -32,6 +32,7 @@ export type ButtonProps = {
   id?: string;
   as?: any;
   loading?: boolean;
+  form?: string;
   /** @default true */
   delayLoadingSpinnerAnimation?: boolean;
   ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
@@ -46,5 +47,3 @@ export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'c
   $size: Exclude<ButtonProps['size'], undefined>;
   $colorFn?: ColorFn;
 };
-
-export type ButtonComponent = React.FC<ButtonProps>;

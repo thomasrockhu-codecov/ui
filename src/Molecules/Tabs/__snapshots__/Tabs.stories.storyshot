@@ -105,6 +105,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c5,
@@ -163,7 +164,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -189,7 +190,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -327,6 +328,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c5,
@@ -379,7 +381,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -405,7 +407,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -518,6 +520,7 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c5,
@@ -570,7 +573,7 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -699,6 +702,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c6,
@@ -761,7 +765,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -787,7 +791,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -929,6 +933,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c5,
@@ -981,7 +986,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1007,7 +1012,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1145,6 +1150,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
+  color: #282823;
 }
 
 .c6,
@@ -1202,7 +1208,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
       >
         <button
           aria-selected={true}
-          className="NormalizedButton__Button-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1228,7 +1234,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
       >
         <button
           aria-selected={false}
-          className="NormalizedButton__Button-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}

@@ -121,7 +121,6 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -176,6 +175,7 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -225,6 +225,42 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
       <option
         label="Third 3"
         value="3"
+      />
+      <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
       />
     </select>
     <div
@@ -437,7 +473,6 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -492,6 +527,7 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -537,6 +573,42 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -745,7 +817,6 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -800,6 +871,7 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -1041,7 +1113,6 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1096,6 +1167,7 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -1141,6 +1213,42 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -1229,7 +1337,11 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
-.c12 {
+Array [
+  <h1>
+    Open the Select and scroll down
+  </h1>,
+  .c12 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
@@ -1349,7 +1461,6 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1404,6 +1515,7 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -1427,11 +1539,7 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
   display: inline-block;
 }
 
-<div>
-  <h1>
-    Open the Select and scroll down
-  </h1>
-  <div
+<div
     style={
       Object {
         "alignItems": "center",
@@ -1462,6 +1570,42 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
         <option
           label="Third 3"
           value="3"
+        />
+        <option
+          label="Acc 4"
+          value="4"
+        />
+        <option
+          label="Acc 5"
+          value="5"
+        />
+        <option
+          label="Acc 6"
+          value="6"
+        />
+        <option
+          label="Acc 7"
+          value="7"
+        />
+        <option
+          label="Acc 8"
+          value="8"
+        />
+        <option
+          label="Acc 9"
+          value="9"
+        />
+        <option
+          label="Acc 10"
+          value="10"
+        />
+        <option
+          label="Acc 11"
+          value="11"
+        />
+        <option
+          label="Acc 12"
+          value="12"
         />
       </select>
       <div
@@ -1547,8 +1691,8 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Molecules / Input / Select Changes From Props 1`] = `
@@ -1605,6 +1749,96 @@ Array [
   {
     "label": "Third 3",
     "value": "3",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 4",
+    "value": "4",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 5",
+    "value": "5",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 6",
+    "value": "6",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 7",
+    "value": "7",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 8",
+    "value": "8",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 9",
+    "value": "9",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 10",
+    "value": "10",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 11",
+    "value": "11",
+    "symbol": "ISK",
+    "accno": "123",
+    "amount": {
+      "value": 1,
+      "currency": "DKK"
+    }
+  },
+  {
+    "label": "Acc 12",
+    "value": "12",
     "symbol": "ISK",
     "accno": "123",
     "amount": {
@@ -1734,7 +1968,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1789,6 +2022,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -1834,6 +2068,42 @@ Array [
       <option
         label="Third 3"
         value="3"
+      />
+      <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
       />
     </select>
     <div
@@ -2043,7 +2313,6 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2144,6 +2413,42 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -2352,7 +2657,6 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2447,6 +2751,42 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -2651,7 +2991,6 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2706,6 +3045,7 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -2839,13 +3179,13 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
-.c15 {
+.c16 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2857,7 +3197,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2865,7 +3205,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   display: flex;
 }
 
-.c23 {
+.c24 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2874,13 +3214,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c8 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2894,7 +3234,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2903,29 +3243,38 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2934,7 +3283,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2943,7 +3292,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -2952,7 +3301,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c25 {
+.c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2961,7 +3310,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c19 {
+.c20 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -2978,15 +3327,14 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c9 {
+.c10 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2994,17 +3342,16 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c9:focus-within {
+.c10:focus-within {
   border-color: #0046FF;
 }
 
-.c9.focus-within {
+.c10.focus-within {
   border-color: #0046FF;
 }
 
-.c20 {
+.c21 {
   height: 40px;
-  outline: none;
   border: 1px solid #FF1900;
   position: relative;
   background: #FFFFFF;
@@ -3012,21 +3359,20 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c20:hover {
+.c21:hover {
   border-color: #4B4B46;
 }
 
-.c20:focus-within {
+.c21:focus-within {
   border-color: #0046FF;
 }
 
-.c20.focus-within {
+.c21.focus-within {
   border-color: #0046FF;
 }
 
-.c24 {
+.c25 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -3034,21 +3380,20 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c24:hover {
+.c25:hover {
   border-color: #4B4B46;
 }
 
-.c24:focus-within {
+.c25:focus-within {
   border-color: #0046FF;
 }
 
-.c24.focus-within {
+.c25.focus-within {
   border-color: #0046FF;
 }
 
-.c26 {
+.c27 {
   height: 40px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -3056,24 +3401,24 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   position: relative;
 }
 
-.c26:hover {
+.c27:hover {
   border-color: #4B4B46;
 }
 
-.c26:focus-within {
+.c27:focus-within {
   border-color: #0046FF;
 }
 
-.c26.focus-within {
+.c27.focus-within {
   border-color: #0046FF;
 }
 
-.c14 {
+.c15 {
   height: 100%;
   width: 100%;
 }
 
-.c12 {
+.c13 {
   background: #EBEBE8;
   width: 100%;
   height: 100%;
@@ -3093,11 +3438,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c12:active {
+.c13:active {
   color: inherit;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -3117,19 +3462,20 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c21:active {
+.c22:active {
   color: inherit;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
-.c16 {
+.c17 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -3141,11 +3487,11 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c6 {
+.c7 {
   width: 200px;
   display: inline-block;
 }
@@ -3218,13 +3564,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Disabled
+      <span
+        className="c3"
+      >
+        Disabled
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={true}
           onChange={[Function]}
         >
@@ -3244,33 +3594,69 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c9"
+                className="c10"
                 disabled={true}
                 label="User account"
                 onBlur={[Function]}
@@ -3278,13 +3664,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c12"
+                    className="c12 c13"
                     data-testid="input-select-button"
                     disabled={true}
                     form=""
@@ -3295,13 +3681,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3311,7 +3697,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3337,13 +3723,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Error
+      <span
+        className="c3"
+      >
+        Error
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -3363,33 +3753,69 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="error-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c20"
+                className="c21"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -3397,13 +3823,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -3414,13 +3840,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3430,7 +3856,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3444,10 +3870,10 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c22"
+                  className="c23"
                 >
                   <div
-                    className="c23"
+                    className="c24"
                   >
                     Error: 
                   </div>
@@ -3467,13 +3893,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Info
+      <span
+        className="c3"
+      >
+        Info
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -3493,33 +3923,69 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="info-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c24"
+                className="c25"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -3527,13 +3993,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -3544,13 +4010,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3560,7 +4026,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3574,7 +4040,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
               </div>
               <div>
                 <span
-                  className="c25"
+                  className="c26"
                 >
                   Some extra info
                 </span>
@@ -3592,13 +4058,17 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
     <div
       className="c2"
     >
-      Success
+      <span
+        className="c3"
+      >
+        Success
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -3618,33 +4088,69 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="success-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c26"
+                className="c27"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -3652,13 +4158,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -3669,13 +4175,13 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -3685,7 +4191,7 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -3828,7 +4334,6 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -3883,6 +4388,7 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -3928,6 +4434,42 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -4162,7 +4704,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4217,6 +4758,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -4262,6 +4804,42 @@ Array [
       <option
         label="Third 3"
         value="3"
+      />
+      <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
       />
     </select>
     <div
@@ -4366,7 +4944,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
-.c12 {
+.c13 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
@@ -4378,13 +4956,26 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c10 {
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4398,7 +4989,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4412,7 +5003,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4421,25 +5012,25 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   text-transform: none;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -4452,7 +5043,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4461,7 +5052,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -4484,9 +5075,8 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4494,24 +5084,24 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   position: relative;
 }
 
-.c6:hover {
+.c7:hover {
   border-color: #4B4B46;
 }
 
-.c6:focus-within {
+.c7:focus-within {
   border-color: #0046FF;
 }
 
-.c6.focus-within {
+.c7.focus-within {
   border-color: #0046FF;
 }
 
-.c11 {
+.c12 {
   height: 100%;
   width: 100%;
 }
 
-.c9 {
+.c10 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -4531,19 +5121,20 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   text-align: initial;
 }
 
-.c9:active {
+.c10:active {
   color: inherit;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
-.c13 {
+.c14 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -4587,6 +5178,42 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
       label="Third 3"
       value="3"
     />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
   </select>
   <div
     className="c1"
@@ -4606,14 +5233,14 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
             className="c5"
           >
             <div
-              className="c2"
+              className="c6"
             >
               User account 
             </div>
           </span>
         </label>
         <div
-          className="c6"
+          className="c7"
           disabled={false}
           label="User account"
           onBlur={[Function]}
@@ -4621,13 +5248,13 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="c8"
           >
             <button
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-label="User account: Select account"
-              className="c8 c9"
+              className="c9 c10"
               data-testid="input-select-button"
               disabled={false}
               form=""
@@ -4638,13 +5265,13 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
             >
               <div
                 aria-hidden="true"
-                className="c10 c11"
+                className="c11 c12"
               >
                 <div
-                  className="c12 c13"
+                  className="c13 c14"
                 >
                   <span
-                    className="c14"
+                    className="c15"
                   >
                     Select account
                   </span>
@@ -4654,7 +5281,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c15 c16"
+            className="c16 c17"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
@@ -4794,7 +5421,6 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4849,6 +5475,7 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -5090,7 +5717,6 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5145,6 +5771,7 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -5169,41 +5796,19 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 }
 
 <div>
-  <div>
-    <select
-      aria-hidden="true"
-      className="c0"
-      disabled={false}
-      onChange={[Function]}
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    onChange={[Function]}
+  >
+    <option
+      label="Select option"
+      value=""
+    />
+    <optgroup
+      label="Group 1"
     >
-      <option
-        label="Select option"
-        value=""
-      />
-      <optgroup
-        label="Group 1"
-      >
-        <option
-          label="Child 1 0"
-          value="c1-0"
-        />
-        <option
-          label="Child 1 1"
-          value="c1-1"
-        />
-        <option
-          label="Child 1 2"
-          value="c1-2"
-        />
-        <option
-          label="Child 1 3"
-          value="c1-3"
-        />
-        <option
-          label="Child 1 4"
-          value="c1-4"
-        />
-      </optgroup>
       <option
         label="Child 1 0"
         value="c1-0"
@@ -5224,30 +5829,30 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
         label="Child 1 4"
         value="c1-4"
       />
-      <optgroup
-        label="Group 2"
-      >
-        <option
-          label="Child 2 0"
-          value="c2-0"
-        />
-        <option
-          label="Child 2 1"
-          value="c2-1"
-        />
-        <option
-          label="Child 2 2"
-          value="c2-2"
-        />
-        <option
-          label="Child 2 3"
-          value="c2-3"
-        />
-        <option
-          label="Child 2 4"
-          value="c2-4"
-        />
-      </optgroup>
+    </optgroup>
+    <option
+      label="Child 1 0"
+      value="c1-0"
+    />
+    <option
+      label="Child 1 1"
+      value="c1-1"
+    />
+    <option
+      label="Child 1 2"
+      value="c1-2"
+    />
+    <option
+      label="Child 1 3"
+      value="c1-3"
+    />
+    <option
+      label="Child 1 4"
+      value="c1-4"
+    />
+    <optgroup
+      label="Group 2"
+    >
       <option
         label="Child 2 0"
         value="c2-0"
@@ -5268,87 +5873,871 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
         label="Child 2 4"
         value="c2-4"
       />
-    </select>
+    </optgroup>
+    <option
+      label="Child 2 0"
+      value="c2-0"
+    />
+    <option
+      label="Child 2 1"
+      value="c2-1"
+    />
+    <option
+      label="Child 2 2"
+      value="c2-2"
+    />
+    <option
+      label="Child 2 3"
+      value="c2-3"
+    />
+    <option
+      label="Child 2 4"
+      value="c2-4"
+    />
+  </select>
+  <div
+    className="c1"
+  >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
-        <div
-          className="c3"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="grouped-options-single"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="grouped-options-single"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
+            >
+              Grouped options single 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="Grouped options single"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Grouped options single: Select option"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="grouped-options-single"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
             >
               <div
-                className="c2"
-              >
-                Grouped options single 
-              </div>
-            </span>
-          </label>
-          <div
-            className="c6"
-            disabled={false}
-            label="Grouped options single"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="c7"
-            >
-              <button
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                aria-label="Grouped options single: Select option"
-                className="c8 c9"
-                data-testid="input-select-button"
-                disabled={false}
-                form=""
-                id="grouped-options-single"
-                onClick={[Function]}
-                tabIndex={0}
-                type="button"
+                aria-hidden="true"
+                className="c10 c11"
               >
                 <div
-                  aria-hidden="true"
-                  className="c10 c11"
+                  className="c12 c13"
                 >
-                  <div
-                    className="c12 c13"
+                  <span
+                    className="c14"
                   >
-                    <span
-                      className="c14"
-                    >
-                      Select option
-                    </span>
-                  </div>
+                    Select option
+                  </span>
                 </div>
-              </button>
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c15 c16"
-              focusable="false"
-              open={false}
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </div>
-          
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c15 c16"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
         </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect 1`] = `
+.c12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c13 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    multiple={true}
+    onChange={[Function]}
+    value={Array []}
+  >
+    <option
+      label="Select options"
+      value=""
+    />
+    <optgroup
+      label="Group 1"
+    >
+      <option
+        label="Child 1 0"
+        value="c1-0"
+      />
+      <option
+        label="Child 1 1"
+        value="c1-1"
+      />
+      <option
+        label="Child 1 2"
+        value="c1-2"
+      />
+      <option
+        label="Child 1 3"
+        value="c1-3"
+      />
+      <option
+        label="Child 1 4"
+        value="c1-4"
+      />
+    </optgroup>
+    <option
+      label="Child 1 0"
+      value="c1-0"
+    />
+    <option
+      label="Child 1 1"
+      value="c1-1"
+    />
+    <option
+      label="Child 1 2"
+      value="c1-2"
+    />
+    <option
+      label="Child 1 3"
+      value="c1-3"
+    />
+    <option
+      label="Child 1 4"
+      value="c1-4"
+    />
+    <optgroup
+      label="Group 2"
+    >
+      <option
+        label="Child 2 0"
+        value="c2-0"
+      />
+      <option
+        label="Child 2 1"
+        value="c2-1"
+      />
+      <option
+        label="Child 2 2"
+        value="c2-2"
+      />
+      <option
+        label="Child 2 3"
+        value="c2-3"
+      />
+      <option
+        label="Child 2 4"
+        value="c2-4"
+      />
+    </optgroup>
+    <option
+      label="Child 2 0"
+      value="c2-0"
+    />
+    <option
+      label="Child 2 1"
+      value="c2-1"
+    />
+    <option
+      label="Child 2 2"
+      value="c2-2"
+    />
+    <option
+      label="Child 2 3"
+      value="c2-3"
+    />
+    <option
+      label="Child 2 4"
+      value="c2-4"
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="grouped-options-multiselect"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              Grouped options multiselect 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="Grouped options multiselect"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Grouped options multiselect: Select options"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="grouped-options-multiselect"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c10 c11"
+              >
+                <div
+                  className="c12 c13"
+                >
+                  <span
+                    className="c5"
+                  >
+                    Select options
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Grouped Options Multiselect Controlled 1`] = `
+.c12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c13 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    multiple={true}
+    onChange={[Function]}
+    value={Array []}
+  >
+    <option
+      label="Select account"
+      value=""
+    />
+    <option
+      label="Select All"
+      value={null}
+    />
+    <optgroup
+      label="Group 1"
+    >
+      <option
+        label="Child 1 0"
+        value="c1-0"
+      />
+      <option
+        label="Child 1 1"
+        value="c1-1"
+      />
+      <option
+        label="Child 1 2"
+        value="c1-2"
+      />
+      <option
+        label="Child 1 3"
+        value="c1-3"
+      />
+      <option
+        label="Child 1 4"
+        value="c1-4"
+      />
+    </optgroup>
+    <option
+      label="Child 1 0"
+      value="c1-0"
+    />
+    <option
+      label="Child 1 1"
+      value="c1-1"
+    />
+    <option
+      label="Child 1 2"
+      value="c1-2"
+    />
+    <option
+      label="Child 1 3"
+      value="c1-3"
+    />
+    <option
+      label="Child 1 4"
+      value="c1-4"
+    />
+    <optgroup
+      label="Group 2"
+    >
+      <option
+        label="Child 2 0"
+        value="c2-0"
+      />
+      <option
+        label="Child 2 1"
+        value="c2-1"
+      />
+      <option
+        label="Child 2 2"
+        value="c2-2"
+      />
+      <option
+        label="Child 2 3"
+        value="c2-3"
+      />
+      <option
+        label="Child 2 4"
+        value="c2-4"
+      />
+    </optgroup>
+    <option
+      label="Child 2 0"
+      value="c2-0"
+    />
+    <option
+      label="Child 2 1"
+      value="c2-1"
+    />
+    <option
+      label="Child 2 2"
+      value="c2-2"
+    />
+    <option
+      label="Child 2 3"
+      value="c2-3"
+    />
+    <option
+      label="Child 2 4"
+      value="c2-4"
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="grouped-options-multiselect-test"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              User account 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="User account"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="User account: Select account"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="grouped-options-multiselect-test"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c10 c11"
+              >
+                <div
+                  className="c12 c13"
+                >
+                  <span
+                    className="c5"
+                  >
+                    Select account
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -5482,7 +6871,6 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5537,6 +6925,7 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -5806,7 +7195,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5861,6 +7249,7 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c16 {
@@ -6016,7 +7405,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
     >
       <div
         className="c0 c1"
-        fullScreenMobile={true}
         onClick={[Function]}
       >
         <div>
@@ -6044,6 +7432,42 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
               <option
                 label="Third 3"
                 value="3"
+              />
+              <option
+                label="Acc 4"
+                value="4"
+              />
+              <option
+                label="Acc 5"
+                value="5"
+              />
+              <option
+                label="Acc 6"
+                value="6"
+              />
+              <option
+                label="Acc 7"
+                value="7"
+              />
+              <option
+                label="Acc 8"
+                value="8"
+              />
+              <option
+                label="Acc 9"
+                value="9"
+              />
+              <option
+                label="Acc 10"
+                value="10"
+              />
+              <option
+                label="Acc 11"
+                value="11"
+              />
+              <option
+                label="Acc 12"
+                value="12"
               />
             </select>
             <div
@@ -6128,7 +7552,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
           </div>
           <button
             className="c20"
-            fullScreenMobile={true}
             onClick={[Function]}
             type="button"
           >
@@ -6414,6 +7837,42 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="3"
       />
       <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
+      />
+      <option
         label="First account1"
         value="10"
       />
@@ -6426,28 +7885,631 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="34"
       />
       <option
-        label="First account7"
-        value="16"
+        label="Acc 47"
+        value="46"
       />
       <option
-        label="Second acc 29"
-        value="28"
+        label="Acc 59"
+        value="58"
       />
       <option
-        label="Third 311"
-        value="310"
+        label="Acc 611"
+        value="610"
       />
       <option
-        label="First account13"
-        value="112"
+        label="Acc 713"
+        value="712"
       />
       <option
-        label="Second acc 215"
-        value="214"
+        label="Acc 815"
+        value="814"
       />
       <option
-        label="Third 317"
-        value="316"
+        label="Acc 917"
+        value="916"
+      />
+      <option
+        label="Acc 1019"
+        value="1018"
+      />
+      <option
+        label="Acc 1121"
+        value="1120"
+      />
+      <option
+        label="Acc 1223"
+        value="1222"
+      />
+      <option
+        label="First account25"
+        value="124"
+      />
+      <option
+        label="Second acc 227"
+        value="226"
+      />
+      <option
+        label="Third 329"
+        value="328"
+      />
+      <option
+        label="Acc 431"
+        value="430"
+      />
+      <option
+        label="Acc 533"
+        value="532"
+      />
+      <option
+        label="Acc 635"
+        value="634"
+      />
+      <option
+        label="Acc 737"
+        value="736"
+      />
+      <option
+        label="Acc 839"
+        value="838"
+      />
+      <option
+        label="Acc 941"
+        value="940"
+      />
+      <option
+        label="Acc 1043"
+        value="1042"
+      />
+      <option
+        label="Acc 1145"
+        value="1144"
+      />
+      <option
+        label="Acc 1247"
+        value="1246"
+      />
+      <option
+        label="First account49"
+        value="148"
+      />
+      <option
+        label="Second acc 251"
+        value="250"
+      />
+      <option
+        label="Third 353"
+        value="352"
+      />
+      <option
+        label="Acc 455"
+        value="454"
+      />
+      <option
+        label="Acc 557"
+        value="556"
+      />
+      <option
+        label="Acc 659"
+        value="658"
+      />
+      <option
+        label="Acc 761"
+        value="760"
+      />
+      <option
+        label="Acc 863"
+        value="862"
+      />
+      <option
+        label="Acc 965"
+        value="964"
+      />
+      <option
+        label="Acc 1067"
+        value="1066"
+      />
+      <option
+        label="Acc 1169"
+        value="1168"
+      />
+      <option
+        label="Acc 1271"
+        value="1270"
+      />
+    </select>
+    <div
+      className="c2"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      width="300px"
+    >
+      <div
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="User account: Select account"
+            className="c5 c6"
+            data-testid="input-select-button"
+            disabled={false}
+            form=""
+            id="input-select-search-inside"
+            onClick={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <div
+              aria-hidden="true"
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+                onClick={[Function]}
+                type="button"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c12"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    className="c13"
+                  >
+                    <span
+                      className="c14"
+                    >
+                      Select account
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Multiselect With Full Screen On Mobile 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c10 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c8 {
+  height: 100%;
+  width: 100%;
+}
+
+.c6 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+}
+
+.c6:active {
+  color: inherit;
+}
+
+.c1 {
+  display: none;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c9:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      multiple={true}
+      onChange={[Function]}
+      value={Array []}
+    >
+      <option
+        label="Select account"
+        value=""
+      />
+      <option
+        label="First account"
+        value="1"
+      />
+      <option
+        label="Second acc 2"
+        value="2"
+      />
+      <option
+        label="Third 3"
+        value="3"
+      />
+      <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
+      />
+      <option
+        label="First account1"
+        value="10"
+      />
+      <option
+        label="Second acc 23"
+        value="22"
+      />
+      <option
+        label="Third 35"
+        value="34"
+      />
+      <option
+        label="Acc 47"
+        value="46"
+      />
+      <option
+        label="Acc 59"
+        value="58"
+      />
+      <option
+        label="Acc 611"
+        value="610"
+      />
+      <option
+        label="Acc 713"
+        value="712"
+      />
+      <option
+        label="Acc 815"
+        value="814"
+      />
+      <option
+        label="Acc 917"
+        value="916"
+      />
+      <option
+        label="Acc 1019"
+        value="1018"
+      />
+      <option
+        label="Acc 1121"
+        value="1120"
+      />
+      <option
+        label="Acc 1223"
+        value="1222"
+      />
+      <option
+        label="First account25"
+        value="124"
+      />
+      <option
+        label="Second acc 227"
+        value="226"
+      />
+      <option
+        label="Third 329"
+        value="328"
+      />
+      <option
+        label="Acc 431"
+        value="430"
+      />
+      <option
+        label="Acc 533"
+        value="532"
+      />
+      <option
+        label="Acc 635"
+        value="634"
+      />
+      <option
+        label="Acc 737"
+        value="736"
+      />
+      <option
+        label="Acc 839"
+        value="838"
+      />
+      <option
+        label="Acc 941"
+        value="940"
+      />
+      <option
+        label="Acc 1043"
+        value="1042"
+      />
+      <option
+        label="Acc 1145"
+        value="1144"
+      />
+      <option
+        label="Acc 1247"
+        value="1246"
+      />
+      <option
+        label="First account49"
+        value="148"
+      />
+      <option
+        label="Second acc 251"
+        value="250"
+      />
+      <option
+        label="Third 353"
+        value="352"
+      />
+      <option
+        label="Acc 455"
+        value="454"
+      />
+      <option
+        label="Acc 557"
+        value="556"
+      />
+      <option
+        label="Acc 659"
+        value="658"
+      />
+      <option
+        label="Acc 761"
+        value="760"
+      />
+      <option
+        label="Acc 863"
+        value="862"
+      />
+      <option
+        label="Acc 965"
+        value="964"
+      />
+      <option
+        label="Acc 1067"
+        value="1066"
+      />
+      <option
+        label="Acc 1169"
+        value="1168"
+      />
+      <option
+        label="Acc 1271"
+        value="1270"
       />
     </select>
     <div
@@ -6754,6 +8816,42 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="3"
       />
       <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
+      />
+      <option
         label="First account1"
         value="10"
       />
@@ -6766,28 +8864,136 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="34"
       />
       <option
-        label="First account7"
-        value="16"
+        label="Acc 47"
+        value="46"
       />
       <option
-        label="Second acc 29"
-        value="28"
+        label="Acc 59"
+        value="58"
       />
       <option
-        label="Third 311"
-        value="310"
+        label="Acc 611"
+        value="610"
       />
       <option
-        label="First account13"
-        value="112"
+        label="Acc 713"
+        value="712"
       />
       <option
-        label="Second acc 215"
-        value="214"
+        label="Acc 815"
+        value="814"
       />
       <option
-        label="Third 317"
-        value="316"
+        label="Acc 917"
+        value="916"
+      />
+      <option
+        label="Acc 1019"
+        value="1018"
+      />
+      <option
+        label="Acc 1121"
+        value="1120"
+      />
+      <option
+        label="Acc 1223"
+        value="1222"
+      />
+      <option
+        label="First account25"
+        value="124"
+      />
+      <option
+        label="Second acc 227"
+        value="226"
+      />
+      <option
+        label="Third 329"
+        value="328"
+      />
+      <option
+        label="Acc 431"
+        value="430"
+      />
+      <option
+        label="Acc 533"
+        value="532"
+      />
+      <option
+        label="Acc 635"
+        value="634"
+      />
+      <option
+        label="Acc 737"
+        value="736"
+      />
+      <option
+        label="Acc 839"
+        value="838"
+      />
+      <option
+        label="Acc 941"
+        value="940"
+      />
+      <option
+        label="Acc 1043"
+        value="1042"
+      />
+      <option
+        label="Acc 1145"
+        value="1144"
+      />
+      <option
+        label="Acc 1247"
+        value="1246"
+      />
+      <option
+        label="First account49"
+        value="148"
+      />
+      <option
+        label="Second acc 251"
+        value="250"
+      />
+      <option
+        label="Third 353"
+        value="352"
+      />
+      <option
+        label="Acc 455"
+        value="454"
+      />
+      <option
+        label="Acc 557"
+        value="556"
+      />
+      <option
+        label="Acc 659"
+        value="658"
+      />
+      <option
+        label="Acc 761"
+        value="760"
+      />
+      <option
+        label="Acc 863"
+        value="862"
+      />
+      <option
+        label="Acc 965"
+        value="964"
+      />
+      <option
+        label="Acc 1067"
+        value="1066"
+      />
+      <option
+        label="Acc 1169"
+        value="1168"
+      />
+      <option
+        label="Acc 1271"
+        value="1270"
       />
     </select>
     <div
@@ -7103,6 +9309,42 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="3"
       />
       <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
+      />
+      <option
         label="First account1"
         value="10"
       />
@@ -7115,28 +9357,136 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
         value="34"
       />
       <option
-        label="First account7"
-        value="16"
+        label="Acc 47"
+        value="46"
       />
       <option
-        label="Second acc 29"
-        value="28"
+        label="Acc 59"
+        value="58"
       />
       <option
-        label="Third 311"
-        value="310"
+        label="Acc 611"
+        value="610"
       />
       <option
-        label="First account13"
-        value="112"
+        label="Acc 713"
+        value="712"
       />
       <option
-        label="Second acc 215"
-        value="214"
+        label="Acc 815"
+        value="814"
       />
       <option
-        label="Third 317"
-        value="316"
+        label="Acc 917"
+        value="916"
+      />
+      <option
+        label="Acc 1019"
+        value="1018"
+      />
+      <option
+        label="Acc 1121"
+        value="1120"
+      />
+      <option
+        label="Acc 1223"
+        value="1222"
+      />
+      <option
+        label="First account25"
+        value="124"
+      />
+      <option
+        label="Second acc 227"
+        value="226"
+      />
+      <option
+        label="Third 329"
+        value="328"
+      />
+      <option
+        label="Acc 431"
+        value="430"
+      />
+      <option
+        label="Acc 533"
+        value="532"
+      />
+      <option
+        label="Acc 635"
+        value="634"
+      />
+      <option
+        label="Acc 737"
+        value="736"
+      />
+      <option
+        label="Acc 839"
+        value="838"
+      />
+      <option
+        label="Acc 941"
+        value="940"
+      />
+      <option
+        label="Acc 1043"
+        value="1042"
+      />
+      <option
+        label="Acc 1145"
+        value="1144"
+      />
+      <option
+        label="Acc 1247"
+        value="1246"
+      />
+      <option
+        label="First account49"
+        value="148"
+      />
+      <option
+        label="Second acc 251"
+        value="250"
+      />
+      <option
+        label="Third 353"
+        value="352"
+      />
+      <option
+        label="Acc 455"
+        value="454"
+      />
+      <option
+        label="Acc 557"
+        value="556"
+      />
+      <option
+        label="Acc 659"
+        value="658"
+      />
+      <option
+        label="Acc 761"
+        value="760"
+      />
+      <option
+        label="Acc 863"
+        value="862"
+      />
+      <option
+        label="Acc 965"
+        value="964"
+      />
+      <option
+        label="Acc 1067"
+        value="1066"
+      />
+      <option
+        label="Acc 1169"
+        value="1168"
+      />
+      <option
+        label="Acc 1271"
+        value="1270"
       />
     </select>
     <div
@@ -7454,6 +9804,42 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
         value="3"
       />
       <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
+      />
+      <option
         label="First account1"
         value="10"
       />
@@ -7466,28 +9852,136 @@ exports[`Storyshots Molecules / Input / Select List Positioned To The Left 1`] =
         value="34"
       />
       <option
-        label="First account7"
-        value="16"
+        label="Acc 47"
+        value="46"
       />
       <option
-        label="Second acc 29"
-        value="28"
+        label="Acc 59"
+        value="58"
       />
       <option
-        label="Third 311"
-        value="310"
+        label="Acc 611"
+        value="610"
       />
       <option
-        label="First account13"
-        value="112"
+        label="Acc 713"
+        value="712"
       />
       <option
-        label="Second acc 215"
-        value="214"
+        label="Acc 815"
+        value="814"
       />
       <option
-        label="Third 317"
-        value="316"
+        label="Acc 917"
+        value="916"
+      />
+      <option
+        label="Acc 1019"
+        value="1018"
+      />
+      <option
+        label="Acc 1121"
+        value="1120"
+      />
+      <option
+        label="Acc 1223"
+        value="1222"
+      />
+      <option
+        label="First account25"
+        value="124"
+      />
+      <option
+        label="Second acc 227"
+        value="226"
+      />
+      <option
+        label="Third 329"
+        value="328"
+      />
+      <option
+        label="Acc 431"
+        value="430"
+      />
+      <option
+        label="Acc 533"
+        value="532"
+      />
+      <option
+        label="Acc 635"
+        value="634"
+      />
+      <option
+        label="Acc 737"
+        value="736"
+      />
+      <option
+        label="Acc 839"
+        value="838"
+      />
+      <option
+        label="Acc 941"
+        value="940"
+      />
+      <option
+        label="Acc 1043"
+        value="1042"
+      />
+      <option
+        label="Acc 1145"
+        value="1144"
+      />
+      <option
+        label="Acc 1247"
+        value="1246"
+      />
+      <option
+        label="First account49"
+        value="148"
+      />
+      <option
+        label="Second acc 251"
+        value="250"
+      />
+      <option
+        label="Third 353"
+        value="352"
+      />
+      <option
+        label="Acc 455"
+        value="454"
+      />
+      <option
+        label="Acc 557"
+        value="556"
+      />
+      <option
+        label="Acc 659"
+        value="658"
+      />
+      <option
+        label="Acc 761"
+        value="760"
+      />
+      <option
+        label="Acc 863"
+        value="862"
+      />
+      <option
+        label="Acc 965"
+        value="964"
+      />
+      <option
+        label="Acc 1067"
+        value="1066"
+      />
+      <option
+        label="Acc 1169"
+        value="1168"
+      />
+      <option
+        label="Acc 1271"
+        value="1270"
       />
     </select>
     <div
@@ -7684,7 +10178,6 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -7781,6 +10274,42 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -7989,7 +10518,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8087,6 +10615,42 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
       label="Third 3"
       value="3"
     />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
   </select>
   <div
     className="c1"
@@ -8144,7 +10708,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c7"
+                    className="c5"
                   >
                     Select account
                   </span>
@@ -8294,7 +10858,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8392,6 +10955,42 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
       label="Third 3"
       value="3"
     />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
   </select>
   <div
     className="c1"
@@ -8449,7 +11048,7 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c7"
+                    className="c5"
                   >
                     Select account
                   </span>
@@ -8599,7 +11198,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8701,6 +11299,42 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
       value="3"
     />
     <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
+    <option
       label="Disabled"
       value="Doesnt matter"
     />
@@ -8761,7 +11395,366 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
                   className="c12 c13"
                 >
                   <span
-                    className="c7"
+                    className="c5"
+                  >
+                    Select account
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Multiselect Select All With Full Screen On Mobile 1`] = `
+.c12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c13 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    multiple={true}
+    onChange={[Function]}
+    value={Array []}
+  >
+    <option
+      label="Select account"
+      value=""
+    />
+    <option
+      label="Select All"
+    />
+    <option
+      label="First account"
+      value="1"
+    />
+    <option
+      label="Second acc 2"
+      value="2"
+    />
+    <option
+      label="Third 3"
+      value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
+    <option
+      label="Disabled"
+      value="Doesnt matter"
+    />
+    <option
+      label="Acc21"
+      value={21}
+    />
+    <option
+      label="Acc22"
+      value={22}
+    />
+    <option
+      label="Acc23"
+      value={23}
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="multiwithall-select"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              User account 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="User account"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="User account: Select account"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="multiwithall-select"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c10 c11"
+              >
+                <div
+                  className="c12 c13"
+                >
+                  <span
+                    className="c5"
                   >
                     Select account
                   </span>
@@ -8916,7 +11909,6 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
 
 .c7 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8971,6 +11963,7 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c14 {
@@ -9224,7 +12217,6 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -9279,6 +12271,7 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -9324,6 +12317,42 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -9532,7 +12561,6 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -9587,6 +12615,7 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -9632,6 +12661,42 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -9840,7 +12905,6 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -9895,6 +12959,7 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -10415,6 +13480,342 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Select Passing Truncated Components 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c12 {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    multiple={true}
+    onChange={[Function]}
+    value={
+      Array [
+        "2",
+        "3",
+      ]
+    }
+  >
+    <option
+      label="Placeholder"
+      value=""
+    />
+    <option
+      label="First account"
+      value="1"
+    />
+    <option
+      label="Second acc 2"
+      value="2"
+    />
+    <option
+      label="Third 3"
+      value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              Label 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="Label"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Label: 2 items"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="input-1"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c10 c11"
+              >
+                <div
+                  className="c2 c12"
+                >
+                  <span
+                    className="c7 c13"
+                  >
+                    2 selected along with a very long text for reference of truncation
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c14 c15"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 .c0 {
   padding-top: 160px;
@@ -10541,7 +13942,6 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 
 .c7 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -10596,6 +13996,7 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c14 {
@@ -10644,6 +14045,42 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
       <option
         label="Third 3"
         value="3"
+      />
+      <option
+        label="Acc 4"
+        value="4"
+      />
+      <option
+        label="Acc 5"
+        value="5"
+      />
+      <option
+        label="Acc 6"
+        value="6"
+      />
+      <option
+        label="Acc 7"
+        value="7"
+      />
+      <option
+        label="Acc 8"
+        value="8"
+      />
+      <option
+        label="Acc 9"
+        value="9"
+      />
+      <option
+        label="Acc 10"
+        value="10"
+      />
+      <option
+        label="Acc 11"
+        value="11"
+      />
+      <option
+        label="Acc 12"
+        value="12"
       />
     </select>
     <div
@@ -10853,7 +14290,6 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -10955,6 +14391,42 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
     <option
       label="Third 3"
       value="3"
+    />
+    <option
+      label="Acc 4"
+      value="4"
+    />
+    <option
+      label="Acc 5"
+      value="5"
+    />
+    <option
+      label="Acc 6"
+      value="6"
+    />
+    <option
+      label="Acc 7"
+      value="7"
+    />
+    <option
+      label="Acc 8"
+      value="8"
+    />
+    <option
+      label="Acc 9"
+      value="9"
+    />
+    <option
+      label="Acc 10"
+      value="10"
+    />
+    <option
+      label="Acc 11"
+      value="11"
+    />
+    <option
+      label="Acc 12"
+      value="12"
     />
   </select>
   <div
@@ -11163,7 +14635,6 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11218,6 +14689,7 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -11367,13 +14839,13 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Size S 1`] = `
-.c15 {
+.c16 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11385,7 +14857,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11393,7 +14865,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   display: flex;
 }
 
-.c23 {
+.c24 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -11402,13 +14874,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c8 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -11422,7 +14894,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -11431,29 +14903,38 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-transform: none;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -11462,7 +14943,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -11471,7 +14952,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -11480,7 +14961,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c25 {
+.c26 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -11489,7 +14970,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c19 {
+.c20 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -11506,15 +14987,14 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c9 {
+.c10 {
   height: 32px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11522,17 +15002,16 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c9:focus-within {
+.c10:focus-within {
   border-color: #0046FF;
 }
 
-.c9.focus-within {
+.c10.focus-within {
   border-color: #0046FF;
 }
 
-.c20 {
+.c21 {
   height: 32px;
-  outline: none;
   border: 1px solid #FF1900;
   position: relative;
   background: #FFFFFF;
@@ -11540,21 +15019,20 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c20:hover {
+.c21:hover {
   border-color: #4B4B46;
 }
 
-.c20:focus-within {
+.c21:focus-within {
   border-color: #0046FF;
 }
 
-.c20.focus-within {
+.c21.focus-within {
   border-color: #0046FF;
 }
 
-.c24 {
+.c25 {
   height: 32px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11562,21 +15040,20 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c24:hover {
+.c25:hover {
   border-color: #4B4B46;
 }
 
-.c24:focus-within {
+.c25:focus-within {
   border-color: #0046FF;
 }
 
-.c24.focus-within {
+.c25.focus-within {
   border-color: #0046FF;
 }
 
-.c26 {
+.c27 {
   height: 32px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -11584,24 +15061,24 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   position: relative;
 }
 
-.c26:hover {
+.c27:hover {
   border-color: #4B4B46;
 }
 
-.c26:focus-within {
+.c27:focus-within {
   border-color: #0046FF;
 }
 
-.c26.focus-within {
+.c27.focus-within {
   border-color: #0046FF;
 }
 
-.c14 {
+.c15 {
   height: 100%;
   width: 100%;
 }
 
-.c12 {
+.c13 {
   background: #EBEBE8;
   width: 100%;
   height: 100%;
@@ -11621,11 +15098,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-align: initial;
 }
 
-.c12:active {
+.c13:active {
   color: inherit;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -11645,19 +15122,20 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   text-align: initial;
 }
 
-.c21:active {
+.c22:active {
   color: inherit;
 }
 
-.c17 {
+.c18 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
-.c16 {
+.c17 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -11669,11 +15147,11 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c6 {
+.c7 {
   width: 200px;
   display: inline-block;
 }
@@ -11746,13 +15224,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Disabled
+      <span
+        className="c3"
+      >
+        Disabled
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={true}
           onChange={[Function]}
         >
@@ -11772,33 +15254,69 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="disabled-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c9"
+                className="c10"
                 disabled={true}
                 label="User account"
                 onBlur={[Function]}
@@ -11807,13 +15325,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c12"
+                    className="c12 c13"
                     data-testid="input-select-button"
                     disabled={true}
                     form=""
@@ -11824,13 +15342,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -11840,7 +15358,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -11866,13 +15384,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Error
+      <span
+        className="c3"
+      >
+        Error
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -11892,33 +15414,69 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="error-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c20"
+                className="c21"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -11927,13 +15485,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -11944,13 +15502,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -11960,7 +15518,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -11974,10 +15532,10 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c22"
+                  className="c23"
                 >
                   <div
-                    className="c23"
+                    className="c24"
                   >
                     Error: 
                   </div>
@@ -11997,13 +15555,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Info
+      <span
+        className="c3"
+      >
+        Info
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -12023,33 +15585,69 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="info-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c24"
+                className="c25"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -12058,13 +15656,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -12075,13 +15673,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -12091,7 +15689,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -12105,7 +15703,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
               </div>
               <div>
                 <span
-                  className="c25"
+                  className="c26"
                 >
                   Some extra info
                 </span>
@@ -12123,13 +15721,17 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
     <div
       className="c2"
     >
-      Success
+      <span
+        className="c3"
+      >
+        Success
+      </span>
     </div>
     <div>
       <div>
         <select
           aria-hidden="true"
-          className="c3"
+          className="c4"
           disabled={false}
           onChange={[Function]}
         >
@@ -12149,33 +15751,69 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
             label="Third 3"
             value="3"
           />
+          <option
+            label="Acc 4"
+            value="4"
+          />
+          <option
+            label="Acc 5"
+            value="5"
+          />
+          <option
+            label="Acc 6"
+            value="6"
+          />
+          <option
+            label="Acc 7"
+            value="7"
+          />
+          <option
+            label="Acc 8"
+            value="8"
+          />
+          <option
+            label="Acc 9"
+            value="9"
+          />
+          <option
+            label="Acc 10"
+            value="10"
+          />
+          <option
+            label="Acc 11"
+            value="11"
+          />
+          <option
+            label="Acc 12"
+            value="12"
+          />
         </select>
         <div
-          className="c4"
+          className="c5"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
             >
               <label
-                className="c7"
+                className="c8"
                 hidden={false}
                 htmlFor="success-select"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c5"
+                    className="c6"
                   >
                     User account 
                   </div>
                 </span>
               </label>
               <div
-                className="c26"
+                className="c27"
                 disabled={false}
                 label="User account"
                 onBlur={[Function]}
@@ -12184,13 +15822,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 tabIndex={0}
               >
                 <span
-                  className="c10"
+                  className="c11"
                 >
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
                     aria-label="User account: Select account"
-                    className="c11 c21"
+                    className="c12 c22"
                     data-testid="input-select-button"
                     disabled={false}
                     form=""
@@ -12201,13 +15839,13 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                   >
                     <div
                       aria-hidden="true"
-                      className="c13 c14"
+                      className="c14 c15"
                     >
                       <div
-                        className="c15 c16"
+                        className="c16 c17"
                       >
                         <span
-                          className="c17"
+                          className="c18"
                         >
                           Select account
                         </span>
@@ -12217,7 +15855,7 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  className="c18 c19"
+                  className="c19 c20"
                   focusable="false"
                   open={false}
                   preserveAspectRatio="xMidYMid meet"
@@ -12360,7 +15998,6 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -12415,6 +16052,7 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -12669,7 +16307,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -12724,6 +16361,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -12974,7 +16612,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -13029,6 +16666,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c13 {
@@ -13160,6 +16798,441 @@ Array [
     </div>
   </div>,
 ]
+`;
+
+exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
+.c0 {
+  padding: 20px;
+  background-color: #EBEBE8;
+}
+
+.c3 {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+
+.c7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+.c21 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c25 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c15 {
+  height: 80px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c15:hover {
+  border-color: #4B4B46;
+}
+
+.c15:focus-within {
+  border-color: #0046FF;
+}
+
+.c15.focus-within {
+  border-color: #0046FF;
+}
+
+.c20 {
+  height: 100%;
+  width: 100%;
+}
+
+.c18 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c18:active {
+  color: inherit;
+}
+
+.c23 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  color: #6E6E69;
+}
+
+.c22 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: none;
+}
+
+.c11 {
+  width: 100%;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c7 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c4 {
+    display: none !important;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c6 {
+    display: none !important;
+  }
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <header
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        >
+          Setting a custom \`height\` overwrites the \`size\` prop
+        </span>
+      </div>
+      <div
+        className="c6"
+      >
+        <span
+          className="c5"
+        >
+          Setting a custom \`height\` overwrites the \`size\` prop
+        </span>
+      </div>
+    </header>
+    <div
+      className="c7"
+    >
+      <div>
+        <select
+          aria-hidden="true"
+          className="c8"
+          disabled={false}
+          onChange={[Function]}
+        >
+          <option
+            label="What's your favourite berry?"
+            value=""
+          />
+          <option
+            label="Strawberry 🍓"
+            value={1}
+          />
+          <option
+            label="Blueberry 🫐"
+            value={2}
+          />
+          <option
+            label="Banana 🍌"
+            value={3}
+          />
+        </select>
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+          >
+            <div
+              className="c11"
+            >
+              <label
+                className="c12"
+                hidden={false}
+                htmlFor="input-with-custom-height"
+              >
+                <span
+                  className="c13"
+                >
+                  <div
+                    className="c14"
+                  >
+                    This is a tall input 
+                  </div>
+                </span>
+              </label>
+              <div
+                className="c15"
+                disabled={false}
+                height={20}
+                label="This is a tall input"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                tabIndex={0}
+              >
+                <span
+                  className="c16"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-label="This is a tall input: What's your favourite berry?"
+                    className="c17 c18"
+                    data-testid="input-select-button"
+                    disabled={false}
+                    form=""
+                    id="input-with-custom-height"
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <div
+                      aria-hidden="true"
+                      className="c19 c20"
+                    >
+                      <div
+                        className="c21 c22"
+                      >
+                        <span
+                          className="c23"
+                        >
+                          What's your favourite berry?
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </span>
+                <svg
+                  aria-hidden="true"
+                  className="c24 c25"
+                  focusable="false"
+                  open={false}
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <polygon
+                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                  />
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
@@ -13301,7 +17374,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -13356,6 +17428,7 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c16 {
@@ -13662,7 +17735,6 @@ Array [
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -13717,6 +17789,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  color: #6E6E69;
 }
 
 .c16 {
@@ -13880,4 +17953,675 @@ Array [
     </div>
   </div>,
 ]
+`;
+
+exports[`Storyshots Molecules / Input / Select With Modal Title Full Screen On Mobile 1`] = `
+.c15 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c9 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c17 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  color: #6E6E69;
+}
+
+.c16 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+<div>
+  <select
+    aria-hidden="true"
+    className="c0"
+    onChange={[Function]}
+  >
+    <option
+      label="Placeholder"
+      value=""
+    />
+    <option
+      label="1"
+      value={1}
+    />
+    <option
+      label="2"
+      value={2}
+    />
+    <option
+      label="3"
+      value={3}
+    />
+  </select>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              Label 
+              <svg
+                aria-hidden="true"
+                className="c6 c7"
+                focusable="false"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fillRule="evenodd"
+                  transform="translate(1 1)"
+                >
+                  <circle
+                    className="c8"
+                    cx="11"
+                    cy="11"
+                    fill="none"
+                    r="11"
+                  />
+                  <path
+                    d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+                    fillRule="nonzero"
+                  />
+                </g>
+              </svg>
+            </div>
+          </span>
+        </label>
+        <div
+          className="c9"
+          label="Label"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c10"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Label: Placeholder"
+              className="c11 c12"
+              data-testid="input-select-button"
+              form=""
+              id="input-1"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                className="c13 c14"
+              >
+                <div
+                  className="c15 c16"
+                >
+                  <span
+                    className="c17"
+                  >
+                    Placeholder
+                  </span>
+                </div>
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c18 c19"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Without Search Component 1`] = `
+.c0 {
+  padding: 20px;
+  background-color: #EBEBE8;
+}
+
+.c13 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c7 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c12 {
+  height: 100%;
+  width: 100%;
+}
+
+.c10 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c10:active {
+  color: inherit;
+}
+
+.c15 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  color: #6E6E69;
+}
+
+.c14 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: none;
+}
+
+.c4 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        label="Select an option"
+        value=""
+      />
+      <option
+        label="foo"
+        value={1}
+      />
+      <option
+        label="bar"
+        value={2}
+      />
+    </select>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+            htmlFor="input-without-a-search-component"
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c3"
+              >
+                Without search component 
+              </div>
+            </span>
+          </label>
+          <div
+            className="c7"
+            disabled={false}
+            label="Without search component"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            tabIndex={0}
+          >
+            <span
+              className="c8"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Without search component: Select an option"
+                className="c9 c10"
+                data-testid="input-select-button"
+                disabled={false}
+                form=""
+                id="input-without-a-search-component"
+                onClick={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  className="c11 c12"
+                >
+                  <div
+                    className="c13 c14"
+                  >
+                    <span
+                      className="c15"
+                    >
+                      Select an option
+                    </span>
+                  </div>
+                </div>
+              </button>
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c16 c17"
+              focusable="false"
+              open={false}
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;

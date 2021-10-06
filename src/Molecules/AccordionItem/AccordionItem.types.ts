@@ -5,10 +5,20 @@ type Props = {
   /** Setting this prop makes the component controlled */
   expanded?: boolean;
   expandedInitial?: boolean;
-  title: string;
+  title: string | React.ReactNode;
   onClick?: React.MouseEventHandler;
   onToggle?: (expanded: boolean) => void;
   ref?: React.Ref<HTMLButtonElement>;
+  withChevron?: boolean;
+  disableBackgroundColor?: boolean;
+  disabled?: boolean;
+  p?: number;
+  px?: number;
+  py?: number;
+  pt?: number;
+  pb?: number;
+  pl?: number;
+  pr?: number;
 };
 
 export type AccordionItemComponent = React.FC<Props>;

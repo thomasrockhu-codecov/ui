@@ -1,11 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelectMachineFromContext } from '../context';
-import { Option, Optgroup } from '../SingleSelectList/SingleSelectList';
+import { Option } from '../SingleSelectList/SingleSelectList';
+import { OptionGroup } from '../OptionGroup';
 
 export const ListItem: React.FC<{
   index: number;
 }> = ({ index }) => {
   const [state] = useSelectMachineFromContext();
+  const { fullscreenOnMobile } = state.context;
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
 
   const option = state.context.visibleOptions[index];
@@ -19,7 +21,7 @@ export const ListItem: React.FC<{
       );
 
   return option.options ? (
-    <Optgroup label={option.label} index={index} />
+    <OptionGroup label={option.label} index={index} />
   ) : (
     <Option
       selected={selected}
@@ -28,6 +30,7 @@ export const ListItem: React.FC<{
       value={option.value}
       focused={focused}
       isKeyboardNavigation={isKeyboardNavigation}
+      fullscreenOnMobile={fullscreenOnMobile}
     />
   );
 };

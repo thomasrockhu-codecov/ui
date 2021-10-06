@@ -1,5 +1,6 @@
 import React from 'react';
-import { select } from '@storybook/addon-knobs';
+import { number, select, color } from '@storybook/addon-knobs';
+import { Theme } from '../../theme/theme.types';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
@@ -14,93 +15,82 @@ defaultUse.story = {
 };
 
 export const inlineStory = () => (
-  <span>
+  <>
     You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
-  </span>
+  </>
 );
 
-export const thinArrowUp = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-  </span>
+const directionKnob = () => select('Direction', ['up', 'right', 'down', 'left'], 'up');
+
+export const thinArrow = () => <Icon.ThinArrow direction={directionKnob()} />;
+
+export const thinChevron = () => <Icon.ThinChevron direction={directionKnob()} />;
+
+export const chevron = () => <Icon.Chevron direction={directionKnob()} />;
+
+export const sortArrow = () => (
+  <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
 );
 
-export const thinArrowRight = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-  </span>
+export const Account = () => (
+  <Icon.Account
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const thinArrowDown = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-  </span>
+export const CalendarO = () => (
+  <Icon.CalendarO
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const thinArrowLeft = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-  </span>
+export const FAQ = () => (
+  <Icon.FAQ size={number('Size', 10)} fill={(t) => color('Fill color', t.color.cta)} />
 );
 
-export const thinChevronUp = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-  </span>
+export const Percent = () => (
+  <Icon.Percent
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const thinChevronDown = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-  </span>
+export const Profile = () => (
+  <Icon.Profile
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const thinChevronLeft = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-  </span>
+export const ThreeDotsO = () => (
+  <Icon.ThreeDotsO
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const thinChevronRight = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-  </span>
+export const TaxPercentage = () => (
+  <Icon.TaxPercentage
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const chevronUp = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
-  </span>
+export const Transfer = () => (
+  <Icon.Transfer
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
-export const chevronDown = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
-  </span>
-);
-
-export const chevronLeft = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'left')} />
-  </span>
-);
-
-export const chevronRight = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'right')} />
-  </span>
-);
-
-export const sortArrowAscending = () => (
-  <span>
-    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
-  </span>
-);
-
-export const sortArrowDescending = () => (
-  <span>
-    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'descending')} />
-  </span>
+export const UrgentMessage = () => (
+  <Icon.UrgentMessage
+    size={number('Size', 10)}
+    fill={(t: Theme) => color('Fill color', t.color.text)}
+    stroke={(t: Theme) => color('Stroke color', t.color.negative)}
+  />
 );
 
 inlineStory.story = {
@@ -186,7 +176,7 @@ withModifiedStroke.story = {
 
 export const availableIcons = () => (
   <Display
-    items={Object.entries(Icon).map(
+    items={Object?.entries(Icon)?.map(
       ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
         title: iconName,
         component: (
@@ -205,7 +195,7 @@ availableIcons.story = {
 
 export const allIconsColored = () => (
   <>
-    {Object.entries(Icon).map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
+    {Object?.entries(Icon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}

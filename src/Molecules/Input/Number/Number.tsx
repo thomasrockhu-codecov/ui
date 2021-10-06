@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, NumberComponent, Variant } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
+import { NumberComponent, Props, Variant } from './Number.types';
+import { Flexbox, FormField, Icon, Typography, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
+import { getNumberAsString, getStringAsNumber } from './utils';
+import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
 import adjustValue from './adjustValue';
 import { placeholderNormalization } from '../Text/Text';
 
@@ -29,7 +29,7 @@ const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -52,7 +52,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
-  outline: none;
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -120,9 +119,12 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${borderStyles}
   ${height}
   ${placeholderNormalization}
-  padding: ${(p) =>
-    p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
+  color: ${(p) => p.theme.color.text};
+  &:disabled {
+    color: ${(p) => p.theme.color.disabledText};
+  }
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
   ${(p) =>

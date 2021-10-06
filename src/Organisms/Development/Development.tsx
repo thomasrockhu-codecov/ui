@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { DevelopmentProps, DevelopmentComponent } from './Development.types';
+import { DevelopmentComponent, DevelopmentProps } from './Development.types';
 import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
 import { getRoundedValue } from '../../Molecules/Number/Number';
@@ -14,8 +14,8 @@ const getPrefix = (value?: number | null) => {
 const getColor = ({
   value,
   theme,
-  positiveColor = c => c.color.positive,
-  negativeColor = c => c.color.negative,
+  positiveColor = (c) => c.color.positive,
+  negativeColor = (c) => c.color.negative,
 }: Pick<DevelopmentProps, 'value' | 'positiveColor' | 'negativeColor'> & { theme: Theme }) => {
   if (!value || !Number.isFinite(value)) return theme.color.text;
   return value > 0 ? positiveColor(theme) : negativeColor(theme);
@@ -25,7 +25,7 @@ const StyledDevelopment = styled.span<DevelopmentProps>`
   color: ${getColor};
 `;
 
-const Development: DevelopmentComponent = props => {
+const Development: DevelopmentComponent = (props) => {
   const {
     value,
     decimals,

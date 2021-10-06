@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import FlexTable from '../..';
 import { ExpandAreaProps } from '../Row.types';
 import { ExpandCell } from '../../Cell/ExpandCell';
-import { ICON_COLUMN_DEFAULT_FLEX_PROPS, COLUMN_ID_EXPAND } from '../../shared/constants';
+import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../../shared/constants';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { getStylesForSizes } from '../../shared';
+import { Theme } from '../../../../theme/theme.types';
 
 type ScreenSizeConfigurableProps = {
   expandable: boolean;
+  columnDistance: number;
 };
 
 type StyledExpandCellProps = {
@@ -26,6 +28,11 @@ const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
   return 'display: none;';
 };
 
+// this negative left margin is to compensate for the padding (right) on the previous cell to prevent misalignment
+const getColumnDistanceStyles = (p: ScreenSizeConfigurableProps & { theme: Theme }) => `
+  margin-left: ${p.theme.spacing.unit(-p.columnDistance / 2)}px;
+`;
+
 const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
   ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
     (p: StyledExpandCellProps) => ({
@@ -37,8 +44,13 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
     }),
     {
       expandable: getExpandableStyles,
+      columnDistance: getColumnDistanceStyles,
     },
-  )}
+  )};
+  flex: 0 ${(p) => p.theme.spacing.unit(5)}px;
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    flex: 0 ${(p) => p.theme.spacing.unit(10)}px;
+  }
 `;
 
 export const ExpandElement: React.FC<
@@ -48,7 +60,10 @@ export const ExpandElement: React.FC<
     setExpand: (expanded: boolean) => void;
   }
 > = ({ rowType, expanded = false, onExpandToggle, setExpand, disabled }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable<'expandable'>('expandable');
+  const { xs, sm, md, lg, xl } = useFlexTable<'expandable' | 'columnDistance'>(
+    'expandable',
+    'columnDistance',
+  );
 
   const expandProps =
     rowType === 'content'
@@ -58,7 +73,9 @@ export const ExpandElement: React.FC<
           disabled,
         }
       : {
+          expanded: false,
           as: rowType === 'header' ? FlexTable.Header : FlexTable.Footer,
+          onClick: () => {},
         };
 
   return (

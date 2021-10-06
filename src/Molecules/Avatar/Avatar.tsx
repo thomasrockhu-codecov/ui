@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { StyledProps } from 'styled-components';
-import { Props } from './Avatar.types';
+import { Props, StyledFlexboxProps } from './Avatar.types';
 
 import { Flexbox, Typography } from '../..';
 import { isFunction } from '../../common/utils';
@@ -17,9 +17,9 @@ const getSize = (p: StyledProps<Props>) => {
   }
 };
 
-const StyledDiv = styled(Flexbox)<Props>`
-  background-color: ${({ theme, backgroundColor }) =>
-    isFunction(backgroundColor) ? backgroundColor(theme) : theme.color.backgroundDark};
+const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
+  background-color: ${({ theme, $backgroundColor }) =>
+    isFunction($backgroundColor) ? $backgroundColor(theme) : theme.color.backgroundDark};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
@@ -43,8 +43,8 @@ export const Avatar: React.FunctionComponent<Props> = ({
   size = 'm',
   backgroundColor,
 }) => (
-  <StyledDiv
-    backgroundColor={backgroundColor}
+  <StyledFlexbox
+    $backgroundColor={backgroundColor}
     container
     alignItems="center"
     justifyContent="center"
@@ -53,5 +53,5 @@ export const Avatar: React.FunctionComponent<Props> = ({
     <Typography type={fontSize(size)} weight="regular" color={(t) => t.color.textLight}>
       {children}
     </Typography>
-  </StyledDiv>
+  </StyledFlexbox>
 );

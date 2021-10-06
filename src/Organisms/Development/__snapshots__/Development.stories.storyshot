@@ -2,14 +2,23 @@
 
 exports[`Storyshots Organisms / Development As currency 1`] = `
 .c3 {
-  color: #00D200;
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c4 {
-  color: #282823;
+  color: #00D200;
 }
 
 .c5 {
+  color: #282823;
+}
+
+.c6 {
   color: #FF1900;
 }
 
@@ -81,11 +90,15 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
     <div
       className="c2"
     >
-      Positive value
+      <span
+        className="c3"
+      >
+        Positive value
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={50}
       >
         <span
@@ -104,11 +117,15 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
     <div
       className="c2"
     >
-      Zero value
+      <span
+        className="c3"
+      >
+        Zero value
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
         value={0}
       >
         <span
@@ -127,11 +144,15 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
     <div
       className="c2"
     >
-      Negative value
+      <span
+        className="c3"
+      >
+        Negative value
+      </span>
     </div>
     <div>
       <span
-        className="c5"
+        className="c6"
         value={-200}
       >
         <span
@@ -148,14 +169,23 @@ exports[`Storyshots Organisms / Development As currency 1`] = `
 
 exports[`Storyshots Organisms / Development As percentage 1`] = `
 .c3 {
-  color: #00D200;
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c4 {
-  color: #282823;
+  color: #00D200;
 }
 
 .c5 {
+  color: #282823;
+}
+
+.c6 {
   color: #FF1900;
 }
 
@@ -227,11 +257,15 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
     <div
       className="c2"
     >
-      Positive value
+      <span
+        className="c3"
+      >
+        Positive value
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={5.4}
       >
         <span
@@ -250,11 +284,15 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
     <div
       className="c2"
     >
-      Zero value
+      <span
+        className="c3"
+      >
+        Zero value
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
         value={0}
       >
         <span
@@ -273,11 +311,15 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
     <div
       className="c2"
     >
-      Negative value
+      <span
+        className="c3"
+      >
+        Negative value
+      </span>
     </div>
     <div>
       <span
-        className="c5"
+        className="c6"
         value={-2.1}
       >
         <span
@@ -294,14 +336,23 @@ exports[`Storyshots Organisms / Development As percentage 1`] = `
 
 exports[`Storyshots Organisms / Development Default 1`] = `
 .c3 {
-  color: #00D200;
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c4 {
-  color: #282823;
+  color: #00D200;
 }
 
 .c5 {
+  color: #282823;
+}
+
+.c6 {
   color: #FF1900;
 }
 
@@ -373,11 +424,15 @@ exports[`Storyshots Organisms / Development Default 1`] = `
     <div
       className="c2"
     >
-      Positive value
+      <span
+        className="c3"
+      >
+        Positive value
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={50}
       >
         <span
@@ -395,11 +450,15 @@ exports[`Storyshots Organisms / Development Default 1`] = `
     <div
       className="c2"
     >
-      Zero value
+      <span
+        className="c3"
+      >
+        Zero value
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
         value={0}
       >
         <span
@@ -417,11 +476,15 @@ exports[`Storyshots Organisms / Development Default 1`] = `
     <div
       className="c2"
     >
-      Negative value
+      <span
+        className="c3"
+      >
+        Negative value
+      </span>
     </div>
     <div>
       <span
-        className="c5"
+        className="c6"
         value={-200}
       >
         <span
@@ -616,7 +679,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      primary
+      <span
+        className="c3"
+      >
+        primary
+      </span>
     </div>
     <div>
       <span
@@ -633,7 +700,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -655,7 +726,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -677,7 +752,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -703,7 +782,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      secondary
+      <span
+        className="c3"
+      >
+        secondary
+      </span>
     </div>
     <div>
       <span
@@ -720,7 +803,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -742,7 +829,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -764,7 +855,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -790,7 +885,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      tertiary
+      <span
+        className="c3"
+      >
+        tertiary
+      </span>
     </div>
     <div>
       <span
@@ -807,7 +906,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -829,7 +932,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -851,7 +958,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -877,7 +988,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      caption
+      <span
+        className="c3"
+      >
+        caption
+      </span>
     </div>
     <div>
       <span
@@ -894,7 +1009,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -916,7 +1035,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -938,7 +1061,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -964,7 +1091,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      title1
+      <span
+        className="c3"
+      >
+        title1
+      </span>
     </div>
     <div>
       <span
@@ -981,7 +1112,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -1003,7 +1138,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -1025,7 +1164,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -1051,7 +1194,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      title2
+      <span
+        className="c3"
+      >
+        title2
+      </span>
     </div>
     <div>
       <span
@@ -1068,7 +1215,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -1090,7 +1241,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -1112,7 +1267,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -1138,7 +1297,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      title3
+      <span
+        className="c3"
+      >
+        title3
+      </span>
     </div>
     <div>
       <span
@@ -1155,7 +1318,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -1177,7 +1344,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -1199,7 +1370,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -1225,7 +1400,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
     <div
       className="c2"
     >
-      hero
+      <span
+        className="c3"
+      >
+        hero
+      </span>
     </div>
     <div>
       <span
@@ -1242,7 +1421,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Positive value
+              <span
+                className="c3"
+              >
+                Positive value
+              </span>
             </div>
             <div>
               <span
@@ -1264,7 +1447,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Zero value
+              <span
+                className="c3"
+              >
+                Zero value
+              </span>
             </div>
             <div>
               <span
@@ -1286,7 +1473,11 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
             <div
               className="c2"
             >
-              Negative value
+              <span
+                className="c3"
+              >
+                Negative value
+              </span>
             </div>
             <div>
               <span
@@ -1310,6 +1501,15 @@ exports[`Storyshots Organisms / Development Integration: with different typograp
 
 exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
 .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
   color: #282823;
 }
 
@@ -1381,11 +1581,15 @@ exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
     <div
       className="c2"
     >
-      +Infinity
+      <span
+        className="c3"
+      >
+        +Infinity
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={Infinity}
       >
         <span
@@ -1402,11 +1606,15 @@ exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
     <div
       className="c2"
     >
-      -Infinity
+      <span
+        className="c3"
+      >
+        -Infinity
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={-Infinity}
       >
         <span
@@ -1421,10 +1629,19 @@ exports[`Storyshots Organisms / Development Regression: infinity 1`] = `
 
 exports[`Storyshots Organisms / Development Regression: value is non-zero, but rounded value is 0 1`] = `
 .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c4 {
+  color: #282823;
+}
+
+.c5 {
   color: #FF1900;
 }
 
@@ -1496,11 +1713,15 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = 0.3\` and decimals = 0
+      <span
+        className="c3"
+      >
+        \`value = 0.3\` and decimals = 0
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={0}
       >
         <span
@@ -1518,11 +1739,15 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = -0.3 and decimals = 0\`
+      <span
+        className="c3"
+      >
+        \`value = -0.3 and decimals = 0\`
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={-0}
       >
         <span
@@ -1540,11 +1765,15 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = -1.3123 and decimals = 3\`
+      <span
+        className="c3"
+      >
+        \`value = -1.3123 and decimals = 3\`
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
         value={-1.312}
       >
         <span
@@ -1562,11 +1791,15 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = -0.3 and maximumDecimals = 0\`
+      <span
+        className="c3"
+      >
+        \`value = -0.3 and maximumDecimals = 0\`
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={-0}
       >
         <span
@@ -1584,11 +1817,15 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = 0.3\`
+      <span
+        className="c3"
+      >
+        \`value = 0.3\`
+      </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
         value={0}
       >
         <span
@@ -1604,157 +1841,23 @@ exports[`Storyshots Organisms / Development Regression: value is non-zero, but r
 
 exports[`Storyshots Organisms / Development With different colors 1`] = `
 .c3 {
-  color: #008A00;
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c4 {
-  color: #282823;
-}
-
-.c5 {
-  color: #AC135A;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-<div
-  className="c0"
-  direction="column"
->
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      Positive value
-    </div>
-    <div>
-      <span
-        className="c3"
-        value={50}
-      >
-        <span
-          aria-hidden={true}
-        />
-        +
-        50
-      </span>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      Zero value
-    </div>
-    <div>
-      <span
-        className="c4"
-        value={0}
-      >
-        <span
-          aria-hidden={true}
-        />
-        
-        0
-      </span>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      Negative value
-    </div>
-    <div>
-      <span
-        className="c5"
-        value={-200}
-      >
-        <span
-          aria-hidden={true}
-        />
-        
-        -200
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Organisms / Development With icon 1`] = `
-.c3 {
   color: #00D200;
 }
 
-.c4 {
+.c5 {
   color: #282823;
 }
 
-.c5 {
+.c6 {
   color: #FF1900;
 }
 
@@ -1826,11 +1929,179 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
     <div
       className="c2"
     >
-      Positive value
+      <span
+        className="c3"
+      >
+        Positive value
+      </span>
     </div>
     <div>
       <span
+        className="c4"
+        value={50}
+      >
+        <span
+          aria-hidden={true}
+        />
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
         className="c3"
+      >
+        Zero value
+      </span>
+    </div>
+    <div>
+      <span
+        className="c5"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Negative value
+      </span>
+    </div>
+    <div>
+      <span
+        className="c6"
+        value={-200}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -200
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms / Development With icon 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  color: #00D200;
+}
+
+.c5 {
+  color: #282823;
+}
+
+.c6 {
+  color: #FF1900;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Positive value
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4"
         value={50}
       >
         <span
@@ -1850,11 +2121,15 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
     <div
       className="c2"
     >
-      Zero value
+      <span
+        className="c3"
+      >
+        Zero value
+      </span>
     </div>
     <div>
       <span
-        className="c4"
+        className="c5"
         value={0}
       >
         <span
@@ -1874,11 +2149,15 @@ exports[`Storyshots Organisms / Development With icon 1`] = `
     <div
       className="c2"
     >
-      Negative value
+      <span
+        className="c3"
+      >
+        Negative value
+      </span>
     </div>
     <div>
       <span
-        className="c5"
+        className="c6"
         value={-200}
       >
         <span

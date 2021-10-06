@@ -12,6 +12,10 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   background-color: transparent;
 }
 
+.c13 {
+  color: #282823;
+}
+
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -67,7 +71,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   display: block;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -81,7 +85,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -95,27 +99,27 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   display: block;
 }
 
-.c22 {
+.c23 {
   fill: #00D200;
 }
 
-.c23 {
+.c24 {
+  fill: #FFF;
+}
+
+.c22 {
   fill: #FFF;
 }
 
 .c21 {
-  fill: #FFF;
-}
-
-.c20 {
   fill: #FF1900;
 }
 
-.c17 {
+.c18 {
   fill: #FFFFFF;
 }
 
-.c15 {
+.c16 {
   fill: #FFFFFF;
 }
 
@@ -132,7 +136,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -198,15 +202,15 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   content: none;
 }
 
-.c14 {
+.c15 {
   position: relative;
 }
 
-.c14:not(:last-of-type) > div > div:nth-child(2) {
+.c15:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c14::before {
+.c15::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -216,11 +220,11 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   background: #BCBCB6;
 }
 
-.c14:first-child::before {
+.c15:first-child::before {
   content: none;
 }
 
-.c14::after {
+.c15::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -231,19 +235,19 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   bottom: 0;
 }
 
-.c14:last-child::after {
+.c15:last-child::after {
   content: none;
 }
 
-.c18 {
+.c19 {
   position: relative;
 }
 
-.c18:not(:last-of-type) > div > div:nth-child(2) {
+.c19:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c18::before {
+.c19::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -253,11 +257,11 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   background: #BCBCB6;
 }
 
-.c18:first-child::before {
+.c19:first-child::before {
   content: none;
 }
 
-.c18::after {
+.c19::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -268,7 +272,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   bottom: 0;
 }
 
-.c18:last-child::after {
+.c19:last-child::after {
   content: none;
 }
 
@@ -312,12 +316,16 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             <span
               className="c12"
             >
-              <time>
-                Sat, Feb 1, 2020
-              </time>
+              <span
+                className="c13"
+              >
+                <time>
+                  Sat, Feb 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c13"
+              className="c14"
             >
               Nothing
             </span>
@@ -326,7 +334,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
       </div>
     </li>
     <li
-      className="c2 c14"
+      className="c2 c15"
     >
       <div
         className="c4 c5"
@@ -343,7 +351,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             viewBox="0 0 20 20"
           >
             <path
-              className="c15"
+              className="c16"
               d="M10 20C4.4771525 20 0 15.5228475 0 10S4.4771525 0 10 0s10 4.4771525 10 10-4.4771525 10-10 10z"
             />
             <path
@@ -360,12 +368,16 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             <span
               className="c12"
             >
-              <time>
-                Sun, Mar 1, 2020
-              </time>
+              <span
+                className="c13"
+              >
+                <time>
+                  Sun, Mar 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c13"
+              className="c14"
             >
               Waiting for information
             </span>
@@ -384,7 +396,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c16"
+            className="c17"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -394,7 +406,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
             />
             <polygon
-              className="c17"
+              className="c18"
               points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
             />
           </svg>
@@ -408,12 +420,16 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             <span
               className="c12"
             >
-              <time>
-                Sun, Mar 1, 2020
-              </time>
+              <span
+                className="c13"
+              >
+                <time>
+                  Sun, Mar 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c13"
+              className="c14"
             >
               Old
             </span>
@@ -422,7 +438,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
       </div>
     </li>
     <li
-      className="c2 c18"
+      className="c2 c19"
     >
       <div
         className="c4 c5"
@@ -432,7 +448,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c20"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -443,11 +459,11 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               fillRule="evenodd"
             >
               <polygon
-                className="c20"
+                className="c21"
                 points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
               />
               <path
-                className="c21"
+                className="c22"
                 d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
               />
             </g>
@@ -462,12 +478,16 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             <span
               className="c12"
             >
-              <time>
-                Wed, Apr 1, 2020
-              </time>
+              <span
+                className="c13"
+              >
+                <time>
+                  Wed, Apr 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c13"
+              className="c14"
             >
               Kinda new
             </span>
@@ -476,7 +496,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
       </div>
     </li>
     <li
-      className="c2 c14"
+      className="c2 c15"
     >
       <div
         className="c4 c5"
@@ -486,7 +506,7 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c20"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -497,11 +517,11 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c22"
+                className="c23"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c23"
+                className="c24"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
@@ -516,12 +536,16 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
             <span
               className="c12"
             >
-              <time>
-                Fri, Jul 3, 2020
-              </time>
+              <span
+                className="c13"
+              >
+                <time>
+                  Fri, Jul 3, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c13"
+              className="c14"
             >
               Newest
             </span>
@@ -545,22 +569,26 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   background-color: transparent;
 }
 
-.c15 {
+.c16 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: transparent;
 }
 
-.c20 {
+.c21 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
 }
 
-.c25 {
+.c26 {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: transparent;
+}
+
+.c14 {
+  color: #282823;
 }
 
 .c4 {
@@ -618,7 +646,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   display: block;
 }
 
-.c17 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -632,19 +660,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   display: block;
 }
 
-.c22 {
+.c23 {
   fill: #00D200;
 }
 
-.c23 {
+.c24 {
+  fill: #FFF;
+}
+
+.c20 {
   fill: #FFF;
 }
 
 .c19 {
-  fill: #FFF;
-}
-
-.c18 {
   fill: #FF1900;
 }
 
@@ -665,7 +693,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -731,15 +759,15 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   content: none;
 }
 
-.c16 {
+.c17 {
   position: relative;
 }
 
-.c16:not(:last-of-type) > div > div:nth-child(2) {
+.c17:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c16::before {
+.c17::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -749,11 +777,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   background: #BCBCB6;
 }
 
-.c16:first-child::before {
+.c17:first-child::before {
   content: none;
 }
 
-.c16::after {
+.c17::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -764,19 +792,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   bottom: 0;
 }
 
-.c16:last-child::after {
+.c17:last-child::after {
   content: none;
 }
 
-.c21 {
+.c22 {
   position: relative;
 }
 
-.c21:not(:last-of-type) > div > div:nth-child(2) {
+.c22:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c21::before {
+.c22::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -786,11 +814,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   background: #BCBCB6;
 }
 
-.c21:first-child::before {
+.c22:first-child::before {
   content: none;
 }
 
-.c21::after {
+.c22::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -801,19 +829,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   bottom: 0;
 }
 
-.c21:last-child::after {
+.c22:last-child::after {
   content: none;
 }
 
-.c24 {
+.c25 {
   position: relative;
 }
 
-.c24:not(:last-of-type) > div > div:nth-child(2) {
+.c25:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c24::before {
+.c25::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -823,11 +851,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   background: #00D200;
 }
 
-.c24:first-child::before {
+.c25:first-child::before {
   content: none;
 }
 
-.c24::after {
+.c25::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -838,7 +866,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   bottom: 0;
 }
 
-.c24:last-child::after {
+.c25:last-child::after {
   content: none;
 }
 
@@ -883,15 +911,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Wed, Jan 1, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Wed, Jan 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               <div
-                className="c15"
+                className="c16"
               >
                 Oldest
               </div>
@@ -901,7 +933,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
       </div>
     </li>
     <li
-      className="c2 c16"
+      className="c2 c17"
     >
       <div
         className="c4 c5"
@@ -911,7 +943,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -922,11 +954,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               fillRule="evenodd"
             >
               <polygon
-                className="c18"
+                className="c19"
                 points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
               />
               <path
-                className="c19"
+                className="c20"
                 d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
               />
             </g>
@@ -941,15 +973,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Sat, Feb 1, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Sat, Feb 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               <div
-                className="c20"
+                className="c21"
               >
                 Kinda old
               </div>
@@ -959,7 +995,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
       </div>
     </li>
     <li
-      className="c2 c21"
+      className="c2 c22"
     >
       <div
         className="c4 c5"
@@ -969,7 +1005,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -980,11 +1016,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c22"
+                className="c23"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c23"
+                className="c24"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
@@ -999,12 +1035,16 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Wed, Apr 1, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Wed, Apr 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               Kinda new
             </span>
@@ -1013,7 +1053,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
       </div>
     </li>
     <li
-      className="c2 c24"
+      className="c2 c25"
     >
       <div
         className="c4 c5"
@@ -1023,7 +1063,7 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c17"
+            className="c18"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1034,11 +1074,11 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c22"
+                className="c23"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c23"
+                className="c24"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
@@ -1053,15 +1093,19 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Fri, Jul 3, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Fri, Jul 3, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               <div
-                className="c25"
+                className="c26"
               >
                 Newest
               </div>
@@ -1084,6 +1128,10 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
 .c6 {
   margin-right: 8px;
   background-color: transparent;
+}
+
+.c15 {
+  color: #282823;
 }
 
 .c4 {
@@ -1162,7 +1210,7 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1275,12 +1323,16 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
             <span
               className="c14"
             >
-              <time>
-                Fri, Jul 3, 2020
-              </time>
+              <span
+                className="c15"
+              >
+                <time>
+                  Fri, Jul 3, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c15"
+              className="c16"
             >
               Single element. So lonely 😭
             </span>
@@ -1304,9 +1356,13 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   background-color: transparent;
 }
 
-.c15 {
+.c16 {
   margin-left: auto;
   background-color: transparent;
+}
+
+.c14 {
+  color: #282823;
 }
 
 .c4 {
@@ -1364,7 +1420,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1378,11 +1434,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   display: block;
 }
 
-.c20 {
+.c21 {
   fill: #00D200;
 }
 
-.c21 {
+.c22 {
   fill: #FFF;
 }
 
@@ -1403,7 +1459,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1412,7 +1468,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1421,7 +1477,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1451,29 +1507,29 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   cursor: pointer;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c16::before {
+.c17::before {
   content: '';
   display: block;
   position: absolute;
@@ -1484,11 +1540,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   height: calc(100% - 4px);
 }
 
-.c16:hover {
+.c17:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c16:active {
+.c17:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -1549,15 +1605,15 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   content: none;
 }
 
-.c18 {
+.c19 {
   position: relative;
 }
 
-.c18:not(:last-of-type) > div > div:nth-child(2) {
+.c19:not(:last-of-type) > div > div:nth-child(2) {
   border-bottom: 1px solid #EBEBE8;
 }
 
-.c18::before {
+.c19::before {
   content: '';
   position: absolute;
   height: 50%;
@@ -1567,11 +1623,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   background: #BCBCB6;
 }
 
-.c18:first-child::before {
+.c19:first-child::before {
   content: none;
 }
 
-.c18::after {
+.c19::after {
   content: '';
   position: absolute;
   height: 50%;
@@ -1582,7 +1638,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   bottom: 0;
 }
 
-.c18:last-child::after {
+.c19:last-child::after {
   content: none;
 }
 
@@ -1627,27 +1683,31 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Mon, Jun 1, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Mon, Jun 1, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               Old
             </span>
           </div>
           <div
-            className="c15"
+            className="c16"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c16"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c17"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c17"
+                  className="c18"
                 >
                   Click me
                 </span>
@@ -1658,7 +1718,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
       </div>
     </li>
     <li
-      className="c2 c18"
+      className="c2 c19"
     >
       <div
         className="c4 c5"
@@ -1668,7 +1728,7 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c20"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -1679,11 +1739,11 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
               fillRule="evenodd"
             >
               <path
-                className="c20"
+                className="c21"
                 d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
               />
               <path
-                className="c21"
+                className="c22"
                 d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
               />
             </g>
@@ -1698,12 +1758,16 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
             <span
               className="c13"
             >
-              <time>
-                Fri, Jul 3, 2020
-              </time>
+              <span
+                className="c14"
+              >
+                <time>
+                  Fri, Jul 3, 2020
+                </time>
+              </span>
             </span>
             <span
-              className="c14"
+              className="c15"
             >
               Newest
             </span>

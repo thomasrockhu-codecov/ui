@@ -17,7 +17,7 @@ const Pagination: React.FC<PaginationProps> = ({
   currentPageLabel = 'Current Page, page:',
   pageItemLabel = 'Go to Page',
 }) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(currentPageFromProps || 1);
 
   const controlled = !R.isNil(currentPageFromProps);
 
@@ -57,6 +57,8 @@ const Pagination: React.FC<PaginationProps> = ({
     <nav role="navigation" aria-label={label}>
       {variant === 'compact' && (
         <Compact
+          currentPage={currentPageFromProps || currentPage}
+          numberOfPages={numberOfPages}
           onClickPrevious={onClickPrevious}
           onClickNext={onClickNext}
           nextPageLabel={nextPageLabel}

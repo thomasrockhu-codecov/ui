@@ -1,7 +1,12 @@
-export type Props = {
+type DoubleDatePickerProps = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
+  /**
+   * Specifies whether date should be selected while user types without need to submit
+   * @default false
+   */
+  allowDateUpdateOnType?: boolean;
   onChange?: (startDate: Date | null, endDate?: Date | null) => void;
   labelFrom: string;
   labelTo?: string;
@@ -11,12 +16,27 @@ export type Props = {
   id: string;
   selectedStartDate?: Date;
   selectedEndDate?: Date;
-  inputValueStart?: string;
-  inputValueEnd?: string;
   inputSize?: 's';
-  variant: 'DOUBLE';
   width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
-  disallowSingleDayRange?: boolean;
+  /**
+   * Allow a range starting and ending in the same day to be selected
+   * @default true
+   */
+  allowSingleDayRange?: boolean;
+  selectMonthLabel?: string;
+  selectYearLabel?: string;
 };
+
+export type PropsWithoutClearButton = DoubleDatePickerProps & {
+  showClearButton?: false;
+  clearButtonLabel?: never;
+};
+
+export type PropsWithClearButton = DoubleDatePickerProps & {
+  showClearButton: true;
+  clearButtonLabel: string;
+};
+
+export type Props = PropsWithoutClearButton | PropsWithClearButton;

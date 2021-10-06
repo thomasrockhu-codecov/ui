@@ -66,7 +66,12 @@ const getGutterStyles = (
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
   display: ${p.hidden ? 'none' : 'flex'};
-  ${p.height ? `height: ${p.theme.spacing.unit(p.height)}px;` : ''}
+  ${p.width ? `width: ${isNumber(p.width) ? `${p.theme.spacing.unit(p.width)}px` : p.width}` : ''};
+  ${
+    p.height
+      ? `height: ${isNumber(p.height) ? `${p.theme.spacing.unit(p.height)}px` : p.height}`
+      : ''
+  };
   ${p.direction ? `flex-direction: ${p.direction};` : ''}
   ${p.wrap ? `flex-wrap: ${p.wrap};` : ''}
   ${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
@@ -77,6 +82,12 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.size ? getSizeStyles(p.size) : ''}
+  ${p.width ? `width: ${isNumber(p.width) ? `${p.theme.spacing.unit(p.width)}px` : p.width}` : ''};
+  ${
+    p.height
+      ? `height: ${isNumber(p.height) ? `${p.theme.spacing.unit(p.height)}px` : p.height}`
+      : ''
+  };
   ${p.alignSelf ? `align-self: ${p.alignSelf};` : ''}
   ${!R.isNil(p.order) ? `order: ${p.order};` : ''}
   ${!R.isNil(p.grow) ? `flex-grow: ${p.grow};` : ''}
@@ -111,6 +122,7 @@ const sanitizeProps = R.omit([
   'justifyContent',
   'width',
   'flex',
+  'hidden',
 ]);
 const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => (
   <div {...sanitizeProps(props)} ref={ref} />
@@ -128,9 +140,7 @@ const StyledFlexbox = styled(SanitizedDiv)<Props>`
   ${(p) => (p.container ? getContainerStyles(p) : '')}
   ${(p) => (p.item ? getItemStyles(p) : '')}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
-  ${(
-    p,
-  ) => (p.md ? getStylesForSize('md') : '')}
+  ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.lg ? getStylesForSize('lg') : '')}
 `;
 

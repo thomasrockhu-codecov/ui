@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Icon, Button } from '../../../index';
+import { Button, Flexbox, Icon, Typography } from '../../../index';
 import List from '../../../Atoms/List';
-import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from '../Pagination.types';
+import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
 import PageItems from '../PageItems';
 
 const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrentPage?: boolean }>`
@@ -14,15 +14,12 @@ const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrent
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
-
   ${({ $type, $isCurrentPage, theme }) =>
     $type === 'page-item' &&
     $isCurrentPage &&
     `background-color: ${theme.color.cta}; cursor: default`}
   ${({ $type, theme }) =>
-    $type === 'chevron' &&
-    `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
+    $type === 'chevron' && `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
 
   &:hover {
     span {
@@ -81,7 +78,11 @@ const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, chi
       aria-label={`${label} ${children}`}
       aria-disabled={isCurrentPage}
     >
-      <Typography type="primary" color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}>
+      <Typography
+        type="primary"
+        color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}
+        weight="bold"
+      >
         {children}
       </Typography>
     </StyledButton>
@@ -90,7 +91,9 @@ const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, chi
 
 const TruncatedPageNumbers = () => (
   <StyledTruncatedBox>
-    <Typography type="secondary">...</Typography>
+    <Typography type="primary" weight="bold">
+      ...
+    </Typography>
   </StyledTruncatedBox>
 );
 
@@ -117,9 +120,15 @@ const Large: React.FC<PaginationDefaultProps> = ({
   currentPageLabel,
   pageItemLabel,
 }) => {
+  if (numberOfPages <= 1) {
+    return null;
+  }
+
   return (
     <Flexbox container>
-      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      {currentPage !== 1 && (
+        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      )}
       <StyledList $numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
@@ -131,7 +140,9 @@ const Large: React.FC<PaginationDefaultProps> = ({
           pageItemLabel={pageItemLabel}
         />
       </StyledList>
-      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      {currentPage !== numberOfPages && (
+        <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      )}
     </Flexbox>
   );
 };

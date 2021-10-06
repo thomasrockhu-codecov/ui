@@ -15,7 +15,7 @@ export default {
 
 export const documentation = () => (
   <Typography>
-    <MD source={docs} />
+    <MD>{docs}</MD>
     <div>
       <Number value={1000000} />
     </div>
@@ -59,14 +59,14 @@ numberWith2Decimals.story = {
 
 export const numberWithMinMaxDigits = () => {
   return (
-    <div>
+    <>
       <Number value={10.378} maximumDecimals={2} />
       <Number value={10.1} minimumDecimals={2} />
       <Number value={10.333} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10.1} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10.66666} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10} minimumDecimals={2} maximumDecimals={4} />
-    </div>
+    </>
   );
 };
 
@@ -210,7 +210,7 @@ regression0ShouldBe0.story = {
 };
 
 export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES).map((type) => ({
+  const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
     title: type,
     component: (
       <Typography type={type}>

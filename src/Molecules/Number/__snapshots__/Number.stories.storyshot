@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Number Default 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,7 +78,11 @@ exports[`Storyshots Molecules / Number Default 1`] = `
     <div
       className="c2"
     >
-      value = 1000
+      <span
+        className="c3"
+      >
+        value = 1000
+      </span>
     </div>
     <div>
       
@@ -83,7 +96,11 @@ exports[`Storyshots Molecules / Number Default 1`] = `
     <div
       className="c2"
     >
-      value = 9000000
+      <span
+        className="c3"
+      >
+        value = 9000000
+      </span>
     </div>
     <div>
       
@@ -97,7 +114,11 @@ exports[`Storyshots Molecules / Number Default 1`] = `
     <div
       className="c2"
     >
-      value = 0.01
+      <span
+        className="c3"
+      >
+        value = 0.01
+      </span>
     </div>
     <div>
       
@@ -111,7 +132,11 @@ exports[`Storyshots Molecules / Number Default 1`] = `
     <div
       className="c2"
     >
-      value = 111.2
+      <span
+        className="c3"
+      >
+        value = 111.2
+      </span>
     </div>
     <div>
       
@@ -290,7 +315,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      primary
+      <span
+        className="c3"
+      >
+        primary
+      </span>
     </div>
     <div>
       <span
@@ -307,7 +336,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -321,7 +354,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -335,7 +372,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -349,7 +390,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -367,7 +412,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      secondary
+      <span
+        className="c3"
+      >
+        secondary
+      </span>
     </div>
     <div>
       <span
@@ -384,7 +433,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -398,7 +451,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -412,7 +469,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -426,7 +487,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -444,7 +509,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      tertiary
+      <span
+        className="c3"
+      >
+        tertiary
+      </span>
     </div>
     <div>
       <span
@@ -461,7 +530,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -475,7 +548,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -489,7 +566,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -503,7 +584,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -521,7 +606,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      caption
+      <span
+        className="c3"
+      >
+        caption
+      </span>
     </div>
     <div>
       <span
@@ -538,7 +627,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -552,7 +645,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -566,7 +663,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -580,7 +681,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -598,7 +703,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      title1
+      <span
+        className="c3"
+      >
+        title1
+      </span>
     </div>
     <div>
       <span
@@ -615,7 +724,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -629,7 +742,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -643,7 +760,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -657,7 +778,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -675,7 +800,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      title2
+      <span
+        className="c3"
+      >
+        title2
+      </span>
     </div>
     <div>
       <span
@@ -692,7 +821,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -706,7 +839,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -720,7 +857,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -734,7 +875,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -752,7 +897,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      title3
+      <span
+        className="c3"
+      >
+        title3
+      </span>
     </div>
     <div>
       <span
@@ -769,7 +918,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -783,7 +936,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -797,7 +954,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -811,7 +972,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -829,7 +994,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
     <div
       className="c2"
     >
-      hero
+      <span
+        className="c3"
+      >
+        hero
+      </span>
     </div>
     <div>
       <span
@@ -846,7 +1015,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 1000
+              <span
+                className="c3"
+              >
+                value = 1000
+              </span>
             </div>
             <div>
               
@@ -860,7 +1033,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 9000000
+              <span
+                className="c3"
+              >
+                value = 9000000
+              </span>
             </div>
             <div>
               
@@ -874,7 +1051,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 0.01
+              <span
+                className="c3"
+              >
+                value = 0.01
+              </span>
             </div>
             <div>
               
@@ -888,7 +1069,11 @@ exports[`Storyshots Molecules / Number Integration: with different typographies 
             <div
               className="c2"
             >
-              value = 111.2
+              <span
+                className="c3"
+              >
+                value = 111.2
+              </span>
             </div>
             <div>
               
@@ -928,7 +1113,16 @@ Array [
   }
 ]
   </pre>,
-  .c0 {
+  .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -996,7 +1190,11 @@ Array [
       <div
         className="c2"
       >
-        value = 0.55555
+        <span
+          className="c3"
+        >
+          value = 0.55555
+        </span>
       </div>
       <div>
         
@@ -1010,7 +1208,11 @@ Array [
       <div
         className="c2"
       >
-        value = 10.333
+        <span
+          className="c3"
+        >
+          value = 10.333
+        </span>
       </div>
       <div>
         
@@ -1024,7 +1226,11 @@ Array [
       <div
         className="c2"
       >
-        value = 10.5
+        <span
+          className="c3"
+        >
+          value = 10.5
+        </span>
       </div>
       <div>
         
@@ -1038,7 +1244,11 @@ Array [
       <div
         className="c2"
       >
-        value = 100001.22
+        <span
+          className="c3"
+        >
+          value = 100001.22
+        </span>
       </div>
       <div>
         
@@ -1050,6 +1260,15 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1118,7 +1337,11 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
     <div
       className="c2"
     >
-      value = 10.378
+      <span
+        className="c3"
+      >
+        value = 10.378
+      </span>
     </div>
     <div>
       
@@ -1132,7 +1355,11 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
     <div
       className="c2"
     >
-      value = 10.333
+      <span
+        className="c3"
+      >
+        value = 10.333
+      </span>
     </div>
     <div>
       
@@ -1146,7 +1373,11 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
     <div
       className="c2"
     >
-      value = 10
+      <span
+        className="c3"
+      >
+        value = 10
+      </span>
     </div>
     <div>
       
@@ -1160,7 +1391,11 @@ exports[`Storyshots Molecules / Number Number with 2 decimals  1`] = `
     <div
       className="c2"
     >
-      value = 10.5
+      <span
+        className="c3"
+      >
+        value = 10.5
+      </span>
     </div>
     <div>
       
@@ -1314,20 +1549,20 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Number Number with min/max digits 1`] = `
-<div>
-  
-  10.38
-  
-  10.10
-  
-  10.333
-  
-  10.10
-  
-  10.6667
-  
-  10.00
-</div>
+Array [
+  "",
+  "10.38",
+  "",
+  "10.10",
+  "",
+  "10.333",
+  "",
+  "10.10",
+  "",
+  "10.6667",
+  "",
+  "10.00",
+]
 `;
 
 exports[`Storyshots Molecules / Number Number with percentage 1`] = `
@@ -1339,6 +1574,15 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Number Number with sign 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1407,7 +1651,11 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
     <div
       className="c2"
     >
-      value = 2
+      <span
+        className="c3"
+      >
+        value = 2
+      </span>
     </div>
     <div>
       +
@@ -1421,7 +1669,11 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
     <div
       className="c2"
     >
-      value = 0
+      <span
+        className="c3"
+      >
+        value = 0
+      </span>
     </div>
     <div>
       
@@ -1435,7 +1687,11 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
     <div
       className="c2"
     >
-      value = -1
+      <span
+        className="c3"
+      >
+        value = -1
+      </span>
     </div>
     <div>
       
@@ -1447,7 +1703,16 @@ exports[`Storyshots Molecules / Number Number with sign 1`] = `
 
 exports[`Storyshots Molecules / Number Regression: -0 should be 0 1`] = `
 Array [
-  .c0 {
+  .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1515,7 +1780,11 @@ Array [
       <div
         className="c2"
       >
-        value = 0.1
+        <span
+          className="c3"
+        >
+          value = 0.1
+        </span>
       </div>
       <div>
         
@@ -1523,7 +1792,16 @@ Array [
       </div>
     </div>
   </div>,
-  .c0 {
+  .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1591,7 +1869,11 @@ Array [
       <div
         className="c2"
       >
-        value = 0.1
+        <span
+          className="c3"
+        >
+          value = 0.1
+        </span>
       </div>
       <div>
         
@@ -1604,6 +1886,15 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Number Regression: value is positive, but rounded value is 0 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1672,7 +1963,11 @@ exports[`Storyshots Molecules / Number Regression: value is positive, but rounde
     <div
       className="c2"
     >
-      value = 0.1
+      <span
+        className="c3"
+      >
+        value = 0.1
+      </span>
     </div>
     <div>
       

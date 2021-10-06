@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ExpandArea } from '.';
-import { ColorFn } from '../../../../common/Types/sharedTypes';
+import { ColorFn } from '../../../../common/Types';
 import { getStylesForSizes } from '../../shared';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { ExpandRowComponent } from '../Row.types';
@@ -17,7 +17,7 @@ const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
   return 'display: none;';
 };
 
-type StyledExpandedRow = {
+type StyledExpandedRowType = {
   $separatorColor: ColorFn;
   $xs: ScreenSizeConfigurableProps;
   $sm: Partial<ScreenSizeConfigurableProps>;
@@ -26,12 +26,12 @@ type StyledExpandedRow = {
   $xl: Partial<ScreenSizeConfigurableProps>;
 };
 
-const StyledExpandedRow = styled('div')<StyledExpandedRow>`
+const StyledExpandedRow = styled('div')<StyledExpandedRowType>`
   border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid ${(p) => p.theme.color.cta};
   border-bottom: 1px solid ${(p) => p.$separatorColor(p.theme)};
 
   ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
-    (p: StyledExpandedRow) => ({
+    (p: StyledExpandedRowType) => ({
       xs: p.$xs,
       sm: p.$sm,
       md: p.$md,

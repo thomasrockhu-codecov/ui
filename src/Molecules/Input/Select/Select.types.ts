@@ -34,6 +34,10 @@ export type Props = {
    * @default 'm'
    */
   size?: 's' | 'm';
+  /*
+   * Height in 4x pixels e.g 4 equals 16px
+   */
+  height?: number;
   disabled?: boolean;
   onChange?: (newValue: OptionItem[]) => void;
   onFocus?: React.FocusEventHandler;
@@ -45,6 +49,10 @@ export type Props = {
    * If you pass noFormField, then it's gonna be used only for DropdownBubble
    */
   width?: string;
+  /**
+   * Set a specific with for the dropdown list.
+   */
+  listWidth?: string;
   /**
    * Maximum height that list can be.
    */
@@ -91,11 +99,21 @@ export type Props = {
    * Use with showSearch only
    */
   onSearchQueryChange?: (e: { type: string; payload: string }) => void;
+  /**
+   * @default false
+   * Disables the possibility to filter options by typing
+   */
+  disableSearchComponent?: boolean;
+  /**
+   * @default false
+   * possibility to display list items(options) in Modal
+   */
+  fullscreenOnMobile?: boolean;
 };
 
-type OptionItem = {
+export type OptionItem = {
   [K: string]: any;
-  label: string;
+  label: string | JSX.Element;
   value: any;
   disabled?: boolean;
   [SYMBOL_ALL]?: boolean;

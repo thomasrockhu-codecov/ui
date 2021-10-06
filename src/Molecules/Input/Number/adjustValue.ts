@@ -41,12 +41,12 @@ const adjustValue = ({
   const getAdjustedValue = R.pipe(
     R.ifElse(
       () => shouldIncrement,
-      price => (price + stepCents) / multiplier,
-      price => (price - stepCents) / multiplier,
+      (price) => (price + stepCents) / multiplier,
+      (price) => (price - stepCents) / multiplier,
     ),
-    R.when(price => price < min, R.always(min)),
-    R.when(price => price > max, R.always(max)),
-    price =>
+    R.when((price) => price < min, R.always(min)),
+    R.when((price) => price > max, R.always(max)),
+    (price) =>
       intl.formatNumber(price, {
         minimumFractionDigits: numberOfDecimals,
         maximumFractionDigits: numberOfDecimals,

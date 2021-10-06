@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Flexbox, Typography, FormField } from '../../..';
-import { RadioComponent, Props, InternalInputProps } from './Radio.types';
+import { Flexbox, FormField, FormLabel, Typography } from '../../..';
+import { InternalInputProps, Props, RadioComponent } from './Radio.types';
 import { isString } from '../../../common/utils';
 
 const RADIO_SIZE = 5;
@@ -16,7 +16,7 @@ const Circle = styled.div`
   width: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
   height: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
-  background-color: ${(p) => p.theme.color.backgroundInput};
+  background-color: ${(p) => p.theme.color.inputBackground};
   position: relative;
   border-radius: 50%;
   flex-shrink: 0;

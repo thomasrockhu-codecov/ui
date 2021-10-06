@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Typography, Flexbox, VisuallyHidden } from '../..';
+import { Flexbox, Typography, VisuallyHidden } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Props } from './Switch.types';

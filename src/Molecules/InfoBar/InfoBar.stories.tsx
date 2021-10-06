@@ -27,20 +27,19 @@ export const defaultUsage = () => (
 defaultUsage.story = {
   name: 'Default usage',
 };
-/* eslint-disable no-alert */
 export const onCloseProp = () => (
   <StyledBg>
     <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>
     <br />
     <br />
     <br />
+    {/* eslint-disable-next-line no-alert */}
     <InfoBar onClose={() => alert('close')}>
       With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and
       actually hide the InfoBar.
     </InfoBar>
   </StyledBg>
 );
-/* eslint-enable no-alert */
 
 onCloseProp.story = {
   name: 'onClose prop demo',
@@ -52,7 +51,7 @@ const variants = [
     children: (
       <>
         We’re currently working on the new main menu. Links marked with arrow icon will redirect you
-        to the previous website experience. <a href="#nonce">Read more</a>
+        to the previous website experience. <a href="/nonce">Read more</a>
       </>
     ),
   },
@@ -61,7 +60,7 @@ const variants = [
     children: (
       <>
         We’re currently working on the new main menu. Links marked with arrow icon will redirect you
-        to the previous website experience. <a href="#nonce">Read more</a>
+        to the previous website experience. <a href="/nonce">Read more</a>
       </>
     ),
   },
@@ -70,7 +69,7 @@ const variants = [
     children: (
       <>
         The US market is currently down, we are fixing it right now. It will soon be back and
-        running. <a href="#nonce">Read more</a>
+        running. <a href="/nonce">Read more</a>
       </>
     ),
   },
@@ -78,7 +77,7 @@ const variants = [
     variant: 'success' as Variant,
     children: (
       <>
-        We have fixed the US market issue. It is now back to service. <a href="#nonce">Read more</a>
+        We have fixed the US market issue. It is now back to service. <a href="/nonce">Read more</a>
       </>
     ),
   },
@@ -91,7 +90,7 @@ export const differentVariants = () => (
     <InfoBar>{variants[0].children}</InfoBar>
     <br />
     <br />
-    {variants.map(({ variant, children }) => (
+    {variants?.map(({ variant, children }) => (
       <>
         <code>variant={variant}</code>
         <br />

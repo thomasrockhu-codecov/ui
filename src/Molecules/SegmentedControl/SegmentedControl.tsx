@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { assert } from '../../common/utils';
 import {
-  OverlayProps,
   ItemProps,
   MouseEventProps,
+  OverlayProps,
   SegmentedControlComponent,
 } from './SegmentedControl.types';
 import { Flexbox, Typography } from '../..';
@@ -14,7 +14,7 @@ const Overlay = styled.div<OverlayProps>`
   width: ${(p) => (p.$count === 0 ? 100 : 100 / p.$count)}%;
   height: ${(p) => p.theme.spacing.unit(8)}px;
   background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.inputBackground};
   left: ${(p) => (p.$count === 0 ? 0 : p.$selected * (100 / p.$count))}%;
   margin: -1px 0 0 0;
   pointer-events: none;
@@ -40,13 +40,12 @@ const Button = styled.button`
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const SegmentedControlContainer = styled(Flexbox)`
   position: relative;
-  background-color: ${(p) => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.segmentedControlBackground};
   height: ${(p) => p.theme.spacing.unit(8)}px;
   margin: ${(p) => p.theme.spacing.unit(0.5)}px;
 `;

@@ -1,15 +1,16 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
-import { motion, useDragControls, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
-import { isBoolean, isElement, fromKebabToCamelCase } from '../../common/utils';
+import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
+import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
 
 const CROSS_SIZE = 5;
+const PADDING_MOBILE = 3;
 const PADDING = 5;
 const displayName = 'Drawer';
 const PREVENT_CLICK_OUTSIDE_ATTRIBUTE = 'drawerPreventClickOutside';
@@ -46,13 +47,23 @@ const Content = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: ${(p) => p.theme.spacing.unit(PADDING)}px;
+
   padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px;
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  }
 `;
 
 const Footer = styled.div`
   margin-top: auto;
   padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px ${(p) => p.theme.spacing.unit(PADDING)}px
     ${(p) => p.theme.spacing.unit(PADDING)}px;
+
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
+      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
+      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  }
 `;
 
 const H2 = styled.h2`
@@ -64,6 +75,14 @@ const TitleWrapper = styled.div`
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
+
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    padding: ${(p) =>
+      `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(
+        PADDING_MOBILE,
+      )}px 0 ${p.theme.spacing.unit(PADDING_MOBILE)}px`};
+  }
+
   margin-bottom: ${(p) => p.theme.spacing.unit(2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CROSS_SIZE)}px;
   flex: 0 0 auto;
@@ -117,7 +136,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
-export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
+export const Drawer = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,
@@ -129,6 +148,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       onClose,
       open: isOpenExternal,
       title,
+      closeButtonTitle,
       onExitAnimationComplete,
       onAnimationComplete,
       disableInitialAnimation,
@@ -223,7 +243,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
                     <CloseButton type="button" variant="neutral" onClick={handleClose}>
-                      <Icon.CrossMedium size={4} title="Close this drawer" />
+                      <Icon.CrossMedium size={4} title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
@@ -236,7 +256,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       </AnimatePresence>
     );
   },
-) as any) as React.FC<Props> & {
+) as any as React.FC<Props> & {
   components: typeof components;
 };
 

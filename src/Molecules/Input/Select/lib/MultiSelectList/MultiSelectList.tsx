@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography } from '../../../../..';
 // Need to import it directly
@@ -17,15 +17,16 @@ type OptionProps = {
   focused?: boolean;
   selectAll?: boolean;
   isKeyboardNavigation?: boolean;
+  fullscreenOnMobile?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: boolean }>`
-  ${p =>
+  ${(p) =>
     p.disabled || p.isKeyboardNavigation
       ? ''
       : `
-&:hover { 
-  background: ${p.theme.color.background};
+&:hover {
+  background: ${p.theme.color.inputHover};
   input + ${Checkbox.components.CheckmarkBox} {
     &::before {
       border: 1px solid ${p.theme.color.cta};
@@ -36,26 +37,33 @@ const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: b
 `;
 
 const StyledOption = styled.div<Partial<OptionProps>>`
-${p =>
-  !p.selectAll
-    ? ''
-    : `
+  ${(p) =>
+    !p.selectAll
+      ? ''
+      : `
 border-bottom: 1px solid ${p.theme.color.divider};
 box-sizing: border-box;
 `}
-  padding-right: ${p => p.theme.spacing.unit(3)}px;
-  padding-left: ${p => p.theme.spacing.unit(3)}px;
+  ${(p) =>
+    !p.fullscreenOnMobile
+      ? `  padding-right: ${p.theme.spacing.unit(3)}px;
+  padding-left: ${p.theme.spacing.unit(3)}px;
+	height: ${p.theme.spacing.unit(7)}px;`
+      : `
+			padding-right: ${p.theme.spacing.unit(1)}px;
+  padding-left: ${p.theme.spacing.unit(1)}px;
+	height: ${p.theme.spacing.unit(10)}px;
+	border-bottom: 1px solid ${p.theme.color.divider};
+`}
 
-  height: ${p => p.theme.spacing.unit(7)}px;
-
-  white-space: nowrap;
-  background: ${p => {
-    if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
+	white-space: nowrap;
+  background: ${(p) => {
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.inputBackground;
     return p.theme.color.selectOptionBackground;
   }};
   cursor: pointer;
   ${hoverIfNotKeyboardNav}
-  ${p =>
+  ${(p) =>
     p.disabled
       ? `
         color: ${p.theme.color.disabledText}
@@ -91,6 +99,7 @@ export const Option: React.FC<OptionProps> = ({
   focused,
   selectAll,
   isKeyboardNavigation,
+  fullscreenOnMobile,
 }) => (
   <StyledOption
     selected={selected}
@@ -98,6 +107,7 @@ export const Option: React.FC<OptionProps> = ({
     selectAll={selectAll}
     focused={isKeyboardNavigation ? focused : false}
     isKeyboardNavigation={isKeyboardNavigation}
+    fullscreenOnMobile={fullscreenOnMobile}
   >
     <FullHeightFlexbox container alignItems="center" gutter={2}>
       <Flexbox item container alignItems="center" flex="0 0 auto">
@@ -114,7 +124,7 @@ export const Option: React.FC<OptionProps> = ({
       <FlexboxWidth item container justifyContent="space-between" alignItems="center">
         <EllipsizingText
           type="secondary"
-          color={disabled ? t => t.color.disabledText : t => t.color.text}
+          color={disabled ? (t) => t.color.disabledText : (t) => t.color.text}
         >
           {label}
         </EllipsizingText>

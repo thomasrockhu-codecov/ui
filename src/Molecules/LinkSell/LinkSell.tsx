@@ -31,15 +31,17 @@ export const LinkSell: LinkSellComponent = ({
   target,
   to,
   rel,
+  ...rest
 }) => (
   <StyledLink
-    {...(disabled ? { as: 'span' } : {})}
+    {...(disabled ? { as: 'span' as any } : {})}
     className={className}
     disabled={disabled}
     onClick={onClick}
     to={to}
     target={target}
     rel={rel}
+    {...rest}
   >
     <Typography type="secondary" weight="bold" color="inherit">
       {children}

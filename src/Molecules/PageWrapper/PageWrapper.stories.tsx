@@ -2,7 +2,7 @@ import React from 'react';
 import MD from 'react-markdown';
 import docs from './PageWrapper.md';
 
-import { PageWrapper, Typography, Box } from '../..';
+import { Box, PageWrapper, Typography } from '../..';
 
 export default {
   title: 'Molecules / PageWrapper',
@@ -13,7 +13,7 @@ export default {
 
 export const documentation = () => (
   <Typography type="primary">
-    <MD source={docs} />
+    <MD>{docs}</MD>
   </Typography>
 );
 

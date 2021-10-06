@@ -10,7 +10,7 @@ const flexAutoHeightStyles = css`
 `;
 
 export const scrollStyles = css<Pick<Props, 'maxHeight'>>`
-  ${p =>
+  ${(p) =>
     p.maxHeight
       ? `max-height: ${getValueFromNumberOrString(p.maxHeight, p.theme)};`
       : flexAutoHeightStyles}
@@ -19,7 +19,7 @@ export const scrollStyles = css<Pick<Props, 'maxHeight'>>`
 `;
 
 export const scrollDesktopStyles = css<Pick<Props, 'maxHeight'>>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     ${scrollStyles}
   }
 `;
@@ -28,7 +28,7 @@ const fadeStyles = css<InternalProps & Props>`
   content: '';
   display: block;
   width: 100%;
-  height: ${p => getValueFromNumberOrString(p.fadeHeight!, p.theme)};
+  height: ${(p) => getValueFromNumberOrString(p.fadeHeight!, p.theme)};
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -43,13 +43,16 @@ export const fadeTopStyles = css<InternalProps & Props>`
   &::before {
     ${fadeStyles}
     top: 0;
-    background: linear-gradient(0deg, #ffffff00 0%, #ffffffff 100%);
-    ${p => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
+    background: ${(p) =>
+      p.theme.isDarkMode
+        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}00 0%, ${p.backgroundColorDarkMode}ff 100%)`
+        : `linear-gradient(0deg, ${p.backgroundColor}00 0%, ${p.backgroundColor}ff 100%)`};
+    ${(p) => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
   }
 `;
 
 export const fadeTopDesktopStyles = css`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     ${fadeTopStyles}
   }
 `;
@@ -60,21 +63,24 @@ export const fadeBottomStyles = css<InternalProps & Props>`
   &::after {
     ${fadeStyles}
     bottom: 0;
-    background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
-    ${p =>
+    background: ${(p) =>
+      p.theme.isDarkMode
+        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}ff 0%, ${p.backgroundColorDarkMode}00 100%)`
+        : `linear-gradient(0deg, ${p.backgroundColor}ff 0%, ${p.backgroundColor}00 100%)`};
+    ${(p) =>
       isNumber(p.intersectionBottomRatio) ? `opacity: ${1 - p.intersectionBottomRatio}` : ''};
   }
 `;
 
 export const fadeBottomDesktopStyles = css`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     ${fadeBottomStyles}
   }
 `;
 
 export const intersectionStyles = css<Props>`
-  height: ${p => p.theme.spacing.unit(4)}px;
-  width: ${p => p.theme.spacing.unit(1)}px;
+  height: ${(p) => p.theme.spacing.unit(4)}px;
+  width: ${(p) => p.theme.spacing.unit(1)}px;
   position: absolute;
   right: 0;
   pointer-events: none;

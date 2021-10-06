@@ -53,7 +53,7 @@ Array [
       Skeleton variants
     </span>
   </div>,
-  .c3 {
+  .c4 {
   width: 200px;
   display: block;
   background-color: #EBEBE8;
@@ -63,11 +63,11 @@ Array [
   margin-bottom: 0;
 }
 
-.c3:empty:before {
+.c4:empty:before {
   content: '\\00a0';
 }
 
-.c4 {
+.c5 {
   width: 100px;
   display: block;
   background-color: #EBEBE8;
@@ -76,7 +76,7 @@ Array [
   height: 100px;
 }
 
-.c5 {
+.c6 {
   width: 64px;
   display: block;
   background-color: #EBEBE8;
@@ -84,6 +84,15 @@ Array [
   animation: hDWTUO 1.5s ease-in-out 0.5s infinite;
   height: 64px;
   border-radius: 50%;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -158,11 +167,15 @@ Array [
       <div
         className="c2"
       >
-        Text
+        <span
+          className="c3"
+        >
+          Text
+        </span>
       </div>
       <div>
         <div
-          className="Skeleton__Base-sc-1n2btkl-0 c3"
+          className="Skeleton__Base-sc-1n2btkl-0 c4"
           width="200px"
         />
       </div>
@@ -174,11 +187,15 @@ Array [
       <div
         className="c2"
       >
-        Rect
+        <span
+          className="c3"
+        >
+          Rect
+        </span>
       </div>
       <div>
         <div
-          className="Skeleton__Base-sc-1n2btkl-0 c4"
+          className="Skeleton__Base-sc-1n2btkl-0 c5"
           width="100px"
         />
       </div>
@@ -190,11 +207,15 @@ Array [
       <div
         className="c2"
       >
-        Circle
+        <span
+          className="c3"
+        >
+          Circle
+        </span>
       </div>
       <div>
         <div
-          className="Skeleton__Base-sc-1n2btkl-0 c5"
+          className="Skeleton__Base-sc-1n2btkl-0 c6"
           width={16}
         />
       </div>

@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Typography, Portal } from '../..';
+import React, { useEffect, useRef, useState } from 'react';
+import { Portal, Typography } from '../..';
 
 export default {
   title: 'Atoms / Portal',

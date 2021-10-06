@@ -1,309 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Pagination / Large 1 page 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c6 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c2:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-}
-
-.c3:hover span {
-  color: #FFFFFF;
-}
-
-.c3:hover svg {
-  fill: #FFFFFF;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-  background-color: #0046FF;
-}
-
-cursor:default .c9:hover span {
-  color: #FFFFFF;
-}
-
-cursor:default .c9:hover svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 40px;
-}
-
 <nav
   aria-label="Pagination"
   role="navigation"
->
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
-    <ul
-      className="c6 c7"
-    >
-      <li
-        className="c8"
-      >
-        <button
-          aria-disabled={true}
-          aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
-            <span
-              className="c4"
-            >
-              <span
-                className="c10"
-              >
-                1
-              </span>
-            </span>
-          </span>
-        </button>
-      </li>
-    </ul>
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
-  </div>
-</nav>
+/>
 `;
 
 exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
@@ -315,7 +16,11 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   display: flex;
 }
 
-.c1 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -327,11 +32,7 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -346,13 +47,13 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   vertical-align: middle;
 }
 
-.c6 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -361,25 +62,25 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c12 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c2 {
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -409,29 +110,29 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c2::before {
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -442,15 +143,15 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c4:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c2:active {
+.c4:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -468,46 +169,42 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-}
-
-.c3:hover span {
-  color: #FFFFFF;
-}
-
-.c3:hover svg {
-  fill: #FFFFFF;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
   background-color: #0046FF;
 }
 
-cursor:default .c9:hover span {
+cursor:default .c5:hover span {
   color: #FFFFFF;
 }
 
-cursor:default .c9:hover svg {
+cursor:default .c5:hover svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c8:hover span {
+  color: #FFFFFF;
+}
+
+.c8:hover svg {
   fill: #FFFFFF;
 }
 
@@ -529,7 +226,8 @@ cursor:default .c9:hover svg {
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
 }
 
 .c11:hover span {
@@ -540,7 +238,7 @@ cursor:default .c9:hover svg {
   fill: #FFFFFF;
 }
 
-.c7 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -559,55 +257,25 @@ cursor:default .c9:hover svg {
   <div
     className="c0"
   >
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
     <ul
-      className="c6 c7"
+      className="c1 c2"
     >
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c10"
+                className="c7"
               >
                 1
               </span>
@@ -616,21 +284,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 2
               </span>
@@ -640,21 +308,21 @@ cursor:default .c9:hover svg {
       </li>
     </ul>
     <div
-      className="c1"
+      className="c10"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c4 c11"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c12"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -682,7 +350,11 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   display: flex;
 }
 
-.c1 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -694,11 +366,7 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -713,13 +381,13 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   vertical-align: middle;
 }
 
-.c6 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -728,34 +396,25 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c12 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -785,29 +444,29 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c2::before {
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -818,15 +477,15 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c4:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c2:active {
+.c4:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -844,79 +503,76 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
+  background-color: #0046FF;
+}
+
+cursor:default .c5:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c5:hover svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c8:hover span {
+  color: #FFFFFF;
+}
+
+.c8:hover svg {
+  fill: #FFFFFF;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c3:hover span {
+.c12:hover span {
   color: #FFFFFF;
 }
 
-.c3:hover svg {
+.c12:hover svg {
   fill: #FFFFFF;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-  background-color: #0046FF;
-}
-
-cursor:default .c9:hover span {
-  color: #FFFFFF;
-}
-
-cursor:default .c9:hover svg {
-  fill: #FFFFFF;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-}
-
-.c11:hover span {
-  color: #FFFFFF;
-}
-
-.c11:hover svg {
-  fill: #FFFFFF;
-}
-
-.c13 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -935,7 +591,7 @@ cursor:default .c9:hover svg {
   align-items: center;
 }
 
-.c7 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -954,55 +610,25 @@ cursor:default .c9:hover svg {
   <div
     className="c0"
   >
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
     <ul
-      className="c6 c7"
+      className="c1 c2"
     >
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c10"
+                className="c7"
               >
                 1
               </span>
@@ -1011,21 +637,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 2
               </span>
@@ -1034,21 +660,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 3
               </span>
@@ -1057,30 +683,30 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c13"
+        className="c10"
       >
         <span
-          className="c14"
+          className="c9"
         >
           ...
         </span>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 12"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 12
               </span>
@@ -1090,21 +716,21 @@ cursor:default .c9:hover svg {
       </li>
     </ul>
     <div
-      className="c1"
+      className="c11"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c4 c12"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1132,7 +758,11 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   display: flex;
 }
 
-.c1 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1144,11 +774,7 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1163,13 +789,13 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   vertical-align: middle;
 }
 
-.c6 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1178,34 +804,25 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c12 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1235,29 +852,29 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c2::before {
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -1268,15 +885,15 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c4:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c2:active {
+.c4:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1294,79 +911,76 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
+  background-color: #0046FF;
+}
+
+cursor:default .c5:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c5:hover svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c8:hover span {
+  color: #FFFFFF;
+}
+
+.c8:hover svg {
+  fill: #FFFFFF;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c3:hover span {
+.c12:hover span {
   color: #FFFFFF;
 }
 
-.c3:hover svg {
+.c12:hover svg {
   fill: #FFFFFF;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-  background-color: #0046FF;
-}
-
-cursor:default .c9:hover span {
-  color: #FFFFFF;
-}
-
-cursor:default .c9:hover svg {
-  fill: #FFFFFF;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-}
-
-.c11:hover span {
-  color: #FFFFFF;
-}
-
-.c11:hover svg {
-  fill: #FFFFFF;
-}
-
-.c13 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1385,7 +999,7 @@ cursor:default .c9:hover svg {
   align-items: center;
 }
 
-.c7 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1404,55 +1018,25 @@ cursor:default .c9:hover svg {
   <div
     className="c0"
   >
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
     <ul
-      className="c6 c7"
+      className="c1 c2"
     >
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c10"
+                className="c7"
               >
                 1
               </span>
@@ -1461,21 +1045,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 2
               </span>
@@ -1484,21 +1068,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 3
               </span>
@@ -1507,30 +1091,30 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c13"
+        className="c10"
       >
         <span
-          className="c14"
+          className="c9"
         >
           ...
         </span>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 999"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 999
               </span>
@@ -1540,21 +1124,21 @@ cursor:default .c9:hover svg {
       </li>
     </ul>
     <div
-      className="c1"
+      className="c11"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c4 c12"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -1632,25 +1216,16 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -1744,7 +1319,6 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
@@ -1775,7 +1349,6 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
 }
 
 .c9:hover span {
@@ -1786,7 +1359,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   fill: #FFFFFF;
 }
 
-.c13 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1804,15 +1377,14 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
   background-color: #0046FF;
 }
 
-cursor:default .c13:hover span {
+cursor:default .c12:hover span {
   color: #FFFFFF;
 }
 
-cursor:default .c13:hover svg {
+cursor:default .c12:hover svg {
   fill: #FFFFFF;
 }
 
@@ -1859,7 +1431,7 @@ cursor:default .c13:hover svg {
     >
       <button
         aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2 c3"
         onClick={[Function]}
         type="button"
       >
@@ -1893,7 +1465,7 @@ cursor:default .c13:hover svg {
         <button
           aria-disabled={false}
           aria-label="Go to Page 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
           onClick={[Function]}
           type="button"
         >
@@ -1914,7 +1486,7 @@ cursor:default .c13:hover svg {
         className="c11"
       >
         <span
-          className="c12"
+          className="c10"
         >
           ...
         </span>
@@ -1925,7 +1497,7 @@ cursor:default .c13:hover svg {
         <button
           aria-disabled={false}
           aria-label="Go to Page 4"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
           onClick={[Function]}
           type="button"
         >
@@ -1948,7 +1520,7 @@ cursor:default .c13:hover svg {
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 5"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c13"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c12"
           onClick={[Function]}
           type="button"
         >
@@ -1957,7 +1529,7 @@ cursor:default .c13:hover svg {
               className="c4"
             >
               <span
-                className="c14"
+                className="c13"
               >
                 5
               </span>
@@ -1971,7 +1543,7 @@ cursor:default .c13:hover svg {
         <button
           aria-disabled={false}
           aria-label="Go to Page 6"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
           onClick={[Function]}
           type="button"
         >
@@ -1992,7 +1564,7 @@ cursor:default .c13:hover svg {
         className="c11"
       >
         <span
-          className="c12"
+          className="c10"
         >
           ...
         </span>
@@ -2003,7 +1575,7 @@ cursor:default .c13:hover svg {
         <button
           aria-disabled={false}
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c2 c9"
           onClick={[Function]}
           type="button"
         >
@@ -2026,7 +1598,7 @@ cursor:default .c13:hover svg {
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2 c3"
         onClick={[Function]}
         type="button"
       >
@@ -2064,7 +1636,11 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   display: flex;
 }
 
-.c1 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2076,11 +1652,7 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2095,13 +1667,13 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   vertical-align: middle;
 }
 
-.c6 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2110,34 +1682,25 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c12 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2167,29 +1730,29 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c2::before {
+.c4::before {
   content: '';
   display: block;
   position: absolute;
@@ -2200,15 +1763,15 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   height: calc(100% - 4px);
 }
 
-.c2:hover {
+.c4:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c2:active {
+.c4:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2226,79 +1789,76 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
+  background-color: #0046FF;
+}
+
+cursor:default .c5:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c5:hover svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c8:hover span {
+  color: #FFFFFF;
+}
+
+.c8:hover svg {
+  fill: #FFFFFF;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c3:hover span {
+.c12:hover span {
   color: #FFFFFF;
 }
 
-.c3:hover svg {
+.c12:hover svg {
   fill: #FFFFFF;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-  background-color: #0046FF;
-}
-
-cursor:default .c9:hover span {
-  color: #FFFFFF;
-}
-
-cursor:default .c9:hover svg {
-  fill: #FFFFFF;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-}
-
-.c11:hover span {
-  color: #FFFFFF;
-}
-
-.c11:hover svg {
-  fill: #FFFFFF;
-}
-
-.c13 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2317,7 +1877,7 @@ cursor:default .c9:hover svg {
   align-items: center;
 }
 
-.c7 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2336,55 +1896,25 @@ cursor:default .c9:hover svg {
   <div
     className="c0"
   >
-    <div
-      className="c1"
-    >
-      <button
-        aria-label="Go to previous page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c4"
-          >
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </span>
-      </button>
-    </div>
     <ul
-      className="c6 c7"
+      className="c1 c2"
     >
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={true}
           aria-label="Current Page, page: 1"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c10"
+                className="c7"
               >
                 1
               </span>
@@ -2393,21 +1923,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 2"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 2
               </span>
@@ -2416,21 +1946,21 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 3"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 3
               </span>
@@ -2439,30 +1969,30 @@ cursor:default .c9:hover svg {
         </button>
       </li>
       <li
-        className="c13"
+        className="c10"
       >
         <span
-          className="c14"
+          className="c9"
         >
           ...
         </span>
       </li>
       <li
-        className="c8"
+        className="c3"
       >
         <button
           aria-disabled={false}
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c4"
+              className="c6"
             >
               <span
-                className="c12"
+                className="c9"
               >
                 10
               </span>
@@ -2472,21 +2002,21 @@ cursor:default .c9:hover svg {
       </li>
     </ul>
     <div
-      className="c1"
+      className="c11"
     >
       <button
         aria-label="Go to next page"
-        className="NormalizedButton__Button-ey7f5x-0 c2 c3"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c4 c12"
         onClick={[Function]}
         type="button"
       >
         <span>
           <span
-            className="c4"
+            className="c6"
           >
             <svg
               aria-hidden="true"
-              className="c5"
+              className="c13"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"

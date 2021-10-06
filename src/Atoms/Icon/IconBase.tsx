@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 import * as R from 'ramda';
-import { InternalProps, StyledIconBaseProps, ColorFn } from './IconBase.types';
+import { ColorFn, InternalProps, StyledIconBaseProps } from './IconBase.types';
 import { assert } from '../../common/utils';
 
 const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentColor'];
@@ -15,27 +15,25 @@ export const getColor = (
       return colorFnOrColor(theme);
     }
 
-    if (typeof colorFnOrColor === 'string') {
-      if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
-        return colorFnOrColor;
-      }
-      assert(
-        ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
-        `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
-          ', ',
-        )}.`,
-      );
+    if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
+      return colorFnOrColor;
     }
+    assert(
+      ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
+      `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
+        ', ',
+      )}.`,
+    );
   }
   return defaultColor;
 };
 
 const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>((props, ref) => (
-  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline'])(props)} />
+  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline', 'focus'])(props)} />
 ));
 
 const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
-  ${p => {
+  ${(p) => {
     const size = p.size || 5;
     const fill = getColor(p.theme, p.theme.color.svgFill, p.colorFn);
 

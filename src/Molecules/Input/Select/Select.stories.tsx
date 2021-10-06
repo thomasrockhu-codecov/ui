@@ -1,27 +1,25 @@
-/** eslint-disable react-hooks/rules-of-hooks */
-import React from 'react';
+import React, { createElement, useCallback, useMemo, useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import { number } from '@storybook/addon-knobs';
 import R from 'ramda';
 import styled from 'styled-components';
-import { StateChart } from '@statecharts/xstate-viz';
-import { SelectMachine } from './machine';
 import {
-  Input,
   Avatar,
-  Flexbox,
-  Number,
-  Typography,
   Box,
+  CardWithTitle,
+  Flexbox,
   Icon,
+  Input,
   Link,
-  TrackingContext,
   Modal,
+  Number,
+  TrackingContext,
+  Typography,
 } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
 import { Option } from './Select.types';
 
-/* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
 const FlexedBox = styled(Box)`
@@ -48,6 +46,69 @@ const accountOptions = [
   {
     label: 'Third 3',
     value: '3',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 4',
+    value: '4',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 5',
+    value: '5',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 6',
+    value: '6',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 7',
+    value: '7',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 8',
+    value: '8',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 9',
+    value: '9',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 10',
+    value: '10',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 11',
+    value: '11',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+  {
+    label: 'Acc 12',
+    value: '12',
     symbol: 'ISK',
     accno: '123',
     amount: { value: 1, currency: 'DKK' },
@@ -84,14 +145,10 @@ const AccountValue = () => {
   );
 };
 
-// @ts-ignore
-const StyledBox = styled(Box)`
+const StyledBox = styled(Box)<{ focused?: boolean; isKeyboardNavigation?: boolean }>`
   cursor: pointer;
-  background: ${(p) =>
-    // @ts-ignore
-    p.focused ? p.theme.color.background : p.theme.color.card};
+  background: ${(p) => (p.focused ? p.theme.color.background : p.theme.color.card)};
   ${(p) =>
-    // @ts-ignore
     !p.isKeyboardNavigation
       ? `
   &: hover {
@@ -108,7 +165,6 @@ const AccountListItem = ({ index }) => {
   const selected = state.context.selectedItems.includes(option);
   const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
-    // @ts-ignore
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
@@ -204,7 +260,7 @@ export const hideLabel = () => (
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
-    options={new Array(100).fill(null).map((_, i) => ({
+    options={new Array(100).fill(null)?.map((_, i) => ({
       value: i,
       label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
     }))}
@@ -213,11 +269,26 @@ export const overflowStory = () => (
   />
 );
 
+export const withModalTitleFullScreenOnMobile = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: '1' },
+      { value: 2, label: '2' },
+      { value: 3, label: '3' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+    labelTooltip="Tooltip for select field"
+    fullscreenOnMobile
+  />
+);
+
 export const preselectedOptions = () =>
-  React.createElement(() => {
+  createElement(() => {
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       return (
@@ -229,7 +300,61 @@ export const preselectedOptions = () =>
       );
     }, []);
 
-    const [values, setValues] = React.useState([
+    const [values, setValues] = useState([
+      // Non-referentially equal options
+      { ...accountOptions[1] },
+      { ...accountOptions[2] },
+    ]);
+
+    return (
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        value={values}
+        // @ts-ignore
+        onChange={setValues}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
+    );
+  });
+
+// These styles need to be applied in order for the custom component to truncate in the input
+const StyledFlexbox = styled(Flexbox)`
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 20px;
+`;
+
+const EllipsizingText = styled(Typography)`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+`;
+
+export const passingTruncatedComponents = () =>
+  createElement(() => {
+    // This component you need to redefine for your particular case
+    // Why isn't this implemented in the component? Because depending of what you put inside the EllipsizingText it may or may not kill the Truncation
+    // That's just how truncation works, it needs a parent and child with specific props
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <StyledFlexbox container alignItems="center">
+          <EllipsizingText type="secondary">
+            {/* adding Box or Flexbox child here will kill the Truncation, but overflow will still be hidden */}
+            {selectedCount === 0
+              ? machineState.context.placeholder
+              : `${selectedCount} selected along with a very long text for reference of truncation`}
+          </EllipsizingText>
+        </StyledFlexbox>
+      );
+    }, []);
+
+    const [values, setValues] = useState([
       // Non-referentially equal options
       { ...accountOptions[1] },
       { ...accountOptions[2] },
@@ -251,10 +376,10 @@ export const preselectedOptions = () =>
   });
 
 export const multiSelectUncontrolled = () =>
-  React.createElement(() => {
+  createElement(() => {
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       return (
@@ -363,7 +488,7 @@ export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions.map((acc, i) =>
+      options={accountOptions?.map((acc, i) =>
         i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
       )}
       label="User account"
@@ -388,8 +513,8 @@ export const customRenderers = () => {
 };
 
 export const actions = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -424,8 +549,8 @@ export const actions = () =>
     );
   });
 export const actionsAndEmptyOptionList = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -460,8 +585,8 @@ export const actionsAndEmptyOptionList = () =>
     );
   });
 export const fullyEmpty = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -489,18 +614,21 @@ export const onBlurAndOnFocus = () => {
 };
 
 export const multiselect = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useMemo(
+    const CustomSelectedValue = useMemo(
       () => () => {
         const [machineState] = useSelectMachineFromContext();
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -524,18 +652,21 @@ export const multiselect = () =>
   });
 
 export const multiselectActions = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useMemo(
+    const CustomSelectedValue = useMemo(
       () => () => {
         const [machineState] = useSelectMachineFromContext();
         const selectedCount = machineState.context.selectedItems.length;
         return (
           <FlexedBox px={2}>
-            <Typography type="secondary">
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
               {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
             </Typography>
           </FlexedBox>
@@ -581,12 +712,12 @@ const accountOptionsAndSelectAll: Option[] = [
 ];
 
 export const multiselectSelectAll = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       const allSelected = machineState.context.selectedItems.some(
@@ -602,7 +733,12 @@ export const multiselectSelectAll = () =>
       }
       return (
         <FlexedBox px={2}>
-          <Typography type="secondary">{label}</Typography>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
         </FlexedBox>
       );
     }, []);
@@ -623,12 +759,66 @@ export const multiselectSelectAll = () =>
     );
   });
 
+export const multiselectSelectAllWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const [value, setValue] = useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(
+        (x) => x[Input.Select.SYMBOL_ALL],
+      );
+      let label;
+      if (allSelected) {
+        label = 'All selected';
+      } else if (selectedCount === 0) {
+        label = machineState.context.placeholder;
+      } else {
+        label = `${selectedCount} selected`;
+      }
+      return (
+        <FlexedBox px={2}>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {label}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
+    return (
+      <Input.Select
+        id="multiwithall-select"
+        options={[
+          ...accountOptionsAndSelectAll,
+          { value: 21, label: 'Acc21' },
+          { value: 22, label: 'Acc22' },
+          { value: 23, label: 'Acc23' },
+        ]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{
+          SelectedValue: CustomSelectedValue,
+        }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+        fullscreenOnMobile
+      />
+    );
+  });
+
 export const changesFromProps = () =>
-  React.createElement(() => {
-    const [searchQuery, setSearchQuery] = React.useState('');
-    const [accs, setAccs] = React.useState(accountOptions);
-    const [value, setValue] = React.useState([]);
-    const [disabled, setDisabled] = React.useState(false);
+  createElement(() => {
+    const [searchQuery, setSearchQuery] = useState('');
+    const [accs, setAccs] = useState(accountOptions);
+    const [value, setValue] = useState([]);
+    const [disabled, setDisabled] = useState(false);
 
     const removeAcc = () => setAccs(accs.slice(0, -1));
     // @ts-ignore
@@ -672,12 +862,11 @@ export const changesFromProps = () =>
   });
 
 export const accessibleFromDocumentForms = () =>
-  React.createElement(() => {
+  createElement(() => {
     const FORM_NAME = 'testForm';
     const SELECT_NAME = 'mySelect';
 
-    // @ts-ignore
-    const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+    const [, forceUpdate] = useState([]);
 
     return (
       <form name={FORM_NAME}>
@@ -701,8 +890,8 @@ export const accessibleFromDocumentForms = () =>
   });
 
 export const controlledBehaviour = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState(() => [accountOptions[1]]);
+  createElement(() => {
+    const [value, setValue] = useState(() => [accountOptions[1]]);
     return (
       <Input.Select
         id="onchange-select"
@@ -847,13 +1036,12 @@ const createCounter = () => {
 };
 
 export const linkWithDropdownAndSearchBoxSecondary = () =>
-  React.createElement(() => {
-    // Don't mind counter
+  createElement(() => {
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const customComponents = React.useMemo(
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -876,26 +1064,26 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    const hugeOptionsList = React.useMemo(
+    const [value, setValue] = useState([]);
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -929,10 +1117,9 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
   });
 
 export const linkWithDropdownAndSearchBoxTertiary = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -955,29 +1142,29 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1011,10 +1198,9 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
   });
 
 export const linkWithDropdownAndSearchBoxMultiselect = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -1037,29 +1223,29 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1108,9 +1294,107 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
   });
 
+export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () =>
+  createElement(() => {
+    const customComponents = useMemo(
+      () => ({
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={(t) => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
+    // just to have persistent unique keys
+    const counter = createCounter();
+    const hugeOptionsList = useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          )
+          .concat(
+            accountOptions?.map((x) => ({
+              ...x,
+              value: x.value + counter.next(),
+              label: x.label + counter.next(),
+            })),
+          ),
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
+    );
+
+    // @ts-ignore
+    const handleChange = (newVal) => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <TrackingContext.Provider
+        value={{
+          track: (componentName, e, props) =>
+            // @ts-ignore
+            action('Tracking')(componentName, e.type, e.payload, props),
+        }}
+      >
+        <Flexbox container justifyContent="flex-start">
+          <Input.Select
+            options={hugeOptionsList}
+            label="User account"
+            id="input-select-search-inside"
+            placeholder="Select account"
+            noFormField
+            showSearch
+            multiselect
+            value={value}
+            width="300px"
+            listMaxHeight="400px"
+            components={customComponents}
+            onChange={handleChange}
+            fullscreenOnMobile
+            actions={[
+              {
+                label: 'Action',
+                onSelect: action('Action triggered'),
+              },
+            ]}
+          />
+        </Flexbox>
+      </TrackingContext.Provider>
+    );
+  });
+
 export const listPositionedToTheLeft = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
         // @ts-ignore
         SelectedValue: () => {
@@ -1135,29 +1419,29 @@ export const listPositionedToTheLeft = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1198,11 +1482,6 @@ export const listPositionedToTheLeft = () =>
       </Flexbox>
     );
   });
-
-export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
-DocumentationCore.story = {
-  name: 'Documentation: Core',
-};
 
 export const onSearchQueryChange = () => (
   <Input.Select
@@ -1274,6 +1553,7 @@ export const insideModal = () => (
       options={accountOptions}
       label="User account"
       placeholder="Select account"
+      fullscreenOnMobile
       withPortal
     />
   </Modal>
@@ -1292,7 +1572,7 @@ export const placementTop = () => (
 );
 
 export const autoPlacement = () => (
-  <div>
+  <>
     <h1>Open the Select and scroll down</h1>
     <div style={{ display: 'flex', alignItems: 'center', height: '160vh' }}>
       <Input.Select
@@ -1303,23 +1583,23 @@ export const autoPlacement = () => (
         withPortal
       />
     </div>
-  </div>
+  </>
 );
 
-export const groupedOptions = () => {
-  const [value, setValue] = React.useState([]);
+export const GroupedOptions = () => {
+  const [value, setValue] = useState([]);
 
   const options = [
     {
       label: 'Group 1',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 1 ${i}`,
         value: `c1-${i}`,
       })),
     },
     {
       label: 'Group 2',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 2 ${i}`,
         value: `c2-${i}`,
       })),
@@ -1329,7 +1609,7 @@ export const groupedOptions = () => {
   // selected -> group with selected
   const valueToSelected = (_value: any) =>
     options
-      .map((option) => ({
+      ?.map((option) => ({
         ...option,
         options: option.options.filter((child) =>
           _value.find((val: any) => val.value === child.value),
@@ -1337,23 +1617,134 @@ export const groupedOptions = () => {
       }))
       .filter((option) => option.options.length);
 
-  // @ts-ignore
-  const handleChange = (newVal) => {
+  const handleChange = (newVal: any) => {
     action('change')(newVal);
     setValue(newVal);
   };
 
   return (
-    <div>
-      <Input.Select
-        id="grouped-options-single"
-        options={options}
-        label="Grouped options single"
-        placeholder="Select option"
-        value={valueToSelected(value)}
-        onChange={handleChange}
-      />
-    </div>
+    <Input.Select
+      id="grouped-options-single"
+      options={options}
+      label="Grouped options single"
+      placeholder="Select option"
+      value={valueToSelected(value)}
+      onChange={handleChange}
+    />
+  );
+};
+
+export const GroupedOptionsMultiselect = () => {
+  const options = [
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+
+    return (
+      <FlexedBox px={2}>
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
+          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+        </Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect"
+      options={options}
+      label="Grouped options multiselect"
+      placeholder="Select options"
+      components={{ SelectedValue: CustomSelectedValue }}
+      multiselect
+    />
+  );
+};
+
+export const GroupedOptionsMultiselectControlled = () => {
+  const [value, setValue] = useState([]);
+  const options = [
+    {
+      label: `Select All`,
+      value: null,
+      [Input.Select.SYMBOL_ALL]: true,
+    },
+    {
+      label: 'Group 1',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      options: new Array(5).fill(null)?.map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+
+  const CustomSelectedValue = () => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    const allSelected = machineState.context.selectedItems.some((x) => x[Input.Select.SYMBOL_ALL]);
+
+    const label = (() => {
+      if (allSelected) {
+        return 'All selected';
+      }
+      if (selectedCount === 0) {
+        return machineState.context.placeholder;
+      }
+      return `${selectedCount} selected`;
+    })();
+
+    return (
+      <FlexedBox px={2}>
+        <Typography
+          type="secondary"
+          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+        >
+          {label}
+        </Typography>
+      </FlexedBox>
+    );
+  };
+
+  return (
+    <Input.Select
+      id="grouped-options-multiselect-test"
+      options={options}
+      value={value}
+      // @ts-ignore
+      onChange={setValue}
+      components={{
+        SelectedValue: CustomSelectedValue,
+      }}
+      multiselect
+      label="User account"
+      placeholder="Select account"
+    />
   );
 };
 
@@ -1368,6 +1759,40 @@ export const onAColouredBackground = () => (
         { label: 'bar', value: 2 },
       ]}
     />
+  </Box>
+);
+
+export const withoutSearchComponent = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Select
+      id="input-without-a-search-component"
+      label="Without search component"
+      placeholder="Select an option"
+      options={[
+        { label: 'foo', value: 1 },
+        { label: 'bar', value: 2 },
+      ]}
+      disableSearchComponent
+    />
+  </Box>
+);
+
+export const withCustomHeight = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <CardWithTitle title="Setting a custom `height` overwrites the `size` prop">
+      <Input.Select
+        id="input-with-custom-height"
+        options={[
+          { value: 1, label: 'Strawberry 🍓' },
+          { value: 2, label: 'Blueberry 🫐' },
+          { value: 3, label: 'Banana 🍌' },
+        ]}
+        label="This is a tall input"
+        placeholder="What's your favourite berry?"
+        fullWidth
+        height={number('Height', 20)}
+      />
+    </CardWithTitle>
   </Box>
 );
 

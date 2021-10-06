@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageHeaderCard, Flexbox, Button, Box, Typography } from '../..';
+import { Box, Button, Flexbox, PageHeaderCard, Typography } from '../..';
 
 export default {
   title: 'Molecules / PageHeader',
@@ -18,7 +18,7 @@ export const pageHeaderWithChildren = () => (
   <PageHeaderCard title="Your darkest loaves">
     <Box py={2} sm={{ py: 0 }}>
       <Flexbox container gutter={2} alignItems="center" justifyContent="space-between">
-        <Flexbox item>The eternal techlead, The portugese friend</Flexbox>
+        <Flexbox item>The eternal loremipsum, The portuguese friend</Flexbox>
         <Flexbox item>
           <Button>Click here to recruit carl</Button>
         </Flexbox>

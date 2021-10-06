@@ -1,11 +1,10 @@
 import React from 'react';
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { format } from 'date-fns';
-import { DatePicker } from '../../..';
+import { DoubleDatePicker } from '../../..';
 import { PageProviders } from '../../../common/testUtils';
-import { DOUBLE_DATE_PICKER } from '../shared/constants';
 
 afterEach(cleanup);
 
@@ -30,7 +29,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -59,7 +58,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -88,7 +87,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -119,7 +118,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -148,7 +147,7 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -169,7 +168,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
-  it.skip('select a range by using arrowkeys', async () => {
+  it.skip('select a range by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -178,7 +177,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -226,7 +225,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -253,7 +252,7 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -294,7 +293,7 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DatePicker id={ID} labelFrom="Label" onChange={onChange} variant={DOUBLE_DATE_PICKER} />
+        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
       </PageProviders>,
     );
 
@@ -327,12 +326,11 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker
+        <DoubleDatePicker
           id={ID}
           labelFrom="Label"
           onChange={onChange}
-          variant={DOUBLE_DATE_PICKER}
-          disallowSingleDayRange
+          allowSingleDayRange={false}
         />
       </PageProviders>,
     );
@@ -360,12 +358,11 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DatePicker
+        <DoubleDatePicker
           id={ID}
           labelFrom="Label"
           onChange={onChange}
-          variant={DOUBLE_DATE_PICKER}
-          disallowSingleDayRange
+          allowSingleDayRange={false}
         />
       </PageProviders>,
     );
@@ -407,12 +404,11 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DatePicker
+        <DoubleDatePicker
           id={ID}
           labelFrom="Label"
           onChange={onChange}
-          variant={DOUBLE_DATE_PICKER}
-          disallowSingleDayRange
+          allowSingleDayRange={false}
         />
       </PageProviders>,
     );

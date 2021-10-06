@@ -23,7 +23,7 @@ export type PageItemsProps = {
   numberOfPages: number;
   onClickPageItem: (newPage: number) => void;
   PageItem: React.FC<PageItemProps>;
-  TruncatedPageNumbers: React.FC<{}>;
+  TruncatedPageNumbers: React.FC;
   currentPageLabel: string;
   pageItemLabel: string;
 };
@@ -35,6 +35,8 @@ export type BrowseButtonProps = {
 };
 
 export type PaginationCompactProps = {
+  currentPage: number;
+  numberOfPages: number;
   onClickPrevious: BrowseButtonProps['onClick'];
   onClickNext: BrowseButtonProps['onClick'];
   nextPageLabel: string;
@@ -42,8 +44,6 @@ export type PaginationCompactProps = {
 };
 
 export type PaginationDefaultProps = PaginationCompactProps & {
-  currentPage: number;
-  numberOfPages: number;
   onClickPageItem: PageItemsProps['onClickPageItem'];
   currentPageLabel: string;
   pageItemLabel: string;

@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import useSSR from 'use-ssr';
 import { isHTMLElement, isUndefined } from '../../common/utils';

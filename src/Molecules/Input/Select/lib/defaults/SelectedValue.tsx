@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { useSelectMachineFromContext, ContextType } from '../context';
+import { ContextType, useSelectMachineFromContext } from '../context';
 import { Box } from '../../../../..';
 import { getSingleSelectValue } from '../utils';
 
@@ -10,16 +10,16 @@ const getLabelOrPlaceholder = (state: ContextType[0]) => {
 
   const value = getSingleSelectValue(state.context.selectedItems);
 
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
-  return selectedOptionLabel;
+  return R.pathOr('', [0, 'label'], value);
 };
 
-const EllipsizingText = styled.span`
+const EllipsizingText = styled.span<{ $isPlaceholder: boolean }>`
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
+  ${(p) => (p.$isPlaceholder ? `color: ${p.theme.color.placeholderText};` : '')}
 `;
 
 const CHEVRON_WIDTH = 20;
@@ -33,9 +33,13 @@ const StyledFlexedBox = styled(Box)`
 
 export const SelectedValue = () => {
   const [state] = useSelectMachineFromContext();
+  const isPlaceholder = state.context.selectedItems.length === 0;
+
   return (
     <StyledFlexedBox px={2}>
-      <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>
+      <EllipsizingText $isPlaceholder={isPlaceholder}>
+        {getLabelOrPlaceholder(state)}
+      </EllipsizingText>
     </StyledFlexedBox>
   );
 };

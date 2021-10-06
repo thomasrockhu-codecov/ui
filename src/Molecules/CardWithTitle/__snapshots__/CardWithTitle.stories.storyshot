@@ -53,13 +53,13 @@ exports[`Storyshots Molecules / CardWithTitle CardWithTitle as article (most Car
 
 @media not all and (min-width:760px) {
   .c2 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c4 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -156,13 +156,13 @@ exports[`Storyshots Molecules / CardWithTitle CardWithTitle as section 1`] = `
 
 @media not all and (min-width:760px) {
   .c2 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c4 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -264,13 +264,13 @@ exports[`Storyshots Molecules / CardWithTitle Cards without padding 1`] = `
 
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -372,13 +372,13 @@ exports[`Storyshots Molecules / CardWithTitle Default 1`] = `
 
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -572,7 +572,7 @@ exports[`Storyshots Molecules / CardWithTitle Integration: CardWithTitle with cu
         <span
           className="c6"
         >
-          Marknadsöversikt (Not Really a link)
+          Marknadsöversikt (not really a link)
         </span>
         <svg
           aria-hidden="true"
@@ -1186,13 +1186,13 @@ exports[`Storyshots Molecules / CardWithTitle With variant big 1`] = `
 
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
   }
 }
 

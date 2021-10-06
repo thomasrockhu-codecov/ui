@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
-import { Route, Redirect } from 'react-router';
-import { MemoryRouter, Link, useRouteMatch } from 'react-router-dom';
+import { Redirect, Route } from 'react-router';
+import { Link, MemoryRouter, useRouteMatch } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
-import { TabsNav, Separator, Flexbox, Box } from '../..';
+import { Box, Flexbox, Separator, TabsNav } from '../..';
 import docs from './TabsNav.mdx';
-import { LinkProvider, LinkProps } from '../../common/Links';
+import { LinkProvider } from '../../common/Links';
+import { LinkProps } from '../../common/Links/types';
 
 export default {
   title: 'Molecules / TabsNav',
@@ -23,7 +24,7 @@ const MyLink: FC<LinkProps> = ({ to, children, className }) => {
   );
 };
 
-type ContentProps = {
+export type ContentProps = {
   height?: number;
   hideFirst?: boolean;
 };

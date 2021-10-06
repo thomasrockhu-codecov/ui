@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { DialogProps, BackdropProps, Props, BackdropWrapperProps } from './Modal.types';
+import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
@@ -17,7 +17,7 @@ const PADDING_TOP_MOBILE_FULLSCREEN = 5;
 const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
 const CLOSE_ICON_SIZE = 5;
 
-export const Fixedrop = styled(Flexbox)`
+export const FixedDrop = styled(Flexbox)`
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
   z-index: ${({ theme }) => theme.zIndex.modal};
 
   ${(p) =>
-    p.fullScreenMobile
+    p.$fullScreenMobile
       ? `${p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
         background-color: ${p.theme.color.modalBackdrop};
       }`
@@ -58,7 +58,7 @@ const Dialog = styled(motion.div).withConfig({
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     ${(p) =>
-      p.fullScreenMobile
+      p.$fullScreenMobile
         ? `
           width: 100%;
           height: 100%;
@@ -101,7 +101,7 @@ const CloseButton = styled(NormalizedElements.Button)`
   position: absolute;
   transform: translateY(3px); /* to align with header */
   top: ${(p) =>
-    p.fullScreenMobile
+    p.$fullScreenMobile
       ? p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)
       : p.theme.spacing.unit(PADDING_MOBILE)}px;
   right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
@@ -132,7 +132,7 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
   showBackdrop,
   backdropRef,
   onClick,
-  fullScreenMobile,
+  $fullScreenMobile,
 }) =>
   showBackdrop ? (
     <Backdrop
@@ -141,14 +141,14 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
       justifyContent="center"
       ref={backdropRef}
       onClick={onClick}
-      fullScreenMobile={fullScreenMobile}
+      $fullScreenMobile={$fullScreenMobile}
     >
       {children}
     </Backdrop>
   ) : (
-    <Fixedrop container alignItems="center" justifyContent="center">
+    <FixedDrop container alignItems="center" justifyContent="center">
       {children}
-    </Fixedrop>
+    </FixedDrop>
   );
 
 export const ModalInner: React.FC<Props> = ({
@@ -212,9 +212,11 @@ export const ModalInner: React.FC<Props> = ({
     };
   }, []);
 
-  if (escapePress && isFunction(onClose)) {
-    onClose();
-  }
+  useEffect(() => {
+    if (escapePress && isFunction(onClose)) {
+      onClose();
+    }
+  }, [escapePress, onClose]);
 
   return (
     <>
@@ -224,7 +226,7 @@ export const ModalInner: React.FC<Props> = ({
             showBackdrop={showBackdrop}
             onClick={handleBackdropClick}
             backdropRef={backdropRef}
-            fullScreenMobile={fullScreenMobile}
+            $fullScreenMobile={fullScreenMobile}
           >
             <Dialog
               onAnimationComplete={onAnimationComplete || noop}
@@ -235,14 +237,14 @@ export const ModalInner: React.FC<Props> = ({
               {...animationProps}
               ref={dialogRef}
               onClick={handleDialogClick}
-              fullScreenMobile={fullScreenMobile}
+              $fullScreenMobile={fullScreenMobile}
               isStatusModal={isStatusModal}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
-                <CloseButton type="button" onClick={onClose} fullScreenMobile={fullScreenMobile}>
+                <CloseButton type="button" onClick={onClose} $fullScreenMobile={fullScreenMobile}>
                   <Icon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
               )}

@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { Box, Typography, Flexbox } from '../../../../..';
+import { Box, Flexbox, Typography } from '../../../../..';
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean; disabled?: boolean }>`
-  ${p =>
+  ${(p) =>
     p.disabled || p.isKeyboardNavigation
       ? ''
       : `
@@ -13,9 +13,8 @@ background: ${p.theme.color.background};
 `}
 `;
 const StyledBoxWithBorder = styled(Box)<any>`
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
-  min-width: ${p => p.theme.spacing.unit(35)}px;
-  ${p =>
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
+  ${(p) =>
     p.focused && p.isKeyboardNavigation
       ? `
 background: ${p.theme.color.background};
@@ -48,7 +47,7 @@ export const Action: React.FC<{
     <Typography
       type="secondary"
       weight="bold"
-      color={t => (disabled ? t.color.disabledText : t.color.cta)}
+      color={(t) => (disabled ? t.color.disabledText : t.color.cta)}
     >
       <Flexbox container gutter={2} alignItems="center">
         {icon}

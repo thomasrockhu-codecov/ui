@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import R from 'ramda';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
-  // eslint-disable-next-line react/button-has-type
   <input
     ref={ref}
     {...R.omit(

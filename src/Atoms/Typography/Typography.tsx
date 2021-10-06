@@ -2,7 +2,7 @@ import React from 'react';
 import R from 'ramda';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props, Types, FontProps } from './Typography.types';
+import { FontProps, Props, Types } from './Typography.types';
 import { assert, pickAriaAttributes } from '../../common/utils';
 
 const WEIGHTS = {
@@ -41,7 +41,7 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
 
 const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   const { type, weight, theme, lineHeight } = props;
-  let mobile: FontProps = null;
+  let mobile: FontProps;
   let desktop: FontProps = null;
   let defaultWeight;
   let allowedWeights = ['regular', 'semibold', 'bold', 'extrabold'];
@@ -146,7 +146,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   assert(
     allowedWeights.includes(weight || defaultWeight),
     `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights
-      .map((s) => `"${s}"`)
+      ?.map((s) => `"${s}"`)
       .join(', ')}`,
   );
 
@@ -167,7 +167,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
         `
         : ''
     }
-    
+
   `;
 };
 const Span = styled.span``;
@@ -203,7 +203,7 @@ export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>(
       lineHeight={lineHeight}
       weight={weight}
       textAlign={textAlign}
-      {...pickAriaAttributes(props)}
+      {...pickAriaAttributes(props as Record<string, any>)}
     >
       {children}
     </StyledTypography>

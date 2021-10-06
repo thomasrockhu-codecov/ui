@@ -1,9 +1,10 @@
+import { Account } from './components/Account';
 import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
 import { Apartment } from './components/Apartment';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
-import { Attachement } from './components/Attachement';
+import { Attachment } from './components/Attachment';
 import { Bank } from './components/Bank';
 import { BankDeposit } from './components/BankDeposit';
 import { BankID } from './components/BankID';
@@ -11,6 +12,7 @@ import { Bell } from './components/Bell';
 import { BellActive } from './components/BellActive';
 import { BellInactive } from './components/BellInactive';
 import { BellPlain } from './components/BellPlain';
+import { Book } from './components/Book';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
 import { BulbInCircle } from './components/BulbInCircle';
@@ -43,16 +45,21 @@ import { Csv } from './components/Csv';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { CalendarO } from './components/CalendarO';
 import { Energy } from './components/Energy';
 import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
+import { FAQ } from './components/FAQ';
 import { File } from './components/File';
 import { Filter } from './components/Filter';
+import { FinanceGrowth } from './components/FinanceGrowth';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Glasses } from './components/Glasses';
+import { Global } from './components/Global';
 import { Globe } from './components/Globe';
+import { GoldBars } from './components/GoldBars';
 import { Growth } from './components/Growth';
 import { Hamburger } from './components/Hamburger';
 import { HandWithCoin } from './components/HandWithCoin';
@@ -69,12 +76,15 @@ import { InfoCircle } from './components/InfoCircle';
 import { InfoPending } from './components/InfoPending';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
+import { Lock } from './components/Lock';
 import { LowRisk } from './components/LowRisk';
 import { Maximize } from './components/Maximize';
 import { MediumRisk } from './components/MediumRisk';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
+import { MoneyMove } from './components/MoneyMove';
+import { MoneyThin } from './components/MoneyThin';
 import { Move } from './components/Move';
 import { MoveBig } from './components/MoveBig';
 import { NoFee } from './components/NoFee';
@@ -84,11 +94,16 @@ import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
 import { PlusThin } from './components/PlusThin';
 import { PlusWithCircle } from './components/PlusWithCircle';
+import { Percent } from './components/Percent';
 import { Printer } from './components/Printer';
+import { Profile } from './components/Profile';
 import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
 import { Refresh } from './components/Refresh';
 import { RealEstate } from './components/RealEstate';
+import { RiskBarHigh } from './components/RiskBarHigh';
+import { RiskBarLow } from './components/RiskBarLow';
+import { RiskBarMedium } from './components/RiskBarMedium';
 import { RiskLow } from './components/RiskLow';
 import { RiskMedium } from './components/RiskMedium';
 import { RiskHigh } from './components/RiskHigh';
@@ -114,25 +129,32 @@ import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { StarAboveBars } from './components/StarAboveBars';
 import { StarOutline } from './components/StarOutline';
+import { Stock } from './components/Stock';
+import { StockSmallArrow } from './components/StockSmallArrow';
 import { Tax } from './components/Tax';
+import { TaxPercentage } from './components/TaxPercentage';
 import { Technology } from './components/Technology';
 import { ThinArrow } from './components/ThinArrow';
 import { ThinChevron } from './components/ThinChevron';
 import { ThreeDots } from './components/ThreeDots';
+import { ThreeDotsO } from './components/ThreeDotsO';
 import { Trash } from './components/Trash';
+import { Transfer } from './components/Transfer';
 import { TrendlineArrowhead } from './components/TrendlineArrowhead';
+import { UrgentMessage } from './components/UrgentMessage';
 import { Utilities } from './components/Utilities';
 import { WarningCircle } from './components/WarningCircle';
 import { WarningTriangle } from './components/WarningTriangle';
 import { WarningTriangleHollow } from './components/WarningTriangleHollow';
 
 export default {
+  Account,
   AccountNumbers,
   AddWithCircle,
   Apartment,
   Archive,
   ArrowRight,
-  Attachement,
+  Attachment,
   Bank,
   BankDeposit,
   BankID,
@@ -140,10 +162,12 @@ export default {
   BellActive,
   BellInactive,
   BellPlain,
+  Book,
   Bolt,
   BrowserWindow,
   BulbInCircle,
   Calendar,
+  CalendarO,
   CalendarTwoRows,
   CandleSticks,
   CheckMark,
@@ -176,12 +200,16 @@ export default {
   ExternalLink,
   EyeWithPlus,
   EyeWithPlusActive,
+  FAQ,
   File,
   Filter,
+  FinanceGrowth,
   Financial,
   Flag,
   Glasses,
+  Global,
   Globe,
+  GoldBars,
   Growth,
   Hamburger,
   HandWithCoin,
@@ -198,12 +226,15 @@ export default {
   InfoPending,
   Leaf,
   LineGraph,
+  Lock,
   LowRisk,
   Maximize,
   MediumRisk,
   Minimize,
   Minus,
   Money,
+  MoneyMove,
+  MoneyThin,
   Move,
   MoveBig,
   NoFee,
@@ -213,11 +244,16 @@ export default {
   Plus,
   PlusThin,
   PlusWithCircle,
+  Percent,
   Printer,
+  Profile,
   Questionmark,
   Raising,
   Refresh,
   RealEstate,
+  RiskBarHigh,
+  RiskBarLow,
+  RiskBarMedium,
   RiskLow,
   RiskMedium,
   RiskHigh,
@@ -243,13 +279,19 @@ export default {
   Star24,
   StarAboveBars,
   StarOutline,
+  Stock,
+  StockSmallArrow,
   Tax,
+  TaxPercentage,
   Technology,
   ThinArrow,
   ThinChevron,
   ThreeDots,
+  ThreeDotsO,
   Trash,
+  Transfer,
   TrendlineArrowhead,
+  UrgentMessage,
   Utilities,
   WarningCircle,
   WarningTriangle,

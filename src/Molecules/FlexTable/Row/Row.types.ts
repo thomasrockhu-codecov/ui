@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
 import {
-  ExpandItems,
   ExpandItemComponent,
+  ExpandItems,
   ExpandItemsComponent,
 } from './components/ExpandItems/ExpandItems.types';
-import { ColorFn } from '../../../common/Types/sharedTypes';
+import { ColorFn } from '../../../common/Types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -60,7 +60,7 @@ type Props = {
    */
   hoverHighlight?: boolean;
   /**
-   * Extends the expand toggle functionallity from the chevron to the entire row
+   * Extends the expand toggle functionality from the chevron to the entire row
    * Can not be used in combination with a custom onClick function
    * @default false
    */

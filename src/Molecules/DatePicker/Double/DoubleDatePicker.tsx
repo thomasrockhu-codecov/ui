@@ -1,22 +1,26 @@
-import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
-import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
-import { isBefore, isSameDay, startOfDay } from 'date-fns';
-import { Props } from './DoubleDatePicker.types';
+import {
+  Props as DoubleDatePickerProps,
+  PropsWithClearButton,
+  PropsWithoutClearButton,
+} from './DoubleDatePicker.types';
 
 /**
- * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
+ * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Icon, DropdownBubble, Flexbox } from '../../..';
+import { Box, DropdownBubble, Flexbox, Icon, Button } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
-import { newDate, getLocale, getDateFormat, parseDateString } from '../shared/dateUtils';
+import { getDateFormat } from '../shared/dateUtils';
 
 import DoubleHeader from './Header';
 import DoubleCalendar from './Calendar';
-import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
+import { DEFAULT_INPUT_WIDTH, INPUT_ID_END, INPUT_ID_START } from '../shared/constants';
+import { useDatePicker } from '../shared/hooks';
+import { StyledDropdownBubbleWrapper } from '../shared/DatePicker.styled';
 
 const INPUT_SPACING = 4;
 
@@ -30,17 +34,18 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
   box-sizing: border-box;
   top: -10px;
+
   &:after,
   &:before {
     display: none;
   }
 `;
 
-const StyledDropdownBubbleWrapper = styled.div`
-  position: absolute;
-`;
+const isWithClearButton = (
+  props: PropsWithoutClearButton | PropsWithClearButton,
+): props is PropsWithClearButton => Boolean(props.showClearButton);
 
-const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DoubleDatePicker = React.forwardRef<HTMLDivElement, DoubleDatePickerProps>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -54,12 +59,14 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
     open: openProp = false,
     selectedStartDate: selectedStartDateProp,
     selectedEndDate: selectedEndDateProp,
-    inputValueStart: inputValueStartProp,
-    inputValueEnd: inputValueEndProp,
     width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
-    disallowSingleDayRange = false,
+    allowSingleDayRange = true,
+    allowDateUpdateOnType,
+    showClearButton,
+    selectMonthLabel,
+    selectYearLabel,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -71,200 +78,53 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
     );
   }
 
-  const INPUT_ID_START = `${id}-start`;
-  const INPUT_ID_END = `${id}-end`;
+  if (showClearButton) {
+    assert(
+      !isUndefined(props.clearButtonLabel),
+      `DatePicker: "clearButtonLabel" is required when "showClearButton" is true`,
+    );
+  }
 
   const theme = useTheme();
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);
 
-  const options = useMemo(
-    () => ({
-      locale: getLocale(locale),
-    }),
-    [locale],
-  );
-
   const [open, setOpen] = useState<boolean>(openProp);
-  const [viewedDate, setViewedDate] = useState<Date>(
-    (selectedStartDateProp && new Date(selectedStartDateProp)) || startOfDay(new Date()),
-  );
-  const [selectedStartDate, setSelectedStartDate] = useState<Date | null>(
-    selectedStartDateProp || null,
-  );
-  const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
-  const [inputValueStart, setInputValueStart] = useState<string>(inputValueStartProp || '');
-  const [inputValueEnd, setInputValueEnd] = useState<string>(inputValueEndProp || '');
-
-  const [controlledFocus, setControlledFocus] = useState<boolean>(false);
 
   useEffect(() => {
     setOpen(openProp);
   }, [openProp]);
 
-  useEffect(() => {
-    if (selectedStartDateProp) setSelectedStartDate(selectedStartDateProp);
-    if (selectedEndDateProp) setSelectedEndDate(selectedEndDateProp);
-
-    if (inputValueStartProp) {
-      setInputValueStart(inputValueStartProp);
-    } else {
-      const controlledInputValue = (() => {
-        if (selectedStartDateProp) {
-          return format(selectedStartDateProp, dateFormat, options);
-        }
-        return '';
-      })();
-
-      setInputValueStart(controlledInputValue);
-    }
-
-    if (inputValueEndProp) {
-      setInputValueEnd(inputValueEndProp);
-    } else {
-      const controlledInputValue = (() => {
-        if (selectedEndDateProp) {
-          return format(selectedEndDateProp, dateFormat, options);
-        }
-        return '';
-      })();
-
-      setInputValueEnd(controlledInputValue);
-    }
-  }, [
-    dateFormat,
-    options,
-    selectedStartDateProp,
+  const {
+    selectedDate: selectedStartDate,
+    selectedEndDate,
+    inputValue: inputValueStart,
+    inputValueEnd,
+    handleInputKeyDown,
+    handleInputOnChange,
+    handleInputOnBlur,
+    onMonthChange,
+    onYearChange,
+    onDateClick,
+    viewedDate,
+    clearDate,
+  } = useDatePicker({
+    id,
+    selectedDateProp: selectedStartDateProp,
     selectedEndDateProp,
-    inputValueStartProp,
-    inputValueEndProp,
-  ]);
-
-  useEffect(() => {
-    if (!inputValueStart) {
-      setSelectedStartDate(null);
-    }
-    if (!inputValueEnd) {
-      setSelectedEndDate(null);
-    }
-  }, [inputValueEnd, inputValueStart]);
-
-  const handleDateClickRange = useCallback(
-    (date: Date) => {
-      const [startDate, endDate] = ((): [Date, Date | null] => {
-        if (!selectedStartDate) return [date, selectedEndDate];
-
-        if (selectedStartDate && isBefore(date, selectedStartDate)) return [date, selectedEndDate];
-        const swapDate = !selectedEndDate && isBefore(date, selectedStartDate);
-        if (swapDate) return [date, selectedStartDate];
-        if (selectedStartDate && isSameDay(date, selectedStartDate)) {
-          if (disallowSingleDayRange) {
-            return [selectedStartDate, selectedEndDate];
-          }
-          return [selectedStartDate, selectedStartDate];
-        }
-        if (selectedStartDate && selectedEndDate && isSameDay(date, selectedEndDate)) {
-          if (disallowSingleDayRange) {
-            return [selectedStartDate, selectedEndDate];
-          }
-          return [selectedEndDate, selectedEndDate];
-        }
-
-        return [selectedStartDate, date];
-      })();
-
-      const rangeDateStringStart = `${format(startDate, dateFormat, options)}`;
-      const rangeDateStringEnd = endDate ? `${format(endDate, dateFormat, options)}` : '';
-
-      setSelectedStartDate(startDate);
-      setSelectedEndDate(endDate);
-      setInputValueStart(rangeDateStringStart);
-      setInputValueEnd(rangeDateStringEnd);
-
-      if (onChange) onChange(startDate, endDate);
-    },
-    [dateFormat, options, onChange, selectedStartDate, selectedEndDate, disallowSingleDayRange],
-  );
-
-  const onDateClick = useCallback(
-    (date: Date) => {
-      handleDateClickRange(date);
-    },
-    [handleDateClickRange],
-  );
-
-  const allowedDate = useCallback(
-    (date: Date | null) => {
-      if (date && disableDate && disableDate(date)) return null;
-      if (date && enableDate && !enableDate(date)) return null;
-      return date;
-    },
-    [disableDate, enableDate],
-  );
-
-  const handleInputSubmit = useCallback(() => {
-    const parsedStartDate = parseDateString(inputValueStart, locale);
-    const parsedEndDate = parseDateString(inputValueEnd, locale);
-    const startDate = allowedDate(parsedStartDate);
-    const endDate = allowedDate(parsedEndDate);
-    if (disallowSingleDayRange && startDate && endDate && isSameDay(startDate, endDate)) {
-      return;
-    }
-    setSelectedStartDate(startDate);
-    setSelectedEndDate(endDate);
-    if (onChange) onChange(startDate, endDate);
-  }, [allowedDate, disallowSingleDayRange, inputValueEnd, inputValueStart, locale, onChange]);
-
-  const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    switch (event.key) {
-      case 'ArrowUp':
-      case 'ArrowRight':
-      case 'ArrowDown':
-      case 'ArrowLeft':
-        if (!inputValueStart && !inputValueEnd) setControlledFocus(true);
-        break;
-
-      case 'Enter':
-        handleInputSubmit();
-        break;
-
-      default:
-        break;
-    }
-  };
+    enableDate,
+    disableDate,
+    onChange,
+    allowDateUpdateOnType,
+    allowSingleDayRange,
+    noOfMonthsInCalendarView: 2,
+    isRangePicker: true,
+  });
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
-  const handleInputOnChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      const { value, id: elementId } = event.target;
-      if (elementId === INPUT_ID_START) {
-        setInputValueStart(value);
-      } else if (elementId === INPUT_ID_END) {
-        setInputValueEnd(value);
-      }
-    },
-    [INPUT_ID_END, INPUT_ID_START],
-  );
-
-  const onMonthChange = useCallback(
-    (index: number) => {
-      viewedDate.setMonth(index);
-      setViewedDate(newDate(viewedDate));
-    },
-    [viewedDate, setViewedDate],
-  );
-
-  const onYearChange = useCallback(
-    (year: number) => {
-      viewedDate.setFullYear(year);
-      setViewedDate(newDate(viewedDate));
-    },
-    [viewedDate, setViewedDate],
-  );
-
   const datepicker = (
-    <Box my={3} mx={2} onBlur={() => setControlledFocus(false)}>
+    <Box my={3} mx={2}>
       <DoubleHeader
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
@@ -274,6 +134,8 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onMonthChange={onMonthChange}
         onYearChange={onYearChange}
         yearSelectLength={yearSelectLength}
+        selectMonthLabel={selectMonthLabel}
+        selectYearLabel={selectYearLabel}
       />
       <DoubleCalendar
         disableDate={disableDate}
@@ -283,9 +145,15 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onClick={onDateClick}
         selectedStartDate={selectedStartDate as Date}
         selectedEndDate={selectedEndDate as Date}
-        setViewedDate={() => ({})}
-        controlledFocus={controlledFocus}
+        onMonthChange={onMonthChange}
       />
+      {isWithClearButton(props) ? (
+        <Box pt={3}>
+          <Button variant="neutral" color={(p) => p.color.cta} onClick={clearDate}>
+            {props.clearButtonLabel}
+          </Button>
+        </Box>
+      ) : null}
     </Box>
   );
 
@@ -293,7 +161,6 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    setControlledFocus(false);
     setOpen(false);
   });
 
@@ -304,7 +171,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
           size={inputSize}
           label={labelFrom}
           disabled={disabled}
-          id={INPUT_ID_START}
+          id={INPUT_ID_START(id)}
           data-testid="datepicker-input-start"
           placeholder={dateFormat.toLowerCase()}
           value={inputValueStart}
@@ -312,7 +179,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
           onChange={handleInputOnChange}
           onKeyDown={handleInputKeyDown}
           onFocus={handleInputOnFocus}
-          onBlur={handleInputSubmit}
+          onBlur={handleInputOnBlur}
           width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
           autoComplete="off"
         />
@@ -320,7 +187,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
           size={inputSize}
           label={labelTo}
           disabled={disabled}
-          id={INPUT_ID_END}
+          id={INPUT_ID_END(id)}
           data-testid="datepicker-input-end"
           placeholder={dateFormat.toLowerCase()}
           value={inputValueEnd}
@@ -328,7 +195,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
           onChange={handleInputOnChange}
           onKeyDown={handleInputKeyDown}
           onFocus={handleInputOnFocus}
-          onBlur={handleInputSubmit}
+          onBlur={handleInputOnBlur}
           width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
           autoComplete="off"
         />

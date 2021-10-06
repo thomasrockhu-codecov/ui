@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Variant, Size } from './Text.types';
-import { Flexbox, Typography, FormField } from '../../..';
+import { Props, Size, Variant } from './Text.types';
+import { Flexbox, FormField, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -11,11 +11,25 @@ const height = css<Size>`
   height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
+const darkmodeAutocompleteStyles = css`
+  ${(p) =>
+    p.theme.isDarkMode
+      ? `
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+          border: 1px solid ${p.theme.color.inputBorder};
+          -webkit-text-fill-color: ${p.theme.color.text};
+          -webkit-box-shadow: 0 0 0px 1000px ${p.theme.color.inputBackground} inset;
+        }`
+      : ''}
+`;
+
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
     p.disabled && p.variant !== 'quiet'
       ? p.theme.color.disabledBackground
-      : p.theme.color.backgroundInput};
+      : p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -36,7 +50,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
-  outline: none;
   border: solid;
   border-color: ${(p) => {
     if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -104,8 +117,8 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   ${borderStyles}
   ${background}
   ${placeholderNormalization}
-  ${(p) =>
-    p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : ''}
+  ${darkmodeAutocompleteStyles}
+  ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
@@ -137,6 +150,11 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
       -webkit-appearance: textfield;
     }
     `}
+    ${(p) =>
+    p.disabled &&
+    `
+      cursor: not-allowed;
+      `}
 `;
 
 const Wrapper = styled.div<{ variant?: Variant }>`
@@ -180,6 +198,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     value,
     visuallyEmphasiseRequired,
     type,
+    readOnly,
   } = props;
 
   return (
@@ -230,6 +249,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               value,
               type,
               ref,
+              readOnly,
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}

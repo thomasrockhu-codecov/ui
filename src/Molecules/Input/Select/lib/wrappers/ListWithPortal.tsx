@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import { Portal } from '../../../../..';
@@ -44,11 +44,11 @@ export const ListWrapperWithPortal = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
-      placement
+      placement,
     },
     ref,
   ) => {
-    const [popperElement, setPopperElement] = React.useState(null);
+    const [popperElement, setPopperElement] = useState(null);
 
     const { styles, attributes, state } = usePopper(triggerElement.current, popperElement, {
       placement: placement || 'bottom',

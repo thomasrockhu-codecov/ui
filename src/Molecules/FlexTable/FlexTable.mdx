@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 import { IntlProvider } from 'react-intl';
 import FlexTable from './FlexTable';
 import { Number } from '../..';
@@ -225,7 +225,7 @@ const InstrumentTable = () => (
         <FlexTable.Header columnId="currency" sortable>Currency</FlexTable.Header>
         <FlexTable.Header columnId="country" sortable>Country</FlexTable.Header>
       </FlexTable.HeaderRow>
-      {sortedData.map(({instrumentName, currency, country}) => (
+      {sortedData?.map(({instrumentName, currency, country}) => (
         <FlexTable.Row>
           <FlexTable.Cell columnId="instrumentName">{instrumentName}</FlexTable.Cell>
           <FlexTable.Cell columnId="currency">{currency}</FlexTable.Cell>
@@ -251,9 +251,7 @@ const CustomisedTableHeader = React.memo(({ flag, country }) => (
             <Flag country={flag} inline height={3} />
           </Flexbox>
           <FlexTable.CellInlineContainer item>
-            <FlexTable.Header.TextWrapper sorted={sorted}>
-              {country}
-            </FlexTable.Header.TextWrapper>
+            <FlexTable.Header.TextWrapper sorted={sorted}>{country}</FlexTable.Header.TextWrapper>
           </FlexTable.CellInlineContainer>
           {sortable && (
             <Flexbox item>

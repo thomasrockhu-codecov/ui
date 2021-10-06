@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
-import { Box, Button, Typography, Flexbox } from '../..';
+import { Box, Button, Flexbox, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
 
@@ -24,6 +24,19 @@ export const CommonBadges = () => {
   return (
     <>
       <Typography type="title1">Badge component</Typography>
+      <Box my={2}>
+        <Typography type="title2">Square Badge</Typography>
+        <Box my={2}>
+          <Badge variant="square" weight="bold" backgroundColor={(t) => t.color.sfdrArticle6}>
+            15
+          </Badge>
+        </Box>
+        <Box my={2}>
+          <Badge variant="rect" weight="bold" backgroundColor={(t) => t.color.sfdrArticle8}>
+            Article 8
+          </Badge>
+        </Box>
+      </Box>
       <Box my={2}>
         <Typography type="title2">Default Badge</Typography>
         <Box my={2}>
@@ -87,7 +100,7 @@ export const CommonBadges = () => {
 export const BadgeWithNumberLimit = () => {
   return (
     <>
-      <Typography type="title2">Number With Limit</Typography>
+      <Typography type="title2">Number with limit</Typography>
       <Box my={2}>
         <Badge>{numberWithLimit(1234567, 99)}</Badge>
       </Box>
@@ -101,18 +114,18 @@ export const JSXAsChild = () => {
       <Typography type="title2">Component as child</Typography>
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>
-          <span>
+          <>
             <Typography type="title3" color={(t) => t.color.textLight}>
               8
             </Typography>
             <Typography type="tertiary" color={(t) => t.color.textLight}>
               %
             </Typography>
-          </span>
+          </>
         </Badge>
       </Box>
       <Typography as="p" type="caption">
-        * Observe, up to developer to set child component font (family, size, etc.)
+        * It&apos;s up to developer to set child component font (family, size, etc.)
       </Typography>
     </>
   );
@@ -132,7 +145,7 @@ export const FunctionAsChild = () => {
         </Badge>
       </Box>
       <Typography as="p" type="caption">
-        * Observe, up to developer to set child function font (family, size, etc.)
+        * It&apos;s up to developer to set child function font (family, size, etc.)
       </Typography>
     </>
   );
@@ -252,7 +265,7 @@ export const BadgeWithAnimation = () => {
       </Box>
       <Box pb={5}>
         <Typography type="title2">
-          Badge with animation, but without inital animation example
+          Badge with animation, but without initial animation example
         </Typography>
         <Box py={3}>
           <StyledFlexbox container justifyContent="space-between">

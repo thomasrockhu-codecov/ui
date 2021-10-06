@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { Typography, Flexbox } from '../../../../..';
+import { Flexbox, Typography } from '../../../../..';
 import { useSelectMachineFromContext } from '../context';
 import NormalizedElements from '../../../../../common/NormalizedElements';
 import { getSingleSelectValue } from '../utils';

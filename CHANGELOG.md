@@ -1,3 +1,843 @@
+## [8.0.10](https://github.com/nordnet/ui/compare/v8.0.9...v8.0.10) (2021-10-01)
+
+
+### Bug Fixes
+
+* allow extra padding on square badge for passed components ([8893e29](https://github.com/nordnet/ui/commit/8893e29))
+* allow rect type for wide sfdr badge ([fa3fccb](https://github.com/nordnet/ui/commit/fa3fccb))
+* update snapshot ([59801b9](https://github.com/nordnet/ui/commit/59801b9))
+
+## [8.0.9](https://github.com/nordnet/ui/compare/v8.0.8...v8.0.9) (2021-09-30)
+
+
+### Bug Fixes
+
+* allow square and bold on badge ([bc43b66](https://github.com/nordnet/ui/commit/bc43b66))
+* remove size attr, and better styling ([e5cea90](https://github.com/nordnet/ui/commit/e5cea90))
+* type variant explicit ([75084ac](https://github.com/nordnet/ui/commit/75084ac))
+* update props ([6667748](https://github.com/nordnet/ui/commit/6667748))
+* update storyshot ([c26a268](https://github.com/nordnet/ui/commit/c26a268))
+
+## [8.0.8](https://github.com/nordnet/ui/compare/v8.0.7...v8.0.8) (2021-09-29)
+
+
+### Bug Fixes
+
+* add sfdr b adge ([003af8f](https://github.com/nordnet/ui/commit/003af8f))
+* better small screen logic ([e32fd6b](https://github.com/nordnet/ui/commit/e32fd6b))
+* clean up branch, remove sfdr stuff ([937fc6c](https://github.com/nordnet/ui/commit/937fc6c))
+* correct styled components syntax ([05f4a48](https://github.com/nordnet/ui/commit/05f4a48))
+* dont use size. hardcode instead ([ac152e0](https://github.com/nordnet/ui/commit/ac152e0))
+* fix and merge master ([9d268c0](https://github.com/nordnet/ui/commit/9d268c0))
+* iphone 5 screen ([cb99021](https://github.com/nordnet/ui/commit/cb99021))
+* move css comment ([5d52dff](https://github.com/nordnet/ui/commit/5d52dff))
+
+## [8.0.7](https://github.com/nordnet/ui/compare/v8.0.6...v8.0.7) (2021-09-23)
+
+
+### Bug Fixes
+
+* move min with to parent ([c5f3618](https://github.com/nordnet/ui/commit/c5f3618))
+* update storyshot ([1d3fb35](https://github.com/nordnet/ui/commit/1d3fb35))
+
+## [8.0.6](https://github.com/nordnet/ui/compare/v8.0.5...v8.0.6) (2021-09-21)
+
+
+### Bug Fixes
+
+* add sfdr colors ([7fa2059](https://github.com/nordnet/ui/commit/7fa2059))
+
+## [8.0.5](https://github.com/nordnet/ui/compare/v8.0.4...v8.0.5) (2021-09-14)
+
+
+### Bug Fixes
+
+* make BarScale more flexible in size ([684e141](https://github.com/nordnet/ui/commit/684e141))
+* story for risk meter ([2d7bed5](https://github.com/nordnet/ui/commit/2d7bed5))
+* updated snapshot ([76fd2ee](https://github.com/nordnet/ui/commit/76fd2ee))
+
+## [8.0.4](https://github.com/nordnet/ui/compare/v8.0.3...v8.0.4) (2021-09-14)
+
+
+### Bug Fixes
+
+* 🐛 remove hardcoded english arialLabel ([560fb55](https://github.com/nordnet/ui/commit/560fb55))
+
+## [8.0.3](https://github.com/nordnet/ui/compare/v8.0.2...v8.0.3) (2021-09-14)
+
+
+### Bug Fixes
+
+* reverting DISCO-5694 ([678ff32](https://github.com/nordnet/ui/commit/678ff32))
+* reverting DISCO-5694 second commit ([00205ba](https://github.com/nordnet/ui/commit/00205ba))
+
+## [8.0.2](https://github.com/nordnet/ui/compare/v8.0.1...v8.0.2) (2021-09-13)
+
+
+### Bug Fixes
+
+* autoscroll only on smaller screens to Input.Selects ([0f93a48](https://github.com/nordnet/ui/commit/0f93a48))
+* import from right place ([287f195](https://github.com/nordnet/ui/commit/287f195))
+
+## [8.0.1](https://github.com/nordnet/ui/compare/v8.0.0...v8.0.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* 🐛 make UrgentMessage to fix to viewBox ([badc45b](https://github.com/nordnet/ui/commit/badc45b))
+
+# [8.0.0](https://github.com/nordnet/ui/compare/v7.5.1...v8.0.0) (2021-09-08)
+
+
+### Features
+
+* 🎸 datepicker fullscreen support in mobile, remove variant ([f5926b7](https://github.com/nordnet/ui/commit/f5926b7))
+
+
+### BREAKING CHANGES
+
+* 🧨 variant prop no longer supported, disallowSingleDayRange prop changed to
+allowSingleDayRange
+
+## [7.5.1](https://github.com/nordnet/ui/compare/v7.5.0...v7.5.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* padding ([f9b4db0](https://github.com/nordnet/ui/commit/f9b4db0))
+* remove bottom padding ([9e18114](https://github.com/nordnet/ui/commit/9e18114))
+* remove extra lint disable ([6ab9c04](https://github.com/nordnet/ui/commit/6ab9c04))
+* remove gradient functionality ([edb57a5](https://github.com/nordnet/ui/commit/edb57a5))
+* style updates ([d4a09dc](https://github.com/nordnet/ui/commit/d4a09dc))
+* update snapshots ([432c564](https://github.com/nordnet/ui/commit/432c564))
+
+# [7.5.0](https://github.com/nordnet/ui/compare/v7.4.0...v7.5.0) (2021-09-06)
+
+
+### Bug Fixes
+
+* trigger rebuild ([dbe1f51](https://github.com/nordnet/ui/commit/dbe1f51))
+* trigger rebuild ([0b8fc11](https://github.com/nordnet/ui/commit/0b8fc11))
+* update snapshots ([2c2d4a8](https://github.com/nordnet/ui/commit/2c2d4a8))
+
+
+### Features
+
+* default false again ([beb376a](https://github.com/nordnet/ui/commit/beb376a))
+* default overflow to true ([e55d884](https://github.com/nordnet/ui/commit/e55d884))
+* fix snapshots ([0740d54](https://github.com/nordnet/ui/commit/0740d54))
+* revert overflow default ([bc8d9f5](https://github.com/nordnet/ui/commit/bc8d9f5))
+* truncate with ellipsis show more ([4995f77](https://github.com/nordnet/ui/commit/4995f77))
+
+# [7.4.0](https://github.com/nordnet/ui/compare/v7.3.5...v7.4.0) (2021-09-06)
+
+
+### Bug Fixes
+
+* 🐛 removes hardcoded colors from UrgentMessage ([fc35ae1](https://github.com/nordnet/ui/commit/fc35ae1))
+
+
+### Features
+
+* 🎸 urgent message icon ([c3c7b5f](https://github.com/nordnet/ui/commit/c3c7b5f))
+
+## [7.3.5](https://github.com/nordnet/ui/compare/v7.3.4...v7.3.5) (2021-09-01)
+
+
+### Bug Fixes
+
+* lint issues ([9dc9835](https://github.com/nordnet/ui/commit/9dc9835))
+
+## [7.3.4](https://github.com/nordnet/ui/compare/v7.3.3...v7.3.4) (2021-08-31)
+
+
+### Bug Fixes
+
+* **input-select:** handle placeholder color for multiselect test cases ([5987546](https://github.com/nordnet/ui/commit/5987546))
+* rename placeholder theme color to placeholderText ([6dc936f](https://github.com/nordnet/ui/commit/6dc936f))
+* **input-select:** change placeholder color to gray ([8482b50](https://github.com/nordnet/ui/commit/8482b50))
+
+## [7.3.3](https://github.com/nordnet/ui/compare/v7.3.2...v7.3.3) (2021-08-30)
+
+
+### Bug Fixes
+
+* correct bar height ([91a917b](https://github.com/nordnet/ui/commit/91a917b))
+
+## [7.3.2](https://github.com/nordnet/ui/compare/v7.3.1...v7.3.2) (2021-08-30)
+
+
+### Bug Fixes
+
+* add new bar color ([82b6b27](https://github.com/nordnet/ui/commit/82b6b27))
+
+## [7.3.1](https://github.com/nordnet/ui/compare/v7.3.0...v7.3.1) (2021-08-30)
+
+
+### Bug Fixes
+
+* no hard coded px ([c0a0c12](https://github.com/nordnet/ui/commit/c0a0c12))
+* tidy component and stories ([02fcb86](https://github.com/nordnet/ui/commit/02fcb86))
+* update barscale to new design ([605c98c](https://github.com/nordnet/ui/commit/605c98c))
+
+# [7.3.0](https://github.com/nordnet/ui/compare/v7.2.0...v7.3.0) (2021-08-25)
+
+
+### Features
+
+* fix snapshot ([2497dd1](https://github.com/nordnet/ui/commit/2497dd1))
+* fixed typography for lable on modal ([78d8303](https://github.com/nordnet/ui/commit/78d8303))
+* remove support for custom title on modal ([5c3f2de](https://github.com/nordnet/ui/commit/5c3f2de))
+* removed any ([71d810a](https://github.com/nordnet/ui/commit/71d810a))
+* removed unnecessary border-box ([52a8db2](https://github.com/nordnet/ui/commit/52a8db2))
+* rename prop name and typo fix ([a7a60df](https://github.com/nordnet/ui/commit/a7a60df))
+* support of fullScreen in mobile for select element ([dc73f87](https://github.com/nordnet/ui/commit/dc73f87))
+
+# [7.2.0](https://github.com/nordnet/ui/compare/v7.1.2...v7.2.0) (2021-08-24)
+
+
+### Bug Fixes
+
+* 🐛 change to transient prop and static styled component ([5608c33](https://github.com/nordnet/ui/commit/5608c33))
+
+
+### Features
+
+* **input-select:** add multi select with grouping ([18be5d9](https://github.com/nordnet/ui/commit/18be5d9))
+
+## [7.1.2](https://github.com/nordnet/ui/compare/v7.1.1...v7.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* add linescale color ([1afb61d](https://github.com/nordnet/ui/commit/1afb61d))
+
+## [7.1.1](https://github.com/nordnet/ui/compare/v7.1.0...v7.1.1) (2021-08-17)
+
+
+### Bug Fixes
+
+* 🐛 flextable styling syntax error in row ([1d73526](https://github.com/nordnet/ui/commit/1d73526))
+
+# [7.1.0](https://github.com/nordnet/ui/compare/v7.0.0...v7.1.0) (2021-08-17)
+
+
+### Features
+
+* dark mode, fixing the prereöeae of 7.0.0 ([25a700f](https://github.com/nordnet/ui/commit/25a700f))
+
+# [7.0.0](https://github.com/nordnet/ui/compare/v6.23.0...v7.0.0) (2021-08-17)
+
+
+### Features
+
+* dark mode ([d164206](https://github.com/nordnet/ui/commit/d164206))
+
+
+### BREAKING CHANGES
+
+* Colors have been renamed, update accordingly
+
+# [6.23.0](https://github.com/nordnet/ui/compare/v6.22.4...v6.23.0) (2021-08-17)
+
+
+### Bug Fixes
+
+* a few more icon fixes ([3c567f4](https://github.com/nordnet/ui/commit/3c567f4))
+* adjusing more color ([728ae38](https://github.com/nordnet/ui/commit/728ae38))
+* adjusing more colors ([afee17c](https://github.com/nordnet/ui/commit/afee17c))
+* adjusing more colors ([102323c](https://github.com/nordnet/ui/commit/102323c))
+* adjusing more colors ([2ca4b9a](https://github.com/nordnet/ui/commit/2ca4b9a))
+* allow sell to be a color on buttons ([50e8833](https://github.com/nordnet/ui/commit/50e8833))
+* build fixed ([863c5f3](https://github.com/nordnet/ui/commit/863c5f3))
+* change around color ([6d7bdb1](https://github.com/nordnet/ui/commit/6d7bdb1))
+* change hover again ([03d2ae6](https://github.com/nordnet/ui/commit/03d2ae6))
+* graph colors ([6000439](https://github.com/nordnet/ui/commit/6000439))
+* graph colors ([71e7548](https://github.com/nordnet/ui/commit/71e7548))
+* high-contrast colors actually working in light mode ([2ec3f20](https://github.com/nordnet/ui/commit/2ec3f20))
+* input colors ([fd40ba0](https://github.com/nordnet/ui/commit/fd40ba0))
+* mess around with dark color ([1ce9e45](https://github.com/nordnet/ui/commit/1ce9e45))
+* mess around with dark color ([cfd4e23](https://github.com/nordnet/ui/commit/cfd4e23))
+* move dark and light mode to correct files ([70c0522](https://github.com/nordnet/ui/commit/70c0522))
+* remove not neccessary css props ([7bcbe13](https://github.com/nordnet/ui/commit/7bcbe13))
+* some more icons behave better in dark mode ([9a8a9c4](https://github.com/nordnet/ui/commit/9a8a9c4))
+* storybook now respects darkmode with bg colours ([d37d871](https://github.com/nordnet/ui/commit/d37d871))
+* storyshots ([985b2cf](https://github.com/nordnet/ui/commit/985b2cf))
+* update storyshots ([b282b1f](https://github.com/nordnet/ui/commit/b282b1f))
+* update storyshots ([a268da5](https://github.com/nordnet/ui/commit/a268da5))
+
+
+### Features
+
+* dark mode ([706c906](https://github.com/nordnet/ui/commit/706c906))
+* wip, laid some groundwork for dark mode, still need more info on actual colors ([863942d](https://github.com/nordnet/ui/commit/863942d))
+
+## [6.22.4](https://github.com/nordnet/ui/compare/v6.22.3...v6.22.4) (2021-08-16)
+
+
+### Bug Fixes
+
+* make fullScreenMobile prop transient ([34ae0d4](https://github.com/nordnet/ui/commit/34ae0d4))
+* storyshots ([f5e4098](https://github.com/nordnet/ui/commit/f5e4098))
+
+## [6.22.3](https://github.com/nordnet/ui/compare/v6.22.2...v6.22.3) (2021-08-09)
+
+
+### Bug Fixes
+
+* 🐛 flextable expandable row misalignment ([fbee138](https://github.com/nordnet/ui/commit/fbee138))
+* used themespacing ([4c28905](https://github.com/nordnet/ui/commit/4c28905))
+* using theme units in constants causes type AND snapshot issue. Since the flex props 20px and 40px were only used by the expanded element, I moved it into the styling of the ExpandElement. Now we can use theme units ([665f6d2](https://github.com/nordnet/ui/commit/665f6d2))
+
+## [6.22.2](https://github.com/nordnet/ui/compare/v6.22.1...v6.22.2) (2021-08-09)
+
+
+### Bug Fixes
+
+* added missing snapshots ([c34e44d](https://github.com/nordnet/ui/commit/c34e44d))
+* **Input.Select stories:** added a story for truncating a custom selected element ([03d79d1](https://github.com/nordnet/ui/commit/03d79d1))
+
+## [6.22.1](https://github.com/nordnet/ui/compare/v6.22.0...v6.22.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* wrap onclose prop in useeffect ([a523dc5](https://github.com/nordnet/ui/commit/a523dc5))
+
+# [6.22.0](https://github.com/nordnet/ui/compare/v6.21.0...v6.22.0) (2021-07-26)
+
+
+### Features
+
+* **TP-16009:** add compability of data-prevent-order-side-panel-click-outside to Link, LinkSell, LinkBuy, Button ([1481df1](https://github.com/nordnet/ui/commit/1481df1))
+* **TP-16009:** disabled eslint warning ([97728ec](https://github.com/nordnet/ui/commit/97728ec))
+* **TP-16009:** updated snapshot ([0fdb354](https://github.com/nordnet/ui/commit/0fdb354))
+
+# [6.21.0](https://github.com/nordnet/ui/compare/v6.20.3...v6.21.0) (2021-07-23)
+
+
+### Features
+
+* 🎸 add className prop to CollapsibleCard ([581a2ec](https://github.com/nordnet/ui/commit/581a2ec))
+
+## [6.20.3](https://github.com/nordnet/ui/compare/v6.20.2...v6.20.3) (2021-07-22)
+
+
+### Bug Fixes
+
+* 🐛 prevent double expand chevron on flextable row mount ([2f09911](https://github.com/nordnet/ui/commit/2f09911))
+
+## [6.20.2](https://github.com/nordnet/ui/compare/v6.20.1...v6.20.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* 🐛 Fixed onBlur and onFocus in the Phone Input component ([2e7664b](https://github.com/nordnet/ui/commit/2e7664b))
+* 🐛 Switched to storybook actions in phone stories ([e71a567](https://github.com/nordnet/ui/commit/e71a567))
+* 🐛 Updated snapshots ([8e47339](https://github.com/nordnet/ui/commit/8e47339))
+
+## [6.20.1](https://github.com/nordnet/ui/compare/v6.20.0...v6.20.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* 🐛 Default phoneNumber value added to initial state ([ecabda9](https://github.com/nordnet/ui/commit/ecabda9))
+
+# [6.20.0](https://github.com/nordnet/ui/compare/v6.19.10...v6.20.0) (2021-07-16)
+
+
+### Features
+
+* 🎸 Phone input returns additional metadata onChange ([27ffd40](https://github.com/nordnet/ui/commit/27ffd40))
+
+## [6.19.10](https://github.com/nordnet/ui/compare/v6.19.9...v6.19.10) (2021-07-15)
+
+
+### Bug Fixes
+
+* revert to addListener in Media ([78f535a](https://github.com/nordnet/ui/commit/78f535a))
+
+## [6.19.9](https://github.com/nordnet/ui/compare/v6.19.8...v6.19.9) (2021-07-15)
+
+
+### Bug Fixes
+
+* restore to styled div outside render ([926e815](https://github.com/nordnet/ui/commit/926e815))
+* update deprecated event listener ([197e798](https://github.com/nordnet/ui/commit/197e798))
+
+## [6.19.8](https://github.com/nordnet/ui/compare/v6.19.7...v6.19.8) (2021-07-13)
+
+
+### Bug Fixes
+
+* **CssGrid:** stop warning about potential ie11 problems, we dont support it anymore ([af713fd](https://github.com/nordnet/ui/commit/af713fd))
+* **IconBase:** omit focus from being passed down to svg ([4b39fb5](https://github.com/nordnet/ui/commit/4b39fb5))
+
+## [6.19.7](https://github.com/nordnet/ui/compare/v6.19.6...v6.19.7) (2021-06-22)
+
+
+### Bug Fixes
+
+* 🐛 adjust finnish country code for phone input ([56117cb](https://github.com/nordnet/ui/commit/56117cb))
+
+## [6.19.6](https://github.com/nordnet/ui/compare/v6.19.5...v6.19.6) (2021-06-18)
+
+
+### Bug Fixes
+
+* add mobile paddings to drawer ([81574af](https://github.com/nordnet/ui/commit/81574af))
+
+## [6.19.5](https://github.com/nordnet/ui/compare/v6.19.4...v6.19.5) (2021-06-17)
+
+
+### Bug Fixes
+
+* 🐛 Make width of input in Phone component inherit from parent ([0d1330a](https://github.com/nordnet/ui/commit/0d1330a))
+
+## [6.19.4](https://github.com/nordnet/ui/compare/v6.19.3...v6.19.4) (2021-06-15)
+
+
+### Bug Fixes
+
+* 🐛 expose disableSearchComponent prop to PhoneInput ([7a4fc44](https://github.com/nordnet/ui/commit/7a4fc44))
+* 🐛 misalignment in phonenumber input in chrome ([87d0a8e](https://github.com/nordnet/ui/commit/87d0a8e))
+
+## [6.19.3](https://github.com/nordnet/ui/compare/v6.19.2...v6.19.3) (2021-06-15)
+
+
+### Bug Fixes
+
+* 🐛 Account for border height in Input phone component ([7979795](https://github.com/nordnet/ui/commit/7979795))
+* 🐛 phone input disabled style fix and add height stories ([b97d907](https://github.com/nordnet/ui/commit/b97d907))
+
+## [6.19.2](https://github.com/nordnet/ui/compare/v6.19.1...v6.19.2) (2021-06-11)
+
+
+### Bug Fixes
+
+* 🐛 adds size prop to phone input ([879e24a](https://github.com/nordnet/ui/commit/879e24a))
+
+## [6.19.1](https://github.com/nordnet/ui/compare/v6.19.0...v6.19.1) (2021-06-09)
+
+
+### Bug Fixes
+
+* 🐛 adjust focused styling of phone input ([b049c2d](https://github.com/nordnet/ui/commit/b049c2d))
+* 🐛 defaultValue object for phone input ([a2d310f](https://github.com/nordnet/ui/commit/a2d310f))
+* 🐛 Removed potential bug with controlled phone input ([bb149ce](https://github.com/nordnet/ui/commit/bb149ce))
+
+# [6.19.0](https://github.com/nordnet/ui/compare/v6.18.3...v6.19.0) (2021-06-08)
+
+
+### Features
+
+* 🎸 add phone input ([0d2a62e](https://github.com/nordnet/ui/commit/0d2a62e))
+* 🎸 allow sorting options by country for phone input ([2eed404](https://github.com/nordnet/ui/commit/2eed404))
+
+## [6.18.3](https://github.com/nordnet/ui/compare/v6.18.2...v6.18.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* put back ellipsis again and add example story ([8d8f6c9](https://github.com/nordnet/ui/commit/8d8f6c9))
+
+## [6.18.2](https://github.com/nordnet/ui/compare/v6.18.1...v6.18.2) (2021-06-07)
+
+
+### Bug Fixes
+
+* trigger build ([d9d27a3](https://github.com/nordnet/ui/commit/d9d27a3))
+
+## [6.18.1](https://github.com/nordnet/ui/compare/v6.18.0...v6.18.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* use div instead of truncate if no truncate should be done ([1cc9d5b](https://github.com/nordnet/ui/commit/1cc9d5b))
+
+# [6.18.0](https://github.com/nordnet/ui/compare/v6.17.2...v6.18.0) (2021-05-31)
+
+
+### Features
+
+* 🎸 add custom expand element and title row padding props ([312889d](https://github.com/nordnet/ui/commit/312889d))
+
+## [6.17.2](https://github.com/nordnet/ui/compare/v6.17.1...v6.17.2) (2021-05-31)
+
+
+### Bug Fixes
+
+* need new version ([778f07b](https://github.com/nordnet/ui/commit/778f07b))
+
+## [6.17.1](https://github.com/nordnet/ui/compare/v6.17.0...v6.17.1) (2021-05-28)
+
+
+### Bug Fixes
+
+* 🐛 select from filtered options instead of all options ([d782ca9](https://github.com/nordnet/ui/commit/d782ca9))
+
+# [6.17.0](https://github.com/nordnet/ui/compare/v6.16.0...v6.17.0) (2021-05-26)
+
+
+### Bug Fixes
+
+* 🐛 onboarding accent colors api ([fb4ce61](https://github.com/nordnet/ui/commit/fb4ce61))
+* 🐛 update snapshot ([5bfe9b3](https://github.com/nordnet/ui/commit/5bfe9b3))
+
+
+### Features
+
+* 🎸 add stock icon with small arrow ([8801484](https://github.com/nordnet/ui/commit/8801484))
+
+# [6.16.0](https://github.com/nordnet/ui/compare/v6.15.1...v6.16.0) (2021-05-25)
+
+
+### Features
+
+* 🎸 add semantic colors for onboarding ([86db5fd](https://github.com/nordnet/ui/commit/86db5fd))
+
+## [6.15.1](https://github.com/nordnet/ui/compare/v6.15.0...v6.15.1) (2021-05-24)
+
+
+### Bug Fixes
+
+* remove not officially supported and now broken visualizer support ([81c41fb](https://github.com/nordnet/ui/commit/81c41fb))
+* the typescript "warnings" ([0f2977d](https://github.com/nordnet/ui/commit/0f2977d))
+* **Input.Select:** fix the xstate machine warning after main app was updated to the semilatest xstate ([e4b3021](https://github.com/nordnet/ui/commit/e4b3021))
+
+# [6.15.0](https://github.com/nordnet/ui/compare/v6.14.0...v6.15.0) (2021-05-17)
+
+
+### Features
+
+* 🎸 add width and height controls to Flexbox components ([db1f718](https://github.com/nordnet/ui/commit/db1f718))
+
+# [6.14.0](https://github.com/nordnet/ui/compare/v6.13.2...v6.14.0) (2021-05-12)
+
+
+### Bug Fixes
+
+* 🐛 Update snapshot ([cd10ac6](https://github.com/nordnet/ui/commit/cd10ac6))
+
+
+### Features
+
+* 🎸 Add disabled option to AccordionItem ([c65a852](https://github.com/nordnet/ui/commit/c65a852))
+
+## [6.13.2](https://github.com/nordnet/ui/compare/v6.13.1...v6.13.2) (2021-05-11)
+
+
+### Bug Fixes
+
+* 🐛 fix transparent fill on icons ([e72f76c](https://github.com/nordnet/ui/commit/e72f76c))
+
+## [6.13.1](https://github.com/nordnet/ui/compare/v6.13.0...v6.13.1) (2021-05-11)
+
+
+### Bug Fixes
+
+* forward ref to framer motion mock ([680f3af](https://github.com/nordnet/ui/commit/680f3af))
+
+# [6.13.0](https://github.com/nordnet/ui/compare/v6.12.2...v6.13.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* add optional x padding for accordion item ([0591065](https://github.com/nordnet/ui/commit/0591065))
+* add several padding options ([8d4681f](https://github.com/nordnet/ui/commit/8d4681f))
+* correct item padding x story name ([bf0d5e7](https://github.com/nordnet/ui/commit/bf0d5e7))
+
+
+### Features
+
+* optional background color on hover and on focus ([d02f20d](https://github.com/nordnet/ui/commit/d02f20d))
+
+## [6.12.2](https://github.com/nordnet/ui/compare/v6.12.1...v6.12.2) (2021-05-11)
+
+
+### Bug Fixes
+
+* 🐛 leaking backgroundColor prop made transient ([9473172](https://github.com/nordnet/ui/commit/9473172))
+* ignore a11y warning becayse of emoji in story ([6ccec64](https://github.com/nordnet/ui/commit/6ccec64))
+
+## [6.12.1](https://github.com/nordnet/ui/compare/v6.12.0...v6.12.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* 🐛 adjust strokes on some icons ([18653d1](https://github.com/nordnet/ui/commit/18653d1))
+
+# [6.12.0](https://github.com/nordnet/ui/compare/v6.11.11...v6.12.0) (2021-05-07)
+
+
+### Features
+
+* 🎸 add more icons ([3b545c8](https://github.com/nordnet/ui/commit/3b545c8))
+
+## [6.11.11](https://github.com/nordnet/ui/compare/v6.11.10...v6.11.11) (2021-05-07)
+
+
+### Bug Fixes
+
+* DatePicker types, no imports, just exports, and renames ([2f35b6d](https://github.com/nordnet/ui/commit/2f35b6d))
+* exposed types CellProps, OnSort, and SortOrder from Molecules/FlexTable ([9fdc1e6](https://github.com/nordnet/ui/commit/9fdc1e6))
+* exposed types FooterPiops, Density, FontSize, MediaRelatedProps, FlexPropsType from Molecules/FlexTable ([f89bd4c](https://github.com/nordnet/ui/commit/f89bd4c))
+* exposed types LinkProps and LinkProviderProps from common/Links ([4a01a55](https://github.com/nordnet/ui/commit/4a01a55))
+* import fixes ([3ed6062](https://github.com/nordnet/ui/commit/3ed6062))
+* removed unnecessery variable and comment ([a082505](https://github.com/nordnet/ui/commit/a082505))
+* wip types exports ([83b39d6](https://github.com/nordnet/ui/commit/83b39d6))
+
+## [6.11.10](https://github.com/nordnet/ui/compare/v6.11.9...v6.11.10) (2021-05-06)
+
+
+### Bug Fixes
+
+* ignore jsx-a11y for emojis ([5291923](https://github.com/nordnet/ui/commit/5291923))
+
+## [6.11.9](https://github.com/nordnet/ui/compare/v6.11.8...v6.11.9) (2021-05-05)
+
+
+### Bug Fixes
+
+* dont render buttons fullserverredirect prop to dom ([e16b95e](https://github.com/nordnet/ui/commit/e16b95e))
+
+## [6.11.8](https://github.com/nordnet/ui/compare/v6.11.7...v6.11.8) (2021-05-05)
+
+
+### Bug Fixes
+
+* add a lil documentation ([99b37a1](https://github.com/nordnet/ui/commit/99b37a1))
+* introduce new prop, ditch the previous idea ([132541d](https://github.com/nordnet/ui/commit/132541d))
+* searchcomponent ([d8d8093](https://github.com/nordnet/ui/commit/d8d8093))
+
+## [6.11.7](https://github.com/nordnet/ui/compare/v6.11.6...v6.11.7) (2021-05-05)
+
+
+### Bug Fixes
+
+* 🐛 add message central colors ([c1b8208](https://github.com/nordnet/ui/commit/c1b8208))
+
+## [6.11.6](https://github.com/nordnet/ui/compare/v6.11.5...v6.11.6) (2021-05-04)
+
+
+### Bug Fixes
+
+* make the regular and large variant of the pagination bold ([22a6ea4](https://github.com/nordnet/ui/commit/22a6ea4))
+
+## [6.11.5](https://github.com/nordnet/ui/compare/v6.11.4...v6.11.5) (2021-05-04)
+
+
+### Bug Fixes
+
+* 🐛 styling on ssr when the as prop is used ([4efea65](https://github.com/nordnet/ui/commit/4efea65))
+
+## [6.11.4](https://github.com/nordnet/ui/compare/v6.11.3...v6.11.4) (2021-04-29)
+
+
+### Bug Fixes
+
+* input-select, chaneg smoothe to auto scroll ([a98b73e](https://github.com/nordnet/ui/commit/a98b73e))
+
+## [6.11.3](https://github.com/nordnet/ui/compare/v6.11.2...v6.11.3) (2021-04-29)
+
+
+### Bug Fixes
+
+* 🐛 use pointer not-allowed on disabled label and text input ([42de448](https://github.com/nordnet/ui/commit/42de448))
+
+## [6.11.2](https://github.com/nordnet/ui/compare/v6.11.1...v6.11.2) (2021-04-28)
+
+
+### Bug Fixes
+
+* sanitize hidden prop on Flexbox ([cc5f725](https://github.com/nordnet/ui/commit/cc5f725))
+
+## [6.11.1](https://github.com/nordnet/ui/compare/v6.11.0...v6.11.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* 🐛 Element id clash in Icons ([d78b882](https://github.com/nordnet/ui/commit/d78b882))
+
+# [6.11.0](https://github.com/nordnet/ui/compare/v6.10.1...v6.11.0) (2021-04-28)
+
+
+### Features
+
+* 🎸 Adds multiple new Icons ([ef052ef](https://github.com/nordnet/ui/commit/ef052ef))
+
+## [6.10.1](https://github.com/nordnet/ui/compare/v6.10.0...v6.10.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* trigger version update ([1067099](https://github.com/nordnet/ui/commit/1067099))
+
+# [6.10.0](https://github.com/nordnet/ui/compare/v6.9.2...v6.10.0) (2021-04-27)
+
+
+### Features
+
+* add stories for allow updating date on type; add unit test; ([7817b4a](https://github.com/nordnet/ui/commit/7817b4a))
+* allow date update while typing option for REGULAR and RANGE ([a6ebc59](https://github.com/nordnet/ui/commit/a6ebc59))
+
+## [6.9.2](https://github.com/nordnet/ui/compare/v6.9.1...v6.9.2) (2021-04-27)
+
+
+### Bug Fixes
+
+* added some test, and applied existing handleInputSubmitRegular ([b4c2c20](https://github.com/nordnet/ui/commit/b4c2c20))
+* missing snapshots ([fcfbd50](https://github.com/nordnet/ui/commit/fcfbd50))
+* see the branch name for comment ([c70a889](https://github.com/nordnet/ui/commit/c70a889))
+
+## [6.9.1](https://github.com/nordnet/ui/compare/v6.9.0...v6.9.1) (2021-04-26)
+
+
+### Bug Fixes
+
+* 🐛 correct typo in double datepicker disclaimer ([b1e6bbb](https://github.com/nordnet/ui/commit/b1e6bbb))
+
+# [6.9.0](https://github.com/nordnet/ui/compare/v6.8.0...v6.9.0) (2021-04-26)
+
+
+### Features
+
+* 🎸 add scope prop to FeedbackBanner ([894042c](https://github.com/nordnet/ui/commit/894042c))
+
+# [6.8.0](https://github.com/nordnet/ui/compare/v6.7.0...v6.8.0) (2021-04-23)
+
+
+### Bug Fixes
+
+* optimize the size of gold bar icon ([fa88fa8](https://github.com/nordnet/ui/commit/fa88fa8))
+
+
+### Features
+
+* 🎸 add gold bar icon ([5c1eb4b](https://github.com/nordnet/ui/commit/5c1eb4b))
+
+# [6.7.0](https://github.com/nordnet/ui/compare/v6.6.1...v6.7.0) (2021-04-21)
+
+
+### Features
+
+* 🎸 add new icons for etp screener ([5c26b5e](https://github.com/nordnet/ui/commit/5c26b5e))
+* 🎸 storyshot update ([d314712](https://github.com/nordnet/ui/commit/d314712))
+
+## [6.6.1](https://github.com/nordnet/ui/compare/v6.6.0...v6.6.1) (2021-04-20)
+
+
+### Bug Fixes
+
+* add default to state for currentPaga ([0ca6a10](https://github.com/nordnet/ui/commit/0ca6a10))
+
+# [6.6.0](https://github.com/nordnet/ui/compare/v6.5.1...v6.6.0) (2021-04-19)
+
+
+### Features
+
+* add finance growth icon ([6e69ba8](https://github.com/nordnet/ui/commit/6e69ba8))
+
+## [6.5.1](https://github.com/nordnet/ui/compare/v6.5.0...v6.5.1) (2021-04-13)
+
+
+### Bug Fixes
+
+* add pagination buttons not needed ([f13346b](https://github.com/nordnet/ui/commit/f13346b))
+* dont adjust num pages now, do that later ([3dd1c95](https://github.com/nordnet/ui/commit/3dd1c95))
+
+# [6.5.0](https://github.com/nordnet/ui/compare/v6.4.0...v6.5.0) (2021-04-13)
+
+
+### Features
+
+* add mortage colors to theme ([f93a6e3](https://github.com/nordnet/ui/commit/f93a6e3))
+
+# [6.4.0](https://github.com/nordnet/ui/compare/v6.3.0...v6.4.0) (2021-04-09)
+
+
+### Bug Fixes
+
+* 🐛 alignment of close button ([5ffb296](https://github.com/nordnet/ui/commit/5ffb296))
+* 🐛 change prop name from open to isopen in tooltip ([74a2c33](https://github.com/nordnet/ui/commit/74a2c33))
+* 🐛 change prop name in usetooltip ([c4fd221](https://github.com/nordnet/ui/commit/c4fd221))
+* 🐛 only allow single child to persistent tooltip ([7d8513f](https://github.com/nordnet/ui/commit/7d8513f))
+* 🐛 remove unecessary id in tooltip ([97ba501](https://github.com/nordnet/ui/commit/97ba501))
+* 🐛 remove unused color ([8ff27c0](https://github.com/nordnet/ui/commit/8ff27c0))
+* add storyshot ([caebb38](https://github.com/nordnet/ui/commit/caebb38))
+* handle maxWidth props default value ([70de9c5](https://github.com/nordnet/ui/commit/70de9c5))
+* remove custom border bottom prop and and margin fix ([14a4121](https://github.com/nordnet/ui/commit/14a4121))
+
+
+### Features
+
+* 🎸 add dynamic color styling to persistant tooltip ([17a2d1a](https://github.com/nordnet/ui/commit/17a2d1a))
+* 🎸 add remaining popover props to persistent tooltip ([34cd857](https://github.com/nordnet/ui/commit/34cd857))
+* 🎸 add wrapchild prop to prevent positioning issues ([aee7957](https://github.com/nordnet/ui/commit/aee7957))
+* 🎸 export and style content from tooltip popup components ([c4a9e29](https://github.com/nordnet/ui/commit/c4a9e29))
+* 🎸 export tooltip sub components for easy styling ([9eb40a4](https://github.com/nordnet/ui/commit/9eb40a4))
+* 🎸 generate new id if none is passed to persisted tooltip ([30ffc9c](https://github.com/nordnet/ui/commit/30ffc9c))
+* 🎸 implement new persistent tooltip component ([b674fc1](https://github.com/nordnet/ui/commit/b674fc1))
+* add a story for persistent tooltip ([8649583](https://github.com/nordnet/ui/commit/8649583))
+* wip add persisted tooltip ([45297c0](https://github.com/nordnet/ui/commit/45297c0))
+
+# [6.3.0](https://github.com/nordnet/ui/compare/v6.2.2...v6.3.0) (2021-04-09)
+
+
+### Features
+
+* add new epk graph colors ([14631bf](https://github.com/nordnet/ui/commit/14631bf))
+
+## [6.2.2](https://github.com/nordnet/ui/compare/v6.2.1...v6.2.2) (2021-04-06)
+
+
+### Bug Fixes
+
+* 🐛 remove hardcoded title and add prop for it instead ([6c1a725](https://github.com/nordnet/ui/commit/6c1a725))
+
+## [6.2.1](https://github.com/nordnet/ui/compare/v6.2.0...v6.2.1) (2021-03-31)
+
+
+### Bug Fixes
+
+* add missing outlines ([7c7e7f1](https://github.com/nordnet/ui/commit/7c7e7f1))
+
+# [6.2.0](https://github.com/nordnet/ui/compare/v6.1.0...v6.2.0) (2021-03-31)
+
+
+### Features
+
+* 🎸 add Lock icon ([a080792](https://github.com/nordnet/ui/commit/a080792))
+
+# [6.1.0](https://github.com/nordnet/ui/compare/v6.0.0...v6.1.0) (2021-03-30)
+
+
+### Features
+
+* 🎸 add chevron style to accordion item ([38f63ee](https://github.com/nordnet/ui/commit/38f63ee))
+
+# [6.0.0](https://github.com/nordnet/ui/compare/v5.27.1...v6.0.0) (2021-03-29)
+
+
+### Bug Fixes
+
+* fix typos ([f3ad84f](https://github.com/nordnet/ui/commit/f3ad84f))
+* grooming ([511ac4d](https://github.com/nordnet/ui/commit/511ac4d))
+* grooming ([887f64a](https://github.com/nordnet/ui/commit/887f64a))
+* grooming ([367995b](https://github.com/nordnet/ui/commit/367995b))
+
+
+### Features
+
+* 🎸 bump ts ([840dc48](https://github.com/nordnet/ui/commit/840dc48))
+* bump typescript to 4.2.3 from 3.8.3 ([d6a4101](https://github.com/nordnet/ui/commit/d6a4101))
+* bump typescript to 4.2.3 from 3.8.3 ([cda4064](https://github.com/nordnet/ui/commit/cda4064))
+
+
+### BREAKING CHANGES
+
+* 🧨 y
+
 ## [5.27.1](https://github.com/nordnet/ui/compare/v5.27.0...v5.27.1) (2021-03-23)
 
 

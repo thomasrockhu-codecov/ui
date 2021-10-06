@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { RowComponent, FooterRowComponent, HeaderRowComponent } from './Row/Row.types';
+import { FooterRowComponent, HeaderRowComponent, RowComponent } from './Row/Row.types';
 import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';
@@ -73,3 +73,9 @@ export type FlexTableComponents = {
   HeaderRow: HeaderRowComponent;
   Row: RowComponent;
 };
+
+export { Props as CellProps } from './Cell/Cell.types';
+export { Props as FooterProps } from './Footer/Footer.types';
+export { Density, FontSize, MediaRelatedProps, FlexPropsType } from './shared/shared.types';
+export { OnSort } from './Header/Header.types';
+export { SortOrder } from './Header/HeaderContent/HeaderContent.types';

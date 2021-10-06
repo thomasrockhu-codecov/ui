@@ -21,24 +21,26 @@ export const assert = (
   return true;
 };
 
-export const deprecate = (message: string) => <T extends {} | Function>(target: T): T => {
-  if (process.env.NODE_ENV !== 'production') {
-    return typeof Proxy === 'undefined'
-      ? target
-      : new Proxy(target, {
-          get(getTarget, getProp) {
-            // eslint-disable-next-line no-console
-            console.warn(`Deprecated: ${message}`);
-            return getTarget[getProp];
-          },
-          apply(applyTarget, thisArg, argumentsList) {
-            // @ts-ignore
-            return applyTarget.apply(thisArg, argumentsList);
-          },
-        });
-  }
-  return target;
-};
+export const deprecate =
+  (message: string) =>
+  <T extends {} | Function>(target: T): T => {
+    if (process.env.NODE_ENV !== 'production') {
+      return typeof Proxy === 'undefined'
+        ? target
+        : new Proxy(target, {
+            get(getTarget, getProp) {
+              // eslint-disable-next-line no-console
+              console.warn(`Deprecated: ${message}`);
+              return getTarget[getProp];
+            },
+            apply(applyTarget, thisArg, argumentsList) {
+              // @ts-ignore
+              return applyTarget.apply(thisArg, argumentsList);
+            },
+          });
+    }
+    return target;
+  };
 
 export const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 export const isElement = (x: any): x is React.ReactNode => React.isValidElement(x);
@@ -49,7 +51,9 @@ export const isArray = (x: any): x is [] => Array.isArray(x);
 export const isFunction = (x: any): x is Function => typeof x === 'function';
 export const isHTMLElement = (x: any): x is HTMLElement => x instanceof HTMLElement;
 
-export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));
+export const pickAriaAttributes = R.pickBy((_, key: string | number) =>
+  R.test(/^aria-/, key as string),
+);
 
 const convertToDate = (value: number) => new Date(value);
 const isInvalid = R.anyPass([R.isNil, R.pipe(convertToDate, R.toString, R.equals('Invalid Date'))]);

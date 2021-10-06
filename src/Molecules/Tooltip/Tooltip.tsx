@@ -1,20 +1,20 @@
-import React, { cloneElement, useState, forwardRef } from 'react';
+import React, { cloneElement, forwardRef, useState } from 'react';
 import { TooltipComponent } from './Tooltip.types';
-import { TooltipPopup } from './TooltipPopup';
-import { wrapEvent, mergeRefs } from '../../common/utils';
+import { PopOver } from '../../common/PopOver';
+import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
 
-/** 
-  There are a few features that are important to understand.
-  
-  1. Tooltips don't show up until the user has rested on one, we don't
-     want tooltips popping up as you move your mouse around the page.
-  
-  2. Once any tooltip becomes visible, other tooltips nearby should skip
-     resting and display immediately.
-  
-  3. Tooltips stick around for a little bit after blur/mouseleave. 
-*/
+/**
+ There are a few features that are important to understand.
+
+ 1. Tooltips don't show up until the user has rested on one, we don't
+ want tooltips popping up as you move your mouse around the page.
+
+ 2. Once any tooltip becomes visible, other tooltips nearby should skip
+ resting and display immediately.
+
+ 3. Tooltips stick around for a little bit after blur/mouseleave.
+ */
 
 export const Tooltip: TooltipComponent = forwardRef(
   (
@@ -28,6 +28,8 @@ export const Tooltip: TooltipComponent = forwardRef(
       maxWidth = 50,
       openDelay = 100,
       closeDelay = 500,
+      isOpen: controlledIsOpen,
+      wrapChild,
     },
     ref,
   ) => {
@@ -44,11 +46,11 @@ export const Tooltip: TooltipComponent = forwardRef(
       handleMouseLeave,
       handleKeyDown,
       handleMouseDown,
-    } = useTooltip(mode, openDelay, closeDelay);
+    } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
 
     return (
       <>
-        {cloneElement(child, {
+        {cloneElement(wrapChild ? <span>{child}</span> : child, {
           'aria-describedby': isOpen ? id : undefined,
           ref: mergeRefs([setTriggerElement, triggerElementRef]),
           onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),
@@ -61,7 +63,7 @@ export const Tooltip: TooltipComponent = forwardRef(
         })}
 
         {isOpen && (
-          <TooltipPopup
+          <PopOver
             id={id}
             ref={ref as any}
             triggerElement={triggerElement}
@@ -70,6 +72,7 @@ export const Tooltip: TooltipComponent = forwardRef(
             position={position}
             inModal={inModal}
             maxWidth={maxWidth}
+            pointerEvents={false}
           />
         )}
       </>

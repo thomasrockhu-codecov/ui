@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { format, isToday } from 'date-fns';
 import { Box, Typography } from '../../../../..';
@@ -14,8 +14,9 @@ const StyledCalendarDay = styled(Box)<{
   $isFirstDay?: boolean;
   $isLastDay?: boolean;
   $withGutter?: boolean;
+  $fullscreenMode: boolean;
 }>`
-  background: ${({ theme }) => theme.color.backgroundInput};
+  background: ${({ theme }) => theme.color.inputBackground};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
@@ -25,20 +26,28 @@ const StyledCalendarDay = styled(Box)<{
   display: flex;
   cursor: pointer;
   box-sizing: border-box;
+  flex: 1;
 
-  ${({ $disabled, $selected, $isWithinRange, $isToday, $isFirstDay, $isLastDay, theme }) => `
+  ${({
+    $disabled,
+    $selected,
+    $isWithinRange,
+    $isToday,
+    $isFirstDay,
+    $isLastDay,
+    $fullscreenMode,
+    theme,
+  }) => `
   ${
     $disabled
       ? `cursor: not-allowed;
         background: ${theme.color.shadowInput};
 
         &:focus {
-          outline: none;
           border: 1px solid ${theme.color.inputBorder};
         }`
       : `
       &:focus {
-        outline: none;
         border: 1px solid ${theme.color.cta};
       }
 
@@ -47,6 +56,13 @@ const StyledCalendarDay = styled(Box)<{
       }`
   }
   ${$isWithinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
+  ${
+    $fullscreenMode
+      ? `width: calc((100vw - ${theme.spacing.unit(6)}px) / 7);
+			height: calc((100vw - ${theme.spacing.unit(6)}px) / 7);
+			`
+      : ''
+  }
   ${
     $isWithinRange && $isFirstDay
       ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
@@ -62,67 +78,72 @@ const StyledCalendarDay = styled(Box)<{
 `}
 `;
 
-const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
-  (
-    {
-      onFocus,
-      className = '',
-      date,
-      disabled = false,
-      locale,
-      onClick,
-      onKeyDown,
-      sameMonth = true,
-      selected,
-      isWithinRange = false,
-      isFirstDay = false,
-      isLastDay = false,
-      withGutter,
-    },
-    ref,
-  ) => {
-    const textColor = (() => {
-      if (!sameMonth && !selected) return 'otherMonthDateText';
-      if (disabled) return 'disabledText';
-      if (selected) return 'buttonText';
-      if (!selected) return 'text';
-      return '';
-    })();
+const CalendarDay: React.FC<CalendarDayProps> = ({
+  onFocus,
+  className = '',
+  date,
+  focused,
+  disabled = false,
+  locale,
+  onClick,
+  onKeyDown,
+  sameMonth = true,
+  selected,
+  isWithinRange = false,
+  isFirstDay = false,
+  isLastDay = false,
+  withGutter,
+  fullscreenMode = false,
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (focused) {
+      ref.current?.focus();
+    }
+  }, [focused]);
 
-    const handleOnClick = useCallback(() => {
-      if (disabled) return;
-      if (onClick) onClick(date);
-    }, [date, disabled, onClick]);
+  const textColor = (() => {
+    if (!sameMonth && !selected) return 'otherMonthDateText';
+    if (disabled) return 'disabledText';
+    if (selected) return 'buttonText';
+    if (!selected) return 'text';
+    return '';
+  })();
 
-    const ariaLabel = format(date, 'EEEE dd MMMM, yyyy', {
-      locale,
-    });
+  const handleClick = useCallback(() => {
+    if (disabled) return;
+    if (onClick) onClick(date);
+  }, [date, disabled, onClick]);
 
-    return (
-      <StyledCalendarDay
-        ref={ref}
-        className={className}
-        $disabled={disabled}
-        $selected={selected}
-        $isWithinRange={isWithinRange}
-        $isToday={isToday(date)}
-        $isSameMonth={sameMonth}
-        $isFirstDay={isFirstDay}
-        $isLastDay={isLastDay}
-        data-testid={`${format(date, 'MMMM d', { locale })}`}
-        onClick={handleOnClick}
-        onKeyDown={onKeyDown}
-        onFocus={onFocus}
-        aria-label={ariaLabel}
-        tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
-        $withGutter={withGutter}
-      >
-        <Typography type="tertiary" aria-hidden color={(t) => t.color[textColor || 'text']}>
-          {format(date, 'd')}
-        </Typography>
-      </StyledCalendarDay>
-    );
-  },
-);
+  const ariaLabel = format(date, 'EEEE dd MMMM, yyyy', {
+    locale,
+  });
+
+  return (
+    <StyledCalendarDay
+      ref={ref}
+      className={className}
+      $disabled={disabled}
+      $selected={selected}
+      $isWithinRange={isWithinRange}
+      $isToday={isToday(date)}
+      $isSameMonth={sameMonth}
+      $isFirstDay={isFirstDay}
+      $isLastDay={isLastDay}
+      data-testid={`${format(date, 'MMMM d', { locale })}`}
+      onClick={handleClick}
+      onKeyDown={onKeyDown}
+      onFocus={onFocus}
+      aria-label={ariaLabel}
+      tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
+      $withGutter={withGutter}
+      $fullscreenMode={fullscreenMode}
+    >
+      <Typography type="tertiary" aria-hidden color={(t) => t.color[textColor || 'text']}>
+        {format(date, 'd')}
+      </Typography>
+    </StyledCalendarDay>
+  );
+};
 
 export default CalendarDay;

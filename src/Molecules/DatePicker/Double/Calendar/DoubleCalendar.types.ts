@@ -6,6 +6,5 @@ export type Props = {
   onClick: (date: Date) => void;
   selectedStartDate: Date;
   selectedEndDate?: Date;
-  controlledFocus: boolean;
-  setViewedDate: (date: Date) => void;
+  onMonthChange: (index: number) => void;
 };

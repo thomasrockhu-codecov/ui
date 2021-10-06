@@ -86,3 +86,56 @@ export const TextOnlyContentIsFormattedCorrect = () => (
     </AccordionItem>
   </>
 );
+
+export const withChevron = () => (
+  <AccordionItem withChevron title="How much risk are you willing to take?">
+    <ExampleContent />
+  </AccordionItem>
+);
+
+export const withDisabledBackgroundColor = () => (
+  <AccordionItem title="This card has its hover and focus color disabled" disableBackgroundColor>
+    <ExampleContent />
+  </AccordionItem>
+);
+
+export const withDifferentPaddings = () => (
+  <>
+    <AccordionItem title="This accordion item has a custom padding" p={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom horizontal padding" px={20}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom vertical padding" py={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom top padding" pt={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom bottom padding" pb={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom left padding" pl={20}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem
+      title="This accordion item has a custom right padding and chevron to demonstrate"
+      pr={20}
+      withChevron
+    >
+      <ExampleContent />
+    </AccordionItem>
+  </>
+);
+
+export const disabled = () => (
+  <>
+    <AccordionItem title="This accordion item is disabled" disabled>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item is disabled with chevron" disabled withChevron>
+      <ExampleContent />
+    </AccordionItem>
+  </>
+);

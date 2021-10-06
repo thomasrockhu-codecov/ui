@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, TabTitle } from '../..';
+import { Flexbox, TabTitle, Typography } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
-import { ItemProps, TitleComponent, Component } from './TabsNav.types';
-import { LinkProps, useLink } from '../../common/Links';
+import { Component, ItemProps, TitleComponent } from './TabsNav.types';
+import { useLink } from '../../common/Links';
+import { LinkProps } from '../../common/Links/types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 (Item as any).displayName = 'TabsNav.Tab';
 
-const Link: React.FC<LinkProps> = props => {
+const Link: React.FC<LinkProps> = (props) => {
   const LinkComponent = useLink();
   return <LinkComponent {...props} />;
 };
@@ -56,8 +57,6 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 };
 
-// TODO: fix ts issue with height prop
-// @ts-ignore
 export const TabsNav: Component = ({ children, height = 11, className }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),

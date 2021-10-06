@@ -32,7 +32,7 @@ export default function FlagBr() {
           />
         </g>
       </g>
-      <title>Brazilia</title>
+      <title>Brazil</title>
     </>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
-import { Typography, Spinner } from '../../..';
+import { Spinner, Typography } from '../../..';
 
 const LOADING_ANIMATION_DURATION = 0.2;
 

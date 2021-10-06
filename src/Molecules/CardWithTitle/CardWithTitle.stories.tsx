@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
+import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import docs from './CardWithTitle.md';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';
@@ -46,7 +46,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const documentation = () => <MD source={docs} />;
+export const documentation = () => <MD>{docs}</MD>;
 
 export const defaultStory = () => (
   <CardWithTitle title="Konton">A CardWithTitle containing content</CardWithTitle>
@@ -109,7 +109,7 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
       </Flexbox>
       <Flexbox item>
         <Typography type="secondary" color={(t) => t.color.text} weight="bold">
-          Marknadsöversikt (Not Really a link)
+          Marknadsöversikt (not really a link)
         </Typography>
         <PaddedIcon inline color={(t) => t.color.cta} size={3} />
       </Flexbox>
@@ -170,8 +170,7 @@ export const integrationFadedScrollWithHeightFromParent = () => {
 };
 
 integrationFadedScrollWithHeightFromParent.story = {
-  name:
-    'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
+  name: 'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
 };
 
 export const withoutAllVerticalPadding = () => (

@@ -36,11 +36,20 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
-import DatePicker from './Molecules/DatePicker';
+import { DatePicker, DateRangePicker, DoubleDatePicker } from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
-import FlexTable from './Molecules/FlexTable';
+import FlexTable, {
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+} from './Molecules/FlexTable';
 import FormField from './Molecules/FormField';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
@@ -56,6 +65,7 @@ import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Pagination from './Molecules/Pagination';
+import PersistentTooltip from './Molecules/PersistentTooltip';
 import ProgressBar from './Molecules/ProgressBar';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
@@ -82,7 +92,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
+import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
 
 import {
   getPersistedSortOrder,
@@ -91,6 +101,20 @@ import {
 
 /** Utils */
 import { numberWithLimit } from './common/utils';
+
+/** Exports for types */
+export type {
+  LinkProps,
+  LinkProviderProps,
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+};
 
 /** Runtime code */
 export {
@@ -110,6 +134,8 @@ export {
   CollapsibleCard,
   CssGrid,
   DatePicker,
+  DateRangePicker,
+  DoubleDatePicker,
   DateTime,
   Development,
   Drawer,
@@ -131,9 +157,7 @@ export {
   Link,
   LinkBuy,
   LinkContext,
-  LinkProps,
   LinkProvider,
-  LinkProviderProps,
   LinkSell,
   List,
   ListItem,
@@ -145,6 +169,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Pagination,
+  PersistentTooltip,
   Pill,
   Portal,
   ProgressBar,

@@ -46,7 +46,7 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: WRONG way [hidden] 1`]
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -55,7 +55,7 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: WRONG way [hidden] 1`]
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -123,7 +123,7 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [hidden] 1`] 
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -132,18 +132,16 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [hidden] 1`] 
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -207,7 +205,7 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [shown] 1`] =
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -216,18 +214,16 @@ exports[`Storyshots Atoms / CssGrid Conditionally hidden: good way [shown] 1`] =
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -306,7 +302,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom gutter 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -315,7 +311,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -324,7 +320,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -333,7 +329,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -412,7 +408,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom templateColumns 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -421,7 +417,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -430,7 +426,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -439,7 +435,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -574,7 +570,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with different layouts for different
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -583,7 +579,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -592,7 +588,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -601,7 +597,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -679,7 +675,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with minmax() 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -688,7 +684,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with minmax() 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -697,7 +693,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with minmax() 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -706,7 +702,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with minmax() 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -809,7 +805,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -818,7 +814,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -827,7 +823,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -836,7 +832,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -845,7 +841,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c6"
   >
     <div
       className="c2"
@@ -854,7 +850,7 @@ exports[`Storyshots Atoms / CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c7"
   >
     <div
       className="c2"
@@ -983,7 +979,7 @@ exports[`Storyshots Atoms / CssGrid Different gutter on different screen sizes 1
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -992,18 +988,16 @@ exports[`Storyshots Atoms / CssGrid Different gutter on different screen sizes 1
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1012,12 +1006,12 @@ exports[`Storyshots Atoms / CssGrid Different gutter on different screen sizes 1
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
     >
-      something that doesn‘t exist
+      something that doesn't exist
     </div>
   </div>
 </div>
@@ -1212,7 +1206,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1221,7 +1215,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -1230,7 +1224,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1239,7 +1233,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -1248,7 +1242,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c6"
   >
     <div
       className="c2"
@@ -1257,7 +1251,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c7"
   >
     <div
       className="c2"
@@ -1266,7 +1260,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c8"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c8"
   >
     <div
       className="c2"
@@ -1275,7 +1269,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c9"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c9"
   >
     <div
       className="c2"
@@ -1284,7 +1278,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c10"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c10"
   >
     <div
       className="c2"
@@ -1293,7 +1287,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c11"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c11"
   >
     <div
       className="c2"
@@ -1302,7 +1296,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c12"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c12"
   >
     <div
       className="c2"
@@ -1311,7 +1305,7 @@ exports[`Storyshots Atoms / CssGrid Items With Different Placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c13"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c13"
   >
     <div
       className="c2"
@@ -1379,7 +1373,7 @@ exports[`Storyshots Atoms / CssGrid Items with different placements 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1388,18 +1382,16 @@ exports[`Storyshots Atoms / CssGrid Items with different placements 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1522,7 +1514,7 @@ exports[`Storyshots Atoms / CssGrid Shown on md+, hidden on small screens 1`] = 
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1531,18 +1523,16 @@ exports[`Storyshots Atoms / CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1551,12 +1541,12 @@ exports[`Storyshots Atoms / CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
     >
-      something that doesn‘t exist
+      something that doesn't exist
     </div>
   </div>
 </div>
@@ -1674,7 +1664,7 @@ exports[`Storyshots Atoms / CssGrid Shown on small screen sizes, hidden on md+ 1
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1683,18 +1673,16 @@ exports[`Storyshots Atoms / CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
     >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
+      This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1703,12 +1691,12 @@ exports[`Storyshots Atoms / CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
     >
-      something that doesn‘t exist
+      something that doesn't exist
     </div>
   </div>
 </div>
@@ -1793,7 +1781,7 @@ exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
   className="c0"
 >
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1802,7 +1790,7 @@ exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -1811,7 +1799,7 @@ exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1820,7 +1808,7 @@ exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -1829,7 +1817,7 @@ exports[`Storyshots Atoms / CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+    className="CssGrid__RawCssGridItem-sc-bu5cxy-1 c6"
   >
     <div
       className="c2"

@@ -1,12 +1,13 @@
-import React, { useContext, FC } from 'react';
+import React, { FC, useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { ButtonComponent, ButtonProps, InnerProps } from './Button.types';
+import { ButtonProps, InnerProps } from './Button.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 import ButtonContent from './ButtonContent';
 import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
-import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
+import { useLink } from '../../common/Links';
+import { LinkProps as RawLinkProps } from '../../common/Links/types';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
@@ -49,10 +50,9 @@ const StyledLink = styled(CleanLink)<InnerProps>`
   text-decoration: none;
 `;
 
-export const Button: ButtonComponent = React.forwardRef<
-  HTMLAnchorElement | HTMLButtonElement,
-  ButtonProps
->((props, ref) => {
+export const Button: React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<ButtonProps> & React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
+> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonProps>((props, ref) => {
   const {
     className,
     disabled,
@@ -105,7 +105,9 @@ export const Button: ButtonComponent = React.forwardRef<
 
   if (colorFromTheme && (isPrimary(variant) || isSecondary(variant))) {
     assert(
-      colorFromTheme === theme.color.cta || colorFromTheme === theme.color.negative,
+      colorFromTheme === theme.color.cta ||
+        colorFromTheme === theme.color.negative ||
+        colorFromTheme === theme.color.sell,
       'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` for primary and secondary variant.',
     );
   }

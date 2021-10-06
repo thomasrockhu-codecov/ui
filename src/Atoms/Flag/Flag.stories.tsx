@@ -1,5 +1,4 @@
 import React from 'react';
-// @ts-ignore
 import flags from './flags';
 import { Flag } from '../..';
 import { Display } from '../../common/Display';
@@ -18,9 +17,9 @@ defaultUse.story = {
 };
 
 export const inlineStory = () => (
-  <span>
+  <>
     You can put the <Flag inline country="SE" /> directly in the text with inline prop!
-  </span>
+  </>
 );
 
 inlineStory.story = {
@@ -41,7 +40,7 @@ rendersNothingIfWrongCountryCode.story = {
 
 export const availableFlags = () => (
   <Display
-    items={Object.keys(flags).map((flagName: string) => ({
+    items={Object.keys(flags)?.map((flagName: string) => ({
       title: flagName,
       component: <Flag country={flagName} />,
     }))}

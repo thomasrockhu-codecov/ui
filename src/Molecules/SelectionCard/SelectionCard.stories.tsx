@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
-import { Icon, Flexbox, Typography } from '../..';
+import { Flexbox, Icon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
+
+export default {
+  title: 'Molecules / SelectionCard',
+  parameters: {
+    component: SelectionCard,
+  },
+  decorators: [withKnobs],
+};
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
@@ -23,14 +31,6 @@ const getCardProps = () => ({
   horizontal: boolean('Horizontal', false),
   error: boolean('Error', false),
 });
-
-export default {
-  title: 'Molecules | SelectionCard',
-  parameters: {
-    component: SelectionCard,
-  },
-  decorators: [withKnobs],
-};
 
 export const SelectionCardDefault = () => (
   <SelectionCard {...getCardProps()} title="Selection Card Default" onChange={onChange} />
@@ -96,16 +96,13 @@ export const withValueControlledBehavior = () => {
           selected={value}
           onChange={() => setValue(!value)}
         />
-
         <button type="button" onClick={() => setValue(true)}>
           Selected
         </button>
-
         <button type="button" onClick={() => setValue(false)}>
           Not selected
         </button>
-
-        <span>value: {value.toString()}</span>
+        value: {value.toString()}
       </>
     );
   };

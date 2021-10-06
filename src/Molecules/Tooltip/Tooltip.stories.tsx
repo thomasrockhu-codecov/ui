@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Modal, Drawer } from '../..';
+import { Box, Drawer, Flexbox, Icon, Modal } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -24,25 +24,25 @@ const StyledDiv = styled.div`
 export const defaultStory = () => (
   <>
     <StyledDiv>
-      <span>Default delays</span>
+      Default delays
       <Tooltip label={label} position="top">
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 2000ms; Close delay: 3000ms</span>
+      Open delay: 2000ms; Close delay: 3000ms
       <Tooltip label={label} position="top" openDelay={2000} closeDelay={3000}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 10ms; Close delay: 10ms</span>
+      Open delay: 10ms; Close delay: 10ms
       <Tooltip label={label} position="top" openDelay={10} closeDelay={10}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 0ms; Close delay: 0ms</span>
+      Open delay: 0ms; Close delay: 0ms
       <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
         <Button type="button">Hover me</Button>
       </Tooltip>
@@ -163,4 +163,76 @@ export const customMaxWidth = () => (
 
 customMaxWidth.story = {
   name: 'Custom max-width',
+};
+
+export const ControlledOpen = () => {
+  const [isOpen, setOpen] = useState(true);
+
+  return (
+    <>
+      <Button onClick={() => setOpen(!isOpen)}>Toogle Tooltip</Button>
+      <Flexbox container>
+        <Box mt={10}>
+          <Tooltip isOpen={isOpen} label="This is a controlled tooltip." position="right">
+            <div>
+              <Icon.Pen />
+            </div>
+          </Tooltip>
+        </Box>
+      </Flexbox>
+    </>
+  );
+};
+
+export const WrapChild = () => {
+  const [isOpen] = useState(true);
+
+  return (
+    <>
+      <Flexbox container>
+        <Box mt={20}>
+          <Tooltip
+            isOpen={isOpen}
+            label="With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning)."
+            position="right"
+            wrapChild
+          >
+            <Icon.Pen />
+          </Tooltip>
+        </Box>
+      </Flexbox>
+
+      <Flexbox container>
+        <Box mt={40}>
+          <Tooltip
+            isOpen={isOpen}
+            label="This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs"
+            position="right"
+          >
+            <div>
+              <Icon.Pen />
+            </div>
+          </Tooltip>
+        </Box>
+      </Flexbox>
+    </>
+  );
+};
+
+export const BrokenPositioning = () => {
+  const [isOpen] = useState(true);
+
+  return (
+    <Flexbox container>
+      <Box mt={40}>
+        <Tooltip
+          isOpen={isOpen}
+          label="This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this."
+          position="right"
+        >
+          <Icon.Pen />
+        </Tooltip>
+      </Box>
+    </Flexbox>
+  );
 };

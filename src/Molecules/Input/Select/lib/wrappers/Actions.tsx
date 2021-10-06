@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useSelectMachineFromContext } from '../context';
 import { List } from '../../../../..';
@@ -9,6 +9,7 @@ const getFocusedActionIdx = (optionsCount: number, currentIdx: number | null) =>
 const StyledList = styled(List)<any>`
   list-style: none;
 `;
+
 const StyledLi = styled.li`
   outline: none;
 `;
@@ -38,7 +39,7 @@ export const ActionsWrapper: React.FC<{
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
   return (
     <StyledList role="listbox">
-      {actions.map((a, index) => (
+      {actions?.map((a, index) => (
         // Because it has keyboard navigation from Input.Select itself
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events
         <StyledLi

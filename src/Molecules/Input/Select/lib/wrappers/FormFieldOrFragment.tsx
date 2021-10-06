@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Icon, FormField } from '../../../../..';
+import { Flexbox, FormField, Icon } from '../../../../..';
 import { Props } from '../../Select.types';
 
 const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
@@ -20,8 +20,16 @@ const StyledRelativeDiv = styled.div<any>`
   width: ${(p) => (p.fullWidth ? '100%' : 'auto')};
 `;
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+const determineHeight = (p: any) => {
+  if (p.height) {
+    return p.theme.spacing.unit(p.height);
+  }
+
+  return p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10);
+};
+
+const height = css<Pick<Props, 'height' | 'size'>>`
+  height: ${determineHeight}px;
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -47,7 +55,6 @@ const focusBorderStyles = css`
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-  outline: none;
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -62,7 +69,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
 const SelectWrapper = styled.div`
   ${height}
   ${borderStyles}
-  background: ${(p) => p.theme.color.backgroundInput};
+  background: ${(p) => p.theme.color.inputBackground};
   box-sizing: border-box;
   position: relative;
 `;

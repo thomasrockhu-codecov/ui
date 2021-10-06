@@ -1,12 +1,12 @@
-import React, { useLayoutEffect, useState, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
-import { Button, Icon, Flexbox, Media, Typography } from '../..';
-import { Component, ColsTrimmerProps } from './CoachMarks.types';
+import { Button, Flexbox, Icon, Media, Typography } from '../..';
+import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
-import { useWindowSize, useOnClickOutside } from '../../common/Hooks';
+import { useOnClickOutside, useWindowSize } from '../../common/Hooks';
 import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';

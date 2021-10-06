@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
-import { Typography, Flexbox } from '../..';
+import { Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
@@ -220,7 +219,7 @@ export const ariaAttributes = () => (
     items={[
       {
         title: 'with aria-hidden',
-        component: <Typography aria-hidden>I'm hidden</Typography>,
+        component: <Typography aria-hidden>I&apos;m hidden</Typography>,
       },
     ]}
   />

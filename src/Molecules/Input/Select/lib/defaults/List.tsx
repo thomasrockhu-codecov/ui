@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { List as UIList, FadedScroll, DropdownBubble, Separator, Box } from '../../../../..';
+import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
 import { useMedia } from '../../../../../Atoms/Media';
 
 type ListProps = {
@@ -43,6 +43,8 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
+  min-width: ${({ theme }) =>
+    theme.media.lessThan(theme.breakpoints.sm) ? 'auto' : `${theme.spacing.unit(41)}px`};
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
