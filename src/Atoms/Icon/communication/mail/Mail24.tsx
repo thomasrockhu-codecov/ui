@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Mail24: React.FC<IconProps> = ({ color }) => {
+const Mail24: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={24} height={24} fill="none">
+    <IconBase {...props} width={24} height={24}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -18,7 +17,7 @@ const Mail24: React.FC<IconProps> = ({ color }) => {
         fill={iconColor}
       />
       <path d="M2 21V10.49l2 1.555V19h16v-6.955l2-1.556V21H2z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 

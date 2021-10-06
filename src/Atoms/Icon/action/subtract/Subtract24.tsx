@@ -1,18 +1,17 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Subtract24: React.FC<IconProps> = ({ color }) => {
+const Subtract24: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={24} height={24} fill="none">
+    <IconBase {...props} width={24} height={24}>
       <path fill={iconColor} d="M1 11h22v2H1z" />
-    </svg>
+    </IconBase>
   );
 };
 

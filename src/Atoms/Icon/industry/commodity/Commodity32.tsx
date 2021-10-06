@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Commodity32: React.FC<IconProps> = ({ color }) => {
+const Commodity32: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={32} height={32} fill="none">
+    <IconBase {...props} width={32} height={32}>
       <path d="M16 23a3 3 0 01-3-3h-2a5 5 0 005 5v-2z" fill={iconColor} />
       <path
         fillRule="evenodd"
@@ -19,7 +18,7 @@ const Commodity32: React.FC<IconProps> = ({ color }) => {
         fill={iconColor}
       />
       <path d="M16 4l.708-.706-.746-.749-.706.787L16 4z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 

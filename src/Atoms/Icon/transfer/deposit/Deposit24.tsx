@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Deposit24: React.FC<IconProps> = ({ color }) => {
+const Deposit24: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={24} height={24} viewBox="0 0 24 24" fill="none">
+    <IconBase {...props} width={24} height={24}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -23,7 +22,7 @@ const Deposit24: React.FC<IconProps> = ({ color }) => {
         d="M20 21h-4v2h4a3 3 0 003-3V4a3 3 0 00-3-3h-4v2h4a1 1 0 011 1v1H1v14h20v1a1 1 0 01-1 1zM3 7h18v10H3V7z"
         fill={iconColor}
       />
-    </svg>
+    </IconBase>
   );
 };
 

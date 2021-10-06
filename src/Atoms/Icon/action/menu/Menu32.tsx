@@ -1,18 +1,17 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Menu32: React.FC<IconProps> = ({ color }) => {
+const Menu32: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={32} height={32} fill="none">
+    <IconBase {...props} width={32} height={32}>
       <path d="M1 5h30v2H1V5zM1 15h30v2H1v-2zM31 25H1v2h30v-2z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 

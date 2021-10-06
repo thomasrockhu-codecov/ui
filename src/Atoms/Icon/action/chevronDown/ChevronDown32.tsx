@@ -1,18 +1,17 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const ChevronDown32: React.FC<IconProps> = ({ color }) => {
+const ChevronDown32: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={32} height={32} fill="none">
+    <IconBase {...props} width={32} height={32}>
       <path d="M1 9.918V7.09l15 15 15-15v2.828l-15 15-15-15z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 

@@ -14,7 +14,7 @@ defaultUse.story = {
 
 export const inlineStory = () => (
   <>
-    You can put the <Icon.ArrowLeft16 /> directly in the text !
+    You can put the <Icon.ArrowLeft16 inline /> directly in the text !
   </>
 );
 
@@ -35,7 +35,7 @@ export const availableIcons = () => (
         title: iconName,
         component: (
           <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
-            <IconComponent {...(iconName === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})} />
+            <IconComponent />
           </div>
         ),
       }),
@@ -49,12 +49,9 @@ availableIcons.story = {
 
 export const allIconsColored = () => (
   <>
-    {Object?.entries(Icon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
+    {Object?.entries(Icon)?.map(([_, IconComponent]: [string, React.ComponentType<any>]) => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
-        <IconComponent
-          color={(t: any) => t.color.cta}
-          {...(key === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
-        />
+        <IconComponent color={(t: any) => t.color.cta} />
       </div>
     ))}
   </>

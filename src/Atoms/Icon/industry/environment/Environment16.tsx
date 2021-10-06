@@ -1,23 +1,22 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Environment16: React.FC<IconProps> = ({ color }) => {
+const Environment16: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={16} height={16} fill="none">
+    <IconBase {...props} width={16} height={16}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M7 13.687V16h2V8.385c.293-.013.633-.04.997-.09 1.1-.154 2.602-.55 3.676-1.622 1.073-1.074 1.468-2.576 1.621-3.676A10.813 10.813 0 0015.38.99l-.002-.037-.001-.012V.934l-.07-.845-.846-.07h-.006l-.011-.001-.037-.003A9.41 9.41 0 0013.84 0c-.366.001-.873.022-1.442.101-1.1.153-2.602.549-3.675 1.622S7.254 4.299 7.1 5.398a10.812 10.812 0 00-.1 1.377c-1.045-.886-2.394-1.23-3.404-1.372a10.82 10.82 0 00-2.008-.086l-.037.003H1.54l-.004.001h-.002l-.846.07-.07.846v.017l-.003.037a9.405 9.405 0 00-.015.567c0 .366.022.873.1 1.442.154 1.1.55 2.602 1.623 3.675s2.575 1.468 3.675 1.622c.366.05.708.078 1.002.09zm5.674-11.605c-.954.133-1.927.445-2.537 1.055-.61.61-.922 1.583-1.055 2.537a8.608 8.608 0 00-.068.708c.214-.012.454-.033.707-.068.955-.133 1.927-.445 2.537-1.056.61-.61.923-1.582 1.056-2.537a8.6 8.6 0 00.068-.707 8.61 8.61 0 00-.708.068zM3.321 7.384a8.608 8.608 0 00-.708-.068c.012.214.033.454.069.708.133.954.445 1.927 1.055 2.537.61.61 1.582.922 2.537 1.055a8.6 8.6 0 00.707.068 8.61 8.61 0 00-.068-.708c-.133-.954-.445-1.927-1.055-2.537-.61-.61-1.583-.922-2.537-1.055z"
         fill={iconColor}
       />
-    </svg>
+    </IconBase>
   );
 };
 

@@ -1,23 +1,22 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Phone24: React.FC<IconProps> = ({ color }) => {
+const Phone24: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={24} height={24} viewBox="0 0 24 24" fill="none">
+    <IconBase {...props} width={24} height={24}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M6.3 1.05l3.859 3.86-2.122 4.949 6.114 6.114 4.95-2.122 3.859 3.86-2.673 4.454-.26.13-.448-.894c.448.895.446.895.446.895h-.001l-.004.003-.008.004-.023.01c-.019.01-.043.02-.072.033-.059.026-.14.06-.242.099a7.258 7.258 0 01-.855.26 9.748 9.748 0 01-3.03.224c-2.557-.197-5.957-1.374-9.646-5.063-3.689-3.69-4.866-7.09-5.063-9.646a9.749 9.749 0 01.224-3.03c.088-.364.184-.652.26-.855a4.866 4.866 0 01.131-.314l.011-.023.004-.008.002-.004v-.001s.001-.002.896.446l-.895-.448.13-.26L6.3 1.05zM3.408 5.117a5.487 5.487 0 00-.16.543 7.753 7.753 0 00-.174 2.406c.157 2.04 1.101 5.003 4.483 8.385 3.383 3.383 6.347 4.326 8.386 4.483 1.03.08 1.853-.04 2.406-.174.229-.055.412-.112.543-.159l1.549-2.58-1.798-1.798-4.95 2.121-8.028-8.028 2.121-4.95-1.798-1.798-2.58 1.549zm15.73 15.386l-.002.001h.002zM3.506 4.873V4.87v.002z"
         fill={iconColor}
       />
-    </svg>
+    </IconBase>
   );
 };
 

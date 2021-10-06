@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Bank32: React.FC<IconProps> = ({ color }) => {
+const Bank32: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={32} height={32} fill="none">
+    <IconBase {...props} width={32} height={32}>
       <path
         d="M30.394 8.579l-.788 1.838L16 4.586 2.394 10.417 1.606 8.58 16 2.41l14.394 6.169z"
         fill={iconColor}
@@ -22,7 +21,7 @@ const Bank32: React.FC<IconProps> = ({ color }) => {
         fill={iconColor}
       />
       <path d="M30 27.498v2H2v-2h28z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 

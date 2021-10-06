@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const Technology32: React.FC<IconProps> = ({ color }) => {
+const Technology32: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={32} height={32} fill="none">
+    <IconBase {...props} width={32} height={32}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -23,7 +22,7 @@ const Technology32: React.FC<IconProps> = ({ color }) => {
         d="M16.5 11.5a3.5 3.5 0 114.5 3.355V31h-2V14.855a3.502 3.502 0 01-2.5-3.355zM20 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"
         fill={iconColor}
       />
-    </svg>
+    </IconBase>
   );
 };
 

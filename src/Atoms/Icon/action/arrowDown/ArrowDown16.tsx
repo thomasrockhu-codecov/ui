@@ -1,18 +1,17 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { IconProps } from '../../Icon.types';
-import { getColor } from '../../utils';
+import { IconBase, getColor } from '../../IconBase';
+import { IconProps } from '../../IconBase.types';
 
-const ArrowDown16: React.FC<IconProps> = ({ color }) => {
+const ArrowDown16: React.FC<IconProps> = (props) => {
   const theme = useTheme();
-
-  const iconColor = getColor(theme, theme.color.icon, color);
+  const iconColor = getColor(theme, theme.color.icon, props.color);
 
   return (
-    <svg width={16} height={16} fill="none">
+    <IconBase {...props} width={16} height={16}>
       <path d="M6.998 11.17l-4-4v2.828l5 5 5-5V7.168l-4 4V1.002h-2V11.17z" fill={iconColor} />
-    </svg>
+    </IconBase>
   );
 };
 
