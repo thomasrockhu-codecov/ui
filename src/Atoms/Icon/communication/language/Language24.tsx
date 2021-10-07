@@ -1,26 +1,22 @@
 import React from 'react';
-import { useTheme } from 'styled-components';
 
-import { IconBase, getColor } from '../../IconBase';
+import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
 const Language24: React.FC<IconProps> = (props) => {
-  const theme = useTheme();
-  const iconColor = getColor(theme, theme.color.icon, props.color);
-
   return (
     <IconBase {...props} width={24} height={24}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M15.57 13.55h-1.65l-.5-1.55h-2.91l-.5 1.55H8.44l2.42-7.1h2.27l2.44 7.1zm-3.6-6.01l-1.03 3.16h2.05l-1.02-3.16z"
-        fill={iconColor}
+        fill="currentColor"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M23 2H1v21.08L7.35 18H23V2zM3 18.92V4h18v12H6.65L3 18.92z"
-        fill={iconColor}
+        fill="currentColor"
       />
     </IconBase>
   );

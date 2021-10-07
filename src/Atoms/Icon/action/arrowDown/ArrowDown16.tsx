@@ -1,16 +1,12 @@
 import React from 'react';
-import { useTheme } from 'styled-components';
 
-import { IconBase, getColor } from '../../IconBase';
+import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
 const ArrowDown16: React.FC<IconProps> = (props) => {
-  const theme = useTheme();
-  const iconColor = getColor(theme, theme.color.icon, props.color);
-
   return (
     <IconBase {...props} width={16} height={16}>
-      <path d="M6.998 11.17l-4-4v2.828l5 5 5-5V7.168l-4 4V1.002h-2V11.17z" fill={iconColor} />
+      <path d="M6.998 11.17l-4-4v2.828l5 5 5-5V7.168l-4 4V1.002h-2V11.17z" fill="currentColor" />
     </IconBase>
   );
 };

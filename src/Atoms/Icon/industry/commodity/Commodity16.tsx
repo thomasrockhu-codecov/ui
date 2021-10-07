@@ -1,16 +1,12 @@
 import React from 'react';
-import { useTheme } from 'styled-components';
 
-import { IconBase, getColor } from '../../IconBase';
+import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
 const Commodity16: React.FC<IconProps> = (props) => {
-  const theme = useTheme();
-  const iconColor = getColor(theme, theme.color.icon, props.color);
-
   return (
     <IconBase {...props} width={16} height={16}>
-      <g opacity={0.2} fill={iconColor}>
+      <g opacity={0.2} fill="currentColor">
         <path d="M8 11.333A1.333 1.333 0 016.667 10H5.334A2.667 2.667 0 008 12.667v-1.334z" />
         <path
           fillRule="evenodd"
@@ -19,12 +15,12 @@ const Commodity16: React.FC<IconProps> = (props) => {
         />
         <path d="M7.51 1.55l.465-.508.492.482L8 2l-.49-.45z" />
       </g>
-      <path d="M8 10.711a1 1 0 01-1-1H5a3 3 0 003 3v-2z" fill={iconColor} />
+      <path d="M8 10.711a1 1 0 01-1-1H5a3 3 0 003 3v-2z" fill="currentColor" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M8 .4l.647.548.002.002.004.003.013.012.048.041a21.527 21.527 0 01.765.71 23.64 23.64 0 011.795 1.952C12.538 5.214 14 7.453 14 9.71a6 6 0 11-12 0c0-2.258 1.462-4.497 2.726-6.043a23.64 23.64 0 012.56-2.662l.048-.041.013-.012.004-.003.002-.002L8 .4zM6.274 4.933A21.64 21.64 0 018 3.068a21.677 21.677 0 011.726 1.865C10.962 6.446 12 8.207 12 9.711a4 4 0 01-8 0c0-1.504 1.038-3.265 2.274-4.778z"
-        fill={iconColor}
+        fill="currentColor"
       />
     </IconBase>
   );

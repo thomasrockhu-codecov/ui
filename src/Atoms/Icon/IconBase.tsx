@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { DefaultTheme } from 'styled-components';
+import styled, { useTheme, DefaultTheme } from 'styled-components';
 import * as R from 'ramda';
 import { ColorFn, InternalProps, StyledIconBaseProps } from './IconBase.types';
 import { assert } from '../../common/utils';
@@ -29,12 +29,13 @@ export const getColor: (
 };
 
 const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>((props, ref) => (
-  <svg ref={ref} fill={props.fill} {...R.omit(['colorFn', 'inline'])(props)} />
+  <svg ref={ref} {...R.omit(['inline'])(props)} />
 ));
 
 const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
   ${(p) => {
     return `
+      color: ${p.$color};
       user-select: none;
       flex-shrink: 0;
       display: ${p.inline ? 'inline-block' : 'block'};
@@ -47,6 +48,9 @@ export const IconBase: React.FC<InternalProps> = React.forwardRef<SVGSVGElement,
   (props, ref) => {
     const { className, children, title, color, inline, ...rest } = props;
 
+    const theme = useTheme();
+    const iconColor = getColor(theme, theme.color.icon, color);
+
     return (
       <StyledIconBase
         className={className}
@@ -54,9 +58,9 @@ export const IconBase: React.FC<InternalProps> = React.forwardRef<SVGSVGElement,
         focusable="false"
         aria-hidden={title ? 'false' : 'true'}
         role={title ? 'img' : 'presentation'}
-        colorFn={color}
         inline={inline}
         ref={ref}
+        $color={iconColor}
         {...rest}
       >
         {children}
