@@ -2,7 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useFlexCellProps, getDensityPaddings, getStylesForSizes, useFlexTable } from '../shared';
+import {
+  useFlexCellProps,
+  getDensityPaddings,
+  getStylesForSizes,
+  useFlexTable,
+  Text,
+} from '../shared';
 import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { Density } from '../shared/shared.types';
@@ -57,10 +63,11 @@ const Cell: CellComponent = (props) => {
       {isElement(children) && children}
       {isFunction(children)
         ? children({ columnId })
-        : !isElement(children) && <TextWrapper>{children}</TextWrapper>}
+        : !isElement(children) && <Text>{children}</Text>}
     </StyledFlexbox>
   );
 };
 
+// TODO: probably remove?
 Cell.TextWrapper = React.memo(TextWrapper);
 export default Cell;

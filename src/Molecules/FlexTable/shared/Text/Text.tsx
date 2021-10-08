@@ -22,17 +22,20 @@ type StyledTypographyProps = {
 const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { theme: Theme }) => {
   if (fontSize === 's') {
     return `
-      font-size: 12px;
+      font-size: ${theme.spacing.unit(3)}px;
       line-height: ${theme.spacing.unit(4)}px;
     `;
   }
   return `
-    font-size: 14px;
+    font-size: ${theme.spacing.unit(3.5)}px;
     line-height: ${theme.spacing.unit(5)}px;
   `;
 };
 
 const StyledTypography = styled(Typography)<StyledTypographyProps>`
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
     (p: StyledTypographyProps) => ({
       xs: p.$xs,
@@ -47,7 +50,7 @@ const StyledTypography = styled(Typography)<StyledTypographyProps>`
   )}
 `;
 
-const Text: TextComponent = ({ className, color, weight, children }) => {
+export const Text: TextComponent = ({ className, color, weight, children }) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'fontSize'>('fontSize');
   return (
     <StyledTypography
@@ -64,5 +67,3 @@ const Text: TextComponent = ({ className, color, weight, children }) => {
     </StyledTypography>
   );
 };
-
-export default Text;

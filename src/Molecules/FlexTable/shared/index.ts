@@ -10,6 +10,7 @@ import constants from './constants';
 import { StyledTruncateTooltip } from './StyledTruncateTooltip';
 import getStylesForSizes from './getStylesForSizes';
 import { Text } from './Text';
+import { HeaderText } from './HeaderText';
 import { getPersistedSortOrder, tableHasSavedPersistedSortOrder } from './persistedSortOrder';
 import { getFontSizeTypographyType, getDensityPaddings } from './textUtils';
 import { FlexTableProvider, useFlexTable } from './FlexTableProvider';
@@ -26,6 +27,7 @@ export {
   StyledTruncateTooltip,
   getStylesForSizes,
   Text,
+  HeaderText,
   getPersistedSortOrder,
   tableHasSavedPersistedSortOrder,
   getFontSizeTypographyType,
