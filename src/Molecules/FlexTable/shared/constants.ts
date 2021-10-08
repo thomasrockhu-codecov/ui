@@ -14,3 +14,12 @@ export const ICON_COLUMN_DEFAULT_FLEX_PROPS: FlexPropsType = {
 };
 
 export const persistedSortOrderLocalStorageKey = 'flexTableSortOrder';
+
+export default {
+  SORT_ORDER_NONE,
+  SORT_ORDER_ASCENDING,
+  SORT_ORDER_DESCENDING,
+  COLUMN_ID_EXPAND,
+  ICON_COLUMN_DEFAULT_FLEX_PROPS,
+  persistedSortOrderLocalStorageKey,
+};

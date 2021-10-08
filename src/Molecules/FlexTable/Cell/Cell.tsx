@@ -2,13 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useFlexCellProps } from '../shared/ColumnProvider';
+import { useFlexCellProps, getDensityPaddings, getStylesForSizes, useFlexTable } from '../shared';
 import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { Density } from '../shared/shared.types';
-import { getDensityPaddings } from '../shared/textUtils';
-import getStylesForSizes from '../shared/getStylesForSizes';
-import { useFlexTable } from '../shared/FlexTableProvider';
 
 type ScreenSizeConfigurableProps = { density: Density };
 type StyledFlexboxProps = {
