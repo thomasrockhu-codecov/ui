@@ -13,19 +13,35 @@ defaultUse.story = {
 };
 
 export const inlineStory = () => (
-  <>
+  <span>
     You can put the <Icon.ArrowLeft16 inline /> directly in the text !
-  </>
+  </span>
 );
 
 inlineStory.story = {
   name: 'Inline',
 };
 
-export const differentColor = () => <Icon.ArrowLeft32 color={(t) => t.color.positive} />;
+export const differentColor = () => (
+  <div style={{ color: 'blue' }}>
+    You can have different color text around{' '}
+    <Icon.ArrowLeft16 inline color={(t) => t.color.positive} /> an icon
+  </div>
+);
 
 differentColor.story = {
   name: 'Different color',
+};
+
+export const titleExample = () => (
+  <div style={{ color: 'blue' }}>
+    You can use title prop for a hover tooltip
+    <Icon.ArrowLeft16 inline title="example tooltip" /> on an icon
+  </div>
+);
+
+titleExample.story = {
+  name: 'Title example',
 };
 
 export const availableIcons = () => (

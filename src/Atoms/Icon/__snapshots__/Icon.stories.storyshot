@@ -21714,42 +21714,20 @@ exports[`Storyshots Atoms / Icon Different color 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  display: block;
-}
-
-<svg
-  aria-hidden="true"
-  className="c0"
-  focusable="false"
-  height={32}
-  preserveAspectRatio="xMidYMid meet"
-  role="presentation"
-  width={32}
->
-  <path
-    d="M14.828 27l-10-10H31v-2H4.824l10-10h-2.828L1 15.996V16l11 11h2.828z"
-    fill="currentColor"
-  />
-</svg>
-`;
-
-exports[`Storyshots Atoms / Icon Inline 1`] = `
-Array [
-  "You can put the ",
-  .c0 {
-  color: #6E6E69;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: sub;
 }
 
-<svg
+<div
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  You can have different color text around
+   
+  <svg
     aria-hidden="true"
     className="c0"
     focusable="false"
@@ -21762,7 +21740,84 @@ Array [
       d="M4.828 7l4-4H6L1 8l5 5h2.828l-4-4h10.167V7H4.828z"
       fill="currentColor"
     />
-  </svg>,
-  " directly in the text !",
-]
+  </svg>
+   an icon
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon Inline 1`] = `
+.c0 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+<span>
+  You can put the 
+  <svg
+    aria-hidden="true"
+    className="c0"
+    focusable="false"
+    height={16}
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    width={16}
+  >
+    <path
+      d="M4.828 7l4-4H6L1 8l5 5h2.828l-4-4h10.167V7H4.828z"
+      fill="currentColor"
+    />
+  </svg>
+   directly in the text !
+</span>
+`;
+
+exports[`Storyshots Atoms / Icon Title example 1`] = `
+.c0 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+<div
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  You can use title prop for a hover tooltip
+  <svg
+    aria-hidden="false"
+    className="c0"
+    focusable="false"
+    height={16}
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    width={16}
+  >
+    <path
+      d="M4.828 7l4-4H6L1 8l5 5h2.828l-4-4h10.167V7H4.828z"
+      fill="currentColor"
+    />
+    <title>
+      example tooltip
+    </title>
+  </svg>
+   on an icon
+</div>
 `;

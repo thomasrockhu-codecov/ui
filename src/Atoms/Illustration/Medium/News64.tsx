@@ -1,0 +1,19 @@
+import React from 'react';
+
+import { IllustrationBase } from '../IllustrationBase';
+import { IllustrationProps } from '../IllustrationBase.types';
+
+const News64: React.FC<IllustrationProps> = (props) => {
+  return (
+    <IllustrationBase {...props} width={64} height={64}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M10 9H39V20H50C52.7614 20 55 22.2386 55 25V50H47V51C47 53.7614 44.7614 56 42 56H15C12.2386 56 10 53.7614 10 51V9ZM42 54C43.6569 54 45 52.6569 45 51V25C45 23.8744 45.3719 22.8357 45.9996 22H39V51C39 52.6569 40.3431 54 42 54ZM50 22C48.3431 22 47 23.3431 47 25V48H53V25C53 23.3431 51.6569 22 50 22ZM37.9996 54H15C13.3431 54 12 52.6569 12 51V11H37V51C37 52.1256 37.3719 53.1643 37.9996 54ZM14 13H35V23H14V13ZM16 15V21H33V15H16ZM35 27H14V25H35V27ZM35 31H14V29H35V31ZM14 35H24V41H14V35ZM16 37V39H22V37H16ZM35 37H26V35H35V37ZM35 41H26V39H35V41ZM35 45H14V43H35V45ZM35 49H14V47H35V49Z"
+        fill="currentColor"
+      />
+    </IllustrationBase>
+  );
+};
+
+export default News64;

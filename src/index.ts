@@ -11,6 +11,7 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
+import Illustration from './Atoms/Illustration';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -150,6 +151,7 @@ export {
   FormField,
   FormLabel,
   Icon,
+  Illustration,
   InfoBar,
   Input,
   LabeledValue,
