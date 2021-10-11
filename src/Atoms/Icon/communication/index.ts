@@ -1,4 +1,10 @@
+import article from './article';
+import blocked from './blocked';
 import clock from './clock';
+import clockFill from './clockFill';
+import comment from './comment';
+import dislike from './dislike';
+import dislikeFill from './dislikeFill';
 import error from './error';
 import errorFill from './errorFill';
 import exclamationMark from './exclamationMark';
@@ -9,23 +15,35 @@ import feedback from './feedback';
 import flag from './flag';
 import flagFill from './flagFill';
 import help from './help';
-import hide from './hide';
+import helpFill from './helpFill';
 import information from './information';
 import informationFill from './informationFill';
 import informationMark from './informationMark';
 import instagram from './instagram';
 import language from './language';
 import lightbulb from './lightbulb';
+import like from './like';
+import likeFill from './likeFill';
 import mail from './mail';
 import notification from './notification';
 import phone from './phone';
+import podcast from './podcast';
 import support from './support';
 import twitter from './twitter';
+import video from './video';
+import warning from './warning';
 import warningFill from './warningFill';
+import whatsNew from './whatsNew';
 import youtube from './youtube';
 
 export default {
+  ...article,
+  ...blocked,
   ...clock,
+  ...clockFill,
+  ...comment,
+  ...dislike,
+  ...dislikeFill,
   ...error,
   ...errorFill,
   ...exclamationMark,
@@ -36,18 +54,24 @@ export default {
   ...flag,
   ...flagFill,
   ...help,
-  ...hide,
+  ...helpFill,
   ...information,
   ...informationFill,
   ...informationMark,
   ...instagram,
   ...language,
   ...lightbulb,
+  ...like,
+  ...likeFill,
   ...mail,
   ...notification,
   ...phone,
+  ...podcast,
   ...support,
   ...twitter,
+  ...video,
+  ...warning,
   ...warningFill,
+  ...whatsNew,
   ...youtube,
 };
