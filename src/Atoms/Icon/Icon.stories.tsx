@@ -46,16 +46,16 @@ titleExample.story = {
 
 export const availableIcons = () => (
   <Display
-    items={Object?.entries(Icon)?.map(
-      ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
+    items={Object?.entries(Icon)
+      ?.sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
         title: iconName,
         component: (
           <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
             <IconComponent />
           </div>
         ),
-      }),
-    )}
+      }))}
   />
 );
 
@@ -65,11 +65,13 @@ availableIcons.story = {
 
 export const allIconsColored = () => (
   <>
-    {Object?.entries(Icon)?.map(([_, IconComponent]: [string, React.ComponentType<any>]) => (
-      <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
-        <IconComponent color={(t: any) => t.color.cta} />
-      </div>
-    ))}
+    {Object?.entries(Icon)
+      ?.sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([_, IconComponent]: [string, React.ComponentType<any>]) => (
+        <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+          <IconComponent color={(t: any) => t.color.cta} />
+        </div>
+      ))}
   </>
 );
 

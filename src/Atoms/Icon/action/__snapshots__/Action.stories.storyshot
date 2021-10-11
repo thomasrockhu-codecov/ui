@@ -1,0 +1,3159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms / Icon / Category / Action 8px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Add8
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={8}
+    >
+      <path
+        d="M3 5v3h2V5h3V3H5V0H3v3H0v2h3z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Bolt8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M5.167 0L.5 4.5h2.917L2.833 8 7.5 3.5H4.583L5.167 0z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Check8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M1.504 2.648L3.126 4.27 6.496.9 7.91 2.314 3.126 7.098.09 4.062l1.414-1.414z"
+        fill="currentColor"
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronDown8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+        fill="currentColor"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronLeft8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={9}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M7.414.014l-4 4 4 4H4.586l-4-4 4-4h2.828z"
+        fill="currentColor"
+      />
+      <title>
+        4
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronRight8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={9}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M.586 8.014l4-4-4-4h2.828l4 4-4 4H.586z"
+        fill="currentColor"
+      />
+      <title>
+        5
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronUp8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+        fill="currentColor"
+      />
+      <title>
+        6
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Cross8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M2.586 4L0 6.586 1.414 8 4 5.414 6.586 8 8 6.586 5.414 4 8 1.414 6.586 0 4 2.586 1.414 0 0 1.414 2.586 4z"
+        fill="currentColor"
+      />
+      <title>
+        7
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Dot8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <circle
+        cx={4}
+        cy={4}
+        fill="currentColor"
+        r={4}
+      />
+      <title>
+        8
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ExternalLink8
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={8}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={8}
+    >
+      <path
+        d="M4.586 2H1l2-2h5v5L6 7V3.414L1.414 8 0 6.586 4.586 2z"
+        fill="currentColor"
+      />
+      <title>
+        9
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Action 16px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Add16
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={16}
+    >
+      <path
+        d="M7 9v7h2V9h7V7H9V0H7v7H0v2h7z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Archive16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M0 0V6H16V0H0ZM14 2H2V4H14V2Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M3 14V6H1V16H15V6H13V14H3Z"
+        fill="currentColor"
+      />
+      <path
+        d="M5 10H11V8H5V10Z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowDown16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M6.998 11.17l-4-4v2.828l5 5 5-5V7.168l-4 4V1.002h-2V11.17z"
+        fill="currentColor"
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowLeft16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M4.828 7l4-4H6L1 8l5 5h2.828l-4-4h10.167V7H4.828z"
+        fill="currentColor"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowRight16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M11.167 9l-4 4h2.828l5-5-5-5H7.167l4 4H1v2h10.167z"
+        fill="currentColor"
+      />
+      <title>
+        4
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowUp16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M8.998 4.83l4 4V6.003l-5-5-5 5v2.829l4-4v10.166h2V4.832z"
+        fill="currentColor"
+      />
+      <title>
+        5
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Bolt16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M9.833 2L2.5 8.75h4.583L6.167 14 13.5 7.25H8.917L9.833 2z"
+        fill="currentColor"
+      />
+      <title>
+        6
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Calendar16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M11 1H5V0H3v1H0v15h16V1h-3V0h-2v1zM3 4V3H2v2h12V3h-1v1h-2V3H5v1H3zm11 3H2v7h12V7z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        7
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Check16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        8
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronDown16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M0 2.58l8 8 8-8v2.828l-8 8-8-8V2.58z"
+        fill="currentColor"
+      />
+      <title>
+        9
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronLeft16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M13.42 0l-8 8 8 8h-2.828l-8-8 8-8h2.828z"
+        fill="currentColor"
+      />
+      <title>
+        10
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronRight16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M2.58 16l8-8-8-8h2.828l8 8-8 8H2.58z"
+        fill="currentColor"
+      />
+      <title>
+        11
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronUp16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M16 13.42l-8-8-8 8v-2.828l8-8 8 8v2.828z"
+        fill="currentColor"
+      />
+      <title>
+        12
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Cross16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M9.414 8l5.793-5.793L13.793.793 8 6.586 2.207.793.793 2.207 6.586 8 .793 13.793l1.414 1.414L8 9.414l5.793 5.793 1.414-1.414L9.414 8z"
+        fill="currentColor"
+      />
+      <title>
+        13
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Edit16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M14.693 2.48L13.52 1.31a3 3 0 00-4.242 0L.4 10.187v5.415h5.414l8.879-8.88a3 3 0 000-4.242zm-2.586.243l1.172 1.171a1 1 0 010 1.415l-.707.707L9.986 3.43l.707-.707a1 1 0 011.414 0zM8.572 4.844L2.4 11.016v2.586h2.586l6.171-6.172-2.585-2.586z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        14
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ExternalLink16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M13 11.9l2-2V1H6.1l-2 2h7.486L1.293 13.293l1.414 1.414L13 4.414V11.9z"
+        fill="currentColor"
+      />
+      <title>
+        15
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Export16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M5 3.086v2.828l2-2V12h2V3.914l2 2V3.086l-3-3-3 3z"
+        fill="currentColor"
+      />
+      <path
+        d="M2 13v-2H0v2a3 3 0 003 3h10a3 3 0 003-3v-2h-2v2a1 1 0 01-1 1H3a1 1 0 01-1-1z"
+        fill="currentColor"
+      />
+      <title>
+        16
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Filter16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M16 4H0V2h16v2zM14 9H2V7h12v2zM12 14H4v-2h8v2z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        17
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Login16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M12 14H5v-2H3v4h9a3 3 0 003-3V3a3 3 0 00-3-3H3v4h2V2h7a1 1 0 011 1v10a1 1 0 01-1 1z"
+        fill="currentColor"
+      />
+      <path
+        d="M7.23 5H4.62l1.846 2H1v2h5.465L4.62 11H7.23L10 8 7.23 5z"
+        fill="currentColor"
+      />
+      <title>
+        18
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Logout16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M11 2H4a1 1 0 00-1 1v10a1 1 0 001 1h7v-2h2v4H4a3 3 0 01-3-3V3a3 3 0 013-3h9v4h-2V2z"
+        fill="currentColor"
+      />
+      <path
+        d="M10.619 5h2.611L16 8l-2.77 3H10.62l1.846-2H7V7h5.465L10.62 5z"
+        fill="currentColor"
+      />
+      <title>
+        19
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Menu16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M0 1h16v2H0V1zM0 7h16v2H0V7zM16 13H0v2h16v-2z"
+        fill="currentColor"
+      />
+      <title>
+        20
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        More16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M10 8a2 2 0 11-4 0 2 2 0 014 0zM4 8a2 2 0 11-4 0 2 2 0 014 0zM16 8a2 2 0 11-4 0 2 2 0 014 0z"
+        fill="currentColor"
+      />
+      <title>
+        21
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        PriceAlert16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M9 1.083c2.838.476 5 2.944 5 5.917v3.586l1 1V14h-5a2 2 0 11-4 0H1v-2.414l1-1V7a6.002 6.002 0 015-5.917V0h2v1.083zM8 3a4 4 0 00-4 4v4.414L3.414 12h9.172L12 11.414V7a4 4 0 00-4-4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        22
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        PriceAlertFill16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M9 1.083c2.838.476 5 2.944 5 5.917v3.586l1 1V14h-5a2 2 0 11-4 0H1v-2.414l1-1V7a6.002 6.002 0 015-5.917V0h2v1.083z"
+        fill="currentColor"
+      />
+      <title>
+        23
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Refresh16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M7.733 2.006L5.727 0h2.828l3.001 3.001L8.557 6H5.73l1.99-1.99A4 4 0 1012 8h2a6 6 0 11-6.267-5.994z"
+        fill="currentColor"
+      />
+      <title>
+        24
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Repeat16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M14 1v3.392A7.003 7.003 0 001.29 6h2.126a5.001 5.001 0 019.168 0H9l2 2h5V3l-2-2zM14.71 10h-2.126a5.001 5.001 0 01-9.168 0H7L5 8H0v5l2 2v-3.392A7.003 7.003 0 0014.71 10z"
+        fill="currentColor"
+      />
+      <title>
+        25
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Search16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M2.51 2.51a5.5 5.5 0 007.008 8.422l4.307 4.307 1.414-1.414-4.307-4.307A5.502 5.502 0 002.511 2.51zm1.415 6.365a3.5 3.5 0 114.95-4.95 3.5 3.5 0 01-4.95 4.95z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        26
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Subtract16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M0 9h16V7H0v2z"
+        fill="currentColor"
+      />
+      <title>
+        27
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        SubtractCircle16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M4 9V7h8v2H4z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-2 0A6 6 0 112 8a6 6 0 0112 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        28
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        SubtractCircleFill16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M8 16A8 8 0 108 0a8 8 0 000 16zM4 9V7h8v2H4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        29
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Trash16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M5.5 12V6h2v6h-2zM8.5 6v6h2V6h-2z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M10.118 0H5.882l-1.25 2.5H1v2h1V13a3 3 0 003 3h6a3 3 0 003-3V4.5h1v-2h-3.632L10.118 0zm-.986 2.5l-.25-.5H7.118l-.25.5h2.264zM4 4.5h8V13a1 1 0 01-1 1H5a1 1 0 01-1-1V4.5z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        30
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Watchlist16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M8 10a2 2 0 100-4 2 2 0 000 4z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M0 8s3 5 8 5 8-5 8-5-3-5-8-5-8 5-8 5zm2.486 0c.267-.315.597-.668.984-1.02C4.652 5.905 6.192 5 8 5c1.808 0 3.348.905 4.53 1.98.386.352.716.705.984 1.02-.268.315-.598.668-.984 1.02C11.348 10.095 9.808 11 8 11c-1.808 0-3.348-.905-4.53-1.98A11.09 11.09 0 012.486 8z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        31
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        WatchlistFill16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M16 8s-3 5-8 5-8-5-8-5 3-5 8-5 8 5 8 5zm-8 2a2 2 0 100-4 2 2 0 000 4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        32
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Action 24px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Add24
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={24}
+    >
+      <path
+        d="M11 13v10h2V13h10v-2H13V1h-2v10H1v2h10z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Archive24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M1 1v7h22V1H1zm20 2H3v3h18V3z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M4 21V8H2v15h20V8h-2v13H4z"
+        fill="currentColor"
+      />
+      <path
+        d="M8 13.5h8v-2H8v2z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Bolt24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={26}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M15 4L5 15h5l-1 7 10-11h-5l1-7z"
+        fill="transparent"
+        stroke="currentColor"
+        strokeWidth={2}
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Calendar24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M7 1v1h10V1h2v1h4v21H1V2h4V1h2zm10 3v1h2V4h2v4H3V4h2v1h2V4h10zm4 6H3v11h18V10z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Check24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M8.778 17.435l-6.364-6.364L1 12.485l7.778 7.779 14.85-14.85L22.212 4 8.778 17.435z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        4
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronDown24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M2 6.051l9.973 9.5L22 6v2.45L11.973 18 2 8.5V6.051z"
+        fill="currentColor"
+      />
+      <title>
+        5
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronLeft24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M17.95 2l-9.5 9.973L18 22h-2.45L6 11.973 15.5 2h2.45z"
+        fill="currentColor"
+      />
+      <title>
+        6
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronRight24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M6.05 22l9.5-9.973L6 2h2.45L18 12.027 8.5 22H6.05z"
+        fill="currentColor"
+      />
+      <title>
+        7
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronUp24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M22 17.95l-9.973-9.5L2 18v-2.45L12.027 6 22 15.5v2.45z"
+        fill="currentColor"
+      />
+      <title>
+        8
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Cross24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M12.01 13.425l8.486 8.485 1.414-1.414-8.486-8.486 8.465-8.506-1.414-1.414-8.465 8.506-8.485-8.485-1.414 1.414 8.485 8.485-8.506 8.465 1.414 1.414 8.506-8.464z"
+        fill="currentColor"
+      />
+      <title>
+        9
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Edit24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M18.018 1.028c.683-.098 1.448.053 2.013.619l2.122 2.12c.565.566.716 1.331.618 2.014-.097.681-.443 1.347-.972 1.876L6.657 22.799H1v-5.657L16.142 2c.529-.529 1.195-.875 1.877-.972zm.283 1.98c-.213.03-.492.154-.745.406L16.142 4.83l2.829 2.828 1.414-1.414c.252-.253.376-.531.406-.745.03-.214-.032-.296-.053-.316l-2.121-2.121c-.02-.02-.102-.084-.316-.053zm-.745 6.063l-2.828-2.828L3 17.97v2.828h2.828L17.556 9.071z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        10
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ExternalLink24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M20.003 16.426V5.414L3.41 22.007l-1.414-1.414L18.589 4H6.973l2-2h13.03v12.426l-2 2z"
+        fill="currentColor"
+      />
+      <title>
+        11
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Filter24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M1 4h22v2H1V4zM4 11h16v2H4v-2zM17 18H7v2h10v-2z"
+        fill="currentColor"
+      />
+      <title>
+        12
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Login24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M19 3a1 1 0 011 1v16a1 1 0 01-1 1H8v-3H6v5h13a3 3 0 003-3V4a3 3 0 00-3-3H6v5h2V3h11z"
+        fill="currentColor"
+      />
+      <path
+        d="M7.828 8l3 3H2v2h8.828l-3 3h2.829l4-4-4-4H7.828z"
+        fill="currentColor"
+      />
+      <title>
+        13
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        LoginStay24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M8 3v1H6V1h13a3 3 0 013 3v16a3 3 0 01-3 3H6v-3h2v1h11a1 1 0 001-1V4a1 1 0 00-1-1H8z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M2 18.5v-8h12v8H2zm2-6v4h8v-4H4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M8 7.5a2 2 0 00-2 2H4a4 4 0 118 0h-2a2 2 0 00-2-2z"
+        fill="currentColor"
+      />
+      <title>
+        14
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Logout24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M4 20a1 1 0 001 1h11v-3h2v5H5a3 3 0 01-3-3V4a3 3 0 013-3h13v5h-2V3H5a1 1 0 00-1 1v16z"
+        fill="currentColor"
+      />
+      <path
+        d="M18.172 11l-3-3H18l4 4-4 4h-2.828l3-3H9.343v-2h8.829z"
+        fill="currentColor"
+      />
+      <title>
+        15
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Menu24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M1 4h22v2H1V4zM1 11h22v2H1v-2zM23 18H1v2h22v-2z"
+        fill="currentColor"
+      />
+      <title>
+        16
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        More24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M7 12a3 3 0 10-6 0 3 3 0 006 0zm-2 0a1 1 0 10-2 0 1 1 0 002 0zM15 12a3 3 0 10-6 0 3 3 0 006 0zm-2 0a1 1 0 10-2 0 1 1 0 002 0zM20 9a3 3 0 110 6 3 3 0 010-6zm0 2a1 1 0 110 2 1 1 0 010-2z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        17
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        PriceAlert24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M12 1a2 2 0 00-1.846 1.229A7.503 7.503 0 004.5 9.5v3.963L3 16.099V20h6a3 3 0 106 0h6v-3.9l-1.5-2.637V9.5a7.503 7.503 0 00-5.654-7.271A2 2 0 0012 1zm1 19h-2a1 1 0 102 0zM12 4a5.5 5.5 0 00-5.5 5.5v4.492L5 16.628V18h14v-1.372l-1.5-2.636V9.5A5.5 5.5 0 0012 4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        18
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        PriceAlertFill24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M10.154 2.229a2 2 0 013.692 0A7.503 7.503 0 0119.5 9.5v3.963l1.5 2.636V20h-6a3 3 0 11-6 0H3v-3.9l1.5-2.637V9.5a7.503 7.503 0 015.654-7.271z"
+        fill="currentColor"
+      />
+      <title>
+        19
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Progress24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M20.453 19.04l-1.421-1.422A8.958 8.958 0 0020.945 13h2.01a10.95 10.95 0 01-2.502 6.04zM19.04 20.453l-1.422-1.421A8.958 8.958 0 0113 20.945v2.01a10.95 10.95 0 006.04-2.502zM4.968 17.618l-1.421 1.421A10.95 10.95 0 011.045 13h2.01a8.958 8.958 0 001.913 4.618zM19.032 6.382l1.421-1.421A10.95 10.95 0 0122.955 11h-2.01a8.958 8.958 0 00-1.913-4.618zM6.382 19.032A8.957 8.957 0 0011 20.945v2.01a10.95 10.95 0 01-6.04-2.502l1.422-1.421zM17.618 4.968A8.957 8.957 0 0013 3.055v-2.01a10.95 10.95 0 016.04 2.502l-1.422 1.421z"
+        fill="currentColor"
+      />
+      <title>
+        20
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Refresh24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M13.243 3l-3-3h2.828l4 4-4 4h-2.828l3-3H12a7 7 0 107 7h2a9 9 0 11-9-9h1.243z"
+        fill="currentColor"
+      />
+      <title>
+        21
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Repeat24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M7.05 7.05a6.984 6.984 0 00-2.032 5.456H3.014a9 9 0 0115.35-6.87l.879.879V2.272l2 2V9.93h-5.657l-2-2h4.242l-.878-.879a7 7 0 00-9.9 0zM16.95 16.95a6.984 6.984 0 002.032-5.456h2.004a9 9 0 01-15.35 6.87l-.879-.879v4.243l-2-2V14.07h5.657l2 2H6.172l.878.879a7 7 0 009.9 0z"
+        fill="currentColor"
+      />
+      <title>
+        22
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Search24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M9.5 1.5a8 8 0 104.906 14.32l6.387 6.387 1.414-1.414-6.387-6.387A8 8 0 009.5 1.5zm-6 8a6 6 0 1112 0 6 6 0 01-12 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        23
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Share24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M11 4.828l-3 3V5l4-4 4 4v2.828l-3-3v8.829h-2V4.828z"
+        fill="currentColor"
+      />
+      <path
+        d="M20 20v-9h2v9a3 3 0 01-3 3H5a3 3 0 01-3-3v-9h2v9a1 1 0 001 1h14a1 1 0 001-1z"
+        fill="currentColor"
+      />
+      <title>
+        24
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Subtract24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M1 11h22v2H1z"
+        fill="currentColor"
+      />
+      <title>
+        25
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        SubtractCircle24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M19 11H5v2h14v-2z"
+        fill="currentColor"
+      />
+      <path
+        clipRule="evenodd"
+        d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zm-2 0a9 9 0 11-18 0 9 9 0 0118 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        26
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        SubtractCircleFill24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm8-12H4v2h16v-2z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        27
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Trash24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M14.535 1h-5.07l-2 3H4v2h16V4h-3.465l-2-3zm-.403 3l-.667-1h-2.93L9.87 4h4.263z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        d="M4 20V7h2v13a1 1 0 001 1h10a1 1 0 001-1V7h2v13a3 3 0 01-3 3H7a3 3 0 01-3-3z"
+        fill="currentColor"
+      />
+      <path
+        d="M9 9v9h2V9H9zM13 18V9h2v9h-2z"
+        fill="currentColor"
+      />
+      <title>
+        28
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Watchlist24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M0 12s4.582 8 12 8 12-8 12-8-4.582-8-12-8-12 8-12 8zm2.396 0l.053.074a19.165 19.165 0 002.158 2.487C6.507 16.394 9.032 18 12 18s5.493-1.606 7.393-3.44A19.16 19.16 0 0021.604 12a19.158 19.158 0 00-2.21-2.56C17.493 7.605 14.967 6 12 6S6.507 7.606 4.607 9.44A19.163 19.163 0 002.396 12z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M12 10a2 2 0 100 4 2 2 0 000-4zm-4 2a4 4 0 118 0 4 4 0 01-8 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        29
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        WatchlistFill24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M12 20c7.418 0 12-8 12-8s-4.582-8-12-8-12 8-12 8 4.582 8 12 8zm0-5a3 3 0 100-6 3 3 0 000 6z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        30
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Action 32px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Add32
+      </span>
+    </div>
+    <svg
+      aria-hidden="true"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={32}
+    >
+      <path
+        d="M15 17v14h2V17h14v-2H17V1h-2v14H1v2h14z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowDown32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M27 17.172l-10 10V1h-2v26.176l-10-10v2.828L15.996 31H16l11-11v-2.828z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowLeft32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M14.828 27l-10-10H31v-2H4.824l10-10h-2.828L1 15.996V16l11 11h2.828z"
+        fill="currentColor"
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowRight32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M17.172 5l10 10H1v2h26.176l-10 10h2.828L31 16.004V16L20 5h-2.828z"
+        fill="currentColor"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ArrowUp32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M5 14.828l10-10V31h2V4.824l10 10v-2.828L16.004 1H16L5 12v2.828z"
+        fill="currentColor"
+      />
+      <title>
+        4
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Calendar32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M23 2H9V1H7v1H1v29h30V2h-6V1h-2v1zM7 5V4H3v5h26V4h-4v1h-2V4H9v1H7zm22 6H3v18h26V11z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        5
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Check32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M11.057 24.132l-9.193-9.193L.45 16.355 11.057 26.96 31.563 6.454 30.148 5.04 11.057 24.132z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        6
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronDown32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M1 9.918V7.09l15 15 15-15v2.828l-15 15-15-15z"
+        fill="currentColor"
+      />
+      <title>
+        7
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronLeft32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M22.086 1.004h2.828l-15 15 15 15h-2.828l-15-15 15-15z"
+        fill="currentColor"
+      />
+      <title>
+        8
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronRight32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M9.914 31.004H7.086l15-15-15-15h2.828l15 15-15 15z"
+        fill="currentColor"
+      />
+      <title>
+        9
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        ChevronUp32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M31 22.102v2.828l-15-15-15 15v-2.828l15-15 15 15z"
+        fill="currentColor"
+      />
+      <title>
+        10
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Cross32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M3.274 1.86L1.86 3.274l12.728 12.728L1.86 28.73l1.414 1.414 12.728-12.728L28.73 30.144l1.414-1.414-12.728-12.728L30.144 3.274 28.73 1.86 16.002 14.588 3.274 1.86z"
+        fill="currentColor"
+      />
+      <title>
+        11
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Menu32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M1 5h30v2H1V5zM1 15h30v2H1v-2zM31 25H1v2h30v-2z"
+        fill="currentColor"
+      />
+      <title>
+        12
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        More32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M5 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM16 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM31 16a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        13
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Play32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M22.887 16L12 9.196v13.608L22.887 16zm-3.774 0L14 19.196v-6.392L19.113 16z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M31 16c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1c8.284 0 15 6.716 15 15zm-2 0c0 7.18-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3s13 5.82 13 13z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        14
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Repeat32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        d="M16 4C9.373 4 4 9.373 4 16H2C2 8.268 8.268 2 16 2c5.093 0 9.55 2.72 12 6.785V3l2 2v8h-8l-2-2h6.912C25.016 6.869 20.843 4 16 4zM16 28c6.627 0 12-5.373 12-12h2c0 7.732-6.268 14-14 14-5.093 0-9.55-2.72-12-6.785V29l-2-2v-8h8l2 2H5.088c1.896 4.131 6.069 7 10.912 7z"
+        fill="currentColor"
+      />
+      <title>
+        15
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Search32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M19.68 21.093a10.956 10.956 0 01-7.04 2.547c-6.075 0-11-4.925-11-11s4.925-11 11-11 11 4.925 11 11c0 2.678-.957 5.132-2.547 7.039l9.254 9.254-1.414 1.414-9.254-9.254zm1.96-8.453a9 9 0 11-18 0 9 9 0 0118 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        16
+      </title>
+    </svg>
+  </div>
+</div>
+`;

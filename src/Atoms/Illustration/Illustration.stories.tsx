@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Flexbox, LabeledValue, Typography } from '../../..';
 import { Illustration } from '../..';
 import { Display } from '../../common/Display';
 
@@ -91,4 +93,42 @@ export const allIllustrationsColored = () => (
 
 allIllustrationsColored.story = {
   name: 'All Illustrations (colored)',
+};
+
+const StyledLabeledValue = styled(LabeledValue)`
+  align-items: center;
+  margin: 12px 0;
+  width: 260px;
+`;
+
+const SizeIllustrations = (size: string) => (
+  <Flexbox container gutter={8} wrap="wrap">
+    {Object?.entries(Illustration)
+      ?.filter((name) => name[0].includes(size))
+      .map(
+        ([illustrationName, IllustrationComponent]: [string, React.ComponentType<any>], index) => (
+          <StyledLabeledValue label={<Typography type="tertiary">{illustrationName}</Typography>}>
+            <IllustrationComponent title={index} />
+          </StyledLabeledValue>
+        ),
+      )}
+  </Flexbox>
+);
+
+export const size48 = () => <>{SizeIllustrations('48')}</>;
+
+size48.story = {
+  name: 'Size / 48px',
+};
+
+export const size64 = () => <>{SizeIllustrations('64')}</>;
+
+size64.story = {
+  name: 'Size / 64px',
+};
+
+export const size240 = () => <>{SizeIllustrations('240')}</>;
+
+size240.story = {
+  name: 'Size / 240px',
 };
