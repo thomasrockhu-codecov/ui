@@ -47,6 +47,7 @@ const Item = styled.div<{
     $pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : ''}
   ${({ $pr, theme }) =>
     $pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : ''}
+
   background-color: ${({
     $disableBackgroundColor,
     $hasFocus,
