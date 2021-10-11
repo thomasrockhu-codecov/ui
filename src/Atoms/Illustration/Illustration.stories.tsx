@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, LabeledValue, Typography } from '../../..';
-import { Illustration } from '../..';
+import { Illustration, Flexbox, LabeledValue, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {

@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Export16: React.FC<IconProps> = (props) => {
+const ExportIcon16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path d="M5 3.086v2.828l2-2V12h2V3.914l2 2V3.086l-3-3-3 3z" fill="currentColor" />
@@ -15,4 +15,4 @@ const Export16: React.FC<IconProps> = (props) => {
   );
 };
 
-export default Export16;
+export default ExportIcon16;
