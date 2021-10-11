@@ -23,7 +23,7 @@ const components = {
   CloseButtonIcon: StyledCrossIcon,
 };
 
-export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipProps>(
+export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipProps>(
   (
     {
       children,
@@ -115,7 +115,7 @@ export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipPro
       </>
     );
   },
-) as any as React.ForwardRefExoticComponent<
+) as any) as React.ForwardRefExoticComponent<
   PersistentTooltipProps & React.RefAttributes<HTMLDivElement>
 > & {
   components: typeof components;

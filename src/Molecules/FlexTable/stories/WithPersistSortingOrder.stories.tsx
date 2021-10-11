@@ -61,8 +61,9 @@ export const ControlledSortableHeadersThatSavesLastSorted = () => {
         sortOrder: FlexTable.CONSTANTS.SORT_ORDER_NONE,
       };
 
-      const [columnSort, setColumnSort] =
-        useState<{ columnId: string; sortOrder: SortOrder }>(initialSortOrder);
+      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>(
+        initialSortOrder,
+      );
 
       const getSort = (columnId: string) =>
         columnSort.columnId === columnId
@@ -129,8 +130,9 @@ export const OnlyAscendingDescendingThatSavesLastSorted = () => {
         sortOrder: FlexTable.CONSTANTS.SORT_ORDER_ASCENDING,
       };
 
-      const [columnSort, setColumnSort] =
-        useState<{ columnId: string; sortOrder: SortOrder }>(initialSortOrder);
+      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>(
+        initialSortOrder,
+      );
 
       const getSort = (columnId: string) =>
         columnSort.columnId === columnId

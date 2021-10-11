@@ -136,7 +136,7 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
-export const Drawer = React.forwardRef<HTMLDivElement, Props>(
+export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,
@@ -256,7 +256,7 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
       </AnimatePresence>
     );
   },
-) as any as React.FC<Props> & {
+) as any) as React.FC<Props> & {
   components: typeof components;
 };
 

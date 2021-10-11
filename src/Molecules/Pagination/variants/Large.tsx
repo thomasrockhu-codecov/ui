@@ -19,7 +19,8 @@ const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrent
     $isCurrentPage &&
     `background-color: ${theme.color.cta}; cursor: default`}
   ${({ $type, theme }) =>
-    $type === 'chevron' && `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
+    $type === 'chevron' &&
+    `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
 
   &:hover {
     span {

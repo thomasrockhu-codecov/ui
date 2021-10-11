@@ -39,12 +39,19 @@ const Item = styled.div<{
       ? `padding-top: ${theme.spacing.unit($py)}px; padding-bottom: ${theme.spacing.unit($py)}px;`
       : ''}
   ${({ $pt, theme }) => ($pt ? `padding-top: ${theme.spacing.unit($pt)}px;` : '')}
-  ${({ $pb, theme }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
-  ${({ $pl, theme }) => ($pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : '')}
-  ${({ $pr, theme }) => ($pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : '')}
-
-  background-color: ${({ $disableBackgroundColor, $hasFocus, theme }) =>
-    !$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent'};
+  ${({
+    $pb,
+    theme,
+  }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
+  ${({ $pl, theme }) =>
+    $pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : ''}
+  ${({ $pr, theme }) =>
+    $pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : ''}
+  background-color: ${({
+    $disableBackgroundColor,
+    $hasFocus,
+    theme,
+  }) => (!$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent')};
 `;
 
 const Button = styled.button<{ $withChevron?: boolean; $disabled?: boolean }>`

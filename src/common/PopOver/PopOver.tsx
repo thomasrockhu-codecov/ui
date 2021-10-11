@@ -43,7 +43,7 @@ const components = {
   TooltipContent: StyledTooltipContent,
 };
 
-const PopOver = forwardRef<HTMLSpanElement, Props>(
+const PopOver = (forwardRef<HTMLSpanElement, Props>(
   (
     {
       id,
@@ -114,7 +114,7 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
       </Portal>
     );
   },
-) as any as React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLSpanElement>> & {
+) as any) as React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLSpanElement>> & {
   components: typeof components;
 };
 

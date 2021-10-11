@@ -98,7 +98,8 @@ const StyledArrow = styled.span<Props>`
 
   ${(p) => (p.position === 'top' ? arrowBottom : '')}
   ${(p) => (p.position === 'bottom' ? arrowTop : '')}
-  ${(p) => (p.position === 'left' ? arrowRight : '')}
+  ${(p) =>
+    p.position === 'left' ? arrowRight : ''}
   ${(p) => (p.position === 'right' ? arrowLeft : '')}
 `;
 
