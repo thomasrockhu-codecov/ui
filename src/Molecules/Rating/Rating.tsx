@@ -16,7 +16,7 @@ export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
   const screenReaderText = rating === 1 ? `${rating} star` : `${rating} stars`;
 
   return (
-    <Flexbox container gutter={1}>
+    <Flexbox container>
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {[...Array(5)]?.map((_, index) => (
         <Icon.Star

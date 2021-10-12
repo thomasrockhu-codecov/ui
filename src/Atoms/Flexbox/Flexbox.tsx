@@ -140,9 +140,7 @@ const StyledFlexbox = styled(SanitizedDiv)<Props>`
   ${(p) => (p.container ? getContainerStyles(p) : '')}
   ${(p) => (p.item ? getItemStyles(p) : '')}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
-  ${(
-    p,
-  ) => (p.md ? getStylesForSize('md') : '')}
+  ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
