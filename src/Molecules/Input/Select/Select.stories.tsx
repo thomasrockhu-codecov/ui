@@ -8,7 +8,7 @@ import {
   Box,
   CardWithTitle,
   Flexbox,
-  Icon,
+  OldIcon,
   Input,
   Link,
   Modal,
@@ -189,7 +189,7 @@ const AccountListItem = ({ index }) => {
         {selected && (
           <Flexbox item container alignItems="center">
             <Box pl={2}>
-              <Icon.CheckMark color={(t) => t.color.cta} size={4} />
+              <OldIcon.CheckMark color={(t) => t.color.cta} size={4} />
             </Box>
           </Flexbox>
         )}
@@ -524,12 +524,12 @@ export const actions = () =>
         onChange={setValue}
         actions={[
           {
-            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            icon: <OldIcon.AddWithCircle size={4} color="currentColor" />,
             label: 'Add more stuff to dropdown',
             onSelect: action('Action triggered!'),
           },
           {
-            icon: <Icon.Archive size={4} color="currentColor" />,
+            icon: <OldIcon.Archive size={4} color="currentColor" />,
             label: 'Archive',
             onSelect: action('Action Archive triggered!'),
           },
@@ -560,12 +560,12 @@ export const actionsAndEmptyOptionList = () =>
         onChange={setValue}
         actions={[
           {
-            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            icon: <OldIcon.AddWithCircle size={4} color="currentColor" />,
             label: 'Add more stuff to dropdown',
             onSelect: action('Action triggered!'),
           },
           {
-            icon: <Icon.Archive size={4} color="currentColor" />,
+            icon: <OldIcon.Archive size={4} color="currentColor" />,
             label: 'Archive',
             onSelect: action('Action Archive triggered!'),
           },
@@ -684,12 +684,12 @@ export const multiselectActions = () =>
         components={{ SelectedValue: CustomSelectedValue }}
         actions={[
           {
-            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            icon: <OldIcon.AddWithCircle size={4} color="currentColor" />,
             label: 'Add more stuff to dropdown',
             onSelect: action('Action add triggered!'),
           },
           {
-            icon: <Icon.Archive size={4} color="currentColor" />,
+            icon: <OldIcon.Archive size={4} color="currentColor" />,
             label: 'Archive',
             onSelect: action('Action archive triggered!'),
           },
@@ -1049,7 +1049,7 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3.5} />
+                  <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3.5} />
                 </Flexbox>
                 <Flexbox item>
                   <Typography type="secondary" color={(t) => t.color.text}>
@@ -1127,7 +1127,7 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                  <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
                   <Typography type="tertiary" color={(t) => t.color.text}>
@@ -1208,7 +1208,7 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                  <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
                   <Typography type="tertiary" color={(t) => t.color.text}>
@@ -1305,7 +1305,7 @@ export const linkWithDropdownAndSearchBoxMultiselectWithFullScreenOnMobile = () 
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                  <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
                   <Typography type="tertiary" color={(t) => t.color.text}>
@@ -1404,7 +1404,7 @@ export const listPositionedToTheLeft = () =>
             <Link as="div">
               <Flexbox container alignItems="center" gutter={1}>
                 <Flexbox item container alignItems="center">
-                  <Icon.AddWithCircle inline color={(t) => t.color.text} size={3} />
+                  <OldIcon.AddWithCircle inline color={(t) => t.color.text} size={3} />
                 </Flexbox>
                 <Flexbox item>
                   <Typography type="tertiary" color={(t) => t.color.text}>

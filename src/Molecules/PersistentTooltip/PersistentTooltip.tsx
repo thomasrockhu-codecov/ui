@@ -1,7 +1,7 @@
 import React, { cloneElement, forwardRef, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { isElement, mergeRefs } from '../../common/utils';
-import { Box, Button, Flexbox, Icon, Typography } from '../..';
+import { Box, Button, Flexbox, OldIcon, Typography } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 import { useGeneratedId } from '../../common/Hooks';
@@ -16,14 +16,14 @@ const StyledButton = styled(Button)`
   margin-left: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
-const StyledCrossIcon = styled(Icon.CrossMedium)``; // styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
+const StyledCrossIcon = styled(OldIcon.CrossMedium)``; // styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
 
 const components = {
   TooltipContent: PopOver.components.TooltipContent,
   CloseButtonIcon: StyledCrossIcon,
 };
 
-export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipProps>(
+export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipProps>(
   (
     {
       children,
@@ -115,7 +115,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
       </>
     );
   },
-) as any) as React.ForwardRefExoticComponent<
+) as any as React.ForwardRefExoticComponent<
   PersistentTooltipProps & React.RefAttributes<HTMLDivElement>
 > & {
   components: typeof components;

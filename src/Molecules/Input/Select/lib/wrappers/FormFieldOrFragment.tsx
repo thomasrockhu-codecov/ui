@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, FormField, Icon } from '../../../../..';
+import { Flexbox, FormField, OldIcon } from '../../../../..';
 import { Props } from '../../Select.types';
 
-const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
+const Chevron = styled(OldIcon.ChevronDown)<{ open: boolean }>`
   transform: translateY(-50%) ${(p) => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;

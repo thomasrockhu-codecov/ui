@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography, Icon } from '../..';
+import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography, OldIcon } from '../..';
 
 export default {
   title: 'Molecules / Persistent Tooltip',
@@ -243,7 +243,7 @@ export const WrapChild = () => {
             position="right"
             wrapChild
           >
-            <Icon.Pen />
+            <OldIcon.Pen />
           </PersistentTooltip>
         </Box>
       </Flexbox>
@@ -259,7 +259,7 @@ export const WrapChild = () => {
             position="right"
           >
             <div>
-              <Icon.Pen />
+              <OldIcon.Pen />
             </div>
           </PersistentTooltip>
         </Box>
@@ -283,7 +283,7 @@ export const BrokenPositioning = () => {
             onClose={() => setIsOpen(false)}
             position="right"
           >
-            <Icon.Pen />
+            <OldIcon.Pen />
           </PersistentTooltip>
         </Box>
       </Flexbox>

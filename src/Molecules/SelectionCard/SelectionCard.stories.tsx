@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
-import { Flexbox, Icon, Typography } from '../..';
+import { Flexbox, OldIcon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 
 export default {
@@ -74,7 +74,7 @@ export const SelectionCardWithIcon = () => {
         {...getCardProps()}
         title="With Icon"
         onChange={onChange}
-        icon={<Icon.House size={8} />}
+        icon={<OldIcon.House size={8} />}
       />
     </>
   );

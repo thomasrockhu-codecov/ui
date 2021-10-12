@@ -5,7 +5,7 @@ import {
   DropdownBubble,
   FadedScroll,
   Flexbox,
-  Icon,
+  OldIcon,
   List as UIList,
   Separator,
   Typography,
@@ -186,7 +186,7 @@ export const Option: React.FC<OptionProps> = ({
     {selected && (
       <Flexbox item container alignItems="center">
         <Box pl={2}>
-          <Icon.CheckMark size={4} color={(t) => t.color.cta} />
+          <OldIcon.CheckMark size={4} color={(t) => t.color.cta} />
         </Box>
       </Flexbox>
     )}

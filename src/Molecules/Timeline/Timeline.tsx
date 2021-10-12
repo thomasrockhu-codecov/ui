@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props, StepProps } from './Timeline.types';
-import { Box, Button, DateTime, Flexbox, Icon, ListItem, Typography } from '../..';
+import { Box, Button, DateTime, Flexbox, OldIcon, ListItem, Typography } from '../..';
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
     case 'NEUTRAL':
-      return <Icon.SolidCircle size={5} fill={(t) => t.color.emptyState} />;
+      return <OldIcon.SolidCircle size={5} fill={(t) => t.color.emptyState} />;
     case 'PENDING':
-      return <Icon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
+      return <OldIcon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
     case 'ACTIVE':
-      return <Icon.InfoCircle size={5} fill={(t) => t.color.cta} />;
+      return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
     case 'FAILURE':
-      return <Icon.CrossCircle size={5} fill={(t) => t.color.negative} />;
+      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.negative} />;
     case 'SUCCESS':
     default:
-      return <Icon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
+      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
   }
 };
 

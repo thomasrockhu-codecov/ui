@@ -1,7 +1,7 @@
 import React from 'react';
 import { Action } from './Action';
 import { Display } from '../../../../../common/Display';
-import { Icon } from '../../../../..';
+import { OldIcon } from '../../../../..';
 
 export default {
   title: 'Molecules / Input / Select / Action',
@@ -15,7 +15,7 @@ export const allStates = () => (
           <Action
             label="Normal"
             isKeyboardNavigation={false}
-            icon={<Icon.Bank size={4} color="currentColor" />}
+            icon={<OldIcon.Bank size={4} color="currentColor" />}
             focused={false}
           />
         ),
@@ -26,7 +26,7 @@ export const allStates = () => (
           <Action
             label="Focused"
             isKeyboardNavigation
-            icon={<Icon.Bank size={4} color="currentColor" />}
+            icon={<OldIcon.Bank size={4} color="currentColor" />}
             focused
           />
         ),
@@ -37,7 +37,7 @@ export const allStates = () => (
           <Action
             label="Disabled"
             isKeyboardNavigation={false}
-            icon={<Icon.Bank size={4} color="currentColor" />}
+            icon={<OldIcon.Bank size={4} color="currentColor" />}
             focused={false}
             disabled
           />

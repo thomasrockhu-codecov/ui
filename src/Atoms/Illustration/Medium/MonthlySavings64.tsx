@@ -1,0 +1,19 @@
+import React from 'react';
+
+import { IllustrationBase } from '../IllustrationBase';
+import { IllustrationProps } from '../IllustrationBase.types';
+
+const MonthlySavings64: React.FC<IllustrationProps> = (props) => {
+  return (
+    <IllustrationBase {...props} width={64} height={64}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M17 12V10H19V12H45V10H47V12H53V54H11V12H17ZM17 14H13V20H51V14H47V16H45V14H19V16H17V14ZM51 22H13V52H51V22ZM17 28H22V30H17V28ZM25 28H30V30H25V28ZM33 28H38V30H33V28ZM41 28H46V30H41V28ZM22 37H17V35H22V37ZM25 35H30V37H25V35ZM33 35H38V37H33V35ZM41 35H46V37H41V35ZM41 43C41 41.3431 42.3431 40 44 40C45.6569 40 47 41.3431 47 43C47 44.6569 45.6569 46 44 46C42.3431 46 41 44.6569 41 43ZM44 42C43.4477 42 43 42.4477 43 43C43 43.5523 43.4477 44 44 44C44.5523 44 45 43.5523 45 43C45 42.4477 44.5523 42 44 42ZM17 42H22V44H17V42ZM25 42H30V44H25V42ZM33 42H38V44H33V42Z"
+        fill="currentColor"
+      />
+    </IllustrationBase>
+  );
+};
+
+export default MonthlySavings64;

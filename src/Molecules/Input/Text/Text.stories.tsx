@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Box, Button, Flexbox, Icon, Input } from '../../..';
+import { Box, Button, Flexbox, OldIcon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 // TODO: A bit laggy for now, let's optimize later
@@ -80,7 +80,7 @@ export const disabledAddon = () => (
     label="Label"
     placeholder="Placeholder"
     disabled
-    leftAddon={<Icon.Bolt size={4} />}
+    leftAddon={<OldIcon.Bolt size={4} />}
     rightAddon="SEK"
   />
 );
@@ -217,7 +217,7 @@ export const fullWidthStory = () => (
             label="Label"
             width="100%"
             placeholder="Placeholder"
-            leftAddon={<Icon.Bolt size={4} />}
+            leftAddon={<OldIcon.Bolt size={4} />}
           />
         ),
         title: 'Left addon',
@@ -248,7 +248,7 @@ export const bothAddons = () => (
   <Input.Text
     label="Label"
     placeholder="Placeholder"
-    leftAddon={<Icon.Bolt size={4} />}
+    leftAddon={<OldIcon.Bolt size={4} />}
     rightAddon="SEK"
   />
 );
@@ -317,7 +317,7 @@ export const small = () => (
             label="Label"
             size="s"
             placeholder="Placeholder"
-            leftAddon={<Icon.Bolt size={4} />}
+            leftAddon={<OldIcon.Bolt size={4} />}
           />
         ),
         title: 'Left addon',

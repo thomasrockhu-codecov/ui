@@ -57,6 +57,10 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
   flex-direction: column;
 }
 
+.c2 {
+  display: block;
+}
+
 .c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -121,10 +125,6 @@ exports[`Storyshots Molecules / Timeline Default 1`] = `
 
 .c16 {
   fill: #FFFFFF;
-}
-
-.c2 {
-  display: block;
 }
 
 .c12 {
@@ -632,6 +632,10 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
   flex-direction: column;
 }
 
+.c2 {
+  display: block;
+}
+
 .c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -678,10 +682,6 @@ exports[`Storyshots Molecules / Timeline Different Heights 1`] = `
 
 .c9 {
   fill: #FFFFFF;
-}
-
-.c2 {
-  display: block;
 }
 
 .c13 {
@@ -1175,6 +1175,10 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
   flex-direction: column;
 }
 
+.c2 {
+  display: block;
+}
+
 .c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1195,10 +1199,6 @@ exports[`Storyshots Molecules / Timeline Single Element 1`] = `
 
 .c10 {
   fill: #FFF;
-}
-
-.c2 {
-  display: block;
 }
 
 .c14 {
@@ -1406,6 +1406,10 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
   flex-direction: column;
 }
 
+.c2 {
+  display: block;
+}
+
 .c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1444,10 +1448,6 @@ exports[`Storyshots Molecules / Timeline With Button 1`] = `
 
 .c9 {
   fill: #FFFFFF;
-}
-
-.c2 {
-  display: block;
 }
 
 .c13 {

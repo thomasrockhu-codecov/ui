@@ -6,7 +6,7 @@ import {
   Fieldset,
   Flexbox,
   FormLabel,
-  Icon,
+  OldIcon,
   Legend,
   Tooltip,
   Typography,
@@ -21,7 +21,7 @@ const Wrapper = styled.div<{ $width?: string | number }>`
   display: inline-block;
 `;
 
-const TooltipIcon = styled(Icon.Questionmark)`
+const TooltipIcon = styled(OldIcon.Questionmark)`
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 

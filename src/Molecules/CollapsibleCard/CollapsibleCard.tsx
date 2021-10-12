@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Card, Flexbox, Icon, Typography } from '../..';
+import { Card, Flexbox, OldIcon, Typography } from '../..';
 import { isElement, isFunction } from '../../common/utils';
 import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
@@ -42,7 +42,7 @@ const StyledButton = styled.button<IndicatorsProps>`
   }
 `;
 
-const AnimatedChevronUp = styled(Icon.ChevronUp)<Pick<IndicatorsProps, '$collapsed'>>`
+const AnimatedChevronUp = styled(OldIcon.ChevronUp)<Pick<IndicatorsProps, '$collapsed'>>`
   transform: ${(p) => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;

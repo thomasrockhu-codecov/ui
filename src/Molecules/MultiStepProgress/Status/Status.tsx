@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import VisuallyHidden from '../../../Atoms/VisuallyHidden';
 import Typography from '../../../Atoms/Typography';
-import Icon from '../../../Atoms/Icon';
+import OldIcon from '../../../Atoms/OldIcon';
 import { StatusComponent, InternalProps } from './Status.types';
 
 import {
@@ -41,7 +41,7 @@ const Status: StatusComponent = ({ current, done, noIcons, number, titleDone, ti
     {!noIcons && (
       <StyledTypography type="secondary" weight="bold" aria-hidden>
         {done ? (
-          <Icon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={(t) => t.color.positive} />
+          <OldIcon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={(t) => t.color.positive} />
         ) : (
           <Circle $current={current}>{number}</Circle>
         )}

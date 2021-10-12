@@ -83,6 +83,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
+    icon: rawColor.gray2,
 
     indexFundsBackground: rawColor.gray6,
     indexFundsFinnishAccent: [

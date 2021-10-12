@@ -4,7 +4,7 @@ export type ColsTrimmerProps = {
 };
 
 type Step = {
-  /** Replaces icon, title and content props */
+  /** Replaces OldIcon, title and content props */
   body?: React.ReactNode;
   content?: React.ReactNode;
   icon?: React.ReactNode;

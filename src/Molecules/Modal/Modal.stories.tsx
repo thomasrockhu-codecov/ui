@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Button, FadedScroll, Flexbox, Icon, Modal, Typography } from '../..';
+import { Box, Button, FadedScroll, Flexbox, OldIcon, Modal, Typography } from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(
@@ -311,11 +311,11 @@ hideClose.story = {
 export const nodeAsTitle = () => {
   const Title = (
     <Flexbox container gutter={2} alignItems="center">
-      <Icon.Bolt />
+      <OldIcon.Bolt />
       <Typography type="title2" as="h2">
         React Node Title
       </Typography>
-      <Icon.Bolt />
+      <OldIcon.Bolt />
     </Flexbox>
   );
   const Example = () => {
@@ -486,7 +486,7 @@ export const modalStandardSmall = () => {
       <Flexbox container alignItems="center" justifyContent="space-between">
         <Flexbox container item alignItems="center">
           <Box mr={2}>
-            <Icon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+            <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
           </Box>
           <Typography type="primary" weight="bold">
             Back
@@ -559,7 +559,7 @@ export const modalStandardMedium = () => {
       <Flexbox container alignItems="center" justifyContent="space-between">
         <Flexbox container item alignItems="center">
           <Box mr={2}>
-            <Icon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+            <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
           </Box>
           <Typography type="primary" weight="bold">
             Back
@@ -619,7 +619,7 @@ export const modalStandardLarge = () => {
       <Flexbox container alignItems="center" justifyContent="space-between">
         <Flexbox container item alignItems="center">
           <Box mr={2}>
-            <Icon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+            <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
           </Box>
           <Typography type="primary" weight="bold">
             Back
@@ -679,7 +679,7 @@ export const modalStandardLargeWithScroll = () => {
       <Flexbox container alignItems="center" justifyContent="space-between">
         <Flexbox container item alignItems="center">
           <Box mr={2}>
-            <Icon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+            <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
           </Box>
           <Typography type="primary" weight="bold">
             Back

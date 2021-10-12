@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
-import { Icon, Typography, VisuallyHidden } from '../..';
+import { OldIcon, Typography, VisuallyHidden } from '../..';
 import { Props, SelectComponent } from './Select.types';
 
 const SELECT_HEIGHT = 8;
@@ -16,7 +16,7 @@ const StyledSelect = styled.select`
   border-radius: 0;
 `;
 
-const Chevron = styled(Icon.ChevronDown)<{ focus: boolean }>`
+const Chevron = styled(OldIcon.ChevronDown)<{ focus: boolean }>`
   transform: translateY(-50%) ${(p) => (p.focus ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;

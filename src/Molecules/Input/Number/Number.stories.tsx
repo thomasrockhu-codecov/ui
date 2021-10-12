@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action, actions } from '@storybook/addon-actions';
-import { Box, Icon, Input } from '../../..';
+import { Box, OldIcon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -213,7 +213,7 @@ export const withBothAddons = () => (
   <Input.Number
     id="insert-unique-id"
     label="Label"
-    leftAddon={<Icon.Bolt size={4} />}
+    leftAddon={<OldIcon.Bolt size={4} />}
     rightAddon="SEK"
   />
 );
@@ -326,7 +326,7 @@ export const withPlaceholder = () => (
             label="Label"
             placeholder="A placeholder"
             defaultValue=""
-            leftAddon={<Icon.Bolt size={4} />}
+            leftAddon={<OldIcon.Bolt size={4} />}
           />
         ),
       },
@@ -443,7 +443,7 @@ export const quietNumber = () => (
             variant="quiet"
             noSteppers
             rightAddon="%"
-            leftAddon={<Icon.Plus color={(t) => t.color.cta} size={4} />}
+            leftAddon={<OldIcon.Plus color={(t) => t.color.cta} size={4} />}
           />
         ),
         title: 'Left addon',

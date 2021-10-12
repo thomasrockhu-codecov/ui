@@ -1,18 +1,18 @@
 import React from 'react';
-import styled, { DefaultTheme } from 'styled-components';
+import styled, { useTheme, DefaultTheme } from 'styled-components';
 import * as R from 'ramda';
 import { ColorFn, InternalProps, StyledIconBaseProps } from './IconBase.types';
 import { assert } from '../../common/utils';
 
 const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentColor'];
-export const getColor = (
+export const getColor: (
   theme: DefaultTheme,
   defaultColor: string,
   colorFnOrColor?: ColorFn | string,
-) => {
+) => string = (theme, defaultColor, colorFnOrColor) => {
   if (typeof colorFnOrColor !== 'undefined') {
     if (typeof colorFnOrColor === 'function') {
-      return colorFnOrColor(theme);
+      return colorFnOrColor(theme) as string;
     }
 
     if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
@@ -29,53 +29,38 @@ export const getColor = (
 };
 
 const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>((props, ref) => (
-  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline', 'focus'])(props)} />
+  <svg ref={ref} {...R.omit(['inline'])(props)} />
 ));
 
 const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
   ${(p) => {
-    const size = p.size || 5;
-    const fill = getColor(p.theme, p.theme.color.svgFill, p.colorFn);
-
     return `
+      color: ${p.$color};
       user-select: none;
-      width: ${p.theme.spacing.unit(size)}px;
-      height: ${p.theme.spacing.unit(size)}px;
-      fill: ${fill};
       flex-shrink: 0;
-
       display: ${p.inline ? 'inline-block' : 'block'};
-      ${p.inline ? 'vertical-align: middle;' : ''}
+      ${p.inline ? 'vertical-align: sub;' : ''}
     `;
   }}
 `;
 
 export const IconBase: React.FC<InternalProps> = React.forwardRef<SVGSVGElement, InternalProps>(
   (props, ref) => {
-    const {
-      className,
-      children,
-      title,
-      size = 5,
-      color,
-      fill,
-      inline,
-      viewBox = '0 0 24 24',
-      ...rest
-    } = props;
+    const { className, children, title, color, inline, ...rest } = props;
+
+    const theme = useTheme();
+    const iconColor = getColor(theme, theme.color.icon, color);
 
     return (
       <StyledIconBase
         className={className}
         preserveAspectRatio="xMidYMid meet"
-        size={size}
         focusable="false"
-        viewBox={viewBox}
         aria-hidden={title ? 'false' : 'true'}
         role={title ? 'img' : 'presentation'}
-        colorFn={fill || color}
         inline={inline}
         ref={ref}
+        $color={iconColor}
         {...rest}
       >
         {children}

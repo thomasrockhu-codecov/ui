@@ -4,7 +4,7 @@ import MD from 'react-markdown';
 import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import docs from './CardWithTitle.md';
 
-import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';
+import { Box, CardWithTitle, FadedScroll, Flexbox, OldIcon, Typography } from '../..';
 
 const Text = styled.span`
   display: inline-block;
@@ -97,7 +97,7 @@ cardWithTitleAsSection.story = {
 };
 
 export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
-  const PaddedIcon = styled(Icon.ArrowRight)`
+  const PaddedIcon = styled(OldIcon.ArrowRight)`
     padding-left: ${(p) => p.theme.spacing.unit(1)}px;
   `;
   const CustomTitle = (

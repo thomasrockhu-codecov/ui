@@ -3,7 +3,7 @@ import format from 'date-fns/format';
 import sub from 'date-fns/sub';
 import add from 'date-fns/add';
 import { Props } from './Header.types';
-import { Box, Button, Flexbox, Icon } from '../../../..';
+import { Box, Button, Flexbox, OldIcon } from '../../../..';
 import { getLocale } from '../../shared/dateUtils';
 import SelectMonth from '../../shared/components/SelectMonth';
 import SelectYear from '../../shared/components/SelectYear';
@@ -48,7 +48,7 @@ const Header: React.FC<Props> = ({
                 onMonthChange(viewedDate.getMonth() - 1);
               }}
             >
-              <Icon.ThinChevron size={4} direction="left" />
+              <OldIcon.ThinChevron size={4} direction="left" />
             </Button>
           </Box>
         </Flexbox>
@@ -85,7 +85,7 @@ const Header: React.FC<Props> = ({
                 onMonthChange(viewedDate.getMonth() + 1);
               }}
             >
-              <Icon.ThinChevron size={4} direction="right" />
+              <OldIcon.ThinChevron size={4} direction="right" />
             </Button>
           </Box>
         </Flexbox>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.types';
-import { Flexbox, Icon, Typography } from '../..';
+import { Flexbox, OldIcon, Typography } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getBorderColor = ({
@@ -28,14 +28,14 @@ const getBorderColor = ({
 const getIcon = (variant: FeedbackBannerProps['variant']) => {
   switch (variant) {
     case 'error':
-      return <Icon.CrossCircle size={5} fill={(t) => t.color.negative} />;
+      return <OldIcon.CrossCircle size={5} fill={(t) => t.color.negative} />;
     case 'warning':
-      return <Icon.WarningTriangle size={5} fill={(t) => t.color.warning} />;
+      return <OldIcon.WarningTriangle size={5} fill={(t) => t.color.warning} />;
     case 'success':
-      return <Icon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
+      return <OldIcon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
     case 'info':
     default:
-      return <Icon.InfoCircle size={5} fill={(t) => t.color.cta} />;
+      return <OldIcon.InfoCircle size={5} fill={(t) => t.color.cta} />;
   }
 };
 

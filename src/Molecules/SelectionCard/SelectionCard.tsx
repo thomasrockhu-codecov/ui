@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Color from 'color';
 import styled, { css } from 'styled-components';
 
-import { Box, Card, Flexbox, Icon, Typography } from '../..';
+import { Box, Card, Flexbox, OldIcon, Typography } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
@@ -193,7 +193,7 @@ export const SelectionCard: SelectionCardComponent = ({
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <Icon.CheckMarkCircle fill={(t) => t.color.cta} />}
+            {!disabled && selected && <OldIcon.CheckMarkCircle fill={(t) => t.color.cta} />}
 
             <StyledInput
               type="checkbox"

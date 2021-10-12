@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms / Icon / Category / Graph 8px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Graph 16px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        BuySellDots16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        d="M6 3.828l2 2V3L5 0 2 3v2.828l2-2v6.167h2V3.828zM10 12.167l-2-2v2.828l3 3 3-3v-2.828l-2 2V6h-2v6.167z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Compare16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M6.342 3.727L5.06.796.137 9.245l1.728 1.007 2.94-5.048.284.648-4.95 8.388 1.723 1.016 4.215-7.144 2.275 5.198 1.634-3.12 1.282 2.93 4.508-7.083-1.687-1.074-2.493 3.917-.42-.962L14.818.964 13.047.036 10.148 5.57 8.065.808l-1.723 2.92zm.989 2.26L8.513 8.69l.446-.85-1.16-2.648-.468.795z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Grid16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M4 16v-4H0v-2h4V6H0V4h4V0h2v4h4V0h2v4h4v2h-4v4h4v2h-4v4h-2v-4H6v4H4zm6-6V6H6v4h4z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Graph 24px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 12px 0;
+  width: 90px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        BuySellDots24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        d="M12 8.828l-4-4v10.167H6V4.828l-4 4V6l5-5 5 5v2.828zM12 15.167l4 4V9h2v10.167l4-4v2.828l-5 5-5-5v-2.828z"
+        fill="currentColor"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        Grid24
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={24}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={24}
+    >
+      <path
+        clipRule="evenodd"
+        d="M7 23v-6H1v-2h6V9H1V7h6V1h2v6h6V1h2v6h6v2h-6v6h6v2h-6v6h-2v-6H9v6H7zm8-8V9H9v6h6z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        2
+      </title>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / Icon / Category / Graph 32px 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.c0 > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+<div
+  className="c0"
+/>
+`;

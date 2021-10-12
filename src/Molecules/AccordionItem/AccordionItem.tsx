@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { Box, Icon, Typography } from '../..';
+import { Box, OldIcon, Typography } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { AccordionItemComponent } from './AccordionItem.types';
 
@@ -39,20 +39,12 @@ const Item = styled.div<{
       ? `padding-top: ${theme.spacing.unit($py)}px; padding-bottom: ${theme.spacing.unit($py)}px;`
       : ''}
   ${({ $pt, theme }) => ($pt ? `padding-top: ${theme.spacing.unit($pt)}px;` : '')}
-  ${({
-    $pb,
-    theme,
-  }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
-  ${({ $pl, theme }) =>
-    $pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : ''}
-  ${({ $pr, theme }) =>
-    $pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : ''}
+  ${({ $pb, theme }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
+  ${({ $pl, theme }) => ($pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : '')}
+  ${({ $pr, theme }) => ($pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : '')}
 
-  background-color: ${({
-    $disableBackgroundColor,
-    $hasFocus,
-    theme,
-  }) => (!$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent')};
+  background-color: ${({ $disableBackgroundColor, $hasFocus, theme }) =>
+    !$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent'};
 `;
 
 const Button = styled.button<{ $withChevron?: boolean; $disabled?: boolean }>`
@@ -72,7 +64,7 @@ const Button = styled.button<{ $withChevron?: boolean; $disabled?: boolean }>`
   text-align: start;
 `;
 
-const IconWrapper = styled.div<{ $withChevron?: boolean }>`
+const OldIconWrapper = styled.div<{ $withChevron?: boolean }>`
   position: absolute;
   top: 15px;
   ${(p) => (p.$withChevron ? 'right' : 'left')}: 0;
@@ -122,23 +114,23 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     };
 
     const icon = (
-      <IconWrapper $withChevron={withChevron}>
+      <OldIconWrapper $withChevron={withChevron}>
         {(() => {
           if (withChevron)
             return (
-              <Icon.ThinChevron
+              <OldIcon.ThinChevron
                 color={(t) => (disabled ? t.color.disabledText : '')}
                 direction={expanded ? 'up' : 'down'}
                 size={4}
               />
             );
 
-          if (expanded) return <Icon.Minus size={3} fill={(t) => t.color.cta} />;
+          if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
           return (
-            <Icon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
+            <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
           );
         })()}
-      </IconWrapper>
+      </OldIconWrapper>
     );
 
     return (

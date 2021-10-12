@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox, Icon, Typography } from '../../../index';
+import { Button, Flexbox, OldIcon, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import PageItems from '../PageItems';
 import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
@@ -57,7 +57,7 @@ const TruncatedPageNumbers = () => (
 
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction = 'left', onClick, label }) => (
   <Button variant="neutral" onClick={onClick} aria-label={label}>
-    {direction === 'left' ? <Icon.ChevronLeft size={2} /> : <Icon.ChevronRight size={2} />}
+    {direction === 'left' ? <OldIcon.ChevronLeft size={2} /> : <OldIcon.ChevronRight size={2} />}
   </Button>
 );
 

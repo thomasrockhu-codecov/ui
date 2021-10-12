@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import * as R from 'ramda';
 import { Props } from './Phone.types';
-import { Box, Flag, Flexbox, FormField, Icon, Typography } from '../../..';
+import { Box, Flag, Flexbox, FormField, OldIcon, Typography } from '../../..';
 import { useSelectMachineFromContext } from '../Select/lib/context';
 import { OptionItem } from '../Select/Select.types';
 import { CountryCodeLabel } from './CountryCodeLabel';
@@ -83,7 +83,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         label: (
           <Flexbox container alignItems="center" gutter={3}>
             <Flexbox item>
-              <Icon.Globe size={3} />
+              <OldIcon.Globe size={3} />
             </Flexbox>
             <Flexbox item>
               <Typography type="secondary">+</Typography>
@@ -92,7 +92,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         ),
         value: '',
         country: 'other',
-        flag: <Icon.Globe size={3} />,
+        flag: <OldIcon.Globe size={3} />,
       },
     ],
     [],
