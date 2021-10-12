@@ -1,3 +1,23 @@
+# [8.1.0](https://github.com/nordnet/ui/compare/v8.0.10...v8.1.0) (2021-10-12)
+
+
+### Bug Fixes
+
+* base new icons on IconBase to get inline and other props to work ([1370f19](https://github.com/nordnet/ui/commit/1370f19))
+* move icon to old-icon, still exporting icon for now ([8b8dc4f](https://github.com/nordnet/ui/commit/8b8dc4f))
+* update snapshots ([98708fc](https://github.com/nordnet/ui/commit/98708fc))
+* use currentColor instead ([100e50f](https://github.com/nordnet/ui/commit/100e50f))
+
+
+### Features
+
+* add all new icons ([33a9a48](https://github.com/nordnet/ui/commit/33a9a48))
+* add illustrations (larger icons) ([cc6a99b](https://github.com/nordnet/ui/commit/cc6a99b))
+* added missing action icons ([69483f2](https://github.com/nordnet/ui/commit/69483f2))
+* added missing communication icons ([16b6c7d](https://github.com/nordnet/ui/commit/16b6c7d))
+* added more icon stories ([c8694cc](https://github.com/nordnet/ui/commit/c8694cc))
+* replaced brokek warning icon, added backwards compatible export ([ab3c494](https://github.com/nordnet/ui/commit/ab3c494))
+
 ## [8.0.10](https://github.com/nordnet/ui/compare/v8.0.9...v8.0.10) (2021-10-01)
 
 
