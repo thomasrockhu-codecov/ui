@@ -1,3 +1,20 @@
+# [8.2.0](https://github.com/nordnet/ui/compare/v8.1.0...v8.2.0) (2021-10-13)
+
+
+### Bug Fixes
+
+* change to correct icon naming ([2b0ea64](https://github.com/nordnet/ui/commit/2b0ea64))
+* update image icon to not be a copy of fact sheet ([fb57047](https://github.com/nordnet/ui/commit/fb57047))
+* use different export method for centered icons ([61cdd43](https://github.com/nordnet/ui/commit/61cdd43))
+
+
+### Features
+
+* add pdf16 icon ([8130dde](https://github.com/nordnet/ui/commit/8130dde))
+* add Pdf24 icon ([a0b64a1](https://github.com/nordnet/ui/commit/a0b64a1))
+* add print icon and fix pdf icon name ([34856af](https://github.com/nordnet/ui/commit/34856af))
+* add spreadsheet icon ([dd3ab9b](https://github.com/nordnet/ui/commit/dd3ab9b))
+
 # [8.1.0](https://github.com/nordnet/ui/compare/v8.0.10...v8.1.0) (2021-10-12)
 
 
