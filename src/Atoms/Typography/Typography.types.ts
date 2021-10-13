@@ -47,6 +47,18 @@ export type Types =
 //   weight?: 'bold' | 'extrabold';
 // };
 
+type WhiteSpace =
+  | 'normal'
+  | 'nowrap'
+  | 'pre'
+  | 'pre-wrap'
+  | 'pre-line'
+  | 'break-spaces'
+  | 'inherit'
+  | 'initial'
+  | 'revert'
+  | 'unset';
+
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
@@ -67,6 +79,7 @@ export type Props = {
   type?: Types;
   lineHeight?: 'inherit';
   textAlign?: Property.TextAlign;
+  whiteSpace?: WhiteSpace;
   children: React.ReactNode;
 };
 
