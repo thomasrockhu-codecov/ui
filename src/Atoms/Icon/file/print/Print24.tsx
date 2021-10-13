@@ -4,11 +4,12 @@ import { IconProps } from '../../IconBase.types';
 
 const Print24 = (props: IconProps) => (
   <IconBase {...props} width={24} height={24}>
-    <path d="M15 14H7v-2h8v2ZM7 17h8v-2H7v2Z" fill="currentColor" />
+    <path d="M16 16H8V14H16V16Z" fill="currentColor" />
+    <path d="M8 19H16V17H8V19Z" fill="currentColor" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M4 0h14v5h4v11h-4v4H4v-4H0V5h4V0Zm0 14V9h14v5h2V7H2v7h2ZM16 2v3H6V2h10ZM6 18v-7h10v7H6Z"
+      d="M5 2H19V7H23V18H19V22H5V18H1V7H5V2ZM5 16V11H19V16H21V9H3V16H5ZM17 4V7H7V4H17ZM7 20V13H17V20H7Z"
       fill="currentColor"
     />
   </IconBase>

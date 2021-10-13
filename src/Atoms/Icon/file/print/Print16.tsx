@@ -7,7 +7,7 @@ const Print16 = (props: IconProps) => (
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M4 0h8v4h4v9h-4v2H4v-2H0V4h4V0Zm0 11V8h8v3h2V6H2v5h2Zm6-9v2H6V2h4ZM6 13v-3h4v3H6Z"
+      d="M4 1H12V5H16V14H12V16H4V14H0V5H4V1ZM4 12V9H12V12H14V7H2V12H4ZM10 3V5H6V3H10ZM6 14V11H10V14H6Z"
       fill="currentColor"
     />
   </IconBase>
