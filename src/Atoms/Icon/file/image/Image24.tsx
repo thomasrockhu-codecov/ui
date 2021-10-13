@@ -3,7 +3,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const FactSheet24: React.FC<IconProps> = (props) => {
+const Image24: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={24} height={24}>
       <path
@@ -22,4 +22,4 @@ const FactSheet24: React.FC<IconProps> = (props) => {
   );
 };
 
-export default FactSheet24;
+export default Image24;
