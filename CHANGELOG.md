@@ -1,3 +1,10 @@
+# [8.3.0](https://github.com/nordnet/ui/compare/v8.2.1...v8.3.0) (2021-10-13)
+
+
+### Features
+
+* 🎸 add white-space CSS property support to Typography ([3e458da](https://github.com/nordnet/ui/commit/3e458da))
+
 ## [8.2.1](https://github.com/nordnet/ui/compare/v8.2.0...v8.2.1) (2021-10-13)
 
 
