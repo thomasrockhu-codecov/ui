@@ -27,4 +27,4 @@ export const UrgentMessage = ({ fill, stroke, ...props }: ChildProps) => {
   );
 };
 
-UrgentMessage.displayName = 'Icon.UrgentMessage';
+UrgentMessage.displayName = 'OldIcon.UrgentMessage';

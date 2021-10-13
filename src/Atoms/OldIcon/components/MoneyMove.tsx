@@ -18,4 +18,4 @@ export const MoneyMove = (props: BaseProps) => {
   );
 };
 
-MoneyMove.displayName = 'Icon.MoneyMove';
+MoneyMove.displayName = 'OldIcon.MoneyMove';

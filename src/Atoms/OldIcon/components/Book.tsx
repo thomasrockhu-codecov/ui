@@ -13,4 +13,4 @@ export const Book = (props: BaseProps) => {
   );
 };
 
-Book.displayName = 'Icon.Book';
+Book.displayName = 'OldIcon.Book';

@@ -19,4 +19,4 @@ export const InfoPending = ({ ...props }: ChildProps) => {
   );
 };
 
-InfoPending.displayName = 'Icon.InfoPending';
+InfoPending.displayName = 'OldIcon.InfoPending';

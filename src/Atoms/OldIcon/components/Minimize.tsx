@@ -10,4 +10,4 @@ export const Minimize = (props: BaseProps) => {
   );
 };
 
-Minimize.displayName = 'Icon.Minimize';
+Minimize.displayName = 'OldIcon.Minimize';

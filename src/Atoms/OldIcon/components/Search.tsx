@@ -29,4 +29,4 @@ export const Search = (props: BaseProps) => {
   );
 };
 
-Search.displayName = 'Icon.Search';
+Search.displayName = 'OldIcon.Search';

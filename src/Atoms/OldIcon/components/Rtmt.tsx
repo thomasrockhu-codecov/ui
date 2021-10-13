@@ -10,4 +10,4 @@ export const Rtmt = (props: BaseProps) => {
   );
 };
 
-Rtmt.displayName = 'Icon.Rtmt';
+Rtmt.displayName = 'OldIcon.Rtmt';

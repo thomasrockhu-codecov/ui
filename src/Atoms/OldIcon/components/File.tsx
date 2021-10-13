@@ -10,4 +10,4 @@ export const File = (props: BaseProps) => {
   );
 };
 
-File.displayName = 'Icon.File';
+File.displayName = 'OldIcon.File';

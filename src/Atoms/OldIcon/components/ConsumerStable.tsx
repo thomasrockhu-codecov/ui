@@ -13,4 +13,4 @@ export const ConsumerStable = (props: BaseProps) => {
   );
 };
 
-ConsumerStable.displayName = 'Icon.ConsumerStable';
+ConsumerStable.displayName = 'OldIcon.ConsumerStable';

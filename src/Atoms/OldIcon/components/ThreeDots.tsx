@@ -13,4 +13,4 @@ export const ThreeDots = (props: BaseProps) => {
   );
 };
 
-ThreeDots.displayName = 'Icon.ThreeDots';
+ThreeDots.displayName = 'OldIcon.ThreeDots';

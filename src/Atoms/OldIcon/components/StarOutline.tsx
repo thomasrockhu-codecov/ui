@@ -10,4 +10,4 @@ export const StarOutline = (props: BaseProps) => {
   );
 };
 
-StarOutline.displayName = 'Icon.StarOutline';
+StarOutline.displayName = 'OldIcon.StarOutline';

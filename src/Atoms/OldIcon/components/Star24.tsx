@@ -22,4 +22,4 @@ export const Star24 = ({ stroke, ...props }: ChildProps) => {
   );
 };
 
-Star24.displayName = 'Icon.Star24';
+Star24.displayName = 'OldIcon.Star24';

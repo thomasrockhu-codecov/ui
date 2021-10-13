@@ -13,4 +13,4 @@ export const CrossMedium = (props: BaseProps) => {
   );
 };
 
-CrossMedium.displayName = 'Icon.CrossMedium';
+CrossMedium.displayName = 'OldIcon.CrossMedium';

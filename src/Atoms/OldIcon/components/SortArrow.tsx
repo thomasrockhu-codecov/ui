@@ -28,4 +28,4 @@ export const SortArrow = ({ direction = 'ascending', ...props }: BaseProps & Dir
   );
 };
 
-SortArrow.displayName = 'Icon.SortArrow';
+SortArrow.displayName = 'OldIcon.SortArrow';

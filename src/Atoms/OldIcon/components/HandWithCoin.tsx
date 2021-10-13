@@ -10,4 +10,4 @@ export const HandWithCoin = (props: BaseProps) => {
   );
 };
 
-HandWithCoin.displayName = 'Icon.HandWithCoin';
+HandWithCoin.displayName = 'OldIcon.HandWithCoin';

@@ -18,4 +18,4 @@ export const MoneyThin = (props: BaseProps) => {
   );
 };
 
-MoneyThin.displayName = 'Icon.MoneyThin';
+MoneyThin.displayName = 'OldIcon.MoneyThin';

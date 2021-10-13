@@ -13,4 +13,4 @@ export const Financial = (props: BaseProps) => {
   );
 };
 
-Financial.displayName = 'Icon.Financial';
+Financial.displayName = 'OldIcon.Financial';

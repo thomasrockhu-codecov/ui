@@ -10,4 +10,4 @@ export const Shapes = (props: BaseProps) => {
   );
 };
 
-Shapes.displayName = 'Icon.Shapes';
+Shapes.displayName = 'OldIcon.Shapes';

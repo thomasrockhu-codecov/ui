@@ -13,4 +13,4 @@ export const RealEstate = (props: BaseProps) => {
   );
 };
 
-RealEstate.displayName = 'Icon.RealEstate';
+RealEstate.displayName = 'OldIcon.RealEstate';

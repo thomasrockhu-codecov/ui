@@ -15,4 +15,4 @@ export const Profile = ({ fill, ...props }: BaseProps & { fill: ColorFn | string
   </IconBase>
 );
 
-Profile.displayName = 'Icon.Profile';
+Profile.displayName = 'OldIcon.Profile';

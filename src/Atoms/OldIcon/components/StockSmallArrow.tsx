@@ -10,4 +10,4 @@ export const StockSmallArrow = (props: BaseProps) => {
   );
 };
 
-StockSmallArrow.displayName = 'Icon.StockSmallArrow';
+StockSmallArrow.displayName = 'OldIcon.StockSmallArrow';

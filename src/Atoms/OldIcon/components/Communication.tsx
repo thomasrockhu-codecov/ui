@@ -14,4 +14,4 @@ export const Communication = (props: BaseProps) => {
   );
 };
 
-Communication.displayName = 'Icon.Communication';
+Communication.displayName = 'OldIcon.Communication';

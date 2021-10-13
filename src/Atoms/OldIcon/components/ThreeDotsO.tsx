@@ -15,4 +15,4 @@ export const ThreeDotsO = ({ fill, ...props }: BaseProps & { fill: ColorFn | str
   </IconBase>
 );
 
-ThreeDotsO.displayName = 'Icon.ThreeDotsO';
+ThreeDotsO.displayName = 'OldIcon.ThreeDotsO';

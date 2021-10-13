@@ -10,4 +10,4 @@ export const BellActive = (props: BaseProps) => {
   );
 };
 
-BellActive.displayName = 'Icon.BellActive';
+BellActive.displayName = 'OldIcon.BellActive';

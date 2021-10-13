@@ -87,4 +87,4 @@ export const SharevilleLogo = (
   );
 };
 
-SharevilleLogo.displayName = 'Icon.SharevilleLogo';
+SharevilleLogo.displayName = 'OldIcon.SharevilleLogo';

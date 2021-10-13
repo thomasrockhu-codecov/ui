@@ -22,4 +22,4 @@ export const SellingpointPhone = ({ fill, ...props }: ChildProps) => {
   );
 };
 
-SellingpointPhone.displayName = 'Icon.SellingpointPhone';
+SellingpointPhone.displayName = 'OldIcon.SellingpointPhone';

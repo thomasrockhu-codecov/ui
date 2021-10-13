@@ -10,4 +10,4 @@ export const Trash = (props: BaseProps) => {
   );
 };
 
-Trash.displayName = 'Icon.Trash';
+Trash.displayName = 'OldIcon.Trash';

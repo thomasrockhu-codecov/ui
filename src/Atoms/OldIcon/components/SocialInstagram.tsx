@@ -14,4 +14,4 @@ export const SocialInstagram = ({ color, ...rest }: BaseProps) => {
   );
 };
 
-SocialInstagram.displayName = 'Icon.SocialInstagram';
+SocialInstagram.displayName = 'OldIcon.SocialInstagram';

@@ -10,4 +10,4 @@ export const Maximize = (props: BaseProps) => {
   );
 };
 
-Maximize.displayName = 'Icon.Maximize';
+Maximize.displayName = 'OldIcon.Maximize';

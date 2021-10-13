@@ -13,4 +13,4 @@ export const Commodities = (props: BaseProps) => {
   );
 };
 
-Commodities.displayName = 'Icon.Commodities';
+Commodities.displayName = 'OldIcon.Commodities';

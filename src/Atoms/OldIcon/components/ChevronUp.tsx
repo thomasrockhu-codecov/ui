@@ -13,4 +13,4 @@ export const ChevronUp = (props: BaseProps) => {
   );
 };
 
-ChevronUp.displayName = 'Icon.ChevronUp';
+ChevronUp.displayName = 'OldIcon.ChevronUp';

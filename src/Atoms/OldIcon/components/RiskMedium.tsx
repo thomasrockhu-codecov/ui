@@ -10,4 +10,4 @@ export const RiskMedium = ({ ...props }: ChildProps) => {
   );
 };
 
-RiskMedium.displayName = 'Icon.RiskMedium';
+RiskMedium.displayName = 'OldIcon.RiskMedium';

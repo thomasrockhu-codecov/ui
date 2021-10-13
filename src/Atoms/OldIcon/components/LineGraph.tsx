@@ -13,4 +13,4 @@ export const LineGraph = (props: BaseProps) => {
   );
 };
 
-LineGraph.displayName = 'Icon.LineGraph';
+LineGraph.displayName = 'OldIcon.LineGraph';

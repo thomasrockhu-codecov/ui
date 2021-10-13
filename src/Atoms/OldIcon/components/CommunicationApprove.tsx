@@ -10,4 +10,4 @@ export const CommunicationApprove = (props: BaseProps) => {
   );
 };
 
-CommunicationApprove.displayName = 'Icon.CommunicationApprove';
+CommunicationApprove.displayName = 'OldIcon.CommunicationApprove';

@@ -10,4 +10,4 @@ export const BellPlain = (props: BaseProps) => {
   );
 };
 
-BellPlain.displayName = 'Icon.BellPlain';
+BellPlain.displayName = 'OldIcon.BellPlain';

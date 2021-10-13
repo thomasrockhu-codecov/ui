@@ -10,4 +10,4 @@ export const SellingpointTransfer = ({ ...props }: ChildProps) => {
   );
 };
 
-SellingpointTransfer.displayName = 'Icon.SellingpointTransfer';
+SellingpointTransfer.displayName = 'OldIcon.SellingpointTransfer';

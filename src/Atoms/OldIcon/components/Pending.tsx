@@ -15,4 +15,4 @@ export const Pending = (props: BaseProps) => {
   );
 };
 
-Pending.displayName = 'Icon.Pending';
+Pending.displayName = 'OldIcon.Pending';

@@ -13,4 +13,4 @@ export const BrowserWindow = (props: BaseProps) => {
   );
 };
 
-BrowserWindow.displayName = 'Icon.BrowserWindow';
+BrowserWindow.displayName = 'OldIcon.BrowserWindow';

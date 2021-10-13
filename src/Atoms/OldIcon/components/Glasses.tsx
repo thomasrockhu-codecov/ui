@@ -13,4 +13,4 @@ export const Glasses = (props: BaseProps) => {
   );
 };
 
-Glasses.displayName = 'Icon.Glasses';
+Glasses.displayName = 'OldIcon.Glasses';

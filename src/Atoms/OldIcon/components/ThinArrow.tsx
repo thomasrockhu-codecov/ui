@@ -26,4 +26,4 @@ export const ThinArrow = ({ direction = 'up', ...props }: BaseProps & Direction)
   );
 };
 
-ThinArrow.displayName = 'Icon.ThinArrow';
+ThinArrow.displayName = 'OldIcon.ThinArrow';

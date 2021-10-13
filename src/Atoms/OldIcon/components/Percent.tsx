@@ -16,4 +16,4 @@ export const Percent = ({ fill, ...props }: BaseProps & { fill: ColorFn | string
   </IconBase>
 );
 
-Percent.displayName = 'Icon.Percent';
+Percent.displayName = 'OldIcon.Percent';

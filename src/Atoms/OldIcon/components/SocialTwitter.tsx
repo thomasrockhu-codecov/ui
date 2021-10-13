@@ -12,4 +12,4 @@ export const SocialTwitter = ({ color, ...rest }: BaseProps) => {
   );
 };
 
-SocialTwitter.displayName = 'Icon.SocialTwitter';
+SocialTwitter.displayName = 'OldIcon.SocialTwitter';

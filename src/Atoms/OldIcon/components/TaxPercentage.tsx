@@ -16,4 +16,4 @@ export const TaxPercentage = ({ fill, ...props }: BaseProps & { fill: ColorFn | 
   </IconBase>
 );
 
-TaxPercentage.displayName = 'Icon.TaxPercentage';
+TaxPercentage.displayName = 'OldIcon.TaxPercentage';

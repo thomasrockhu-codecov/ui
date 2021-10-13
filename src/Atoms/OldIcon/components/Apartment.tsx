@@ -17,4 +17,4 @@ export const Apartment = ({ color, ...rest }: BaseProps) => {
   );
 };
 
-Apartment.displayName = 'Icon.Apartment';
+Apartment.displayName = 'OldIcon.Apartment';
