@@ -10,7 +10,7 @@ import FadedScroll from './Atoms/FadedScroll';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
-import NewIcon from './Atoms/Icon';
+import Icon from './Atoms/Icon';
 import Illustration from './Atoms/Illustration';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
@@ -117,8 +117,6 @@ export type {
   OnSort,
   SortOrder,
 };
-
-const Icon = { ...NewIcon, ...OldIcon };
 
 /** Runtime code */
 export {
