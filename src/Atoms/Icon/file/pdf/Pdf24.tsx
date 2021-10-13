@@ -2,7 +2,7 @@ import React from 'react';
 import { IconBase } from '../../IconBase';
 import { IconProps } from '../../IconBase.types';
 
-const Pdf16 = (props: IconProps) => (
+const Pdf24 = (props: IconProps) => (
   <IconBase {...props} width={24} height={24}>
     <path
       fillRule="evenodd"
@@ -19,4 +19,4 @@ const Pdf16 = (props: IconProps) => (
   </IconBase>
 );
 
-export default Pdf16;
+export default Pdf24;

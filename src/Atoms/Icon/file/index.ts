@@ -3,6 +3,7 @@ import document from './document';
 import factSheet from './factSheet';
 import image from './image';
 import pdf from './pdf';
+import print from './print';
 
 export default {
   ...attachment,
@@ -10,4 +11,5 @@ export default {
   ...factSheet,
   ...image,
   ...pdf,
+  ...print,
 };
