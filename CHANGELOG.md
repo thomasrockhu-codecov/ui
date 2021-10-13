@@ -1,3 +1,11 @@
+## [8.2.1](https://github.com/nordnet/ui/compare/v8.2.0...v8.2.1) (2021-10-13)
+
+
+### Bug Fixes
+
+* update padding on rating to reflect design ([d90cdf4](https://github.com/nordnet/ui/commit/d90cdf4))
+* update storyshot ([679f0ef](https://github.com/nordnet/ui/commit/679f0ef))
+
 # [8.2.0](https://github.com/nordnet/ui/compare/v8.1.0...v8.2.0) (2021-10-13)
 
 
