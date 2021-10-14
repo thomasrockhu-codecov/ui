@@ -186,11 +186,13 @@ const StyledTypography = styled(CleanSpan)<Props>`
   color: ${(p) => getColor(p)};
   margin: 0;
   ${(p) => (p.textAlign ? `text-align: ${p.textAlign};` : '')}
+  ${(p) => (p.whiteSpace ? `white-space: ${p.whiteSpace};` : '')}
   ${(p) => getTypeStyles(p)}
 `;
 
 export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const { as, className, id, type, color, lineHeight, weight, textAlign, children } = props;
+  const { as, className, id, type, color, lineHeight, weight, textAlign, whiteSpace, children } =
+    props;
 
   return (
     <StyledTypography
@@ -203,6 +205,7 @@ export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>(
       lineHeight={lineHeight}
       weight={weight}
       textAlign={textAlign}
+      whiteSpace={whiteSpace}
       {...pickAriaAttributes(props as Record<string, any>)}
     >
       {children}

@@ -10,4 +10,4 @@ export const Clicks = (props: BaseProps) => {
   );
 };
 
-Clicks.displayName = 'Icon.Clicks';
+Clicks.displayName = 'OldIcon.Clicks';

@@ -13,4 +13,4 @@ export const SellingpointGlobal = (props: BaseProps) => {
   );
 };
 
-SellingpointGlobal.displayName = 'Icon.SellingpointGlobal';
+SellingpointGlobal.displayName = 'OldIcon.SellingpointGlobal';

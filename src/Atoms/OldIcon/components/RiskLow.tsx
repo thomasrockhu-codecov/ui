@@ -10,4 +10,4 @@ export const RiskLow = ({ ...props }: ChildProps) => {
   );
 };
 
-RiskLow.displayName = 'Icon.RiskLow';
+RiskLow.displayName = 'OldIcon.RiskLow';

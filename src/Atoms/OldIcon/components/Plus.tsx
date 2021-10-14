@@ -10,4 +10,4 @@ export const Plus = (props: BaseProps) => {
   );
 };
 
-Plus.displayName = 'Icon.Plus';
+Plus.displayName = 'OldIcon.Plus';

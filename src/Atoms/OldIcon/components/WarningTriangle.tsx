@@ -19,4 +19,4 @@ export const WarningTriangle = ({ ...props }: ChildProps) => {
   );
 };
 
-WarningTriangle.displayName = 'Icon.WarningTriangle';
+WarningTriangle.displayName = 'OldIcon.WarningTriangle';

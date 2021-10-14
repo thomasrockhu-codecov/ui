@@ -26,4 +26,4 @@ export const ThinChevron = ({ direction = 'down', ...props }: BaseProps & Direct
   );
 };
 
-ThinChevron.displayName = 'Icon.ThinChevron';
+ThinChevron.displayName = 'OldIcon.ThinChevron';

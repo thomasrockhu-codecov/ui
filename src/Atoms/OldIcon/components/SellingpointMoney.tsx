@@ -27,4 +27,4 @@ export const SellingpointMoney = ({ color, ...props }: ChildProps) => {
   );
 };
 
-SellingpointMoney.displayName = 'Icon.SellingpointMoney';
+SellingpointMoney.displayName = 'OldIcon.SellingpointMoney';

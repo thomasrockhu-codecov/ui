@@ -12,4 +12,4 @@ export const SocialYouTube = ({ color, ...rest }: BaseProps) => {
   );
 };
 
-SocialYouTube.displayName = 'Icon.SocialYouTube';
+SocialYouTube.displayName = 'OldIcon.SocialYouTube';

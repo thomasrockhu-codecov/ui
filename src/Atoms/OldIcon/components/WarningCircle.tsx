@@ -21,4 +21,4 @@ export const WarningCircle = (props: ChildProps) => (
   </IconBase>
 );
 
-WarningCircle.displayName = 'Icon.WarningCircle';
+WarningCircle.displayName = 'OldIcon.WarningCircle';

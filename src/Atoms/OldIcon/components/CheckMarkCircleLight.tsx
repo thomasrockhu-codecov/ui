@@ -8,4 +8,4 @@ export const CheckMarkCircleLight = (props: BaseProps) => (
   </IconBase>
 );
 
-CheckMarkCircleLight.displayName = 'Icon.CheckMarkCircleLight';
+CheckMarkCircleLight.displayName = 'OldIcon.CheckMarkCircleLight';

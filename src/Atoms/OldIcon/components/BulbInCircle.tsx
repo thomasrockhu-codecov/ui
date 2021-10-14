@@ -26,4 +26,4 @@ export const BulbInCircle = (props: WithBackgroundColor) => {
   );
 };
 
-BulbInCircle.displayName = 'Icon.BulbInCircle';
+BulbInCircle.displayName = 'OldIcon.BulbInCircle';

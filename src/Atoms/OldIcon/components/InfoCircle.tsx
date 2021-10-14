@@ -23,4 +23,4 @@ export const InfoCircle = ({ stroke, ...props }: ChildProps) => {
   );
 };
 
-InfoCircle.displayName = 'Icon.InfoCircle';
+InfoCircle.displayName = 'OldIcon.InfoCircle';

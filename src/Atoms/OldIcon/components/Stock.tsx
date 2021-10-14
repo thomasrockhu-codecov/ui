@@ -15,4 +15,4 @@ export const Stock = (props: BaseProps) => {
   );
 };
 
-Stock.displayName = 'Icon.Stock';
+Stock.displayName = 'OldIcon.Stock';

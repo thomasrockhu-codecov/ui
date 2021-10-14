@@ -13,4 +13,4 @@ export const Attachment = (props: BaseProps) => {
   );
 };
 
-Attachment.displayName = 'Icon.Attachment';
+Attachment.displayName = 'OldIcon.Attachment';

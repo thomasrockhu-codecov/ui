@@ -28,4 +28,4 @@ export const SellingpointRate = ({ color, ...props }: ChildProps) => {
   );
 };
 
-SellingpointRate.displayName = 'Icon.SellingpointRate';
+SellingpointRate.displayName = 'OldIcon.SellingpointRate';

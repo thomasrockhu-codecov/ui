@@ -13,4 +13,4 @@ export const TrendlineArrowhead = (props: BaseProps) => {
   );
 };
 
-TrendlineArrowhead.displayName = 'Icon.TrendlineArrowhead';
+TrendlineArrowhead.displayName = 'OldIcon.TrendlineArrowhead';

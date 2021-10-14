@@ -13,4 +13,4 @@ export const Other = (props: BaseProps) => {
   );
 };
 
-Other.displayName = 'Icon.Other';
+Other.displayName = 'OldIcon.Other';

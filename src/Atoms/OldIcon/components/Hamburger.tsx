@@ -10,4 +10,4 @@ export const Hamburger = (props: BaseProps) => {
   );
 };
 
-Hamburger.displayName = 'Icon.Hamburger';
+Hamburger.displayName = 'OldIcon.Hamburger';

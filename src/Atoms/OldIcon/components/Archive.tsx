@@ -13,4 +13,4 @@ export const Archive = (props: BaseProps) => {
   );
 };
 
-Archive.displayName = 'Icon.Archive';
+Archive.displayName = 'OldIcon.Archive';

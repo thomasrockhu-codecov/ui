@@ -12,4 +12,4 @@ export const SocialFacebook = ({ color, ...rest }: BaseProps) => {
   );
 };
 
-SocialFacebook.displayName = 'Icon.SocialFacebook';
+SocialFacebook.displayName = 'OldIcon.SocialFacebook';

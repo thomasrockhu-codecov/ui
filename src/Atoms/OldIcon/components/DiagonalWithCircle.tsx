@@ -10,4 +10,4 @@ export const DiagonalWithCircle = (props: BaseProps) => {
   );
 };
 
-DiagonalWithCircle.displayName = 'Icon.DiagonalWithCircle';
+DiagonalWithCircle.displayName = 'OldIcon.DiagonalWithCircle';

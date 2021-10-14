@@ -10,4 +10,4 @@ export const Compass = (props: BaseProps) => {
   );
 };
 
-Compass.displayName = 'Icon.Compass';
+Compass.displayName = 'OldIcon.Compass';

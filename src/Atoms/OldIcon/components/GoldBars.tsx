@@ -16,4 +16,4 @@ export const GoldBars = (props: BaseProps) => {
   );
 };
 
-GoldBars.displayName = 'Icon.GoldBars';
+GoldBars.displayName = 'OldIcon.GoldBars';

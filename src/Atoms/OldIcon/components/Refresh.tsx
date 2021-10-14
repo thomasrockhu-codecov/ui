@@ -19,4 +19,4 @@ export const Refresh = ({ stroke, ...rest }: ChildProps) => {
   );
 };
 
-Refresh.displayName = 'Icon.Refresh';
+Refresh.displayName = 'OldIcon.Refresh';

@@ -11,4 +11,4 @@ export const Account = (props: BaseProps) => (
   </IconBase>
 );
 
-Account.displayName = 'Icon.Account';
+Account.displayName = 'OldIcon.Account';

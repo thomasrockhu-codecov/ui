@@ -10,4 +10,4 @@ export const Bolt = (props: BaseProps) => {
   );
 };
 
-Bolt.displayName = 'Icon.Bolt';
+Bolt.displayName = 'OldIcon.Bolt';

@@ -14,4 +14,4 @@ export const MoveBig = (props: BaseProps) => {
   );
 };
 
-MoveBig.displayName = 'Icon.MoveBig';
+MoveBig.displayName = 'OldIcon.MoveBig';

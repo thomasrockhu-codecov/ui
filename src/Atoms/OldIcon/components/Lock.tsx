@@ -19,4 +19,4 @@ export const Lock = ({ ...props }: ChildProps) => {
   );
 };
 
-Lock.displayName = 'Icon.Lock';
+Lock.displayName = 'OldIcon.Lock';

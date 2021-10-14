@@ -18,4 +18,4 @@ export const CrossThin = ({ stroke, ...props }: ChildProps) => {
   );
 };
 
-CrossThin.displayName = 'Icon.CrossThin';
+CrossThin.displayName = 'OldIcon.CrossThin';

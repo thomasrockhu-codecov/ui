@@ -13,4 +13,4 @@ export const Healthcare = (props: BaseProps) => {
   );
 };
 
-Healthcare.displayName = 'Icon.Healthcare';
+Healthcare.displayName = 'OldIcon.Healthcare';

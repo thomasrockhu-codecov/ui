@@ -27,4 +27,4 @@ export const Csv = ({ stroke, ...props }: ChildProps) => {
   );
 };
 
-Csv.displayName = 'Icon.Csv';
+Csv.displayName = 'OldIcon.Csv';

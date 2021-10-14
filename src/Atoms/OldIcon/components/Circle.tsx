@@ -10,4 +10,4 @@ export const SolidCircle = (props: BaseProps) => {
   );
 };
 
-SolidCircle.displayName = 'Icon.SolidCircle';
+SolidCircle.displayName = 'OldIcon.SolidCircle';

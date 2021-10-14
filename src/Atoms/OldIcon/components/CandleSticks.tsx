@@ -13,4 +13,4 @@ export const CandleSticks = (props: BaseProps) => {
   );
 };
 
-CandleSticks.displayName = 'Icon.CandleSticks';
+CandleSticks.displayName = 'OldIcon.CandleSticks';

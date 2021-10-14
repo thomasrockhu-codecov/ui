@@ -26,4 +26,4 @@ export const SellingpointShareville = ({ color, ...props }: ChildProps) => {
   );
 };
 
-SellingpointShareville.displayName = 'Icon.SellingpointShareville';
+SellingpointShareville.displayName = 'OldIcon.SellingpointShareville';

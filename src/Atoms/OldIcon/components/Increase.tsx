@@ -15,4 +15,4 @@ export const Increase = (props: BaseProps) => {
   );
 };
 
-Increase.displayName = 'Icon.Increase';
+Increase.displayName = 'OldIcon.Increase';

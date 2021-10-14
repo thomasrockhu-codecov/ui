@@ -10,4 +10,4 @@ export const CheckMark = (props: BaseProps) => {
   );
 };
 
-CheckMark.displayName = 'Icon.CheckMark';
+CheckMark.displayName = 'OldIcon.CheckMark';

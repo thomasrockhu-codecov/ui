@@ -13,4 +13,4 @@ export const ExternalLink = (props: BaseProps) => {
   );
 };
 
-ExternalLink.displayName = 'Icon.ExternalLink';
+ExternalLink.displayName = 'OldIcon.ExternalLink';

@@ -10,4 +10,4 @@ export const FAQ = (props: BaseProps) => {
   );
 };
 
-FAQ.displayName = 'Icon.FAQ';
+FAQ.displayName = 'OldIcon.FAQ';

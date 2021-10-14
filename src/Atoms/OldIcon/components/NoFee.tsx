@@ -10,4 +10,4 @@ export const NoFee = (props: BaseProps) => {
   );
 };
 
-NoFee.displayName = 'Icon.NoFee';
+NoFee.displayName = 'OldIcon.NoFee';
