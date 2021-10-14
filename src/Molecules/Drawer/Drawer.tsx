@@ -123,12 +123,13 @@ const components = {
 };
 
 const Title: React.FC<TitleProps> = ({ title, uid }) => {
+  const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
   return (
     <span id={uid}>
       {isElement(title) ? (
         title
       ) : (
-        <Typography as={H2} type="title2">
+        <Typography as={H2} type={isDesktop ? 'title3' : 'title1'}>
           {title}
         </Typography>
       )}
