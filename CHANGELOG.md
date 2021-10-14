@@ -1,3 +1,16 @@
+# [9.0.0](https://github.com/nordnet/ui/compare/v8.3.0...v9.0.0) (2021-10-14)
+
+
+### Bug Fixes
+
+* remove double export ([5884c79](https://github.com/nordnet/ui/commit/5884c79))
+* rename oldicon displaynames ([20a1fb8](https://github.com/nordnet/ui/commit/20a1fb8))
+
+
+### BREAKING CHANGES
+
+* no longer export OldIcon as Icon. From now you have to specifically use OldIcon for the old ones.
+
 # [8.3.0](https://github.com/nordnet/ui/compare/v8.2.1...v8.3.0) (2021-10-13)
 
 
