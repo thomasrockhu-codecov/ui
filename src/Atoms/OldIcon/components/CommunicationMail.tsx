@@ -10,4 +10,4 @@ export const CommunicationMail = (props: BaseProps) => {
   );
 };
 
-CommunicationMail.displayName = 'Icon.CommunicationMail';
+CommunicationMail.displayName = 'OldIcon.CommunicationMail';

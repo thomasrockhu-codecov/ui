@@ -13,4 +13,4 @@ export const Import = (props: BaseProps) => {
   );
 };
 
-Import.displayName = 'Icon.Import';
+Import.displayName = 'OldIcon.Import';

@@ -10,4 +10,4 @@ export const ChevronDown = (props: BaseProps) => {
   );
 };
 
-ChevronDown.displayName = 'Icon.ChevronDown';
+ChevronDown.displayName = 'OldIcon.ChevronDown';

@@ -12,4 +12,4 @@ export const Transfer = ({ fill, ...props }: BaseProps & { fill: ColorFn | strin
   </IconBase>
 );
 
-Transfer.displayName = 'Icon.Transfer';
+Transfer.displayName = 'OldIcon.Transfer';

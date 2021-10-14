@@ -13,4 +13,4 @@ export const Energy = (props: BaseProps) => {
   );
 };
 
-Energy.displayName = 'Icon.Energy';
+Energy.displayName = 'OldIcon.Energy';

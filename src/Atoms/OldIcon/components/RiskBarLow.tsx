@@ -14,4 +14,4 @@ export const RiskBarLow = (props: BaseProps) => {
   );
 };
 
-RiskBarLow.displayName = 'Icon.RiskBarLow';
+RiskBarLow.displayName = 'OldIcon.RiskBarLow';

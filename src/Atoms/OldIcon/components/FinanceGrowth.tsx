@@ -13,4 +13,4 @@ export const FinanceGrowth = ({ ...props }: ChildProps) => {
   );
 };
 
-FinanceGrowth.displayName = 'Icon.FinanceGrowth';
+FinanceGrowth.displayName = 'OldIcon.FinanceGrowth';

@@ -12,4 +12,4 @@ export const Globe = (props: BaseProps) => {
   );
 };
 
-Globe.displayName = 'Icon.Globe';
+Globe.displayName = 'OldIcon.Globe';

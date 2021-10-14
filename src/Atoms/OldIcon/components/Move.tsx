@@ -15,4 +15,4 @@ export const Move = (props: BaseProps) => {
   );
 };
 
-Move.displayName = 'Icon.Move';
+Move.displayName = 'OldIcon.Move';

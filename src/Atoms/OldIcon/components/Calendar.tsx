@@ -10,4 +10,4 @@ export const Calendar = (props: BaseProps) => {
   );
 };
 
-Calendar.displayName = 'Icon.Calendar';
+Calendar.displayName = 'OldIcon.Calendar';

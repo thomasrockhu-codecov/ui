@@ -10,4 +10,4 @@ export const Money = (props: BaseProps) => {
   );
 };
 
-Money.displayName = 'Icon.Money';
+Money.displayName = 'OldIcon.Money';

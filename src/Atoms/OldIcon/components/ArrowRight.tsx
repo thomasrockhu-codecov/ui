@@ -10,4 +10,4 @@ export const ArrowRight = (props: BaseProps) => {
   );
 };
 
-ArrowRight.displayName = 'Icon.ArrowRight';
+ArrowRight.displayName = 'OldIcon.ArrowRight';

@@ -13,4 +13,4 @@ export const HeartFilled = (props: BaseProps) => {
   );
 };
 
-HeartFilled.displayName = 'Icon.HeartFilled';
+HeartFilled.displayName = 'OldIcon.HeartFilled';

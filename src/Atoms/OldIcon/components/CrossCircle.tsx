@@ -34,4 +34,4 @@ export const CrossCircle = ({ fill, stroke, ...props }: ChildProps) => {
   );
 };
 
-CrossCircle.displayName = 'Icon.CrossCircle';
+CrossCircle.displayName = 'OldIcon.CrossCircle';

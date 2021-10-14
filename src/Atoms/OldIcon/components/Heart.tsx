@@ -10,4 +10,4 @@ export const Heart = (props: BaseProps) => {
   );
 };
 
-Heart.displayName = 'Icon.Heart';
+Heart.displayName = 'OldIcon.Heart';

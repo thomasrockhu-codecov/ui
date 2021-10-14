@@ -10,4 +10,4 @@ export const AddWithCircle = (props: BaseProps) => {
   );
 };
 
-AddWithCircle.displayName = 'Icon.AddWithCircle';
+AddWithCircle.displayName = 'OldIcon.AddWithCircle';

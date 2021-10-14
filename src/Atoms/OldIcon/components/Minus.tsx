@@ -10,4 +10,4 @@ export const Minus = (props: BaseProps) => {
   );
 };
 
-Minus.displayName = 'Icon.Minus';
+Minus.displayName = 'OldIcon.Minus';

@@ -32,4 +32,4 @@ export const Tax = (props: BaseProps) => {
   );
 };
 
-Tax.displayName = 'Icon.Tax';
+Tax.displayName = 'OldIcon.Tax';

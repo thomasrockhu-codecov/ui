@@ -13,4 +13,4 @@ export const Filter = (props: BaseProps) => {
   );
 };
 
-Filter.displayName = 'Icon.Filter';
+Filter.displayName = 'OldIcon.Filter';

@@ -13,4 +13,4 @@ export const PlusWithCircle = (props: BaseProps) => {
   );
 };
 
-PlusWithCircle.displayName = 'Icon.PlusWithCircle';
+PlusWithCircle.displayName = 'OldIcon.PlusWithCircle';

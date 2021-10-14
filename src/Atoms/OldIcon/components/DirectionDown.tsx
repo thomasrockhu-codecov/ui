@@ -10,4 +10,4 @@ export const DirectionDown = (props: BaseProps) => {
   );
 };
 
-DirectionDown.displayName = 'Icon.DirectionDown';
+DirectionDown.displayName = 'OldIcon.DirectionDown';

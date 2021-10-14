@@ -13,4 +13,4 @@ export const Pen = (props: BaseProps) => {
   );
 };
 
-Pen.displayName = 'Icon.Pen';
+Pen.displayName = 'OldIcon.Pen';

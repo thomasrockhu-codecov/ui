@@ -26,4 +26,4 @@ export const Questionmark = React.forwardRef<SVGSVGElement, ChildProps>(
   },
 );
 
-Questionmark.displayName = 'Icon.Questionmark';
+Questionmark.displayName = 'OldIcon.Questionmark';

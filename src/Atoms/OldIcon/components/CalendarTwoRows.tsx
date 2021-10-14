@@ -10,4 +10,4 @@ export const CalendarTwoRows = (props: BaseProps) => {
   );
 };
 
-CalendarTwoRows.displayName = 'Icon.CalendarTwoRows';
+CalendarTwoRows.displayName = 'OldIcon.CalendarTwoRows';

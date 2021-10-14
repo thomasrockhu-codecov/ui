@@ -13,4 +13,4 @@ export const WarningTriangleHollow = (props: BaseProps) => (
   </IconBase>
 );
 
-WarningTriangleHollow.displayName = 'Icon.WarningTriangleHollow';
+WarningTriangleHollow.displayName = 'OldIcon.WarningTriangleHollow';

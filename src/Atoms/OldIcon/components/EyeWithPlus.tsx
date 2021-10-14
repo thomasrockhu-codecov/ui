@@ -13,4 +13,4 @@ export const EyeWithPlus = (props: BaseProps) => {
   );
 };
 
-EyeWithPlus.displayName = 'Icon.EyeWithPlus';
+EyeWithPlus.displayName = 'OldIcon.EyeWithPlus';

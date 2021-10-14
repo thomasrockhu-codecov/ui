@@ -13,4 +13,4 @@ export const EyeWithPlusActive = (props: BaseProps) => {
   );
 };
 
-EyeWithPlusActive.displayName = 'Icon.EyeWithPlusActive';
+EyeWithPlusActive.displayName = 'OldIcon.EyeWithPlusActive';

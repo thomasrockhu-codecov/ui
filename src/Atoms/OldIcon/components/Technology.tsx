@@ -13,4 +13,4 @@ export const Technology = (props: BaseProps) => {
   );
 };
 
-Technology.displayName = 'Icon.Technology';
+Technology.displayName = 'OldIcon.Technology';

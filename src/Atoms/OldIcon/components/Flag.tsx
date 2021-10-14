@@ -19,4 +19,4 @@ export const Flag = (props: BaseProps) => {
   );
 };
 
-Flag.displayName = 'Icon.Flag';
+Flag.displayName = 'OldIcon.Flag';

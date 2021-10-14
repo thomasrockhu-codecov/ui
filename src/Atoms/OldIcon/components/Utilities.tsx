@@ -13,4 +13,4 @@ export const Utilities = (props: BaseProps) => {
   );
 };
 
-Utilities.displayName = 'Icon.Utilities';
+Utilities.displayName = 'OldIcon.Utilities';

@@ -26,4 +26,4 @@ export const Chevron = ({ direction = 'down', ...props }: BaseProps & Direction)
   );
 };
 
-Chevron.displayName = 'Icon.Chevron';
+Chevron.displayName = 'OldIcon.Chevron';

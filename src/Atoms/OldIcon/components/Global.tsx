@@ -22,4 +22,4 @@ export const Global = ({ ...props }: ChildProps) => {
   );
 };
 
-Global.displayName = 'Icon.Global';
+Global.displayName = 'OldIcon.Global';

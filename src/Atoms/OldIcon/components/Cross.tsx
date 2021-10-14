@@ -10,4 +10,4 @@ export const Cross = (props: BaseProps) => {
   );
 };
 
-Cross.displayName = 'Icon.Cross';
+Cross.displayName = 'OldIcon.Cross';

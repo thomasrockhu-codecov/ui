@@ -10,4 +10,4 @@ export const BankDeposit = (props: BaseProps) => {
   );
 };
 
-BankDeposit.displayName = 'Icon.BankDeposit';
+BankDeposit.displayName = 'OldIcon.BankDeposit';

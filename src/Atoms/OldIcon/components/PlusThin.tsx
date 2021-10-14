@@ -14,4 +14,4 @@ export const PlusThin = (props: BaseProps) => {
   );
 };
 
-PlusThin.displayName = 'Icon.PlusThin';
+PlusThin.displayName = 'OldIcon.PlusThin';

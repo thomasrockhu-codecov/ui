@@ -13,4 +13,4 @@ export const StarAboveBars = (props: BaseProps) => {
   );
 };
 
-StarAboveBars.displayName = 'Icon.StarAboveBars';
+StarAboveBars.displayName = 'OldIcon.StarAboveBars';

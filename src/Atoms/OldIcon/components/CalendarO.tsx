@@ -16,4 +16,4 @@ export const CalendarO = ({ fill, ...props }: BaseProps & { fill: ColorFn | stri
   </IconBase>
 );
 
-CalendarO.displayName = 'Icon.CalendarO';
+CalendarO.displayName = 'OldIcon.CalendarO';

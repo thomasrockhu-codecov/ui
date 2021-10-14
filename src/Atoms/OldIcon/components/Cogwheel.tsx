@@ -12,4 +12,4 @@ export const Cogwheel = (props: BaseProps) => {
   );
 };
 
-Cogwheel.displayName = 'Icon.Cogwheel';
+Cogwheel.displayName = 'OldIcon.Cogwheel';

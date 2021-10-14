@@ -27,4 +27,4 @@ export const CheckMarkCircle = ({ fill, stroke, ...props }: ChildProps) => {
   );
 };
 
-CheckMarkCircle.displayName = 'Icon.CheckMarkCircle';
+CheckMarkCircle.displayName = 'OldIcon.CheckMarkCircle';

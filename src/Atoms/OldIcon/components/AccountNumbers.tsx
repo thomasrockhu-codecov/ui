@@ -14,4 +14,4 @@ export const AccountNumbers = (props: BaseProps) => {
   );
 };
 
-AccountNumbers.displayName = 'Icon.AccountNumbers';
+AccountNumbers.displayName = 'OldIcon.AccountNumbers';

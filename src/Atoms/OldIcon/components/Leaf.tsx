@@ -10,4 +10,4 @@ export const Leaf = (props: BaseProps) => {
   );
 };
 
-Leaf.displayName = 'Icon.Leaf';
+Leaf.displayName = 'OldIcon.Leaf';

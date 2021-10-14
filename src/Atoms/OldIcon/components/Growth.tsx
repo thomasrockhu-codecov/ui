@@ -10,4 +10,4 @@ export const Growth = (props: BaseProps) => {
   );
 };
 
-Growth.displayName = 'Icon.Growth';
+Growth.displayName = 'OldIcon.Growth';

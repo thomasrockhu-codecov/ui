@@ -13,4 +13,4 @@ export const Printer = (props: BaseProps) => {
   );
 };
 
-Printer.displayName = 'Icon.Printer';
+Printer.displayName = 'OldIcon.Printer';

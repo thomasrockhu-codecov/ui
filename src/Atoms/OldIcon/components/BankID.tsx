@@ -21,4 +21,4 @@ export const BankID = (props: BaseProps) => (
   </IconBase>
 );
 
-BankID.displayName = 'Icon.BankID';
+BankID.displayName = 'OldIcon.BankID';

@@ -10,4 +10,4 @@ export const Raising = (props: BaseProps) => {
   );
 };
 
-Raising.displayName = 'Icon.Raising';
+Raising.displayName = 'OldIcon.Raising';

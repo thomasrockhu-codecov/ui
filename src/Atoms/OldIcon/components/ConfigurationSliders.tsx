@@ -10,4 +10,4 @@ export const ConfigurationSliders = (props: BaseProps) => {
   );
 };
 
-ConfigurationSliders.displayName = 'Icon.ConfigurationSliders';
+ConfigurationSliders.displayName = 'OldIcon.ConfigurationSliders';

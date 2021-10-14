@@ -13,4 +13,4 @@ export const ConsumerCyclic = (props: BaseProps) => {
   );
 };
 
-ConsumerCyclic.displayName = 'Icon.ConsumerCyclic';
+ConsumerCyclic.displayName = 'OldIcon.ConsumerCyclic';

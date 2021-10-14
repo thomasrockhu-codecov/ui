@@ -13,4 +13,4 @@ export const Industrial = (props: BaseProps) => {
   );
 };
 
-Industrial.displayName = 'Icon.Industrial';
+Industrial.displayName = 'OldIcon.Industrial';
