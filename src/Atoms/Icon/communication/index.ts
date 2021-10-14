@@ -1,4 +1,5 @@
 import article from './article';
+import attention from './attention';
 import blocked from './blocked';
 import clock from './clock';
 import clockFill from './clockFill';
@@ -38,6 +39,7 @@ import youtube from './youtube';
 
 export default {
   ...article,
+  ...attention,
   ...blocked,
   ...clock,
   ...clockFill,

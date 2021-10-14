@@ -15,6 +15,7 @@ import chevronDown from './chevronDown';
 import chevronLeft from './chevronLeft';
 import chevronRight from './chevronRight';
 import chevronUp from './chevronUp';
+import copy from './copy';
 import cross from './cross';
 import crossCircle from './crossCircle';
 import crossCircleFill from './crossCircleFill';
@@ -71,6 +72,7 @@ export default {
   ...chevronLeft,
   ...chevronRight,
   ...chevronUp,
+  ...copy,
   ...cross,
   ...crossCircle,
   ...crossCircleFill,
