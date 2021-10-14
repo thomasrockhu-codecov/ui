@@ -1,3 +1,11 @@
+## [9.0.1](https://github.com/nordnet/ui/compare/v9.0.0...v9.0.1) (2021-10-14)
+
+
+### Bug Fixes
+
+* **molecules/drawer:** responsive drawer title font-size ([16b306c](https://github.com/nordnet/ui/commit/16b306c))
+* **Molecules/Drawer:** remove unnessary defaulting of result from hook ([38b3837](https://github.com/nordnet/ui/commit/38b3837))
+
 # [9.0.0](https://github.com/nordnet/ui/compare/v8.3.0...v9.0.0) (2021-10-14)
 
 
