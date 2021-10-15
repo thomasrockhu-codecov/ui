@@ -1,3 +1,15 @@
+# [9.1.0](https://github.com/nordnet/ui/compare/v9.0.1...v9.1.0) (2021-10-15)
+
+
+### Bug Fixes
+
+* add missing graph icons ([f7bbf21](https://github.com/nordnet/ui/commit/f7bbf21))
+
+
+### Features
+
+* add more missing icons ([7290cce](https://github.com/nordnet/ui/commit/7290cce))
+
 ## [9.0.1](https://github.com/nordnet/ui/compare/v9.0.0...v9.0.1) (2021-10-14)
 
 
