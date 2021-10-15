@@ -7,12 +7,10 @@ const Orders32: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={32} height={32}>
       <path
-        d="M6 3C4.34315 3 3 4.34315 3 6V29H5V6C5 5.44772 5.44772 5 6 5H26C26.5523 5 27 5.44772 27 6V29H29V6C29 4.34315 27.6569 3 26 3H6Z"
+        d="M6 3a3 3 0 0 0-3 3v23h2V6a1 1 0 0 1 1-1h20a1 1 0 0 1 1 1v23h2V6a3 3 0 0 0-3-3H6Z"
         fill="currentColor"
       />
-      <path d="M8 11H24V9H8V11Z" fill="currentColor" />
-      <path d="M24 17H8V15H24V17Z" fill="currentColor" />
-      <path d="M8 23H16V21H8V23Z" fill="currentColor" />
+      <path d="M8 11h16V9H8v2Zm16 6H8v-2h16v2ZM8 23h8v-2H8v2Z" fill="currentColor" />
     </IconBase>
   );
 };

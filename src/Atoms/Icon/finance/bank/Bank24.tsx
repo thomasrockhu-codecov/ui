@@ -7,16 +7,16 @@ const Bank24: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={24} height={24}>
       <path
-        d="M12 .936L23.342 5.06l-.684 1.88L12 3.064 1.342 6.94.658 5.06 12 .936z"
+        d="M11.9999 0.935944L23.3417 5.06021L22.6582 6.9398L11.9999 3.06407L1.34169 6.9398L0.658203 5.06021L11.9999 0.935944Z"
         fill="currentColor"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M4 10h2v10h2v-3h8v3h2V10h2v10h2V8h-7.17a3.001 3.001 0 00-5.66 0H2v12h2V10zm5.17 0H8v5h8v-5h-1.17a3.001 3.001 0 01-5.66 0zM11 9a1 1 0 112 0 1 1 0 01-2 0z"
+        d="M4 10H6V20H8V17H16V20H18V10H20V20H22V8H14.8293C14.4175 6.83481 13.3062 6 12 6C10.6938 6 9.58254 6.83481 9.17071 8H2V20H4V10ZM9.17071 10H8V15H16V10H14.8293C14.4175 11.1652 13.3062 12 12 12C10.6938 12 9.58254 11.1652 9.17071 10ZM11 9C11 8.44772 11.4477 8 12 8C12.5523 8 13 8.44772 13 9C13 9.55228 12.5523 10 12 10C11.4477 10 11 9.55228 11 9Z"
         fill="currentColor"
       />
-      <path d="M1 21v2h22v-2H1z" fill="currentColor" />
+      <path d="M1 21V23H23V21H1Z" fill="currentColor" />
     </IconBase>
   );
 };

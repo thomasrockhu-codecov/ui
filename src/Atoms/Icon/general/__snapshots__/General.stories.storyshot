@@ -107,6 +107,38 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
       <span
         className="c4"
       >
+        Glossary16
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={16}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={16}
+    >
+      <path
+        clipRule="evenodd"
+        d="M14.003 0V16H2.69271C1.20381 16 0 14.7878 0 13.2955V2.23077C0 1.02832 0.986267 0.0818202 2.19527 0.00503308L2.35417 0H14.003ZM12.003 12.59L2.69271 12.5909C2.34327 12.5909 2.0524 12.8545 2.00635 13.1995L2 13.2955C2 13.6863 2.31151 14 2.69271 14L12.003 13.999V12.59ZM12.003 1.99945L9.003 1.999L9.00362 8.72446L6.21 7.15845L3.00362 8.53534L3.003 2H2.35417C2.16895 2 2.04104 2.09221 2.00828 2.18484L2 2.23077L1.99996 10.6812C2.22094 10.6223 2.45314 10.5909 2.69271 10.5909L12.003 10.5906V1.99945ZM7.003 2H5.003V5.49945L6.32698 4.93111L7.003 5.30945V2Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        1
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
         Lock16
       </span>
     </div>
@@ -130,7 +162,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        1
+        2
       </title>
     </svg>
   </div>
@@ -162,7 +194,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        2
+        3
       </title>
     </svg>
   </div>
@@ -200,7 +232,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        3
+        4
       </title>
     </svg>
   </div>
@@ -232,7 +264,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        4
+        5
       </title>
     </svg>
   </div>
@@ -264,7 +296,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        5
+        6
       </title>
     </svg>
   </div>
@@ -294,7 +326,7 @@ exports[`Storyshots Atoms / Icon / Category / General 16px 1`] = `
         fill="currentColor"
       />
       <title>
-        6
+        7
       </title>
     </svg>
   </div>
@@ -801,6 +833,70 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
       <span
         className="c4"
       >
+        Heart32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M16.0002 6.79448C14.7269 4.52716 12.2677 3 9.46154 3C5.36018 3 2 6.26227 2 10.3297C2 12.4545 2.97871 13.7742 4.13103 15.328C4.2154 15.4417 4.30106 15.5572 4.38696 15.6739C4.63199 16.0067 5.45647 16.9409 6.48828 18.0886C7.54348 19.2623 8.8708 20.7194 10.1704 22.1394C11.4704 23.5597 12.7442 24.9445 13.6929 25.9742C13.9444 26.2472 14.1731 26.4952 14.3734 26.7124L14.3602 26.71C14.3602 26.71 14.913 27.3267 15.2786 27.7046C15.5565 27.9918 16.0002 28.42 16.0002 28.42L16.0002 28.4114C16.0389 28.3741 16.455 27.9732 16.7201 27.7C17.0864 27.3228 17.6402 26.7071 17.6402 26.7071L17.6303 26.7089C17.9003 26.4161 18.2217 26.0675 18.5809 25.6774C20.0437 24.0892 22.1351 21.8128 23.9369 19.8301C25.7091 17.88 27.2714 16.1385 27.6135 15.6739C27.6994 15.5573 27.7847 15.4423 27.869 15.3285C29.0213 13.7747 30.0005 12.4545 30.0005 10.3297C30.0005 6.26227 26.6403 3 22.5389 3C19.7328 3 17.2736 4.52716 16.0002 6.79448ZM14.9231 10.3297C14.9231 7.40551 12.4974 5 9.46154 5C6.42568 5 4 7.40551 4 10.3297C4 11.7784 4.59449 12.5849 5.84878 14.2863L5.99749 14.4881C6.16845 14.7203 6.90292 15.5584 7.97557 16.7514C9.02482 17.9185 10.3474 19.3705 11.6458 20.7891C12.9437 22.2072 14.2159 23.5903 15.1637 24.6189C15.4833 24.9658 15.7659 25.2723 16.0002 25.5262C16.2992 25.2021 16.677 24.7924 17.1098 24.3226C18.5717 22.7352 20.6595 20.4627 22.4568 18.485C24.2837 16.4748 25.7404 14.8446 26.003 14.4881L26.1517 14.2863C27.406 12.5849 28.0005 11.7784 28.0005 10.3297C28.0005 7.40551 25.5748 5 22.5389 5C19.503 5 17.0774 7.40551 17.0774 10.3297H14.9231Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        3
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
+        HeartFill32
+      </span>
+    </div>
+    <svg
+      aria-hidden="false"
+      className="c5"
+      focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M9.46154 3C12.2677 3 14.7269 4.52716 16.0002 6.79448C17.2736 4.52716 19.7328 3 22.5389 3C26.6403 3 30.0005 6.26227 30.0005 10.3297C30.0005 12.4545 29.0213 13.7747 27.869 15.3285C27.7847 15.4423 27.6994 15.5573 27.6135 15.6739C27.2714 16.1385 25.7091 17.88 23.9369 19.8301C22.1351 21.8128 20.0437 24.0892 18.5809 25.6774C18.2217 26.0675 17.9003 26.4161 17.6303 26.7089L17.6402 26.7071C17.6402 26.7071 17.0864 27.3228 16.7201 27.7C16.455 27.9732 16.0389 28.3741 16.0002 28.4114L16.0002 28.42C16.0002 28.42 15.5565 27.9918 15.2786 27.7046C14.913 27.3267 14.3602 26.71 14.3602 26.71L14.3734 26.7124C14.1731 26.4952 13.9444 26.2472 13.6929 25.9742C12.7442 24.9445 11.4704 23.5597 10.1704 22.1394C8.8708 20.7194 7.54348 19.2623 6.48828 18.0886C5.45647 16.9409 4.63199 16.0067 4.38696 15.6739C4.30157 15.5579 4.21641 15.4431 4.13254 15.33L4.13103 15.328C2.97871 13.7742 2 12.4545 2 10.3297C2 6.26227 5.36018 3 9.46154 3Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <title>
+        4
+      </title>
+    </svg>
+  </div>
+  <div
+    className="c1 c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+      >
         Lock32
       </span>
     </div>
@@ -820,7 +916,7 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        3
+        5
       </title>
     </svg>
   </div>
@@ -856,7 +952,7 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
         fill="currentColor"
       />
       <title>
-        4
+        6
       </title>
     </svg>
   </div>
@@ -888,7 +984,7 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        5
+        7
       </title>
     </svg>
   </div>
@@ -920,7 +1016,7 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
         fillRule="evenodd"
       />
       <title>
-        6
+        8
       </title>
     </svg>
   </div>
@@ -950,7 +1046,7 @@ exports[`Storyshots Atoms / Icon / Category / General 32px 1`] = `
         fill="currentColor"
       />
       <title>
-        7
+        9
       </title>
     </svg>
   </div>
