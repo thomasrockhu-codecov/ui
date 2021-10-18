@@ -1,3 +1,10 @@
+## [9.1.2](https://github.com/nordnet/ui/compare/v9.1.1...v9.1.2) (2021-10-18)
+
+
+### Bug Fixes
+
+* add snowflake star icon size 12 ([d45061a](https://github.com/nordnet/ui/commit/d45061a))
+
 ## [9.1.1](https://github.com/nordnet/ui/compare/v9.1.0...v9.1.1) (2021-10-18)
 
 
