@@ -29,7 +29,8 @@ const EllipsizingText = styled.span`
   white-space: nowrap;
   overflow: hidden;
   line-height: 0.7;
-  padding: 5px 0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px;
   margin: -5px 0;
 `;
 
