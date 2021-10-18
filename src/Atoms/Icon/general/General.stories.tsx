@@ -31,6 +31,12 @@ size8.story = {
   name: '8px',
 };
 
+export const size12 = () => <>{SizeIcons('12')}</>;
+
+size12.story = {
+  name: '12px',
+};
+
 export const size16 = () => <>{SizeIcons('16')}</>;
 
 size16.story = {
