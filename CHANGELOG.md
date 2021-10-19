@@ -1,3 +1,13 @@
+## [9.1.3](https://github.com/nordnet/ui/compare/v9.1.2...v9.1.3) (2021-10-19)
+
+
+### Bug Fixes
+
+* better alignment of text for select dropdown actions ([c5caa23](https://github.com/nordnet/ui/commit/c5caa23))
+* don't adjust y padding ([b01ba2d](https://github.com/nordnet/ui/commit/b01ba2d))
+* import nordnet sans fonts ([83a1000](https://github.com/nordnet/ui/commit/83a1000))
+* update storyshot ([9a23667](https://github.com/nordnet/ui/commit/9a23667))
+
 ## [9.1.2](https://github.com/nordnet/ui/compare/v9.1.1...v9.1.2) (2021-10-18)
 
 
