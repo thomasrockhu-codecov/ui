@@ -86,10 +86,8 @@ const Arrow = styled.div<InternalProps>`
 
   ${(p) => (p.$bubblePlacement === 'left' ? arrowRight : '')}
   ${(p) => (p.$bubblePlacement === 'top' ? arrowDown : '')}
-  ${(p) =>
-    p.$bubblePlacement === 'right' ? arrowLeft : ''}
-  ${(p) =>
-    p.$bubblePlacement === 'bottom' ? arrowUp : ''}
+  ${(p) => (p.$bubblePlacement === 'right' ? arrowLeft : '')}
+  ${(p) => (p.$bubblePlacement === 'bottom' ? arrowUp : '')}
 `;
 
 const getArrowPositionStyles = (bubblePlacement: Props['bubblePlacement']) => {

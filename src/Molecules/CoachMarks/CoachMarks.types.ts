@@ -1,7 +1,12 @@
+import { Theme } from '../../theme/theme.types';
+
 export type Placement = 'top' | 'right' | 'bottom' | 'left';
 export type ColsTrimmerProps = {
   $hasIcon: boolean;
 };
+
+type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
+type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 type Step = {
   /** Replaces OldIcon, title and content props */
@@ -24,6 +29,7 @@ export type Props = {
   doneText?: string;
   multiStepIndicatorText?: string;
   closeOnClickOutside?: boolean;
+  barColor?: ColorFn;
 };
 
 export type Component = React.FC<Props>;
