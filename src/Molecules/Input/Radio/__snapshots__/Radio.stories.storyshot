@@ -769,6 +769,314 @@ exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c9 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c9 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  stroke: #6E6E69;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  position: relative;
+}
+
+.c12 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #F5F5F5;
+  background-color: #0046FF;
+  color: white;
+}
+
+.c13:hover {
+  cursor: pointer;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #F5F5F5;
+}
+
+.c14:hover {
+  cursor: pointer;
+  background-color: #0046FF;
+  color: white;
+}
+
+<div
+  className="c0"
+>
+  <fieldset
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <legend
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        hidden={false}
+      >
+        <span
+          className="c5"
+        >
+          Colors 
+        </span>
+      </legend>
+      <svg
+        aria-hidden="true"
+        className="c6 c7"
+        focusable="false"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <g
+          fillRule="evenodd"
+          transform="translate(1 1)"
+        >
+          <circle
+            className="c8"
+            cx="11"
+            cy="11"
+            fill="none"
+            r="11"
+          />
+          <path
+            d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+            fillRule="nonzero"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      className="c9"
+    >
+      <div
+        className="c10"
+      >
+        <label
+          className="c4 c11"
+          hidden={false}
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              <input
+                className="c12"
+                id="Green"
+                name="example"
+                type="radio"
+                value="green"
+              />
+              <label
+                checked={true}
+                className="c13"
+                htmlFor="Green"
+              >
+                Green
+              </label>
+            </div>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c10"
+      >
+        <label
+          className="c4 c11"
+          hidden={false}
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              <input
+                className="c12"
+                id="Blue"
+                name="example"
+                type="radio"
+                value="blue"
+              />
+              <label
+                checked={false}
+                className="c14"
+                htmlFor="Blue"
+              >
+                Blue
+              </label>
+            </div>
+          </span>
+        </label>
+      </div>
+      <div
+        className="c10"
+      >
+        <label
+          className="c4 c11"
+          hidden={false}
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c2"
+            >
+              <input
+                className="c12"
+                id="Yellow"
+                name="example"
+                type="radio"
+                value="yellow"
+              />
+              <label
+                checked={false}
+                className="c14"
+                htmlFor="Yellow"
+              >
+                Yellow
+              </label>
+            </div>
+          </span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
 .c2 {
   box-sizing: border-box;

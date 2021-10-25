@@ -1,3 +1,28 @@
+## [9.1.3](https://github.com/nordnet/ui/compare/v9.1.2...v9.1.3) (2021-10-19)
+
+
+### Bug Fixes
+
+* better alignment of text for select dropdown actions ([c5caa23](https://github.com/nordnet/ui/commit/c5caa23))
+* don't adjust y padding ([b01ba2d](https://github.com/nordnet/ui/commit/b01ba2d))
+* import nordnet sans fonts ([83a1000](https://github.com/nordnet/ui/commit/83a1000))
+* update storyshot ([9a23667](https://github.com/nordnet/ui/commit/9a23667))
+
+## [9.1.2](https://github.com/nordnet/ui/compare/v9.1.1...v9.1.2) (2021-10-18)
+
+
+### Bug Fixes
+
+* add snowflake star icon size 12 ([d45061a](https://github.com/nordnet/ui/commit/d45061a))
+
+## [9.1.1](https://github.com/nordnet/ui/compare/v9.1.0...v9.1.1) (2021-10-18)
+
+
+### Bug Fixes
+
+* 🐛 random snapshot updates ([7321a8d](https://github.com/nordnet/ui/commit/7321a8d))
+* **tp-16716:** flex table: increased medium density row padding to match the designs ([f8f2fbd](https://github.com/nordnet/ui/commit/f8f2fbd))
+
 # [9.1.0](https://github.com/nordnet/ui/compare/v9.0.1...v9.1.0) (2021-10-15)
 
 

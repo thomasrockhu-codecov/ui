@@ -95,6 +95,10 @@ exports[`Storyshots Molecules / Input / Select / Action All States 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 0.7;
+  padding-top: 5px !important;
+  padding-bottom: 5px;
+  margin: -5px 0;
 }
 
 .c0 {

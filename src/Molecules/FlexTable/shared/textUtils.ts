@@ -5,7 +5,7 @@ export const getFontSizeTypographyType = (fontSize: FontSize) =>
 
 // TODO: use theme spacing (on the following 3 constants)
 const DENSITY_PADDING_SMALL = 0;
-const DENSITY_PADDING_MEDIUM = 4;
+const DENSITY_PADDING_MEDIUM = 5;
 const DENSITY_PADDING_LARGE = 8;
 
 export const getDensityPaddings = (density: Density) => {

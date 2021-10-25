@@ -45,8 +45,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   flex-basis: auto;
   width: 100%;
 
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
   display: flex;
   flex-direction: column;
 `;
@@ -83,7 +82,7 @@ export const OptionList: React.FC<ListProps> = ({
         {actionsComponent !== null && (
           <>
             {areOptionsProvided && <Separator />}
-            <Box pt={areOptionsProvided ? 1 : 0}>{actionsComponent}</Box>
+            <Box>{actionsComponent}</Box>
           </>
         )}
       </StyledDropdownBubble>

@@ -153,3 +153,50 @@ export const MultpipleSteps = () => {
 
   return <Example />;
 };
+
+export const withBarColor = () => {
+  const Example = () => {
+    const [activeGuide, setActiveGuide] = useState(true);
+    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+    return (
+      <>
+        <Card>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+          <Box py={5}>
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>
+                <MockItem ref={setReferenceElement}>New feature</MockItem>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Card>
+
+        {referenceElement && activeGuide && (
+          <CoachMarks
+            barColor={(t) => t.color.buy}
+            onClose={() => setActiveGuide(false)}
+            onDone={() => setActiveGuide(false)}
+            onNext={action('next')}
+            onPrev={action('previous')}
+            steps={[
+              {
+                referenceElement,
+                icon: <OldIcon.Bank size={8} />,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'right',
+              },
+            ]}
+          />
+        )}
+      </>
+    );
+  };
+
+  return <Example />;
+};
+
+withBarColor.story = {
+  name: 'With bar color',
+};

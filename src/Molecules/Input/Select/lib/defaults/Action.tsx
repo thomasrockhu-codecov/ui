@@ -28,6 +28,10 @@ const EllipsizingText = styled.span`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 0.7;
+  padding-top: 5px !important;
+  padding-bottom: 5px;
+  margin: -5px 0;
 `;
 
 export const Action: React.FC<{
