@@ -10,9 +10,9 @@ const shared = css<InnerProps>`
   ${(p) => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   min-height: ${(p) => p.theme.spacing.unit(6)}px;
+  max-height: ${(p) => p.theme.spacing.unit(6)}px;
   border: none;
   border-radius: ${(p) => p.theme.spacing.unit(3)}px;
-  max-height: ${(p) => p.theme.spacing.unit(6)}px;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 

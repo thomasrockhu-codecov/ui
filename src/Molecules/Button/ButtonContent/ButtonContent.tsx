@@ -56,7 +56,8 @@ export const ButtonContent: ButtonContentComponent = (props) => {
 
   const IconWrapper = styled.div`
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: middle;
+    padding: 4px 0 4px 0;
     margin-left: ${(p) => iconPlacement === 'right' && p.theme.spacing.unit(1)}px;
     margin-right: ${(p) => iconPlacement === 'left' && p.theme.spacing.unit(1)}px;
     & > * {
@@ -65,11 +66,13 @@ export const ButtonContent: ButtonContentComponent = (props) => {
   `;
 
   const content = (
-    <Typography type={type} color="inherit" weight="bold">
+    <>
       {icon && iconPlacement === 'left' && <IconWrapper>{icon}</IconWrapper>}
-      {children}
+      <Typography type={type} color="inherit" weight="bold">
+        {children}
+      </Typography>
       {icon && iconPlacement === 'right' && <IconWrapper>{icon}</IconWrapper>}
-    </Typography>
+    </>
   );
 
   if (variant === 'neutral') {
