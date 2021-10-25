@@ -57,7 +57,7 @@ export const ButtonContent: ButtonContentComponent = (props) => {
   const IconWrapper = styled.div`
     display: inline-block;
     vertical-align: middle;
-    padding: 4px 0 4px 0;
+    padding: ${(p) => `${p.theme.spacing.unit(1)}px 0 ${p.theme.spacing.unit(1)}px 0`};
     margin-left: ${(p) => iconPlacement === 'right' && p.theme.spacing.unit(1)}px;
     margin-right: ${(p) => iconPlacement === 'left' && p.theme.spacing.unit(1)}px;
     & > * {
