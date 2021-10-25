@@ -4,11 +4,14 @@ type Colors = Theme['color'];
 type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 
 export type ButtonContentProps = {
-  loading?: boolean;
-  delayLoadingSpinnerAnimation?: boolean;
-  variant: 'primary' | 'secondary' | 'neutral';
-  size: 's' | 'm' | 'l';
   colorFn?: ColorFn;
+  delayLoadingSpinnerAnimation?: boolean;
+  icon?: React.ReactNode;
+  iconPlacement?: 'left' | 'right';
+  loading?: boolean;
+  pill?: boolean;
+  size: 's' | 'm' | 'l';
+  variant: 'primary' | 'secondary' | 'neutral';
 };
 
 export type ButtonContentComponent = React.FC<ButtonContentProps>;

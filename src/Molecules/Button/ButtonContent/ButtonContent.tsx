@@ -29,12 +29,46 @@ const SpinnerAnimation = styled(motion.span)`
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
-  const { children, colorFn, loading, variant, size, delayLoadingSpinnerAnimation = true } = props;
+  const {
+    children,
+    colorFn,
+    icon,
+    iconPlacement,
+    loading,
+    variant,
+    size,
+    delayLoadingSpinnerAnimation = true,
+  } = props;
   const theme = useContext(ThemeContext);
 
+  let type: 'secondary' | 'primary' | 'tertiary';
+  switch (size) {
+    case 's':
+      type = 'tertiary';
+      break;
+    case 'm':
+      type = 'secondary';
+      break;
+    default:
+      type = 'primary';
+      break;
+  }
+
+  const IconWrapper = styled.div`
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: ${(p) => iconPlacement === 'right' && p.theme.spacing.unit(1)}px;
+    margin-right: ${(p) => iconPlacement === 'left' && p.theme.spacing.unit(1)}px;
+    & > * {
+      color: inherit;
+    }
+  `;
+
   const content = (
-    <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
+    <Typography type={type} color="inherit" weight="bold">
+      {icon && iconPlacement === 'left' && <IconWrapper>{icon}</IconWrapper>}
       {children}
+      {icon && iconPlacement === 'right' && <IconWrapper>{icon}</IconWrapper>}
     </Typography>
   );
 
