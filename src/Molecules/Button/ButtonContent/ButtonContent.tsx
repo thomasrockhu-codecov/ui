@@ -28,6 +28,21 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
+const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
+  display: inline-block;
+  vertical-align: middle;
+  padding: ${(p) => `${p.theme.spacing.unit(1)}px 0 ${p.theme.spacing.unit(1)}px 0`};
+  ${(p) => (p.$iconPlacement === 'right' ? `margin-left: ${p.theme.spacing.unit(1)}px` : '')};
+  ${(p) => (p.$iconPlacement === 'left' ? `margin-right: ${p.theme.spacing.unit(1)}px` : '')};
+  & > * {
+    color: inherit;
+  }
+`;
+
+const StyledTypography = styled(Typography)<{ $size: 's' | 'm' | 'l' }>`
+  ${(p) => (p.$size === 's' ? `line-height: ${p.theme.spacing.unit(6)}px` : '')};
+`;
+
 export const ButtonContent: ButtonContentComponent = (props) => {
   const {
     children,
@@ -54,24 +69,17 @@ export const ButtonContent: ButtonContentComponent = (props) => {
       break;
   }
 
-  const IconWrapper = styled.div`
-    display: inline-block;
-    vertical-align: middle;
-    padding: ${(p) => `${p.theme.spacing.unit(1)}px 0 ${p.theme.spacing.unit(1)}px 0`};
-    margin-left: ${(p) => iconPlacement === 'right' && p.theme.spacing.unit(1)}px;
-    margin-right: ${(p) => iconPlacement === 'left' && p.theme.spacing.unit(1)}px;
-    & > * {
-      color: inherit;
-    }
-  `;
-
   const content = (
     <>
-      {icon && iconPlacement === 'left' && <IconWrapper>{icon}</IconWrapper>}
-      <Typography type={type} color="inherit" weight="bold">
+      {icon && iconPlacement === 'left' && (
+        <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+      )}
+      <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
         {children}
-      </Typography>
-      {icon && iconPlacement === 'right' && <IconWrapper>{icon}</IconWrapper>}
+      </StyledTypography>
+      {icon && iconPlacement === 'right' && (
+        <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+      )}
     </>
   );
 
