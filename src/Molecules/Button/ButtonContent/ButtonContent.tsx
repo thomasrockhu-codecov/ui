@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
-import { Spinner, Typography } from '../../..';
+import { Flexbox, Spinner, Typography } from '../../..';
 
 const LOADING_ANIMATION_DURATION = 0.2;
 
@@ -29,18 +29,10 @@ const SpinnerAnimation = styled(motion.span)`
 `;
 
 const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
-  display: inline-block;
-  vertical-align: middle;
-  padding: ${(p) => `${p.theme.spacing.unit(1)}px 0 ${p.theme.spacing.unit(1)}px 0`};
-  ${(p) => (p.$iconPlacement === 'right' ? `margin-left: ${p.theme.spacing.unit(1)}px` : '')};
-  ${(p) => (p.$iconPlacement === 'left' ? `margin-right: ${p.theme.spacing.unit(1)}px` : '')};
+  display: block;
   & > * {
     color: inherit;
   }
-`;
-
-const StyledTypography = styled(Typography)<{ $size: 's' | 'm' | 'l' }>`
-  ${(p) => (p.$size === 's' ? `line-height: ${p.theme.spacing.unit(6)}px` : '')};
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
@@ -56,7 +48,7 @@ export const ButtonContent: ButtonContentComponent = (props) => {
   } = props;
   const theme = useContext(ThemeContext);
 
-  let type: 'secondary' | 'primary' | 'tertiary';
+  let type: 'primary' | 'secondary' | 'tertiary';
   switch (size) {
     case 's':
       type = 'tertiary';
@@ -71,14 +63,28 @@ export const ButtonContent: ButtonContentComponent = (props) => {
 
   const content = (
     <>
-      {icon && iconPlacement === 'left' && (
-        <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
-      )}
-      <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
-        {children}
-      </StyledTypography>
-      {icon && iconPlacement === 'right' && (
-        <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+      {size === 's' ? (
+        <Flexbox container gutter={1} justifyContent="space-between" alignItems="center">
+          {icon && iconPlacement === 'left' && (
+            <Flexbox item>
+              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+            </Flexbox>
+          )}
+          <Flexbox item>
+            <Typography type={type} color="inherit" weight="bold">
+              {children}
+            </Typography>
+          </Flexbox>
+          {icon && iconPlacement === 'right' && (
+            <Flexbox item>
+              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+            </Flexbox>
+          )}
+        </Flexbox>
+      ) : (
+        <Typography type={type} color="inherit" weight="bold">
+          {children}
+        </Typography>
       )}
     </>
   );
