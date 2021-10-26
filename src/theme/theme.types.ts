@@ -38,6 +38,13 @@ export type RawColor = {
   gray7: string;
   white: string;
 
+  // GREEN SCALE
+  // Introduced for new Shareville component from the new UI designs
+  // Names are subject to change when new colors and structure are finalized
+  green600: string;
+  green200: string;
+  green100: string;
+
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: string;
   ctaHover: string;
@@ -374,6 +381,12 @@ export type ThemeColors = {
   sfdrArticle8: RawColor['sfdrArticle8'];
   /** SFDR Article 9 */
   sfdrArticle9: RawColor['sfdrArticle9'];
+  /** Join Shareville Illustration */
+  joinSharevilleIllustration: RawColor['green600'];
+  /** Join Shareville Badge */
+  joinSharevilleBadge: RawColor['green200'];
+  /** Join Shareville Banner */
+  joinSharevilleBanner: RawColor['green100'];
   /** @deprecated * gray3 */
   disabled: RawColor['gray3'];
   /** @deprecated * complementaryBlue2 */

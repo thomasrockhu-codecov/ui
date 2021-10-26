@@ -240,6 +240,10 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
 
+    joinSharevilleIllustration: rawColor.green600,
+    joinSharevilleBadge: rawColor.green200,
+    joinSharevilleBanner: rawColor.green100,
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

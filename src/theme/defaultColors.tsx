@@ -29,6 +29,13 @@ const defaultColors = {
   gray7: '#F5F5F5', // Included in Dark Mode
   white: '#FFFFFF', // Included in Dark Mode
 
+  // GREEN SCALE
+  // Introduced for new Shareville component from the new UI designs
+  // Names are subject to change when new colors are finalized
+  green600: '#41A21A',
+  green200: '#DCF5D2',
+  green100: '#EDFAE8',
+
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: '#0046FF',
   ctaHover: '#003BD9',
