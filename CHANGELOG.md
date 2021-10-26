@@ -1,3 +1,32 @@
+# [9.2.0](https://github.com/nordnet/ui/compare/v9.1.3...v9.2.0) (2021-10-26)
+
+
+### Bug Fixes
+
+* add id and noRadioCircle props to Radio ([ae1a842](https://github.com/nordnet/ui/commit/ae1a842))
+* add maxLength to textarea ([5fd5d5d](https://github.com/nordnet/ui/commit/5fd5d5d))
+* alignment with/without icon, move styled out of component ([56ddd9e](https://github.com/nordnet/ui/commit/56ddd9e))
+* centering text, remove styling, external color of icon ([687d55c](https://github.com/nordnet/ui/commit/687d55c))
+* modify ButtonContent to be able to accept icon prop and pillbutton size ([5e95ad6](https://github.com/nordnet/ui/commit/5e95ad6))
+* no resize option for Textarea ([db389fe](https://github.com/nordnet/ui/commit/db389fe))
+* remove unused props ([4fc7388](https://github.com/nordnet/ui/commit/4fc7388))
+* storyshots ([b0f7ee9](https://github.com/nordnet/ui/commit/b0f7ee9))
+* undo unnecessary changes ([2741d18](https://github.com/nordnet/ui/commit/2741d18))
+* undo unnecessary changes all ([f65faad](https://github.com/nordnet/ui/commit/f65faad))
+* undo unnecessary changes all 2 ([a85b17c](https://github.com/nordnet/ui/commit/a85b17c))
+* units ([93fed43](https://github.com/nordnet/ui/commit/93fed43))
+* update storyshots ([0b37879](https://github.com/nordnet/ui/commit/0b37879))
+* update storyshots ([9e9a7a0](https://github.com/nordnet/ui/commit/9e9a7a0))
+* updated storyshots ([81e441e](https://github.com/nordnet/ui/commit/81e441e))
+* use flexbox for centering, update storyshots ([d711b52](https://github.com/nordnet/ui/commit/d711b52))
+* vertical alignment ([76db9e1](https://github.com/nordnet/ui/commit/76db9e1))
+
+
+### Features
+
+* custom radios and coachmark barcolor ([20d0e6a](https://github.com/nordnet/ui/commit/20d0e6a))
+* new component PillButton according to designs ([0fb96a7](https://github.com/nordnet/ui/commit/0fb96a7))
+
 ## [9.1.3](https://github.com/nordnet/ui/compare/v9.1.2...v9.1.3) (2021-10-19)
 
 
