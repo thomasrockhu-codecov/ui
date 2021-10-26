@@ -9,7 +9,6 @@ export type ButtonContentProps = {
   icon?: React.ReactNode;
   iconPlacement?: 'left' | 'right';
   loading?: boolean;
-  pill?: boolean;
   size: 's' | 'm' | 'l';
   variant: 'primary' | 'secondary' | 'neutral';
 };

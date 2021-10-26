@@ -3,11 +3,10 @@ export type PillButtonProps = {
   variant?: 'primary' | 'secondary';
   children: React.ReactChild | React.ReactChild[];
   className?: string;
+  /** @default true */
   delayLoadingSpinnerAnimation?: boolean;
   disabled?: boolean;
   form?: string;
-  /** @default false */
-  fullServerRedirect?: boolean;
   fullWidth?: boolean;
   icon?: React.ReactNode;
   /** @default left */
@@ -15,7 +14,6 @@ export type PillButtonProps = {
   id?: string;
   loading?: boolean;
   onClick?: (e: React.MouseEvent) => void;
-  /** @default true */
   ref?: React.Ref<HTMLButtonElement>;
 } & Pick<React.DOMAttributes<HTMLButtonElement>, 'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'>;
 
