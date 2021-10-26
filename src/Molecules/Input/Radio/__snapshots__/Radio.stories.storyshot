@@ -807,6 +807,16 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
   cursor: pointer;
 }
 
+.c3 {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -823,16 +833,6 @@ exports[`Storyshots Molecules / Input / Radio In a group with custom label 1`] =
 
 .c8 {
   stroke: #6E6E69;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-  cursor: auto;
 }
 
 .c5 {

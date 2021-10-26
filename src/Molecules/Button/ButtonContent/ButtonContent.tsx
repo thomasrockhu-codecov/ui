@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
-import { Spinner, Typography } from '../../..';
+import { Flexbox, Spinner, Typography } from '../../..';
 
 const LOADING_ANIMATION_DURATION = 0.2;
 
@@ -28,14 +28,66 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
+const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
+  display: block;
+`;
+
 export const ButtonContent: ButtonContentComponent = (props) => {
-  const { children, colorFn, loading, variant, size, delayLoadingSpinnerAnimation = true } = props;
+  const {
+    children,
+    colorFn,
+    icon,
+    iconPlacement,
+    loading,
+    variant,
+    size,
+    delayLoadingSpinnerAnimation = true,
+  } = props;
   const theme = useContext(ThemeContext);
 
+  let type: 'primary' | 'secondary' | 'tertiary';
+  switch (size) {
+    case 's':
+      type = 'tertiary';
+      break;
+    case 'm':
+      type = 'secondary';
+      break;
+    default:
+      type = 'primary';
+      break;
+  }
+
+  const StyledTypography = styled(Typography)`
+    display: block;
+  `;
+
   const content = (
-    <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
-      {children}
-    </Typography>
+    <>
+      {size === 's' ? (
+        <Flexbox container gutter={1} justifyContent="space-between" alignItems="center">
+          {icon && iconPlacement === 'left' && (
+            <Flexbox item>
+              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+            </Flexbox>
+          )}
+          <Flexbox item>
+            <StyledTypography type={type} color="inherit" weight="bold">
+              {children}
+            </StyledTypography>
+          </Flexbox>
+          {icon && iconPlacement === 'right' && (
+            <Flexbox item>
+              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
+            </Flexbox>
+          )}
+        </Flexbox>
+      ) : (
+        <Typography type={type} color="inherit" weight="bold">
+          {children}
+        </Typography>
+      )}
+    </>
   );
 
   if (variant === 'neutral') {

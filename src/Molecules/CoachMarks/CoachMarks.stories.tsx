@@ -182,7 +182,7 @@ export const withBarColor = () => {
             steps={[
               {
                 referenceElement,
-                icon: <Icon.Bank size={8} />,
+                icon: <OldIcon.Bank size={8} />,
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                 placement: 'right',

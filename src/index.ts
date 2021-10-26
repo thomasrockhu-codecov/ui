@@ -35,6 +35,7 @@ import Avatar from './Molecules/Avatar';
 import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button from './Molecules/Button';
+import PillButton from './Molecules/PillButton';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
@@ -175,6 +176,7 @@ export {
   Pagination,
   PersistentTooltip,
   Pill,
+  PillButton,
   Portal,
   ProgressBar,
   Rating,
