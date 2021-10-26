@@ -1,3 +1,10 @@
+# [9.3.0](https://github.com/nordnet/ui/compare/v9.2.0...v9.3.0) (2021-10-26)
+
+
+### Features
+
+* add new palette colors from new ui designs, for use in new shareville card ([472bb67](https://github.com/nordnet/ui/commit/472bb67))
+
 # [9.2.0](https://github.com/nordnet/ui/compare/v9.1.3...v9.2.0) (2021-10-26)
 
 
