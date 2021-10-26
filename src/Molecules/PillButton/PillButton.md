@@ -7,7 +7,7 @@ This component will render a `<button>` with height 24px (old size small)
 - `variant` - a string that can be either `primary` or `secondary`, default is `primary`.
 - `fullWidth` - a boolean value, default it's `false`.
 - `disabled` - a boolean value.
-- `icon` - a ui icon to be placed either left or right of button text.
+- `icon` - a ui icon to be placed either left or right of button text. If icon color is to follow text color (also while hovering and pressing button), set icon's color to "currentColor" as in the stories
 - `iconPlacement` - a string that can be either `left` or `right`, default is `left`
 - `onClick` - a function that will run on click event.
 - `loading` - a boolean to indicate if spinner should be shown in button

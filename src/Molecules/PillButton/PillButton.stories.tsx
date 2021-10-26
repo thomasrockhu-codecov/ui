@@ -44,7 +44,7 @@ export const pillButtonWithDifferentVariants = () => (
         {
           title: 'Icon Left',
           component: (
-            <PillButton icon={<Icon.Add16 />} onClick={action('clicked')}>
+            <PillButton icon={<Icon.Add16 color="currentColor" />} onClick={action('clicked')}>
               Button
             </PillButton>
           ),
@@ -53,7 +53,7 @@ export const pillButtonWithDifferentVariants = () => (
           title: 'Icon Right',
           component: (
             <PillButton
-              icon={<Icon.ExternalLink16 />}
+              icon={<Icon.ExternalLink16 color="currentColor" />}
               iconPlacement="right"
               onClick={action('clicked')}
             >
@@ -77,7 +77,11 @@ export const pillButtonWithDifferentVariants = () => (
         {
           title: 'Icon Left Disabled',
           component: (
-            <PillButton icon={<Icon.Add16 />} onClick={action('clicked')} disabled>
+            <PillButton
+              icon={<Icon.Add16 color="currentColor" />}
+              onClick={action('clicked')}
+              disabled
+            >
               Button
             </PillButton>
           ),
@@ -86,7 +90,7 @@ export const pillButtonWithDifferentVariants = () => (
           title: 'Icon Right Disabled',
           component: (
             <PillButton
-              icon={<Icon.ExternalLink16 />}
+              icon={<Icon.ExternalLink16 color="currentColor" />}
               iconPlacement="right"
               onClick={action('clicked')}
               disabled
@@ -111,7 +115,11 @@ export const pillButtonWithDifferentVariants = () => (
         {
           title: 'Icon Left Loading',
           component: (
-            <PillButton icon={<Icon.Add16 />} onClick={action('clicked')} loading>
+            <PillButton
+              icon={<Icon.Add16 color="currentColor" />}
+              onClick={action('clicked')}
+              loading
+            >
               Button
             </PillButton>
           ),
@@ -120,7 +128,7 @@ export const pillButtonWithDifferentVariants = () => (
           title: 'Icon Right Loading',
           component: (
             <PillButton
-              icon={<Icon.ExternalLink16 />}
+              icon={<Icon.ExternalLink16 color="currentColor" />}
               iconPlacement="right"
               onClick={action('clicked')}
               loading
@@ -149,7 +157,11 @@ export const pillButtonWithDifferentVariants = () => (
           title: 'Icon Left',
           component: (
             <SecondaryBackground>
-              <PillButton variant="secondary" icon={<Icon.Add16 />} onClick={action('clicked')}>
+              <PillButton
+                variant="secondary"
+                icon={<Icon.Add16 color="currentColor" />}
+                onClick={action('clicked')}
+              >
                 Button
               </PillButton>
             </SecondaryBackground>
@@ -161,7 +173,7 @@ export const pillButtonWithDifferentVariants = () => (
             <SecondaryBackground>
               <PillButton
                 variant="secondary"
-                icon={<Icon.ExternalLink16 />}
+                icon={<Icon.ExternalLink16 color="currentColor" />}
                 iconPlacement="right"
                 onClick={action('clicked')}
               >
@@ -191,7 +203,7 @@ export const pillButtonWithDifferentVariants = () => (
             <SecondaryBackground>
               <PillButton
                 variant="secondary"
-                icon={<Icon.Add16 />}
+                icon={<Icon.Add16 color="currentColor" />}
                 onClick={action('clicked')}
                 disabled
               >
@@ -206,7 +218,7 @@ export const pillButtonWithDifferentVariants = () => (
             <SecondaryBackground>
               <PillButton
                 variant="secondary"
-                icon={<Icon.ExternalLink16 />}
+                icon={<Icon.ExternalLink16 color="currentColor" />}
                 iconPlacement="right"
                 onClick={action('clicked')}
                 disabled
@@ -237,7 +249,7 @@ export const pillButtonWithDifferentVariants = () => (
             <SecondaryBackground>
               <PillButton
                 variant="secondary"
-                icon={<Icon.Add16 />}
+                icon={<Icon.Add16 color="currentColor" />}
                 onClick={action('clicked')}
                 loading
               >
@@ -252,7 +264,7 @@ export const pillButtonWithDifferentVariants = () => (
             <SecondaryBackground>
               <PillButton
                 variant="secondary"
-                icon={<Icon.ExternalLink16 />}
+                icon={<Icon.ExternalLink16 color="currentColor" />}
                 iconPlacement="right"
                 onClick={action('clicked')}
                 loading
@@ -327,7 +339,7 @@ export const pillButtonThatIsFullWidth = () => (
       Button
     </PillButton>
     <SecondaryBackground>
-      <PillButton variant="secondary" onClick={action('clicked')} fullWidth>
+      <PillButton variant="secondary" onClick={action('clicked')} fullWidth loading>
         Button
       </PillButton>
     </SecondaryBackground>

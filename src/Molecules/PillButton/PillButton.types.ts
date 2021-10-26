@@ -20,4 +20,5 @@ export type PillButtonProps = {
 export type InnerProps = Omit<PillButtonProps, 'variant' | 'fullWidth'> & {
   $variant?: PillButtonProps['variant'];
   $fullWidth?: PillButtonProps['fullWidth'];
+  $loading?: PillButtonProps['loading'];
 };

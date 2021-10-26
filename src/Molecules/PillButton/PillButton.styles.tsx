@@ -5,12 +5,9 @@ import { InnerProps } from './PillButton.types';
 const shared = css<InnerProps>`
   position: relative;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  ${(p) => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
+  ${(p) => p.$fullWidth && `width: 100%; display: flex; justify-content: center;`}
+  ${(p) => p.$loading && `display: inline-flex;`}
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
-  min-height: ${(p) => p.theme.spacing.unit(6)}px;
-  max-height: ${(p) => p.theme.spacing.unit(6)}px;
   border: none;
   border-radius: ${(p) => p.theme.spacing.unit(3)}px;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};

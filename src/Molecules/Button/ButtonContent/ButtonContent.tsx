@@ -30,9 +30,6 @@ const SpinnerAnimation = styled(motion.span)`
 
 const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
   display: block;
-  & > * {
-    color: inherit;
-  }
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
@@ -61,6 +58,10 @@ export const ButtonContent: ButtonContentComponent = (props) => {
       break;
   }
 
+  const StyledTypography = styled(Typography)`
+    display: block;
+  `;
+
   const content = (
     <>
       {size === 's' ? (
@@ -71,9 +72,9 @@ export const ButtonContent: ButtonContentComponent = (props) => {
             </Flexbox>
           )}
           <Flexbox item>
-            <Typography type={type} color="inherit" weight="bold">
+            <StyledTypography type={type} color="inherit" weight="bold">
               {children}
-            </Typography>
+            </StyledTypography>
           </Flexbox>
           {icon && iconPlacement === 'right' && (
             <Flexbox item>

@@ -50,6 +50,7 @@ export const PillButton: React.ForwardRefExoticComponent<
     onClick: trackClick,
     $variant: variant,
     $fullWidth: fullWidth,
+    $loading: loading,
     id,
     onMouseEnter,
     onMouseLeave,
