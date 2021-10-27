@@ -76,6 +76,8 @@ export const Button: React.ForwardRefExoticComponent<
     onMouseLeave,
     onMouseOver,
     delayLoadingSpinnerAnimation = true,
+    icon,
+    iconPlacement = 'left',
     ...rest
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';
@@ -112,14 +114,6 @@ export const Button: React.ForwardRefExoticComponent<
     );
   }
 
-  assert(
-    size === 'm' || size === 'l',
-    "Button: size 's' is deprecated, please use either 'm' or 'l'.",
-    {
-      level: 'warn',
-    },
-  );
-
   if (cms) {
     assert(false, 'Button: the prop cms is deprecated, please use fullServerRedirect instead.', {
       level: 'warn',
@@ -151,6 +145,8 @@ export const Button: React.ForwardRefExoticComponent<
           size={size}
           colorFn={color}
           delayLoadingSpinnerAnimation={delayLoadingSpinnerAnimation}
+          icon={icon}
+          iconPlacement={iconPlacement}
         >
           {children}
         </ButtonContent>
@@ -176,6 +172,8 @@ export const Button: React.ForwardRefExoticComponent<
         size={size}
         colorFn={color}
         delayLoadingSpinnerAnimation={delayLoadingSpinnerAnimation}
+        icon={icon}
+        iconPlacement={iconPlacement}
       >
         {children}
       </ButtonContent>

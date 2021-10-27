@@ -32,6 +32,10 @@ const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
   display: block;
 `;
 
+const StyledTypography = styled(Typography)`
+  display: block;
+`;
+
 export const ButtonContent: ButtonContentComponent = (props) => {
   const {
     children,
@@ -57,10 +61,6 @@ export const ButtonContent: ButtonContentComponent = (props) => {
       type = 'primary';
       break;
   }
-
-  const StyledTypography = styled(Typography)`
-    display: block;
-  `;
 
   const content = (
     <>
