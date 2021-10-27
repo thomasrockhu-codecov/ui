@@ -10,6 +10,9 @@ const isSecondary = (variant: PillButtonProps['variant']) => variant === 'second
 const StyledPillButton = styled(Button)<PillButtonProps>`
   border-radius: ${(p) => p.theme.spacing.unit(3)}px;
   ${(p) => isSecondary(p.variant) && `background-color: ${p.theme.color.background}`};
+  &::before {
+    display: none;
+  }
 `;
 
 export const PillButton: React.ForwardRefExoticComponent<

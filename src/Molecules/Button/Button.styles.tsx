@@ -98,9 +98,7 @@ export const secondaryStyles = css<InnerProps>`
 
     return `
       color: ${p.disabled ? p.theme.color.disabledText : color};
-      ${
-        p.$size !== 's' && getBorder(p.disabled ? 'transparent' : color)
-      } // only pill button is allowed size s
+      ${getBorder(p.disabled ? 'transparent' : color)}
 
       ${
         p.disabled
@@ -108,15 +106,15 @@ export const secondaryStyles = css<InnerProps>`
           : `
         &:hover {
           color: ${Color(color).darken(0.2)};
-    
+
           &::before {
             border-color: ${Color(color).darken(0.2)};
           }
         }
-    
+
         &:active {
           color: ${Color(color).darken(0.3)};
-    
+
           &::before {
             border-color: ${Color(color).darken(0.3)};
           }
