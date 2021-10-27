@@ -3,14 +3,17 @@ import Color from 'color';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
+  s: 6,
   m: 8,
   l: 10,
 };
 const PADDING_VERTICAL = {
+  s: 1,
   m: 1,
   l: 2,
 };
 const PADDING_HORIZONTAL = {
+  s: 3,
   m: 3,
   l: 4,
 };
@@ -95,7 +98,9 @@ export const secondaryStyles = css<InnerProps>`
 
     return `
       color: ${p.disabled ? p.theme.color.disabledText : color};
-      ${getBorder(p.disabled ? 'transparent' : color)}
+      ${
+        p.$size !== 's' && getBorder(p.disabled ? 'transparent' : color)
+      } // only pill button is allowed size s
 
       ${
         p.disabled
