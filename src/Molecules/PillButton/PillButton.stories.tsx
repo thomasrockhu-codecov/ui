@@ -19,6 +19,9 @@ const SecondaryBackground = styled.div`
   background: white;
   padding: ${(p) => p.theme.spacing.unit(3)}px;
 `;
+const NoPadding = styled.div`
+  background: red;
+`;
 
 export const documentation = () => (
   <Typography type="primary">
@@ -335,16 +338,14 @@ pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay.story = {
 };
 
 export const pillButtonThatIsFullWidth = () => (
-  <>
+  <NoPadding>
     <PillButton onClick={action('clicked')} fullWidth>
       Button
     </PillButton>
-    <SecondaryBackground>
-      <PillButton variant="secondary" onClick={action('clicked')} fullWidth loading>
-        Button
-      </PillButton>
-    </SecondaryBackground>
-  </>
+    <PillButton variant="secondary" onClick={action('clicked')} fullWidth>
+      Button
+    </PillButton>
+  </NoPadding>
 );
 
 pillButtonThatIsFullWidth.story = {
