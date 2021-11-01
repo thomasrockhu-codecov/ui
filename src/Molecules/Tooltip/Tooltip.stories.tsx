@@ -111,6 +111,70 @@ export const withPosition = () => (
         ),
         title: 'right',
       },
+      {
+        component: (
+          <Tooltip label={label} position="right-start">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'right-start',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="right-end">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'right-end',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="top-start">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'top-start',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="top-end">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'top-end',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="left-start">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'left-start',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="left-end">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'left-end',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="bottom-start">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'bottom-start',
+      },
+      {
+        component: (
+          <Tooltip label={label} position="bottom-end">
+            <Button type="button">Hover me</Button>
+          </Tooltip>
+        ),
+        title: 'bottom-end',
+      },
     ]}
   />
 );

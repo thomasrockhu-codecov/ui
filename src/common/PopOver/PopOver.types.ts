@@ -2,7 +2,19 @@ import { ColorFn } from 'common/Types';
 import React from 'react';
 
 export type InModal = boolean;
-export type Position = 'top' | 'right' | 'bottom' | 'left';
+export type Position =
+  | 'top'
+  | 'top-start'
+  | 'top-end'
+  | 'right'
+  | 'right-start'
+  | 'right-end'
+  | 'bottom'
+  | 'bottom-start'
+  | 'bottom-end'
+  | 'left'
+  | 'left-start'
+  | 'left-end';
 
 export type Props = {
   id?: string;
