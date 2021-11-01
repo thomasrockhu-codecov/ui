@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import MD from 'react-markdown';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import MD from 'react-markdown';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 import docs from './PillButton.md';
 
 import { PillButton, Flexbox, Typography, Icon } from '../..';
@@ -17,6 +18,9 @@ export default {
 const SecondaryBackground = styled.div`
   background: white;
   padding: ${(p) => p.theme.spacing.unit(3)}px;
+`;
+const NoPadding = styled.div`
+  background: red;
 `;
 
 export const documentation = () => (
@@ -334,16 +338,14 @@ pillButtonWithLoadingStateWithoutTheSpinnerAnimationDelay.story = {
 };
 
 export const pillButtonThatIsFullWidth = () => (
-  <>
+  <NoPadding>
     <PillButton onClick={action('clicked')} fullWidth>
       Button
     </PillButton>
-    <SecondaryBackground>
-      <PillButton variant="secondary" onClick={action('clicked')} fullWidth loading>
-        Button
-      </PillButton>
-    </SecondaryBackground>
-  </>
+    <PillButton variant="secondary" onClick={action('clicked')} fullWidth>
+      Button
+    </PillButton>
+  </NoPadding>
 );
 
 pillButtonThatIsFullWidth.story = {
@@ -371,4 +373,35 @@ export const pillButtonsComposedInAGroup = () => (
 
 pillButtonsComposedInAGroup.story = {
   name: 'PillButtons composed in a group',
+};
+
+export const linksLookingLikePillButtons = () => (
+  <Provider>
+    <Display
+      items={[
+        {
+          title: 'Go to BlaBla',
+          component: (
+            <PillButton to="/?path=/docs/molecules-pillbutton--pill-buttons-composed-in-a-group">
+              BlaBla
+            </PillButton>
+          ),
+        },
+        {
+          title: 'Go to external BliBli',
+          component: (
+            <SecondaryBackground>
+              <PillButton to="https://nordnet.se" external variant="secondary">
+                BliBli
+              </PillButton>
+            </SecondaryBackground>
+          ),
+        },
+      ]}
+    />
+  </Provider>
+);
+
+linksLookingLikePillButtons.story = {
+  name: 'Links looking like PillButtons',
 };

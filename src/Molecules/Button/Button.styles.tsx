@@ -3,14 +3,17 @@ import Color from 'color';
 import { InnerProps } from './Button.types';
 
 const HEIGHT = {
+  s: 6,
   m: 8,
   l: 10,
 };
 const PADDING_VERTICAL = {
+  s: 1,
   m: 1,
   l: 2,
 };
 const PADDING_HORIZONTAL = {
+  s: 3,
   m: 3,
   l: 4,
 };
@@ -103,15 +106,15 @@ export const secondaryStyles = css<InnerProps>`
           : `
         &:hover {
           color: ${Color(color).darken(0.2)};
-    
+
           &::before {
             border-color: ${Color(color).darken(0.2)};
           }
         }
-    
+
         &:active {
           color: ${Color(color).darken(0.3)};
-    
+
           &::before {
             border-color: ${Color(color).darken(0.3)};
           }

@@ -35,6 +35,9 @@ export type ButtonProps = {
   form?: string;
   /** @default true */
   delayLoadingSpinnerAnimation?: boolean;
+  icon?: React.ReactNode;
+  /** @default left */
+  iconPlacement?: 'left' | 'right';
   ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
 } & Pick<
   React.DOMAttributes<HTMLButtonElement | HTMLAnchorElement>,
