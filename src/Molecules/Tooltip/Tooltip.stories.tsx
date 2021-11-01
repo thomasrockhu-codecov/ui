@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Flexbox, OldIcon, Modal } from '../..';
+import { Box, Drawer, Flexbox, OldIcon, Modal, Button as UIButton } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -231,6 +231,28 @@ export const BrokenPositioning = () => {
           position="right"
         >
           <OldIcon.Pen />
+        </Tooltip>
+      </Box>
+    </Flexbox>
+  );
+};
+
+export const WithClickableContent = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Flexbox container>
+      <Box mt={40}>
+        <Tooltip
+          isOpen={isOpen}
+          label={<Button onClick={() => alert('You clicked me!')}>Try to click me</Button>}
+          position="right"
+          pointerEvents
+          wrapChild
+        >
+          <UIButton variant="neutral" onClick={() => setIsOpen(!isOpen)}>
+            <OldIcon.Pen />
+          </UIButton>
         </Tooltip>
       </Box>
     </Flexbox>

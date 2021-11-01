@@ -30,6 +30,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       closeDelay = 500,
       isOpen: controlledIsOpen,
       wrapChild,
+      pointerEvents = false,
     },
     ref,
   ) => {
@@ -72,7 +73,7 @@ export const Tooltip: TooltipComponent = forwardRef(
             position={position}
             inModal={inModal}
             maxWidth={maxWidth}
-            pointerEvents={false}
+            pointerEvents={pointerEvents}
           />
         )}
       </>

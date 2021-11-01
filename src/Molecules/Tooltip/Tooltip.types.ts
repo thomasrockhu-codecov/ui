@@ -21,6 +21,11 @@ export type Props = {
    * Useful for when children does not handle refs correctly. Could fix positioning issues.
    */
   wrapChild?: boolean;
+  /**
+   * @pointerEvents
+   * If you need to click the content in the tooltip you pass this in as true
+   */
+  pointerEvents?: boolean;
 };
 
 export type TooltipComponent = React.FC<Props>;
