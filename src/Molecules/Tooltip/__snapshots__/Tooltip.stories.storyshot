@@ -673,6 +673,137 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 </portal-dummy>
 `;
 
+exports[`Storyshots Molecules / Tooltip With Clickable Content 1`] = `
+.c1 {
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+    >
+      <button
+        className="NormalizedButton__Button-sc-ey7f5x-0 c2"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c3"
+        >
+          <svg
+            aria-hidden="true"
+            className="c4"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+              transform="rotate(45,7,21) scale(1.35)"
+            />
+          </svg>
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Tooltip With On Click Mode 1`] = `
 .c0 {
   display: block;
