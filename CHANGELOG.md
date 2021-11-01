@@ -1,3 +1,14 @@
+## [9.3.1](https://github.com/nordnet/ui/compare/v9.3.0...v9.3.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* merge ([88317cf](https://github.com/nordnet/ui/commit/88317cf))
+* no border but hover color ([e6c908e](https://github.com/nordnet/ui/commit/e6c908e))
+* redo PillButton as styled Button ([6dfa059](https://github.com/nordnet/ui/commit/6dfa059))
+* redo PillButton as styled Button ([80dddbe](https://github.com/nordnet/ui/commit/80dddbe))
+* show fullWidth ([7c2106f](https://github.com/nordnet/ui/commit/7c2106f))
+
 # [9.3.0](https://github.com/nordnet/ui/compare/v9.2.0...v9.3.0) (2021-10-26)
 
 
