@@ -1,3 +1,11 @@
+# [9.4.0](https://github.com/nordnet/ui/compare/v9.3.1...v9.4.0) (2021-11-02)
+
+
+### Features
+
+* **Tooltip:** enable tooltip to have all popper.js positions ([93748f0](https://github.com/nordnet/ui/commit/93748f0))
+* opt in enabling of pointerEvents on tooltip content ([4bb4dc5](https://github.com/nordnet/ui/commit/4bb4dc5))
+
 ## [9.3.1](https://github.com/nordnet/ui/compare/v9.3.0...v9.3.1) (2021-11-01)
 
 
