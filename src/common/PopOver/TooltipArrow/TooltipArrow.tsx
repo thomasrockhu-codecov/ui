@@ -96,11 +96,10 @@ const StyledArrow = styled.span<Props>`
     top: 0;
   }
 
-  ${(p) => (p.position === 'top' ? arrowBottom : '')}
-  ${(p) => (p.position === 'bottom' ? arrowTop : '')}
-  ${(p) =>
-    p.position === 'left' ? arrowRight : ''}
-  ${(p) => (p.position === 'right' ? arrowLeft : '')}
+  ${(p) => (['top-start', 'top', 'top-end'].includes(p.position) ? arrowBottom : '')}
+  ${(p) => (['bottom-start', 'bottom', 'bottom-end'].includes(p.position) ? arrowTop : '')}
+  ${(p) => (['left-start', 'left', 'left-end'].includes(p.position) ? arrowRight : '')}
+  ${(p) => (['right-start', 'right', 'right-end'].includes(p.position) ? arrowLeft : '')}
 `;
 
 type PropsWithoutRef = Omit<Props, 'ref'>;
