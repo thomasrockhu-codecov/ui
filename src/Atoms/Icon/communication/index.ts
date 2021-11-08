@@ -36,6 +36,9 @@ import warning from './warning';
 import warningFill from './warningFill';
 import whatsNew from './whatsNew';
 import youtube from './youtube';
+import viewCompact from './viewCompact';
+import viewDefault from './viewDefault';
+import viewLarge from './viewLarge';
 
 export default {
   ...article,
@@ -76,4 +79,7 @@ export default {
   ...warningFill,
   ...whatsNew,
   ...youtube,
+  ...viewCompact,
+  ...viewDefault,
+  ...viewLarge,
 };
