@@ -1,3 +1,10 @@
+## [9.4.1](https://github.com/nordnet/ui/compare/v9.4.0...v9.4.1) (2021-11-08)
+
+
+### Bug Fixes
+
+* **ToolTip:** add ref in types ([f337c87](https://github.com/nordnet/ui/commit/f337c87))
+
 # [9.4.0](https://github.com/nordnet/ui/compare/v9.3.1...v9.4.0) (2021-11-02)
 
 
