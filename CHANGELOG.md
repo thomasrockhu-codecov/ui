@@ -1,3 +1,10 @@
+## [9.5.1](https://github.com/nordnet/ui/compare/v9.5.0...v9.5.1) (2021-11-08)
+
+
+### Bug Fixes
+
+* **Input:** take classname in input.number ([12d84ea](https://github.com/nordnet/ui/commit/12d84ea))
+
 # [9.5.0](https://github.com/nordnet/ui/compare/v9.4.1...v9.5.0) (2021-11-08)
 
 
