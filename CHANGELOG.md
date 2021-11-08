@@ -1,3 +1,15 @@
+# [9.5.0](https://github.com/nordnet/ui/compare/v9.4.1...v9.5.0) (2021-11-08)
+
+
+### Bug Fixes
+
+* snapshots ([4bf5a96](https://github.com/nordnet/ui/commit/4bf5a96))
+
+
+### Features
+
+* add compact, default and large versions ([adfec43](https://github.com/nordnet/ui/commit/adfec43))
+
 ## [9.4.1](https://github.com/nordnet/ui/compare/v9.4.0...v9.4.1) (2021-11-08)
 
 
