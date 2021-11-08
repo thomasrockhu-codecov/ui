@@ -323,6 +323,7 @@ const NumberInput: NumberComponent & {
           'labelTooltip',
           'labelTooltipPosition',
           'width',
+          'className',
         ],
         props,
       )}
