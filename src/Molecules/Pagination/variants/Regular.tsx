@@ -100,3 +100,4 @@ const Regular: React.FC<PaginationDefaultProps> = ({
 };
 
 export default React.memo(Regular);
+export { StyledFlexbox, TruncatedPageNumbers };

@@ -2034,3 +2034,349 @@ cursor:default .c5:hover svg {
   </div>
 </nav>
 `;
+
+exports[`Storyshots Molecules / Pagination / Large Links Pagination 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c3:hover {
+  background-color: #0046FF;
+}
+
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c8:hover {
+  background-color: #0046FF;
+}
+
+.c8:hover span {
+  color: #FFFFFF;
+}
+
+.c8:hover svg {
+  fill: #FFFFFF;
+}
+
+.c11 {
+  background-color: #0046FF;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+<nav
+  aria-label="Pagination"
+  role="navigation"
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <a
+        aria-label="Go to previous page"
+        className="c2 c3"
+        href="/4"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(90 12 12)"
+          />
+        </svg>
+      </a>
+    </div>
+    <ul
+      className="c5 c6"
+    >
+      <li
+        className="c7"
+      >
+        <a
+          aria-label="Go to Page 1"
+          className="c2 c8"
+          href="/1"
+          onClick={[Function]}
+        >
+          <span
+            className="c9"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        className="c10"
+      >
+        <span
+          className="c9"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c7"
+      >
+        <a
+          aria-label="Go to Page 4"
+          className="c2 c8"
+          href="/4"
+          onClick={[Function]}
+        >
+          <span
+            className="c9"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        className="c7"
+      >
+        <div
+          className="c0 c11"
+        >
+          <span
+            className="c12"
+          >
+            5
+          </span>
+        </div>
+      </li>
+      <li
+        className="c7"
+      >
+        <a
+          aria-label="Go to Page 6"
+          className="c2 c8"
+          href="/6"
+          onClick={[Function]}
+        >
+          <span
+            className="c9"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        className="c10"
+      >
+        <span
+          className="c9"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="c7"
+      >
+        <a
+          aria-label="Go to Page 10"
+          className="c2 c8"
+          href="/10"
+          onClick={[Function]}
+        >
+          <span
+            className="c9"
+          >
+            10
+          </span>
+        </a>
+      </li>
+    </ul>
+    <div
+      className="c1"
+    >
+      <a
+        aria-label="Go to next page"
+        className="c2 c3"
+        href="/6"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(-90 12 12)"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+`;

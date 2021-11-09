@@ -148,3 +148,4 @@ const Large: React.FC<PaginationDefaultProps> = ({
 };
 
 export default React.memo(Large);
+export { StyledList, TruncatedPageNumbers };
