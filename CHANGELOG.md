@@ -1,3 +1,11 @@
+## [9.6.1](https://github.com/nordnet/ui/compare/v9.6.0...v9.6.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* include nbsp ([3e9991b](https://github.com/nordnet/ui/commit/3e9991b))
+* update regex ([ecb250e](https://github.com/nordnet/ui/commit/ecb250e))
+
 # [9.6.0](https://github.com/nordnet/ui/compare/v9.5.1...v9.6.0) (2021-11-10)
 
 
