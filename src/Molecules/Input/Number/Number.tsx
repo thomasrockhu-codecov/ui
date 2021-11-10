@@ -11,7 +11,7 @@ import adjustValue from './adjustValue';
 import { placeholderNormalization } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
-const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
+const removeNonNumberCharacters = R.replace(/[^0-9 \-.,]+/, '');
 const calculateHeight = (p: any, variant: Variant | undefined, size: 's' | undefined) => {
   if (variant === 'quiet') return 'auto';
   return size === 's' ? `${p.theme.spacing.unit(8)}px` : `${p.theme.spacing.unit(10)}px`;
