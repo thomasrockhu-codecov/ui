@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css, ThemedStyledProps } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Spacings } from './Box.types';
+import { LayoutProps, Props, Spacings } from './BoxLayout.types';
 import { Theme } from '../../theme/theme.types';
 import { isNumber, isString } from '../../common/utils';
 
@@ -108,19 +108,23 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
   return 'transparent';
 };
 
-const StyledDiv = styled.div<Props>`
+// export const generateCSS = css<LayoutProps>`
+export const generateCSS = css<LayoutProps>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
   ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
   ${(p) => (p.lg ? getStylesForSize('lg') : '')}
-    background-color: ${(p) => getColor(p)};
+`;
+
+const StyledDiv = styled.div<Props>`
+  ${generateCSS}
 `;
 
 /**
- * Use `Box` component to handle margins/paddings.
+ * Use `BoxLayout` component to handle margins/paddings.
  */
-export const Box = React.forwardRef<HTMLDivElement, Props>(
+export const BoxLayout = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,
@@ -179,3 +183,36 @@ export const Box = React.forwardRef<HTMLDivElement, Props>(
     />
   ),
 );
+
+// causes warning because of StyledComponents defined within component
+export const withStyledInComponentError = (Component) => (props) => {
+  const StyledComp = styled(Component)`
+    ${generateCSS}
+  `;
+
+  return <StyledComp {...props} />;
+};
+
+// explicitly type generic type
+export const withLayoutExplicit = <P, T extends React.ComponentType<P>>(Component: T) =>
+  styled(Component)<React.ComponentProps<T> & LayoutProps>`
+    ${generateCSS}
+  `;
+
+// infer type of Component, but no error if Component doesn't accept classname in prop (needed for styled to work + need className to be passed on to element)
+export const withLayoutWithoutClassName = <T extends React.ComponentType<React.ComponentProps<T>>>(
+  Component: T,
+) =>
+  styled(Component)<React.ComponentProps<T> & LayoutProps>`
+    ${generateCSS}
+  `;
+
+// TODO: Try to get className required as prop
+export const withLayout = <
+  T extends React.ComponentType<{ className: string | undefined } & React.ComponentProps<T>>,
+>(
+  Component: T,
+) =>
+  styled(Component)<React.ComponentProps<T> & LayoutProps>`
+    ${generateCSS}
+  `;
