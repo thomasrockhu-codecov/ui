@@ -1,3 +1,15 @@
+# [9.6.0](https://github.com/nordnet/ui/compare/v9.5.1...v9.6.0) (2021-11-10)
+
+
+### Bug Fixes
+
+* updated test ([41a94ff](https://github.com/nordnet/ui/commit/41a94ff))
+
+
+### Features
+
+* expose accodionitem content and remove hover styling ([e95925c](https://github.com/nordnet/ui/commit/e95925c))
+
 ## [9.5.1](https://github.com/nordnet/ui/compare/v9.5.0...v9.5.1) (2021-11-08)
 
 
