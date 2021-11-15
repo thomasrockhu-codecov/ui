@@ -16378,6 +16378,43 @@ Array [
       aria-hidden="true"
       className="c0"
       focusable="false"
+      height={32}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      width={32}
+    >
+      <path
+        clipRule="evenodd"
+        d="M13.239 1.16105C13.9942 -0.241349 16.0058 -0.241346 16.7609 1.16105L29.0867 24.0518C29.8042 25.3843 28.8391 27 27.3257 27H2.67418C1.16083 27 0.195755 25.3843 0.913234 24.0518L13.239 1.16105ZM16 19V8L14 8.00004V19.0001L16 19ZM16 23.0001V21L14 21.0001V23.0001L16 23.0001Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  color: #0046FF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
       height={16}
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -34940,6 +34977,47 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           <path
             clipRule="evenodd"
             d="M13.787 3.032c-.794-1.376-2.78-1.376-3.574 0L1.28 18.505c-.794 1.376.199 3.095 1.787 3.095h17.868c1.588 0 2.58-1.72 1.787-3.095L13.787 3.032zM13 15V7h-2v8h2zm0 4v-2h-2v2h2z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        WarningFill32
+      </span>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={32}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={32}
+        >
+          <path
+            clipRule="evenodd"
+            d="M13.239 1.16105C13.9942 -0.241349 16.0058 -0.241346 16.7609 1.16105L29.0867 24.0518C29.8042 25.3843 28.8391 27 27.3257 27H2.67418C1.16083 27 0.195755 25.3843 0.913234 24.0518L13.239 1.16105ZM16 19V8L14 8.00004V19.0001L16 19ZM16 23.0001V21L14 21.0001V23.0001L16 23.0001Z"
             fill="currentColor"
             fillRule="evenodd"
           />
