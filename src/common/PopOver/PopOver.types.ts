@@ -17,6 +17,7 @@ export type Position =
   | 'left-end';
 
 export type Props = {
+  className?: string;
   id?: string;
   label: React.ReactNode;
   position?: Position;

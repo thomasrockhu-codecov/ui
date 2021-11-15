@@ -26,6 +26,7 @@ const components = {
 export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipProps>(
   (
     {
+      className,
       children,
       id: idProp,
       position = 'bottom',
@@ -96,6 +97,7 @@ export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipPro
         })}
         {isOpen && (
           <StyledPopOver
+            className={className}
             id={id}
             ref={ref as any}
             label={label}
