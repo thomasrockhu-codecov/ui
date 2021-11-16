@@ -1,3 +1,10 @@
+## [9.6.2](https://github.com/nordnet/ui/compare/v9.6.1...v9.6.2) (2021-11-16)
+
+
+### Bug Fixes
+
+* 🐛 add classname to persistant tooltip and related comps ([a16796e](https://github.com/nordnet/ui/commit/a16796e))
+
 ## [9.6.1](https://github.com/nordnet/ui/compare/v9.6.0...v9.6.1) (2021-11-10)
 
 
