@@ -1,9 +1,9 @@
 import React from 'react';
-import { Flexbox, Link, OldIcon, Typography } from '../../../index';
+import { Flexbox, Link, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import PageItems from '../PageItems';
 import { BrowseLinkProps, PageItemProps, PaginationDefaultLinkProps } from '../Pagination.types';
-import { StyledFlexbox, TruncatedPageNumbers } from './Regular';
+import { ChevronIcon, StyledFlexbox, TruncatedPageNumbers } from './components/RegularComponents';
 
 const PageNumberLinkItem: React.FC<PageItemProps> = ({
   isCurrentPage = false,
@@ -13,23 +13,23 @@ const PageNumberLinkItem: React.FC<PageItemProps> = ({
   href,
 }) => (
   <Flexbox item as="li">
-    {!isCurrentPage ? (
+    {isCurrentPage ? (
+      <Typography type="secondary" color={(t) => t.color.cta} weight="bold">
+        {children}
+      </Typography>
+    ) : (
       <Link onClick={onClick} aria-label={`${label} ${children}`} to={href}>
         <Typography type="secondary" color={(t) => t.color.text} weight="bold">
           {children}
         </Typography>
       </Link>
-    ) : (
-      <Typography type="secondary" color={(t) => t.color.cta} weight="bold">
-        {children}
-      </Typography>
     )}
   </Flexbox>
 );
 
 const ChevronLink: React.FC<BrowseLinkProps> = ({ direction = 'left', onClick, label, href }) => (
-  <Link onClick={onClick} aria-label={label} to={href}>
-    {direction === 'left' ? <OldIcon.ChevronLeft size={2} /> : <OldIcon.ChevronRight size={2} />}
+  <Link onClick={onClick} aria-label={label} to={href} color="black">
+    <ChevronIcon direction={direction} />
   </Link>
 );
 

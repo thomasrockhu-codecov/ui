@@ -117,6 +117,8 @@ export type ThemeColors = {
   creditsPieSecondary: RawColor['complementaryPink2'];
   /** cta */
   cta: RawColor['cta'];
+  /** ctaHover */
+  ctaHover: RawColor['ctaHover'];
   /** gray6 */
   dateAvatarBackground1: RawColor['gray6'];
   /** gray7 */

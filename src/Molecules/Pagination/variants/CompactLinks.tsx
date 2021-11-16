@@ -1,24 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Box, Flexbox, Link, OldIcon } from '../../../index';
+import { Box, Flexbox } from '../../../index';
 import { BrowseLinkProps, PaginationCompactLinkProps } from '../Pagination.types';
-
-const StyledLink = styled(Link)<{ $direction: 'left' | 'right' }>`
-  display: flex;
-  height: ${(p) => p.theme.spacing.unit(10)}px;
-  width: ${(p) => p.theme.spacing.unit(8)}px;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row;
-  justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
-  align-items: center;
-`;
+import { ChevronIcon, StyledLink } from './components/CompactComponents';
 
 const ChevronLink: React.FC<BrowseLinkProps> = ({ direction, onClick, label, href }) => (
   <Flexbox item container alignItems="center" alignContent="center">
     <StyledLink onClick={onClick} aria-label={label} $direction={direction} to={href}>
-      <OldIcon.ThinChevron direction={direction} size={4} />
+      <ChevronIcon direction={direction} />
     </StyledLink>
   </Flexbox>
 );

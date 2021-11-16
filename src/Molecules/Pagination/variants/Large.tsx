@@ -1,110 +1,37 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Button, Flexbox, OldIcon, Typography } from '../../../index';
-import List from '../../../Atoms/List';
+import { Flexbox, Typography } from '../../../index';
 import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
 import PageItems from '../PageItems';
-
-const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrentPage?: boolean }>`
-  display: flex;
-  height: ${(p) => p.theme.spacing.unit(10)}px;
-  width: ${(p) => p.theme.spacing.unit(10)}px;
-  border: none;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  ${({ $type, $isCurrentPage, theme }) =>
-    $type === 'page-item' &&
-    $isCurrentPage &&
-    `background-color: ${theme.color.cta}; cursor: default`}
-  ${({ $type, theme }) =>
-    $type === 'chevron' && `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
-
-  &:hover {
-    span {
-      color: ${(t) => t.theme.color.buttonText};
-    }
-
-    svg {
-      fill: ${(t) => t.theme.color.buttonText};
-    }
-  }
-`;
-
-const StyledTruncatedBox = styled.li`
-  display: flex;
-  height: ${(p) => p.theme.spacing.unit(10)}px;
-  width: ${(p) => p.theme.spacing.unit(5)}px;
-  border: none;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-`;
-
-const getWidthForList = (
-  pageItemWith: number,
-  truncatedItemWidth: number,
-  numberOfPages: number,
-) => {
-  const MAX_NUMBER_ITEMS = 7;
-  const NUMBER_OF_CHEVRONS = 2;
-
-  if (numberOfPages <= 5) {
-    return numberOfPages * pageItemWith;
-  }
-  if (numberOfPages === 6) {
-    return numberOfPages * pageItemWith - truncatedItemWidth;
-  }
-  return MAX_NUMBER_ITEMS * pageItemWith - NUMBER_OF_CHEVRONS * truncatedItemWidth;
-};
-
-const StyledList = styled(List)<{ $numberOfPages: number }>`
-  display: flex;
-  justify-content: center;
-  ${(p) => {
-    const PAGE_ITEM_WIDTH = p.theme.spacing.unit(10);
-    const TRUNCATED_ITEM_WIDTH = p.theme.spacing.unit(5);
-    return `width: ${getWidthForList(PAGE_ITEM_WIDTH, TRUNCATED_ITEM_WIDTH, p.$numberOfPages)}px`;
-  }}
-`;
+import {
+  ChevronIcon,
+  StyledCurrentPageBox,
+  StyledList,
+  TruncatedPageNumbers,
+  StyledButton,
+} from './components/LargeComponents';
 
 const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, children, label }) => (
   <Flexbox item as="li">
-    <StyledButton
-      $type="page-item"
-      onClick={!isCurrentPage ? onClick : undefined}
-      $isCurrentPage={isCurrentPage}
-      aria-label={`${label} ${children}`}
-      aria-disabled={isCurrentPage}
-    >
-      <Typography
-        type="primary"
-        color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}
-        weight="bold"
-      >
-        {children}
-      </Typography>
-    </StyledButton>
+    {isCurrentPage ? (
+      <StyledCurrentPageBox container>
+        <Typography type="primary" color={(t) => t.color.buttonText} weight="bold">
+          {children}
+        </Typography>
+      </StyledCurrentPageBox>
+    ) : (
+      <StyledButton $type="page-item" onClick={onClick} aria-label={`${label} ${children}`}>
+        <Typography type="primary" color={(t) => t.color.text} weight="bold">
+          {children}
+        </Typography>
+      </StyledButton>
+    )}
   </Flexbox>
-);
-
-const TruncatedPageNumbers = () => (
-  <StyledTruncatedBox>
-    <Typography type="primary" weight="bold">
-      ...
-    </Typography>
-  </StyledTruncatedBox>
 );
 
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
     <StyledButton $type="chevron" onClick={onClick} aria-label={label}>
-      {direction === 'left' ? (
-        <OldIcon.ChevronLeft inline size={3} />
-      ) : (
-        <OldIcon.ChevronRight inline size={3} />
-      )}
+      <ChevronIcon direction={direction} />
     </StyledButton>
   </Flexbox>
 );
@@ -148,4 +75,3 @@ const Large: React.FC<PaginationDefaultProps> = ({
 };
 
 export default React.memo(Large);
-export { StyledList, TruncatedPageNumbers };
