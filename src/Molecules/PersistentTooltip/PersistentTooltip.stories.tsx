@@ -108,39 +108,6 @@ export const CustomTitleAndDescription = () => {
   );
 };
 
-const StyledPersistentTooltip = styled(PersistentTooltip)`
-  ${PersistentTooltip.components.CloseButtonIcon} {
-    fill: ${(p) => p.theme.color.text};
-    width: ${(p) => p.theme.spacing.unit(2)}px;
-    height: ${(p) => p.theme.spacing.unit(2)}px;
-  }
-`;
-
-export const StyledSubcomponents = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  return (
-    <StoryWrapper>
-      <StyledPersistentTooltip
-        isOpen={isOpen}
-        title={<Typography type="title2">I&apos;m in a box</Typography>}
-        description={
-          <Typography>
-            The max width is set with a prop for this tooltip. Also, it&apos;s subcomponents styled
-            – different color, smaller close button.
-          </Typography>
-        }
-        closeButtonTitle="Close by clicking X"
-        backgroundColor={(t) => t.color.warning}
-        borderColor={(t) => t.color.negative}
-        onClose={() => setIsOpen(false)}
-      >
-        <Input.Text label="Label" />
-      </StyledPersistentTooltip>
-    </StoryWrapper>
-  );
-};
-
 export const DifferentPositions = () => {
   const [openOne, setOpenOne] = useState(true);
   const [openTwo, setOpenTwo] = useState(true);
@@ -223,6 +190,72 @@ export const PersistentTooltipInDrawer = () => {
           <Input.Text label="Label" />
         </PersistentTooltip>
       </Drawer>
+    </StoryWrapper>
+  );
+};
+
+const StyledPersistentTooltipWithMargin = styled(PersistentTooltip)`
+  margin-right: 20px;
+`;
+
+export const StyledPersistentTooltipInDrawer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <StoryWrapper>
+      <Drawer
+        onAnimationComplete={() => {
+          setIsOpen(true);
+        }}
+        preventOnClickOutsideDataAttributes={['data-specific-drawer-prevent-click-outside']}
+      >
+        <Box mt={50}>
+          <StyledPersistentTooltipWithMargin
+            isOpen={isOpen}
+            title="This is a styled persistent tooltip"
+            description="If you want to slightly re-position the tooltip, style it and add some margin!"
+            closeButtonTitle="Close by clicking X"
+            onClose={() => setIsOpen(false)}
+            data-specific-drawer-prevent-click-outside
+            position="left"
+          >
+            <Input.Text label="Label" />
+          </StyledPersistentTooltipWithMargin>
+        </Box>
+      </Drawer>
+    </StoryWrapper>
+  );
+};
+
+const StyledPersistentTooltipSubComponents = styled(PersistentTooltip)`
+  ${PersistentTooltip.components.CloseButtonIcon} {
+    fill: ${(p) => p.theme.color.text};
+    width: ${(p) => p.theme.spacing.unit(2)}px;
+    height: ${(p) => p.theme.spacing.unit(2)}px;
+  }
+`;
+
+export const StyledSubcomponents = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <StoryWrapper>
+      <StyledPersistentTooltipSubComponents
+        isOpen={isOpen}
+        title={<Typography type="title2">I&apos;m in a box</Typography>}
+        description={
+          <Typography>
+            The max width is set with a prop for this tooltip. Also, it&apos;s subcomponents styled
+            – different color, smaller close button.
+          </Typography>
+        }
+        closeButtonTitle="Close by clicking X"
+        backgroundColor={(t) => t.color.warning}
+        borderColor={(t) => t.color.negative}
+        onClose={() => setIsOpen(false)}
+      >
+        <Input.Text label="Label" />
+      </StyledPersistentTooltipSubComponents>
     </StoryWrapper>
   );
 };

@@ -19,6 +19,7 @@ import { useTooltip } from './hooks';
 export const Tooltip: TooltipComponent = forwardRef(
   (
     {
+      className,
       children,
       label,
       ariaLabel,
@@ -65,6 +66,7 @@ export const Tooltip: TooltipComponent = forwardRef(
 
         {isOpen && (
           <PopOver
+            className={className}
             id={id}
             ref={ref as any}
             triggerElement={triggerElement}
