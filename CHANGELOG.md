@@ -1,3 +1,15 @@
+# [9.7.0](https://github.com/nordnet/ui/compare/v9.6.2...v9.7.0) (2021-11-16)
+
+
+### Bug Fixes
+
+* add warning icon storyShot ([964c4d4](https://github.com/nordnet/ui/commit/964c4d4))
+
+
+### Features
+
+* add warning icon filled size 32 ([1cb5951](https://github.com/nordnet/ui/commit/1cb5951))
+
 ## [9.6.2](https://github.com/nordnet/ui/compare/v9.6.1...v9.6.2) (2021-11-16)
 
 
