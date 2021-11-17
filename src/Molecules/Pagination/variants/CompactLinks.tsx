@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box, Flexbox } from '../../../index';
 import { BrowseLinkProps, PaginationCompactLinkProps } from '../Pagination.types';
-import { ChevronIcon, StyledLink } from './components/CompactComponents';
+import ChevronIcon from './components/ChevronIcon';
+import { StyledLink } from './components/CompactComponents';
 
 const ChevronLink: React.FC<BrowseLinkProps> = ({ direction, onClick, label, href }) => (
   <Flexbox item container alignItems="center" alignContent="center">
     <StyledLink onClick={onClick} aria-label={label} $direction={direction} to={href}>
-      <ChevronIcon direction={direction} />
+      <ChevronIcon direction={direction} size={16} inline />
     </StyledLink>
   </Flexbox>
 );

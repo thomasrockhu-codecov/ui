@@ -3,7 +3,8 @@ import { Flexbox, Link, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import PageItems from '../PageItems';
 import { BrowseLinkProps, PageItemProps, PaginationDefaultLinkProps } from '../Pagination.types';
-import { ChevronIcon, StyledFlexbox, TruncatedPageNumbers } from './components/RegularComponents';
+import ChevronIcon from './components/ChevronIcon';
+import { StyledFlexbox, TruncatedPageNumbers } from './components/RegularComponents';
 
 const PageNumberLinkItem: React.FC<PageItemProps> = ({
   isCurrentPage = false,
@@ -29,7 +30,7 @@ const PageNumberLinkItem: React.FC<PageItemProps> = ({
 
 const ChevronLink: React.FC<BrowseLinkProps> = ({ direction = 'left', onClick, label, href }) => (
   <Link onClick={onClick} aria-label={label} to={href} color="black">
-    <ChevronIcon direction={direction} />
+    <ChevronIcon direction={direction} size={8} />
   </Link>
 );
 

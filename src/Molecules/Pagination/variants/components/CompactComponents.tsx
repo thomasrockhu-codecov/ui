@@ -1,13 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Icon, Button, Link } from '../../../../index';
-
-const ChevronIcon: React.FC<{ direction: 'left' | 'right' }> = ({ direction }) =>
-  direction === 'left' ? (
-    <Icon.ChevronLeft16 inline color="inherit" />
-  ) : (
-    <Icon.ChevronRight16 inline color="inherit" />
-  );
+import { Button, Link } from '../../../../index';
 
 const [StyledButton, StyledLink] = [Button, Link].map(
   (elem: any) => styled(elem)<{ $direction: 'left' | 'right' }>`
@@ -24,4 +16,4 @@ const [StyledButton, StyledLink] = [Button, Link].map(
   `,
 );
 
-export { ChevronIcon, StyledButton, StyledLink };
+export { StyledButton, StyledLink };

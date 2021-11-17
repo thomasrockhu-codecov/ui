@@ -1,9 +1,22 @@
 import React, { useEffect } from 'react';
-import { Route } from 'react-router';
+import { Route, match as MatchType, RouteComponentProps } from 'react-router';
 import { action } from '@storybook/addon-actions';
 import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
-const View = ({ match, currentPage, setCurrentPage }: any) => {
+interface MatchParams {
+  page: string;
+}
+
+interface PaginationRouteHelperProps {
+  currentPage: number;
+  setCurrentPage: (pageNumber: number) => void;
+}
+
+interface ViewProps extends PaginationRouteHelperProps {
+  match: MatchType<MatchParams>;
+}
+
+const View: React.FC<ViewProps> = ({ match, currentPage, setCurrentPage }) => {
   useEffect(() => {
     const matchPage = +match.params.page;
     if (currentPage !== matchPage) {
@@ -19,14 +32,18 @@ const View = ({ match, currentPage, setCurrentPage }: any) => {
   );
 };
 
-const PaginationRouteHelper = ({ children, currentPage, setCurrentPage }: any) => {
+const PaginationRouteHelper: React.FC<PaginationRouteHelperProps> = ({
+  children,
+  currentPage,
+  setCurrentPage,
+}) => {
   return (
     <Provider>
       {children}
       <Route
         path="/:page"
-        component={(props: any) => (
-          <View {...props} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        component={({ match }: RouteComponentProps<MatchParams>) => (
+          <View match={match} currentPage={currentPage} setCurrentPage={setCurrentPage} />
         )}
       />
     </Provider>

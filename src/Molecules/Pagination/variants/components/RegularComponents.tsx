@@ -1,13 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon, Typography } from '../../../../index';
-
-const ChevronIcon: React.FC<{ direction: 'left' | 'right' }> = ({ direction }) =>
-  direction === 'left' ? (
-    <Icon.ChevronLeft8 color="inherit" />
-  ) : (
-    <Icon.ChevronRight8 color="inherit" />
-  );
+import { Flexbox, Typography } from '../../../../index';
 
 const StyledFlexbox = styled(Flexbox)<{ $numberOfPages: number }>`
   width: ${(p) => {
@@ -35,4 +28,4 @@ const TruncatedPageNumbers = () => (
   </Flexbox>
 );
 
-export { ChevronIcon, StyledFlexbox, TruncatedPageNumbers };
+export { StyledFlexbox, TruncatedPageNumbers };

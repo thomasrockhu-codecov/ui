@@ -2,8 +2,8 @@ import React from 'react';
 import { Flexbox, Typography } from '../../../index';
 import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
 import PageItems from '../PageItems';
+import ChevronIcon from './components/ChevronIcon';
 import {
-  ChevronIcon,
   StyledCurrentPageBox,
   StyledList,
   TruncatedPageNumbers,
@@ -31,7 +31,7 @@ const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, chi
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
     <StyledButton $type="chevron" onClick={onClick} aria-label={label}>
-      <ChevronIcon direction={direction} />
+      <ChevronIcon direction={direction} size={16} inline />
     </StyledButton>
   </Flexbox>
 );

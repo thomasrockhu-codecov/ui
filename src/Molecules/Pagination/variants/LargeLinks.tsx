@@ -2,8 +2,8 @@ import React from 'react';
 import { Flexbox, Typography } from '../../../index';
 import { BrowseLinkProps, PageItemProps, PaginationDefaultLinkProps } from '../Pagination.types';
 import PageItems from '../PageItems';
+import ChevronIcon from './components/ChevronIcon';
 import {
-  ChevronIcon,
   StyledCurrentPageBox,
   StyledList,
   TruncatedPageNumbers,
@@ -37,7 +37,7 @@ const PageItem: React.FC<PageItemProps> = ({
 const ChevronLink: React.FC<BrowseLinkProps> = ({ direction, onClick, label, href }) => (
   <Flexbox item container alignItems="center">
     <StyledLink $type="chevron" onClick={onClick} aria-label={label} to={href}>
-      <ChevronIcon direction={direction} />
+      <ChevronIcon direction={direction} size={16} inline />
     </StyledLink>
   </Flexbox>
 );

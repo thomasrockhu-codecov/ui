@@ -1,14 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox, Icon, Link, Typography } from '../../../../index';
+import { Button, Flexbox, Link, Typography } from '../../../../index';
 import List from '../../../../Atoms/List';
-
-const ChevronIcon: React.FC<{ direction: 'left' | 'right' }> = ({ direction }) =>
-  direction === 'left' ? (
-    <Icon.ChevronLeft16 inline color="inherit" />
-  ) : (
-    <Icon.ChevronRight16 inline color="inherit" />
-  );
 
 const StyledCurrentPageBox = styled(Flexbox)`
   background-color: ${(t) => t.theme.color.cta};
@@ -96,11 +89,4 @@ const [StyledButton, StyledLink] = [Button, Link].map(
   `,
 );
 
-export {
-  ChevronIcon,
-  StyledCurrentPageBox,
-  StyledList,
-  TruncatedPageNumbers,
-  StyledButton,
-  StyledLink,
-};
+export { StyledCurrentPageBox, StyledList, TruncatedPageNumbers, StyledButton, StyledLink };
