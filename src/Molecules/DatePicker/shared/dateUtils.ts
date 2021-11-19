@@ -26,7 +26,7 @@ type Options = {
 const dateFormat = {
   sv: 'yyyy-MM-dd',
   nb: 'dd.MM.yy',
-  da: 'yyyy-MM-dd',
+  da: 'dd.MM.yyyy',
   fi: 'dd.MM.yyyy',
   en: 'dd/MM/yyyy',
 };
