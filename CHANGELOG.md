@@ -1,3 +1,10 @@
+# [9.8.0](https://github.com/nordnet/ui/compare/v9.7.0...v9.8.0) (2021-11-19)
+
+
+### Features
+
+* 🎸 change default datepicker format for danish users ([493202c](https://github.com/nordnet/ui/commit/493202c))
+
 # [9.7.0](https://github.com/nordnet/ui/compare/v9.6.2...v9.7.0) (2021-11-16)
 
 
