@@ -1,3 +1,10 @@
+## [9.8.1](https://github.com/nordnet/ui/compare/v9.8.0...v9.8.1) (2021-11-22)
+
+
+### Bug Fixes
+
+* trigger build to generate tag ([e4b1b97](https://github.com/nordnet/ui/commit/e4b1b97))
+
 # [9.8.0](https://github.com/nordnet/ui/compare/v9.7.0...v9.8.0) (2021-11-19)
 
 
