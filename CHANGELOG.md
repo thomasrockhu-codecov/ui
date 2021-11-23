@@ -1,3 +1,10 @@
+## [9.8.2](https://github.com/nordnet/ui/compare/v9.8.1...v9.8.2) (2021-11-23)
+
+
+### Bug Fixes
+
+* add gold16 icon ([2a5e186](https://github.com/nordnet/ui/commit/2a5e186))
+
 ## [9.8.1](https://github.com/nordnet/ui/compare/v9.8.0...v9.8.1) (2021-11-22)
 
 
