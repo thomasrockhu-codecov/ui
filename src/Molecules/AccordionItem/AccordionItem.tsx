@@ -52,9 +52,7 @@ const Button = styled.button<{ withChevron?: boolean; $disabled?: boolean }>`
   align-items: center;
   width: 100%;
   border: 0;
-  padding-top: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-left: 0;
+  padding: ${(p) => p.theme.spacing.unit(3)}px 0;
   color: ${(p) => (p.$disabled ? p.theme.color.disabledText : '')};
   background-color: transparent;
   cursor: ${(p) => (p.$disabled ? 'default' : 'pointer')};
@@ -72,7 +70,6 @@ const IconWrapper = styled.div<{ withChevron?: boolean }>`
     css`
       margin-top: ${withChevron ? '0' : '-2px'};
       order: ${withChevron ? '1' : '-1'};
-      padding-left: ${withChevron ? theme.spacing.unit(3) : 0}px;
       padding-right: ${withChevron ? 0 : theme.spacing.unit(3)}px;
     `}
 `;
