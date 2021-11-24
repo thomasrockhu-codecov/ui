@@ -6,6 +6,8 @@ import { Box, OldIcon, Typography, Icon } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { Props } from './AccordionItem.types';
 
+const TRANSITION_DURATION = 0.16;
+
 const Item = styled.div<{
   $hasFocus: boolean;
   $disabled?: boolean;
@@ -60,12 +62,13 @@ const Button = styled.button<{ withChevron?: boolean; $disabled?: boolean }>`
   ${({ withChevron, theme }) =>
     withChevron &&
     css`
-      padding: ${theme.spacing.unit(3)}px ${theme.spacing.unit(6)}px;
+      padding: ${theme.spacing.unit(3)}px 0;
       justify-content: space-between;
     `}
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
+  margin-top: -2px; // to center icon with text
   order: ${(p) => (p.withChevron ? '1' : '-1')};
   padding-left: ${(p) => (p.withChevron ? p.theme.spacing.unit(3) : 0)}px;
   padding-right: ${(p) => (!p.withChevron ? p.theme.spacing.unit(3) : 0)}px; ;
@@ -74,7 +77,7 @@ const IconWrapper = styled.div<{ withChevron?: boolean }>`
 const MovingChevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; expanded: boolean }>`
   color: ${(p) => (p.disabled ? p.theme.color.disabledText : '')};
   transform: rotate(${(p) => (p.expanded ? '0' : '180')}deg);
-  transition: transform 0.16s ease-out;
+  transition: transform ${TRANSITION_DURATION}s ease-out;
 `;
 
 const Content = styled(Box)``;
@@ -179,7 +182,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
                 open: { opacity: 1, height: 'auto' },
                 collapsed: { opacity: 0, height: 0 },
               }}
-              transition={{ duration: 0.16, ease: 'easeOut' }}
+              transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
               <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
                 {isString(children) ? (
