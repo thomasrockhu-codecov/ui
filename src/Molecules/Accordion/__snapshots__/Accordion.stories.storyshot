@@ -26,8 +26,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -36,22 +35,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -74,7 +72,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Låg CO₂ risk
         <div
@@ -121,8 +118,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -131,22 +127,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -169,7 +164,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Sustainability score
         <div
@@ -221,8 +215,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -231,22 +224,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -269,7 +261,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Låg CO₂ risk
         <div
@@ -316,8 +307,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -326,22 +316,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -364,7 +353,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Sustainability score
         <div

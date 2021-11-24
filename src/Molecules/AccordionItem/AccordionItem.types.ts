@@ -20,3 +20,16 @@ export type Props = {
   pl?: number;
   pr?: number;
 };
+
+export type ItemProps = {
+  hasFocus: boolean;
+  disabled?: boolean;
+  disableBackgroundColor?: boolean;
+  p?: number;
+  px?: number;
+  py?: number;
+  pt?: number;
+  pb?: number;
+  pl?: number;
+  pr?: number;
+};

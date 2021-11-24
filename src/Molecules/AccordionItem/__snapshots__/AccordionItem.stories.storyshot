@@ -176,8 +176,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -186,22 +185,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -224,7 +222,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Låg CO₂ risk
         <div
@@ -271,8 +268,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -281,22 +277,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -319,7 +314,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Sustainability score
         <div
@@ -370,8 +364,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -380,22 +373,21 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -418,7 +410,6 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      type="button"
     >
       Lemon drops and several cakes for two persons or more
       <div
@@ -469,8 +460,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -479,23 +469,23 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
   padding: 12px 0;
   color: #A0A09B;
-  background-color: transparent;
   cursor: default;
-  text-align: start;
 }
 
 .c4 {
@@ -509,6 +499,7 @@ Array [
 <div
     aria-expanded={false}
     className="c0 c1"
+    disabled={true}
   >
     <h3
       className="c2"
@@ -519,7 +510,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item is disabled
         <div
@@ -564,8 +554,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -574,23 +563,23 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
   padding: 12px 0;
   color: #A0A09B;
-  background-color: transparent;
   cursor: default;
-  text-align: start;
   padding: 12px 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -607,6 +596,7 @@ Array [
 }
 
 .c6 {
+  color: #A0A09B;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -618,6 +608,7 @@ Array [
 <div
     aria-expanded={false}
     className="c0 c1"
+    disabled={true}
   >
     <h3
       className="c2"
@@ -628,7 +619,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item is disabled with chevron
         <div
@@ -637,6 +627,7 @@ Array [
           <svg
             aria-hidden="true"
             className="c5 c6"
+            disabled={true}
             expanded={false}
             focusable="false"
             height={8}
@@ -698,8 +689,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -708,22 +698,21 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -746,7 +735,6 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      type="button"
     >
       Låg CO₂ risk
       <div
@@ -808,8 +796,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -818,22 +805,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -856,7 +842,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Content is text only
         <div
@@ -903,8 +888,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -913,22 +897,21 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -951,7 +934,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         Content is a component
         <div
@@ -1000,8 +982,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1010,22 +991,21 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
   padding: 12px 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1062,7 +1042,6 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      type="button"
     >
       How much risk are you willing to take?
       <div
@@ -1115,9 +1094,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding: 40px;
-  background-color: transparent;
+  padding: 40px 40px 40px 40px;
 }
 
 .c1 + .c0 {
@@ -1144,28 +1121,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1188,7 +1160,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom padding
         <div
@@ -1239,10 +1210,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-left: 80px;
-  padding-right: 80px;
-  background-color: transparent;
+  padding: 0px 80px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1265,28 +1233,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1309,7 +1272,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom horizontal padding
         <div
@@ -1364,10 +1326,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: transparent;
+  padding: 40px 0px 40px 40px;
 }
 
 .c1 + .c0 {
@@ -1386,28 +1345,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1430,7 +1384,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom vertical padding
         <div
@@ -1489,9 +1442,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-top: 40px;
-  background-color: transparent;
+  padding: 40px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1506,28 +1457,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1550,7 +1496,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom top padding
         <div
@@ -1613,9 +1558,7 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-bottom: 40px;
-  background-color: transparent;
+  padding: 0px 0px 40px 0px;
 }
 
 .c1 + .c0 {
@@ -1626,28 +1569,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1670,7 +1608,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom bottom padding
         <div
@@ -1737,37 +1674,30 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-left: 80px;
-  background-color: transparent;
+  padding: 0px 0px 0px 80px;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
 
-.c11 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -1790,7 +1720,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom left padding
         <div
@@ -1838,6 +1767,14 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
+.c1 {
+  padding: 0px 80px 0px 0px;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
 .c8 + .c0 {
   border-top: 1px solid #EBEBE8;
 }
@@ -1854,38 +1791,23 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
-.c12 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
-.c1 {
-  outline: none;
-  padding-right: 80px;
-  background-color: transparent;
-}
-
-.c1 + .c0 {
-  border-top: 1px solid #EBEBE8;
-}
-
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
   padding: 12px 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1922,7 +1844,6 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        type="button"
       >
         This accordion item has a custom right padding and chevron to demonstrate
         <div
@@ -1975,8 +1896,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1985,22 +1905,21 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -2023,7 +1942,6 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      type="button"
     >
       This card has its hover and focus color disabled
       <div
@@ -2073,8 +1991,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
 }
 
 .c1 {
-  outline: none;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -2083,22 +2000,21 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: start;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  padding: 12px 0;
+  box-sizing: border-box;
   background-color: transparent;
-  cursor: pointer;
-  text-align: start;
+  padding: 12px 0;
 }
 
 .c4 {
@@ -2121,7 +2037,6 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      type="button"
     >
       Sustainability score
       <div

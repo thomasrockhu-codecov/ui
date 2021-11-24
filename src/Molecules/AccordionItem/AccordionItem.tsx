@@ -4,59 +4,43 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import { Box, OldIcon, Typography, Icon } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
-import { Props } from './AccordionItem.types';
+import { Props, ItemProps } from './AccordionItem.types';
 
 const TRANSITION_DURATION = 0.16;
 
-const Item = styled.div<{
-  $hasFocus: boolean;
-  $disabled?: boolean;
-  $disableBackgroundColor?: boolean;
-  $p?: number;
-  $px?: number;
-  $py?: number;
-  $pt?: number;
-  $pb?: number;
-  $pl?: number;
-  $pr?: number;
-}>`
-  & + & {
-    border-top: 1px solid ${(p) => p.theme.color.divider};
-  }
+const Item = styled.div<ItemProps>`
+  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => css`
+    ${hasFocus && `outline: 1px solid ${theme.color.cta}`};
+    ${!disableBackgroundColor && hasFocus && `background-color: ${theme.color.background}`};
 
-  outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
+    padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
+      ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || py || p || 0)}px;
 
-  ${({ $p, theme }) => ($p ? `padding: ${theme.spacing.unit($p)}px;` : '')}
-  ${({ $px, theme }) =>
-    $px
-      ? `padding-left: ${theme.spacing.unit($px)}px; padding-right: ${theme.spacing.unit($px)}px;`
-      : ''}
-  ${({ $py, theme }) =>
-    $py
-      ? `padding-top: ${theme.spacing.unit($py)}px; padding-bottom: ${theme.spacing.unit($py)}px;`
-      : ''}
-  ${({ $pt, theme }) => ($pt ? `padding-top: ${theme.spacing.unit($pt)}px;` : '')}
-  ${({ $pb, theme }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
-  ${({ $pl, theme }) => ($pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : '')}
-  ${({ $pr, theme }) => ($pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : '')}
-
-  background-color: ${({ $disableBackgroundColor, $hasFocus, theme }) =>
-    !$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent'};
+    & + & {
+      border-top: 1px solid ${theme.color.divider};
+    }
+  `}
 `;
 
-const Button = styled.button<{ withChevron?: boolean; $disabled?: boolean }>`
+const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  align-items: center;
   width: 100%;
   border: 0;
-  padding: ${(p) => p.theme.spacing.unit(3)}px 0;
-  color: ${(p) => (p.$disabled ? p.theme.color.disabledText : '')};
-  background-color: transparent;
-  cursor: ${(p) => (p.$disabled ? 'default' : 'pointer')};
+  display: flex;
   text-align: start;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: ${(p) => p.theme.spacing.unit(3)}px 0;
+
+  ${({ disabled, theme }) =>
+    disabled &&
+    css`
+      color: ${theme.color.disabledText};
+      cursor: default;
+    `};
+
   ${({ withChevron, theme }) =>
     withChevron &&
     css`
@@ -129,47 +113,36 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       }
     };
 
-    const icon = (
-      <IconWrapper withChevron={withChevron}>
-        {(() => {
-          if (withChevron) return <MovingChevron expanded={!!expanded} />;
+    const icon = (() => {
+      if (withChevron) return <MovingChevron expanded={!!expanded} disabled={disabled} />;
 
-          if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
-          return (
-            <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
-          );
-        })()}
-      </IconWrapper>
-    );
+      if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
+      return (
+        <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
+      );
+    })();
 
+    const padding = { p, px, py, pt, pb, pl, pr };
     return (
       <Item
         className={className}
         aria-expanded={expanded}
-        $hasFocus={hasFocus}
-        $disabled={disabled}
-        $disableBackgroundColor={disableBackgroundColor}
-        $p={p}
-        $px={px}
-        $py={py}
-        $pt={pt}
-        $pb={pb}
-        $pl={pl}
-        $pr={pr}
+        hasFocus={hasFocus}
+        disabled={disabled}
+        disableBackgroundColor={disableBackgroundColor}
+        {...padding}
       >
         <Typography as={as} type="secondary" weight="bold">
           <Button
-            withChevron={withChevron}
-            $disabled={disabled}
-            type="button"
-            onClick={clickHandler}
             ref={ref}
-            onFocus={() => setHasFocus(true)}
+            onClick={clickHandler}
             onBlur={() => setHasFocus(false)}
+            onFocus={() => setHasFocus(true)}
             disabled={disabled}
+            withChevron={withChevron}
           >
             {title}
-            {icon}
+            <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>
           </Button>
         </Typography>
         <AnimatePresence initial={false}>
