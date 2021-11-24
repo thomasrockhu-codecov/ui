@@ -68,10 +68,13 @@ const Button = styled.button<{ withChevron?: boolean; $disabled?: boolean }>`
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
-  margin-top: -2px;
-  order: ${(p) => (p.withChevron ? '1' : '-1')};
-  padding-left: ${(p) => (p.withChevron ? p.theme.spacing.unit(3) : 0)}px;
-  padding-right: ${(p) => (!p.withChevron ? p.theme.spacing.unit(3) : 0)}px;
+  ${({ withChevron, theme }) =>
+    css`
+      margin-top: ${withChevron ? '0' : '-2px'};
+      order: ${withChevron ? '1' : '-1'};
+      padding-left: ${withChevron ? theme.spacing.unit(3) : 0}px;
+      padding-right: ${withChevron ? 0 : theme.spacing.unit(3)}px;
+    `}
 `;
 
 const MovingChevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; expanded: boolean }>`
