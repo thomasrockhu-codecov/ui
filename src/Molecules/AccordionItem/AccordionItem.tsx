@@ -56,7 +56,7 @@ const IconWrapper = styled.div<{ withChevron?: boolean }>`
     `}
 `;
 
-const Chevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; $expanded: boolean }>`
+const Chevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; $expanded?: boolean }>`
   color: ${(p) => (p.disabled ? p.theme.color.disabledText : '')};
   transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
   transition: transform ${TRANSITION_DURATION}s ease-out;
