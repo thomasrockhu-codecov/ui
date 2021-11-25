@@ -2,67 +2,57 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { Box, OldIcon, Typography } from '../..';
+import { Box, OldIcon, Typography, Icon } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
-import { Props } from './AccordionItem.types';
+import { Props, ItemProps } from './AccordionItem.types';
 
-const Item = styled.div<{
-  $hasFocus: boolean;
-  $disabled?: boolean;
-  $disableBackgroundColor?: boolean;
-  $p?: number;
-  $px?: number;
-  $py?: number;
-  $pt?: number;
-  $pb?: number;
-  $pl?: number;
-  $pr?: number;
-}>`
-  & + & {
-    border-top: 1px solid ${(p) => p.theme.color.divider};
-  }
+const TRANSITION_DURATION = 0.16;
 
-  outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
+const Item = styled.div<ItemProps>`
+  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => `
+    outline: 1px solid ${hasFocus ? theme.color.cta : 'none'};
+    background-color: ${
+      !disableBackgroundColor && hasFocus ? theme.color.background : 'transparent'
+    };
 
-  ${({ $p, theme }) => ($p ? `padding: ${theme.spacing.unit($p)}px;` : '')}
-  ${({ $px, theme }) =>
-    $px
-      ? `padding-left: ${theme.spacing.unit($px)}px; padding-right: ${theme.spacing.unit($px)}px;`
-      : ''}
-  ${({ $py, theme }) =>
-    $py
-      ? `padding-top: ${theme.spacing.unit($py)}px; padding-bottom: ${theme.spacing.unit($py)}px;`
-      : ''}
-  ${({ $pt, theme }) => ($pt ? `padding-top: ${theme.spacing.unit($pt)}px;` : '')}
-  ${({ $pb, theme }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
-  ${({ $pl, theme }) => ($pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : '')}
-  ${({ $pr, theme }) => ($pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : '')}
+    padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
+      ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
 
-  background-color: ${({ $disableBackgroundColor, $hasFocus, theme }) =>
-    !$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent'};
+    & + & {
+      border-top: 1px solid ${theme.color.divider};
+    }
+  `}
 `;
 
-const Button = styled.button<{ $withChevron?: boolean; $disabled?: boolean }>`
+const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
   width: 100%;
   border: 0;
-  padding-top: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-right: ${(p) => p.theme.spacing.unit(p.$withChevron ? 6 : 0)}px;
-  padding-left: ${(p) => p.theme.spacing.unit(p.$withChevron ? 0 : 6)}px;
-  color: ${(p) => (p.$disabled ? p.theme.color.disabledText : '')};
-  background-color: transparent;
-  cursor: ${(p) => (p.$disabled ? 'default' : 'pointer')};
+  display: flex;
   text-align: start;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: ${(p) => p.theme.spacing.unit(3)}px 0;
+  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
+  justify-content: ${({ withChevron }) => (withChevron ? 'space-between' : 'flex-start')};
 `;
 
-const OldIconWrapper = styled.div<{ $withChevron?: boolean }>`
-  position: absolute;
-  top: 15px;
-  ${(p) => (p.$withChevron ? 'right' : 'left')}: 0;
+const IconWrapper = styled.div<{ withChevron?: boolean }>`
+  ${({ withChevron, theme }) =>
+    `
+      margin-top: ${withChevron ? '0' : '-2px'};
+      order: ${withChevron ? '1' : '-1'};
+      padding-right: ${withChevron ? 0 : theme.spacing.unit(3)}px;
+    `}
+`;
+
+const Chevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; $expanded?: boolean }>`
+  color: ${(p) => (p.disabled ? p.theme.color.disabledText : '')};
+  transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
+  transition: transform ${TRANSITION_DURATION}s ease-out;
 `;
 
 const Content = styled(Box)``;
@@ -114,55 +104,35 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       }
     };
 
-    const icon = (
-      <OldIconWrapper $withChevron={withChevron}>
-        {(() => {
-          if (withChevron)
-            return (
-              <OldIcon.ThinChevron
-                color={(t) => (disabled ? t.color.disabledText : '')}
-                direction={expanded ? 'up' : 'down'}
-                size={4}
-              />
-            );
+    const icon = (() => {
+      if (withChevron) return <Chevron $expanded={expanded} disabled={disabled} />;
 
-          if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
-          return (
-            <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
-          );
-        })()}
-      </OldIconWrapper>
-    );
+      if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
+      return (
+        <OldIcon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
+      );
+    })();
 
+    const padding = { p, px, py, pt, pb, pl, pr };
     return (
       <Item
         className={className}
         aria-expanded={expanded}
-        $hasFocus={hasFocus}
-        $disabled={disabled}
-        $disableBackgroundColor={disableBackgroundColor}
-        $p={p}
-        $px={px}
-        $py={py}
-        $pt={pt}
-        $pb={pb}
-        $pl={pl}
-        $pr={pr}
+        hasFocus={hasFocus}
+        disableBackgroundColor={disableBackgroundColor}
+        {...padding}
       >
         <Typography as={as} type="secondary" weight="bold">
           <Button
-            $withChevron={withChevron}
-            $disabled={disabled}
-            type="button"
-            onClick={clickHandler}
             ref={ref}
-            onFocus={() => setHasFocus(true)}
+            onClick={clickHandler}
             onBlur={() => setHasFocus(false)}
+            onFocus={() => setHasFocus(true)}
             disabled={disabled}
+            withChevron={withChevron}
           >
-            {!withChevron && icon}
             {title}
-            {withChevron && icon}
+            <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>
           </Button>
         </Typography>
         <AnimatePresence initial={false}>
@@ -175,7 +145,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
                 open: { opacity: 1, height: 'auto' },
                 collapsed: { opacity: 0, height: 0 },
               }}
-              transition={{ duration: 0.16, ease: 'easeOut' }}
+              transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
               <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
                 {isString(children) ? (
@@ -192,6 +162,10 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       </Item>
     );
   },
-) as any as React.FC<Props> & { components: typeof components };
+) as React.ForwardRefExoticComponent<Props> & {
+  components: typeof components;
+} as React.FC<Props> & {
+  components: typeof components;
+};
 
 AccordionItem.components = components;
