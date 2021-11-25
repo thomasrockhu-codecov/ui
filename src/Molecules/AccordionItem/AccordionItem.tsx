@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Box, OldIcon, Typography, Icon } from '../..';
@@ -9,7 +9,7 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => css`
+  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => `
     ${hasFocus && `outline: 1px solid ${theme.color.cta}`};
     ${!disableBackgroundColor && hasFocus && `background-color: ${theme.color.background}`};
 
@@ -36,14 +36,14 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
 
   ${({ disabled, theme }) =>
     disabled &&
-    css`
+    `
       color: ${theme.color.disabledText};
       cursor: default;
     `};
 
   ${({ withChevron, theme }) =>
     withChevron &&
-    css`
+    `
       padding: ${theme.spacing.unit(3)}px 0;
       justify-content: space-between;
     `}
@@ -51,16 +51,16 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
   ${({ withChevron, theme }) =>
-    css`
+    `
       margin-top: ${withChevron ? '0' : '-2px'};
       order: ${withChevron ? '1' : '-1'};
       padding-right: ${withChevron ? 0 : theme.spacing.unit(3)}px;
     `}
 `;
 
-const MovingChevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; expanded: boolean }>`
+const Chevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; $expanded: boolean }>`
   color: ${(p) => (p.disabled ? p.theme.color.disabledText : '')};
-  transform: rotate(${(p) => (p.expanded ? '0' : '180')}deg);
+  transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
   transition: transform ${TRANSITION_DURATION}s ease-out;
 `;
 
@@ -114,7 +114,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
     };
 
     const icon = (() => {
-      if (withChevron) return <MovingChevron expanded={!!expanded} disabled={disabled} />;
+      if (withChevron) return <Chevron $expanded={expanded} disabled={disabled} />;
 
       if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
       return (
@@ -128,7 +128,6 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
         className={className}
         aria-expanded={expanded}
         hasFocus={hasFocus}
-        disabled={disabled}
         disableBackgroundColor={disableBackgroundColor}
         {...padding}
       >
