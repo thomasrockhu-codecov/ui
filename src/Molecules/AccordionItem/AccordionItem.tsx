@@ -14,7 +14,7 @@ const Item = styled.div<ItemProps>`
     ${!disableBackgroundColor && hasFocus && `background-color: ${theme.color.background}`};
 
     padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
-      ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || py || p || 0)}px;
+      ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
 
     & + & {
       border-top: 1px solid ${theme.color.divider};
