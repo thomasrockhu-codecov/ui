@@ -2,7 +2,7 @@ import React from 'react';
 import { IconBadge } from './IconBadge';
 
 export default {
-  title: 'Molecules / IconBadge',
+  title: 'Atoms / IconBadge',
 };
 
 export const defaultUse = () => <IconBadge icon="Add24" />;
