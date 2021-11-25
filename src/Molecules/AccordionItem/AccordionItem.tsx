@@ -35,16 +35,9 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   box-sizing: border-box;
   background-color: transparent;
   padding: ${(p) => p.theme.spacing.unit(3)}px 0;
-  color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
   cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
-
-  ${({ withChevron, theme }) =>
-    withChevron
-      ? `
-    padding: ${theme.spacing.unit(3)}px 0;
-    justify-content: space-between;
-  `
-      : ''}
+  color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
+  justify-content: ${({ withChevron }) => (withChevron ? 'space-between' : 'flex-start')};
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`

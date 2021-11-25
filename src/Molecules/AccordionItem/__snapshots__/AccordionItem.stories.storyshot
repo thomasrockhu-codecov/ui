@@ -203,6 +203,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -298,6 +302,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -397,6 +405,10 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -495,8 +507,12 @@ Array [
   box-sizing: border-box;
   background-color: transparent;
   padding: 12px 0;
-  color: #A0A09B;
   cursor: default;
+  color: #A0A09B;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -590,9 +606,8 @@ Array [
   box-sizing: border-box;
   background-color: transparent;
   padding: 12px 0;
-  color: #A0A09B;
   cursor: default;
-  padding: 12px 0;
+  color: #A0A09B;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -726,6 +741,10 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -836,6 +855,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -931,6 +954,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1028,7 +1055,6 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
-  padding: 12px 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1166,6 +1192,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1285,6 +1315,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1404,6 +1438,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1523,6 +1561,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1642,6 +1684,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1761,6 +1807,10 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -1878,7 +1928,6 @@ Array [
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
-  padding: 12px 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1992,6 +2041,10 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
@@ -2090,6 +2143,10 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   background-color: transparent;
   padding: 12px 0;
   cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
