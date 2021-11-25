@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Box, OldIcon, Typography, Icon } from '../..';
@@ -9,9 +9,11 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => css`
-    ${hasFocus && `outline: 1px solid ${theme.color.cta}`};
-    ${!disableBackgroundColor && hasFocus && `background-color: ${theme.color.background}`};
+  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => `
+    outline: 1px solid ${hasFocus ? theme.color.cta : 'none'};
+    background-color: ${
+      !disableBackgroundColor && hasFocus ? theme.color.background : 'transparent'
+    };
 
     padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
       ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
@@ -33,18 +35,16 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   box-sizing: border-box;
   background-color: transparent;
   padding: ${(p) => p.theme.spacing.unit(3)}px 0;
-  ${({ disabled, theme, withChevron }) => [
-    disabled &&
-      `
-      color: ${theme.color.disabledText};
-      cursor: default;
-    `,
-    withChevron &&
-      `
-      padding: ${theme.spacing.unit(3)}px 0;
-      justify-content: space-between;
-    `,
-  ]}
+  color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
+  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+
+  ${({ withChevron, theme }) =>
+    withChevron
+      ? `
+    padding: ${theme.spacing.unit(3)}px 0;
+    justify-content: space-between;
+  `
+      : ''}
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
