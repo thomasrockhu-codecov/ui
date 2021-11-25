@@ -1,3 +1,23 @@
+## [9.8.3](https://github.com/nordnet/ui/compare/v9.8.2...v9.8.3) (2021-11-25)
+
+
+### Bug Fixes
+
+* address comments and update ([d93f1bf](https://github.com/nordnet/ui/commit/d93f1bf))
+* conditional type ([f76fd58](https://github.com/nordnet/ui/commit/f76fd58))
+* constant duration, center icon ([5441537](https://github.com/nordnet/ui/commit/5441537))
+* make more inline with other components, remove css helper function ([70ce286](https://github.com/nordnet/ui/commit/70ce286))
+* refactor component ([564de26](https://github.com/nordnet/ui/commit/564de26))
+* remove commit as it's breaking ([66c1115](https://github.com/nordnet/ui/commit/66c1115))
+* remove redundant padding-right ([6f8425b](https://github.com/nordnet/ui/commit/6f8425b))
+* remove semicolon ([d2c2799](https://github.com/nordnet/ui/commit/d2c2799))
+* remove unnecessary css helper functions ([9539dad](https://github.com/nordnet/ui/commit/9539dad))
+* update storyshots ([9ab4039](https://github.com/nordnet/ui/commit/9ab4039))
+* update storyshots ([f025cd2](https://github.com/nordnet/ui/commit/f025cd2))
+* update storyshots and only add margin to oldIcon ([3b2ca2d](https://github.com/nordnet/ui/commit/3b2ca2d))
+* update storyshots too ([580c4d9](https://github.com/nordnet/ui/commit/580c4d9))
+* use correct padding on item ([868e140](https://github.com/nordnet/ui/commit/868e140))
+
 ## [9.8.2](https://github.com/nordnet/ui/compare/v9.8.1...v9.8.2) (2021-11-23)
 
 
