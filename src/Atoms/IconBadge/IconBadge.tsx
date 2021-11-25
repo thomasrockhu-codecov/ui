@@ -67,7 +67,9 @@ export const IconBadge: React.FC<IconBadgeProps> = ({
     >
       <IconComponent
         color={(t: any) => (iconColor ? iconColor(t) : t.color.textLight)}
-        secondaryColor={(t: any) => secondaryIconColor ? secondaryIconColor(t) : t.color.textLight}
+        secondaryColor={(t: any) =>
+          secondaryIconColor ? secondaryIconColor(t) : t.color.textLight
+        }
       />
     </Wrapper>
   );
