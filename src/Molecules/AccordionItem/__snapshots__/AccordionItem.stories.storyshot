@@ -499,7 +499,6 @@ Array [
 <div
     aria-expanded={false}
     className="c0 c1"
-    disabled={true}
   >
     <h3
       className="c2"
@@ -608,7 +607,6 @@ Array [
 <div
     aria-expanded={false}
     className="c0 c1"
-    disabled={true}
   >
     <h3
       className="c2"
@@ -628,7 +626,6 @@ Array [
             aria-hidden="true"
             className="c5 c6"
             disabled={true}
-            expanded={false}
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -1050,7 +1047,6 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
-          expanded={false}
           focusable="false"
           height={8}
           preserveAspectRatio="xMidYMid meet"
@@ -1852,7 +1848,6 @@ Array [
           <svg
             aria-hidden="true"
             className="c5 c6"
-            expanded={false}
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Box, OldIcon, Typography, Icon } from '../..';
@@ -9,7 +9,7 @@ import { Props, ItemProps } from './AccordionItem.types';
 const TRANSITION_DURATION = 0.16;
 
 const Item = styled.div<ItemProps>`
-  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => `
+  ${({ theme, hasFocus, disableBackgroundColor, p, px, py, pt, pb, pl, pr }) => css`
     ${hasFocus && `outline: 1px solid ${theme.color.cta}`};
     ${!disableBackgroundColor && hasFocus && `background-color: ${theme.color.background}`};
 
@@ -33,20 +33,18 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   box-sizing: border-box;
   background-color: transparent;
   padding: ${(p) => p.theme.spacing.unit(3)}px 0;
-
-  ${({ disabled, theme }) =>
+  ${({ disabled, theme, withChevron }) => [
     disabled &&
-    `
+      `
       color: ${theme.color.disabledText};
       cursor: default;
-    `};
-
-  ${({ withChevron, theme }) =>
+    `,
     withChevron &&
-    `
+      `
       padding: ${theme.spacing.unit(3)}px 0;
       justify-content: space-between;
-    `}
+    `,
+  ]}
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
