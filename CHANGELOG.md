@@ -1,3 +1,10 @@
+## [9.8.4](https://github.com/nordnet/ui/compare/v9.8.3...v9.8.4) (2021-11-26)
+
+
+### Bug Fixes
+
+* update icon color consumption ([9d1d4a5](https://github.com/nordnet/ui/commit/9d1d4a5))
+
 ## [9.8.3](https://github.com/nordnet/ui/compare/v9.8.2...v9.8.3) (2021-11-25)
 
 
