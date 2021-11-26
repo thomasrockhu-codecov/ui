@@ -131,6 +131,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
           <Button
             ref={ref}
             onClick={clickHandler}
+            type="button"
             onBlur={() => setHasFocus(false)}
             onFocus={() => setHasFocus(true)}
             disabled={disabled}

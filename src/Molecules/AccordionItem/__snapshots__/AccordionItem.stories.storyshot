@@ -229,6 +229,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         Låg CO₂ risk
         <div
@@ -328,6 +329,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         Sustainability score
         <div
@@ -431,6 +433,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      type="button"
     >
       Lemon drops and several cakes for two persons or more
       <div
@@ -536,6 +539,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item is disabled
         <div
@@ -644,6 +648,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item is disabled with chevron
         <div
@@ -765,6 +770,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      type="button"
     >
       Låg CO₂ risk
       <div
@@ -879,6 +885,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         Content is text only
         <div
@@ -978,6 +985,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         Content is a component
         <div
@@ -1088,6 +1096,7 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      type="button"
     >
       How much risk are you willing to take?
       <div
@@ -1216,6 +1225,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom padding
         <div
@@ -1339,6 +1349,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom horizontal padding
         <div
@@ -1462,6 +1473,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom vertical padding
         <div
@@ -1585,6 +1597,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom top padding
         <div
@@ -1708,6 +1721,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom bottom padding
         <div
@@ -1831,6 +1845,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom left padding
         <div
@@ -1961,6 +1976,7 @@ Array [
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        type="button"
       >
         This accordion item has a custom right padding and chevron to demonstrate
         <div
@@ -2065,6 +2081,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      type="button"
     >
       This card has its hover and focus color disabled
       <div
@@ -2167,6 +2184,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      type="button"
     >
       Sustainability score
       <div
