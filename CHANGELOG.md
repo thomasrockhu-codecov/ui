@@ -1,3 +1,11 @@
+## [9.8.5](https://github.com/nordnet/ui/compare/v9.8.4...v9.8.5) (2021-11-26)
+
+
+### Bug Fixes
+
+* add back button type to prevent submission ([e045eb9](https://github.com/nordnet/ui/commit/e045eb9))
+* update storyshot ([f5e0ff6](https://github.com/nordnet/ui/commit/f5e0ff6))
+
 ## [9.8.4](https://github.com/nordnet/ui/compare/v9.8.3...v9.8.4) (2021-11-26)
 
 
