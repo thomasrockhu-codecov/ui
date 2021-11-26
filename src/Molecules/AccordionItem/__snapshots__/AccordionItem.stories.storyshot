@@ -559,7 +559,7 @@ Array [
     </h3>
   </div>,
   .c5 {
-  color: #6E6E69;
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -623,7 +623,6 @@ Array [
 }
 
 .c6 {
-  color: #A0A09B;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -653,7 +652,6 @@ Array [
           <svg
             aria-hidden="true"
             className="c5 c6"
-            disabled={true}
             focusable="false"
             height={8}
             preserveAspectRatio="xMidYMid meet"
@@ -1007,7 +1005,7 @@ Array [
 
 exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 .c5 {
-  color: #6E6E69;
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1856,7 +1854,7 @@ Array [
     </h3>
   </div>,
   .c5 {
-  color: #6E6E69;
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

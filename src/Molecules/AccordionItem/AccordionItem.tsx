@@ -35,7 +35,7 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   box-sizing: border-box;
   background-color: transparent;
   padding: ${(p) => p.theme.spacing.unit(3)}px 0;
-  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  cursor: ${(p) => (p.disabled ? 'default' : 'pointer')};
   color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
   justify-content: ${({ withChevron }) => (withChevron ? 'space-between' : 'flex-start')};
 `;
@@ -49,8 +49,7 @@ const IconWrapper = styled.div<{ withChevron?: boolean }>`
     `}
 `;
 
-const Chevron = styled(Icon.ChevronUp8)<{ disabled?: boolean; $expanded?: boolean }>`
-  color: ${(p) => (p.disabled ? p.theme.color.disabledText : '')};
+const Chevron = styled(Icon.ChevronUp8)<{ $expanded?: boolean }>`
   transform: rotate(${(p) => (p.$expanded ? '0' : '180')}deg);
   transition: transform ${TRANSITION_DURATION}s ease-out;
 `;
@@ -105,7 +104,13 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
     };
 
     const icon = (() => {
-      if (withChevron) return <Chevron $expanded={expanded} disabled={disabled} />;
+      if (withChevron)
+        return (
+          <Chevron
+            $expanded={expanded}
+            color={(t) => (disabled ? t.color.disabledText : t.color.svgFill)}
+          />
+        );
 
       if (expanded) return <OldIcon.Minus size={3} fill={(t) => t.color.cta} />;
       return (
