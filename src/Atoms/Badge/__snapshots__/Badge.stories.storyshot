@@ -42,6 +42,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c3 {
   padding: 0 6px;
 }
 
@@ -60,7 +63,7 @@ Array [
   line-height: 1.5;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -82,10 +85,10 @@ Array [
       Orders 
       <span
         aria-label="7 new orders"
-        className="c2"
+        className="c2 c3"
       >
         <span
-          className="c3"
+          className="c4"
         >
           7
         </span>
@@ -132,6 +135,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c3 {
   padding: 0 6px;
 }
 
@@ -150,7 +156,7 @@ Array [
   line-height: 1.5;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -171,10 +177,10 @@ Array [
     >
       Orders 
       <span
-        className="c2"
+        className="c2 c3"
       >
         <span
-          className="c3"
+          className="c4"
         >
           7
         </span>
@@ -205,6 +211,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c8 {
   padding: 0 6px;
   -webkit-animation: scale 0.5s ease-out;
   animation: scale 0.5s ease-out;
@@ -251,7 +260,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -378,10 +387,10 @@ Array [
           </span>
         </button>
         <span
-          className="c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             4
           </span>
@@ -421,6 +430,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c8 {
   padding: 0 6px;
 }
 
@@ -465,7 +477,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -592,10 +604,10 @@ Array [
           </span>
         </button>
         <span
-          className="c7"
+          className="c7 c8"
         >
           <span
-            className="c8"
+            className="c9"
           >
             4
           </span>
@@ -661,6 +673,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c2 {
   padding: 0 6px;
 }
 
@@ -670,7 +685,7 @@ Array [
   background-color: transparent;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -687,10 +702,10 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
+      className="c1 c2"
     >
       <span
-        className="c2"
+        className="c3"
       >
         99+
       </span>
@@ -741,6 +756,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c3 {
   padding: 0 6px;
 }
 
@@ -759,7 +777,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -780,10 +798,10 @@ Array [
     >
       Orders 
       <span
-        className="c2"
+        className="c2 c3"
       >
         <span
-          className="c3"
+          className="c4"
         >
           7
         </span>
@@ -858,7 +876,7 @@ Array [
       className="c1"
     >
       <span
-        className="c2"
+        className="c2 "
       />
        
       Buy order
@@ -911,7 +929,7 @@ Array [
       className="c1"
     >
       <span
-        className="c2"
+        className="c2 "
       />
        
       Sell order
@@ -964,7 +982,7 @@ Array [
       className="c1"
     >
       <span
-        className="c2"
+        className="c2 "
       />
        
       Exchange order
@@ -1042,6 +1060,9 @@ Array [
   height: 20px;
   min-width: 20px;
   background-color: #85DA62;
+}
+
+.c5 {
   padding: 0 6px;
 }
 
@@ -1096,7 +1117,7 @@ Array [
       className="c0"
     >
       <span
-        className="c2"
+        className="c2 "
       >
         <span
           className="c3"
@@ -1109,7 +1130,7 @@ Array [
       className="c0"
     >
       <span
-        className="c4"
+        className="c4 c5"
       >
         <span
           className="c3"
@@ -1138,6 +1159,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c3 {
   padding: 0 6px;
 }
 
@@ -1156,7 +1180,7 @@ Array [
   line-height: 1.2;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1192,10 +1216,10 @@ Array [
       className="c0"
     >
       <span
-        className="c2"
+        className="c2 c3"
       >
         <span
-          className="c3"
+          className="c4"
         >
           1
         </span>
@@ -1265,7 +1289,7 @@ Array [
       className="c0"
     >
       <span
-        className="c2"
+        className="c2 "
       />
     </div>
   </div>,
@@ -1288,29 +1312,6 @@ Array [
   min-width: 20px;
   background-color: #00D200;
   border-radius: 20px;
-  padding: 0 6px;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 20px;
-  min-width: 20px;
-  background-color: #FF1900;
-  border-radius: 20px;
-  padding: 0 6px;
 }
 
 .c6 {
@@ -1330,12 +1331,32 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #A0A09B;
+  background-color: #FF1900;
   border-radius: 20px;
-  padding: 0 6px;
 }
 
 .c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  background-color: #A0A09B;
+  border-radius: 20px;
+}
+
+.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1356,7 +1377,7 @@ Array [
   border-radius: 8px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1377,7 +1398,7 @@ Array [
   border-radius: 8px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1396,6 +1417,10 @@ Array [
   min-width: 8px;
   background-color: #A0A09B;
   border-radius: 8px;
+}
+
+.c4 {
+  padding: 0 6px;
 }
 
 .c0 {
@@ -1418,7 +1443,7 @@ Array [
   line-height: 1.2;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1457,10 +1482,10 @@ Array [
         className="c2"
       >
         <span
-          className="c3"
+          className="c3 c4"
         >
           <span
-            className="c4"
+            className="c5"
           >
             2
           </span>
@@ -1470,10 +1495,10 @@ Array [
         className="c2"
       >
         <span
-          className="c5"
+          className="c6 c4"
         >
           <span
-            className="c4"
+            className="c5"
           >
             3
           </span>
@@ -1483,10 +1508,10 @@ Array [
         className="c2"
       >
         <span
-          className="c6"
+          className="c7 c4"
         >
           <span
-            className="c4"
+            className="c5"
           >
             4
           </span>
@@ -1500,21 +1525,21 @@ Array [
         className="c2"
       >
         <span
-          className="c7"
+          className="c8 "
         />
       </div>
       <div
         className="c2"
       >
         <span
-          className="c8"
+          className="c9 "
         />
       </div>
       <div
         className="c2"
       >
         <span
-          className="c9"
+          className="c10 "
         />
       </div>
     </div>
@@ -1538,6 +1563,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c4 {
   padding: 0 6px;
 }
 
@@ -1560,7 +1588,7 @@ Array [
   line-height: 1.2;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFCF00;
   margin: 0;
@@ -1596,10 +1624,10 @@ Array [
       className="c2"
     >
       <span
-        className="c3"
+        className="c3 c4"
       >
         <span
-          className="c4"
+          className="c5"
         >
           5
         </span>
@@ -1625,6 +1653,9 @@ Array [
   min-width: 20px;
   background-color: #0046FF;
   border-radius: 20px;
+}
+
+.c4 {
   padding: 0 6px;
 }
 
@@ -1648,7 +1679,7 @@ Array [
   line-height: 1.2;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1684,10 +1715,10 @@ Array [
       className="c2"
     >
       <span
-        className="c3"
+        className="c3 c4"
       >
         <span
-          className="c4"
+          className="c5"
         >
           99
         </span>
@@ -1697,10 +1728,10 @@ Array [
       className="c2"
     >
       <span
-        className="c3"
+        className="c3 c4"
       >
         <span
-          className="c4"
+          className="c5"
         >
           999
         </span>
@@ -1753,6 +1784,9 @@ Array [
   background-color: #0046FF;
   color: #FFFFFF;
   border-radius: 20px;
+}
+
+.c2 {
   padding: 0 6px;
 }
 
@@ -1762,7 +1796,7 @@ Array [
   background-color: transparent;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1779,11 +1813,10 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
-      color={[Function]}
+      className="c1 c2"
     >
       <span
-        className="c2"
+        className="c3"
       >
         9%
       </span>
@@ -1857,6 +1890,9 @@ Array [
   background-color: #0046FF;
   color: #FFFFFF;
   border-radius: 20px;
+}
+
+.c2 {
   padding: 0 6px;
 }
 
@@ -1866,7 +1902,7 @@ Array [
   background-color: transparent;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1875,7 +1911,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1889,7 +1925,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -1899,16 +1935,15 @@ Array [
     className="c0"
   >
     <span
-      className="c1"
-      color={[Function]}
+      className="c1 c2"
     >
       <span
-        className="c2"
+        className="c3"
       >
         8
       </span>
       <span
-        className="c3"
+        className="c4"
       >
         %
       </span>
