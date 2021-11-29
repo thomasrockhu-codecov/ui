@@ -55,6 +55,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     card: rawColor.gray0,
     cta: rawColor.brandTurquoise,
+    ctaHover: rawColor.brandTurquoise,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,

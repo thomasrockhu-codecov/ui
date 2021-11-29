@@ -1,16 +1,17 @@
 import React from 'react';
-import { Button, Flexbox, Typography } from '../../../index';
+import { Flexbox, Link, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import PageItems from '../PageItems';
-import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
+import { BrowseLinkProps, PageItemProps, PaginationDefaultLinkProps } from '../Pagination.types';
 import ChevronIcon from './components/ChevronIcon';
 import { StyledFlexbox, TruncatedPageNumbers } from './components/RegularComponents';
 
-const PageNumberItem: React.FC<PageItemProps> = ({
+const PageNumberLinkItem: React.FC<PageItemProps> = ({
   isCurrentPage = false,
   children,
   onClick,
   label,
+  href,
 }) => (
   <Flexbox item as="li">
     {isCurrentPage ? (
@@ -18,57 +19,69 @@ const PageNumberItem: React.FC<PageItemProps> = ({
         {children}
       </Typography>
     ) : (
-      <Button variant="neutral" onClick={onClick} aria-label={`${label} ${children}`}>
+      <Link onClick={onClick} aria-label={`${label} ${children}`} to={href}>
         <Typography type="secondary" color={(t) => t.color.text} weight="bold">
           {children}
         </Typography>
-      </Button>
+      </Link>
     )}
   </Flexbox>
 );
 
-const ChevronButton: React.FC<BrowseButtonProps> = ({ direction = 'left', onClick, label }) => (
-  <Button variant="neutral" onClick={onClick} aria-label={label}>
+const ChevronLink: React.FC<BrowseLinkProps> = ({ direction = 'left', onClick, label, href }) => (
+  <Link onClick={onClick} aria-label={label} to={href} color="black">
     <ChevronIcon direction={direction} size={8} />
-  </Button>
+  </Link>
 );
 
-const Regular: React.FC<PaginationDefaultProps> = ({
+const RegularLinks: React.FC<PaginationDefaultLinkProps> = ({
   currentPage,
   numberOfPages,
-  onClickPageItem,
+  onClickPageItem = () => {},
   onClickPrevious,
   onClickNext,
   previousPageLabel,
   nextPageLabel,
   currentPageLabel,
   pageItemLabel,
+  getPageHref,
 }) => {
   if (numberOfPages <= 1) {
     return null;
   }
 
   return (
-    <StyledFlexbox container $numberOfPages={numberOfPages}>
+    <StyledFlexbox container $numberOfPages={numberOfPages} alignItems="center">
       {currentPage !== 1 && (
-        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+        <ChevronLink
+          direction="left"
+          onClick={onClickPrevious}
+          label={previousPageLabel}
+          href={getPageHref(currentPage - 1)}
+        />
       )}
       <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}
           onClickPageItem={onClickPageItem}
-          PageItem={PageNumberItem}
+          PageItem={PageNumberLinkItem}
           TruncatedPageNumbers={TruncatedPageNumbers}
           currentPageLabel={currentPageLabel}
           pageItemLabel={pageItemLabel}
+          getPageHref={getPageHref}
         />
       </Flexbox>
       {currentPage !== numberOfPages && (
-        <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+        <ChevronLink
+          direction="right"
+          onClick={onClickNext}
+          label={nextPageLabel}
+          href={getPageHref(currentPage + 1)}
+        />
       )}
     </StyledFlexbox>
   );
 };
 
-export default React.memo(Regular);
+export default React.memo(RegularLinks);

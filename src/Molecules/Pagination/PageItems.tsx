@@ -10,6 +10,7 @@ const PageItems: React.FC<PageItemsProps> = ({
   TruncatedPageNumbers,
   currentPageLabel,
   pageItemLabel,
+  getPageHref = () => undefined,
 }) => {
   const isFirstPage = currentPage === FIRST_PAGE;
   const isSecondPage = currentPage === FIRST_PAGE + 1;
@@ -29,20 +30,29 @@ const PageItems: React.FC<PageItemsProps> = ({
         onClick={handlePageItemClick(FIRST_PAGE)}
         isCurrentPage={isFirstPage}
         label={isFirstPage ? currentPageLabel : pageItemLabel}
+        href={getPageHref(FIRST_PAGE)}
       >
         {FIRST_PAGE}
       </PageItem>
       {!isWithinFirstThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {/* Show third page from last if currently on last one */}
       {isLastPage && !isFirstPage && !isWithinFirstThree && (
-        <PageItem onClick={handlePageItemClick(currentPage - 2)} label={pageItemLabel}>
+        <PageItem
+          onClick={handlePageItemClick(currentPage - 2)}
+          label={pageItemLabel}
+          href={getPageHref(currentPage - 2)}
+        >
           {currentPage - 2}
         </PageItem>
       )}
 
       {/* Current, last and next page */}
       {!isFirstPage && !isSecondPage && (
-        <PageItem onClick={handlePageItemClick(currentPage - 1)} label={pageItemLabel}>
+        <PageItem
+          onClick={handlePageItemClick(currentPage - 1)}
+          label={pageItemLabel}
+          href={getPageHref(currentPage - 1)}
+        >
           {currentPage - 1}
         </PageItem>
       )}
@@ -52,13 +62,21 @@ const PageItems: React.FC<PageItemsProps> = ({
         </PageItem>
       )}
       {!isLastPage && !isSecondLastPage && (
-        <PageItem onClick={handlePageItemClick(currentPage + 1)} label={pageItemLabel}>
+        <PageItem
+          onClick={handlePageItemClick(currentPage + 1)}
+          label={pageItemLabel}
+          href={getPageHref(currentPage + 1)}
+        >
           {currentPage + 1}
         </PageItem>
       )}
 
       {isFirstPage && !totalLessThanFour && (
-        <PageItem onClick={handlePageItemClick(FIRST_PAGE + 2)} label={pageItemLabel}>
+        <PageItem
+          onClick={handlePageItemClick(FIRST_PAGE + 2)}
+          label={pageItemLabel}
+          href={getPageHref(FIRST_PAGE + 2)}
+        >
           {FIRST_PAGE + 2}
         </PageItem>
       )}
@@ -68,6 +86,7 @@ const PageItems: React.FC<PageItemsProps> = ({
           onClick={handlePageItemClick(numberOfPages)}
           isCurrentPage={isLastPage}
           label={isLastPage ? currentPageLabel : pageItemLabel}
+          href={getPageHref(numberOfPages)}
         >
           {numberOfPages}
         </PageItem>

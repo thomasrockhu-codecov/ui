@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import PaginationRouteHelper from './PaginationRouteHelper';
 import docs from './Pagination.mdx';
 import Pagination from './Pagination';
 
@@ -67,3 +68,23 @@ const ControlledLargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
 };
 
 export const controlledPagination = () => <ControlledLargePagination />;
+
+const LinksPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
+  const [currentPage, setCurrentPage] = useState(5);
+
+  const getPageHref = (pageNumber: number) => `/${pageNumber}`;
+
+  return (
+    <PaginationRouteHelper currentPage={currentPage} setCurrentPage={setCurrentPage}>
+      <Pagination
+        variant="large"
+        currentPage={currentPage}
+        totalItems={totalItems}
+        itemsPerPage={itemsPerPage}
+        getPageHref={getPageHref}
+      />
+    </PaginationRouteHelper>
+  );
+};
+
+export const linksPagination = () => <LinksPagination />;

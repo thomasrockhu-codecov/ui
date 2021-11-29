@@ -1,23 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Box, Button, Flexbox, OldIcon } from '../../../index';
+import { Box, Flexbox } from '../../../index';
 import { BrowseButtonProps, PaginationCompactProps } from '../Pagination.types';
-
-const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
-  display: flex;
-  height: ${(p) => p.theme.spacing.unit(10)}px;
-  width: ${(p) => p.theme.spacing.unit(8)}px;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row;
-  justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
-`;
+import ChevronIcon from './components/ChevronIcon';
+import { StyledButton } from './components/CompactComponents';
 
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
     <StyledButton onClick={onClick} variant="neutral" aria-label={label} $direction={direction}>
-      <OldIcon.ThinChevron direction={direction} size={4} />
+      <ChevronIcon direction={direction} size={16} inline />
     </StyledButton>
   </Flexbox>
 );
