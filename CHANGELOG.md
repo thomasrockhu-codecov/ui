@@ -1,3 +1,16 @@
+# [9.9.0](https://github.com/nordnet/ui/compare/v9.8.5...v9.9.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* 🐛 hover, current page, icons, refactor ([6a560e1](https://github.com/nordnet/ui/commit/6a560e1))
+* 🐛 pagination type fixes and reusable chevron icon ([ef16301](https://github.com/nordnet/ui/commit/ef16301))
+
+
+### Features
+
+* 🎸 add link-based pagination variants ([21b3b0c](https://github.com/nordnet/ui/commit/21b3b0c))
+
 ## [9.8.5](https://github.com/nordnet/ui/compare/v9.8.4...v9.8.5) (2021-11-26)
 
 
