@@ -1,8 +1,4 @@
-import { Theme } from '../../../../theme/theme.types';
-
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // TODO: Move to shared
-
-export type ColorFn = (t: Theme) => Values<Theme['color']>; // TODO: Move to shared
+import { ColorFn } from '../BadgeBase/BadgeBase.types';
 
 type IconBadgeProps = {
   icon: string; // TODO: Get back to this

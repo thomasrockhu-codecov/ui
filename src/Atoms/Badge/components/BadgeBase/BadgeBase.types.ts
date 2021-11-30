@@ -1,9 +1,9 @@
 import { Theme } from '../../../../theme/theme.types';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never;
-type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
+export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
 
-type ColorFn = (t: Theme) => Values<Theme['color']>;
+export type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BadgeBaseProps = HtmlProps & {
   color?: ColorFn;
