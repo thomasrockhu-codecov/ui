@@ -15,8 +15,7 @@ import {
   STEP_NUMBER_SIZE,
   VERTICAL_PADDING,
 } from '../constants';
-import { Flexbox, Media } from '../../..';
-import Icon from '../../../Atoms/Icon';
+import { Flexbox, Media, Icon } from '../../..';
 
 const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
 const contentLeftPaddingDesktop =
