@@ -1,7 +1,8 @@
+import { IconBadgeComponent } from './components/IconBadge/IconBadge.types';
 import { TextBadgeComponent } from './components/TextBadge/TextBadge.types';
 
 type BadgeVariants = {
-  // IconBadge: IconBadgeComponent;
+  IconBadge: IconBadgeComponent;
   // StatusBadge: StatusBadge;
   // AccountBadge: AccountBadge;
   // TooltipBadge: TooltipBadge;

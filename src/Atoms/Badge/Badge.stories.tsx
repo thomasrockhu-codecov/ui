@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Badge } from './Badge';
+import Badge from '.';
 import docs from './Badge.mdx';
 import { Box, Button, Flexbox, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';

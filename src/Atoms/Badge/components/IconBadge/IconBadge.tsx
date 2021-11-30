@@ -1,19 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import { IconBadgeProps, WrapperComponent } from './IconBadge.types';
-import { Icon, Illustration } from '../..';
-
-const Wrapper = styled('span')<WrapperComponent>`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
-  min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
-  background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
-  border-radius: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
-`;
+import { IconBadgeComponent } from './IconBadge.types';
+import { Icon, Illustration } from '../../../..';
+import { BadgeBase } from '..';
 
 const mapBadgeSize = (icon: string) => {
   const iconSize = icon.match(/(\d+)(?!.*\d)/)?.[0];
@@ -49,7 +37,7 @@ const mapToBadgeBase = (badgeSize: string) => {
   }
 };
 
-export const IconBadge: React.FC<IconBadgeProps> = ({
+export const IconBadge: IconBadgeComponent = ({
   badgeSize,
   icon,
   iconColor,
@@ -61,7 +49,7 @@ export const IconBadge: React.FC<IconBadgeProps> = ({
   const badgeBase = badgeSize ? mapToBadgeBase(badgeSize) : mapToBadgeBase(mapBadgeSize(icon));
 
   return (
-    <Wrapper
+    <BadgeBase
       backgroundColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={badgeBase}
     >
@@ -71,6 +59,6 @@ export const IconBadge: React.FC<IconBadgeProps> = ({
           secondaryIconColor ? secondaryIconColor(t) : t.color.textLight
         }
       />
-    </Wrapper>
+    </BadgeBase>
   );
 };

@@ -1,4 +1,7 @@
 import { BadgeComponent } from './Badge.types';
-import { TextBadge } from './components';
+import { TextBadge, IconBadge } from './components';
 
-export const Badge: BadgeComponent = TextBadge;
+// Typecasts to attach sub badge components below
+export const Badge = TextBadge as BadgeComponent;
+
+Badge.IconBadge = IconBadge;

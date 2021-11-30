@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms / IconBadge Badge With Icon 1`] = `
+exports[`Storyshots Atoms / Badge / IconBadge Badge With Icon 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -63,19 +63,7 @@ exports[`Storyshots Atoms / IconBadge Badge With Icon 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms / IconBadge Badge with illustration 1`] = `
-.c1 {
-  color: #FFFFFF;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
+exports[`Storyshots Atoms / Badge / IconBadge Badge with illustration 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -95,6 +83,18 @@ exports[`Storyshots Atoms / IconBadge Badge with illustration 1`] = `
   min-width: 32px;
   background-color: #0046FF;
   border-radius: 32px;
+}
+
+.c1 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 <span
@@ -118,19 +118,7 @@ exports[`Storyshots Atoms / IconBadge Badge with illustration 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms / IconBadge Custom badge size 1`] = `
-.c1 {
-  color: #FFFFFF;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
+exports[`Storyshots Atoms / Badge / IconBadge Custom badge size 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -150,6 +138,18 @@ exports[`Storyshots Atoms / IconBadge Custom badge size 1`] = `
   min-width: 32px;
   background-color: #0046FF;
   border-radius: 32px;
+}
+
+.c1 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 <span

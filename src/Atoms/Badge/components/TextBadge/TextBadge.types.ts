@@ -9,7 +9,7 @@ export type StyledBadgeBaseProps = BadgeBaseProps & {
   $animateOnChange: boolean;
 };
 
-export type Props = {
+type Props = {
   backgroundColor?: ColorFn;
   color?: ColorFn;
   animateOnChange?: boolean;
