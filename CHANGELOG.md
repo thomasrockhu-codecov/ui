@@ -1,3 +1,15 @@
+# [9.10.0](https://github.com/nordnet/ui/compare/v9.9.0...v9.10.0) (2021-11-30)
+
+
+### Bug Fixes
+
+* move import to one line ([07600c8](https://github.com/nordnet/ui/commit/07600c8))
+
+
+### Features
+
+* use new icon and update storyshots ([c66e56f](https://github.com/nordnet/ui/commit/c66e56f))
+
 # [9.9.0](https://github.com/nordnet/ui/compare/v9.8.5...v9.9.0) (2021-11-29)
 
 
