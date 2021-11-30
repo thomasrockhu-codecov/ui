@@ -1,20 +1,10 @@
-import React from 'react';
-import { ColorFn } from '../../common/Types';
-import { BadgeBaseProps } from './components/BadgeBase/BadgeBase.types';
+import { TextBadgeComponent } from './components/TextBadge/TextBadge.types';
 
-type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
-
-export type StyledBadgeBaseProps = BadgeBaseProps & {
-  $applyPadding: boolean;
-  $animateOnChange: boolean;
+type BadgeVariants = {
+  // IconBadge: IconBadgeComponent;
+  // StatusBadge: StatusBadge;
+  // AccountBadge: AccountBadge;
+  // TooltipBadge: TooltipBadge;
 };
 
-export type Props = {
-  backgroundColor?: ColorFn;
-  color?: ColorFn;
-  animateOnChange?: boolean;
-  variant?: 'square' | 'circle' | 'rect';
-  weight?: string;
-} & HtmlProps;
-
-export type BadgeComponent = React.FC<Props>;
+export type BadgeComponent = TextBadgeComponent & BadgeVariants;

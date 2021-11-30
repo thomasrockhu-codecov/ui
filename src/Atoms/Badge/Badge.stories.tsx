@@ -4,7 +4,6 @@ import { Badge } from './Badge';
 import docs from './Badge.mdx';
 import { Box, Button, Flexbox, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';
-import { Props as BadgeProps } from './Badge.types';
 
 const StyledFlexbox = styled(Flexbox)`
   width: 200px;
@@ -173,7 +172,10 @@ export const CommonBadgeUseCases = () => {
       Orders <Badge>7</Badge>
     </Typography>
   );
-  const TextWithSmallBadge: React.FC<BadgeProps> = ({ children, ...badgeProps }) => {
+  const TextWithSmallBadge: React.FC<React.ComponentProps<typeof Badge>> = ({
+    children,
+    ...badgeProps
+  }) => {
     return (
       <Typography type="tertiary">
         <Badge {...badgeProps} /> {children}

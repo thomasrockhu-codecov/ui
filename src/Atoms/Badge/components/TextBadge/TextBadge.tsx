@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Typography } from '../..';
-import { ColorFn } from '../../common/Types';
-import { isElement, isFunction } from '../../common/utils';
-import { BadgeComponent, StyledBadgeBaseProps } from './Badge.types';
-import { BadgeBase } from './components/BadgeBase';
+import { Typography } from '../../../..';
+import { ColorFn } from '../../../../common/Types';
+import { isElement, isFunction } from '../../../../common/utils';
+import { TextBadgeComponent, StyledBadgeBaseProps } from './TextBadge.types';
+import { BadgeBase } from '../BadgeBase';
 
 const SMALL_BADGE_SIZE = 2;
 const MEDIUM_BADGE_SIZE = 5;
@@ -31,7 +31,7 @@ const StyledBadgeBase: React.FC<StyledBadgeBaseProps> = styled(BadgeBase)<Styled
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
 `;
 
-const BadgeContent: React.FC<{ color?: ColorFn; weight?: string }> = ({
+const TextBadgeContent: React.FC<{ color?: ColorFn; weight?: string }> = ({
   children,
   color,
   weight,
@@ -50,7 +50,7 @@ const BadgeContent: React.FC<{ color?: ColorFn; weight?: string }> = ({
   );
 };
 
-export const Badge: BadgeComponent = ({
+export const TextBadge: TextBadgeComponent = ({
   backgroundColor,
   color,
   children,
@@ -75,9 +75,9 @@ export const Badge: BadgeComponent = ({
       {...(textColorOnParent && { color })}
       {...htmlProps}
     >
-      <BadgeContent color={color} weight={weight}>
+      <TextBadgeContent color={color} weight={weight}>
         {children}
-      </BadgeContent>
+      </TextBadgeContent>
     </StyledBadgeBase>
   );
 };
