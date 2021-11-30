@@ -58,6 +58,18 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
+.c36 {
+  color: #282823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -72,32 +84,12 @@ Array [
   display: block;
 }
 
-.c36 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c17 {
   fill: #00D200;
 }
 
 .c18 {
   fill: #FFF;
-}
-
-.c37 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c9 {
@@ -753,15 +745,16 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c36 c37"
-                          direction="down"
+                          className="c36"
                           focusable="false"
+                          height={8}
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 16 16"
+                          width={8}
                         >
-                          <polygon
-                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                          <path
+                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            fill="currentColor"
                           />
                         </svg>
                       </div>
@@ -885,6 +878,18 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
+.c36 {
+  color: #282823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -899,32 +904,12 @@ Array [
   display: block;
 }
 
-.c36 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c17 {
   fill: #00D200;
 }
 
 .c18 {
   fill: #FFF;
-}
-
-.c37 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c9 {
@@ -1580,15 +1565,16 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c36 c37"
-                          direction="down"
+                          className="c36"
                           focusable="false"
+                          height={8}
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 16 16"
+                          width={8}
                         >
-                          <polygon
-                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                          <path
+                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            fill="currentColor"
                           />
                         </svg>
                       </div>
@@ -1884,23 +1870,15 @@ Array [
 }
 
 .c31 {
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c32 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c7 {
@@ -2457,15 +2435,16 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c31 c32"
-                          direction="down"
+                          className="c31"
                           focusable="false"
+                          height={8}
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 16 16"
+                          width={8}
                         >
-                          <polygon
-                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                          <path
+                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            fill="currentColor"
                           />
                         </svg>
                       </div>
@@ -3368,23 +3347,15 @@ Array [
 }
 
 .c31 {
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c32 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c7 {
@@ -3933,15 +3904,16 @@ Array [
                       >
                         <svg
                           aria-hidden="true"
-                          className="c31 c32"
-                          direction="down"
+                          className="c31"
                           focusable="false"
+                          height={8}
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 16 16"
+                          width={8}
                         >
-                          <polygon
-                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                          <path
+                            d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                            fill="currentColor"
                           />
                         </svg>
                       </div>
