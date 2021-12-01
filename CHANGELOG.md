@@ -5,6 +5,25 @@
 
 * change fade to input-mask to not depend on background color ([66af0ee](https://github.com/nordnet/ui/commit/66af0ee))
 * darkmode fix for selected value in single input select ([0952bdf](https://github.com/nordnet/ui/commit/0952bdf))
+* reverting to releasing with node 12 ([5745365](https://github.com/nordnet/ui/commit/5745365))
+* snapshots ([8f39bdd](https://github.com/nordnet/ui/commit/8f39bdd))
+* sync default fadeHeight ([e351677](https://github.com/nordnet/ui/commit/e351677))
+* **infobar:** infobars now have correct dark and light mode colors ([5349f4c](https://github.com/nordnet/ui/commit/5349f4c))
+
+
+### Features
+
+* add semantic color for key figures background color ([d506da1](https://github.com/nordnet/ui/commit/d506da1))
+* infobar dark mode doneish ([ccb9855](https://github.com/nordnet/ui/commit/ccb9855))
+* trigger a beta-release ([718030a](https://github.com/nordnet/ui/commit/718030a))
+
+# [9.11.0-beta.1](https://github.com/nordnet/ui/compare/v9.10.0...v9.11.0-beta.1@beta) (2021-12-01)
+
+
+### Bug Fixes
+
+* change fade to input-mask to not depend on background color ([66af0ee](https://github.com/nordnet/ui/commit/66af0ee))
+* darkmode fix for selected value in single input select ([0952bdf](https://github.com/nordnet/ui/commit/0952bdf))
 * snapshots ([8f39bdd](https://github.com/nordnet/ui/commit/8f39bdd))
 * sync default fadeHeight ([e351677](https://github.com/nordnet/ui/commit/e351677))
 * **infobar:** infobars now have correct dark and light mode colors ([5349f4c](https://github.com/nordnet/ui/commit/5349f4c))
