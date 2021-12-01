@@ -1,62 +1,48 @@
 import React, { useState } from 'react';
 import Color from 'color';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
 import { isBoolean } from '../../common/utils';
 import { Props } from './QuickFilter.types';
-
-const StyledTypography = styled(Typography).withConfig({
-  shouldForwardProp: (prop) => !['inheritColor', 'selected'].includes(prop),
-})<{
-  inheritColor: boolean;
-  selected: boolean;
-}>`
-  ${(p) => p.selected && `color: ${p.theme.color.cta};`};
-  ${(p) => p.inheritColor && `color: inherit;`};
-`;
 
 const StyledInput = styled.input`
   opacity: 0;
   pointer-events: none;
   color: inherit;
   position: absolute;
-  ${(p) => `top: ${p.theme.spacing.unit(1)}px`};
-`;
-
-const outlineStyles = css`
-  ${(p) => `outline: 2px solid ${p.theme.color.cta}`};
-  outline-offset: -2px;
-  vertical-align: top;
-`;
-
-const overlayStyles = css`
-  ${(p) => `background: ${Color(p.theme.color.cta).alpha(0.1).string()}`};
-  /* ${outlineStyles} */
+  ${(p) => `top: ${p.theme.spacing.unit(1)}px;`};
 `;
 
 const StyledDiv = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['disabled', 'selected'].includes(prop),
+  shouldForwardProp: (prop) => !['disabled', 'selected', 'hasLabel'].includes(prop),
 })<{
   disabled: boolean;
   selected: boolean;
+  hasLabel: boolean;
 }>`
   box-sizing: border-box;
   display: inline-block;
-  border-radius: ${(p) => p.theme.spacing.unit(4)}px;
+  ${(p) => (p.hasLabel ? `border-radius: ${p.theme.spacing.unit(4)}px;` : `border-radius: 50%;`)};
+
+  ${(p) =>
+    p.hasLabel
+      ? `padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px;`
+      : `padding: ${p.theme.spacing.unit(2)}px;`};
 
   ${(p) => `
     cursor: ${p.disabled ? 'not-allowed' : 'pointer'};
     color: ${p.theme.color.text};
     ${p.selected && `color: ${p.theme.color.cta};`};
     ${p.disabled && `color: ${p.theme.color.disabledText};`};
-    background: ${p.disabled ? p.theme.color.disabledBackground : p.theme.color.card};
-  `}
 
-  /* ${(p) => !p.disabled && p.selected && overlayStyles}; */
+    background:  ${p.theme.color.card};
+    ${p.selected && `background: ${Color(p.theme.color.cta).alpha(0.1).string()};`};
+    ${p.disabled && `background: ${p.theme.color.disabledBackground};`};
+  `};
 
   &:hover {
-    ${(p) => !p.disabled && overlayStyles};
+    color: ${(p) => !p.disabled && p.theme.color.cta};
   }
 `;
 
@@ -65,20 +51,15 @@ const StyledLabel = styled.label`
 
   &:focus-within {
     ${StyledDiv} {
-      /* ${outlineStyles} */
+      color: ${(p) => p.theme.color.cta};
     }
   }
 `;
 
-const StyledDivLabelWrapper = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['hasLabel'].includes(prop),
-})<{
-  hasLabel: boolean;
-}>`
-  ${(p) => `
-    text-align: ${p.hasLabel ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px ;
-  `}
+const StyledFlexbox = styled(Flexbox)`
+  & > * {
+    color: inherit;
+  }
 `;
 
 export const QuickFilter: React.FC<Props> = ({
@@ -93,6 +74,7 @@ export const QuickFilter: React.FC<Props> = ({
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
   const selected = (isControlled ? controlledSelected : selectedInternal) as boolean;
+  const hasLabel = Boolean(label);
 
   const changeHandler = (val: boolean) => {
     if (typeof onChange === 'function') onChange(val);
@@ -101,7 +83,7 @@ export const QuickFilter: React.FC<Props> = ({
 
   return (
     <StyledLabel>
-      <StyledDiv disabled={disabled} selected={selected}>
+      <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel}>
         <StyledInput
           type="checkbox"
           disabled={disabled}
@@ -110,17 +92,17 @@ export const QuickFilter: React.FC<Props> = ({
           onChange={() => changeHandler(!selected)}
         />
 
-        <StyledDivLabelWrapper hasLabel={Boolean(label)}>
-          <Flexbox container direction="row" gutter={1} alignItems="center">
-            {Boolean(icon) && <Flexbox item>{icon}</Flexbox>}
+        <Flexbox container direction="row" gutter={1} alignItems="center">
+          {Boolean(icon) && <StyledFlexbox item>{icon}</StyledFlexbox>}
 
+          {hasLabel && (
             <Flexbox item alignSelf="baseline">
-              <StyledTypography inheritColor={disabled} type="secondary">
+              <Typography color="inherit" type="secondary">
                 {label}
-              </StyledTypography>
+              </Typography>
             </Flexbox>
-          </Flexbox>
-        </StyledDivLabelWrapper>
+          )}
+        </Flexbox>
       </StyledDiv>
     </StyledLabel>
   );

@@ -93,3 +93,16 @@ export const QuickFilterWithValueControlledBehavior = () => {
 QuickFilterWithValueControlledBehavior.story = {
   name: 'With controlled behavior',
 };
+
+export const QuickFilterWithoutLabel = () => {
+  const Component = () => {
+    return (
+      <QuickFilter label="" value="This component is controlled" icon={<Icon.Apartment24 />} />
+    );
+  };
+  return <Component />;
+};
+
+QuickFilterWithoutLabel.story = {
+  name: 'Without label',
+};
