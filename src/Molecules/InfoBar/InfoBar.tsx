@@ -72,11 +72,11 @@ const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
     case 'error':
       return <Icon.ErrorFill16 color={(theme) => theme.color.infoBarError} />;
     case 'warning':
-      return <Icon.WarningFill16 color={(theme) => theme.color.warning} />;
+      return <Icon.WarningFill16 color={(theme) => theme.color.infoBarWarning} />;
     case 'general':
-      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarCTA} />;
+      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarInfo} />;
     default:
-      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarCTA} />;
+      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarInfo} />;
   }
 };
 

@@ -343,11 +343,15 @@ export type ThemeColors = {
   /**
    * blue500
    */
-  infoBarCTA: string;
+  infoBarInfo: string;
   /**
    * pink600
    */
   infoBarError: string;
+  /**
+   * yellow400
+   */
+  infoBarWarning: string;
   /**
    * blue500
    */

@@ -157,13 +157,15 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     positive: rawColor.positive,
 
-    infoBarBackgroundSuccess: rawColor.positive,
-    infoBarBackgroundWarning: rawColor.index,
-    infoBarBackgroundError: rawColor.negative,
-    infoBarBackgroundInfo: rawColor.white,
+    infoBarBackgroundSuccess: rawColor.green100,
+    infoBarBackgroundWarning: rawColor.yellow100,
+    infoBarBackgroundError: rawColor.red100,
+    infoBarBackgroundInfo: rawColor.gray100,
+    
     infoBarSuccess: rawColor.green500,
-    infoBarCTA: rawColor.blue500,
-    infoBarError: rawColor.pink600,
+    infoBarWarning: rawColor.yellow400,
+    infoBarError: rawColor.red500,
+    infoBarInfo: rawColor.blue500,
 
     link: rawColor.blue500,
 
