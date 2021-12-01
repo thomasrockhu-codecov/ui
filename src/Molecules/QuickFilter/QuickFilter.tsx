@@ -27,8 +27,8 @@ const StyledDiv = styled.div.withConfig({
   color: ${(p) => p.theme.color.text};
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   display: inline-block;
+  padding: ${(p) => p.theme.spacing.unit(p.variant === VARIANT.SMALL ? 1.5 : 2)}px;
 
-  ${(p) => `padding: ${p.theme.spacing.unit(p.variant === VARIANT.SMALL ? 1.5 : 2)}px;`}
   ${(p) => p.selected && `color: ${p.theme.color.cta};`};
   ${(p) => p.disabled && `color: ${p.theme.color.disabledText};`};
 
