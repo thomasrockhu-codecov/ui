@@ -157,6 +157,16 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     positive: rawColor.positive,
 
+    infoBarBackgroundSuccess: rawColor.positive,
+    infoBarBackgroundWarning: rawColor.index,
+    infoBarBackgroundError: rawColor.negative,
+    infoBarBackgroundInfo: rawColor.white,
+    infoBarSuccess: rawColor.green500,
+    infoBarCTA: rawColor.blue500,
+    infoBarError: rawColor.pink600,
+
+    link: rawColor.blue500,
+
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,

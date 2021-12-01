@@ -157,6 +157,16 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     positive: rawColor.positive,
 
+    infoBarBackgroundSuccess: rawColor.green800,
+    infoBarBackgroundWarning: rawColor.yellow800,
+    infoBarBackgroundError: rawColor.red800,
+    infoBarBackgroundInfo: rawColor.gray800,
+    infoBarSuccess: rawColor.green500,
+    infoBarCTA: rawColor.blue500,
+    infoBarError: rawColor.red500,
+
+    link: rawColor.blue400,
+
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,
     privateBankingBannerTitle: rawColor.gray6,
