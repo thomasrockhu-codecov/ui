@@ -65,6 +65,31 @@ QuickFilterWithIcon.story = {
   name: 'With icon',
 };
 
+export const QuickFilterWithVariants = () => {
+  return (
+    <>
+      <QuickFilter
+        {...getCardProps()}
+        onChange={onChange}
+        icon={<Icon.Money16 />}
+        label=""
+        variant="small"
+      />
+      <QuickFilter
+        {...getCardProps()}
+        onChange={onChange}
+        icon={<Icon.Money16 />}
+        label=""
+        variant="big"
+      />
+    </>
+  );
+};
+
+QuickFilterWithVariants.story = {
+  name: 'With variants',
+};
+
 export const QuickFilterWithValueControlledBehavior = () => {
   const Component = () => {
     const [value, setValue] = useState(false);
