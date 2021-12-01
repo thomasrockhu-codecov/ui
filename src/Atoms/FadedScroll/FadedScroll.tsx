@@ -4,18 +4,14 @@ import { useIntersect } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import {
   containerStyles,
-  fadeBottomDesktopStyles,
-  fadeBottomStyles,
-  fadeTopDesktopStyles,
-  fadeTopStyles,
   intersectionStyles,
   scrollerStyles,
+  fadeStyles,
 } from './FadedScroll.styles';
 
 const Container = styled.div<InternalProps & Props>`
   ${containerStyles}
-  ${(p) => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
-  ${(p) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
+  ${fadeStyles}
 `;
 
 const Scroller = styled.div<Props>`
@@ -49,10 +45,8 @@ export const FadedScroll: Component & {
   className,
   disableTopFade,
   enableMobileFade = false,
-  fadeHeight = 13,
+  fadeHeight = 15,
   maxHeight,
-  backgroundColor = '#ffffff',
-  backgroundColorDarkMode = '#282823',
 }) => {
   const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
   const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect<HTMLDivElement>();
@@ -61,22 +55,18 @@ export const FadedScroll: Component & {
   return (
     <Container
       className={className}
-      disableTopFade={disableTopFade}
       enableMobileFade={enableMobileFade}
-      fadeHeight={fadeHeight}
+      fadeTopPercentage={disableTopFade ? 0 : fadeHeight}
+      fadeBottomPercentage={100 - fadeHeight}
       intersectionTopRatio={intersectionTopRatio}
       intersectionBottomRatio={intersectionBottomRatio}
       maxHeight={maxHeight}
-      backgroundColor={backgroundColor}
-      backgroundColorDarkMode={backgroundColorDarkMode}
     >
       <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
         <Content ref={contentRef}>
-          {!disableTopFade && (
-            <IntersectionTop fadeHeight={fadeHeight} ref={setIntersectionTopRef} />
-          )}
+          <IntersectionTop ref={setIntersectionTopRef} />
           {children}
-          <IntersectionBottom fadeHeight={fadeHeight} ref={setIntersectionBottomRef} />
+          <IntersectionBottom ref={setIntersectionBottomRef} />
         </Content>
       </Scroller>
     </Container>
