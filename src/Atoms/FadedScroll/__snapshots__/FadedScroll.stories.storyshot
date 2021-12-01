@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
   overflow-x: hidden;
@@ -45,48 +49,6 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 
 .c6 {
   padding: 8px;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
-  }
 }
 
 @media (min-width:976px) {
@@ -410,6 +372,10 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 `;
 
 exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
   overflow-x: hidden;
@@ -454,48 +420,6 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
 
 .c6 {
   padding: 8px;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
-  }
 }
 
 @media (min-width:976px) {
@@ -836,6 +760,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  position: relative;
 }
 
 .c2 {
@@ -890,48 +815,6 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
 
 .c7 {
   padding: 8px;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
-  }
 }
 
 @media (min-width:976px) {
@@ -1289,37 +1172,6 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   position: relative;
-  position: relative;
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#FFFFFF00 0%,#FFFFFFff 100%);
-}
-
-.c0::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
 }
 
 .c2 {
@@ -1706,12 +1558,16 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 `;
 
 exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
   overflow-x: hidden;
 }
 
-.c7 {
+.c8 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -1721,16 +1577,25 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
 }
 
 .c3 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c4 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c5 {
   display: block;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1739,29 +1604,8 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   padding: 8px;
-}
-
-@media (min-width:976px) {
-  .c0 {
-    position: relative;
-  }
-
-  .c0::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#FFFFFFff 0%,#FFFFFF00 100%);
-  }
 }
 
 @media (min-width:976px) {
@@ -1781,300 +1625,303 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
     <div
       className="c2"
     >
-      <ul
+      <div
         className="c3"
+      />
+      <ul
+        className="c4"
       >
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Lorem ipsum dolor sit amet
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Class aptent taciti sociosqu
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Quisque ac ullamcorper eros
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Etiam urna elit, mollis vel arcu id
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Sed consequat erat lacinia
           </span>
         </li>
         <li
-          className="c4 c5"
+          className="c5 c6"
         >
           <span
-            className="c6"
+            className="c7"
           >
             Aliquam bibendum tortor dui
           </span>
         </li>
       </ul>
       <div
-        className="c7"
+        className="c8"
       />
     </div>
   </div>

@@ -79,6 +79,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     generationSavingsTimelineColor3: rawColor.brandBlue,
     generationSavingsTimelineColor4: rawColor.complementaryBlue1,
 
+    keyFiguresBackground: rawColor.gray100,
+
     graphVolume: rawColor.gray5,
     graphVolumeHover: rawColor.gray4,
 
@@ -156,6 +158,18 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     placeholderText: rawColor.gray2,
 
     positive: rawColor.positive,
+
+    infoBarBackgroundSuccess: rawColor.green100,
+    infoBarBackgroundWarning: rawColor.yellow100,
+    infoBarBackgroundError: rawColor.red100,
+    infoBarBackgroundInfo: rawColor.gray100,
+    
+    infoBarSuccess: rawColor.green500,
+    infoBarWarning: rawColor.yellow400,
+    infoBarError: rawColor.red500,
+    infoBarInfo: rawColor.blue500,
+
+    link: rawColor.blue500,
 
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,

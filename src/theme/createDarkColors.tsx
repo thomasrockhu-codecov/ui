@@ -78,6 +78,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     generationSavingsTimelineColor3: rawColor.brandTurquoise,
     generationSavingsTimelineColor4: rawColor.complementaryTurquoise1,
 
+    keyFiguresBackground: rawColor.gray700,
+
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
 
@@ -156,6 +158,18 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     placeholderText: rawColor.gray3,
 
     positive: rawColor.positive,
+
+    infoBarBackgroundSuccess: rawColor.green800,
+    infoBarBackgroundWarning: rawColor.yellow800,
+    infoBarBackgroundError: rawColor.red800,
+    infoBarBackgroundInfo: rawColor.gray800,
+
+    infoBarSuccess: rawColor.green500,
+    infoBarWarning: rawColor.yellow400,
+    infoBarError: rawColor.red500,
+    infoBarInfo: rawColor.blue500,
+
+    link: rawColor.blue400,
 
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,

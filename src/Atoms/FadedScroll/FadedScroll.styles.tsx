@@ -24,58 +24,18 @@ export const scrollDesktopStyles = css<Pick<Props, 'maxHeight'>>`
   }
 `;
 
-const fadeStyles = css<InternalProps & Props>`
-  content: '';
-  display: block;
-  width: 100%;
-  height: ${(p) => getValueFromNumberOrString(p.fadeHeight!, p.theme)};
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-`;
-
-export const fadeTopStyles = css<InternalProps & Props>`
+export const fadeStyles = css<InternalProps & Props>`
   position: relative;
-
-  &::before {
-    ${fadeStyles}
-    top: 0;
-    background: ${(p) =>
-      p.theme.isDarkMode
-        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}00 0%, ${p.backgroundColorDarkMode}ff 100%)`
-        : `linear-gradient(0deg, ${p.backgroundColor}00 0%, ${p.backgroundColor}ff 100%)`};
-    ${(p) => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
-  }
-`;
-
-export const fadeTopDesktopStyles = css`
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    ${fadeTopStyles}
-  }
-`;
-
-export const fadeBottomStyles = css<InternalProps & Props>`
-  position: relative;
-
-  &::after {
-    ${fadeStyles}
-    bottom: 0;
-    background: ${(p) =>
-      p.theme.isDarkMode
-        ? `linear-gradient(0deg, ${p.backgroundColorDarkMode}ff 0%, ${p.backgroundColorDarkMode}00 100%)`
-        : `linear-gradient(0deg, ${p.backgroundColor}ff 0%, ${p.backgroundColor}00 100%)`};
-    ${(p) =>
-      isNumber(p.intersectionBottomRatio) ? `opacity: ${1 - p.intersectionBottomRatio}` : ''};
-  }
-`;
-
-export const fadeBottomDesktopStyles = css`
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    ${fadeBottomStyles}
-  }
+  ${(p) =>
+    isNumber(p.intersectionTopRatio)
+      ? `-webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, ${p.intersectionTopRatio}) 0%,
+    rgba(0, 0, 0, 1) ${p.fadeTopPercentage}%,
+    rgba(0, 0, 0, 1) ${p.fadeBottomPercentage}%,
+    rgba(0, 0, 0, ${p.intersectionBottomRatio}) 100%
+    )`
+      : ''};
 `;
 
 export const intersectionStyles = css<Props>`

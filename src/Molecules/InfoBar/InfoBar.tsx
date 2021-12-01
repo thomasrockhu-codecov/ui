@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, OldIcon, Typography } from '../..';
+import { Box, Flexbox, Typography, Icon } from '../..';
 import PageWrapper from '../PageWrapper';
 import { FnHelper, InfoBarIconProps, InfoBarProps } from './InfoBar.types';
 
@@ -16,24 +16,15 @@ Categories:
 const bgFn = ({ variant, theme }: FnHelper) => {
   switch (variant) {
     case 'success':
-      return theme.color.positive;
+      return theme.color.infoBarBackgroundSuccess;
     case 'error':
-      return theme.color.negative;
+      return theme.color.infoBarBackgroundError;
     case 'warning':
-      return theme.color.warning;
+      return theme.color.infoBarBackgroundWarning;
     case 'general':
-      return theme.color.module;
+      return theme.color.infoBarBackgroundInfo;
     default:
-      return theme.color.module;
-  }
-};
-
-const textFn = ({ variant, theme }: FnHelper) => {
-  switch (variant) {
-    case 'error':
-      return theme.color.textLight;
-    default:
-      return theme.color.text;
+      return theme.color.infoBarBackgroundInfo;
   }
 };
 
@@ -42,26 +33,29 @@ const textLinkFn = ({ variant, theme }: FnHelper) => {
     case 'success':
       return theme.color.text;
     case 'error':
-      return theme.color.textLight;
+      return theme.color.text;
     case 'warning':
       return theme.color.text;
     case 'general':
-      return theme.color.cta;
+      return theme.color.link;
     default:
-      return theme.color.cta;
+      return theme.color.link;
   }
 };
 
 const InfoBarPageWrapper = styled(PageWrapper)`
   background: ${bgFn};
-  color: ${textFn};
+  color: ${({ theme }) => theme.color.text};
+
   & span {
     color: inherit;
   }
+
   & a {
     font-weight: bold;
     color: ${textLinkFn};
   }
+
   button {
     display: block;
     padding: 0;
@@ -74,40 +68,15 @@ const InfoBarPageWrapper = styled(PageWrapper)`
 const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
   switch (variant) {
     case 'success':
-      return (
-        <OldIcon.CheckMarkCircle
-          fill={(theme) => textLinkFn({ variant, theme })}
-          stroke={(theme) => bgFn({ variant, theme })}
-        />
-      );
+      return <Icon.CheckCircleFill16 color={(theme) => theme.color.infoBarSuccess} />;
     case 'error':
-      return (
-        <OldIcon.CrossCircle
-          fill={(theme) => textLinkFn({ variant, theme })}
-          stroke={(theme) => bgFn({ variant, theme })}
-        />
-      );
+      return <Icon.ErrorFill16 color={(theme) => theme.color.infoBarError} />;
     case 'warning':
-      return (
-        <OldIcon.WarningTriangle
-          fill={(theme) => textLinkFn({ variant, theme })}
-          stroke={(theme) => bgFn({ variant, theme })}
-        />
-      );
+      return <Icon.WarningFill16 color={(theme) => theme.color.infoBarWarning} />;
     case 'general':
-      return (
-        <OldIcon.InfoCircle
-          fill={(theme) => textLinkFn({ variant, theme })}
-          stroke={(theme) => bgFn({ variant, theme })}
-        />
-      );
+      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarInfo} />;
     default:
-      return (
-        <OldIcon.InfoCircle
-          fill={(theme) => textLinkFn({ variant, theme })}
-          stroke={(theme) => bgFn({ variant, theme })}
-        />
-      );
+      return <Icon.InformationFill16 color={(theme) => theme.color.infoBarInfo} />;
   }
 };
 
@@ -128,7 +97,7 @@ export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, c
             <Flexbox item>
               <Box pl={2}>
                 <button type="button" onClick={onClose}>
-                  <OldIcon.Cross size={3} fill={(theme) => textFn({ variant, theme })} />
+                  <Icon.Cross16 color={(theme) => theme.color.text} />
                 </button>
               </Box>
             </Flexbox>
