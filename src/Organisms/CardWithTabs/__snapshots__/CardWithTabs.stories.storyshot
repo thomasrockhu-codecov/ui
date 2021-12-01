@@ -340,6 +340,10 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
+.c15 {
+  position: relative;
+}
+
 .c17 {
   position: relative;
   overflow-x: hidden;
@@ -539,48 +543,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll 1`] =
 }
 
 @media (min-width:976px) {
-  .c15 {
-    position: relative;
-  }
-
-  .c15::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c15 {
-    position: relative;
-  }
-
-  .c15::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  }
-}
-
-@media (min-width:976px) {
   .c16 {
     max-height: 80px;
     overflow-y: auto;
@@ -766,6 +728,7 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  position: relative;
 }
 
 .c17 {
@@ -971,48 +934,6 @@ exports[`Storyshots Organisms / CardWithTabs Integration: with FadedScroll of co
   .c5 {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-
-@media (min-width:976px) {
-  .c16 {
-    position: relative;
-  }
-
-  .c16::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  }
-}
-
-@media (min-width:976px) {
-  .c16 {
-    position: relative;
-  }
-
-  .c16::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 1;
-    opacity: 0;
-    bottom: 0;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
 
