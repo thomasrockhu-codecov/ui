@@ -78,6 +78,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     generationSavingsTimelineColor3: rawColor.brandTurquoise,
     generationSavingsTimelineColor4: rawColor.complementaryTurquoise1,
 
+    keyFiguresBackground: rawColor.gray700,
+
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
 

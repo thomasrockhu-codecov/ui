@@ -79,6 +79,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     generationSavingsTimelineColor3: rawColor.brandBlue,
     generationSavingsTimelineColor4: rawColor.complementaryBlue1,
 
+    keyFiguresBackground: rawColor.gray100,
+
     graphVolume: rawColor.gray5,
     graphVolumeHover: rawColor.gray4,
 

@@ -224,6 +224,8 @@ export type ThemeColors = {
   generationSavingsTimelineColor3: string;
   /** complementaryBlue1 */
   generationSavingsTimelineColor4: string;
+  /** gray100 */
+  keyFiguresBackground: string;
   /** gray5 */
   graphVolume: string;
   /** gray4 */
