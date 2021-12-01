@@ -265,6 +265,8 @@ export type ThemeColors = {
   progressBarText: RawColor['white'];
   /** index */
   progressBarWarning: RawColor['index'];
+  /** gray7 */
+  quickFilterBackground: RawColor['gray7'];
   /** gray1 */
   searchBackground: RawColor['gray1'];
   /** gray1 */

@@ -168,6 +168,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
+    quickFilterBackground: rawColor.gray7,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 

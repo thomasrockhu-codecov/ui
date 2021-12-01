@@ -21,7 +21,7 @@ const StyledDiv = styled.div.withConfig({
   hasLabel: boolean;
   variant: Variant;
 }>`
-  background: ${(p) => p.theme.color.card};
+  background: ${(p) => p.theme.color.quickFilterBackground};
   border-radius: 50%;
   box-sizing: border-box;
   color: ${(p) => p.theme.color.text};
