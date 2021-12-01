@@ -1,3 +1,10 @@
+# [9.11.0-beta.2](https://github.com/nordnet/ui/compare/v9.11.0-beta.1...v9.11.0-beta.2) (2021-12-01)
+
+
+### Bug Fixes
+
+* adjust spinner dark mode color ([7840e66](https://github.com/nordnet/ui/commit/7840e66))
+
 # [9.11.0-beta.1](https://github.com/nordnet/ui/compare/v9.10.0...v9.11.0-beta.1) (2021-12-01)
 
 
