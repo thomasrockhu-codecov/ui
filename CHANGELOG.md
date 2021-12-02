@@ -1,3 +1,10 @@
+# [9.11.0-beta.3](https://github.com/nordnet/ui/compare/v9.11.0-beta.2...v9.11.0-beta.3) (2021-12-02)
+
+
+### Features
+
+* add color for order side panel label ([5abc354](https://github.com/nordnet/ui/commit/5abc354))
+
 # [9.11.0-beta.2](https://github.com/nordnet/ui/compare/v9.11.0-beta.1...v9.11.0-beta.2) (2021-12-01)
 
 
