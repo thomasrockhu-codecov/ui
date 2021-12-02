@@ -34,8 +34,8 @@ exports[`Storyshots Molecules / Button Disabled link looking like a button 1`] =
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
+  background-color: #EEEEEE;
+  color: #9E9E9E;
   border: none;
   border-radius: 0;
   cursor: not-allowed;
@@ -118,7 +118,7 @@ exports[`Storyshots Molecules / Button External link looking like a button 1`] =
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -136,11 +136,11 @@ exports[`Storyshots Molecules / Button External link looking like a button 1`] =
 }
 
 .c0:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c0:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 <a
@@ -196,7 +196,7 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -214,11 +214,11 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
 }
 
 .c4:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c4:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c6 {
@@ -238,8 +238,8 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -248,7 +248,7 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -256,19 +256,19 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
 }
 
 .c6:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c6:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c6:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c6:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c0 {
@@ -421,7 +421,7 @@ exports[`Storyshots Molecules / Button Link looking like a button that is full w
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -439,11 +439,11 @@ exports[`Storyshots Molecules / Button Link looking like a button that is full w
 }
 
 .c0:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c0:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 <a
@@ -489,7 +489,7 @@ exports[`Storyshots Molecules / Button Link looking like a button with rel as no
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -507,11 +507,11 @@ exports[`Storyshots Molecules / Button Link looking like a button with rel as no
 }
 
 .c0:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c0:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 <a
@@ -865,8 +865,8 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -875,7 +875,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -883,19 +883,69 @@ Array [
 }
 
 .c4:hover {
-  color: hsl(0,0%,80%);
+  color: hsl(223.5,100%,40%);
 }
 
 .c4:hover::before {
-  border-color: hsl(0,0%,80%);
+  border-color: hsl(223.5,100%,40%);
 }
 
 .c4:active {
-  color: hsl(0,0%,70%);
+  color: hsl(223.5,100%,35%);
 }
 
 .c4:active::before {
-  border-color: hsl(0,0%,70%);
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c6 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: transparent;
+  color: #FF1900;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #336BFF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c6:hover {
+  color: hsl(5.899999999999977,100%,40%);
+}
+
+.c6:hover::before {
+  border-color: hsl(5.899999999999977,100%,40%);
+}
+
+.c6:active {
+  color: hsl(5.899999999999977,100%,35%);
+}
+
+.c6:active::before {
+  border-color: hsl(5.899999999999977,100%,35%);
 }
 
 .c0 {
@@ -1007,7 +1057,7 @@ Array [
       </div>
       <div>
         <a
-          className="c4"
+          className="c6"
           href="/overview"
           onClick={[Function]}
         >
@@ -1091,7 +1141,7 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1109,11 +1159,11 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
 }
 
 .c2:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c2:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c4 {
@@ -1134,8 +1184,8 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1144,7 +1194,7 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -1152,19 +1202,19 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
 }
 
 .c4:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c4:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c4:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c4:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 <div

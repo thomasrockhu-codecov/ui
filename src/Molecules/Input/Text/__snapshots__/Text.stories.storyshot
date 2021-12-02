@@ -4762,7 +4762,7 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
   width: 100%;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -4803,11 +4803,11 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
 }
 
 .c15:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c15:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c9 {
