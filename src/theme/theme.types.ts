@@ -146,6 +146,38 @@ type NumberOrObjectWithNumber = number | { size: number };
 export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
 export type ThemeColors = {
+  /**
+   * blue500
+   */
+  buttonBackgroundPrimary: string;
+  /**
+   * blue600
+   */
+  buttonBackgroundHoverPrimary: string;
+  /**
+   * blue700
+   */
+  buttonBackgroundActivePrimary: string;
+  /**
+   * gray200
+   */
+  buttonBackgroundDisabled: string;
+  /**
+   * gray500
+   */
+  buttonTextDisabled: string;
+  /**
+   * blue500
+   */
+  buttonBorderSecondary: string;
+  /**
+   * blue600
+   */
+  buttonHoverSecondary: string;
+  /**
+   * blue700
+   */
+  buttonActiveSecondary: string;
   /** gray2 */
   accordionText: string;
   /** gray7 */
@@ -176,6 +208,8 @@ export type ThemeColors = {
   buttonSecondaryBackground: string;
   /** white */
   buttonText: string;
+  /** blue500 */
+  buttonTextSecondary: string;
   /** white */
   buttonTextLight: string;
   /** cta */

@@ -26,35 +26,66 @@ defaultUsage.story = {
 };
 
 export const buttonWithDifferentVariants = () => (
-  <Display
-    horizontal
-    items={[
-      {
-        title: 'primary',
-        component: (
-          <Button onClick={action('clicked')} variant="primary">
-            Button
-          </Button>
-        ),
-      },
-      {
-        title: 'secondary',
-        component: (
-          <Button onClick={action('clicked')} variant="secondary">
-            Button
-          </Button>
-        ),
-      },
-      {
-        title: 'neutral',
-        component: (
-          <Button onClick={action('clicked')} variant="neutral">
-            Button
-          </Button>
-        ),
-      },
-    ]}
-  />
+  <>
+    <Display
+      horizontal
+      items={[
+        {
+          title: 'primary',
+          component: (
+            <Button onClick={action('clicked')} variant="primary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'secondary',
+          component: (
+            <Button onClick={action('clicked')} variant="secondary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'neutral',
+          component: (
+            <Button onClick={action('clicked')} variant="neutral">
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
+    <Display
+      horizontal
+      items={[
+        {
+          title: 'primary - disabled',
+          component: (
+            <Button disabled onClick={action('clicked')} variant="primary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'secondary - disabled',
+          component: (
+            <Button disabled onClick={action('clicked')} variant="secondary">
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 'neutral - disabled',
+          component: (
+            <Button disabled onClick={action('clicked')} variant="neutral">
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
+  </>
 );
 
 buttonWithDifferentVariants.story = {
