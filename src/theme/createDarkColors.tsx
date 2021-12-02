@@ -39,8 +39,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     borderActive: rawColor.brandTurquoise,
 
-    bubbleBackground: rawColor.gray1,
-    bubbleBorder: rawColor.gray2,
+    bubbleBackground: rawColor.gray800,
+    bubbleBorder: rawColor.gray700,
     bubbleSecondaryText: rawColor.gray7,
 
     bulbBackground: rawColor.brandGreen,
@@ -65,8 +65,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 
-    disabledBackground: rawColor.gray1,
-    disabledText: rawColor.gray3,
+    disabledBackground: rawColor.gray900,
+    disabledText: rawColor.gray600,
 
     divider: rawColor.gray1,
     emptyState: rawColor.gray4,
@@ -97,12 +97,12 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     ],
     indexFundsNorwegianAccent: rawColor.brandTurquoise,
 
-    inputBackground: rawColor.gray2,
+    inputBackground: rawColor.gray800,
     inputBorder: rawColor.gray4,
     inputBorderError: rawColor.negative,
     inputBorderHover: rawColor.gray1,
     inputBorderSuccess: rawColor.positive,
-    inputHover: rawColor.gray2,
+    inputHover: rawColor.gray700,
 
     investmentPredictionGraphBlue: rawColor.complementaryTurquoise2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
@@ -190,7 +190,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     selectionCardBorder: rawColor.gray5,
     selectionCardText: rawColor.gray2,
-    selectOptionBackground: rawColor.gray1,
+    selectOptionBackground: rawColor.gray800,
 
     sell: rawColor.brandPink,
     sellActive: rawColor.negativePressed,
