@@ -1,68 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms / Badge / IconBadge Badge With Icon 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 72px;
-  min-width: 72px;
-  background-color: #0046FF;
-  border-radius: 72px;
-}
-
-.c1 {
-  color: #FFFFFF;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-<span
-  className="c0"
->
-  <svg
-    aria-hidden="true"
-    className="c1"
-    focusable="false"
-    height={64}
-    preserveAspectRatio="xMidYMid meet"
-    role="presentation"
-    secondaryColor={[Function]}
-    width={64}
-  >
-    <path
-      clipRule="evenodd"
-      d="M11 18H40V20H14.7205L32 34.6876L41.5609 26.5608L42.9797 27.9797L38.3898 31.8812L51 42.81V30H53V46H11V18ZM13 42.81L25.6102 31.8812L13 21.1624V42.81ZM27.152 33.1916L14.6807 44H49.3193L36.8481 33.1916L32 37.3124L27.152 33.1916Z"
-      fill="currentColor"
-      fillRule="evenodd"
-    />
-    <path
-      clipRule="evenodd"
-      d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
-      fill="#FFFFFF"
-      fillRule="evenodd"
-    />
-  </svg>
-</span>
-`;
-
 exports[`Storyshots Atoms / Badge / IconBadge Badge with illustration 1`] = `
 .c0 {
   display: -webkit-inline-box;
@@ -79,14 +16,17 @@ exports[`Storyshots Atoms / Badge / IconBadge Badge with illustration 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  height: 32px;
-  min-width: 32px;
+  height: 80px;
   background-color: #0046FF;
-  border-radius: 32px;
+  border-radius: 80px;
 }
 
 .c1 {
-  color: #FFFFFF;
+  width: 80px;
+}
+
+.c2 {
+  color: #6E6E69;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -98,27 +38,34 @@ exports[`Storyshots Atoms / Badge / IconBadge Badge with illustration 1`] = `
 }
 
 <span
-  className="c0"
+  className="c0 c1"
 >
   <svg
     aria-hidden="true"
-    className="c1"
+    className="c2"
     focusable="false"
-    height={24}
+    height={64}
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
-    secondaryColor={[Function]}
-    width={24}
+    width={64}
   >
     <path
-      d="M11 13v10h2V13h10v-2H13V1h-2v10H1v2h10z"
+      clipRule="evenodd"
+      d="M11 18H40V20H14.7205L32 34.6876L41.5609 26.5608L42.9797 27.9797L38.3898 31.8812L51 42.81V30H53V46H11V18ZM13 42.81L25.6102 31.8812L13 21.1624V42.81ZM27.152 33.1916L14.6807 44H49.3193L36.8481 33.1916L32 37.3124L27.152 33.1916Z"
       fill="currentColor"
+      fillRule="evenodd"
+    />
+    <path
+      clipRule="evenodd"
+      d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
+      fill="#FF1900"
+      fillRule="evenodd"
     />
   </svg>
 </span>
 `;
 
-exports[`Storyshots Atoms / Badge / IconBadge Custom badge size 1`] = `
+exports[`Storyshots Atoms / Badge / IconBadge Badge with illustration with custom props 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -134,13 +81,16 @@ exports[`Storyshots Atoms / Badge / IconBadge Custom badge size 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  height: 32px;
-  min-width: 32px;
+  height: 80px;
   background-color: #0046FF;
-  border-radius: 32px;
+  border-radius: 80px;
 }
 
 .c1 {
+  width: 80px;
+}
+
+.c2 {
   color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -153,16 +103,144 @@ exports[`Storyshots Atoms / Badge / IconBadge Custom badge size 1`] = `
 }
 
 <span
-  className="c0"
+  className="c0 c1"
+>
+  <span>
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      height={64}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      secondaryColor={[Function]}
+      width={64}
+    >
+      <path
+        clipRule="evenodd"
+        d="M11 18H40V20H14.7205L32 34.6876L41.5609 26.5608L42.9797 27.9797L38.3898 31.8812L51 42.81V30H53V46H11V18ZM13 42.81L25.6102 31.8812L13 21.1624V42.81ZM27.152 33.1916L14.6807 44H49.3193L36.8481 33.1916L32 37.3124L27.152 33.1916Z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
+        fill="#FF1900"
+        fillRule="evenodd"
+      />
+    </svg>
+  </span>
+</span>
+`;
+
+exports[`Storyshots Atoms / Badge / IconBadge Custom icon badge with custom props 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 48px;
+  background-color: #D2F500;
+  border-radius: 48px;
+}
+
+.c1 {
+  width: 48px;
+}
+
+.c2 {
+  color: #282823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<span
+  className="c0 c1"
 >
   <svg
     aria-hidden="true"
-    className="c1"
+    className="c2"
+    focusable="false"
+    height={24}
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    width={24}
+  >
+    <path
+      d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
+      fill="currentColor"
+    />
+    <path
+      d="M7 13a5 5 0 117.5 4.332l-.5.288V21h2v-2.255a7 7 0 10-8 0V21h2v-3.38l-.5-.288A4.998 4.998 0 017 13z"
+      fill="currentColor"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms / Badge / IconBadge Default use 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #0046FF;
+  border-radius: 40px;
+}
+
+.c1 {
+  width: 40px;
+}
+
+.c2 {
+  color: #6E6E69;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<span
+  className="c0 c1"
+>
+  <svg
+    aria-hidden="true"
+    className="c2"
     focusable="false"
     height={8}
     preserveAspectRatio="xMidYMid meet"
     role="presentation"
-    secondaryColor={[Function]}
     width={8}
   >
     <path
