@@ -47,8 +47,21 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     bulbForeground: rawColor.gray0,
 
     buttonSecondaryBackground: rawColor.white,
-    buttonText: rawColor.gray0,
     buttonTextLight: rawColor.white,
+
+    buttonBackgroundPrimary: rawColor.blue500,
+    buttonBackgroundHoverPrimary: rawColor.blue600,
+    buttonBackgroundActivePrimary: rawColor.blue700,
+
+    buttonBackgroundDisabled: rawColor.gray900,
+
+    buttonBorderSecondary: rawColor.blue500,
+    buttonHoverSecondary: rawColor.blue600,
+    buttonActiveSecondary: rawColor.blue700,
+
+    buttonText: rawColor.white,
+    buttonTextSecondary:rawColor.white,
+    buttonTextDisabled: rawColor.gray600,
 
     buy: rawColor.brandTurquoise,
     buyActive: rawColor.ctaPressed,

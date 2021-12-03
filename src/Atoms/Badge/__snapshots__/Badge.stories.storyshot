@@ -283,7 +283,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   border: none;
   border-radius: 0;
@@ -324,19 +324,19 @@ Array [
 }
 
 .c5:hover {
-  color: hsl(223.5,100%,48%);
+  color: #2650BF;
 }
 
 .c5:hover::before {
-  border-color: hsl(223.5,100%,48%);
+  border-color: #2650BF;
 }
 
 .c5:active {
-  color: hsl(223.5,100%,42%);
+  color: #1F4099;
 }
 
 .c5:active::before {
-  border-color: hsl(223.5,100%,42%);
+  border-color: #1F4099;
 }
 
 .c4 {
@@ -497,7 +497,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   border: none;
   border-radius: 0;
@@ -538,19 +538,19 @@ Array [
 }
 
 .c5:hover {
-  color: hsl(223.5,100%,48%);
+  color: #2650BF;
 }
 
 .c5:hover::before {
-  border-color: hsl(223.5,100%,48%);
+  border-color: #2650BF;
 }
 
 .c5:active {
-  color: hsl(223.5,100%,42%);
+  color: #1F4099;
 }
 
 .c5:active::before {
-  border-color: hsl(223.5,100%,42%);
+  border-color: #1F4099;
 }
 
 .c4 {
