@@ -28,6 +28,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
   return {
     accordionText: rawColor.gray2,
 
+    accountBadgeBackground: rawColor.black,
+    accountBadgeText: rawColor.white,
+
     background: rawColor.black,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,

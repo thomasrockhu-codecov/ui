@@ -147,6 +147,14 @@ export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
 export type ThemeColors = {
   /**
+   * black
+   */
+  accountBadgeBackground: string;
+  /**
+   * white
+   */
+  accountBadgeText: string;
+  /**
    * blue500
    */
   buttonBackgroundPrimary: string;
@@ -210,7 +218,7 @@ export type ThemeColors = {
   buttonText: string;
   /** blue500 */
   buttonTextSecondary: string;
-  /** white */
+  /** gray0 */
   buttonTextLight: string;
   /** cta */
   buy: string;
