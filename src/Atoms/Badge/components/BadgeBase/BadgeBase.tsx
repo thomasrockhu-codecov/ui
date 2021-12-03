@@ -9,7 +9,6 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
   text-align: center;
   box-sizing: border-box;
   height: ${(p) => p.theme.spacing.unit(p.$badgeSize)}px;
-  min-width: ${(p) => p.theme.spacing.unit(p.$badgeSize)}px;
   background-color: ${(p) =>
     p.$backgroundColor ? p.$backgroundColor(p.theme) : p.theme.color.cta};
   ${(p) => (p.$color ? `color: ${p.$color(p.theme)};` : '')}
@@ -19,6 +18,7 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
       : ''};
 `;
 
+// rename to BaseBadge
 export const BadgeBase: BadgeBaseComponent = ({
   children,
   color,

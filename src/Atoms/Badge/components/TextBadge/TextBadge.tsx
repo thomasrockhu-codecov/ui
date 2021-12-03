@@ -29,6 +29,7 @@ const animation = css`
 const StyledBadgeBase: React.FC<StyledBadgeBaseProps> = styled(BadgeBase)<StyledBadgeBaseProps>`
   ${(p) => (p.$applyPadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px;` : '')}
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
+  min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
 `;
 
 const TextBadgeContent: React.FC<{ color?: ColorFn; weight?: string }> = ({

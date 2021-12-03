@@ -1,20 +1,49 @@
 import React from 'react';
+import { Icon, Illustration } from '../../../..';
 import Badge from '../..';
 
 export default {
   title: 'Atoms / Badge / IconBadge',
 };
 
-export const defaultUse = () => <Badge.IconBadge icon="Add24" />;
+export const defaultUse = () => (
+  <Badge.IconBadge>
+    <Icon.Add8 />
+  </Badge.IconBadge>
+);
 defaultUse.story = {
   name: 'Default use',
 };
-export const badgeWithIcon = () => <Badge.IconBadge icon="UrgentMailFill64" />;
-defaultUse.story = {
+
+export const customProps = () => (
+  <Badge.IconBadge badgeColor={(t) => t.color.bulbBackground} badgeSize="l">
+    <Icon.Lightbulb24 color={(t) => t.color.bulbForeground} />
+  </Badge.IconBadge>
+);
+customProps.story = {
+  name: 'Custom icon badge with custom props',
+};
+
+export const badgeWithIllustration = () => (
+  <Badge.IconBadge badgeSize="xl">
+    <Illustration.UrgentMailFill64 />
+  </Badge.IconBadge>
+);
+badgeWithIllustration.story = {
   name: 'Badge with illustration',
 };
 
-export const customBadgeSize = () => <Badge.IconBadge badgeSize="m" icon="Add8" />;
-customBadgeSize.story = {
-  name: 'Custom badge size',
+// TODO: rename this
+export const badgeWithIllustrationWithCustomProps = () => (
+  <Badge.IconBadge badgeSize="xl">
+    <span>
+      <Illustration.UrgentMailFill64
+        color={(t) => t.color.textLight}
+        secondaryColor={(t) => t.color.negative}
+      />
+    </span>
+  </Badge.IconBadge>
+);
+badgeWithIllustrationWithCustomProps.story = {
+  name: 'Badge with illustration with custom props',
 };

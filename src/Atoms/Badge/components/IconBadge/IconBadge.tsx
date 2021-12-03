@@ -1,64 +1,36 @@
 import React from 'react';
+import styled from 'styled-components';
 import { IconBadgeComponent } from './IconBadge.types';
-import { Icon, Illustration } from '../../../..';
 import { BadgeBase } from '..';
 
-const mapBadgeSize = (icon: string) => {
-  const iconSize = icon.match(/(\d+)(?!.*\d)/)?.[0];
-  switch (iconSize) {
-    case '8':
-      return 's';
-    case '16':
-    case '24':
-      return 'm';
-    case '32':
-    case '40':
-      return 'l';
-    case '48':
-    case '64':
-      return 'xl';
-    default:
-      return 'm';
-  }
-};
+const StyledBadgeBase = styled(BadgeBase)`
+  width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
+`;
 
-const mapToBadgeBase = (badgeSize: string) => {
+const mapToBadgeBase = (badgeSize?: string) => {
   switch (badgeSize) {
     case 's':
-      return 6;
-    case 'm':
       return 8;
+    case 'm':
+      return 10;
     case 'l':
       return 12;
     case 'xl':
-      return 18;
+      return 20;
     default:
-      return 8;
+      return 10;
   }
 };
 
-export const IconBadge: IconBadgeComponent = ({
-  badgeSize,
-  icon,
-  iconColor,
-  secondaryIconColor,
-  badgeColor,
-}) => {
-  const IconComponent = Icon[icon] ?? Illustration[icon];
-
-  const badgeBase = badgeSize ? mapToBadgeBase(badgeSize) : mapToBadgeBase(mapBadgeSize(icon));
+export const IconBadge: IconBadgeComponent = ({ children, badgeSize, badgeColor }) => {
+  const badgeBase = typeof badgeSize === 'number' ? badgeSize : mapToBadgeBase(badgeSize);
 
   return (
-    <BadgeBase
+    <StyledBadgeBase
       backgroundColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={badgeBase}
     >
-      <IconComponent
-        color={(t: any) => (iconColor ? iconColor(t) : t.color.textLight)}
-        secondaryColor={(t: any) =>
-          secondaryIconColor ? secondaryIconColor(t) : t.color.textLight
-        }
-      />
-    </BadgeBase>
+      {children}
+    </StyledBadgeBase>
   );
 };
