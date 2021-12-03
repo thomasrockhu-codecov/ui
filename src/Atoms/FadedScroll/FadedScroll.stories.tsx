@@ -1,5 +1,4 @@
 import React from 'react';
-import { useDarkMode } from 'storybook-dark-mode';
 import styled from 'styled-components';
 import { FadedScroll, List, ListItem, Typography } from '../..';
 import docs from './FadedScroll.mdx';
@@ -128,20 +127,14 @@ const content = (
   </List>
 );
 
-export const DefaultStory = () => (
-  <FadedScroll backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'} maxHeight={40}>
-    {content}
-  </FadedScroll>
-);
+export const DefaultStory = () => <FadedScroll maxHeight={40}>{content}</FadedScroll>;
 
 DefaultStory.story = {
   name: 'Default, using maxHeight prop',
 };
 
 export const WithAutoHeightOfScrollableArea = () => (
-  <FadedScrollWithHeightDesktopOnly backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}>
-    {content}
-  </FadedScrollWithHeightDesktopOnly>
+  <FadedScrollWithHeightDesktopOnly>{content}</FadedScrollWithHeightDesktopOnly>
 );
 
 WithAutoHeightOfScrollableArea.story = {
@@ -149,11 +142,7 @@ WithAutoHeightOfScrollableArea.story = {
 };
 
 export const WithHeightOfFadeChanged = () => (
-  <FadedScroll
-    backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}
-    fadeHeight={5}
-    maxHeight={45}
-  >
+  <FadedScroll fadeHeight={5} maxHeight={45}>
     {content}
   </FadedScroll>
 );
@@ -163,9 +152,7 @@ WithHeightOfFadeChanged.story = {
 };
 
 export const WithMobileFadeEnabled = () => (
-  <FadedScrollWithHeight backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'} enableMobileFade>
-    {content}
-  </FadedScrollWithHeight>
+  <FadedScrollWithHeight enableMobileFade>{content}</FadedScrollWithHeight>
 );
 
 WithMobileFadeEnabled.story = {
@@ -173,11 +160,7 @@ WithMobileFadeEnabled.story = {
 };
 
 export const WithTopFadeDisabled = () => (
-  <FadedScroll
-    backgroundColor={useDarkMode() ? '#282823' : '#FFFFFF'}
-    maxHeight={45}
-    disableTopFade
-  >
+  <FadedScroll maxHeight={45} disableTopFade>
     {content}
   </FadedScroll>
 );

@@ -67,8 +67,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buyActive: rawColor.ctaPressed,
 
     card: rawColor.gray0,
-    cta: rawColor.brandTurquoise,
-    ctaHover: rawColor.brandTurquoise,
+    cta: rawColor.blue400,
+    ctaHover: rawColor.blue500,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
@@ -152,6 +152,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     orderAccountLabel: rawColor.gray1,
     orderDepthBackground: rawColor.gray1,
     orderDepthDarkBackground: rawColor.gray2,
+    orderPanelLabelColor: rawColor.gray400,
 
     otherMonthDateText: rawColor.gray4,
 
@@ -214,7 +215,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
 
     shareville: rawColor.complementaryGreen1,
-    skeleton: rawColor.gray6,
+    skeleton: rawColor.gray0,
 
     sliderBackgroundColor: rawColor.gray6,
     sliderColor: rawColor.cta,

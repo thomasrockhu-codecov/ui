@@ -67,8 +67,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buy: rawColor.cta,
     buyActive: rawColor.ctaPressed,
     card: rawColor.white,
-    cta: rawColor.cta,
-    ctaHover: rawColor.ctaHover,
+    cta: rawColor.blue500,
+    ctaHover: rawColor.blue600,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
@@ -151,6 +151,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     orderAccountLabel: rawColor.gray1,
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
+    orderPanelLabelColor: rawColor.gray600,
 
     otherMonthDateText: rawColor.gray4,
 

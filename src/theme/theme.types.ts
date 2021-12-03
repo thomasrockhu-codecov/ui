@@ -222,9 +222,9 @@ export type ThemeColors = {
   creditsPiePrimary: string;
   /** creditsPieSecondary */
   creditsPieSecondary: string;
-  /** cta */
+  /** blue500 */
   cta: string;
-  /** ctaHover */
+  /** blue600 */
   ctaHover: string;
   /** gray6 */
   dateAvatarBackground1: string;
@@ -344,6 +344,8 @@ export type ThemeColors = {
   orderDepthBackground: string;
   /** gray5 */
   orderDepthDarkBackground: string;
+  /** gray600 */
+  orderPanelLabelColor: string;
   /** otherMonthDateText */
   otherMonthDateText: string;
   paletteBlue: string[];

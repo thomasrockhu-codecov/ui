@@ -597,7 +597,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -615,11 +615,11 @@ Array [
 }
 
 .c4:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: hsl(223.5,100%,54%);
 }
 
 .c4:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: hsl(223.5,100%,48%);
 }
 
 .c6 {
@@ -866,7 +866,7 @@ Array [
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
-  color: #0046FF;
+  color: #336BFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -883,19 +883,19 @@ Array [
 }
 
 .c4:hover {
-  color: hsl(223.5,100%,40%);
+  color: hsl(223.5,100%,48%);
 }
 
 .c4:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: hsl(223.5,100%,48%);
 }
 
 .c4:active {
-  color: hsl(223.5,100%,35%);
+  color: hsl(223.5,100%,42%);
 }
 
 .c4:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: hsl(223.5,100%,42%);
 }
 
 .c6 {

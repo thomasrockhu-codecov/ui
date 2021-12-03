@@ -10,6 +10,7 @@ const FullWidthFlexbox = styled(Flexbox)`
   height: 100%;
   width: 100%;
 `;
+
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
   <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
 ));
@@ -22,9 +23,7 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
   padding: 0;
   display: flex;
   border: 0;
-  &:active {
-    color: inherit;
-  }
+  color: inherit;
   ${(p) =>
     !p.absolutePositioning
       ? ''
@@ -68,7 +67,7 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
     };
 
     return (
-      <Typography type="secondary">
+      <Typography type="secondary" color={(t) => t.color.text}>
         <StyledA11yButton
           id={id}
           type="button"
