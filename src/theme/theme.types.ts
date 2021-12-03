@@ -188,9 +188,9 @@ export type ThemeColors = {
   creditsPiePrimary: string;
   /** creditsPieSecondary */
   creditsPieSecondary: string;
-  /** cta */
+  /** blue500 */
   cta: string;
-  /** ctaHover */
+  /** blue600 */
   ctaHover: string;
   /** gray6 */
   dateAvatarBackground1: string;
