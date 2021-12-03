@@ -62,7 +62,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -103,11 +103,11 @@ Array [
 }
 
 .c3:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: hsl(223.5,100%,54%);
 }
 
 .c3:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: hsl(223.5,100%,48%);
 }
 
 <div
@@ -159,7 +159,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -259,7 +259,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -363,7 +363,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -691,7 +691,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -815,7 +815,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -915,7 +915,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1131,7 +1131,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1255,7 +1255,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1379,7 +1379,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1503,7 +1503,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1627,7 +1627,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1751,7 +1751,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2011,7 +2011,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2114,7 +2114,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

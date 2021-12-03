@@ -40,7 +40,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -130,7 +130,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -203,7 +203,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
   -webkit-animation: scale 0.5s ease-out;
@@ -284,7 +284,7 @@ Array [
   padding: 4px 12px;
   min-height: 32px;
   background-color: #FFFFFF;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -316,7 +316,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -324,19 +324,19 @@ Array [
 }
 
 .c5:hover {
-  color: hsl(223.5,100%,40%);
+  color: hsl(223.5,100%,48%);
 }
 
 .c5:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: hsl(223.5,100%,48%);
 }
 
 .c5:active {
-  color: hsl(223.5,100%,35%);
+  color: hsl(223.5,100%,42%);
 }
 
 .c5:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: hsl(223.5,100%,42%);
 }
 
 .c4 {
@@ -419,7 +419,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -498,7 +498,7 @@ Array [
   padding: 4px 12px;
   min-height: 32px;
   background-color: #FFFFFF;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -530,7 +530,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -538,19 +538,19 @@ Array [
 }
 
 .c5:hover {
-  color: hsl(223.5,100%,40%);
+  color: hsl(223.5,100%,48%);
 }
 
 .c5:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: hsl(223.5,100%,48%);
 }
 
 .c5:active {
-  color: hsl(223.5,100%,35%);
+  color: hsl(223.5,100%,42%);
 }
 
 .c5:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: hsl(223.5,100%,42%);
 }
 
 .c4 {
@@ -659,7 +659,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -739,7 +739,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -828,7 +828,7 @@ Array [
   box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 8px;
 }
 
@@ -1136,7 +1136,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -1219,7 +1219,7 @@ Array [
   box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 8px;
 }
 
@@ -1536,7 +1536,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -1623,7 +1623,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 20px;
   padding: 0 6px;
 }
@@ -1750,7 +1750,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border-radius: 20px;
   padding: 0 6px;
@@ -1854,7 +1854,7 @@ Array [
   box-sizing: border-box;
   height: 20px;
   min-width: 20px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border-radius: 20px;
   padding: 0 6px;
@@ -1979,7 +1979,7 @@ Array [
   box-sizing: border-box;
   height: 8px;
   min-width: 8px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   border-radius: 8px;
 }
 

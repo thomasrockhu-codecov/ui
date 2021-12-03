@@ -519,7 +519,7 @@ Array [
   padding: 4px 12px;
   min-height: 32px;
   background-color: #FFFFFF;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -551,7 +551,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -559,19 +559,19 @@ Array [
 }
 
 .c15:hover {
-  color: hsl(223.5,100%,40%);
+  color: hsl(223.5,100%,48%);
 }
 
 .c15:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: hsl(223.5,100%,48%);
 }
 
 .c15:active {
-  color: hsl(223.5,100%,35%);
+  color: hsl(223.5,100%,42%);
 }
 
 .c15:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: hsl(223.5,100%,42%);
 }
 
 .c4 {
@@ -3306,7 +3306,7 @@ Array [
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;
@@ -3414,7 +3414,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -3455,11 +3455,11 @@ Array [
 }
 
 .c1:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: hsl(223.5,100%,54%);
 }
 
 .c1:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: hsl(223.5,100%,48%);
 }
 
 @media (min-width:760px) {
@@ -3526,7 +3526,7 @@ Array [
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;
@@ -3640,7 +3640,7 @@ Array [
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;

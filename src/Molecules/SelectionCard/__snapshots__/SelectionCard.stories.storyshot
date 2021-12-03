@@ -96,7 +96,7 @@ exports[`Storyshots Molecules / SelectionCard Default 1`] = `
 .c8 {
   box-sizing: border-box;
   padding: 0px 4px;
-  background: #0046FF;
+  background: #336BFF;
   color: #FFFFFF;
 }
 
@@ -118,8 +118,8 @@ exports[`Storyshots Molecules / SelectionCard Default 1`] = `
 }
 
 .c3:hover {
-  background: rgba(0,70,255,0.1);
-  outline: 2px solid #0046FF;
+  background: rgba(51,107,255,0.1);
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -129,7 +129,7 @@ exports[`Storyshots Molecules / SelectionCard Default 1`] = `
 }
 
 .c0:focus-within .c2 {
-  outline: 2px solid #0046FF;
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -314,7 +314,7 @@ exports[`Storyshots Molecules / SelectionCard With ReactNode 1`] = `
 .c8 {
   box-sizing: border-box;
   padding: 0px 4px;
-  background: #0046FF;
+  background: #336BFF;
   color: #FFFFFF;
 }
 
@@ -336,8 +336,8 @@ exports[`Storyshots Molecules / SelectionCard With ReactNode 1`] = `
 }
 
 .c3:hover {
-  background: rgba(0,70,255,0.1);
-  outline: 2px solid #0046FF;
+  background: rgba(51,107,255,0.1);
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -347,7 +347,7 @@ exports[`Storyshots Molecules / SelectionCard With ReactNode 1`] = `
 }
 
 .c0:focus-within .c2 {
-  outline: 2px solid #0046FF;
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -532,8 +532,8 @@ Array [
 }
 
 .c3:hover {
-  background: rgba(0,70,255,0.1);
-  outline: 2px solid #0046FF;
+  background: rgba(51,107,255,0.1);
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -543,7 +543,7 @@ Array [
 }
 
 .c0:focus-within .c2 {
-  outline: 2px solid #0046FF;
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -742,7 +742,7 @@ exports[`Storyshots Molecules / SelectionCard With icon 1`] = `
 .c8 {
   box-sizing: border-box;
   padding: 0px 4px;
-  background: #0046FF;
+  background: #336BFF;
   color: #FFFFFF;
 }
 
@@ -764,8 +764,8 @@ exports[`Storyshots Molecules / SelectionCard With icon 1`] = `
 }
 
 .c3:hover {
-  background: rgba(0,70,255,0.1);
-  outline: 2px solid #0046FF;
+  background: rgba(51,107,255,0.1);
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }
@@ -775,7 +775,7 @@ exports[`Storyshots Molecules / SelectionCard With icon 1`] = `
 }
 
 .c0:focus-within .c2 {
-  outline: 2px solid #0046FF;
+  outline: 2px solid #336BFF;
   outline-offset: -2px;
   vertical-align: top;
 }

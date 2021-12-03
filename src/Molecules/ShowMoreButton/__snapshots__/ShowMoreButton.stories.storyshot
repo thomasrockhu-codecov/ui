@@ -51,7 +51,7 @@ Array [
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
+  color: #336BFF;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -67,7 +67,7 @@ Array [
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;
@@ -191,7 +191,7 @@ Array [
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
+  color: #336BFF;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -207,7 +207,7 @@ Array [
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;
@@ -436,7 +436,7 @@ exports[`Storyshots Molecules / ShowMoreButton Loading 1`] = `
   text-transform: none;
   display: inline;
   padding: 0;
-  color: #0046FF;
+  color: #336BFF;
   border: none;
   background: transparent;
   overflow: visible;
@@ -501,12 +501,12 @@ exports[`Storyshots Molecules / ShowMoreButton Loading 1`] = `
           >
             <stop
               offset="0%"
-              stopColor="#0046FF"
+              stopColor="#336BFF"
               stopOpacity="0"
             />
             <stop
               offset="100%"
-              stopColor="#0046FF"
+              stopColor="#336BFF"
               stopOpacity=".5"
             />
           </linearGradient>
@@ -519,12 +519,12 @@ exports[`Storyshots Molecules / ShowMoreButton Loading 1`] = `
           >
             <stop
               offset="0%"
-              stopColor="#0046FF"
+              stopColor="#336BFF"
               stopOpacity=".5"
             />
             <stop
               offset="100%"
-              stopColor="#0046FF"
+              stopColor="#336BFF"
             />
           </linearGradient>
         </defs>
