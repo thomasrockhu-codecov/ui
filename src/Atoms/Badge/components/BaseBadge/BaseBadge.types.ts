@@ -9,7 +9,7 @@ export type BaseBadgeProps = HtmlProps & {
   color?: ColorFn;
   secondaryColor?: ColorFn;
   backgroundColor?: ColorFn;
-  badgeSize: number;
+  badgeSize?: number;
   variant?: 'square' | 'circle' | 'rect'; // add triangle?
   weight?: string;
 };

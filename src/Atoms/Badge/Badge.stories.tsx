@@ -24,19 +24,6 @@ export const CommonBadges = () => {
     <>
       <Typography type="title1">Badge component</Typography>
       <Box my={2}>
-        <Typography type="title2">Square Badge</Typography>
-        <Box my={2}>
-          <Badge variant="square" weight="bold" backgroundColor={(t) => t.color.sfdrArticle6}>
-            15
-          </Badge>
-        </Box>
-        <Box my={2}>
-          <Badge variant="rect" weight="bold" backgroundColor={(t) => t.color.sfdrArticle8}>
-            Article 8
-          </Badge>
-        </Box>
-      </Box>
-      <Box my={2}>
         <Typography type="title2">Default Badge</Typography>
         <Box my={2}>
           <Badge>1</Badge>

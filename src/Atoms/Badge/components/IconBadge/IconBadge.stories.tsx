@@ -24,6 +24,15 @@ customProps.story = {
   name: 'Custom icon badge with custom props',
 };
 
+export const customSize = () => (
+  <Badge.IconBadge badgeColor={(t) => t.color.bulbBackground} badgeSize={50}>
+    <Icon.Lightbulb24 color={(t) => t.color.bulbForeground} />
+  </Badge.IconBadge>
+);
+customSize.story = {
+  name: 'Custom icon badge size',
+};
+
 export const badgeWithIllustration = () => (
   <Badge.IconBadge badgeSize="xl">
     <Illustration.UrgentMailFill64 />

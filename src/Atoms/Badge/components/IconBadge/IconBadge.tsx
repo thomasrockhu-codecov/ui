@@ -4,7 +4,8 @@ import { IconBadgeComponent } from './IconBadge.types';
 import { BaseBadge } from '..';
 
 const StyledBaseBadge = styled(BaseBadge)`
-  width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
+  ${(p) =>
+    typeof p.badgeSize !== 'undefined' ? `width: ${p.theme.spacing.unit(p.badgeSize)}px;` : ''}
 `;
 
 const mapToBaseBadge = (badgeSize?: string) => {
