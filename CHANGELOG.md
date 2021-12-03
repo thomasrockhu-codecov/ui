@@ -1,3 +1,10 @@
+# [9.11.0-beta.5](https://github.com/nordnet/ui/compare/v9.11.0-beta.4...v9.11.0-beta.5) (2021-12-03)
+
+
+### Features
+
+* update button colors according to design ([e668e2c](https://github.com/nordnet/ui/commit/e668e2c))
+
 # [9.11.0-beta.4](https://github.com/nordnet/ui/compare/v9.11.0-beta.3...v9.11.0-beta.4) (2021-12-03)
 
 
