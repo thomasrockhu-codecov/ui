@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 import { Typography } from '../../../..';
 import { ColorFn } from '../../../../common/Types';
 import { isElement, isFunction } from '../../../../common/utils';
-import { TextBadgeComponent, StyledBadgeBaseProps } from './TextBadge.types';
-import { BadgeBase } from '../BadgeBase';
+import { TextBadgeComponent, StyledBaseBadgeProps } from './TextBadge.types';
+import { BaseBadge } from '../BaseBadge';
 
 const SMALL_BADGE_SIZE = 2;
 const MEDIUM_BADGE_SIZE = 5;
@@ -26,7 +26,7 @@ const animation = css`
   animation: scale 0.5s ease-out;
 `;
 
-const StyledBadgeBase: React.FC<StyledBadgeBaseProps> = styled(BadgeBase)<StyledBadgeBaseProps>`
+const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
   ${(p) => (p.$applyPadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px;` : '')}
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
   min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
@@ -67,7 +67,7 @@ export const TextBadge: TextBadgeComponent = ({
   const applyPadding = badgeSize === MEDIUM_BADGE_SIZE && variant !== 'square';
 
   return (
-    <StyledBadgeBase
+    <StyledBaseBadge
       $animateOnChange={animateOnChange}
       badgeSize={badgeSize}
       $applyPadding={applyPadding}
@@ -79,6 +79,6 @@ export const TextBadge: TextBadgeComponent = ({
       <TextBadgeContent color={color} weight={weight}>
         {children}
       </TextBadgeContent>
-    </StyledBadgeBase>
+    </StyledBaseBadge>
   );
 };

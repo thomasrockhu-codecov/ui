@@ -2,7 +2,7 @@ import React from 'react';
 import { Theme } from 'theme/theme.types';
 import { Icon } from '../../../..';
 import { IconBadge } from '..';
-import { ColorFn } from '../BadgeBase/BadgeBase.types';
+import { ColorFn } from '../BaseBadge/BaseBadge.types';
 import { StatusBadgeComponent, StatusVariant, StatusBadgeSize } from './StatusBadge.types';
 
 const VARIANT_CREATE = 'create';

@@ -5,7 +5,7 @@ export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
 
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
 
-export type BadgeBaseProps = HtmlProps & {
+export type BaseBadgeProps = HtmlProps & {
   color?: ColorFn;
   secondaryColor?: ColorFn;
   backgroundColor?: ColorFn;
@@ -15,13 +15,13 @@ export type BadgeBaseProps = HtmlProps & {
 };
 
 export type WrapperProps = HtmlProps & {
-  $color: BadgeBaseProps['color'];
-  $secondaryColor?: BadgeBaseProps['secondaryColor'];
-  $backgroundColor?: BadgeBaseProps['backgroundColor'];
-  $badgeSize: BadgeBaseProps['badgeSize'];
-  $variant?: BadgeBaseProps['variant'];
-  $weight?: BadgeBaseProps['weight'];
+  $color: BaseBadgeProps['color'];
+  $secondaryColor?: BaseBadgeProps['secondaryColor'];
+  $backgroundColor?: BaseBadgeProps['backgroundColor'];
+  $badgeSize: BaseBadgeProps['badgeSize'];
+  $variant?: BaseBadgeProps['variant'];
+  $weight?: BaseBadgeProps['weight'];
 };
 
-export type BadgeBaseComponent = React.FC<BadgeBaseProps>;
+export type BaseBadgeComponent = React.FC<BaseBadgeProps>;
 export type WrapperComponent = React.FC<WrapperProps>;

@@ -1,4 +1,4 @@
-import { ColorFn } from '../BadgeBase/BadgeBase.types';
+import { ColorFn } from '../BaseBadge/BaseBadge.types';
 
 type IconBadgeProps = {
   badgeColor?: ColorFn;

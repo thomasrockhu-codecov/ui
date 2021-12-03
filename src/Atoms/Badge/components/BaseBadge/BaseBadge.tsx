@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BadgeBaseComponent, WrapperComponent, WrapperProps } from './BadgeBase.types';
+import { BaseBadgeComponent, WrapperComponent, WrapperProps } from './BaseBadge.types';
 
 const Wrapper: WrapperComponent = styled.span<WrapperProps>`
   display: inline-flex;
@@ -18,8 +18,7 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
       : ''};
 `;
 
-// rename to BaseBadge
-export const BadgeBase: BadgeBaseComponent = ({
+export const BaseBadge: BaseBadgeComponent = ({
   children,
   color,
   secondaryColor,

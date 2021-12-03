@@ -1,8 +1,8 @@
 import React from 'react';
 import { ColorFn } from '../../../../common/Types';
-import { BadgeBaseProps, HtmlProps } from '../BadgeBase/BadgeBase.types';
+import { BaseBadgeProps, HtmlProps } from '../BaseBadge/BaseBadge.types';
 
-export type StyledBadgeBaseProps = BadgeBaseProps & {
+export type StyledBaseBadgeProps = BaseBadgeProps & {
   $applyPadding: boolean;
   $animateOnChange: boolean;
 };
