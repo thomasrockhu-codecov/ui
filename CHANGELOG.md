@@ -1,3 +1,16 @@
+# [9.11.0-beta.4](https://github.com/nordnet/ui/compare/v9.11.0-beta.3...v9.11.0-beta.4) (2021-12-03)
+
+
+### Bug Fixes
+
+* update darkmode cta ([03b6358](https://github.com/nordnet/ui/commit/03b6358))
+
+
+### Features
+
+* update cta and ctaHover according to new design spec ([de86722](https://github.com/nordnet/ui/commit/de86722))
+* update cta and ctaHover according to new design spec ([782b11b](https://github.com/nordnet/ui/commit/782b11b))
+
 # [9.11.0-beta.3](https://github.com/nordnet/ui/compare/v9.11.0-beta.2...v9.11.0-beta.3) (2021-12-02)
 
 
