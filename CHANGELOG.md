@@ -1,3 +1,11 @@
+# [9.11.0-beta.6](https://github.com/nordnet/ui/compare/v9.11.0-beta.5...v9.11.0-beta.6) (2021-12-06)
+
+
+### Features
+
+* avatar proper dark and light mode  colors ([be97072](https://github.com/nordnet/ui/commit/be97072))
+* update base icon colors ([25f778c](https://github.com/nordnet/ui/commit/25f778c))
+
 # [9.11.0-beta.5](https://github.com/nordnet/ui/compare/v9.11.0-beta.4...v9.11.0-beta.5) (2021-12-03)
 
 
