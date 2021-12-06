@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
 import { isBoolean } from '../../common/utils';
 import { Props, Variant } from './QuickFilter.types';
 import { VARIANT } from './constants';
+
+const FOCUS_RING_SIZES = '2px';
+
+const browsersNativeFocusStyles = css`
+  outline: ${FOCUS_RING_SIZES} solid Highlight;
+  outline: ${FOCUS_RING_SIZES} solid -webkit-focus-ring-color;
+`;
 
 const StyledInput = styled.input`
   opacity: 0;
@@ -20,12 +27,13 @@ const StyledDiv = styled.div.withConfig({
   hasLabel: boolean;
   variant: Variant;
 }>`
-  background: ${(p) => p.theme.color.quickFilterBackground};
   border-radius: 50%;
   box-sizing: border-box;
+  display: inline-block;
+
+  background: ${(p) => p.theme.color.quickFilterBackground};
   color: ${(p) => p.theme.color.quickFilterText};
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
-  display: inline-block;
   padding: ${(p) => p.theme.spacing.unit(p.variant === VARIANT.SMALL ? 1.5 : 2)}px;
 
   ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText};`};
@@ -47,7 +55,7 @@ const StyledLabel = styled.label`
 
   &:focus-within {
     ${StyledDiv} {
-      /* outline: 1px solid ${(p) => p.theme.color.quickFilterSelectedText}; */
+      ${browsersNativeFocusStyles}
     }
   }
 `;

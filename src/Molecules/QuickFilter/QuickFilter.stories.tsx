@@ -38,17 +38,19 @@ QuickFilterDefault.story = {
 };
 
 export const QuickFilterWithReactNode = () => (
-  <QuickFilter
-    {...getCardProps()}
-    onChange={onChange}
-    label={
-      <Flexbox item>
-        <Typography type="primary" weight="bold">
-          Title in a flexbox
-        </Typography>
-      </Flexbox>
-    }
-  />
+  <Card>
+    <QuickFilter
+      {...getCardProps()}
+      onChange={onChange}
+      label={
+        <Flexbox item>
+          <Typography type="primary" weight="bold">
+            Title in a flexbox
+          </Typography>
+        </Flexbox>
+      }
+    />
+  </Card>
 );
 
 QuickFilterWithReactNode.story = {
@@ -57,9 +59,9 @@ QuickFilterWithReactNode.story = {
 
 export const QuickFilterWithIcon = () => {
   return (
-    <>
+    <Card>
       <QuickFilter {...getCardProps('With Icon')} onChange={onChange} icon={<Icon.Money16 />} />
-    </>
+    </Card>
   );
 };
 
@@ -69,7 +71,7 @@ QuickFilterWithIcon.story = {
 
 export const QuickFilterWithVariants = () => {
   return (
-    <>
+    <Card>
       <QuickFilter
         {...getCardProps()}
         onChange={onChange}
@@ -77,6 +79,7 @@ export const QuickFilterWithVariants = () => {
         label=""
         variant="small"
       />
+
       <QuickFilter
         {...getCardProps()}
         onChange={onChange}
@@ -84,7 +87,7 @@ export const QuickFilterWithVariants = () => {
         label=""
         variant="big"
       />
-    </>
+    </Card>
   );
 };
 
@@ -97,7 +100,7 @@ export const QuickFilterWithValueControlledBehavior = () => {
     const [value, setValue] = useState(false);
 
     return (
-      <>
+      <Card>
         <QuickFilter
           label="Controlled selection card"
           value="This component is controlled"
@@ -111,7 +114,7 @@ export const QuickFilterWithValueControlledBehavior = () => {
           Not selected
         </button>
         value: {value.toString()}
-      </>
+      </Card>
     );
   };
   return <Component />;
@@ -124,7 +127,13 @@ QuickFilterWithValueControlledBehavior.story = {
 export const QuickFilterWithoutLabel = () => {
   const Component = () => {
     return (
-      <QuickFilter label="" value="This component is not controlled" icon={<Icon.Apartment24 />} />
+      <Card>
+        <QuickFilter
+          label=""
+          value="This component is not controlled"
+          icon={<Icon.Apartment24 />}
+        />
+      </Card>
     );
   };
   return <Component />;
