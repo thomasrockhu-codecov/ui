@@ -101,7 +101,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
-    icon: rawColor.gray7,
+    icon: rawColor.white,
 
     indexFundsBackground: rawColor.gray6,
     indexFundsFinnishAccent: [
