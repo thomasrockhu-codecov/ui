@@ -8,6 +8,7 @@ export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type BaseBadgeProps = HtmlProps & {
   color?: ColorFn;
   secondaryColor?: ColorFn;
+  // TODO: rename to badgeColor
   backgroundColor?: ColorFn;
   badgeSize?: number;
   variant?: 'square' | 'circle' | 'rect'; // add triangle?

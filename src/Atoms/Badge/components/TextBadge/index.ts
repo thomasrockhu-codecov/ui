@@ -1,1 +1,0 @@
-export { TextBadge } from './TextBadge';

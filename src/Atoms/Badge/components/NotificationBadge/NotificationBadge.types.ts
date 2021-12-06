@@ -3,16 +3,16 @@ import { ColorFn } from '../../../../common/Types';
 import { BaseBadgeProps, HtmlProps } from '../BaseBadge/BaseBadge.types';
 
 export type StyledBaseBadgeProps = BaseBadgeProps & {
-  $applyPadding: boolean;
   $animateOnChange: boolean;
+  $padding: number;
+  badgeSize: number;
 };
 
 type Props = {
-  backgroundColor?: ColorFn;
+  badgeColor?: ColorFn;
   color?: ColorFn;
+  badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
   animateOnChange?: boolean;
-  variant?: 'square' | 'circle' | 'rect';
-  weight?: string;
 } & HtmlProps;
 
-export type TextBadgeComponent = React.FC<Props>;
+export type NotificationBadgeComponent = React.FC<Props>;
