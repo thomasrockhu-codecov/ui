@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Color from 'color';
 import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
@@ -24,22 +23,22 @@ const StyledDiv = styled.div.withConfig({
   background: ${(p) => p.theme.color.quickFilterBackground};
   border-radius: 50%;
   box-sizing: border-box;
-  color: ${(p) => p.theme.color.text};
+  color: ${(p) => p.theme.color.quickFilterText};
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   display: inline-block;
   padding: ${(p) => p.theme.spacing.unit(p.variant === VARIANT.SMALL ? 1.5 : 2)}px;
 
-  ${(p) => p.selected && `color: ${p.theme.color.cta};`};
+  ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText};`};
   ${(p) => p.disabled && `color: ${p.theme.color.disabledText};`};
 
-  ${(p) => p.selected && `background: ${Color(p.theme.color.cta).alpha(0.1).string()};`};
+  ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground};`};
   ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground};`};
 
   ${(p) => p.hasLabel && `padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px;`}
   ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px;`}
 
   &:hover {
-    color: ${(p) => !p.disabled && p.theme.color.cta};
+    color: ${(p) => !p.disabled && p.theme.color.quickFilterSelectedText};
   }
 `;
 
@@ -48,7 +47,7 @@ const StyledLabel = styled.label`
 
   &:focus-within {
     ${StyledDiv} {
-      color: ${(p) => p.theme.color.cta};
+      /* outline: 1px solid ${(p) => p.theme.color.quickFilterSelectedText}; */
     }
   }
 `;
@@ -96,7 +95,7 @@ export const QuickFilter: React.FC<Props> = ({
 
           {hasLabel && (
             <Flexbox item alignSelf="baseline">
-              <Typography color="inherit" type="secondary">
+              <Typography color="inherit" type="secondary" weight="bold">
                 {label}
               </Typography>
             </Flexbox>

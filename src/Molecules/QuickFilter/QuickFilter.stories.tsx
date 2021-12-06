@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { Flexbox, Icon, Typography } from '../..';
+import { Flexbox, Icon, Typography, Card } from '../..';
 import { QuickFilter } from './QuickFilter';
 
 export default {
@@ -28,7 +28,9 @@ const getCardProps = (label = '') => ({
 });
 
 export const QuickFilterDefault = () => (
-  <QuickFilter {...getCardProps('Default')} onChange={onChange} />
+  <Card>
+    <QuickFilter {...getCardProps('Default')} onChange={onChange} />
+  </Card>
 );
 
 QuickFilterDefault.story = {
@@ -122,7 +124,7 @@ QuickFilterWithValueControlledBehavior.story = {
 export const QuickFilterWithoutLabel = () => {
   const Component = () => {
     return (
-      <QuickFilter label="" value="This component is controlled" icon={<Icon.Apartment24 />} />
+      <QuickFilter label="" value="This component is not controlled" icon={<Icon.Apartment24 />} />
     );
   };
   return <Component />;

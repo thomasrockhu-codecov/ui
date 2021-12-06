@@ -168,8 +168,6 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
-    quickFilterBackground: rawColor.gray7,
-
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
@@ -249,6 +247,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
+
+    quickFilterSelectedBackground: rawColor.blue800,
+    quickFilterBackground: rawColor.gray900,
+    quickFilterText: rawColor.white,
+    quickFilterSelectedText: rawColor.blue500,
 
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
