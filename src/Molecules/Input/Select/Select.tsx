@@ -340,18 +340,20 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.listWidth || props.width}
             >
-              {options?.map((x: any, index: number) => (
-                <ListItemWrapper
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={index}
-                  index={index}
-                  ref={setItemRef(index) as any}
-                  option={x}
-                  id={props.id}
-                  onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
-                  component={ListItem}
-                />
-              ))}
+              {options
+                ?.filter((x) => !(props.hideDisabledOptions && x.disabled))
+                .map((x: any, index: number) => (
+                  <ListItemWrapper
+                    // eslint-disable-next-line react/no-array-index-key
+                    key={index}
+                    index={index}
+                    ref={setItemRef(index) as any}
+                    option={x}
+                    id={props.id}
+                    onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
+                    component={ListItem}
+                  />
+                ))}
             </ListWrapperComponent>
           )}
           {isOpen && isFullScreenMode && (
@@ -384,18 +386,20 @@ const Select = (props: Props) => {
                 }
                 maxHeight={props.listMaxHeight}
               >
-                {options?.map((x: any, index: number) => (
-                  <ListItemWrapper
-                    // eslint-disable-next-line react/no-array-index-key
-                    key={index}
-                    index={index}
-                    ref={setItemRef(index) as any}
-                    option={x}
-                    id={props.id}
-                    onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
-                    component={ListItem}
-                  />
-                ))}
+                {options
+                  ?.filter((x) => !(props.hideDisabledOptions && x.disabled))
+                  .map((x: any, index: number) => (
+                    <ListItemWrapper
+                      // eslint-disable-next-line react/no-array-index-key
+                      key={index}
+                      index={index}
+                      ref={setItemRef(index) as any}
+                      option={x}
+                      id={props.id}
+                      onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
+                      component={ListItem}
+                    />
+                  ))}
               </ListWrapperComponent>
             </Modal>
           )}

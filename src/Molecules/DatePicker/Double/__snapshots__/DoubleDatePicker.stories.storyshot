@@ -122,6 +122,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Allow Update Whil
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -173,6 +174,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Allow Update Whil
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -565,6 +570,7 @@ Array [
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -616,6 +622,10 @@ Array [
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -881,6 +891,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -932,6 +943,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -1182,6 +1197,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disabled Input 1`
   position: relative;
   background-color: #EBEBE8;
   padding-right: 40px;
+  color: #282823;
   cursor: not-allowed;
 }
 
@@ -1230,6 +1246,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disabled Input 1`
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -1482,6 +1502,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disallow Single D
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -1533,6 +1554,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Disallow Single D
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -1783,6 +1808,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Disable
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -1834,6 +1860,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Disable
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -2084,6 +2114,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Enabled
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -2135,6 +2166,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Same Week Enabled
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 
@@ -2385,6 +2420,7 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker With Clear Button
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c8:focus {
@@ -2436,6 +2472,10 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker With Clear Button
 }
 
 .c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled {
   color: #A0A09B;
 }
 

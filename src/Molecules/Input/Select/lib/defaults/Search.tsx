@@ -6,6 +6,7 @@ import { visuallyHiddenCss } from '../../../../../Atoms/VisuallyHidden';
 
 const StyledInputText = styled(Text)<{ hidden?: boolean; ref?: React.Ref<HTMLInputElement> }>`
   ${(p) => (p.hidden ? `${visuallyHiddenCss}` : '')}
+  color: ${(p) => p.theme.color.text}
 `;
 
 export const Search = React.forwardRef<

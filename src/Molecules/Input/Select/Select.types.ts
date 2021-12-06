@@ -83,6 +83,11 @@ export type Props = {
    * Show search input before items
    */
   showSearch?: boolean;
+  /**
+   * When using external options, for example a search result use this prop to filter out disabled options
+   * You need to provide placeholder options to make input.select behave properly, this can filter that out.
+   */
+  hideDisabledOptions?: boolean;
   multiselect?: boolean;
   actions?: Array<Action>;
   /**

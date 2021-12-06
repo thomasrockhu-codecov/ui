@@ -96,8 +96,7 @@ export const SelectMachine = Machine<Context>(
           [ACTION_TYPES.OPEN]: {
             target: '.on',
             actions: 'restoreFocusOrFocusFirst',
-            cond: (ctx) =>
-              ctx.actions.length > 0 || ctx.visibleOptions.length > 0 || Boolean(ctx.showSearch),
+            cond: (ctx) => ctx.actions.length > 0 || ctx.visibleOptions.length > 0,
           },
           [ACTION_TYPES.CLOSE]: { target: '.off', actions: 'cleanSearch' },
           [ACTION_TYPES.TOGGLE]: [
