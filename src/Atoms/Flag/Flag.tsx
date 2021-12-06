@@ -27,7 +27,8 @@ const VIEWBOX_HEIGHT = 480;
 const VIEWBOX_WIDTH = 640;
 const StyledSvg = styled(CleanSvg)<InternalProps>`
   height: ${(p) => p.theme.spacing.unit(p.height)}px;
-  ${(p) => (p.grayBorder ? `border: 1px solid ${p.theme.color.flagBorder};` : '')}
+  ${(p) =>
+    p.grayBorder && !p.theme.isDarkMode ? `border: 1px solid ${p.theme.color.flagBorder};` : ''}
   box-sizing: border-box;
   display: ${(p) => (p.inline ? 'inline-block' : 'block')};
   ${(p) =>

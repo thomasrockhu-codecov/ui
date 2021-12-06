@@ -1,6 +1,6 @@
 import React from 'react';
 import flags from './flags';
-import { Flag } from '../..';
+import { Box, Flag, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
@@ -46,6 +46,19 @@ export const availableFlags = () => (
     }))}
   />
 );
+
+export const withBorder = () => (
+  <>
+    <Box p={4}>
+      <Flag country="fi" />
+      <Typography type="secondary">Notice flag does not have border on dark mode</Typography>
+    </Box>
+  </>
+);
+
+withBorder.story = {
+  name: 'Only Border On Light Mode',
+};
 
 availableFlags.story = {
   name: 'Available flags',
