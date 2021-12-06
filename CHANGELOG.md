@@ -1,3 +1,10 @@
+# [9.11.0-beta.7](https://github.com/nordnet/ui/compare/v9.11.0-beta.6...v9.11.0-beta.7) (2021-12-06)
+
+
+### Bug Fixes
+
+* don't render border of flags when dark mode ([4d6f1cd](https://github.com/nordnet/ui/commit/4d6f1cd))
+
 # [9.11.0-beta.6](https://github.com/nordnet/ui/compare/v9.11.0-beta.5...v9.11.0-beta.6) (2021-12-06)
 
 
