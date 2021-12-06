@@ -1,3 +1,12 @@
+# [9.11.0-beta.8](https://github.com/nordnet/ui/compare/v9.11.0-beta.7...v9.11.0-beta.8) (2021-12-06)
+
+
+### Bug Fixes
+
+* add new prop to input select to allow hidden options ([f25a4a5](https://github.com/nordnet/ui/commit/f25a4a5))
+* allow open on input select without any options if showSearch prop is true ([4bbb6c1](https://github.com/nordnet/ui/commit/4bbb6c1))
+* update some darkmode colors for input and popups ([b327d6e](https://github.com/nordnet/ui/commit/b327d6e))
+
 # [9.11.0-beta.7](https://github.com/nordnet/ui/compare/v9.11.0-beta.6...v9.11.0-beta.7) (2021-12-06)
 
 
