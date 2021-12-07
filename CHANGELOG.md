@@ -1,3 +1,19 @@
+# [9.11.0](https://github.com/nordnet/ui/compare/v9.10.0...v9.11.0) (2021-12-07)
+
+
+### Bug Fixes
+
+* focus outline ([9e3f669](https://github.com/nordnet/ui/commit/9e3f669))
+
+
+### Features
+
+* 🎸 add dark mode colors ([aaf3ab6](https://github.com/nordnet/ui/commit/aaf3ab6))
+* 🎸 add quickfilterbackground color ([de2ae57](https://github.com/nordnet/ui/commit/de2ae57))
+* 🎸 add the possibility of display quickfilter w/o label ([4b5b79b](https://github.com/nordnet/ui/commit/4b5b79b))
+* 🎸 QuickFilter Component ([427a970](https://github.com/nordnet/ui/commit/427a970))
+* 🎸 size variant when icon withou label in QuickFilter ([67cc03b](https://github.com/nordnet/ui/commit/67cc03b))
+
 # [9.10.0](https://github.com/nordnet/ui/compare/v9.9.0...v9.10.0) (2021-11-30)
 
 
