@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { Flexbox, Icon, Typography, Card } from '../..';
+import { Icon, Card } from '../..';
 import { QuickFilter } from './QuickFilter';
 
 export default {
@@ -14,16 +14,18 @@ export default {
 
 const onChange = action('on change triggered');
 
-const getCardProps = (label = '') => ({
+const getCardProps = (label = '', value = '') => ({
   label: text(
     'Label',
     label ||
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
   ),
-  value: text(
-    'Value',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
-  ),
+  value:
+    value ||
+    text(
+      'Value',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque dignissim dolor.',
+    ),
   disabled: boolean('Disabled', false),
 });
 
@@ -37,62 +39,28 @@ QuickFilterDefault.story = {
   name: 'Default',
 };
 
-export const QuickFilterWithReactNode = () => (
-  <Card>
-    <QuickFilter
-      {...getCardProps()}
-      onChange={onChange}
-      label={
-        <Flexbox item>
-          <Typography type="primary" weight="bold">
-            Title in a flexbox
-          </Typography>
-        </Flexbox>
-      }
-    />
-  </Card>
-);
-
-QuickFilterWithReactNode.story = {
-  name: 'With ReactNode',
-};
-
-export const QuickFilterWithIcon = () => {
+export const QuickFilterOnlyLabel = () => {
   return (
     <Card>
-      <QuickFilter {...getCardProps('With Icon')} onChange={onChange} icon={<Icon.Money16 />} />
+      <QuickFilter {...getCardProps('Only label')} onChange={onChange} />
     </Card>
   );
 };
 
-QuickFilterWithIcon.story = {
-  name: 'With icon',
+QuickFilterOnlyLabel.story = {
+  name: 'Only label',
 };
 
-export const QuickFilterWithVariants = () => {
+export const QuickFilterOnlyIcon = () => {
   return (
     <Card>
-      <QuickFilter
-        {...getCardProps()}
-        onChange={onChange}
-        icon={<Icon.Money16 />}
-        label=""
-        variant="small"
-      />
-
-      <QuickFilter
-        {...getCardProps()}
-        onChange={onChange}
-        icon={<Icon.Money16 />}
-        label=""
-        variant="big"
-      />
+      <QuickFilter {...getCardProps('Only Icon')} onChange={onChange} icon={<Icon.Money16 />} />
     </Card>
   );
 };
 
-QuickFilterWithVariants.story = {
-  name: 'With variants',
+QuickFilterOnlyIcon.story = {
+  name: 'Only icon',
 };
 
 export const QuickFilterWithValueControlledBehavior = () => {
@@ -128,11 +96,7 @@ export const QuickFilterWithoutLabel = () => {
   const Component = () => {
     return (
       <Card>
-        <QuickFilter
-          label=""
-          value="This component is not controlled"
-          icon={<Icon.Apartment24 />}
-        />
+        <QuickFilter label="" value="no label" icon={<Icon.BuySellDots16 />} />
       </Card>
     );
   };

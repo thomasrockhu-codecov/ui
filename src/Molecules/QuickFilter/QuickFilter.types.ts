@@ -1,14 +1,8 @@
-import { VARIANT } from './constants';
-
-export type Variant = typeof VARIANT.SMALL | typeof VARIANT.BIG;
-
 export type Props = {
   value: string;
 
   /** @default '' */
-  label?: string | React.ReactNode;
-  /** @default VARIANT.SMALL */
-  variant?: Variant;
+  label?: string;
   /** @default undefined */
   onChange?: (value: any) => void;
   /** @default null */

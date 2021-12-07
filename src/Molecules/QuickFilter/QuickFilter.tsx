@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
-import { isBoolean } from '../../common/utils';
-import { Props, Variant } from './QuickFilter.types';
-import { VARIANT } from './constants';
+import { isBoolean, isFunction } from '../../common/utils';
+
+import { Props } from './QuickFilter.types';
 
 const FOCUS_RING_SIZES = '2px';
 
@@ -25,7 +25,6 @@ const StyledDiv = styled.div.withConfig({
   disabled: boolean;
   selected: boolean;
   hasLabel: boolean;
-  variant: Variant;
 }>`
   border-radius: 50%;
   box-sizing: border-box;
@@ -34,7 +33,7 @@ const StyledDiv = styled.div.withConfig({
   background: ${(p) => p.theme.color.quickFilterBackground};
   color: ${(p) => p.theme.color.quickFilterText};
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
-  padding: ${(p) => p.theme.spacing.unit(p.variant === VARIANT.SMALL ? 1.5 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(2)}px;
 
   ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText};`};
   ${(p) => p.disabled && `color: ${p.theme.color.disabledText};`};
@@ -70,7 +69,6 @@ export const QuickFilter: React.FC<Props> = ({
   label,
   onChange = () => {},
   value = '',
-  variant = VARIANT.SMALL,
   icon = null,
   disabled = false,
   selected: controlledSelected,
@@ -78,24 +76,24 @@ export const QuickFilter: React.FC<Props> = ({
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
-  const selected = (isControlled ? controlledSelected : selectedInternal) as boolean;
+  const selected = Boolean(isControlled ? controlledSelected : selectedInternal);
   const hasLabel = Boolean(label);
   const hasIcon = Boolean(icon);
 
   const changeHandler = (val: boolean) => {
-    if (typeof onChange === 'function') onChange(val);
+    if (isFunction(onChange)) onChange(val);
     if (!isControlled) setSelectedInternal(val);
   };
 
   return (
     <StyledLabel>
-      <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel} variant={variant}>
+      <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel}>
         <StyledInput
-          type="checkbox"
-          disabled={disabled}
           checked={selected}
-          value={value}
+          disabled={disabled}
           onChange={() => changeHandler(!selected)}
+          type="checkbox"
+          value={value}
         />
 
         <Flexbox container direction="row" gutter={1} alignItems="center">
