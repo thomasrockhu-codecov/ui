@@ -54,7 +54,7 @@ QuickFilterOnlyLabel.story = {
 export const QuickFilterOnlyIcon = () => {
   return (
     <Card>
-      <QuickFilter {...getCardProps('Only Icon')} onChange={onChange} icon={<Icon.Money16 />} />
+      <QuickFilter {...getCardProps()} label="" onChange={onChange} icon={<Icon.Money16 />} />
     </Card>
   );
 };
@@ -90,19 +90,4 @@ export const QuickFilterWithValueControlledBehavior = () => {
 
 QuickFilterWithValueControlledBehavior.story = {
   name: 'With controlled behavior',
-};
-
-export const QuickFilterWithoutLabel = () => {
-  const Component = () => {
-    return (
-      <Card>
-        <QuickFilter label="" value="no label" icon={<Icon.BuySellDots16 />} />
-      </Card>
-    );
-  };
-  return <Component />;
-};
-
-QuickFilterWithoutLabel.story = {
-  name: 'Without label',
 };

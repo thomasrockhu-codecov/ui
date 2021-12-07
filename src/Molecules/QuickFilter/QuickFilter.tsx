@@ -6,11 +6,11 @@ import { isBoolean, isFunction } from '../../common/utils';
 
 import { Props } from './QuickFilter.types';
 
-const FOCUS_RING_SIZES = '2px';
+const FOCUS_RING_SIZES = 2;
 
 const browsersNativeFocusStyles = css`
-  outline: ${FOCUS_RING_SIZES} solid Highlight;
-  outline: ${FOCUS_RING_SIZES} solid -webkit-focus-ring-color;
+  outline: ${FOCUS_RING_SIZES}px solid Highlight;
+  outline: ${FOCUS_RING_SIZES}px solid -webkit-focus-ring-color;
 `;
 
 const StyledInput = styled.input`
@@ -35,17 +35,17 @@ const StyledDiv = styled.div.withConfig({
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => p.theme.spacing.unit(2)}px;
 
-  ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText};`};
-  ${(p) => p.disabled && `color: ${p.theme.color.disabledText};`};
+  ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText}`};
+  ${(p) => p.disabled && `color: ${p.theme.color.disabledText}`};
 
-  ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground};`};
-  ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground};`};
+  ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground}`};
+  ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground}`};
 
-  ${(p) => p.hasLabel && `padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px;`}
-  ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px;`}
+  ${(p) => p.hasLabel && `padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
+  ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px`};
 
   &:hover {
-    color: ${(p) => !p.disabled && p.theme.color.quickFilterSelectedText};
+    ${(p) => !p.disabled && `color: ${p.theme.color.quickFilterSelectedText}`};
   }
 `;
 
