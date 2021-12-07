@@ -243,6 +243,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
+    tableEmphasis: rawColor.blue100,
 
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later

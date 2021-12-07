@@ -490,6 +490,8 @@ export type ThemeColors = {
   tableRowBackground: string;
   /** gray7 */
   tableRowHover: string;
+  /** blue100 */
+  tableEmphasis: string;
   /** gray0 */
   text: string;
   /** white */

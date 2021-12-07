@@ -244,6 +244,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.gray0,
     tableRowHover: rawColor.gray1,
+    tableEmphasis: rawColor.blue800,
 
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
