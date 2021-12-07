@@ -248,6 +248,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
 
+    quickFilterSelectedBackground: rawColor.blue800,
+    quickFilterBackground: rawColor.gray900,
+    quickFilterText: rawColor.white,
+    quickFilterSelectedText: rawColor.blue500,
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

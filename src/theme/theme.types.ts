@@ -28,6 +28,9 @@ export type RawColor = {
 
   // GRAYSCALE PALETTE
   black: string;
+  gray100: string;
+  gray800: string;
+  gray900: string;
   gray0: string;
   gray1: string;
   gray2: string;
@@ -44,6 +47,12 @@ export type RawColor = {
   green600: string;
   green200: string;
   green100: string;
+
+  // BLUE SCALE
+  blue100: string;
+  blue400: string;
+  blue500: string;
+  blue800: string;
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: string;
@@ -109,6 +118,14 @@ export type ThemeColors = {
   buy: RawColor['cta'];
   /** ctaPressed */
   buyActive: RawColor['ctaPressed'];
+  /** gray100 */
+  quickFilterBackground: RawColor['gray100'];
+  /** blue100 */
+  quickFilterSelectedBackground: RawColor['blue100'];
+  /** gray800 */
+  quickFilterText: RawColor['gray800'];
+  /** blue400 */
+  quickFilterSelectedText: RawColor['blue400'];
   /** white */
   card: RawColor['white'];
   /** creditsPiePrimary */

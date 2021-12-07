@@ -19,6 +19,9 @@ const defaultColors = {
 
   // GRAYSCALE PALETTE
   black: '#000000', // Included in Dark Mode
+  gray100: '#F5F5F5',
+  gray800: '#212121',
+  gray900: '#121212', // Included in Dark Mode
   gray0: '#282823', // Included in Dark Mode
   gray1: '#4B4B46', // Included in Dark Mode
   gray2: '#6E6E69', // Included in Dark Mode
@@ -35,6 +38,12 @@ const defaultColors = {
   green600: '#41A21A',
   green200: '#DCF5D2',
   green100: '#EDFAE8',
+
+  // BLUE SCALE
+  blue100: '#E5ECFF',
+  blue400: '#6690FF',
+  blue500: '#336BFF',
+  blue800: '#142B66',
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: '#0046FF',
@@ -60,7 +69,7 @@ const grayPalette = [
 export default {
   ...defaultColors,
   palettes: {
-    gray: grayPalette,
+    gray: [grayPalette, defaultColors.gray100, defaultColors.gray900, defaultColors.gray800],
     pink: [
       defaultColors.brandPink,
       defaultColors.complementaryPink1,
@@ -75,6 +84,10 @@ export default {
       defaultColors.complementaryBlue2,
       defaultColors.brandTurquoise,
       defaultColors.complementaryTurquoise1,
+      defaultColors.blue100,
+      defaultColors.blue400,
+      defaultColors.blue500,
+      defaultColors.blue800,
       ...grayPalette,
     ],
     green: [
