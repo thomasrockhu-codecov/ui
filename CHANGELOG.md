@@ -1,3 +1,10 @@
+# [9.11.0-beta.9](https://github.com/nordnet/ui/compare/v9.11.0-beta.8...v9.11.0-beta.9) (2021-12-07)
+
+
+### Bug Fixes
+
+* **table:** added tableEmphasis color ([b076af9](https://github.com/nordnet/ui/commit/b076af9))
+
 # [9.11.0-beta.8](https://github.com/nordnet/ui/compare/v9.11.0-beta.7...v9.11.0-beta.8) (2021-12-06)
 
 
