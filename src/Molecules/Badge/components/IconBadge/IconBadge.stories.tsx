@@ -3,7 +3,7 @@ import { Icon, Illustration } from '../../../..';
 import Badge from '../..';
 
 export default {
-  title: 'Atoms / Badge / IconBadge',
+  title: 'Molecules / Badge / IconBadge',
 };
 
 export const defaultUse = () => (

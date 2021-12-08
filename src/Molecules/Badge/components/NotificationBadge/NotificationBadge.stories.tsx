@@ -5,7 +5,7 @@ import Badge from '../..';
 import { numberWithLimit } from '../../../../common/utils';
 
 export default {
-  title: 'Atoms / Badge / NotificationBadge',
+  title: 'Molecules / Badge / NotificationBadge',
 };
 
 export const defaultShowcase = () => (

@@ -5,7 +5,7 @@ import { Flexbox, Typography } from '../../../..';
 import Badge from '../..';
 
 export default {
-  title: 'Atoms / Badge / AccountBadge',
+  title: 'Molecules / Badge / AccountBadge',
 };
 
 export const CommonUseCases = () => (

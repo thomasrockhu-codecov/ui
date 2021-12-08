@@ -1,10 +1,9 @@
 import React from 'react';
 import Badge from '../..';
-import { Box } from '../../../..';
-import Typography from '../../../Typography';
+import { Box, Typography } from '../../../..';
 
 export default {
-  title: 'Atoms / Badge / LabelBadge',
+  title: 'Molecules / Badge / LabelBadge',
 };
 
 export const labelBadge = () => (

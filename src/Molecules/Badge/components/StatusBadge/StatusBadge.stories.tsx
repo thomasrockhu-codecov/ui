@@ -3,7 +3,7 @@ import Badge from '../..';
 import { Flexbox } from '../../../..';
 
 export default {
-  title: 'Atoms / Badge / StatusBadge',
+  title: 'Molecules / Badge / StatusBadge',
 };
 
 export const informationStatusBadge = () => (
