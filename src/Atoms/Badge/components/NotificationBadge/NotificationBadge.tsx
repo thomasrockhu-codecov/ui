@@ -53,8 +53,8 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
 
 const NotificationBadgeContent: React.FC<{
   color?: ColorFn;
-  fontType: React.ComponentProps<typeof Typography>['type'];
-}> = ({ children, color, fontType }) => {
+  typographyType: React.ComponentProps<typeof Typography>['type'];
+}> = ({ children, color, typographyType }) => {
   if (typeof children === 'undefined') return null;
   if (isFunction(children)) return children();
   if (isElement(children)) return children;
@@ -63,7 +63,7 @@ const NotificationBadgeContent: React.FC<{
   const textColor: ColorFn = (t) => (color ? color(t) : t.color.textLight);
 
   return (
-    <Typography type={fontType} color={textColor} weight="bold">
+    <Typography type={typographyType} color={textColor} weight="bold">
       {children}
     </Typography>
   );
@@ -86,7 +86,7 @@ export const NotificationBadge: NotificationBadgeComponent = ({
     return typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
   })();
 
-  const fontType = MAP_FONT_SIZE[notificationBadgeSize] ?? 'tertiary';
+  const typographyType = MAP_FONT_SIZE[notificationBadgeSize] ?? 'tertiary';
   const padding = MAP_BADGE_PADDING[notificationBadgeSize] ?? 1;
 
   return (
@@ -98,7 +98,7 @@ export const NotificationBadge: NotificationBadgeComponent = ({
       {...(textColorOnParent && { color })}
       {...htmlProps}
     >
-      <NotificationBadgeContent fontType={fontType} color={color}>
+      <NotificationBadgeContent typographyType={typographyType} color={color}>
         {children}
       </NotificationBadgeContent>
     </StyledBaseBadge>
