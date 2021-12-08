@@ -1,5 +1,6 @@
 export type ItemProps = {
   to: string;
+  fullServerRedirect?: boolean;
   title: React.ReactNode;
   onTitleClick?: React.MouseEventHandler;
   exact?: boolean;
@@ -25,4 +26,5 @@ export type TitleProps = {
   to: string;
   onKeyDown: (e: React.KeyboardEvent) => void;
   height?: number;
+  fullServerRedirect?: boolean;
 };
