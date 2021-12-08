@@ -4,6 +4,7 @@ import { StatusBadgeComponent } from './components/StatusBadge/StatusBadge.types
 import { NotificationBadgeComponent } from './components/NotificationBadge/NotificationBadge.types';
 import { BaseBadgeComponent } from './components/BaseBadge/BaseBadge.types';
 import { AccountBadgeComponent } from './components/AccountBadge/AccountBadge.types';
+import { TooltipBadgeComponent } from './components/TooltipBadge/TooltipBadge.types';
 
 type BadgeVariants = {
   LabelBadge: LabelBadgeComponent;
@@ -11,7 +12,7 @@ type BadgeVariants = {
   StatusBadge: StatusBadgeComponent;
   NotificationBadge: NotificationBadgeComponent;
   AccountBadge: AccountBadgeComponent;
-  // TooltipBadge: TooltipBadge;
+  TooltipBadge: TooltipBadgeComponent;
 };
 
 export type BadgeComponent = BaseBadgeComponent & BadgeVariants;

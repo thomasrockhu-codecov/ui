@@ -5,6 +5,7 @@ import {
   IconBadge,
   StatusBadge,
   AccountBadge,
+  TooltipBadge,
   BaseBadge,
 } from './components';
 
@@ -16,3 +17,4 @@ Badge.StatusBadge = StatusBadge;
 Badge.LabelBadge = LabelBadge;
 Badge.NotificationBadge = NotificationBadge;
 Badge.AccountBadge = AccountBadge;
+Badge.TooltipBadge = TooltipBadge;
