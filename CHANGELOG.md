@@ -1,3 +1,10 @@
+# [9.12.0](https://github.com/nordnet/ui/compare/v9.11.0...v9.12.0) (2021-12-08)
+
+
+### Features
+
+* add full server redirect support tabsnav ([d99bf49](https://github.com/nordnet/ui/commit/d99bf49))
+
 # [9.11.0](https://github.com/nordnet/ui/compare/v9.10.0...v9.11.0) (2021-12-07)
 
 
