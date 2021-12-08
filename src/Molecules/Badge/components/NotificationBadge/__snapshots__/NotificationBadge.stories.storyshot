@@ -2,34 +2,7 @@
 
 exports[`Storyshots Molecules / Badge / NotificationBadge Badge With Animation 1`] = `
 Array [
-  .c7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #0046FF;
-  border-radius: 24px;
-}
-
-.c8 {
-  -webkit-animation: scale 0.5s ease-out;
-  animation: scale 0.5s ease-out;
-  padding: 0 6px;
-  min-width: 24px;
-}
-
-.c0 {
+  .c0 {
   padding-bottom: 20px;
   background-color: transparent;
 }
@@ -77,6 +50,33 @@ Array [
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #0046FF;
+  border-radius: 24px;
+}
+
+.c8 {
+  -webkit-animation: scale 0.5s ease-out;
+  animation: scale 0.5s ease-out;
+  padding: 0 6px;
+  min-width: 24px;
 }
 
 .c5 {
@@ -221,32 +221,7 @@ Array [
       </div>
     </div>
   </div>,
-  .c7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #0046FF;
-  border-radius: 24px;
-}
-
-.c8 {
-  padding: 0 6px;
-  min-width: 24px;
-}
-
-.c0 {
+  .c0 {
   padding-bottom: 20px;
   background-color: transparent;
 }
@@ -294,6 +269,31 @@ Array [
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #0046FF;
+  border-radius: 24px;
+}
+
+.c8 {
+  padding: 0 6px;
+  min-width: 24px;
 }
 
 .c5 {
@@ -468,7 +468,22 @@ Array [
   >
     Number with limit
   </span>,
-  .c1 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -493,21 +508,6 @@ Array [
   min-width: 24px;
 }
 
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 @media (min-width:760px) {
 
 }
@@ -529,7 +529,55 @@ Array [
       </span>
     </span>
   </div>,
-  .c5 {
+  .c2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c0 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -616,54 +664,6 @@ Array [
 
 .c9 {
   min-width: 8px;
-}
-
-.c2 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c0 {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
 }
 
 @media (min-width:760px) {
@@ -761,32 +761,7 @@ Array [
       </div>
     </div>
   </div>,
-  .c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #0046FF;
-  border-radius: 24px;
-}
-
-.c6 {
-  padding: 0 6px;
-  min-width: 24px;
-}
-
-.c2 {
+  .c2 {
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: transparent;
@@ -832,6 +807,31 @@ Array [
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #0046FF;
+  border-radius: 24px;
+}
+
+.c6 {
+  padding: 0 6px;
+  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -939,7 +939,22 @@ Array [
   >
     Default Notification Badge
   </span>,
-  .c1 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -964,21 +979,6 @@ Array [
   min-width: 24px;
 }
 
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 @media (min-width:760px) {
 
 }
@@ -1000,7 +1000,22 @@ Array [
       </span>
     </span>
   </div>,
-  .c2 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1022,21 +1037,6 @@ Array [
 
 .c3 {
   min-width: 8px;
-}
-
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
 }
 
 @media (min-width:760px) {
@@ -1066,7 +1066,63 @@ Array [
       />
     </div>
   </div>,
-  .c6 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  margin-bottom: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1166,62 +1222,6 @@ Array [
   min-width: 40px;
 }
 
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 @media (min-width:760px) {
   .c1 {
     font-size: 24px;
@@ -1299,7 +1299,36 @@ Array [
       </span>
     </div>
   </div>,
-  .c3 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  margin-bottom: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1428,35 +1457,6 @@ Array [
   min-width: 8px;
 }
 
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 @media (min-width:760px) {
   .c1 {
     font-size: 24px;
@@ -1545,32 +1545,7 @@ Array [
       </div>
     </div>
   </div>,
-  .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #0046FF;
-  border-radius: 24px;
-}
-
-.c4 {
-  padding: 0 6px;
-  min-width: 24px;
-}
-
-.c0 {
+  .c0 {
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: transparent;
@@ -1596,6 +1571,31 @@ Array [
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #0046FF;
+  border-radius: 24px;
+}
+
+.c4 {
+  padding: 0 6px;
+  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -1631,7 +1631,45 @@ Array [
       </span>
     </div>
   </div>,
-  .c6 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c2 {
+  margin-bottom: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1679,44 +1717,6 @@ Array [
 .c4 {
   padding: 0 4px;
   min-width: 16px;
-}
-
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c2 {
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 1.6;
 }
 
 @media (min-width:760px) {
@@ -1808,7 +1808,31 @@ Array [
   >
     Component as child
   </span>,
-  .c1 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1832,30 +1856,6 @@ Array [
 .c2 {
   padding: 0 6px;
   min-width: 24px;
-}
-
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
 }
 
 @media (min-width:760px) {
@@ -1934,7 +1934,22 @@ Array [
   >
     Function as child
   </span>,
-  .c1 {
+  .c0 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1958,21 +1973,6 @@ Array [
 .c2 {
   padding: 0 6px;
   min-width: 24px;
-}
-
-.c0 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
 }
 
 @media (min-width:760px) {

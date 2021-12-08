@@ -9,6 +9,10 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
   width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
 `;
 
+const StyledTypography = styled(Typography)`
+  font-weight: 800;
+`;
+
 const mapToBaseBadge = (badgeSize?: string) => {
   switch (badgeSize) {
     case 's':
@@ -30,9 +34,9 @@ const AccountBadgeContent: React.FC<{
   if (isElement(children)) return children;
 
   return (
-    <Typography type={typographyType} color={(t) => t.color.textLight}>
+    <StyledTypography type={typographyType} color={(t) => t.color.textLight}>
       {children}
-    </Typography>
+    </StyledTypography>
   );
 };
 

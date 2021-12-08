@@ -16,29 +16,7 @@ Array [
   >
     Primary
   </span>,
-  .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #0046FF;
-}
-
-.c3 {
-  padding: 2px 8px;
-}
-
-.c0 {
+  .c0 {
   background-color: transparent;
 }
 
@@ -64,6 +42,28 @@ Array [
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+}
+
+.c3 {
+  padding: 2px 8px;
 }
 
 <div
@@ -110,29 +110,7 @@ Array [
   >
     Secondary
   </span>,
-  .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #0046FF;
-}
-
-.c3 {
-  padding: 0 4px;
-}
-
-.c0 {
+  .c0 {
   background-color: transparent;
 }
 
@@ -158,6 +136,28 @@ Array [
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+}
+
+.c3 {
+  padding: 0 4px;
 }
 
 <div
@@ -204,7 +204,26 @@ Array [
   >
     Custom colors
   </span>,
-  .c2 {
+  .c0 {
+  background-color: transparent;
+}
+
+.c1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: transparent;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -242,25 +261,6 @@ Array [
 
 .c3 {
   padding: 2px 8px;
-}
-
-.c0 {
-  background-color: transparent;
-}
-
-.c1 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 <div
