@@ -23,7 +23,16 @@ const StyledLink = styled(Link)`
   color: inherit;
 `;
 
-const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick, height }) => {
+const Title: TitleComponent = ({
+  active,
+  children,
+  setRef,
+  to,
+  onKeyDown,
+  onClick,
+  height,
+  fullServerRedirect,
+}) => {
   return (
     <Typography type="primary" weight={active ? 'bold' : 'regular'}>
       <StyledLink
@@ -32,6 +41,7 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
         aria-current={active ? 'page' : undefined}
         onKeyDown={onKeyDown}
         onClick={onClick}
+        fullServerRedirect={fullServerRedirect}
       >
         <TabTitle active={active} height={height}>
           {children}
@@ -74,6 +84,7 @@ export const TabsNav: Component = ({ children, height = 11, className }) => {
             onClick={c.props.onTitleClick}
             setRef={setRef(i)}
             to={c.props.to}
+            fullServerRedirect={c.props.fullServerRedirect}
             onKeyDown={onKeyDown}
             height={height}
             className={c.props.className}
