@@ -139,7 +139,7 @@ export default {
   ...defaultColors,
   ...colorScales,
   palettes: {
-    gray: [grayPalette, defaultColors.gray100, defaultColors.gray900, defaultColors.gray800],
+    gray: [...grayPalette, defaultColors.gray100, defaultColors.gray900, defaultColors.gray800],
     pink: [
       defaultColors.brandPink,
       defaultColors.complementaryPink1,
