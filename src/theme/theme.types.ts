@@ -9,6 +9,7 @@ type Unit = {
   toString: () => string;
   valueOf: () => number;
 };
+
 export type RawColor = {
   // BRAND
   brandBlue: string;
@@ -26,11 +27,7 @@ export type RawColor = {
   complementaryTurquoise1: string;
   complementaryTurquoise2: string;
 
-  // GRAYSCALE PALETTE
-  black: string;
-  gray100: string;
-  gray800: string;
-  gray900: string;
+  // GRAYSCALE PALETTE OLD
   gray0: string;
   gray1: string;
   gray2: string;
@@ -39,20 +36,87 @@ export type RawColor = {
   gray5: string;
   gray6: string;
   gray7: string;
+
+  // GRAY
   white: string;
+  gray100: string;
+  gray200: string;
+  gray300: string;
+  gray400: string;
+  gray500: string;
+  gray600: string;
+  gray700: string;
+  gray800: string;
+  gray900: string;
+  black: string;
 
-  // GREEN SCALE
-  // Introduced for new Shareville component from the new UI designs
-  // Names are subject to change when new colors and structure are finalized
-  green600: string;
-  green200: string;
-  green100: string;
-
-  // BLUE SCALE
+  // BLUE
   blue100: string;
+  blue200: string;
+  blue300: string;
   blue400: string;
+  blue450: string;
   blue500: string;
+  blue600: string;
+  blue700: string;
   blue800: string;
+  blue900: string;
+
+  // PINK
+  pink100: string;
+  pink200: string;
+  pink300: string;
+  pink400: string;
+  pink500: string;
+  pink600: string;
+  pink700: string;
+  pink800: string;
+  pink900: string;
+
+  // GREEN
+  green100: string;
+  green200: string;
+  green300: string;
+  green400: string;
+  green450: string;
+  green500: string;
+  green600: string;
+  green700: string;
+  green800: string;
+  green900: string;
+
+  // TEAL
+  teal100: string;
+  teal200: string;
+  teal300: string;
+  teal400: string;
+  teal500: string;
+  teal600: string;
+  teal700: string;
+  teal800: string;
+  teal900: string;
+
+  // YELLOW
+  yellow100: string;
+  yellow200: string;
+  yellow300: string;
+  yellow400: string;
+  yellow500: string;
+  yellow600: string;
+  yellow700: string;
+  yellow800: string;
+  yellow900: string;
+
+  // RED
+  red100: string;
+  red200: string;
+  red300: string;
+  red400: string;
+  red500: string;
+  red600: string;
+  red700: string;
+  red800: string;
+  red900: string;
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: string;
@@ -65,6 +129,8 @@ export type RawColor = {
   sfdrArticle8: string;
   sfdrArticle9: string;
   index: string;
+  graphPurple: string;
+  graphOrange: string;
 };
 
 export type RawColors = RawColor & {
@@ -82,178 +148,226 @@ type NumberOrObjectWithNumber = number | { size: number };
 export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
 
 export type ThemeColors = {
+  /**
+   * black
+   */
+  accountBadgeBackground: string;
+  /**
+   * white
+   */
+  accountBadgeText: string;
+  /**
+   * blue500
+   */
+  buttonBackgroundPrimary: string;
+  /**
+   * blue600
+   */
+  buttonBackgroundHoverPrimary: string;
+  /**
+   * blue700
+   */
+  buttonBackgroundActivePrimary: string;
+  /**
+   * gray200
+   */
+  buttonBackgroundDisabled: string;
+  /**
+   * gray500
+   */
+  buttonTextDisabled: string;
+  /**
+   * blue500
+   */
+  buttonBorderSecondary: string;
+  /**
+   * blue600
+   */
+  buttonHoverSecondary: string;
+  /**
+   * blue700
+   */
+  buttonActiveSecondary: string;
   /** gray2 */
-  accordionText: RawColor['gray2'];
-  /** gray7 */
-  background: RawColor['gray7'];
-  /** black */
-  backgroundBlack: RawColor['black'];
-  /** gray0 */
-  backgroundDark: RawColor['gray0'];
-  /** complementaryBlue1 */
-  barGraphHighlight: RawColor['complementaryBlue1'];
-  /** complementaryBlue1 */
-  barScaleActiveBar: RawColor['complementaryBlue1'];
-  /** gray6 */
-  barScaleInactiveBar: RawColor['gray6'];
-  /** cta */
-  borderActive: RawColor['cta'];
-  /** white */
-  bubbleBackground: RawColor['white'];
-  /** gray4 */
-  bubbleBorder: RawColor['gray4'];
-  /** gray2 */
-  bubbleSecondaryText: RawColor['gray2'];
-  /** brandGreen */
-  bulbBackground: RawColor['brandGreen'];
-  /** gray0 */
-  bulbForeground: RawColor['gray0'];
-  /** white */
-  buttonSecondaryBackground: RawColor['white'];
-  /** white */
-  buttonText: RawColor['white'];
-  /** white */
-  buttonTextLight: RawColor['white'];
-  /** cta */
-  buy: RawColor['cta'];
-  /** ctaPressed */
-  buyActive: RawColor['ctaPressed'];
+  accordionText: string;
   /** gray100 */
-  quickFilterBackground: RawColor['gray100'];
-  /** blue100 */
-  quickFilterSelectedBackground: RawColor['blue100'];
-  /** gray800 */
-  quickFilterText: RawColor['gray800'];
-  /** blue400 */
-  quickFilterSelectedText: RawColor['blue400'];
-  /** white */
-  card: RawColor['white'];
-  /** creditsPiePrimary */
-  creditsPiePrimary: RawColor['complementaryPink1'];
-  /** creditsPieSecondary */
-  creditsPieSecondary: RawColor['complementaryPink2'];
-  /** cta */
-  cta: RawColor['cta'];
-  /** ctaHover */
-  ctaHover: RawColor['ctaHover'];
-  /** gray6 */
-  dateAvatarBackground1: RawColor['gray6'];
-  /** gray7 */
-  dateAvatarBackground2: RawColor['gray7'];
-  /** gray2 */
-  dateAvatarText1: RawColor['gray2'];
+  background: string;
+  /** black */
+  backgroundBlack: string;
   /** gray0 */
-  dateAvatarText2: RawColor['gray0'];
+  backgroundDark: string;
+  /** complementaryBlue1 */
+  barGraphHighlight: string;
+  /** complementaryBlue1 */
+  barScaleActiveBar: string;
+  /** gray6 */
+  barScaleInactiveBar: string;
+  /** cta */
+  borderActive: string;
+  /** white */
+  bubbleBackground: string;
+  /** gray4 */
+  bubbleBorder: string;
+  /** gray2 */
+  bubbleSecondaryText: string;
+  /** brandGreen */
+  bulbBackground: string;
+  /** gray0 */
+  bulbForeground: string;
+  /** white */
+  buttonSecondaryBackground: string;
+  /** white */
+  buttonText: string;
+  /** blue500 */
+  buttonTextSecondary: string;
+  /** gray0 */
+  buttonTextLight: string;
+  /** cta */
+  buy: string;
+  /** ctaPressed */
+  buyActive: string;
+  /** gray100 */
+  quickFilterBackground: string;
+  /** blue100 */
+  quickFilterSelectedBackground: string;
+  /** gray800 */
+  quickFilterText: string;
+  /** blue400 */
+  quickFilterSelectedText: string;
+  /** white */
+  card: string;
+  /** creditsPiePrimary */
+  creditsPiePrimary: string;
+  /** creditsPieSecondary */
+  creditsPieSecondary: string;
+  /** blue500 */
+  cta: string;
+  /** blue600 */
+  ctaHover: string;
+  /** gray6 */
+  dateAvatarBackground1: string;
+  /** gray7 */
+  dateAvatarBackground2: string;
+  /** gray2 */
+  dateAvatarText1: string;
+  /** gray0 */
+  dateAvatarText2: string;
   /** gray2 */
   datePickerWithinRangeBackground: string;
   /** gray2 */
   datePickerWithinRangeFade: string;
   /** gray6 */
-  disabledBackground: RawColor['gray6'];
+  disabledBackground: string;
   /** gray3 */
-  disabledText: RawColor['gray3'];
+  disabledText: string;
   /** gray6 */
-  divider: RawColor['gray6'];
+  divider: string;
   /** gray4 */
-  emptyState: RawColor['gray4'];
+  emptyState: string;
   /** gray6 */
-  flagBorder: RawColor['gray6'];
+  flagBorder: string;
   /** gray2 */
-  fundExchange: RawColor['gray2'];
+  fundExchange: string;
   /** complementaryGreen1 */
-  generationSavingsTimelineColor1: RawColor['complementaryGreen1'];
+  generationSavingsTimelineColor1: string;
   /** complementaryPink1 */
-  generationSavingsTimelineColor2: RawColor['complementaryPink1'];
+  generationSavingsTimelineColor2: string;
   /** brandBlue */
-  generationSavingsTimelineColor3: RawColor['brandBlue'];
+  generationSavingsTimelineColor3: string;
   /** complementaryBlue1 */
-  generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
+  generationSavingsTimelineColor4: string;
+  /** gray100 */
+  keyFiguresBackground: string;
   /** gray5 */
-  graphVolume: RawColor['gray5'];
+  graphVolume: string;
   /** gray4 */
-  graphVolumeHover: RawColor['gray4'];
+  graphVolumeHover: string;
   /** brandPink */
-  guidanceSelectionCardIcon: RawColor['brandPink'];
+  guidanceSelectionCardIcon: string;
   /** 10 percent of cta */
   iconBackdropCta: string;
   /** gray2 */
-  icon: RawColor['gray2'];
+  icon: string;
   /** gray6 */
-  indexFundsBackground: RawColor['gray6'];
+  indexFundsBackground: string;
   /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
   indexFundsFinnishAccent: string[];
   /** brandBlue */
-  indexFundsNorwegianAccent: RawColor['brandBlue'];
+  indexFundsNorwegianAccent: string;
   /** white */
-  inputBackground: RawColor['white'];
+  inputBackground: string;
   /** gray4 */
-  inputBorder: RawColor['gray4'];
+  inputBorder: string;
   /** negative */
-  inputBorderError: RawColor['negative'];
+  inputBorderError: string;
   /** gray1 */
-  inputBorderHover: RawColor['gray1'];
+  inputBorderHover: string;
   /** positive */
-  inputBorderSuccess: RawColor['positive'];
+  inputBorderSuccess: string;
   /** gray7 */
-  inputHover: RawColor['gray7'];
+  inputHover: string;
   /** complementaryBlue2 */
-  investmentPredictionGraphBlue: RawColor['complementaryBlue2'];
+  investmentPredictionGraphBlue: string;
   /** complementaryGreen2 */
-  investmentPredictionGraphGreen: RawColor['complementaryGreen2'];
+  investmentPredictionGraphGreen: string;
   /** complementaryPink1 */
-  investmentPredictionGraphPink: RawColor['complementaryPink1'];
+  investmentPredictionGraphPink: string;
   /** complementaryTurquoise2 */
-  investmentPredictionGraphTurquoise: RawColor['complementaryTurquoise2'];
+  investmentPredictionGraphTurquoise: string;
   /** gray2 */
-  label: RawColor['gray2'];
+  label: string;
   /** complementaryTurquoise1 */
-  lineScaleValueColor: RawColor['complementaryTurquoise1'];
+  lineScaleValueColor: string;
   /** complementaryTurquoise1 */
   listItemBackgroundHover: string;
   /** complementaryBlue2 */
-  loanRatesGraphColor2: RawColor['complementaryBlue2'];
+  loanRatesGraphColor2: string;
   /** brandTurquoise */
-  marketingCardMortageHighlight: RawColor['brandTurquoise'];
+  marketingCardMortageHighlight: string;
   /** brandGreen */
-  menuAccent1: RawColor['brandGreen'];
+  menuAccent1: string;
   /** brandTurquoise */
-  menuAccent2: RawColor['brandTurquoise'];
+  menuAccent2: string;
   /** index */
-  menuAccent3: RawColor['index'];
+  menuAccent3: string;
   /** brandPink */
-  menuAccent4: RawColor['brandPink'];
+  menuAccent4: string;
   /** brandBlue */
-  menuAccent5: RawColor['brandBlue'];
+  menuAccent5: string;
   /** white */
-  menuText: RawColor['white'];
+  menuText: string;
   /** gray4 */
-  messageCentralFaqButtonBorder: RawColor['gray4'];
+  messageCentralFaqButtonBorder: string;
   /** gray5 */
-  messageCentralFaqIcon: RawColor['gray5'];
+  messageCentralFaqIcon: string;
   /** 63 percent of gray2 */
   modalBackdrop: string;
   /** white */
-  module: RawColor['white'];
+  module: string;
   /** negative */
-  negative: RawColor['negative'];
+  negative: string;
   /** negative or brandPink */
-  negativeBlackBackground: RawColor['negative'];
+  negativeBlackBackground: string;
   /** brandBlue */
-  onboardingAccentBlue: RawColor['brandBlue'];
+  onboardingAccentBlue: string;
   /** brandGreen */
-  onboardingAccentGreen: RawColor['brandGreen'];
+  onboardingAccentGreen: string;
   /** brandPink */
-  onboardingAccentPink: RawColor['brandPink'];
+  onboardingAccentPink: string;
   /** brandTurquoise */
-  onboardingAccentTurquoise: RawColor['brandTurquoise'];
+  onboardingAccentTurquoise: string;
   /** gray1 */
-  orderAccountLabel: RawColor['gray1'];
+  orderAccountLabel: string;
   /** gray6 */
-  orderDepthBackground: RawColor['gray6'];
+  orderDepthBackground: string;
   /** gray5 */
-  orderDepthDarkBackground: RawColor['gray5'];
+  orderDepthDarkBackground: string;
+  /** gray600 */
+  orderPanelLabelColor: string;
+  /** gray100 */
+  orderPanelItemBackgroundHover: string;
   /** otherMonthDateText */
-  otherMonthDateText: RawColor['gray4'];
+  otherMonthDateText: string;
   paletteBlue: string[];
   paletteGreen: string[];
   paletteLineGraph: string[];
@@ -261,45 +375,81 @@ export type ThemeColors = {
   palettePink: string[];
   paletteTurquoise: string[];
   /** gray2 */
-  placeholderText: RawColor['gray2'];
+  placeholderText: string;
   /** positive */
-  positive: RawColor['positive'];
+  positive: string;
+  /**
+   * positive
+   */
+  infoBarBackgroundSuccess: string;
+  /**
+   * index
+   */
+  infoBarBackgroundWarning: string;
+  /**
+   * negative
+   */
+  infoBarBackgroundError: string;
+  /**
+   * white
+   */
+  infoBarBackgroundInfo: string;
+  /**
+   * green500
+   */
+  infoBarSuccess: string;
+  /**
+   * blue500
+   */
+  infoBarInfo: string;
+  /**
+   * pink600
+   */
+  infoBarError: string;
+  /**
+   * yellow400
+   */
+  infoBarWarning: string;
+  /**
+   * blue500
+   */
+  link: string;
   /** gray6 */
-  privateBankingBannerBackground: RawColor['gray6'];
+  privateBankingBannerBackground: string;
   /** white */
-  privateBankingBannerText: RawColor['white'];
+  privateBankingBannerText: string;
   /** gray6 */
-  privateBankingBannerTitle: RawColor['gray6'];
+  privateBankingBannerTitle: string;
   /** cta */
-  progressBarActive: RawColor['cta'];
+  progressBarActive: string;
   /** positive */
-  progressBarDone: RawColor['positive'];
+  progressBarDone: string;
   /** positive */
-  progressBarFailure: RawColor['negative'];
+  progressBarFailure: string;
   /** gray4 */
-  progressBarNext: RawColor['gray4'];
+  progressBarNext: string;
   /** white */
-  progressBarText: RawColor['white'];
+  progressBarText: string;
   /** index */
-  progressBarWarning: RawColor['index'];
+  progressBarWarning: string;
   /** gray1 */
-  searchBackground: RawColor['gray1'];
+  searchBackground: string;
   /** gray1 */
-  searchText: RawColor['gray7'];
+  searchText: string;
   /** gray5 */
-  selectionCardBorder: RawColor['gray5'];
+  selectionCardBorder: string;
   /** gray7 */
-  segmentedControlBackground: RawColor['gray7'];
+  segmentedControlBackground: string;
   /** gray2 */
-  selectionCardText: RawColor['gray2'];
+  selectionCardText: string;
   /** white */
-  selectOptionBackground: RawColor['white'];
+  selectOptionBackground: string;
   /** negative */
-  sell: RawColor['negative'];
+  sell: string;
   /** negativePressed */
-  sellActive: RawColor['negativePressed'];
+  sellActive: string;
   /** gray0 */
-  separator: RawColor['gray0'];
+  separator: string;
   /** 3 percent of black */
   shadowCard: string;
   /** 5 percent of black */
@@ -311,73 +461,75 @@ export type ThemeColors = {
   /** complementaryGreen1 */
   shareville: string;
   /** gray6 */
-  skeleton: RawColor['gray6'];
+  skeleton: string;
   /** gray6 */
-  sliderBackgroundColor: RawColor['gray6'];
+  sliderBackgroundColor: string;
   /** cta */
-  sliderColor: RawColor['cta'];
+  sliderColor: string;
   /** gray6 */
-  sliderDisabled: RawColor['gray6'];
+  sliderDisabled: string;
   /** brandGreen */
-  sliderSecondary: RawColor['brandGreen'];
+  sliderSecondary: string;
   /** white */
-  sliderThumbBackground: RawColor['white'];
+  sliderThumbBackground: string;
   /** black */
-  spinnerBlack: RawColor['black'];
+  spinnerBlack: string;
   /** white */
-  spinnerWhite: RawColor['white'];
+  spinnerWhite: string;
   /** index */
-  starRating: RawColor['index'];
+  starRating: string;
   /** gray6 */
-  starRatingOff: RawColor['gray6'];
+  starRatingOff: string;
   /** cta */
-  statusFulfilledBackgroundColor: RawColor['cta'];
+  statusFulfilledBackgroundColor: string;
   /** white */
-  statusFulfilledTextColor: RawColor['white'];
+  statusFulfilledTextColor: string;
   /** index */
-  streamingBolt: RawColor['index'];
+  streamingBolt: string;
   /** gray0 */
-  svgFill: RawColor['gray0'];
+  svgFill: string;
   /** white */
-  svgStokeLight: RawColor['white'];
+  svgStokeLight: string;
   /** gray2 */
-  svgStroke: RawColor['gray2'];
+  svgStroke: string;
   /** gray7 */
-  switchReadOnlyKnobBg: RawColor['gray7'];
+  switchReadOnlyKnobBg: string;
   /** 10 percent of cta */
   switchReadOnlyTrackBg: string;
   /** gray0 */
-  tableBorder: RawColor['gray0'];
+  tableBorder: string;
   /** white */
-  tableRowBackground: RawColor['white'];
+  tableRowBackground: string;
   /** gray7 */
-  tableRowHover: RawColor['gray7'];
+  tableRowHover: string;
+  /** blue100 */
+  tableEmphasis: string;
   /** gray0 */
-  text: RawColor['gray0'];
+  text: string;
   /** white */
-  textLight: RawColor['white'];
+  textLight: string;
   /** cta */
-  timelineActive: RawColor['cta'];
+  timelineActive: string;
   /** negative */
-  timelineFailure: RawColor['negative'];
+  timelineFailure: string;
   /** gray4 */
-  timelineNext: RawColor['gray4'];
+  timelineNext: string;
   /** positive */
-  timelineSuccess: RawColor['positive'];
+  timelineSuccess: string;
   /** index */
-  timelineWarning: RawColor['index'];
+  timelineWarning: string;
   /** index */
-  transferPendingIconColor: RawColor['index'];
+  transferPendingIconColor: string;
   /** brandPink */
-  transferProgressBar1: RawColor['brandPink'];
+  transferProgressBar1: string;
   /** positive */
-  transferProgressBar2: RawColor['positive'];
+  transferProgressBar2: string;
   /** gray5 */
-  transferProgressBar3: RawColor['gray5'];
+  transferProgressBar3: string;
   /** gray1 */
-  transferProgressBarText1: RawColor['gray1'];
+  transferProgressBarText1: string;
   /** gray2 */
-  transferProgressBarText2: RawColor['gray2'];
+  transferProgressBarText2: string;
   /** 10 percent of complementaryBlue1 */
   transferStatusBannerBackground1: string;
   /** 10 percent of complementaryPink1 */
@@ -385,41 +537,41 @@ export type ThemeColors = {
   /** 10 percent of index */
   transferStatusBannerBackground3: string;
   /** gray0 */
-  transferStatusBannerChevron: RawColor['gray0'];
+  transferStatusBannerChevron: string;
   /** complementaryBlue1 */
-  transferStatusBannerText1: RawColor['complementaryBlue1'];
+  transferStatusBannerText1: string;
   /** complementaryPink1 */
-  transferStatusBannerText2: RawColor['complementaryPink1'];
+  transferStatusBannerText2: string;
   /** gray0 */
-  transferStatusBannerText3: RawColor['gray0'];
+  transferStatusBannerText3: string;
   /** index */
-  warning: RawColor['index'];
+  warning: string;
   /** SFDR Article 6 */
-  sfdrArticle6: RawColor['gray3'];
+  sfdrArticle6: string;
   /** SFDR Article 8 */
-  sfdrArticle8: RawColor['sfdrArticle8'];
+  sfdrArticle8: string;
   /** SFDR Article 9 */
-  sfdrArticle9: RawColor['sfdrArticle9'];
+  sfdrArticle9: string;
   /** Join Shareville Illustration */
-  joinSharevilleIllustration: RawColor['green600'];
+  joinSharevilleIllustration: string;
   /** Join Shareville Badge */
-  joinSharevilleBadge: RawColor['green200'];
+  joinSharevilleBadge: string;
   /** Join Shareville Banner */
-  joinSharevilleBanner: RawColor['green100'];
+  joinSharevilleBanner: string;
   /** @deprecated * gray3 */
-  disabled: RawColor['gray3'];
+  disabled: string;
   /** @deprecated * complementaryBlue2 */
-  mapColor1: RawColor['complementaryBlue2'];
+  mapColor1: string;
   /** @deprecated * complementaryBlue1 */
-  mapColor2: RawColor['complementaryBlue1'];
+  mapColor2: string;
   /** @deprecated * brandBlue */
-  mapColor3: RawColor['brandBlue'];
+  mapColor3: string;
   /** @deprecated * gray1 */
-  mapColor4: RawColor['gray1'];
+  mapColor4: string;
   /** @deprecated * gray3 */
-  mapColor5: RawColor['gray3'];
+  mapColor5: string;
   /** @deprecated * brandPink */
-  pieChartColor2: RawColor['brandPink'];
+  pieChartColor2: string;
 };
 
 export type ColorSets = {

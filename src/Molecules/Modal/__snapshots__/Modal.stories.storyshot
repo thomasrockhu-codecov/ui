@@ -1409,37 +1409,6 @@ Array [
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   position: relative;
-  position: relative;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c5::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c6 {
@@ -1570,7 +1539,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -1611,11 +1580,11 @@ Array [
 }
 
 .c13:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c13:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -1994,7 +1963,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2084,8 +2053,8 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -2117,7 +2086,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -2125,19 +2094,19 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
 }
 
 .c15:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c15:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c15:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c15:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c17 {
@@ -2163,7 +2132,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -2204,11 +2173,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
 }
 
 .c17:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c17:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -2591,37 +2560,6 @@ Array [
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   position: relative;
-  position: relative;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c5::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c6 {
@@ -2727,7 +2665,7 @@ Array [
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2817,8 +2755,8 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -2850,7 +2788,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -2858,19 +2796,19 @@ Array [
 }
 
 .c20:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c20:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c20:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c20:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c22 {
@@ -2896,7 +2834,7 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -2937,11 +2875,11 @@ Array [
 }
 
 .c22:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c22:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -3352,7 +3290,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -3442,8 +3380,8 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -3475,7 +3413,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -3483,19 +3421,19 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
 }
 
 .c15:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c15:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c15:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c15:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c17 {
@@ -3521,7 +3459,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -3562,11 +3500,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
 }
 
 .c17:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c17:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -3952,37 +3890,6 @@ Array [
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   position: relative;
-  position: relative;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c5::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c6 {
@@ -4133,7 +4040,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -4174,11 +4081,11 @@ Array [
 }
 
 .c15:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c15:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -4581,37 +4488,6 @@ Array [
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   position: relative;
-  position: relative;
-}
-
-.c5::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-}
-
-.c5::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 52px;
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  background: transparent;
-  z-index: 1;
-  opacity: 0;
-  bottom: 0;
-  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c6 {
@@ -4773,8 +4649,8 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -4806,7 +4682,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -4814,19 +4690,19 @@ Array [
 }
 
 .c15:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c15:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c15:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c15:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c17 {
@@ -4853,7 +4729,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -4894,11 +4770,11 @@ Array [
 }
 
 .c17:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c17:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -5395,7 +5271,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -5436,11 +5312,11 @@ Array [
 }
 
 .c10:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c10:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -5876,7 +5752,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -5917,11 +5793,11 @@ Array [
 }
 
 .c10:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c10:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -6362,8 +6238,8 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -6395,7 +6271,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -6403,19 +6279,19 @@ Array [
 }
 
 .c10:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c10:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c10:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c10:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c12 {
@@ -6442,7 +6318,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -6483,11 +6359,11 @@ Array [
 }
 
 .c12:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c12:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -6951,8 +6827,8 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -6984,7 +6860,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -6992,19 +6868,19 @@ Array [
 }
 
 .c10:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c10:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c10:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c10:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c12 {
@@ -7031,7 +6907,7 @@ Array [
   width: 100%;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -7072,11 +6948,11 @@ Array [
 }
 
 .c12:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c12:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -7474,7 +7350,7 @@ Array [
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -7564,8 +7440,8 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -7597,7 +7473,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -7605,19 +7481,19 @@ Array [
 }
 
 .c15:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c15:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c15:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c15:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c17 {
@@ -7643,7 +7519,7 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -7684,11 +7560,11 @@ Array [
 }
 
 .c17:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c17:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {
@@ -8871,8 +8747,8 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
+  background-color: transparent;
+  color: #336BFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -8904,7 +8780,7 @@ Array [
   content: '';
   display: block;
   position: absolute;
-  border: 2px solid #0046FF;
+  border: 2px solid #336BFF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
@@ -8912,19 +8788,19 @@ Array [
 }
 
 .c10:hover {
-  color: hsl(223.5,100%,40%);
+  color: #2650BF;
 }
 
 .c10:hover::before {
-  border-color: hsl(223.5,100%,40%);
+  border-color: #2650BF;
 }
 
 .c10:active {
-  color: hsl(223.5,100%,35%);
+  color: #1F4099;
 }
 
 .c10:active::before {
-  border-color: hsl(223.5,100%,35%);
+  border-color: #1F4099;
 }
 
 .c12 {
@@ -8950,7 +8826,7 @@ Array [
   display: inline-flex;
   padding: 8px 16px;
   min-height: 40px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -8991,11 +8867,11 @@ Array [
 }
 
 .c12:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c12:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 .c3 {

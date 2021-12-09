@@ -135,7 +135,10 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
            padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
-      : ''}
+      : `color: ${p.theme.color.text}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }`}
   ${(p) =>
     p.variant === 'quiet' && p.rightAddon
       ? `&:focus + ${AddonBox} {

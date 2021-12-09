@@ -19,7 +19,7 @@ const getSize = (p: StyledProps<Props>) => {
 
 const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   background-color: ${({ theme, $backgroundColor }) =>
-    isFunction($backgroundColor) ? $backgroundColor(theme) : theme.color.backgroundDark};
+    isFunction($backgroundColor) ? $backgroundColor(theme) : theme.color.accountBadgeBackground};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
@@ -50,7 +50,7 @@ export const Avatar: React.FunctionComponent<Props> = ({
     justifyContent="center"
     size={size}
   >
-    <Typography type={fontSize(size)} weight="regular" color={(t) => t.color.textLight}>
+    <Typography type={fontSize(size)} weight="regular" color={(t) => t.color.accountBadgeText}>
       {children}
     </Typography>
   </StyledFlexbox>

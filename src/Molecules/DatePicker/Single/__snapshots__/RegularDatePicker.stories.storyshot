@@ -96,6 +96,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Allow Update Wh
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -147,6 +148,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Allow Update Wh
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -260,7 +265,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -301,11 +306,11 @@ Array [
 }
 
 .c0:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c0:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 <button
@@ -416,6 +421,7 @@ Array [
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -467,6 +473,10 @@ Array [
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -643,6 +653,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -694,6 +705,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Default 1`] = `
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -869,6 +884,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Disabled Input 
   position: relative;
   background-color: #EBEBE8;
   padding-right: 40px;
+  color: #282823;
   cursor: not-allowed;
 }
 
@@ -917,6 +933,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Disabled Input 
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1093,6 +1113,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Full Width Inpu
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -1144,6 +1165,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Full Width Inpu
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1319,6 +1344,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Fullscreen On M
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -1370,6 +1396,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Fullscreen On M
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1545,6 +1575,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Disab
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -1596,6 +1627,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Disab
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
@@ -1771,6 +1806,7 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Enabl
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #282823;
 }
 
 .c7:focus {
@@ -1822,6 +1858,10 @@ exports[`Storyshots Molecules / DatePicker / Regular DatePicker  Same Week Enabl
 }
 
 .c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled {
   color: #A0A09B;
 }
 
