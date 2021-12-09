@@ -158,7 +158,6 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     otherMonthDateText: rawColor.gray4,
 
-    pageWrapper: rawColor.white,
     paletteBlue: rawColor.palettes.blue,
     paletteGreen: rawColor.palettes.green,
     paletteLineGraph: [rawColor.cta, rawColor.index, ...lineColors],

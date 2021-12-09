@@ -159,7 +159,6 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     otherMonthDateText: rawColor.gray4,
 
-    pageWrapper: rawColor.black,
     paletteBlue: rawColor.palettes.blue,
     paletteGreen: rawColor.palettes.green,
     paletteLineGraph: [rawColor.complementaryTurquoise1, rawColor.index, ...lineColors],
