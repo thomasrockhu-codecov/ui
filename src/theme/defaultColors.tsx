@@ -123,6 +123,8 @@ const defaultColors = {
   index: '#FFCF00', // Included in Dark Mode
   sfdrArticle9: '#41A21A',
   sfdrArticle8: '#85DA62',
+  graphPurple: '#9C88FF',
+  graphOrange: '#F0932B',
 };
 
 const grayPalette = [

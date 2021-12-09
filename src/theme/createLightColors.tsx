@@ -14,16 +14,14 @@ export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
 
 export const createLightColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
-    rawColor.complementaryPink1,
-    rawColor.complementaryBlue1,
-    rawColor.complementaryTurquoise1,
-    rawColor.complementaryGreen1,
     rawColor.brandPink,
-    rawColor.complementaryGreen2,
-    rawColor.complementaryBlue2,
-    rawColor.complementaryPink2,
-    rawColor.complementaryTurquoise2,
-    rawColor.gray1,
+    rawColor.positive,
+    rawColor.graphPurple,
+    rawColor.complementaryTurquoise1,
+    rawColor.negative,
+    rawColor.brandBlue,
+    rawColor.gray3,
+    rawColor.graphOrange,
   ];
 
   // prettier-ignore

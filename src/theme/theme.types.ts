@@ -129,6 +129,8 @@ export type RawColor = {
   sfdrArticle8: string;
   sfdrArticle9: string;
   index: string;
+  graphPurple: string;
+  graphOrange: string;
 };
 
 export type RawColors = RawColor & {
