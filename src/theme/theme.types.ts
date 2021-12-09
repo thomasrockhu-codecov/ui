@@ -310,6 +310,8 @@ export type ThemeColors = {
   orderDepthBackground: string;
   /** gray5 */
   orderDepthDarkBackground: string;
+  /** gray7 */
+  orderPanelItemBackgroundHover: string;
   /** otherMonthDateText */
   otherMonthDateText: string;
   paletteBlue: string[];
