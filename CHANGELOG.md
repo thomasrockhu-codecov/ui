@@ -1,3 +1,11 @@
+# [9.11.0-beta.11](https://github.com/nordnet/ui/compare/v9.11.0-beta.10...v9.11.0-beta.11) (2021-12-09)
+
+
+### Features
+
+* add orderPanelItemBackgroundHover color ([b9b6905](https://github.com/nordnet/ui/commit/b9b6905))
+* add orderPanelItemBackgroundHover color ([d2521dc](https://github.com/nordnet/ui/commit/d2521dc))
+
 # [9.11.0-beta.10](https://github.com/nordnet/ui/compare/v9.11.0-beta.9...v9.11.0-beta.10) (2021-12-09)
 
 
