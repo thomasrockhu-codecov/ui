@@ -188,7 +188,7 @@ export type ThemeColors = {
   buttonActiveSecondary: string;
   /** gray2 */
   accordionText: string;
-  /** gray7 */
+  /** gray100 */
   background: string;
   /** black */
   backgroundBlack: string;
