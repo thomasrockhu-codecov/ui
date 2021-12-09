@@ -224,6 +224,14 @@ export type ThemeColors = {
   buy: string;
   /** ctaPressed */
   buyActive: string;
+  /** gray100 */
+  quickFilterBackground: string;
+  /** blue100 */
+  quickFilterSelectedBackground: string;
+  /** gray800 */
+  quickFilterText: string;
+  /** blue400 */
+  quickFilterSelectedText: string;
   /** white */
   card: string;
   /** creditsPiePrimary */

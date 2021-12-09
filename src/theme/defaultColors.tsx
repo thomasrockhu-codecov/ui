@@ -99,6 +99,9 @@ const defaultColors = {
 
   // GRAYSCALE PALETTE
   black: '#000000', // Included in Dark Mode
+  gray100: '#F5F5F5',
+  gray800: '#212121',
+  gray900: '#121212', // Included in Dark Mode
   gray0: '#282823', // Included in Dark Mode
   gray1: '#4B4B46', // Included in Dark Mode
   gray2: '#6E6E69', // Included in Dark Mode
@@ -134,7 +137,7 @@ export default {
   ...defaultColors,
   ...colorScales,
   palettes: {
-    gray: grayPalette,
+    gray: [grayPalette, defaultColors.gray100, defaultColors.gray900, defaultColors.gray800],
     pink: [
       defaultColors.brandPink,
       defaultColors.complementaryPink1,
@@ -149,6 +152,10 @@ export default {
       defaultColors.complementaryBlue2,
       defaultColors.brandTurquoise,
       defaultColors.complementaryTurquoise1,
+      colorScales.blue100,
+      colorScales.blue400,
+      colorScales.blue500,
+      colorScales.blue800,
       ...grayPalette,
     ],
     green: [

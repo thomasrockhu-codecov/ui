@@ -82,6 +82,7 @@ import TabsNav from './Molecules/TabsNav';
 import Timeline from './Molecules/Timeline';
 import Tooltip from './Molecules/Tooltip';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
+import QuickFilter from './Molecules/QuickFilter';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
@@ -217,4 +218,5 @@ export {
   useOnClickOutside,
   getPersistedSortOrder,
   setPersistedSortOrder,
+  QuickFilter,
 };

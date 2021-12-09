@@ -277,6 +277,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
 
+    quickFilterSelectedBackground: rawColor.blue100,
+    quickFilterBackground: rawColor.gray100,
+    quickFilterText: rawColor.gray800,
+    quickFilterSelectedText: rawColor.blue400,
+    
+
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
