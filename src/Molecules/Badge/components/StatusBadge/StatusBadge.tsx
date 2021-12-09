@@ -1,33 +1,19 @@
 import React from 'react';
-import { Theme } from 'theme/theme.types';
 import { Icon } from '../../../..';
 import { IconBadge } from '..';
 import { ColorFn } from '../BaseBadge/BaseBadge.types';
 import { StatusBadgeComponent, StatusVariant, StatusBadgeSize } from './StatusBadge.types';
-
-const VARIANT_CREATE = 'create';
-const VARIANT_COMPLETE = 'complete';
-const VARIANT_PENDING = 'pending';
-const VARIANT_ERROR = 'error';
-const VARIANT_WARNING = 'warning';
-const VARIANT_INFORMATION = 'information';
-
-const MAP_BADGE_AND_ICON_SIZES = {
-  s: { badgeSize: 6, iconSize: '16' },
-  m: { badgeSize: 8, iconSize: '16' },
-  l: { badgeSize: 12, iconSize: '24' },
-  xl: { badgeSize: 18, iconSize: '32' },
-};
-
-const MAP_ICON_COMPONENT_NAME = {
-  [VARIANT_CREATE]: 'Add',
-  [VARIANT_COMPLETE]: 'Check',
-  [VARIANT_PENDING]: 'Clock',
-  [VARIANT_ERROR]: 'Cross',
-  [VARIANT_WARNING]: 'ExclamationMark',
-  [VARIANT_INFORMATION]: 'InformationMark',
-};
-const ICON_COLOR = (t: Theme) => t.color.svgStokeLight;
+import {
+  MAP_BADGE_AND_ICON_SIZES,
+  MAP_ICON_COMPONENT_NAME,
+  VARIANT_CREATE,
+  ICON_COLOR,
+  VARIANT_COMPLETE,
+  VARIANT_PENDING,
+  VARIANT_ERROR,
+  VARIANT_WARNING,
+  VARIANT_INFORMATION,
+} from './StatusBadge.constants';
 
 const getStatusBadgeProps = (
   variant: StatusVariant,

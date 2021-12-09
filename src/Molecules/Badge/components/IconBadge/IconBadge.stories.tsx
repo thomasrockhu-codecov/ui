@@ -42,7 +42,6 @@ badgeWithIllustration.story = {
   name: 'Badge with illustration',
 };
 
-// TODO: rename this
 export const badgeWithIllustrationWithCustomProps = () => (
   <Badge.IconBadge badgeSize="xl">
     <span>

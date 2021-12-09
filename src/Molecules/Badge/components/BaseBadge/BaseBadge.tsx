@@ -9,8 +9,7 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
   text-align: center;
   box-sizing: border-box;
   ${(p) => (p.$badgeSize ? `height: ${p.theme.spacing.unit(p.$badgeSize)}px;` : '')}
-  background-color: ${(p) =>
-    p.$backgroundColor ? p.$backgroundColor(p.theme) : p.theme.color.cta};
+  background-color: ${(p) => (p.$badgeColor ? p.$badgeColor(p.theme) : p.theme.color.cta)};
   ${(p) => (p.$color ? `color: ${p.$color(p.theme)};` : '')}
   ${(p) =>
     p.$variant !== 'square' && p.$variant !== 'rect' && typeof p.$badgeSize !== 'undefined'
@@ -22,7 +21,7 @@ export const BaseBadge: BaseBadgeComponent = ({
   children,
   color,
   secondaryColor,
-  backgroundColor,
+  badgeColor,
   badgeSize,
   variant,
   weight,
@@ -32,7 +31,7 @@ export const BaseBadge: BaseBadgeComponent = ({
     $badgeSize={badgeSize}
     $color={color}
     $secondaryColor={secondaryColor}
-    $backgroundColor={backgroundColor}
+    $badgeColor={badgeColor}
     $variant={variant}
     $weight={weight}
     {...htmlProps}

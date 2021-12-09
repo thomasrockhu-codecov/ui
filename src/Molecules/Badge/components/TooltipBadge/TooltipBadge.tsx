@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { TooltipBadgeComponent } from './TooltipBadge.types';
 import { BaseBadge } from '..';
 import { Typography } from '../../../..';
+import { TooltipBadgeSize } from './TooltipBadge.constants';
 
 const StyledTypography = styled(Typography)<{ $addHoverEffect: boolean }>`
   font-weight: 800;
@@ -11,7 +12,7 @@ const StyledTypography = styled(Typography)<{ $addHoverEffect: boolean }>`
 const StyledBaseBadge = styled(BaseBadge)<{ $addHoverEffect: boolean }>`
   ${(p) =>
     typeof p.badgeSize !== 'undefined' ? `width: ${p.theme.spacing.unit(p.badgeSize)}px;` : ''}
-  border: 1px solid #BCBCB6;
+  border: 1px solid ${(p) => p.theme.color.bubbleBorder};
   ${(p) =>
     p.$addHoverEffect
       ? `
@@ -25,25 +26,25 @@ const StyledBaseBadge = styled(BaseBadge)<{ $addHoverEffect: boolean }>`
       : ''}
 `;
 
-const mapToBaseBadge = (badgeSize?: string) => {
+const mapToBaseBadge = (badgeSize?: keyof typeof TooltipBadgeSize) => {
   switch (badgeSize) {
     case 's':
-      return 4;
+      return TooltipBadgeSize.s;
     case 'l':
-      return 6;
+      return TooltipBadgeSize.l;
     default:
-      return 6;
+      return TooltipBadgeSize.l;
   }
 };
 
 export const TooltipBadge: TooltipBadgeComponent = ({ badgeSize }) => {
   const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
-  const typographyType = baseBadgeSize === 4 ? 'caption' : 'secondary';
-  const addHoverEffect = baseBadgeSize !== 4;
+  const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
+  const addHoverEffect = baseBadgeSize !== TooltipBadgeSize.s;
 
   return (
     <StyledBaseBadge
-      backgroundColor={(t) => t.color.bubbleBackground}
+      badgeColor={(t) => t.color.bubbleBackground}
       badgeSize={baseBadgeSize}
       $addHoverEffect={addHoverEffect}
     >

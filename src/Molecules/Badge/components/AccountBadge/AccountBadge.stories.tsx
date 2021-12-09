@@ -53,7 +53,7 @@ CommonUseCases.story = {
 
 const StyledTypography = styled(Typography)`
   font-size: 8px;
-  color: ${(p) => p.theme.color.positive};
+  color: ${(p) => p.theme.color.textLight};
 `;
 
 export const customChildren = () => (
@@ -63,7 +63,9 @@ export const customChildren = () => (
         title: 'Typography as child',
         component: (
           <Badge.AccountBadge>
-            <Typography type="caption">ICA</Typography>
+            <Typography color={(t) => t.color.textLight} type="caption">
+              KF
+            </Typography>
           </Badge.AccountBadge>
         ),
       },
@@ -71,7 +73,7 @@ export const customChildren = () => (
         title: 'Styled typography as child',
         component: (
           <Badge.AccountBadge>
-            <StyledTypography>Nordea</StyledTypography>
+            <StyledTypography>ASK</StyledTypography>
           </Badge.AccountBadge>
         ),
       },

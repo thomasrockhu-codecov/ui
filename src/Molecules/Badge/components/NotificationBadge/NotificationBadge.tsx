@@ -5,28 +5,26 @@ import { ColorFn } from '../../../../common/Types';
 import { isElement, isFunction } from '../../../../common/utils';
 import { StyledBaseBadgeProps, NotificationBadgeComponent } from './NotificationBadge.types';
 import { BaseBadge } from '../BaseBadge';
+import {
+  MAP_FONT_SIZE,
+  MAP_BADGE_PADDING,
+  DEFAULT_PADDING,
+  DEFAULT_TYPOGRAPHY_TYPE,
+  NotificationBadgeSize,
+} from './NotificationBadge.constants';
 
-const MAP_FONT_SIZE = { 2: 'caption', 4: 'caption', 6: 'tertiary', 8: 'secondary' };
-
-const MAP_BADGE_PADDING = {
-  2: 0,
-  4: 1,
-  6: 1.5,
-  8: 1.5,
-};
-
-const mapToBaseBadge = (badgeSize?: string) => {
+const mapToBaseBadge = (badgeSize?: keyof typeof NotificationBadgeSize) => {
   switch (badgeSize) {
     case 'xs':
-      return 2;
+      return NotificationBadgeSize.xs;
     case 's':
-      return 4;
+      return NotificationBadgeSize.s;
     case 'm':
-      return 6;
+      return NotificationBadgeSize.m;
     case 'l':
-      return 8;
+      return NotificationBadgeSize.l;
     default:
-      return 6;
+      return NotificationBadgeSize.m;
   }
 };
 
@@ -86,15 +84,15 @@ export const NotificationBadge: NotificationBadgeComponent = ({
     return typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
   })();
 
-  const typographyType = MAP_FONT_SIZE[notificationBadgeSize] ?? 'tertiary';
-  const padding = MAP_BADGE_PADDING[notificationBadgeSize] ?? 1;
+  const typographyType = MAP_FONT_SIZE[notificationBadgeSize] ?? DEFAULT_TYPOGRAPHY_TYPE;
+  const padding = MAP_BADGE_PADDING[notificationBadgeSize] ?? DEFAULT_PADDING;
 
   return (
     <StyledBaseBadge
       $animateOnChange={animateOnChange}
       $padding={padding}
       badgeSize={notificationBadgeSize}
-      backgroundColor={badgeColor}
+      badgeColor={badgeColor}
       {...(textColorOnParent && { color })}
       {...htmlProps}
     >

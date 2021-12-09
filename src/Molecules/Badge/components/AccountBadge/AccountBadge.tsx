@@ -4,6 +4,7 @@ import { AccountBadgeComponent, StyledBaseBadgeProps } from './AccountBadge.type
 import { BaseBadge } from '..';
 import { Typography } from '../../../..';
 import { isElement, isFunction } from '../../../../common/utils';
+import { AccountBadgeSize } from './AccountBadge.constants';
 
 const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
   width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
@@ -13,16 +14,16 @@ const StyledTypography = styled(Typography)`
   font-weight: 800;
 `;
 
-const mapToBaseBadge = (badgeSize?: string) => {
+const mapToBaseBadge = (badgeSize?: keyof typeof AccountBadgeSize) => {
   switch (badgeSize) {
     case 's':
-      return 6;
+      return AccountBadgeSize.s;
     case 'm':
-      return 8;
+      return AccountBadgeSize.m;
     case 'l':
-      return 12;
+      return AccountBadgeSize.l;
     default:
-      return 8;
+      return AccountBadgeSize.m;
   }
 };
 
@@ -42,11 +43,11 @@ const AccountBadgeContent: React.FC<{
 
 export const AccountBadge: AccountBadgeComponent = ({ children, badgeSize, badgeColor }) => {
   const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
-  const typographyType = baseBadgeSize === 12 ? 'tertiary' : 'caption';
+  const typographyType = baseBadgeSize === AccountBadgeSize.l ? 'tertiary' : 'caption';
 
   return (
     <StyledBaseBadge
-      backgroundColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
+      badgeColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={baseBadgeSize}
     >
       <AccountBadgeContent typographyType={typographyType}>{children}</AccountBadgeContent>
