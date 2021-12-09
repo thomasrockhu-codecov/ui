@@ -1,3 +1,10 @@
+# [9.11.0-beta.10](https://github.com/nordnet/ui/compare/v9.11.0-beta.9...v9.11.0-beta.10) (2021-12-09)
+
+
+### Bug Fixes
+
+* adjust skeleton dark mode color ([2316ed8](https://github.com/nordnet/ui/commit/2316ed8))
+
 # [9.11.0-beta.9](https://github.com/nordnet/ui/compare/v9.11.0-beta.8...v9.11.0-beta.9) (2021-12-07)
 
 
