@@ -64,7 +64,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buttonActiveSecondary: rawColor.blue700,
 
     buttonText: rawColor.white,
-    buttonTextSecondary:rawColor.blue500,
+    buttonTextSecondary: rawColor.blue500,
     buttonTextDisabled: rawColor.gray500,
 
     buy: rawColor.cta,
@@ -155,6 +155,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
     orderPanelLabelColor: rawColor.gray600,
+    orderPanelItemBackgroundHover: rawColor.gray100,
 
     otherMonthDateText: rawColor.gray4,
 
@@ -179,7 +180,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     infoBarBackgroundWarning: rawColor.yellow100,
     infoBarBackgroundError: rawColor.red100,
     infoBarBackgroundInfo: rawColor.gray100,
-    
+
     infoBarSuccess: rawColor.green500,
     infoBarWarning: rawColor.yellow400,
     infoBarError: rawColor.red500,

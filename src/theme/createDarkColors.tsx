@@ -156,6 +156,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     orderDepthBackground: rawColor.gray1,
     orderDepthDarkBackground: rawColor.gray2,
     orderPanelLabelColor: rawColor.gray400,
+    orderPanelItemBackgroundHover: Color(rawColor.black).alpha(0.6).rgb().string(),
 
     otherMonthDateText: rawColor.gray4,
 
