@@ -1,3 +1,12 @@
+# [9.11.0-beta.12](https://github.com/nordnet/ui/compare/v9.11.0-beta.11...v9.11.0-beta.12) (2021-12-09)
+
+
+### Bug Fixes
+
+* remove pageWrapper color, never intended to be added ([0e81056](https://github.com/nordnet/ui/commit/0e81056))
+* update background color and correct cta, also change tab active color ([d8df832](https://github.com/nordnet/ui/commit/d8df832))
+* update background color and fix cta, also update tab active state to cta color ([0456bb5](https://github.com/nordnet/ui/commit/0456bb5))
+
 # [9.11.0-beta.11](https://github.com/nordnet/ui/compare/v9.11.0-beta.10...v9.11.0-beta.11) (2021-12-09)
 
 
