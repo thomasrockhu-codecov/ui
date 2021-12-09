@@ -13,7 +13,7 @@ const StyledTitle = styled.span<Props>`
       return `
         &::after {
           content: '';
-          background-color: ${props.theme.color.borderActive};
+          background-color: ${props.theme.color.cta};
           display: block;
           width: 100%;
           height: 2px;

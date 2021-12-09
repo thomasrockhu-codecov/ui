@@ -33,7 +33,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     accountBadgeBackground: rawColor.black,
     accountBadgeText: rawColor.white,
 
-    background: rawColor.gray7,
+    background: rawColor.gray100,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
 
