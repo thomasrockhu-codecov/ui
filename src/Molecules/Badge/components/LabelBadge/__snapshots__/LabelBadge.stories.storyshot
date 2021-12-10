@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Badge / LabelBadge Label Badge 1`] = `
-Array [
-  .c0 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -11,22 +10,7 @@ Array [
   line-height: 1.5;
 }
 
-<span
-    className="c0"
-  >
-    Primary
-  </span>,
-  .c0 {
-  background-color: transparent;
-}
-
-.c1 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -35,7 +19,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -44,7 +28,34 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c2 {
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,168 +73,7 @@ Array [
   background-color: #0046FF;
 }
 
-.c3 {
-  padding: 2px 8px;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <span
-        className="c2 c3"
-      >
-        <span
-          className="c4"
-        >
-          Primary
-        </span>
-      </span>
-    </div>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2 c3"
-      >
-        <span
-          className="c5"
-        >
-          Primary Bold
-        </span>
-      </span>
-    </div>
-  </div>,
-  .c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-<span
-    className="c0"
-  >
-    Secondary
-  </span>,
-  .c0 {
-  background-color: transparent;
-}
-
-.c1 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #0046FF;
-}
-
-.c3 {
-  padding: 0 4px;
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <span
-        className="c2 c3"
-      >
-        <span
-          className="c4"
-        >
-          Secondary
-        </span>
-      </span>
-    </div>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2 c3"
-      >
-        <span
-          className="c5"
-        >
-          Secondary Bold
-        </span>
-      </span>
-    </div>
-  </div>,
-  .c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-<span
-    className="c0"
-  >
-    Custom colors
-  </span>,
-  .c0 {
-  background-color: transparent;
-}
-
-.c1 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: transparent;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -241,7 +91,7 @@ Array [
   background-color: #FF2B83;
 }
 
-.c5 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -259,39 +109,224 @@ Array [
   background-color: #D2F500;
 }
 
-.c3 {
+.c5 {
   padding: 2px 8px;
 }
 
+.c8 {
+  padding: 0 4px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-    className="c0"
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <span
-        className="c2 c3"
+        className="c3"
+      >
+        Primary
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4 c5"
       >
         <span
-          className="c4"
+          className="c6"
+        >
+          Primary
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Primary Bold
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4 c5"
+      >
+        <span
+          className="c7"
+        >
+          Primary Bold
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Secondary
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4 c8"
+      >
+        <span
+          className="c9"
+        >
+          Secondary
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Secondary Bold
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4 c8"
+      >
+        <span
+          className="c10"
+        >
+          Secondary Bold
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Custom badge color
+      </span>
+    </div>
+    <div>
+      <span
+        className="c11 c5"
+      >
+        <span
+          className="c12"
         >
           Custom badge color
         </span>
       </span>
     </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
     <div
-      className="c1"
+      className="c2"
     >
       <span
-        className="c5 c3"
+        className="c3"
+      >
+        Custom text color
+      </span>
+    </div>
+    <div>
+      <span
+        className="c13 c5"
       >
         <span
-          className="c4"
+          className="c12"
         >
           Custom text color
         </span>
       </span>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;

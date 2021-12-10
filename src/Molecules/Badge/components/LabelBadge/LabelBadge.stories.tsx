@@ -1,51 +1,58 @@
 import React from 'react';
 import Badge from '../..';
-import { Box, Typography } from '../../../..';
+import { Display } from '../../../../common/Display';
 
 export default {
   title: 'Molecules / Badge / LabelBadge',
 };
 
-export const labelBadge = () => (
-  <>
-    <Typography>Primary</Typography>
-    <Box>
-      <Box my={1}>
-        <Badge.LabelBadge>Primary</Badge.LabelBadge>
-      </Box>
-      <Box my={1}>
-        <Badge.LabelBadge weight="bold">Primary Bold</Badge.LabelBadge>
-      </Box>
-    </Box>
-    <Typography>Secondary</Typography>
-    <Box>
-      <Box my={1}>
-        <Badge.LabelBadge type="secondary">Secondary</Badge.LabelBadge>
-      </Box>
-      <Box my={1}>
-        <Badge.LabelBadge type="secondary" weight="bold">
-          Secondary Bold
-        </Badge.LabelBadge>
-      </Box>
-    </Box>
-    <Typography>Custom colors</Typography>
-    <Box>
-      <Box my={1}>
-        <Badge.LabelBadge color={(t) => t.color.text} badgeColor={(t) => t.color.menuAccent4}>
-          Custom badge color
-        </Badge.LabelBadge>
-      </Box>
-      <Box my={1}>
-        <Badge.LabelBadge
-          color={(t) => t.color.bulbForeground}
-          badgeColor={(t) => t.color.bulbBackground}
-        >
-          Custom text color
-        </Badge.LabelBadge>
-      </Box>
-    </Box>
-  </>
-);
-labelBadge.story = {
+export const LabelBadge = () => {
+  return (
+    <Display
+      items={[
+        {
+          title: 'Primary',
+          component: <Badge.LabelBadge>Primary</Badge.LabelBadge>,
+        },
+        {
+          title: 'Primary Bold',
+          component: <Badge.LabelBadge weight="bold">Primary Bold</Badge.LabelBadge>,
+        },
+        {
+          title: 'Secondary',
+          component: <Badge.LabelBadge type="secondary">Secondary</Badge.LabelBadge>,
+        },
+        {
+          title: 'Secondary Bold',
+          component: (
+            <Badge.LabelBadge type="secondary" weight="bold">
+              Secondary Bold
+            </Badge.LabelBadge>
+          ),
+        },
+        {
+          title: 'Custom badge color',
+          component: (
+            <Badge.LabelBadge color={(t) => t.color.text} badgeColor={(t) => t.color.menuAccent4}>
+              Custom badge color
+            </Badge.LabelBadge>
+          ),
+        },
+        {
+          title: 'Custom text color',
+          component: (
+            <Badge.LabelBadge
+              color={(t) => t.color.bulbForeground}
+              badgeColor={(t) => t.color.bulbBackground}
+            >
+              Custom text color
+            </Badge.LabelBadge>
+          ),
+        },
+      ]}
+    />
+  );
+};
+LabelBadge.story = {
   name: 'Label Badge',
 };
