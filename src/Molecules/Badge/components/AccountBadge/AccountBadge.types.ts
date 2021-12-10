@@ -1,8 +1,4 @@
-import { BaseBadgeProps, ColorFn } from '../BaseBadge/BaseBadge.types';
-
-export type StyledBaseBadgeProps = BaseBadgeProps & {
-  badgeSize: number;
-};
+import { ColorFn } from '../BaseBadge/BaseBadge.types';
 
 type AccountBadgeProps = {
   badgeColor?: ColorFn;

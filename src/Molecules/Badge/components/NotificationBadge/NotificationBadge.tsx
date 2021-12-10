@@ -46,7 +46,6 @@ const animation = css`
 const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
   ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
   ${(p) => (p.$padding ? `padding: 0 ${p.theme.spacing.unit(p.$padding)}px;` : '')}
-  min-width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
 `;
 
 const NotificationBadgeContent: React.FC<{
@@ -73,6 +72,7 @@ export const NotificationBadge: NotificationBadgeComponent = ({
   children,
   badgeSize,
   animateOnChange = false,
+  symmetricShape,
   ...htmlProps
 }) => {
   const textColorOnParent = isFunction(children) || isElement(children);
@@ -93,6 +93,7 @@ export const NotificationBadge: NotificationBadgeComponent = ({
       $padding={padding}
       badgeSize={notificationBadgeSize}
       badgeColor={badgeColor}
+      symmetricShape={symmetricShape}
       {...(textColorOnParent && { color })}
       {...htmlProps}
     >

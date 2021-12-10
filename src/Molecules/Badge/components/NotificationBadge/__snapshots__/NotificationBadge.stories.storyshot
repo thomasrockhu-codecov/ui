@@ -68,6 +68,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
@@ -76,7 +77,6 @@ Array [
   -webkit-animation: scale 0.5s ease-out;
   animation: scale 0.5s ease-out;
   padding: 0 6px;
-  min-width: 24px;
 }
 
 .c5 {
@@ -287,13 +287,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
 
 .c8 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 .c5 {
@@ -499,13 +499,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
 
 .c2 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -593,6 +593,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
@@ -613,7 +614,29 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 8px;
+  min-width: 8px;
   background-color: #0046FF;
+  border-radius: 8px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 8px;
+  min-width: 8px;
+  background-color: #FF1900;
   border-radius: 8px;
 }
 
@@ -633,37 +656,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 8px;
-  background-color: #FF1900;
-  border-radius: 8px;
-}
-
-.c11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 8px;
+  min-width: 8px;
   background-color: #6E6E69;
   border-radius: 8px;
 }
 
 .c6 {
   padding: 0 6px;
-  min-width: 24px;
-}
-
-.c9 {
-  min-width: 8px;
 }
 
 @media (min-width:760px) {
@@ -727,7 +726,7 @@ Array [
         className="c2"
       >
         <span
-          className="c8 c9"
+          className="c8 "
         />
         <span
           className="c4"
@@ -739,7 +738,7 @@ Array [
         className="c2"
       >
         <span
-          className="c10 c9"
+          className="c9 "
         />
         <span
           className="c4"
@@ -751,7 +750,7 @@ Array [
         className="c2"
       >
         <span
-          className="c11 c9"
+          className="c10 "
         />
         <span
           className="c4"
@@ -825,13 +824,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
 
 .c6 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -970,13 +969,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
 
 .c2 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -1031,12 +1030,9 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 8px;
+  min-width: 8px;
   background-color: #0046FF;
   border-radius: 8px;
-}
-
-.c3 {
-  min-width: 8px;
 }
 
 @media (min-width:760px) {
@@ -1062,7 +1058,7 @@ Array [
       className="c0"
     >
       <span
-        className="c2 c3"
+        className="c2 "
       />
     </div>
   </div>,
@@ -1104,7 +1100,7 @@ Array [
   line-height: 1.6;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1113,7 +1109,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1138,6 +1134,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
@@ -1158,6 +1155,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 16px;
+  min-width: 16px;
   background-color: #0046FF;
   border-radius: 16px;
 }
@@ -1178,11 +1176,12 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 32px;
+  min-width: 32px;
   background-color: #0046FF;
   border-radius: 32px;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1198,28 +1197,17 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 40px;
+  min-width: 40px;
   background-color: #0046FF;
   border-radius: 40px;
 }
 
 .c7 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 .c4 {
   padding: 0 4px;
-  min-width: 16px;
-}
-
-.c10 {
-  padding: 0 6px;
-  min-width: 32px;
-}
-
-.c14 {
-  padding: 0 4px;
-  min-width: 40px;
 }
 
 @media (min-width:760px) {
@@ -1271,17 +1259,17 @@ Array [
       className="c2"
     >
       <span
-        className="c9 c10"
+        className="c9 c7"
       >
         <span
-          className="c11"
+          className="c10"
         >
           3
         </span>
       </span>
     </div>
     <span
-      className="c12"
+      className="c11"
     >
       Custom badge size (defaults font-size to 'tertiary'):
     </span>
@@ -1289,7 +1277,7 @@ Array [
       className="c2"
     >
       <span
-        className="c13 c14"
+        className="c12 c4"
       >
         <span
           className="c8"
@@ -1344,6 +1332,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #00D200;
   border-radius: 24px;
 }
@@ -1364,6 +1353,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #FF1900;
   border-radius: 24px;
 }
@@ -1384,6 +1374,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #A0A09B;
   border-radius: 24px;
 }
@@ -1404,7 +1395,29 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 8px;
+  min-width: 8px;
   background-color: #00D200;
+  border-radius: 8px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 8px;
+  min-width: 8px;
+  background-color: #FF1900;
   border-radius: 8px;
 }
 
@@ -1424,37 +1437,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 8px;
-  background-color: #FF1900;
-  border-radius: 8px;
-}
-
-.c11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 8px;
+  min-width: 8px;
   background-color: #A0A09B;
   border-radius: 8px;
 }
 
 .c4 {
   padding: 0 6px;
-  min-width: 24px;
-}
-
-.c9 {
-  min-width: 8px;
 }
 
 @media (min-width:760px) {
@@ -1526,21 +1515,21 @@ Array [
         className="c2"
       >
         <span
-          className="c8 c9"
+          className="c8 "
         />
       </div>
       <div
         className="c2"
       >
         <span
-          className="c10 c9"
+          className="c9 "
         />
       </div>
       <div
         className="c2"
       >
         <span
-          className="c11 c9"
+          className="c10 "
         />
       </div>
     </div>
@@ -1589,13 +1578,13 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
 
 .c4 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -1685,6 +1674,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   border-radius: 24px;
 }
@@ -1705,18 +1695,17 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 16px;
+  min-width: 16px;
   background-color: #0046FF;
   border-radius: 16px;
 }
 
 .c7 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 .c4 {
   padding: 0 4px;
-  min-width: 16px;
 }
 
 @media (min-width:760px) {
@@ -1848,6 +1837,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   color: #FFFFFF;
   border-radius: 24px;
@@ -1855,7 +1845,6 @@ Array [
 
 .c2 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {
@@ -1965,6 +1954,7 @@ Array [
   text-align: center;
   box-sizing: border-box;
   height: 24px;
+  min-width: 24px;
   background-color: #0046FF;
   color: #FFFFFF;
   border-radius: 24px;
@@ -1972,7 +1962,6 @@ Array [
 
 .c2 {
   padding: 0 6px;
-  min-width: 24px;
 }
 
 @media (min-width:760px) {

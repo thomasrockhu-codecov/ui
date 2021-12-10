@@ -13,6 +13,7 @@ type Props = {
   color?: ColorFn;
   badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
   animateOnChange?: boolean;
+  symmetricShape?: boolean;
 } & HtmlProps;
 
 export type NotificationBadgeComponent = React.FC<Props>;

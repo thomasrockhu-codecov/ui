@@ -12,8 +12,6 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledBaseBadge = styled(BaseBadge)`
-  ${(p) =>
-    typeof p.badgeSize !== 'undefined' ? `width: ${p.theme.spacing.unit(p.badgeSize)}px;` : ''}
   border: 1px solid ${(p) => p.theme.color.bubbleBorder};
 `;
 
@@ -51,6 +49,7 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
         ref={ref}
         badgeColor={(t) => t.color.bubbleBackground}
         badgeSize={baseBadgeSize}
+        symmetricShape
       >
         <StyledTypography type={typographyType}>?</StyledTypography>
       </StyledBaseBadge>

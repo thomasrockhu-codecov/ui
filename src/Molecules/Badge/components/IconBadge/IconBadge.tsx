@@ -1,13 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { IconBadgeComponent } from './IconBadge.types';
 import { BaseBadge } from '..';
 import { IconBadgeSize } from './IconBadge.constants';
-
-const StyledBaseBadge = styled(BaseBadge)`
-  ${(p) =>
-    typeof p.badgeSize !== 'undefined' ? `width: ${p.theme.spacing.unit(p.badgeSize)}px;` : ''}
-`;
 
 const mapToBaseBadge = (badgeSize?: keyof typeof IconBadgeSize) => {
   switch (badgeSize) {
@@ -28,11 +22,12 @@ export const IconBadge: IconBadgeComponent = ({ children, badgeSize, badgeColor 
   const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
 
   return (
-    <StyledBaseBadge
+    <BaseBadge
       badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={baseBadgeSize}
+      symmetricShape
     >
       {children}
-    </StyledBaseBadge>
+    </BaseBadge>
   );
 };

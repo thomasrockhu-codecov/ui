@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration 1`] = `
-.c2 {
+.c1 {
   color: #6E6E69;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -29,20 +29,17 @@ exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration 1`] = 
   text-align: center;
   box-sizing: border-box;
   height: 80px;
+  width: 80px;
   background-color: #0046FF;
   border-radius: 80px;
 }
 
-.c1 {
-  width: 80px;
-}
-
 <span
-  className="c0 c1"
+  className="c0"
 >
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c1"
     focusable="false"
     height={64}
     preserveAspectRatio="xMidYMid meet"
@@ -66,7 +63,7 @@ exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration 1`] = 
 `;
 
 exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration with custom props 1`] = `
-.c2 {
+.c1 {
   color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -94,21 +91,18 @@ exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration with c
   text-align: center;
   box-sizing: border-box;
   height: 80px;
+  width: 80px;
   background-color: #0046FF;
   border-radius: 80px;
 }
 
-.c1 {
-  width: 80px;
-}
-
 <span
-  className="c0 c1"
+  className="c0"
 >
   <span>
     <svg
       aria-hidden="true"
-      className="c2"
+      className="c1"
       focusable="false"
       height={64}
       preserveAspectRatio="xMidYMid meet"
@@ -134,7 +128,7 @@ exports[`Storyshots Molecules / Badge / IconBadge Badge with illustration with c
 `;
 
 exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge size 1`] = `
-.c2 {
+.c1 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -162,20 +156,17 @@ exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge size 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 200px;
+  width: 200px;
   background-color: #D2F500;
   border-radius: 200px;
 }
 
-.c1 {
-  width: 200px;
-}
-
 <span
-  className="c0 c1"
+  className="c0"
 >
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c1"
     focusable="false"
     height={24}
     preserveAspectRatio="xMidYMid meet"
@@ -195,7 +186,7 @@ exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge size 1`] = `
 `;
 
 exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge with custom props 1`] = `
-.c2 {
+.c1 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -223,20 +214,17 @@ exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge with custom 
   text-align: center;
   box-sizing: border-box;
   height: 48px;
+  width: 48px;
   background-color: #D2F500;
   border-radius: 48px;
 }
 
-.c1 {
-  width: 48px;
-}
-
 <span
-  className="c0 c1"
+  className="c0"
 >
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c1"
     focusable="false"
     height={24}
     preserveAspectRatio="xMidYMid meet"
@@ -256,7 +244,7 @@ exports[`Storyshots Molecules / Badge / IconBadge Custom icon badge with custom 
 `;
 
 exports[`Storyshots Molecules / Badge / IconBadge Default use 1`] = `
-.c2 {
+.c1 {
   color: #6E6E69;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -284,20 +272,17 @@ exports[`Storyshots Molecules / Badge / IconBadge Default use 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 40px;
+  width: 40px;
   background-color: #0046FF;
   border-radius: 40px;
 }
 
-.c1 {
-  width: 40px;
-}
-
 <span
-  className="c0 c1"
+  className="c0"
 >
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c1"
     focusable="false"
     height={8}
     preserveAspectRatio="xMidYMid meet"

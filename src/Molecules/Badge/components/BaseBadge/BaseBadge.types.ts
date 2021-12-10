@@ -12,6 +12,7 @@ export type BaseBadgeProps = HtmlProps & {
   badgeSize?: number;
   variant?: 'square' | 'circle' | 'rect';
   weight?: string;
+  symmetricShape?: boolean;
 };
 
 export type WrapperProps = HtmlProps & {
@@ -21,6 +22,8 @@ export type WrapperProps = HtmlProps & {
   $badgeSize: BaseBadgeProps['badgeSize'];
   $variant?: BaseBadgeProps['variant'];
   $weight?: BaseBadgeProps['weight'];
+  $applyWidth: boolean;
+  $applyMinWidth: boolean;
 };
 
 export type BaseBadgeComponent = React.ForwardRefExoticComponent<

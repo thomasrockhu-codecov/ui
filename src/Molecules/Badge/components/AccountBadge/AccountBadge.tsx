@@ -1,14 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AccountBadgeComponent, StyledBaseBadgeProps } from './AccountBadge.types';
+import { AccountBadgeComponent } from './AccountBadge.types';
 import { BaseBadge } from '..';
 import { Typography } from '../../../..';
 import { isElement, isFunction } from '../../../../common/utils';
 import { AccountBadgeSize } from './AccountBadge.constants';
-
-const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
-  width: ${(p) => p.theme.spacing.unit(p.badgeSize)}px;
-`;
 
 const StyledTypography = styled(Typography)`
   font-weight: 800;
@@ -46,11 +42,12 @@ export const AccountBadge: AccountBadgeComponent = ({ children, badgeSize, badge
   const typographyType = baseBadgeSize === AccountBadgeSize.l ? 'tertiary' : 'caption';
 
   return (
-    <StyledBaseBadge
+    <BaseBadge
       badgeColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={baseBadgeSize}
+      symmetricShape
     >
       <AccountBadgeContent typographyType={typographyType}>{children}</AccountBadgeContent>
-    </StyledBaseBadge>
+    </BaseBadge>
   );
 };

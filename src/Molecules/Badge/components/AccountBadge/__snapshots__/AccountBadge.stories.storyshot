@@ -20,7 +20,7 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   flex-direction: column;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -29,7 +29,7 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -54,11 +54,12 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 48px;
+  width: 48px;
   background-color: #282823;
   border-radius: 48px;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -74,8 +75,51 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 32px;
+  width: 32px;
   background-color: #282823;
   border-radius: 32px;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  background-color: #282823;
+  border-radius: 24px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+  background-color: #00D200;
+  border-radius: 48px;
 }
 
 .c9 {
@@ -93,8 +137,30 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  background-color: #00D200;
+  border-radius: 32px;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
   height: 24px;
-  background-color: #282823;
+  width: 24px;
+  background-color: #00D200;
   border-radius: 24px;
 }
 
@@ -114,7 +180,8 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 48px;
-  background-color: #00D200;
+  width: 48px;
+  background-color: #0046FF;
   border-radius: 48px;
 }
 
@@ -134,7 +201,8 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 32px;
-  background-color: #00D200;
+  width: 32px;
+  background-color: #0046FF;
   border-radius: 32px;
 }
 
@@ -154,83 +222,12 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 24px;
-  background-color: #00D200;
-  border-radius: 24px;
-}
-
-.c14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 48px;
-  background-color: #0046FF;
-  border-radius: 48px;
-}
-
-.c15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 32px;
-  background-color: #0046FF;
-  border-radius: 32px;
-}
-
-.c16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #0046FF;
-  border-radius: 24px;
-}
-
-.c3 {
-  width: 48px;
-}
-
-.c7 {
-  width: 32px;
-}
-
-.c10 {
   width: 24px;
+  background-color: #0046FF;
+  border-radius: 24px;
 }
 
-.c5 {
+.c4 {
   font-weight: 800;
 }
 
@@ -241,28 +238,28 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
     className="c1"
   >
     <span
-      className="c2 c3"
+      className="c2"
     >
       <span
-        className="c4 c5"
+        className="c3 c4"
       >
         ISK
       </span>
     </span>
     <span
-      className="c6 c7"
+      className="c5"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         ISK
       </span>
     </span>
     <span
-      className="c9 c10"
+      className="c7"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         ISK
       </span>
@@ -272,28 +269,28 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
     className="c1"
   >
     <span
-      className="c11 c3"
+      className="c8"
     >
       <span
-        className="c4 c5"
+        className="c3 c4"
       >
         SEB
       </span>
     </span>
     <span
-      className="c12 c7"
+      className="c9"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         SEB
       </span>
     </span>
     <span
-      className="c13 c10"
+      className="c10"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         SEB
       </span>
@@ -303,28 +300,28 @@ exports[`Storyshots Molecules / Badge / AccountBadge Common use cases 1`] = `
     className="c1"
   >
     <span
-      className="c14 c3"
+      className="c11"
     >
       <span
-        className="c4 c5"
+        className="c3 c4"
       >
         Handels
       </span>
     </span>
     <span
-      className="c15 c7"
+      className="c12"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         HB
       </span>
     </span>
     <span
-      className="c16 c10"
+      className="c13"
     >
       <span
-        className="c8 c5"
+        className="c6 c4"
       >
         HB
       </span>
@@ -343,7 +340,7 @@ exports[`Storyshots Molecules / Badge / AccountBadge Custom children 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -368,12 +365,9 @@ exports[`Storyshots Molecules / Badge / AccountBadge Custom children 1`] = `
   text-align: center;
   box-sizing: border-box;
   height: 32px;
+  width: 32px;
   background-color: #0046FF;
   border-radius: 32px;
-}
-
-.c5 {
-  width: 32px;
 }
 
 .c0 {
@@ -433,7 +427,7 @@ exports[`Storyshots Molecules / Badge / AccountBadge Custom children 1`] = `
   align-self: center;
 }
 
-.c7 {
+.c6 {
   font-size: 8px;
   color: #FFFFFF;
 }
@@ -457,10 +451,10 @@ exports[`Storyshots Molecules / Badge / AccountBadge Custom children 1`] = `
     </div>
     <div>
       <span
-        className="c4 c5"
+        className="c4"
       >
         <span
-          className="c6"
+          className="c5"
         >
           KF
         </span>
@@ -482,10 +476,10 @@ exports[`Storyshots Molecules / Badge / AccountBadge Custom children 1`] = `
     </div>
     <div>
       <span
-        className="c4 c5"
+        className="c4"
       >
         <span
-          className="c3 c7"
+          className="c3 c6"
         >
           ASK
         </span>
