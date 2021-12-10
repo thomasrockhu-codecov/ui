@@ -1,6 +1,8 @@
-type TooltipBadgeProps = {
+export type TooltipBadgeProps = {
   badgeSize?: 's' | 'l' | number;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
 };
 
-export type TooltipBadgeComponent = React.FC<TooltipBadgeProps>;
+export type TooltipBadgeComponent = React.ForwardRefExoticComponent<
+  TooltipBadgeProps & React.RefAttributes<HTMLSpanElement>
+>;

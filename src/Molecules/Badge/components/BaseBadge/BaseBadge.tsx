@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BaseBadgeComponent, WrapperComponent, WrapperProps } from './BaseBadge.types';
+import {
+  BaseBadgeComponent,
+  BaseBadgeProps,
+  WrapperComponent,
+  WrapperProps,
+} from './BaseBadge.types';
 
 const Wrapper: WrapperComponent = styled.span<WrapperProps>`
   display: inline-flex;
@@ -17,25 +22,24 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
       : ''};
 `;
 
-export const BaseBadge: BaseBadgeComponent = ({
-  children,
-  color,
-  secondaryColor,
-  badgeColor,
-  badgeSize,
-  variant,
-  weight,
-  ...htmlProps
-}) => (
-  <Wrapper
-    $badgeSize={badgeSize}
-    $color={color}
-    $secondaryColor={secondaryColor}
-    $badgeColor={badgeColor}
-    $variant={variant}
-    $weight={weight}
-    {...htmlProps}
-  >
-    {children}
-  </Wrapper>
+export const BaseBadge: BaseBadgeComponent = React.forwardRef<HTMLSpanElement, BaseBadgeProps>(
+  (
+    { children, color, secondaryColor, badgeColor, badgeSize, variant, weight, ...htmlProps },
+    ref,
+  ) => {
+    return (
+      <Wrapper
+        {...htmlProps}
+        ref={ref}
+        $badgeSize={badgeSize}
+        $color={color}
+        $secondaryColor={secondaryColor}
+        $badgeColor={badgeColor}
+        $variant={variant}
+        $weight={weight}
+      >
+        {children}
+      </Wrapper>
+    );
+  },
 );

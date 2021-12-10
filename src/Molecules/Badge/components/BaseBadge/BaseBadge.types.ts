@@ -10,7 +10,7 @@ export type BaseBadgeProps = HtmlProps & {
   secondaryColor?: ColorFn;
   badgeColor?: ColorFn;
   badgeSize?: number;
-  variant?: 'square' | 'circle' | 'rect'; // add triangle?
+  variant?: 'square' | 'circle' | 'rect';
   weight?: string;
 };
 
@@ -23,5 +23,7 @@ export type WrapperProps = HtmlProps & {
   $weight?: BaseBadgeProps['weight'];
 };
 
-export type BaseBadgeComponent = React.FC<BaseBadgeProps>;
+export type BaseBadgeComponent = React.ForwardRefExoticComponent<
+  BaseBadgeProps & React.RefAttributes<HTMLSpanElement>
+>;
 export type WrapperComponent = React.FC<WrapperProps>;

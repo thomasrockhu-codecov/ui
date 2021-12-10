@@ -1,29 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TooltipBadgeComponent } from './TooltipBadge.types';
+import { TooltipBadgeProps } from './TooltipBadge.types';
 import { BaseBadge } from '..';
-import { Typography } from '../../../..';
+import Typography from '../../../../Atoms/Typography';
+import Button from '../../../Button';
 import { TooltipBadgeSize } from './TooltipBadge.constants';
 
-const StyledTypography = styled(Typography)<{ $addHoverEffect: boolean }>`
+const StyledTypography = styled(Typography)`
   font-weight: 800;
+  cursor: default;
 `;
 
-const StyledBaseBadge = styled(BaseBadge)<{ $addHoverEffect: boolean }>`
+const StyledBaseBadge = styled(BaseBadge)`
   ${(p) =>
     typeof p.badgeSize !== 'undefined' ? `width: ${p.theme.spacing.unit(p.badgeSize)}px;` : ''}
   border: 1px solid ${(p) => p.theme.color.bubbleBorder};
-  ${(p) =>
-    p.$addHoverEffect
-      ? `
+`;
+
+const StyledButton = styled(Button)`
+  ${(p) => `
     :hover {
       cursor: pointer;
-      border-color: ${p.theme.color.cta};
       ${StyledTypography} {
         color: ${p.theme.color.cta};
+        cursor: pointer;
       }
-    }`
-      : ''}
+      ${StyledBaseBadge} {
+        border-color: ${p.theme.color.cta};
+      }
+    }`}
 `;
 
 const mapToBaseBadge = (badgeSize?: keyof typeof TooltipBadgeSize) => {
@@ -37,20 +42,32 @@ const mapToBaseBadge = (badgeSize?: keyof typeof TooltipBadgeSize) => {
   }
 };
 
-export const TooltipBadge: TooltipBadgeComponent = ({ badgeSize }) => {
-  const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
-  const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
-  const addHoverEffect = baseBadgeSize !== TooltipBadgeSize.s;
+const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: number }>(
+  ({ baseBadgeSize, ...htmlProps }, ref) => {
+    const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
+    return (
+      <StyledBaseBadge
+        {...htmlProps}
+        ref={ref}
+        badgeColor={(t) => t.color.bubbleBackground}
+        badgeSize={baseBadgeSize}
+      >
+        <StyledTypography type={typographyType}>?</StyledTypography>
+      </StyledBaseBadge>
+    );
+  },
+);
 
-  return (
-    <StyledBaseBadge
-      badgeColor={(t) => t.color.bubbleBackground}
-      badgeSize={baseBadgeSize}
-      $addHoverEffect={addHoverEffect}
-    >
-      <StyledTypography type={typographyType} $addHoverEffect={addHoverEffect}>
-        ?
-      </StyledTypography>
-    </StyledBaseBadge>
-  );
-};
+export const TooltipBadge = React.forwardRef<HTMLSpanElement, TooltipBadgeProps>(
+  ({ badgeSize, onClick, ...htmlProps }, ref) => {
+    const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
+
+    return onClick ? (
+      <StyledButton variant="neutral" onClick={onClick}>
+        <TooltipBadgeContent {...htmlProps} ref={ref} baseBadgeSize={baseBadgeSize} />
+      </StyledButton>
+    ) : (
+      <TooltipBadgeContent {...htmlProps} ref={ref} baseBadgeSize={baseBadgeSize} />
+    );
+  },
+);

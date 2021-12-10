@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
+exports[`Storyshots Molecules / Badge / TooltipBadge Default and Common uses 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -10,7 +10,7 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -19,11 +19,20 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
   line-height: 1.6;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -48,7 +57,7 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
   border-radius: 16px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -68,27 +77,83 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
   border-radius: 24px;
 }
 
-.c8 {
-  font-weight: 800;
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 }
 
-.c5 {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c9 {
+  font-weight: 800;
+  cursor: default;
+}
+
+.c6 {
   width: 16px;
   border: 1px solid #BCBCB6;
 }
 
-.c10 {
+.c11 {
   width: 24px;
   border: 1px solid #BCBCB6;
 }
 
-.c10:hover {
+.c14:hover {
   cursor: pointer;
-  border-color: #0046FF;
 }
 
-.c10:hover .c7 {
+.c14:hover .c8 {
   color: #0046FF;
+  cursor: pointer;
+}
+
+.c14:hover .c5 {
+  border-color: #0046FF;
 }
 
 .c0 {
@@ -162,15 +227,15 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
       <span
         className="c3"
       >
-        Small Tooltip
+        Small Tooltip Badge
       </span>
     </div>
     <div>
       <span
-        className="c4 c5"
+        className="c4 c5 c6"
       >
         <span
-          className="c6 c7 c8"
+          className="c7 c8 c9"
         >
           ?
         </span>
@@ -187,19 +252,154 @@ exports[`Storyshots Molecules / Badge / TooltipBadge Default use 1`] = `
       <span
         className="c3"
       >
-        Large Tooltip
+        Small Tooltip Badge – Tooltip on hover
       </span>
     </div>
     <div>
       <span
-        className="c9 c10"
+        className="c4 c5 c6"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
       >
         <span
-          className="c11 c7 c8"
+          className="c7 c8 c9"
         >
           ?
         </span>
       </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Large Tooltip Badge
+      </span>
+    </div>
+    <div>
+      <span
+        className="c10 c5 c11"
+      >
+        <span
+          className="c12 c8 c9"
+        >
+          ?
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Large Tooltip Badge – Tooltip on hover
+      </span>
+    </div>
+    <div>
+      <span
+        className="c10 c5 c11"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <span
+          className="c12 c8 c9"
+        >
+          ?
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Large Tooltip Badge – onClick action
+      </span>
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c15"
+        >
+          <span
+            className="c10 c5 c11"
+          >
+            <span
+              className="c12 c8 c9"
+            >
+              ?
+            </span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Large Tooltip Badge – onClick opens drawer
+      </span>
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-sc-ey7f5x-0 c13 c14"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c15"
+        >
+          <span
+            className="c10 c5 c11"
+            data-drawer-prevent-click-outside={true}
+          >
+            <span
+              className="c12 c8 c9"
+            >
+              ?
+            </span>
+          </span>
+        </span>
+      </button>
     </div>
   </div>
 </div>
