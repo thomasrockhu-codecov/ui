@@ -124,7 +124,7 @@ export {
   /** @deprecated */ Select,
   Accordion,
   AccordionItem,
-  Avatar,
+  /** @deprecated */ Avatar,
   Badge,
   BarScale,
   Box,
