@@ -151,20 +151,24 @@ const Radio: RadioComponent = (props) => {
             }}
           />
           {!noRadioCircle && <Circle />}
-          {children || !hideLabel ? (
-            <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
-              {visuallyEmphasiseRequired ? `${label} *` : label}
-            </Label>
-          ) : (
-            <VisuallyHidden>
+          {children ||
+            (!hideLabel ? (
               <Label
                 type="secondary"
                 color={(t) => (disabled ? t.color.disabledText : t.color.text)}
               >
                 {visuallyEmphasiseRequired ? `${label} *` : label}
               </Label>
-            </VisuallyHidden>
-          )}
+            ) : (
+              <VisuallyHidden>
+                <Label
+                  type="secondary"
+                  color={(t) => (disabled ? t.color.disabledText : t.color.text)}
+                >
+                  {visuallyEmphasiseRequired ? `${label} *` : label}
+                </Label>
+              </VisuallyHidden>
+            ))}
         </Flexbox>
       </StyledFormLabel>
     </FormField>
