@@ -112,11 +112,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     indexFundsNorwegianAccent: rawColor.brandBlue,
 
     inputBackground: rawColor.white,
-    inputBorder: rawColor.gray4,
-    inputBorderError: rawColor.negative,
-    inputBorderHover: rawColor.gray1,
-    inputBorderSuccess: rawColor.positive,
-    inputHover: rawColor.gray7,
+    inputBorder: rawColor.gray400,
+    inputBorderError: rawColor.pink600,
+    inputBorderHover: rawColor.gray700,
+    inputBorderSuccess: rawColor.green600,
+    inputHover: rawColor.gray700,
 
     investmentPredictionGraphBlue: rawColor.complementaryBlue2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
