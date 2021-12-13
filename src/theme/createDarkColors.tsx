@@ -113,10 +113,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     indexFundsNorwegianAccent: rawColor.brandTurquoise,
 
     inputBackground: rawColor.gray800,
-    inputBorder: rawColor.gray4,
-    inputBorderError: rawColor.negative,
-    inputBorderHover: rawColor.gray1,
-    inputBorderSuccess: rawColor.positive,
+    inputBorder: rawColor.gray700,
+    inputBorderError: rawColor.pink500,
+    inputBorderHover: rawColor.gray800,
+    inputBorderSuccess: rawColor.green500,
     inputHover: rawColor.gray700,
 
     investmentPredictionGraphBlue: rawColor.complementaryTurquoise2,

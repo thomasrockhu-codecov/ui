@@ -202,7 +202,7 @@ export type ThemeColors = {
   barScaleActiveBar: string;
   /** gray6 */
   barScaleInactiveBar: string;
-  /** cta */
+  /** blue500 */
   borderActive: string;
   /** white */
   bubbleBackground: string;
@@ -296,11 +296,11 @@ export type ThemeColors = {
   indexFundsNorwegianAccent: string;
   /** white */
   inputBackground: string;
-  /** gray4 */
+  /** gray400 */
   inputBorder: string;
-  /** negative */
+  /** pink600 */
   inputBorderError: string;
-  /** gray1 */
+  /** gray700 */
   inputBorderHover: string;
   /** positive */
   inputBorderSuccess: string;
