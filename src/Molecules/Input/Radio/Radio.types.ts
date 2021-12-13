@@ -22,6 +22,7 @@ export type Props = {
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   noRadioCircle?: boolean;
+  hideLabel?: boolean;
   children?: React.ReactNode;
 };
 
