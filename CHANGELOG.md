@@ -1,3 +1,17 @@
+# [9.14.0](https://github.com/nordnet/ui/compare/v9.13.3...v9.14.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* 🐛 hide label ternary ([67e447c](https://github.com/nordnet/ui/commit/67e447c))
+* adjust world map colors ([b8f8d48](https://github.com/nordnet/ui/commit/b8f8d48))
+* align with darkmode feature ([e3b3acf](https://github.com/nordnet/ui/commit/e3b3acf))
+
+
+### Features
+
+* 🎸 add hideLabel prop to Input.Radio ([4df8b34](https://github.com/nordnet/ui/commit/4df8b34))
+
 ## [9.13.3](https://github.com/nordnet/ui/compare/v9.13.2...v9.13.3) (2021-12-13)
 
 
