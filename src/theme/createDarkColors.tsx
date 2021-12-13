@@ -64,8 +64,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonTextSecondary:rawColor.white,
     buttonTextDisabled: rawColor.gray600,
 
-    buy: rawColor.brandTurquoise,
-    buyActive: rawColor.ctaPressed,
+    buy: rawColor.blue400,
+    buyActive: rawColor.blue700,
 
     card: rawColor.gray0,
     cta: rawColor.blue500,
@@ -207,8 +207,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     selectionCardText: rawColor.gray2,
     selectOptionBackground: rawColor.gray800,
 
-    sell: rawColor.brandPink,
-    sellActive: rawColor.negativePressed,
+    sell: rawColor.pink500,
+    sellActive: rawColor.pink700,
     separator: rawColor.gray2,
 
     shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),

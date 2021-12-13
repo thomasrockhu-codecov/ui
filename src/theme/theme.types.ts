@@ -222,7 +222,7 @@ export type ThemeColors = {
   buttonTextSecondary: string;
   /** gray0 */
   buttonTextLight: string;
-  /** cta */
+  /** blue500 */
   buy: string;
   /** ctaPressed */
   buyActive: string;
@@ -444,9 +444,9 @@ export type ThemeColors = {
   selectionCardText: string;
   /** white */
   selectOptionBackground: string;
-  /** negative */
+  /** pink600 */
   sell: string;
-  /** negativePressed */
+  /** pink700 */
   sellActive: string;
   /** gray0 */
   separator: string;

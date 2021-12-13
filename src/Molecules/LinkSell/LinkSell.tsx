@@ -6,7 +6,7 @@ import { LinkSellComponent, UsedLinkProps as Props } from './LinkSell.types';
 // TODO: change the 0.5 unit padding top when line-height is divisible by the unit (4px)
 // prettier-ignore
 const StyledLink = styled(Link)<Props>`
-  color: ${p => (p.disabled ? p.theme.color.disabled : p.theme.color.sell)};
+  color: ${p => (p.disabled ? p.theme.color.disabledText : p.theme.color.sell)};
   padding: ${p => p.theme.spacing.unit(0.5)}px ${p => p.theme.spacing.unit(1)}px;
 
   &:hover {
