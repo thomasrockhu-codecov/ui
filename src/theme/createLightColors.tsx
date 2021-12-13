@@ -67,6 +67,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     buy: rawColor.blue500,
     buyActive: rawColor.blue700,
+    buyHover: rawColor.blue500,
+
     card: rawColor.white,
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
@@ -283,8 +285,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     warning: rawColor.index,
     
-    worldMapLand: rawColor.blue700,
-    worldMapWater: rawColor.gray800,
+    worldMapLand: rawColor.blue700, // not yet in use
+    worldMapWater: rawColor.gray800, // not yet in use
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

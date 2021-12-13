@@ -66,6 +66,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     buy: rawColor.blue400,
     buyActive: rawColor.blue700,
+    buyHover: rawColor.blue500,
 
     card: rawColor.gray0,
     cta: rawColor.blue500,
@@ -287,8 +288,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     warning: rawColor.index,
 
-    worldMapLand: rawColor.blue600,
-    worldMapWater: rawColor.gray800,
+    worldMapLand: rawColor.blue600, // not yet in use
+    worldMapWater: rawColor.gray800, // not yet in use
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

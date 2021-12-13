@@ -224,8 +224,10 @@ export type ThemeColors = {
   buttonTextLight: string;
   /** blue500 */
   buy: string;
-  /** ctaPressed */
+  /** blue700 */
   buyActive: string;
+  /** blue500 */
+  buyHover: string;
   /** gray100 */
   quickFilterBackground: string;
   /** blue100 */
@@ -548,10 +550,10 @@ export type ThemeColors = {
   transferStatusBannerText3: string;
   /** index */
   warning: string;
-  /** index */
-  worldMapLand: string;
-  /** index */
-  worldMapWater: string;
+  /** blue700 */
+  worldMapLand: string; // not yet in use
+  /** gray800 */
+  worldMapWater: string; // not yet in use
   /** SFDR Article 6 */
   sfdrArticle6: string;
   /** SFDR Article 8 */
