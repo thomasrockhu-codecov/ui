@@ -62,7 +62,7 @@ Array [
   display: inline-flex;
   padding: 4px 12px;
   min-height: 32px;
-  background-color: #0046FF;
+  background-color: #336BFF;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -103,11 +103,11 @@ Array [
 }
 
 .c3:hover {
-  background-color: hsl(223.5,100%,45%);
+  background-color: #2650BF;
 }
 
 .c3:active {
-  background-color: hsl(223.5,100%,40%);
+  background-color: #1F4099;
 }
 
 <div
@@ -159,7 +159,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -176,8 +176,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -186,27 +187,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -223,6 +231,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Låg CO₂ risk
         <div
           className="c4"
         >
@@ -240,7 +249,6 @@ Array [
             />
           </svg>
         </div>
-        Låg CO₂ risk
       </button>
     </h3>
   </div>,
@@ -251,7 +259,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -268,8 +276,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -278,27 +287,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -315,6 +331,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Sustainability score
         <div
           className="c4"
         >
@@ -332,7 +349,6 @@ Array [
             />
           </svg>
         </div>
-        Sustainability score
       </button>
     </h3>
   </div>,
@@ -347,7 +363,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -364,8 +380,9 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -374,27 +391,34 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -411,6 +435,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       onFocus={[Function]}
       type="button"
     >
+      Lemon drops and several cakes for two persons or more
       <div
         className="c4"
       >
@@ -428,7 +453,6 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
           />
         </svg>
       </div>
-      Lemon drops and several cakes for two persons or more
     </button>
   </h3>
 </div>
@@ -460,8 +484,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -470,28 +495,35 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  color: #A0A09B;
-  background-color: transparent;
-  cursor: default;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: default;
+  color: #A0A09B;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -509,6 +541,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        This accordion item is disabled
         <div
           className="c4"
         >
@@ -526,28 +559,19 @@ Array [
             />
           </svg>
         </div>
-        This accordion item is disabled
       </button>
     </h3>
   </div>,
   .c5 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c6 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c2 {
@@ -560,8 +584,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -570,28 +595,44 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-  padding-left: 0px;
-  color: #A0A09B;
-  background-color: transparent;
-  cursor: default;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: default;
+  color: #A0A09B;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  right: 0;
+  margin-top: 0;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding-right: 0px;
+}
+
+.c6 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
 }
 
 <div
@@ -616,14 +657,15 @@ Array [
           <svg
             aria-hidden="true"
             className="c5 c6"
-            direction="down"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 16 16"
+            width={8}
           >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+              fill="currentColor"
             />
           </svg>
         </div>
@@ -649,7 +691,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -675,8 +717,9 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -685,27 +728,34 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -722,6 +772,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       onFocus={[Function]}
       type="button"
     >
+      Låg CO₂ risk
       <div
         className="c4"
       >
@@ -739,7 +790,6 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
           />
         </svg>
       </div>
-      Låg CO₂ risk
     </button>
   </h3>
   <section>
@@ -765,7 +815,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -782,8 +832,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -792,27 +843,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -829,6 +887,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Content is text only
         <div
           className="c4"
         >
@@ -846,7 +905,6 @@ Array [
             />
           </svg>
         </div>
-        Content is text only
       </button>
     </h3>
   </div>,
@@ -857,7 +915,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -874,8 +932,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -884,27 +943,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -921,6 +987,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Content is a component
         <div
           className="c4"
         >
@@ -938,7 +1005,6 @@ Array [
             />
           </svg>
         </div>
-        Content is a component
       </button>
     </h3>
   </div>,
@@ -947,22 +1013,15 @@ Array [
 
 exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 .c5 {
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c6 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c2 {
@@ -975,8 +1034,9 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -985,27 +1045,43 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-  padding-left: 0px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  right: 0;
+  margin-top: 0;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding-right: 0px;
+}
+
+.c6 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
 }
 
 <div
@@ -1029,14 +1105,15 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
-          direction="down"
           focusable="false"
+          height={8}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 16 16"
+          width={8}
         >
-          <polygon
-            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+          <path
+            d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+            fill="currentColor"
           />
         </svg>
       </div>
@@ -1054,7 +1131,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1071,9 +1148,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding: 40px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 40px 40px 40px 40px;
 }
 
 .c1 + .c0 {
@@ -1106,27 +1183,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1143,24 +1227,24 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        <div
-          className="c4"
-        >
-          <svg
-            aria-hidden="true"
-            className="c5"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 12 12"
-          >
-            <path
-              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
         This accordion item has a custom padding
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </button>
     </h3>
   </div>,
@@ -1171,7 +1255,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1192,10 +1276,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-left: 80px;
-  padding-right: 80px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 80px 0px 80px;
 }
 
 .c1 + .c0 {
@@ -1224,27 +1307,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1261,24 +1351,24 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        <div
-          className="c4"
-        >
-          <svg
-            aria-hidden="true"
-            className="c5"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 12 12"
-          >
-            <path
-              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
         This accordion item has a custom horizontal padding
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </button>
     </h3>
   </div>,
@@ -1289,7 +1379,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1314,10 +1404,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 40px 0px 40px 0px;
 }
 
 .c1 + .c0 {
@@ -1342,27 +1431,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1379,24 +1475,24 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        <div
-          className="c4"
-        >
-          <svg
-            aria-hidden="true"
-            className="c5"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 12 12"
-          >
-            <path
-              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
         This accordion item has a custom vertical padding
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </button>
     </h3>
   </div>,
@@ -1407,7 +1503,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1436,9 +1532,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-top: 40px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 40px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1459,27 +1555,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1496,24 +1599,24 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        <div
-          className="c4"
-        >
-          <svg
-            aria-hidden="true"
-            className="c5"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 12 12"
-          >
-            <path
-              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
         This accordion item has a custom top padding
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </button>
     </h3>
   </div>,
@@ -1524,7 +1627,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1557,9 +1660,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-bottom: 40px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 40px 0px;
 }
 
 .c1 + .c0 {
@@ -1576,27 +1679,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1613,24 +1723,24 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        <div
-          className="c4"
-        >
-          <svg
-            aria-hidden="true"
-            className="c5"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 12 12"
-          >
-            <path
-              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
         This accordion item has a custom bottom padding
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </button>
     </h3>
   </div>,
@@ -1641,7 +1751,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1678,9 +1788,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-left: 80px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 80px;
 }
 
 .c1 + .c0 {
@@ -1693,27 +1803,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1730,6 +1847,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        This accordion item has a custom left padding
         <div
           className="c4"
         >
@@ -1747,27 +1865,19 @@ Array [
             />
           </svg>
         </div>
-        This accordion item has a custom left padding
       </button>
     </h3>
   </div>,
   .c5 {
+  color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c6 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c2 {
@@ -1804,9 +1914,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
-  padding-right: 80px;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 80px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1815,27 +1925,43 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-  padding-left: 0px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  right: 0;
+  margin-top: 0;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  padding-right: 0px;
+}
+
+.c6 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
 }
 
 <div
@@ -1859,14 +1985,15 @@ Array [
           <svg
             aria-hidden="true"
             className="c5 c6"
-            direction="down"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 16 16"
+            width={8}
           >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M8 7.418l-4-4-4 4V4.59l4-4 4 4v2.828z"
+              fill="currentColor"
             />
           </svg>
         </div>
@@ -1884,7 +2011,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1901,8 +2028,9 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -1911,27 +2039,34 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -1948,6 +2083,7 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
       onFocus={[Function]}
       type="button"
     >
+      This card has its hover and focus color disabled
       <div
         className="c4"
       >
@@ -1965,7 +2101,6 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
           />
         </svg>
       </div>
-      This card has its hover and focus color disabled
     </button>
   </h3>
 </div>
@@ -1979,7 +2114,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1996,8 +2131,9 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -2006,27 +2142,34 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -2043,6 +2186,7 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
       onFocus={[Function]}
       type="button"
     >
+      Sustainability score
       <div
         className="c4"
       >
@@ -2060,7 +2204,6 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
           />
         </svg>
       </div>
-      Sustainability score
     </button>
   </h3>
 </div>

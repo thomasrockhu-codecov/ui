@@ -61,25 +61,29 @@ export const primaryStyles = css<InnerProps>`
   ${minHeight}
   background-color: ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
-    const background = customColor || p.theme.color.cta;
+    const background = customColor || p.theme.color.buttonBackgroundPrimary;
 
-    return p.disabled ? p.theme.color.disabledBackground : background;
+    return p.disabled ? p.theme.color.buttonBackgroundDisabled : background;
   }};
-  color: ${(p) => (p.disabled ? p.theme.color.disabledText : p.theme.color.buttonText)};
+  color: ${(p) => (p.disabled ? p.theme.color.buttonTextDisabled : p.theme.color.buttonText)};
   ${getBorder('transparent')}
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
-    const background = customColor || p.theme.color.cta;
+    const background = customColor || p.theme.color.buttonBackgroundPrimary;
 
     return p.disabled
       ? ''
       : `
     &:hover {
-      background-color: ${Color(background).darken(0.1)};
+      background-color: ${
+        customColor ? Color(background).darken(0.1) : p.theme.color.buttonBackgroundHoverPrimary
+      };
     }
     &:active {
-      background-color: ${Color(background).darken(0.2)};
+      background-color: ${
+        customColor ? Color(background).darken(0.2) : p.theme.color.buttonBackgroundActivePrimary
+      };
     }
   `;
   }}
@@ -89,34 +93,56 @@ export const secondaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
-  background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.buttonSecondaryBackground};
+  background-color: ${(p) => (p.disabled ? p.theme.color.buttonBackgroundDisabled : 'transparent')};
 
   ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
-    const color = customColor || p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.cta;
+    const color = customColor || p.theme.color.buttonTextSecondary;
+
+    const hoverTextColor = (() => {
+      if (customColor) {
+        return Color(color).darken(0.2);
+      }
+      if (p.theme.isDarkMode) {
+        return color;
+      }
+      return p.theme.color.buttonHoverSecondary;
+    })();
+    const activeTextColor = (() => {
+      if (customColor) {
+        return Color(color).darken(0.3);
+      }
+      if (p.theme.isDarkMode) {
+        return color;
+      }
+      return p.theme.color.buttonActiveSecondary;
+    })();
 
     return `
-      color: ${p.disabled ? p.theme.color.disabledText : color};
-      ${getBorder(p.disabled ? 'transparent' : color)}
+      color: ${p.disabled ? p.theme.color.buttonTextDisabled : color};
+      ${getBorder(p.disabled ? 'transparent' : p.theme.color.buttonBorderSecondary)}
 
       ${
         p.disabled
           ? ''
           : `
         &:hover {
-          color: ${Color(color).darken(0.2)};
+          color: ${hoverTextColor};
 
           &::before {
-            border-color: ${Color(color).darken(0.2)};
+            border-color: ${
+              customColor ? Color(color).darken(0.2) : p.theme.color.buttonHoverSecondary
+            };
           }
         }
 
         &:active {
-          color: ${Color(color).darken(0.3)};
+          color: ${activeTextColor};
 
           &::before {
-            border-color: ${Color(color).darken(0.3)};
+            border-color: ${
+              customColor ? Color(color).darken(0.3) : p.theme.color.buttonActiveSecondary
+            };
           }
         }
       `
@@ -126,7 +152,7 @@ export const secondaryStyles = css<InnerProps>`
 `;
 
 export const neutralStyles = css<InnerProps>`
-  ${shared}
+  ${shared};
   padding: 0;
   background-color: transparent;
 

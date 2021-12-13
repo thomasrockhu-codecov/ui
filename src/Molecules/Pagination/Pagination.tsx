@@ -2,20 +2,24 @@ import React, { useCallback, useEffect, useState } from 'react';
 import R from 'ramda';
 import { PaginationProps } from './Pagination.types';
 import Regular from './variants/Regular';
+import RegularLinks from './variants/RegularLinks';
 import Compact from './variants/Compact';
+import CompactLinks from './variants/CompactLinks';
 import Large from './variants/Large';
+import LargeLinks from './variants/LargeLinks';
 
 const Pagination: React.FC<PaginationProps> = ({
   variant,
   currentPage: currentPageFromProps,
   itemsPerPage,
   totalItems,
-  onPageChange,
+  onPageChange = () => {},
   label = 'Pagination',
   nextPageLabel = 'Go to next page',
   previousPageLabel = 'Go to previous page',
   currentPageLabel = 'Current Page, page:',
   pageItemLabel = 'Go to Page',
+  getPageHref,
 }) => {
   const [currentPage, setCurrentPage] = useState(currentPageFromProps || 1);
 
@@ -55,7 +59,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
   return (
     <nav role="navigation" aria-label={label}>
-      {variant === 'compact' && (
+      {variant === 'compact' && !getPageHref && (
         <Compact
           currentPage={currentPageFromProps || currentPage}
           numberOfPages={numberOfPages}
@@ -66,7 +70,19 @@ const Pagination: React.FC<PaginationProps> = ({
         />
       )}
 
-      {variant === 'large' && (
+      {variant === 'compact' && getPageHref && (
+        <CompactLinks
+          currentPage={currentPageFromProps || currentPage}
+          numberOfPages={numberOfPages}
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+          getPageHref={getPageHref}
+        />
+      )}
+
+      {variant === 'large' && !getPageHref && (
         <Large
           currentPage={currentPageFromProps || currentPage}
           numberOfPages={numberOfPages}
@@ -80,7 +96,22 @@ const Pagination: React.FC<PaginationProps> = ({
         />
       )}
 
-      {variant === 'regular' && (
+      {variant === 'large' && getPageHref && (
+        <LargeLinks
+          currentPage={currentPageFromProps || currentPage}
+          numberOfPages={numberOfPages}
+          onClickPageItem={handlePageChange}
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
+          getPageHref={getPageHref}
+        />
+      )}
+
+      {variant === 'regular' && !getPageHref && (
         <Regular
           currentPage={currentPageFromProps || currentPage}
           numberOfPages={numberOfPages}
@@ -91,6 +122,21 @@ const Pagination: React.FC<PaginationProps> = ({
           previousPageLabel={previousPageLabel}
           currentPageLabel={currentPageLabel}
           pageItemLabel={pageItemLabel}
+        />
+      )}
+
+      {variant === 'regular' && getPageHref && (
+        <RegularLinks
+          currentPage={currentPageFromProps || currentPage}
+          numberOfPages={numberOfPages}
+          onClickPageItem={handlePageChange}
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
+          getPageHref={getPageHref}
         />
       )}
     </nav>

@@ -14,23 +14,24 @@ export const getColorLightScheme = (scheme: ThemeColorsVersion) => {
 
 export const createLightColors = (rawColor: RawColors): ThemeColors => {
   const lineColors = [
-    rawColor.complementaryPink1,
-    rawColor.complementaryBlue1,
-    rawColor.complementaryTurquoise1,
-    rawColor.complementaryGreen1,
     rawColor.brandPink,
-    rawColor.complementaryGreen2,
-    rawColor.complementaryBlue2,
-    rawColor.complementaryPink2,
-    rawColor.complementaryTurquoise2,
-    rawColor.gray1,
+    rawColor.positive,
+    rawColor.graphPurple,
+    rawColor.complementaryTurquoise1,
+    rawColor.negative,
+    rawColor.brandBlue,
+    rawColor.gray3,
+    rawColor.graphOrange,
   ];
 
   // prettier-ignore
   return {
     accordionText: rawColor.gray2,
 
-    background: rawColor.gray7,
+    accountBadgeBackground: rawColor.black,
+    accountBadgeText: rawColor.white,
+
+    background: rawColor.gray100,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
 
@@ -49,13 +50,26 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     bulbForeground: rawColor.gray0,
 
     buttonSecondaryBackground: rawColor.white,
-    buttonText: rawColor.white,
     buttonTextLight: rawColor.gray0,
+
+    buttonBackgroundPrimary: rawColor.blue500,
+    buttonBackgroundHoverPrimary: rawColor.blue600,
+    buttonBackgroundActivePrimary: rawColor.blue700,
+    buttonBackgroundDisabled: rawColor.gray200,
+
+    buttonBorderSecondary: rawColor.blue500,
+    buttonHoverSecondary: rawColor.blue600,
+    buttonActiveSecondary: rawColor.blue700,
+
+    buttonText: rawColor.white,
+    buttonTextSecondary: rawColor.blue500,
+    buttonTextDisabled: rawColor.gray500,
 
     buy: rawColor.cta,
     buyActive: rawColor.ctaPressed,
     card: rawColor.white,
-    cta: rawColor.cta,
+    cta: rawColor.blue500,
+    ctaHover: rawColor.blue600,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
@@ -78,12 +92,14 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     generationSavingsTimelineColor3: rawColor.brandBlue,
     generationSavingsTimelineColor4: rawColor.complementaryBlue1,
 
+    keyFiguresBackground: rawColor.gray100,
+
     graphVolume: rawColor.gray5,
     graphVolumeHover: rawColor.gray4,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
-    icon: rawColor.gray2,
+    icon: rawColor.gray800,
 
     indexFundsBackground: rawColor.gray6,
     indexFundsFinnishAccent: [
@@ -136,6 +152,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     orderAccountLabel: rawColor.gray1,
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
+    orderPanelLabelColor: rawColor.gray600,
+    orderPanelItemBackgroundHover: rawColor.gray100,
 
     otherMonthDateText: rawColor.gray4,
 
@@ -155,6 +173,18 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     placeholderText: rawColor.gray2,
 
     positive: rawColor.positive,
+
+    infoBarBackgroundSuccess: rawColor.green100,
+    infoBarBackgroundWarning: rawColor.yellow100,
+    infoBarBackgroundError: rawColor.red100,
+    infoBarBackgroundInfo: rawColor.gray100,
+
+    infoBarSuccess: rawColor.green500,
+    infoBarWarning: rawColor.yellow400,
+    infoBarError: rawColor.red500,
+    infoBarInfo: rawColor.blue500,
+
+    link: rawColor.blue500,
 
     privateBankingBannerBackground: rawColor.gray6,
     privateBankingBannerText: rawColor.white,
@@ -212,6 +242,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
+    tableEmphasis: rawColor.blue100,
 
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
@@ -243,6 +274,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
+
+    quickFilterSelectedBackground: rawColor.blue100,
+    quickFilterBackground: rawColor.gray100,
+    quickFilterText: rawColor.gray800,
+    quickFilterSelectedText: rawColor.blue400,
+    
 
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,

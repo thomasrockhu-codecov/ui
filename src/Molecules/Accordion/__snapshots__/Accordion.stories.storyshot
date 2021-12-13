@@ -9,7 +9,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -26,8 +26,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -36,27 +37,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -73,6 +81,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Låg CO₂ risk
         <div
           className="c4"
         >
@@ -90,7 +99,6 @@ Array [
             />
           </svg>
         </div>
-        Låg CO₂ risk
       </button>
     </h3>
   </div>,
@@ -101,7 +109,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -118,8 +126,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -128,27 +137,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -165,6 +181,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Sustainability score
         <div
           className="c4"
         >
@@ -182,7 +199,6 @@ Array [
             />
           </svg>
         </div>
-        Sustainability score
       </button>
     </h3>
   </div>,
@@ -198,7 +214,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -215,8 +231,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -225,27 +242,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -262,6 +286,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Låg CO₂ risk
         <div
           className="c4"
         >
@@ -279,7 +304,6 @@ Array [
             />
           </svg>
         </div>
-        Låg CO₂ risk
       </button>
     </h3>
   </div>,
@@ -290,7 +314,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #0046FF;
+  fill: #336BFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -307,8 +331,9 @@ Array [
 }
 
 .c1 {
-  outline: none;
+  outline: 1px solid none;
   background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
 
 .c1 + .c0 {
@@ -317,27 +342,34 @@ Array [
 
 .c3 {
   font: inherit;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  border: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0px;
-  padding-left: 24px;
-  background-color: transparent;
-  cursor: pointer;
   text-align: start;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c4 {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  margin-top: -2px;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  padding-right: 12px;
 }
 
 <div
@@ -354,6 +386,7 @@ Array [
         onFocus={[Function]}
         type="button"
       >
+        Sustainability score
         <div
           className="c4"
         >
@@ -371,7 +404,6 @@ Array [
             />
           </svg>
         </div>
-        Sustainability score
       </button>
     </h3>
   </div>,

@@ -128,8 +128,8 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
 }
 
 .c8:checked + .c10 {
-  border-color: #0046FF;
-  background: #0046FF;
+  border-color: #336BFF;
+  background: #336BFF;
 }
 
 .c8:checked + .c10 svg {
@@ -146,7 +146,7 @@ exports[`Storyshots Molecules / Fieldset Default 1`] = `
 }
 
 .c8:focus + .c10::before {
-  border: 1px solid #0046FF;
+  border: 1px solid #336BFF;
 }
 
 .c14 {

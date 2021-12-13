@@ -1356,4 +1356,61 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms / Flag Only Border On Light Mode 1`] = `
+.c0 {
+  padding: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  height: 20px;
+  border: 1px solid #EBEBE8;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    focusable="false"
+    role="img"
+    viewBox="0 0 640 480"
+  >
+    <path
+      d="M0 0h640v480H0z"
+      fill="#fff"
+    />
+    <path
+      d="M0 174.545h640v130.909H0z"
+      fill="#003580"
+    />
+    <path
+      d="M175.455 0h130.909v480H175.455z"
+      fill="#003580"
+    />
+    <title>
+      Finland
+    </title>
+  </svg>
+  <span
+    className="c2"
+  >
+    Notice flag does not have border on dark mode
+  </span>
+</div>
+`;
+
 exports[`Storyshots Atoms / Flag Renders nothing if wrong country code 1`] = `null`;

@@ -1495,6 +1495,21 @@ export const onSearchQueryChange = () => (
   />
 );
 
+const placeholder = [{ label: '', value: null, disabled: true }];
+
+export const onSearchQueryChangeWithoutOptions = () => (
+  <Input.Select
+    id="success-select"
+    options={placeholder}
+    label="User account"
+    success
+    showSearch
+    hideDisabledOptions
+    onSearchQueryChange={action('search query change')}
+    placeholder="Select account"
+  />
+);
+
 export const focusWithoutScrolling = () => (
   <>
     <br />
