@@ -1,3 +1,10 @@
+## [9.14.2](https://github.com/nordnet/ui/compare/v9.14.1...v9.14.2) (2021-12-13)
+
+
+### Bug Fixes
+
+* 🐛 update input radio snapshot ([37d52ca](https://github.com/nordnet/ui/commit/37d52ca))
+
 ## [9.14.1](https://github.com/nordnet/ui/compare/v9.14.0...v9.14.1) (2021-12-13)
 
 
