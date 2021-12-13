@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { Flexbox, FormField, FormLabel, Typography } from '../../..';
+import { Flexbox, FormField, FormLabel, Typography, VisuallyHidden } from '../../..';
 import { InternalInputProps, Props, RadioComponent } from './Radio.types';
 import { isString } from '../../../common/utils';
 
@@ -122,6 +122,7 @@ const Radio: RadioComponent = (props) => {
     visuallyEmphasiseRequired,
     width,
     noRadioCircle,
+    hideLabel,
     children,
   } = props;
 
@@ -150,10 +151,19 @@ const Radio: RadioComponent = (props) => {
             }}
           />
           {!noRadioCircle && <Circle />}
-          {children || (
+          {children || !hideLabel ? (
             <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
               {visuallyEmphasiseRequired ? `${label} *` : label}
             </Label>
+          ) : (
+            <VisuallyHidden>
+              <Label
+                type="secondary"
+                color={(t) => (disabled ? t.color.disabledText : t.color.text)}
+              >
+                {visuallyEmphasiseRequired ? `${label} *` : label}
+              </Label>
+            </VisuallyHidden>
           )}
         </Flexbox>
       </StyledFormLabel>
