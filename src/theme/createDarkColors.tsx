@@ -32,7 +32,6 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     background: rawColor.gray900,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
-    backgoundPageWrapper: rawColor.black,
 
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
 

@@ -196,8 +196,6 @@ export type ThemeColors = {
   backgroundBlack: string;
   /** gray0 */
   backgroundDark: string;
-  /** white */
-  backgoundPageWrapper: string;
   /** complementaryBlue1 */
   barGraphHighlight: string;
   /** complementaryBlue1 */

@@ -34,7 +34,6 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     background: rawColor.gray100,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
-    backgoundPageWrapper: rawColor.white,
 
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
 
