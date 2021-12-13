@@ -83,6 +83,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     disabledText: rawColor.gray3,
 
     divider: rawColor.gray6,
+    pageWrapperDivider: rawColor.gray700,
     emptyState: rawColor.gray4,
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
@@ -279,7 +280,6 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterBackground: rawColor.gray100,
     quickFilterText: rawColor.gray800,
     quickFilterSelectedText: rawColor.blue400,
-    
 
     warning: rawColor.index,
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,

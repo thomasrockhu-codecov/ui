@@ -368,6 +368,8 @@ export type ThemeColors = {
   orderPanelItemBackgroundHover: string;
   /** otherMonthDateText */
   otherMonthDateText: string;
+  /** gray700 */
+  pageWrapperDivider: string;
   paletteBlue: string[];
   paletteGreen: string[];
   paletteLineGraph: string[];
