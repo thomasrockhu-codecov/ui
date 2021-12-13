@@ -1,3 +1,11 @@
+## [9.13.3](https://github.com/nordnet/ui/compare/v9.13.2...v9.13.3) (2021-12-13)
+
+
+### Bug Fixes
+
+* add specific wrapper divider color ([d5aacc5](https://github.com/nordnet/ui/commit/d5aacc5))
+* remove color that wasn't to be added now ([60dd4b2](https://github.com/nordnet/ui/commit/60dd4b2))
+
 ## [9.13.2](https://github.com/nordnet/ui/compare/v9.13.1...v9.13.2) (2021-12-13)
 
 
