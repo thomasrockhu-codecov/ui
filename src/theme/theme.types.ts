@@ -224,8 +224,10 @@ export type ThemeColors = {
   buttonTextLight: string;
   /** blue500 */
   buy: string;
-  /** ctaPressed */
+  /** blue700 */
   buyActive: string;
+  /** blue500 */
+  buyHover: string;
   /** gray100 */
   quickFilterBackground: string;
   /** blue100 */

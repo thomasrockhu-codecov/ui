@@ -14,7 +14,7 @@ const StyledLink = styled(Link)<Props>`
 
     ${p => !p.disabled && `
       color: ${p.theme.color.buttonText};
-      background-color: ${p.theme.color.buy};
+      background-color: ${p.theme.color.buyHover};
     `}
   }
 

@@ -67,6 +67,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     buy: rawColor.blue500,
     buyActive: rawColor.blue700,
+    buyHover: rawColor.blue500,
+
     card: rawColor.white,
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
