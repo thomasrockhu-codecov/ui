@@ -1,3 +1,10 @@
+## [9.14.1](https://github.com/nordnet/ui/compare/v9.14.0...v9.14.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* dark mode buy links should use different bg on hover ([de6e2f4](https://github.com/nordnet/ui/commit/de6e2f4))
+
 # [9.14.0](https://github.com/nordnet/ui/compare/v9.13.3...v9.14.0) (2021-12-13)
 
 
