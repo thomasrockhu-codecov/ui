@@ -196,6 +196,8 @@ export type ThemeColors = {
   backgroundBlack: string;
   /** gray0 */
   backgroundDark: string;
+  /** white */
+  backgoundPageWrapper: string;
   /** complementaryBlue1 */
   barGraphHighlight: string;
   /** complementaryBlue1 */
@@ -368,6 +370,8 @@ export type ThemeColors = {
   orderPanelItemBackgroundHover: string;
   /** otherMonthDateText */
   otherMonthDateText: string;
+  /** gray700 */
+  pageWrapperDivider: string;
   paletteBlue: string[];
   paletteGreen: string[];
   paletteLineGraph: string[];

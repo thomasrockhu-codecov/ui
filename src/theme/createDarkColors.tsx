@@ -32,6 +32,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     background: rawColor.gray900,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
+    backgoundPageWrapper: rawColor.black,
 
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
 
@@ -61,7 +62,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonActiveSecondary: rawColor.blue700,
 
     buttonText: rawColor.white,
-    buttonTextSecondary:rawColor.white,
+    buttonTextSecondary: rawColor.white,
     buttonTextDisabled: rawColor.gray600,
 
     buy: rawColor.blue400,
@@ -82,7 +83,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     disabledBackground: rawColor.gray900,
     disabledText: rawColor.gray600,
 
-    divider: rawColor.gray1,
+    divider: rawColor.gray900,
+    pageWrapperDivider: rawColor.gray800,
     emptyState: rawColor.gray4,
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
