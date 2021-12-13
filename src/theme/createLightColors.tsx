@@ -118,7 +118,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     inputBorderError: rawColor.pink600,
     inputBorderHover: rawColor.gray700,
     inputBorderSuccess: rawColor.green600,
-    inputHover: rawColor.gray700,
+    inputHover: rawColor.gray100,
 
     investmentPredictionGraphBlue: rawColor.complementaryBlue2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
