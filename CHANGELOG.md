@@ -1,3 +1,11 @@
+## [9.13.1](https://github.com/nordnet/ui/compare/v9.13.0...v9.13.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* update buy link colors ([2611fea](https://github.com/nordnet/ui/commit/2611fea))
+* update sell link buttons and revert back to old semantic color for buy link ([a63a7c0](https://github.com/nordnet/ui/commit/a63a7c0))
+
 # [9.13.0](https://github.com/nordnet/ui/compare/v9.12.0...v9.13.0) (2021-12-09)
 
 
