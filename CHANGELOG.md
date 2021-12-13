@@ -1,3 +1,11 @@
+## [9.13.2](https://github.com/nordnet/ui/compare/v9.13.1...v9.13.2) (2021-12-13)
+
+
+### Bug Fixes
+
+* input focus border color adjustment ([8661e12](https://github.com/nordnet/ui/commit/8661e12))
+* input focus border color for darkmode ([0877e9c](https://github.com/nordnet/ui/commit/0877e9c))
+
 ## [9.13.1](https://github.com/nordnet/ui/compare/v9.13.0...v9.13.1) (2021-12-13)
 
 
