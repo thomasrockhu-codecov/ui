@@ -1,3 +1,11 @@
+## [9.14.3](https://github.com/nordnet/ui/compare/v9.14.2...v9.14.3) (2021-12-14)
+
+
+### Bug Fixes
+
+* input item hover was too gray ([af6dd57](https://github.com/nordnet/ui/commit/af6dd57))
+* update snapshots ([d1a9506](https://github.com/nordnet/ui/commit/d1a9506))
+
 ## [9.14.2](https://github.com/nordnet/ui/compare/v9.14.1...v9.14.2) (2021-12-13)
 
 
