@@ -1,3 +1,10 @@
+# [9.15.0](https://github.com/nordnet/ui/compare/v9.14.4...v9.15.0) (2021-12-14)
+
+
+### Features
+
+* add darkmode illustration colors ([225d6ba](https://github.com/nordnet/ui/commit/225d6ba))
+
 ## [9.14.4](https://github.com/nordnet/ui/compare/v9.14.3...v9.14.4) (2021-12-14)
 
 
