@@ -1,3 +1,10 @@
+## [9.14.4](https://github.com/nordnet/ui/compare/v9.14.3...v9.14.4) (2021-12-14)
+
+
+### Bug Fixes
+
+* adjust badge colors ([17064e3](https://github.com/nordnet/ui/commit/17064e3))
+
 ## [9.14.3](https://github.com/nordnet/ui/compare/v9.14.2...v9.14.3) (2021-12-14)
 
 
