@@ -1,3 +1,10 @@
+## [9.15.1](https://github.com/nordnet/ui/compare/v9.15.0...v9.15.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* adjust card dark mode color ([b074671](https://github.com/nordnet/ui/commit/b074671))
+
 # [9.15.0](https://github.com/nordnet/ui/compare/v9.14.4...v9.15.0) (2021-12-14)
 
 
