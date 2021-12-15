@@ -2,12 +2,12 @@ import React from 'react';
 import MD from 'react-markdown';
 import docs from './Badge.md';
 
-import { Button, Typography } from '../..';
+import { Badge, Typography } from '../..';
 
 export default {
   title: 'Molecules / Badge',
   parameters: {
-    component: Button,
+    component: Badge,
   },
 };
 

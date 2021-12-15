@@ -5,6 +5,9 @@ import { Flexbox } from '../../../..';
 
 export default {
   title: 'Molecules / Badge / StatusBadge',
+  parameters: {
+    component: Badge.StatusBadge,
+  },
 };
 
 export const informationStatusBadge = () => (

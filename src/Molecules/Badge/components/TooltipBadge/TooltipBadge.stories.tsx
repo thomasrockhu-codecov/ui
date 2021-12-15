@@ -7,6 +7,9 @@ import { Display } from '../../../../common/Display';
 
 export default {
   title: 'Molecules / Badge / TooltipBadge',
+  parameters: {
+    component: Badge.TooltipBadge,
+  },
 };
 
 export const DefaultUse = () => {

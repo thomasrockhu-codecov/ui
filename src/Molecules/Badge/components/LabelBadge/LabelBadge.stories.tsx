@@ -4,6 +4,9 @@ import { Display } from '../../../../common/Display';
 
 export default {
   title: 'Molecules / Badge / LabelBadge',
+  parameters: {
+    component: Badge.LabelBadge,
+  },
 };
 
 export const LabelBadge = () => {

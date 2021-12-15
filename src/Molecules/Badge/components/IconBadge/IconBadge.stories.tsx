@@ -5,6 +5,9 @@ import { Display } from '../../../../common/Display';
 
 export default {
   title: 'Molecules / Badge / IconBadge',
+  parameters: {
+    component: Badge.IconBadge,
+  },
 };
 
 export const DefaultUse = () => {

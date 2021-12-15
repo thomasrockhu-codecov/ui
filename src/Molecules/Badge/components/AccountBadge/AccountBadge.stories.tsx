@@ -6,6 +6,9 @@ import Badge from '../..';
 
 export default {
   title: 'Molecules / Badge / AccountBadge',
+  parameters: {
+    component: Badge.AccountBadge,
+  },
 };
 
 export const CommonUseCases = () => (

@@ -6,6 +6,9 @@ import { numberWithLimit } from '../../../../common/utils';
 
 export default {
   title: 'Molecules / Badge / NotificationBadge',
+  parameters: {
+    component: Badge.NotificationBadge,
+  },
 };
 
 export const defaultShowcase = () => (
