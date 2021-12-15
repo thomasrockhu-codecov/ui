@@ -1,8 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Badge / StatusBadge Status Badge - Information 1`] = `
+exports[`Storyshots Molecules / Badge / StatusBadge Default and all combinations 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c2 {
+  background-color: transparent;
+}
+
+.c4 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+@media (min-width:760px) {
   .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Default Status Badge
+    </span>
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height={16}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={16}
+        >
+          <path
+            clipRule="evenodd"
+            d="M7 15V5h2v10H7zM7 3V1h2v2H7z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -19,16 +115,16 @@ Array [
   margin-right: -6px;
 }
 
-.c1 > * {
+.c3 > * {
   padding-left: 6px;
   padding-right: 6px;
 }
 
-.c1 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c4 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -39,7 +135,7 @@ Array [
   flex-direction: column;
 }
 
-.c2 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -53,11 +149,20 @@ Array [
   display: block;
 }
 
-.c3 {
+.c5 {
   fill: #FFFFFF;
 }
 
-.c6 {
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -66,7 +171,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -75,53 +180,69 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
+.c2 {
   background-color: #F5F5F5;
   border-left: 4px solid #FFCF00;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c5 {
+.c7 {
   width: 100%;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
 }
 
 <div
     className="c0"
-    scope="module"
   >
-    <div
+    <span
       className="c1"
     >
-      <svg
-        aria-hidden="true"
-        className="c2"
-        focusable="false"
-        preserveAspectRatio="xMidYMid meet"
-        role="presentation"
-        viewBox="0 0 92 90"
-      >
-        <path
-          d="M46 0l46 89.3913043H0z"
-        />
-        <path
-          className="c3"
-          d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-        />
-      </svg>
+      All combinations
+    </span>
+    <div
+      className="c2"
+      scope="module"
+    >
       <div
-        className="c4 c5"
+        className="c3"
       >
-        <span
-          className="c6"
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 92 90"
         >
-          NOTE
-        </span>
-        <span
-          className="c7"
+          <path
+            d="M46 0l46 89.3913043H0z"
+          />
+          <path
+            className="c5"
+            d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
+          />
+        </svg>
+        <div
+          className="c6 c7"
         >
-          Triangle shape for warning variant yet to be implemented.
-        </span>
+          <span
+            className="c8"
+          >
+            NOTE
+          </span>
+          <span
+            className="c9"
+          >
+            Triangle shape for warning variant yet to be implemented.
+          </span>
+        </div>
       </div>
     </div>
   </div>,
@@ -156,6 +277,27 @@ Array [
   display: block;
 }
 
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -171,9 +313,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #336BFF;
   height: 72px;
   width: 72px;
-  background-color: #336BFF;
   border-radius: 72px;
 }
 
@@ -192,31 +334,10 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #336BFF;
   height: 48px;
   width: 48px;
-  background-color: #336BFF;
   border-radius: 48px;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  height: 32px;
-  width: 32px;
-  background-color: #336BFF;
-  border-radius: 32px;
 }
 
 .c6 {
@@ -234,9 +355,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #336BFF;
   height: 24px;
   width: 24px;
-  background-color: #336BFF;
   border-radius: 24px;
 }
 
@@ -255,9 +376,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #00D200;
   height: 72px;
   width: 72px;
-  background-color: #00D200;
   border-radius: 72px;
 }
 
@@ -276,9 +397,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #00D200;
   height: 48px;
   width: 48px;
-  background-color: #00D200;
   border-radius: 48px;
 }
 
@@ -297,9 +418,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #00D200;
   height: 32px;
   width: 32px;
-  background-color: #00D200;
   border-radius: 32px;
 }
 
@@ -318,9 +439,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #00D200;
   height: 24px;
   width: 24px;
-  background-color: #00D200;
   border-radius: 24px;
 }
 
@@ -339,9 +460,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FFCF00;
   height: 72px;
   width: 72px;
-  background-color: #FFCF00;
   border-radius: 72px;
 }
 
@@ -360,9 +481,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FFCF00;
   height: 48px;
   width: 48px;
-  background-color: #FFCF00;
   border-radius: 48px;
 }
 
@@ -381,9 +502,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FFCF00;
   height: 32px;
   width: 32px;
-  background-color: #FFCF00;
   border-radius: 32px;
 }
 
@@ -402,9 +523,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FFCF00;
   height: 24px;
   width: 24px;
-  background-color: #FFCF00;
   border-radius: 24px;
 }
 
@@ -423,9 +544,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FF1900;
   height: 72px;
   width: 72px;
-  background-color: #FF1900;
   border-radius: 72px;
 }
 
@@ -444,9 +565,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FF1900;
   height: 48px;
   width: 48px;
-  background-color: #FF1900;
   border-radius: 48px;
 }
 
@@ -465,9 +586,9 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FF1900;
   height: 32px;
   width: 32px;
-  background-color: #FF1900;
   border-radius: 32px;
 }
 
@@ -486,10 +607,14 @@ Array [
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #FF1900;
   height: 24px;
   width: 24px;
-  background-color: #FF1900;
   border-radius: 24px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div

@@ -7,7 +7,6 @@ export type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BaseBadgeProps = HtmlProps & {
   color?: ColorFn;
-  secondaryColor?: ColorFn;
   badgeColor?: ColorFn;
   badgeSize?: number;
   variant?: 'square' | 'circle' | 'rect';
@@ -17,8 +16,7 @@ export type BaseBadgeProps = HtmlProps & {
 
 export type WrapperProps = HtmlProps & {
   $color: BaseBadgeProps['color'];
-  $secondaryColor?: BaseBadgeProps['secondaryColor'];
-  $badgeColor?: BaseBadgeProps['badgeColor'];
+  $badgeColor: ColorFn;
   $badgeSize: BaseBadgeProps['badgeSize'];
   $variant?: BaseBadgeProps['variant'];
   $weight?: BaseBadgeProps['weight'];

@@ -74,7 +74,7 @@ const getStatusBadgeProps = (
   }
 };
 
-export const StatusBadge: StatusBadgeComponent = ({ variant, badgeSize }) => {
+export const StatusBadge: StatusBadgeComponent = ({ variant = 'information', badgeSize = 'm' }) => {
   const statusBadgeProps = getStatusBadgeProps(variant, badgeSize);
 
   return (

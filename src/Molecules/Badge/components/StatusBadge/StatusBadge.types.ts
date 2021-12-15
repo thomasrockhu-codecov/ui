@@ -2,8 +2,8 @@ export type StatusVariant = 'create' | 'complete' | 'pending' | 'error' | 'warni
 export type StatusBadgeSize = 's' | 'm' | 'l' | 'xl';
 
 type StatusBadgeProps = {
-  variant: StatusVariant;
-  badgeSize: StatusBadgeSize;
+  variant?: StatusVariant;
+  badgeSize?: StatusBadgeSize;
 };
 
 export type StatusBadgeComponent = React.FC<StatusBadgeProps>;

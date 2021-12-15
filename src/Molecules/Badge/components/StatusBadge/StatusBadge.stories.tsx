@@ -1,7 +1,7 @@
 import React from 'react';
 import Badge from '../..';
 import FeedbackBanner from '../../../FeedbackBanner';
-import { Flexbox } from '../../../..';
+import { Box, Flexbox, Typography } from '../../../..';
 
 export default {
   title: 'Molecules / Badge / StatusBadge',
@@ -10,11 +10,20 @@ export default {
   },
 };
 
-export const informationStatusBadge = () => (
+export const InformationStatusBadge = () => (
   <>
-    <FeedbackBanner title="NOTE" variant="warning">
-      Triangle shape for warning variant yet to be implemented.
-    </FeedbackBanner>
+    <Box mb={4}>
+      <Typography type="title2">Default Status Badge</Typography>
+      <Box>
+        <Badge.StatusBadge />
+      </Box>
+    </Box>
+    <Box mb={4}>
+      <Typography type="title2">All combinations</Typography>
+      <FeedbackBanner title="NOTE" variant="warning">
+        Triangle shape for warning variant yet to be implemented.
+      </FeedbackBanner>
+    </Box>
     <Flexbox container>
       <Flexbox container direction="column">
         <Badge.StatusBadge variant="create" badgeSize="xl" />
@@ -60,6 +69,6 @@ export const informationStatusBadge = () => (
     </Flexbox>
   </>
 );
-informationStatusBadge.story = {
-  name: 'Status Badge - Information',
+InformationStatusBadge.story = {
+  name: 'Default and all combinations',
 };

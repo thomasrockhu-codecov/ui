@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '../../../..';
-import { ColorFn } from '../../../../common/Types';
 import { LabelBadgeComponent, StyledBaseBadgeProps } from './LabelBadge.types';
 import { BaseBadge } from '../BaseBadge';
 import {
@@ -12,31 +11,28 @@ import {
 
 const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
   ${(p) =>
-    p.$type === 'secondary'
-      ? `padding: 0 ${p.theme.spacing.unit(SECONDARY_HORIZONTAL_PADDING)}px;`
-      : `padding: ${p.theme.spacing.unit(PRIMARY_VERTICAL_PADDING)}px ${p.theme.spacing.unit(
+    p.$type === 'primary'
+      ? `padding: ${p.theme.spacing.unit(PRIMARY_VERTICAL_PADDING)}px ${p.theme.spacing.unit(
           PRIMARY_HORIZONTAL_PADDING,
-        )}px;`}
+        )}px;`
+      : `padding: 0 ${p.theme.spacing.unit(SECONDARY_HORIZONTAL_PADDING)}px;`}
 `;
 
 export const LabelBadge: LabelBadgeComponent = ({
-  badgeColor,
-  color,
-  type,
+  badgeColor = (t) => t.color.cta,
+  color = (t) => t.color.textLight,
+  type = 'primary',
   weight,
   children,
   ...htmlProps
 }) => {
-  // default textcolor to textLight
-  const textColor: ColorFn = (t) => (color ? color(t) : t.color.textLight);
-
   return (
     <StyledBaseBadge badgeColor={badgeColor} $type={type} variant="rect" {...htmlProps}>
       <Typography
         // Looks weird but according to the design system,
-        // Typography's type="tertiary" is equal to LabelBadge's type="secondary" 😅
-        type={type === 'secondary' ? 'tertiary' : 'secondary'}
-        color={textColor}
+        // Typography's type="secondary" is equal to LabelBadge's type="primary" 😅
+        type={type === 'primary' ? 'secondary' : 'tertiary'}
+        color={color}
         weight={weight}
       >
         {children}

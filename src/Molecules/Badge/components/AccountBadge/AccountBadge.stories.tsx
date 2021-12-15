@@ -11,7 +11,7 @@ export default {
   },
 };
 
-export const CommonUseCases = () => (
+export const Showcase = () => (
   <Flexbox container>
     <Flexbox container direction="column">
       <Badge.AccountBadge badgeColor={(t) => t.color.svgFill} badgeSize="l">
@@ -50,8 +50,8 @@ export const CommonUseCases = () => (
     </Flexbox>
   </Flexbox>
 );
-CommonUseCases.story = {
-  name: 'Common use cases',
+Showcase.story = {
+  name: 'Showcase',
 };
 
 const StyledTypography = styled(Typography)`
@@ -59,7 +59,7 @@ const StyledTypography = styled(Typography)`
   color: ${(p) => p.theme.color.textLight};
 `;
 
-export const customChildren = () => (
+export const CustomChildren = () => (
   <Display
     items={[
       {
@@ -84,6 +84,6 @@ export const customChildren = () => (
   />
 );
 
-customChildren.story = {
+CustomChildren.story = {
   name: 'Custom children',
 };

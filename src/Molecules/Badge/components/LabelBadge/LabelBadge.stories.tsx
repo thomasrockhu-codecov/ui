@@ -9,7 +9,7 @@ export default {
   },
 };
 
-export const LabelBadge = () => {
+export const Showcase = () => {
   return (
     <Display
       items={[
@@ -36,7 +36,7 @@ export const LabelBadge = () => {
         {
           title: 'Custom badge color',
           component: (
-            <Badge.LabelBadge color={(t) => t.color.text} badgeColor={(t) => t.color.menuAccent4}>
+            <Badge.LabelBadge badgeColor={(t) => t.color.menuAccent4}>
               Custom badge color
             </Badge.LabelBadge>
           ),
@@ -44,18 +44,13 @@ export const LabelBadge = () => {
         {
           title: 'Custom text color',
           component: (
-            <Badge.LabelBadge
-              color={(t) => t.color.bulbForeground}
-              badgeColor={(t) => t.color.bulbBackground}
-            >
-              Custom text color
-            </Badge.LabelBadge>
+            <Badge.LabelBadge color={(t) => t.color.warning}>Custom text color</Badge.LabelBadge>
           ),
         },
       ]}
     />
   );
 };
-LabelBadge.story = {
-  name: 'Label Badge',
+Showcase.story = {
+  name: 'Showcase',
 };

@@ -29,17 +29,6 @@ const StyledButton = styled(Button)`
     }`}
 `;
 
-const mapToBaseBadge = (badgeSize?: keyof typeof TooltipBadgeSize) => {
-  switch (badgeSize) {
-    case 's':
-      return TooltipBadgeSize.s;
-    case 'l':
-      return TooltipBadgeSize.l;
-    default:
-      return TooltipBadgeSize.l;
-  }
-};
-
 const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: number }>(
   ({ baseBadgeSize, ...htmlProps }, ref) => {
     const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
@@ -58,8 +47,8 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
 );
 
 export const TooltipBadge = React.forwardRef<HTMLSpanElement, TooltipBadgeProps>(
-  ({ badgeSize, onClick, ...htmlProps }, ref) => {
-    const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
+  ({ badgeSize = 'l', onClick, ...htmlProps }, ref) => {
+    const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : TooltipBadgeSize[badgeSize];
 
     return onClick ? (
       <StyledButton variant="neutral" onClick={onClick}>

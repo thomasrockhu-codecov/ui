@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const DefaultUse = () => {
+export const DefaultAndCommonUseCases = () => {
   return (
     <Display
       items={[
@@ -63,6 +63,6 @@ export const DefaultUse = () => {
     />
   );
 };
-DefaultUse.story = {
-  name: 'Default and Common uses',
+DefaultAndCommonUseCases.story = {
+  name: 'Default and common use cases',
 };

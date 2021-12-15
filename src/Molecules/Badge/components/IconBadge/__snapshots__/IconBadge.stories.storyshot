@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Badge / IconBadge Default and Common uses 1`] = `
+exports[`Storyshots Molecules / Badge / IconBadge Default and common use cases 1`] = `
 .c5 {
   color: #212121;
   -webkit-user-select: none;
@@ -73,9 +73,9 @@ exports[`Storyshots Molecules / Badge / IconBadge Default and Common uses 1`] = 
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #336BFF;
   height: 40px;
   width: 40px;
-  background-color: #336BFF;
   border-radius: 40px;
 }
 
@@ -94,9 +94,9 @@ exports[`Storyshots Molecules / Badge / IconBadge Default and Common uses 1`] = 
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #D2F500;
   height: 48px;
   width: 48px;
-  background-color: #D2F500;
   border-radius: 48px;
 }
 
@@ -115,9 +115,9 @@ exports[`Storyshots Molecules / Badge / IconBadge Default and Common uses 1`] = 
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #D2F500;
   height: 120px;
   width: 120px;
-  background-color: #D2F500;
   border-radius: 120px;
 }
 
@@ -136,9 +136,9 @@ exports[`Storyshots Molecules / Badge / IconBadge Default and Common uses 1`] = 
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  background-color: #336BFF;
   height: 80px;
   width: 80px;
-  background-color: #336BFF;
   border-radius: 80px;
 }
 

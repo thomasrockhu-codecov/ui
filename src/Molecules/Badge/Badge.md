@@ -6,9 +6,7 @@ This component(s) is used to display a number, label, or icon/illustration on a 
 
 The BaseBadge is flexible and exposed externally as Badge, and all the other badges specialized BaseBadges.
 
-**OBSERVE:**
-
-**<Badge> should only be used directly as a last resort if none of the other badge components covers your intended use case.**
+❗❗ **OBSERVE:** <Badge> should only be used directly as a last resort if none of the other badge components covers your intended use case.
 
 ### Account Badge (Badge.AccountBadge)
 

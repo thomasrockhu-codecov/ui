@@ -79,5 +79,5 @@ export const DefaultUse = () => {
   );
 };
 DefaultUse.story = {
-  name: 'Default and Common uses',
+  name: 'Default and common use cases',
 };

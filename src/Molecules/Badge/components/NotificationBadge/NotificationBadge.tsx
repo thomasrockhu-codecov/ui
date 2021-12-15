@@ -13,21 +13,6 @@ import {
   NotificationBadgeSize,
 } from './NotificationBadge.constants';
 
-const mapToBaseBadge = (badgeSize?: keyof typeof NotificationBadgeSize) => {
-  switch (badgeSize) {
-    case 'xs':
-      return NotificationBadgeSize.xs;
-    case 's':
-      return NotificationBadgeSize.s;
-    case 'm':
-      return NotificationBadgeSize.m;
-    case 'l':
-      return NotificationBadgeSize.l;
-    default:
-      return NotificationBadgeSize.m;
-  }
-};
-
 const animation = css`
   @keyframes scale {
     0% {
@@ -67,22 +52,18 @@ const NotificationBadgeContent: React.FC<{
 };
 
 export const NotificationBadge: NotificationBadgeComponent = ({
-  badgeColor,
-  color,
+  badgeColor = (t) => t.color.cta,
+  color = (t) => t.color.textLight,
   children,
-  badgeSize,
+  badgeSize = 'm',
   animateOnChange = false,
-  symmetricShape,
+  symmetricShape = false,
   ...htmlProps
 }) => {
   const textColorOnParent = isFunction(children) || isElement(children);
 
-  const notificationBadgeSize = (() => {
-    if (typeof children === 'undefined' && typeof badgeSize === 'undefined') {
-      return mapToBaseBadge('xs');
-    }
-    return typeof badgeSize === 'number' ? badgeSize : mapToBaseBadge(badgeSize);
-  })();
+  const notificationBadgeSize =
+    typeof badgeSize === 'number' ? badgeSize : NotificationBadgeSize[badgeSize];
 
   const typographyType = MAP_FONT_SIZE[notificationBadgeSize] ?? DEFAULT_TYPOGRAPHY_TYPE;
   const padding = MAP_BADGE_PADDING[notificationBadgeSize] ?? DEFAULT_PADDING;
