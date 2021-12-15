@@ -1,3 +1,18 @@
+# [9.16.0](https://github.com/nordnet/ui/compare/v9.15.1...v9.16.0) (2021-12-15)
+
+
+### Bug Fixes
+
+* feedback banner backgrounds ([12c1c11](https://github.com/nordnet/ui/commit/12c1c11))
+* table row hover color as desing ([83dd08a](https://github.com/nordnet/ui/commit/83dd08a))
+* update table row color according to spec ([cd739ca](https://github.com/nordnet/ui/commit/cd739ca))
+* warning when running tests ([a47f3be](https://github.com/nordnet/ui/commit/a47f3be))
+
+
+### Features
+
+* add semantic color for date badge ([0d6d929](https://github.com/nordnet/ui/commit/0d6d929))
+
 ## [9.15.1](https://github.com/nordnet/ui/compare/v9.15.0...v9.15.1) (2021-12-14)
 
 
