@@ -43,7 +43,7 @@ export const AccountBadge: AccountBadgeComponent = ({ children, badgeSize, badge
 
   return (
     <BaseBadge
-      badgeColor={(t: any) => (badgeColor ? badgeColor(t) : t.color.cta)}
+      badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={baseBadgeSize}
       symmetricShape
     >

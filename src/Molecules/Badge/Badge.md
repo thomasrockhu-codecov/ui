@@ -1,6 +1,6 @@
 # Badge
 
-This component(s) is used to display a number, label, or icon/illustration on a colored and rounded/rectangular background. It is split up inte several components, each with their specific use cases and design system:
+This component(s) is used to display a number, label, or icon/illustration on a colored and rounded/rectangular background. It is split up into several components, each with their specific use cases and design system:
 
 ### Base Badge (Badge)
 
@@ -12,7 +12,7 @@ The BaseBadge is flexible and exposed externally as Badge, and all the other bad
 
 ### Account Badge (Badge.AccountBadge)
 
-This replaces the depreciated `Avatar` component, and is used to display a representation of an entity (e.g. a bank, an account type, etc.).
+This replaces the deprecated `Avatar` component, and is used to display a representation of an entity (e.g. a bank, an account type, etc.).
 
 - `badgeColor` - a theme color function used to set the color for the background/badge.
 - `badgeSize` - sets the width/height (symmetric ratio) of the badge. Available sizes are: `'l'`: 48px, `'m'`: 32px, `'s'`: 24px.
@@ -58,7 +58,7 @@ The status can be passed in as a `string` to `variant` which will render the cor
 
 TooltipBadge is used to display a clickable/hoverable badge for displaying additonal information in a `Tooltip` or a `Drawer`.
 Consumer have to wrap TooltipBadge in a Tooltip or define their own onClick function.
-If the `onClick` prop is passed in the component will styling to cursor and highlighting the badge.
+If the `onClick` prop is passed in to the component, it will add styling to cursor and highlight the badge.
 
 - `badgeSize` - sets the width/height on the badge. Available sizes: `'l'`: 24px `'s'`: 16px.
 - `onClick` - a function that is triggered on click. Sets cursor to pointer and outlines the badge and icon.

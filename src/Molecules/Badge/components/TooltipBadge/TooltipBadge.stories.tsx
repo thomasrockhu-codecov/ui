@@ -13,7 +13,7 @@ export const DefaultUse = () => {
   const label = 'Extra information goes here';
 
   const [open, setOpen] = useState(false);
-  const openDrawer = () => {
+  const toggleDrawer = () => {
     setOpen(!open);
   };
 
@@ -60,7 +60,7 @@ export const DefaultUse = () => {
             <>
               <Badge.TooltipBadge
                 badgeSize="l"
-                onClick={() => openDrawer()}
+                onClick={() => toggleDrawer()}
                 data-drawer-prevent-click-outside
               />
               <Drawer onClose={closeDrawer} title="TooltipBadge with hover in Drawer" open={open}>
