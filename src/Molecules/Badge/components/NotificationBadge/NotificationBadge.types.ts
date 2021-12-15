@@ -8,12 +8,21 @@ export type StyledBaseBadgeProps = BaseBadgeProps & {
   badgeSize: number;
 };
 
-type Props = {
+type BaseProps = HtmlProps & {
   badgeColor?: ColorFn;
   color?: ColorFn;
-  badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
   animateOnChange?: boolean;
   symmetricShape?: boolean;
-} & HtmlProps;
+};
 
-export type NotificationBadgeComponent = React.FC<Props>;
+type XSProps = BaseProps & {
+  badgeSize: 'xs';
+  children?: undefined;
+};
+
+type Props = BaseProps & {
+  badgeSize?: 's' | 'm' | 'l' | number;
+  children?: React.ReactNode;
+};
+
+export type NotificationBadgeComponent = React.FC<Props | XSProps>;

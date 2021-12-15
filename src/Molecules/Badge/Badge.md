@@ -6,7 +6,9 @@ This component(s) is used to display a number, label, or icon/illustration on a 
 
 The BaseBadge is flexible and exposed externally as Badge, and all the other badges specialized BaseBadges.
 
-❗❗ **OBSERVE:** <Badge> should only be used directly as a last resort if none of the other badge components covers your intended use case.
+❗❗ **OBSERVE:**
+
+❗❗ `<Badge>` should only be used directly as a last resort if none of the other badge components covers your intended use case. Consider implementing a new sub badge component if design requires.
 
 ### Account Badge (Badge.AccountBadge)
 
@@ -36,6 +38,7 @@ Brings attention to a property on a page entity.
 ### Notification Badge (Badge.NotificationBadge)
 
 Used to display user notifications. Displays the notification as a badge with numbers or as a dot.
+If the `badgeSize` is `xs` the badge cannot have children.
 
 - `badgeColor` - a theme color function used to set the color for the background/badge.
 - `color` - a theme color function used to set the color for the number.
