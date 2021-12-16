@@ -1,3 +1,10 @@
+## [9.16.1-beta.1](https://github.com/nordnet/ui/compare/v9.16.0...v9.16.1-beta.1) (2021-12-16)
+
+
+### Bug Fixes
+
+* change to positinstall from prepare ([e5239ee](https://github.com/nordnet/ui/commit/e5239ee))
+
 # [9.16.0](https://github.com/nordnet/ui/compare/v9.15.1...v9.16.0) (2021-12-15)
 
 
