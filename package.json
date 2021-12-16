@@ -29,7 +29,7 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "prepublishOnly": "yarn build",
-    "postinstall": "if [[ \"${CI}\" == \"true\" ]]; then echo 'skip prepare in CI'; else husky install; fi"
+    "postinstall": "if [ \"${CI}\" == \"true\" ]; then echo 'skip prepare in CI'; else husky install; fi"
   },
   "commitlint": {
     "extends": [
