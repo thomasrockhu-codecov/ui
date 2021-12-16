@@ -1,3 +1,10 @@
+## [9.16.3](https://github.com/nordnet/ui/compare/v9.16.2...v9.16.3) (2021-12-16)
+
+
+### Bug Fixes
+
+* 🐛 update compare16 icon to match compare24 ([e6ce1d2](https://github.com/nordnet/ui/commit/e6ce1d2))
+
 ## [9.16.2](https://github.com/nordnet/ui/compare/v9.16.1...v9.16.2) (2021-12-16)
 
 
