@@ -1,3 +1,10 @@
+## [9.16.1-beta.2](https://github.com/nordnet/ui/compare/v9.16.1-beta.1...v9.16.1-beta.2) (2021-12-16)
+
+
+### Bug Fixes
+
+* try to use correct semantics in script ([befacad](https://github.com/nordnet/ui/commit/befacad))
+
 ## [9.16.1-beta.1](https://github.com/nordnet/ui/compare/v9.16.0...v9.16.1-beta.1) (2021-12-16)
 
 
