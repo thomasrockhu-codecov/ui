@@ -1,3 +1,10 @@
+## [9.16.2](https://github.com/nordnet/ui/compare/v9.16.1...v9.16.2) (2021-12-16)
+
+
+### Bug Fixes
+
+* handle onchange correctly ([b8747ca](https://github.com/nordnet/ui/commit/b8747ca))
+
 ## [9.16.1](https://github.com/nordnet/ui/compare/v9.16.0...v9.16.1) (2021-12-16)
 
 
