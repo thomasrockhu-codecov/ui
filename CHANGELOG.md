@@ -1,3 +1,10 @@
+## [9.16.1](https://github.com/nordnet/ui/compare/v9.16.0...v9.16.1) (2021-12-16)
+
+
+### Bug Fixes
+
+* darkmode input border hover and text area component ([84c03f5](https://github.com/nordnet/ui/commit/84c03f5))
+
 # [9.16.0](https://github.com/nordnet/ui/compare/v9.15.1...v9.16.0) (2021-12-15)
 
 
