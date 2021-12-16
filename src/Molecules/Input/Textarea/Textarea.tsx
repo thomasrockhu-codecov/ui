@@ -50,6 +50,7 @@ const StyledTextarea = styled(NormalizedElements.Textarea)<Pick<Props, 'noResize
   vertical-align: top; /* removes space underneath */
   box-sizing: border-box;
   resize: ${(p) => p.noResize && 'none'};
+  color: ${(p) => p.theme.color.text};
 
   ${borderStyles}
   ${background}

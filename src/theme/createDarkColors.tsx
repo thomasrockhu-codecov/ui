@@ -129,7 +129,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     inputBackground: rawColor.gray800,
     inputBorder: rawColor.gray700,
     inputBorderError: rawColor.pink500,
-    inputBorderHover: rawColor.gray800,
+    inputBorderHover: rawColor.gray400,
     inputBorderSuccess: rawColor.green500,
     inputHover: rawColor.gray700,
 
