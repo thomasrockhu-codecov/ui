@@ -80,9 +80,9 @@ export const QuickFilter: React.FC<Props> = ({
   const hasLabel = Boolean(label);
   const hasIcon = Boolean(icon);
 
-  const changeHandler = (val: boolean) => {
-    if (isFunction(onChange)) onChange(val);
-    if (!isControlled) setSelectedInternal(val);
+  const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (isFunction(onChange)) onChange(event);
+    if (!isControlled) setSelectedInternal(event?.target?.checked);
   };
 
   return (
@@ -91,7 +91,7 @@ export const QuickFilter: React.FC<Props> = ({
         <StyledInput
           checked={selected}
           disabled={disabled}
-          onChange={() => changeHandler(!selected)}
+          onChange={changeHandler}
           type="checkbox"
           value={value}
         />

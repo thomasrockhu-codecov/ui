@@ -4,7 +4,7 @@ export type Props = {
   /** @default '' */
   label?: string;
   /** @default undefined */
-  onChange?: (value: any) => void;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
   /** @default null */
   icon?: React.ReactNode;
   /** @default false */
