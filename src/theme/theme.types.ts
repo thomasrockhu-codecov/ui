@@ -290,7 +290,6 @@ export type ThemeColors = {
   /** white */
   feedbackPageBackground: string;
 
-
   /** gray6 */
   flagBorder: string;
   /** gray2 */
@@ -331,7 +330,7 @@ export type ThemeColors = {
   inputBorderHover: string;
   /** positive */
   inputBorderSuccess: string;
-  /** gray7 */
+  /** gray100 */
   inputHover: string;
   /** complementaryBlue2 */
   investmentPredictionGraphBlue: string;
