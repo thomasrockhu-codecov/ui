@@ -1,3 +1,10 @@
+## [9.16.1-beta.3](https://github.com/nordnet/ui/compare/v9.16.1-beta.2...v9.16.1-beta.3) (2021-12-16)
+
+
+### Bug Fixes
+
+* does this work ([a455b7c](https://github.com/nordnet/ui/commit/a455b7c))
+
 ## [9.16.1-beta.2](https://github.com/nordnet/ui/compare/v9.16.1-beta.1...v9.16.1-beta.2) (2021-12-16)
 
 
