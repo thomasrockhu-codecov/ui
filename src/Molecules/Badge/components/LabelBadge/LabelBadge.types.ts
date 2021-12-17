@@ -6,12 +6,14 @@ export type StyledBaseBadgeProps = BaseBadgeProps & {
   $type?: 'primary' | 'secondary';
 };
 
-type Props = {
+export type LabelBadgeProps = HtmlProps & {
   badgeColor?: ColorFn;
   color?: ColorFn;
   type?: 'primary' | 'secondary';
   weight?: string;
   children: React.ReactNode;
-} & HtmlProps;
+};
 
-export type LabelBadgeComponent = React.FC<Props>;
+export type LabelBadgeComponent = React.ForwardRefExoticComponent<
+  React.RefAttributes<HTMLSpanElement> & LabelBadgeProps
+>;

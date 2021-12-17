@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TooltipBadgeProps } from './TooltipBadge.types';
+import { TooltipBadgeComponent, TooltipBadgeProps } from './TooltipBadge.types';
 import { BaseBadge } from '..';
 import Typography from '../../../../Atoms/Typography';
 import Button from '../../../Button';
@@ -32,6 +32,7 @@ const StyledButton = styled(Button)`
 const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: number }>(
   ({ baseBadgeSize, ...htmlProps }, ref) => {
     const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
+
     return (
       <StyledBaseBadge
         {...htmlProps}
@@ -46,8 +47,15 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
   },
 );
 
-export const TooltipBadge = React.forwardRef<HTMLSpanElement, TooltipBadgeProps>(
-  ({ badgeSize = 'l', onClick, ...htmlProps }, ref) => {
+export const TooltipBadge: TooltipBadgeComponent = React.forwardRef<
+  HTMLSpanElement,
+  TooltipBadgeProps
+>(
+  (
+    // explicitly types props to remove children (which is added by forwardRef).
+    { badgeSize = 'l', onClick, ...htmlProps }: TooltipBadgeProps,
+    ref,
+  ) => {
     const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : TooltipBadgeSize[badgeSize];
 
     return onClick ? (

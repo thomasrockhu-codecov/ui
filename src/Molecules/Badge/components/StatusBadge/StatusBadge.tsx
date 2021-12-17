@@ -2,7 +2,12 @@ import React from 'react';
 import { Icon } from '../../../..';
 import { IconBadge } from '..';
 import { ColorFn } from '../BaseBadge/BaseBadge.types';
-import { StatusBadgeComponent, StatusVariant, StatusBadgeSize } from './StatusBadge.types';
+import {
+  StatusBadgeComponent,
+  StatusVariant,
+  StatusBadgeSize,
+  StatusBadgeProps,
+} from './StatusBadge.types';
 import {
   MAP_BADGE_AND_ICON_SIZES,
   MAP_ICON_COMPONENT_NAME,
@@ -74,12 +79,20 @@ const getStatusBadgeProps = (
   }
 };
 
-export const StatusBadge: StatusBadgeComponent = ({ variant = 'information', badgeSize = 'm' }) => {
+export const StatusBadge: StatusBadgeComponent = React.forwardRef<
+  HTMLSpanElement,
+  StatusBadgeProps
+>(({ variant = 'information', badgeSize = 'm', ...htmlProps }, ref) => {
   const statusBadgeProps = getStatusBadgeProps(variant, badgeSize);
 
   return (
-    <IconBadge badgeSize={statusBadgeProps.badgeSize} badgeColor={statusBadgeProps.badgeColor}>
+    <IconBadge
+      {...htmlProps}
+      ref={ref}
+      badgeSize={statusBadgeProps.badgeSize}
+      badgeColor={statusBadgeProps.badgeColor}
+    >
       {statusBadgeProps.icon}
     </IconBadge>
   );
-};
+});

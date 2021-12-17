@@ -1,9 +1,11 @@
-import { ColorFn } from '../BaseBadge/BaseBadge.types';
+import { ColorFn, HtmlProps } from '../BaseBadge/BaseBadge.types';
 
-type AccountBadgeProps = {
+export type AccountBadgeProps = HtmlProps & {
   children: React.ReactNode;
   badgeColor?: ColorFn;
   badgeSize?: 's' | 'm' | 'l' | number;
 };
 
-export type AccountBadgeComponent = React.FC<AccountBadgeProps>;
+export type AccountBadgeComponent = React.ForwardRefExoticComponent<
+  React.RefAttributes<HTMLSpanElement> & AccountBadgeProps
+>;

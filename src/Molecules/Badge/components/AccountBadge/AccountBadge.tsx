@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AccountBadgeComponent } from './AccountBadge.types';
+import { AccountBadgeComponent, AccountBadgeProps } from './AccountBadge.types';
 import { BaseBadge } from '..';
 import { Typography } from '../../../..';
 import { isElement, isFunction } from '../../../../common/utils';
@@ -24,16 +24,17 @@ const AccountBadgeContent: React.FC<{
   );
 };
 
-export const AccountBadge: AccountBadgeComponent = ({
-  children,
-  badgeSize = 'm',
-  badgeColor = (t) => t.color.cta,
-}) => {
+export const AccountBadge: AccountBadgeComponent = React.forwardRef<
+  HTMLSpanElement,
+  AccountBadgeProps
+>(({ children, badgeSize = 'm', badgeColor = (t) => t.color.cta, ...htmlProps }, ref) => {
   const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : AccountBadgeSize[badgeSize];
   const typographyType = baseBadgeSize === AccountBadgeSize.l ? 'tertiary' : 'caption';
 
   return (
     <BaseBadge
+      {...htmlProps}
+      ref={ref}
       badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.cta)}
       badgeSize={baseBadgeSize}
       symmetricShape
@@ -41,4 +42,4 @@ export const AccountBadge: AccountBadgeComponent = ({
       <AccountBadgeContent typographyType={typographyType}>{children}</AccountBadgeContent>
     </BaseBadge>
   );
-};
+});

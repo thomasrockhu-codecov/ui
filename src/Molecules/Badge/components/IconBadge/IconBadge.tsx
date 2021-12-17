@@ -1,18 +1,22 @@
 import React from 'react';
-import { IconBadgeComponent } from './IconBadge.types';
+import { IconBadgeComponent, IconBadgeProps } from './IconBadge.types';
 import { BaseBadge } from '..';
 import { IconBadgeSize } from './IconBadge.constants';
 
-export const IconBadge: IconBadgeComponent = ({
-  children,
-  badgeSize = 'm',
-  badgeColor = (t) => t.color.cta,
-}) => {
-  const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : IconBadgeSize[badgeSize];
+export const IconBadge: IconBadgeComponent = React.forwardRef<HTMLSpanElement, IconBadgeProps>(
+  ({ children, badgeSize = 'm', badgeColor = (t) => t.color.cta, ...htmlProps }, ref) => {
+    const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : IconBadgeSize[badgeSize];
 
-  return (
-    <BaseBadge badgeColor={badgeColor} badgeSize={baseBadgeSize} symmetricShape>
-      {children}
-    </BaseBadge>
-  );
-};
+    return (
+      <BaseBadge
+        {...htmlProps}
+        ref={ref}
+        badgeColor={badgeColor}
+        badgeSize={baseBadgeSize}
+        symmetricShape
+      >
+        {children}
+      </BaseBadge>
+    );
+  },
+);
