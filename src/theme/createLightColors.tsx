@@ -35,12 +35,15 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
 
+    badgeBackground: rawColor.blue500,
+    badgeTextColor: rawColor.white,
+
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
 
     barScaleActiveBar: rawColor.complementaryBlue1,
     barScaleInactiveBar: rawColor.gray6,
 
-    borderActive: rawColor.cta,
+    borderActive: rawColor.blue500,
 
     bubbleBackground: rawColor.white,
     bubbleBorder: rawColor.gray4,
@@ -65,16 +68,24 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buttonTextSecondary: rawColor.blue500,
     buttonTextDisabled: rawColor.gray500,
 
-    buy: rawColor.cta,
-    buyActive: rawColor.ctaPressed,
+    buy: rawColor.blue500,
+    buyActive: rawColor.blue700,
+    buyHover: rawColor.blue500,
+
     card: rawColor.white,
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
+
+    darkmodeIllustrationBackground: rawColor.blue800,
+    darkmodeIllustrationLightBulb: rawColor.blue400,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
+
+    dateBadgeUpperBackground: rawColor.gray200,
+    dateBadgeLowerBackground: rawColor.gray100,
 
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
@@ -83,7 +94,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     disabledText: rawColor.gray3,
 
     divider: rawColor.gray6,
+    pageWrapperDivider: rawColor.gray700,
     emptyState: rawColor.gray4,
+
+    feedbackModuleBackground: rawColor.gray100,
+    feedbackPageBackground: rawColor.white,
+
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 
@@ -111,11 +127,11 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     indexFundsNorwegianAccent: rawColor.brandBlue,
 
     inputBackground: rawColor.white,
-    inputBorder: rawColor.gray4,
-    inputBorderError: rawColor.negative,
-    inputBorderHover: rawColor.gray1,
-    inputBorderSuccess: rawColor.positive,
-    inputHover: rawColor.gray7,
+    inputBorder: rawColor.gray400,
+    inputBorderError: rawColor.pink600,
+    inputBorderHover: rawColor.gray700,
+    inputBorderSuccess: rawColor.green600,
+    inputHover: rawColor.gray100,
 
     investmentPredictionGraphBlue: rawColor.complementaryBlue2,
     investmentPredictionGraphGreen: rawColor.complementaryGreen2,
@@ -206,8 +222,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     selectionCardText: rawColor.gray2,
     selectOptionBackground: rawColor.white,
 
-    sell: rawColor.negative,
-    sellActive: rawColor.negativePressed,
+    sell: rawColor.pink600,
+    sellActive: rawColor.pink700,
     separator: rawColor.gray0,
 
     shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
@@ -279,9 +295,12 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterBackground: rawColor.gray100,
     quickFilterText: rawColor.gray800,
     quickFilterSelectedText: rawColor.blue400,
-    
 
     warning: rawColor.index,
+    
+    worldMapLand: rawColor.blue700, // not yet in use
+    worldMapWater: rawColor.gray800, // not yet in use
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

@@ -30,7 +30,7 @@ export const BaseBadge: BaseBadgeComponent = React.forwardRef<HTMLSpanElement, B
     {
       children,
       color, // no default to allow color from parent
-      badgeColor = (t) => t.color.cta,
+      badgeColor = (t) => t.color.badgeBackground,
       badgeSize, // no default to allow height set by line-height (e.g. LabelBadge)
       variant = 'circle',
       weight,

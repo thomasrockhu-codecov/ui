@@ -1,3 +1,120 @@
+## [9.16.3](https://github.com/nordnet/ui/compare/v9.16.2...v9.16.3) (2021-12-16)
+
+
+### Bug Fixes
+
+* 🐛 update compare16 icon to match compare24 ([e6ce1d2](https://github.com/nordnet/ui/commit/e6ce1d2))
+
+## [9.16.2](https://github.com/nordnet/ui/compare/v9.16.1...v9.16.2) (2021-12-16)
+
+
+### Bug Fixes
+
+* handle onchange correctly ([b8747ca](https://github.com/nordnet/ui/commit/b8747ca))
+
+## [9.16.1](https://github.com/nordnet/ui/compare/v9.16.0...v9.16.1) (2021-12-16)
+
+
+### Bug Fixes
+
+* darkmode input border hover and text area component ([84c03f5](https://github.com/nordnet/ui/commit/84c03f5))
+
+# [9.16.0](https://github.com/nordnet/ui/compare/v9.15.1...v9.16.0) (2021-12-15)
+
+
+### Bug Fixes
+
+* feedback banner backgrounds ([12c1c11](https://github.com/nordnet/ui/commit/12c1c11))
+* table row hover color as desing ([83dd08a](https://github.com/nordnet/ui/commit/83dd08a))
+* update table row color according to spec ([cd739ca](https://github.com/nordnet/ui/commit/cd739ca))
+* warning when running tests ([a47f3be](https://github.com/nordnet/ui/commit/a47f3be))
+
+
+### Features
+
+* add semantic color for date badge ([0d6d929](https://github.com/nordnet/ui/commit/0d6d929))
+
+## [9.15.1](https://github.com/nordnet/ui/compare/v9.15.0...v9.15.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* adjust card dark mode color ([b074671](https://github.com/nordnet/ui/commit/b074671))
+
+# [9.15.0](https://github.com/nordnet/ui/compare/v9.14.4...v9.15.0) (2021-12-14)
+
+
+### Features
+
+* add darkmode illustration colors ([225d6ba](https://github.com/nordnet/ui/commit/225d6ba))
+
+## [9.14.4](https://github.com/nordnet/ui/compare/v9.14.3...v9.14.4) (2021-12-14)
+
+
+### Bug Fixes
+
+* adjust badge colors ([17064e3](https://github.com/nordnet/ui/commit/17064e3))
+
+## [9.14.3](https://github.com/nordnet/ui/compare/v9.14.2...v9.14.3) (2021-12-14)
+
+
+### Bug Fixes
+
+* input item hover was too gray ([af6dd57](https://github.com/nordnet/ui/commit/af6dd57))
+* update snapshots ([d1a9506](https://github.com/nordnet/ui/commit/d1a9506))
+
+## [9.14.2](https://github.com/nordnet/ui/compare/v9.14.1...v9.14.2) (2021-12-13)
+
+
+### Bug Fixes
+
+* 🐛 update input radio snapshot ([37d52ca](https://github.com/nordnet/ui/commit/37d52ca))
+
+## [9.14.1](https://github.com/nordnet/ui/compare/v9.14.0...v9.14.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* dark mode buy links should use different bg on hover ([de6e2f4](https://github.com/nordnet/ui/commit/de6e2f4))
+
+# [9.14.0](https://github.com/nordnet/ui/compare/v9.13.3...v9.14.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* 🐛 hide label ternary ([67e447c](https://github.com/nordnet/ui/commit/67e447c))
+* adjust world map colors ([b8f8d48](https://github.com/nordnet/ui/commit/b8f8d48))
+* align with darkmode feature ([e3b3acf](https://github.com/nordnet/ui/commit/e3b3acf))
+
+
+### Features
+
+* 🎸 add hideLabel prop to Input.Radio ([4df8b34](https://github.com/nordnet/ui/commit/4df8b34))
+
+## [9.13.3](https://github.com/nordnet/ui/compare/v9.13.2...v9.13.3) (2021-12-13)
+
+
+### Bug Fixes
+
+* add specific wrapper divider color ([d5aacc5](https://github.com/nordnet/ui/commit/d5aacc5))
+* remove color that wasn't to be added now ([60dd4b2](https://github.com/nordnet/ui/commit/60dd4b2))
+
+## [9.13.2](https://github.com/nordnet/ui/compare/v9.13.1...v9.13.2) (2021-12-13)
+
+
+### Bug Fixes
+
+* input focus border color adjustment ([8661e12](https://github.com/nordnet/ui/commit/8661e12))
+* input focus border color for darkmode ([0877e9c](https://github.com/nordnet/ui/commit/0877e9c))
+
+## [9.13.1](https://github.com/nordnet/ui/compare/v9.13.0...v9.13.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* update buy link colors ([2611fea](https://github.com/nordnet/ui/commit/2611fea))
+* update sell link buttons and revert back to old semantic color for buy link ([a63a7c0](https://github.com/nordnet/ui/commit/a63a7c0))
+
 # [9.13.0](https://github.com/nordnet/ui/compare/v9.12.0...v9.13.0) (2021-12-09)
 
 

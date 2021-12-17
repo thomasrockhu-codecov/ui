@@ -181,12 +181,12 @@ export const SpecializedChildren = () => {
           title: 'Component as child',
           component: (
             <Box my={2}>
-              <Badge.NotificationBadge color={(t) => t.color.textLight}>
+              <Badge.NotificationBadge color={(t) => t.color.badgeTextColor}>
                 <>
-                  <Typography type="title3" color={(t) => t.color.textLight}>
+                  <Typography type="title3" color={(t) => t.color.badgeTextColor}>
                     8
                   </Typography>
-                  <Typography type="tertiary" color={(t) => t.color.textLight}>
+                  <Typography type="tertiary" color={(t) => t.color.badgeTextColor}>
                     %
                   </Typography>
                 </>
@@ -201,9 +201,9 @@ export const SpecializedChildren = () => {
           title: 'Function as child',
           component: (
             <Box my={2}>
-              <Badge.NotificationBadge color={(t) => t.color.textLight}>
+              <Badge.NotificationBadge color={(t) => t.color.badgeTextColor}>
                 {() => (
-                  <Typography type="tertiary" color={(t) => t.color.textLight}>
+                  <Typography type="tertiary" color={(t) => t.color.badgeTextColor}>
                     9%
                   </Typography>
                 )}

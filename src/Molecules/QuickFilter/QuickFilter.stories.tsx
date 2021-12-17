@@ -31,7 +31,7 @@ const getCardProps = (label = '', value = '') => ({
 
 export const QuickFilterDefault = () => (
   <Card>
-    <QuickFilter {...getCardProps('Default')} onChange={onChange} />
+    <QuickFilter {...getCardProps('Default')} />
   </Card>
 );
 
@@ -63,25 +63,37 @@ QuickFilterOnlyIcon.story = {
   name: 'Only icon',
 };
 
+export const QuickFilterWithSelectedInitially = () => {
+  return (
+    <Card>
+      <QuickFilter {...getCardProps()} label="" icon={<Icon.Money16 />} selectedInitially />
+    </Card>
+  );
+};
+
+QuickFilterWithSelectedInitially.story = {
+  name: 'With selectedInitially',
+};
+
 export const QuickFilterWithValueControlledBehavior = () => {
   const Component = () => {
-    const [value, setValue] = useState(false);
+    const [isChecked, setIsChecked] = useState(false);
 
     return (
       <Card>
         <QuickFilter
           label="Controlled selection card"
           value="This component is controlled"
-          selected={value}
-          onChange={() => setValue(!value)}
+          selected={isChecked}
+          onChange={onChange}
         />
-        <button type="button" onClick={() => setValue(true)}>
+        <button type="button" onClick={() => setIsChecked(true)}>
           Selected
         </button>
-        <button type="button" onClick={() => setValue(false)}>
+        <button type="button" onClick={() => setIsChecked(false)}>
           Not selected
         </button>
-        value: {value.toString()}
+        value: {isChecked.toString()}
       </Card>
     );
   };

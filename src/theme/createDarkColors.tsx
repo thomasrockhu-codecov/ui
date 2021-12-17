@@ -33,12 +33,15 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray2,
 
+    badgeBackground: rawColor.blue500,
+    badgeTextColor: rawColor.white,
+
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
 
     barScaleActiveBar: rawColor.complementaryTurquoise1,
     barScaleInactiveBar: rawColor.gray6,
 
-    borderActive: rawColor.brandTurquoise,
+    borderActive: rawColor.blue500,
 
     bubbleBackground: rawColor.gray800,
     bubbleBorder: rawColor.gray700,
@@ -61,29 +64,41 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonActiveSecondary: rawColor.blue700,
 
     buttonText: rawColor.white,
-    buttonTextSecondary:rawColor.white,
+    buttonTextSecondary: rawColor.white,
     buttonTextDisabled: rawColor.gray600,
 
-    buy: rawColor.brandTurquoise,
-    buyActive: rawColor.ctaPressed,
+    buy: rawColor.blue400,
+    buyActive: rawColor.blue700,
+    buyHover: rawColor.blue500,
 
-    card: rawColor.gray0,
+    card: rawColor.gray800,
     cta: rawColor.blue500,
     ctaHover: rawColor.blue600,
+
+    darkmodeIllustrationBackground: rawColor.blue800,
+    darkmodeIllustrationLightBulb: rawColor.blue400,
 
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
 
+    dateBadgeUpperBackground: rawColor.gray900,
+    dateBadgeLowerBackground: rawColor.gray700,
+    
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 
     disabledBackground: rawColor.gray900,
     disabledText: rawColor.gray600,
 
-    divider: rawColor.gray1,
+    divider: rawColor.gray900,
+    pageWrapperDivider: rawColor.gray800,
     emptyState: rawColor.gray4,
+
+    feedbackModuleBackground: rawColor.gray700,
+    feedbackPageBackground: rawColor.gray800,
+
     flagBorder: rawColor.gray6,
     fundExchange: rawColor.gray2,
 
@@ -112,10 +127,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     indexFundsNorwegianAccent: rawColor.brandTurquoise,
 
     inputBackground: rawColor.gray800,
-    inputBorder: rawColor.gray4,
-    inputBorderError: rawColor.negative,
-    inputBorderHover: rawColor.gray1,
-    inputBorderSuccess: rawColor.positive,
+    inputBorder: rawColor.gray700,
+    inputBorderError: rawColor.pink500,
+    inputBorderHover: rawColor.gray400,
+    inputBorderSuccess: rawColor.green500,
     inputHover: rawColor.gray700,
 
     investmentPredictionGraphBlue: rawColor.complementaryTurquoise2,
@@ -207,8 +222,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     selectionCardText: rawColor.gray2,
     selectOptionBackground: rawColor.gray800,
 
-    sell: rawColor.brandPink,
-    sellActive: rawColor.negativePressed,
+    sell: rawColor.pink500,
+    sellActive: rawColor.pink700,
     separator: rawColor.gray2,
 
     shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
@@ -241,8 +256,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
 
     tableBorder: rawColor.gray0,
-    tableRowBackground: rawColor.gray0,
-    tableRowHover: rawColor.gray1,
+    tableRowBackground: rawColor.gray800,
+    tableRowHover: rawColor.gray700,
     tableEmphasis: rawColor.blue800,
 
     text: rawColor.gray7,
@@ -285,6 +300,10 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedText: rawColor.blue500,
 
     warning: rawColor.index,
+
+    worldMapLand: rawColor.blue600, // not yet in use
+    worldMapWater: rawColor.gray800, // not yet in use
+
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,

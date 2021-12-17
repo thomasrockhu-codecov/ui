@@ -179,7 +179,7 @@ Array [
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 1px solid #BDBDBD;
   position: relative;
   border-width: 1px;
   padding: 0;
@@ -203,12 +203,12 @@ Array [
 }
 
 .c8:hover {
-  border-color: #4B4B46;
+  border-color: #424242;
   z-index: 2;
 }
 
 .c8:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 
@@ -237,7 +237,7 @@ Array [
   margin: 0;
   overflow: visible;
   background-color: #FFFFFF;
-  border: 1px solid #BCBCB6;
+  border: 1px solid #BDBDBD;
   position: relative;
   border-width: 1px;
   height: 40px;
@@ -252,12 +252,12 @@ Array [
 }
 
 .c7:hover {
-  border-color: #4B4B46;
+  border-color: #424242;
   z-index: 2;
 }
 
 .c7:focus {
-  border-color: #0046FF;
+  border-color: #336BFF;
   z-index: 3;
 }
 

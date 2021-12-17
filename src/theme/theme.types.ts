@@ -159,6 +159,14 @@ export type ThemeColors = {
   /**
    * blue500
    */
+  badgeBackground: string;
+  /**
+   * white
+   */
+  badgeTextColor: string;
+  /**
+   * blue500
+   */
   buttonBackgroundPrimary: string;
   /**
    * blue600
@@ -202,7 +210,7 @@ export type ThemeColors = {
   barScaleActiveBar: string;
   /** gray6 */
   barScaleInactiveBar: string;
-  /** cta */
+  /** blue500 */
   borderActive: string;
   /** white */
   bubbleBackground: string;
@@ -222,10 +230,12 @@ export type ThemeColors = {
   buttonTextSecondary: string;
   /** gray0 */
   buttonTextLight: string;
-  /** cta */
+  /** blue500 */
   buy: string;
-  /** ctaPressed */
+  /** blue700 */
   buyActive: string;
+  /** blue500 */
+  buyHover: string;
   /** gray100 */
   quickFilterBackground: string;
   /** blue100 */
@@ -244,6 +254,10 @@ export type ThemeColors = {
   cta: string;
   /** blue600 */
   ctaHover: string;
+  /** blue800 */
+  darkmodeIllustrationBackground: string;
+  /** blue400 */
+  darkmodeIllustrationLightBulb: string;
   /** gray6 */
   dateAvatarBackground1: string;
   /** gray7 */
@@ -252,6 +266,12 @@ export type ThemeColors = {
   dateAvatarText1: string;
   /** gray0 */
   dateAvatarText2: string;
+
+  /** gray200 */
+  dateBadgeUpperBackground: string;
+  /** gray100 */
+  dateBadgeLowerBackground: string;
+
   /** gray2 */
   datePickerWithinRangeBackground: string;
   /** gray2 */
@@ -264,6 +284,12 @@ export type ThemeColors = {
   divider: string;
   /** gray4 */
   emptyState: string;
+
+  /** gray100 */
+  feedbackModuleBackground: string;
+  /** white */
+  feedbackPageBackground: string;
+
   /** gray6 */
   flagBorder: string;
   /** gray2 */
@@ -296,15 +322,15 @@ export type ThemeColors = {
   indexFundsNorwegianAccent: string;
   /** white */
   inputBackground: string;
-  /** gray4 */
+  /** gray400 */
   inputBorder: string;
-  /** negative */
+  /** pink600 */
   inputBorderError: string;
-  /** gray1 */
+  /** gray700 */
   inputBorderHover: string;
   /** positive */
   inputBorderSuccess: string;
-  /** gray7 */
+  /** gray100 */
   inputHover: string;
   /** complementaryBlue2 */
   investmentPredictionGraphBlue: string;
@@ -368,6 +394,8 @@ export type ThemeColors = {
   orderPanelItemBackgroundHover: string;
   /** otherMonthDateText */
   otherMonthDateText: string;
+  /** gray700 */
+  pageWrapperDivider: string;
   paletteBlue: string[];
   paletteGreen: string[];
   paletteLineGraph: string[];
@@ -444,9 +472,9 @@ export type ThemeColors = {
   selectionCardText: string;
   /** white */
   selectOptionBackground: string;
-  /** negative */
+  /** pink600 */
   sell: string;
-  /** negativePressed */
+  /** pink700 */
   sellActive: string;
   /** gray0 */
   separator: string;
@@ -546,6 +574,10 @@ export type ThemeColors = {
   transferStatusBannerText3: string;
   /** index */
   warning: string;
+  /** blue700 */
+  worldMapLand: string; // not yet in use
+  /** gray800 */
+  worldMapWater: string; // not yet in use
   /** SFDR Article 6 */
   sfdrArticle6: string;
   /** SFDR Article 8 */

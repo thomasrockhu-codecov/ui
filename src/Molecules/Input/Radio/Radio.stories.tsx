@@ -296,3 +296,11 @@ export const inAGroupWithCustomLabel = () => (
 inAGroupWithCustomLabel.story = {
   name: 'In a group with custom label',
 };
+
+export const withHideLabel = () => (
+  <Input.Radio name="example" value="green" hideLabel label="This label is hidden" />
+);
+
+withHideLabel.story = {
+  name: 'With hide label',
+};

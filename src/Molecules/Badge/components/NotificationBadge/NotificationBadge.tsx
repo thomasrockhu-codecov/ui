@@ -46,8 +46,8 @@ const NotificationBadgeContent: React.FC<{
   if (isFunction(children)) return children();
   if (isElement(children)) return children;
 
-  // default textcolor to textLight
-  const textColor: ColorFn = (t) => (color ? color(t) : t.color.textLight);
+  // default textcolor to badgeTextColor
+  const textColor: ColorFn = (t) => (color ? color(t) : t.color.badgeTextColor);
 
   return (
     <Typography type={typographyType} color={textColor} weight="bold">
@@ -62,8 +62,8 @@ export const NotificationBadge: NotificationBadgeComponent = React.forwardRef<
 >(
   (
     {
-      badgeColor = (t) => t.color.cta,
-      color = (t) => t.color.textLight,
+      badgeColor = (t) => t.color.badgeBackground,
+      color = (t) => t.color.badgeTextColor,
       children,
       badgeSize = 'm',
       animateOnChange = false,

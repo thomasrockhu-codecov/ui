@@ -38,13 +38,13 @@ export const Showcase = () => (
     </Flexbox>
 
     <Flexbox container direction="column">
-      <Badge.AccountBadge badgeColor={(t) => t.color.cta} badgeSize="l">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackground} badgeSize="l">
         Handels
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.cta} badgeSize="m">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackground} badgeSize="m">
         HB
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.cta} badgeSize="s">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackground} badgeSize="s">
         HB
       </Badge.AccountBadge>
     </Flexbox>
@@ -56,7 +56,7 @@ Showcase.story = {
 
 const StyledTypography = styled(Typography)`
   font-size: 8px;
-  color: ${(p) => p.theme.color.textLight};
+  color: ${(p) => p.theme.color.badgeTextColor};
 `;
 
 export const CustomChildren = () => (
@@ -66,7 +66,7 @@ export const CustomChildren = () => (
         title: 'Typography as child',
         component: (
           <Badge.AccountBadge>
-            <Typography color={(t) => t.color.textLight} type="caption">
+            <Typography color={(t) => t.color.badgeTextColor} type="caption">
               KF
             </Typography>
           </Badge.AccountBadge>

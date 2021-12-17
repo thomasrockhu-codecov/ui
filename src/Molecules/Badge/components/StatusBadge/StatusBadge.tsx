@@ -36,7 +36,7 @@ const getStatusBadgeProps = (
     case VARIANT_CREATE:
       return {
         icon: <IconComponent color={ICON_COLOR} />,
-        badgeColor: (t) => t.color.cta,
+        badgeColor: (t) => t.color.badgeBackground,
         badgeSize: sizes.badgeSize,
       };
     case VARIANT_COMPLETE:
@@ -66,14 +66,14 @@ const getStatusBadgeProps = (
     case VARIANT_INFORMATION:
       return {
         icon: <IconComponent color={ICON_COLOR} />,
-        badgeColor: (t) => t.color.cta,
+        badgeColor: (t) => t.color.badgeBackground,
         badgeSize: sizes.badgeSize,
       };
 
     default:
       return {
         icon: <IconComponent color={ICON_COLOR} />,
-        badgeColor: (t) => t.color.cta,
+        badgeColor: (t) => t.color.badgeBackground,
         badgeSize: sizes.badgeSize,
       };
   }

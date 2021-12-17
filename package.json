@@ -29,7 +29,7 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "prepublishOnly": "yarn build",
-    "prepare": "husky install"
+    "postinstall": "if [ -z ${CI} ]; then husky install; else echo 'skip prepare in CI'; fi"
   },
   "commitlint": {
     "extends": [

@@ -4,7 +4,10 @@ import { BaseBadge } from '..';
 import { IconBadgeSize } from './IconBadge.constants';
 
 export const IconBadge: IconBadgeComponent = React.forwardRef<HTMLSpanElement, IconBadgeProps>(
-  ({ children, badgeSize = 'm', badgeColor = (t) => t.color.cta, ...htmlProps }, ref) => {
+  (
+    { children, badgeSize = 'm', badgeColor = (t) => t.color.badgeBackground, ...htmlProps },
+    ref,
+  ) => {
     const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : IconBadgeSize[badgeSize];
 
     return (

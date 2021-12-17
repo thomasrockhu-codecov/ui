@@ -18,7 +18,7 @@ const AccountBadgeContent: React.FC<{
   if (isElement(children)) return children;
 
   return (
-    <StyledTypography type={typographyType} color={(t) => t.color.textLight}>
+    <StyledTypography type={typographyType} color={(t) => t.color.badgeTextColor}>
       {children}
     </StyledTypography>
   );
@@ -27,19 +27,24 @@ const AccountBadgeContent: React.FC<{
 export const AccountBadge: AccountBadgeComponent = React.forwardRef<
   HTMLSpanElement,
   AccountBadgeProps
->(({ children, badgeSize = 'm', badgeColor = (t) => t.color.cta, ...htmlProps }, ref) => {
-  const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : AccountBadgeSize[badgeSize];
-  const typographyType = baseBadgeSize === AccountBadgeSize.l ? 'tertiary' : 'caption';
+>(
+  (
+    { children, badgeSize = 'm', badgeColor = (t) => t.color.badgeBackground, ...htmlProps },
+    ref,
+  ) => {
+    const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : AccountBadgeSize[badgeSize];
+    const typographyType = baseBadgeSize === AccountBadgeSize.l ? 'tertiary' : 'caption';
 
-  return (
-    <BaseBadge
-      {...htmlProps}
-      ref={ref}
-      badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.cta)}
-      badgeSize={baseBadgeSize}
-      symmetricShape
-    >
-      <AccountBadgeContent typographyType={typographyType}>{children}</AccountBadgeContent>
-    </BaseBadge>
-  );
-});
+    return (
+      <BaseBadge
+        {...htmlProps}
+        ref={ref}
+        badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.badgeBackground)}
+        badgeSize={baseBadgeSize}
+        symmetricShape
+      >
+        <AccountBadgeContent typographyType={typographyType}>{children}</AccountBadgeContent>
+      </BaseBadge>
+    );
+  },
+);

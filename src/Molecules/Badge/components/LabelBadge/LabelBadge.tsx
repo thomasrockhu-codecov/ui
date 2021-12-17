@@ -21,8 +21,8 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
 export const LabelBadge: LabelBadgeComponent = React.forwardRef<HTMLSpanElement, LabelBadgeProps>(
   (
     {
-      badgeColor = (t) => t.color.cta,
-      color = (t) => t.color.textLight,
+      badgeColor = (t) => t.color.badgeBackground,
+      color = (t) => t.color.badgeTextColor,
       type = 'primary',
       weight,
       children,
