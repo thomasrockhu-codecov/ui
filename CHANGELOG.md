@@ -1,3 +1,10 @@
+# [9.17.0](https://github.com/nordnet/ui/compare/v9.16.3...v9.17.0) (2021-12-20)
+
+
+### Features
+
+* 🎸 Add new emoji16 icon ([60b7023](https://github.com/nordnet/ui/commit/60b7023))
+
 ## [9.16.3](https://github.com/nordnet/ui/compare/v9.16.2...v9.16.3) (2021-12-16)
 
 
