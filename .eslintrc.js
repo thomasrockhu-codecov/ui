@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended", "plugin:storybook/recommended"],
+  extends: ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
@@ -53,7 +53,7 @@ module.exports = {
     rules: {
       'import/no-extraneous-dependencies': 0,
       'import/no-unresolved': 0,
-      'no-undef': 0
+      'no-undef': 0,
     }
   }]
 };
