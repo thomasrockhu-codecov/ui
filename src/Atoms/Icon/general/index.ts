@@ -1,5 +1,6 @@
 import account from './account';
 import book from './book';
+import emoji from './emoji';
 import glossary from './glossary';
 import heart from './heart';
 import heartFill from './heartFill';
@@ -14,6 +15,7 @@ import starFill from './starFill';
 export default {
   ...account,
   ...book,
+  ...emoji,
   ...glossary,
   ...heart,
   ...heartFill,
