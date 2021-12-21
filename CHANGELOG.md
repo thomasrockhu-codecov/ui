@@ -1,3 +1,10 @@
+## [9.17.2](https://github.com/nordnet/ui/compare/v9.17.1...v9.17.2) (2021-12-21)
+
+
+### Bug Fixes
+
+* remove husky for now ([d945541](https://github.com/nordnet/ui/commit/d945541))
+
 ## [9.17.1](https://github.com/nordnet/ui/compare/v9.17.0...v9.17.1) (2021-12-21)
 
 
