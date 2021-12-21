@@ -28,10 +28,8 @@
     "now-build": "build-storybook",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "prepublishOnly": "yarn build",
-    "postinstall": "./scripts/postinstall.sh"
+    "prepublishOnly": "yarn build"
   },
-  "files": ["scripts/*"],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
