@@ -28,7 +28,8 @@
     "now-build": "build-storybook",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "prepare": "./scripts/install-husky.sh"
   },
   "commitlint": {
     "extends": [
