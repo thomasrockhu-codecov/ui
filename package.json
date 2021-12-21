@@ -29,8 +29,9 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "prepublishOnly": "yarn build",
-    "postinstall": "sh scripts/postinstall.sh"
+    "postinstall": "./scripts/postinstall.sh"
   },
+  "files": ["scripts/*"],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

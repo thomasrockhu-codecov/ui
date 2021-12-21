@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+set -ex 
 
 if [ -z ${CI} ];
 then
