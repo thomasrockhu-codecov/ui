@@ -5,5 +5,5 @@ if [ -z ${CI} ];
 then
     husky install
 else 
-    echo 'skip postinstall in CI'
+    echo 'skip husky install in CI'
 fi
