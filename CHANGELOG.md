@@ -1,3 +1,11 @@
+## [9.17.3](https://github.com/nordnet/ui/compare/v9.17.2...v9.17.3) (2021-12-21)
+
+
+### Bug Fixes
+
+* add husky install to prepare step but don't do it if ci ([5f2c7f5](https://github.com/nordnet/ui/commit/5f2c7f5))
+* remove redundant script and fix message ([a5f5aec](https://github.com/nordnet/ui/commit/a5f5aec))
+
 ## [9.17.2](https://github.com/nordnet/ui/compare/v9.17.1...v9.17.2) (2021-12-21)
 
 
