@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [[ ${CI} ]]
+if [ -z ${CI} ];
 then
-    echo 'skip postinstall in CI'
-else 
     husky install
+else 
+    echo 'skip postinstall in CI'
 fi
