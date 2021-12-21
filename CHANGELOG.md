@@ -1,3 +1,11 @@
+## [9.17.1](https://github.com/nordnet/ui/compare/v9.17.0...v9.17.1) (2021-12-21)
+
+
+### Bug Fixes
+
+* extract postinstall script ([fcc92bf](https://github.com/nordnet/ui/commit/fcc92bf))
+* this? ([ab47853](https://github.com/nordnet/ui/commit/ab47853))
+
 # [9.17.0](https://github.com/nordnet/ui/compare/v9.16.3...v9.17.0) (2021-12-20)
 
 
