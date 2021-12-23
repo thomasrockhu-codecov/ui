@@ -29,7 +29,7 @@ export const AccountBadge: AccountBadgeComponent = React.forwardRef<
   AccountBadgeProps
 >(
   (
-    { children, badgeSize = 'm', badgeColor = (t) => t.color.badgeBackground, ...htmlProps },
+    { children, badgeSize = 'm', badgeColor = (t) => t.color.accountBadgeBackground, ...htmlProps },
     ref,
   ) => {
     const baseBadgeSize = typeof badgeSize === 'number' ? badgeSize : AccountBadgeSize[badgeSize];
@@ -39,7 +39,7 @@ export const AccountBadge: AccountBadgeComponent = React.forwardRef<
       <BaseBadge
         {...htmlProps}
         ref={ref}
-        badgeColor={(t) => (badgeColor ? badgeColor(t) : t.color.badgeBackground)}
+        badgeColor={badgeColor}
         badgeSize={baseBadgeSize}
         symmetricShape
       >

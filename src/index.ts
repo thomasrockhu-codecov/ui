@@ -31,7 +31,6 @@ import Truncate from './Atoms/Truncate';
 import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
-import Avatar from './Molecules/Avatar';
 import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button from './Molecules/Button';
@@ -125,7 +124,6 @@ export {
   /** @deprecated */ Select,
   Accordion,
   AccordionItem,
-  /** @deprecated */ Avatar,
   Badge,
   BarScale,
   Box,

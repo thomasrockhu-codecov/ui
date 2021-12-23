@@ -14,15 +14,9 @@ export default {
 export const Showcase = () => (
   <Flexbox container>
     <Flexbox container direction="column">
-      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="l">
-        ISK
-      </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="m">
-        ISK
-      </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="s">
-        ISK
-      </Badge.AccountBadge>
+      <Badge.AccountBadge badgeSize="l">ISK</Badge.AccountBadge>
+      <Badge.AccountBadge badgeSize="m">ISK</Badge.AccountBadge>
+      <Badge.AccountBadge badgeSize="s">ISK</Badge.AccountBadge>
     </Flexbox>
 
     <Flexbox container direction="column">
