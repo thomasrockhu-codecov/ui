@@ -12,7 +12,7 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledBaseBadge = styled(BaseBadge)`
-  border: 1px solid ${(p) => p.theme.color.bubbleBorder};
+  border: 1px solid ${(p) => p.theme.color.tooltipBadgeBorder};
 `;
 
 const StyledButton = styled(Button)`
@@ -37,11 +37,13 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
       <StyledBaseBadge
         {...htmlProps}
         ref={ref}
-        badgeColor={(t) => t.color.bubbleBackground}
+        badgeColor={(t) => t.color.tooltipBadgeBackground}
         badgeSize={baseBadgeSize}
         symmetricShape
       >
-        <StyledTypography type={typographyType}>?</StyledTypography>
+        <StyledTypography color={(t) => t.color.tooltipBadgeText} type={typographyType}>
+          ?
+        </StyledTypography>
       </StyledBaseBadge>
     );
   },

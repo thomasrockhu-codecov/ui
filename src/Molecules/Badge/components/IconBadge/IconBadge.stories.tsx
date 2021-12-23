@@ -39,7 +39,7 @@ export const DefaultAndCommonUseCases = () => {
           ),
         },
         {
-          title: 'Badge with illustration',
+          title: 'Badge with illustration default use',
           component: (
             <Badge.IconBadge badgeSize="xl">
               <Illustration.UrgentMailFill64 />
@@ -52,8 +52,8 @@ export const DefaultAndCommonUseCases = () => {
             <Badge.IconBadge badgeSize="xl">
               <span>
                 <Illustration.UrgentMailFill64
-                  color={(t) => t.color.textLight}
-                  secondaryColor={(t) => t.color.negative}
+                  color={(t) => t.color.badgeIconColor}
+                  secondaryColor={(t) => t.color.warning}
                 />
               </span>
             </Badge.IconBadge>

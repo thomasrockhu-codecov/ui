@@ -14,25 +14,25 @@ export default {
 export const Showcase = () => (
   <Flexbox container>
     <Flexbox container direction="column">
-      <Badge.AccountBadge badgeColor={(t) => t.color.svgFill} badgeSize="l">
+      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="l">
         ISK
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.svgFill} badgeSize="m">
+      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="m">
         ISK
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.svgFill} badgeSize="s">
+      <Badge.AccountBadge badgeColor={(t) => t.color.accountBadgeBackground} badgeSize="s">
         ISK
       </Badge.AccountBadge>
     </Flexbox>
 
     <Flexbox container direction="column">
-      <Badge.AccountBadge badgeColor={(t) => t.color.positive} badgeSize="l">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="l">
         SEB
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.positive} badgeSize="m">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="m">
         SEB
       </Badge.AccountBadge>
-      <Badge.AccountBadge badgeColor={(t) => t.color.positive} badgeSize="s">
+      <Badge.AccountBadge badgeColor={(t) => t.color.badgeBackgroundPositive} badgeSize="s">
         SEB
       </Badge.AccountBadge>
     </Flexbox>

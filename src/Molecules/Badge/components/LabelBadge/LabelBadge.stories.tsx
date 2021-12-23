@@ -36,7 +36,7 @@ export const Showcase = () => {
         {
           title: 'Custom badge color',
           component: (
-            <Badge.LabelBadge badgeColor={(t) => t.color.menuAccent4}>
+            <Badge.LabelBadge badgeColor={(t) => t.color.badgeBackgroundNegative}>
               Custom badge color
             </Badge.LabelBadge>
           ),

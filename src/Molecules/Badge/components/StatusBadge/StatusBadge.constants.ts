@@ -22,4 +22,4 @@ export const MAP_ICON_COMPONENT_NAME = {
   [VARIANT_WARNING]: 'ExclamationMark',
   [VARIANT_INFORMATION]: 'InformationMark',
 };
-export const ICON_COLOR: ColorFn = (t) => t.color.svgStokeLight;
+export const ICON_COLOR: ColorFn = (t) => t.color.badgeIconColor;

@@ -40,17 +40,17 @@ export const Showcase = () => (
         component: (
           <>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.positive}>
+              <Badge.NotificationBadge badgeColor={(t) => t.color.badgeBackgroundPositive}>
                 2
               </Badge.NotificationBadge>
             </Box>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.negative}>
+              <Badge.NotificationBadge badgeColor={(t) => t.color.badgeBackgroundNegative}>
                 3
               </Badge.NotificationBadge>
             </Box>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.disabledText}>
+              <Badge.NotificationBadge badgeColor={(t) => t.color.badgeBackgroundWarning}>
                 4
               </Badge.NotificationBadge>
             </Box>
@@ -65,13 +65,22 @@ export const Showcase = () => (
               <Badge.NotificationBadge badgeSize="xs" />
             </Box>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.positive} badgeSize="xs" />
+              <Badge.NotificationBadge
+                badgeColor={(t) => t.color.badgeBackgroundPositive}
+                badgeSize="xs"
+              />
             </Box>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.negative} badgeSize="xs" />
+              <Badge.NotificationBadge
+                badgeColor={(t) => t.color.badgeBackgroundNegative}
+                badgeSize="xs"
+              />
             </Box>
             <Box mb={1}>
-              <Badge.NotificationBadge badgeColor={(t) => t.color.disabledText} badgeSize="xs" />
+              <Badge.NotificationBadge
+                badgeColor={(t) => t.color.badgeBackgroundWarning}
+                badgeSize="xs"
+              />
             </Box>
           </>
         ),
@@ -134,11 +143,17 @@ export const CommonUseCases = () => {
                 <Typography type="tertiary"> Buy order</Typography>
               </Box>
               <Box my={2}>
-                <Badge.NotificationBadge badgeSize="xs" badgeColor={(t) => t.color.negative} />
+                <Badge.NotificationBadge
+                  badgeSize="xs"
+                  badgeColor={(t) => t.color.badgeBackgroundNegative}
+                />
                 <Typography type="tertiary"> Sell order</Typography>
               </Box>
               <Box my={2}>
-                <Badge.NotificationBadge badgeSize="xs" badgeColor={(t) => t.color.fundExchange} />
+                <Badge.NotificationBadge
+                  badgeSize="xs"
+                  badgeColor={(t) => t.color.badgeBackgroundWarning}
+                />
                 <Typography type="tertiary"> Exchange order</Typography>
               </Box>
             </Box>
