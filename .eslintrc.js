@@ -35,6 +35,7 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
     'react/prop-types': 0,
+    'react/jsx-curly-newline': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-unused-vars': ['error', {
       vars: 'all',

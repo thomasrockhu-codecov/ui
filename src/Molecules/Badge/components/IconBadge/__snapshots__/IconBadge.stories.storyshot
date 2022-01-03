@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Badge / IconBadge Default and common use cases 1`] = `
+.c5 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  color: #282823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #D2F500;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #D2F500;
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Default use
+      </span>
+    </div>
+    <div>
+      <span
+        className="c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5"
+          focusable="false"
+          height={8}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={8}
+        >
+          <path
+            d="M3 5v3h2V5h3V3H5V0H3v3H0v2h3z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Custom icon badge with custom props
+      </span>
+    </div>
+    <div>
+      <span
+        className="c6"
+      >
+        <svg
+          aria-hidden="true"
+          className="c7"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
+            fill="currentColor"
+          />
+          <path
+            d="M7 13a5 5 0 117.5 4.332l-.5.288V21h2v-2.255a7 7 0 10-8 0V21h2v-3.38l-.5-.288A4.998 4.998 0 017 13z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Custom icon badge size
+      </span>
+    </div>
+    <div>
+      <span
+        className="c8"
+      >
+        <svg
+          aria-hidden="true"
+          className="c7"
+          focusable="false"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={24}
+        >
+          <path
+            d="M11 4V0h2v4h-2zM15 13a3 3 0 00-3-3v2a1 1 0 011 1h2zM8 22v2h8v-2H8zM3 4l2.828 2.828 1.415-1.414-2.829-2.828L3 4zM16.757 5.414l2.829-2.828L21 4l-2.828 2.828-1.415-1.414z"
+            fill="currentColor"
+          />
+          <path
+            d="M7 13a5 5 0 117.5 4.332l-.5.288V21h2v-2.255a7 7 0 10-8 0V21h2v-3.38l-.5-.288A4.998 4.998 0 017 13z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Badge with illustration default use
+      </span>
+    </div>
+    <div>
+      <span
+        className="c9"
+      >
+        <svg
+          aria-hidden="true"
+          className="c10"
+          focusable="false"
+          height={64}
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          width={64}
+        >
+          <path
+            clipRule="evenodd"
+            d="M11 18H40V20H14.7205L32 34.6876L41.5609 26.5608L42.9797 27.9797L38.3898 31.8812L51 42.81V30H53V46H11V18ZM13 42.81L25.6102 31.8812L13 21.1624V42.81ZM27.152 33.1916L14.6807 44H49.3193L36.8481 33.1916L32 37.3124L27.152 33.1916Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+          <path
+            clipRule="evenodd"
+            d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
+            fill="#FF1900"
+            fillRule="evenodd"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Badge with illustration with custom props
+      </span>
+    </div>
+    <div>
+      <span
+        className="c9"
+      >
+        <span>
+          <svg
+            aria-hidden="true"
+            className="c11"
+            focusable="false"
+            height={64}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            secondaryColor={[Function]}
+            width={64}
+          >
+            <path
+              clipRule="evenodd"
+              d="M11 18H40V20H14.7205L32 34.6876L41.5609 26.5608L42.9797 27.9797L38.3898 31.8812L51 42.81V30H53V46H11V18ZM13 42.81L25.6102 31.8812L13 21.1624V42.81ZM27.152 33.1916L14.6807 44H49.3193L36.8481 33.1916L32 37.3124L27.152 33.1916Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+            <path
+              clipRule="evenodd"
+              d="M53.4142 12H46.5858L42 16.5858V23.4142L46.5858 28H53.4142L58 23.4142V16.5858L53.4142 12ZM49 16V21H51V16H49ZM49 24V22H51V24H49Z"
+              fill="#FFCF00"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

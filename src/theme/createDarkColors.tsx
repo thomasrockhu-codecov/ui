@@ -34,7 +34,15 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     backgroundDark: rawColor.gray2,
 
     badgeBackground: rawColor.blue500,
+    badgeBackgroundPositive: rawColor.green500,
+    badgeBackgroundWarning: rawColor.yellow400,
+    badgeBackgroundNegative: rawColor.red500,
+    badgeIconColor: rawColor.black,
     badgeTextColor: rawColor.white,
+
+    tooltipBadgeBackground: rawColor.black,
+    tooltipBadgeBorder: rawColor.gray400,
+    tooltipBadgeText: rawColor.white,
 
     barGraphHighlight: Color(rawColor.complementaryBlue1).alpha(0.3).rgb().string(),
 
