@@ -1,3 +1,12 @@
+## [9.17.4](https://github.com/nordnet/ui/compare/v9.17.3...v9.17.4) (2022-01-03)
+
+
+### Bug Fixes
+
+* move storyshots config to root, remove dummy test ([2470aff](https://github.com/nordnet/ui/commit/2470aff))
+* remove duplicated dependencies ([23ddab9](https://github.com/nordnet/ui/commit/23ddab9))
+* yarn.lock ([916c360](https://github.com/nordnet/ui/commit/916c360))
+
 ## [9.17.3](https://github.com/nordnet/ui/compare/v9.17.2...v9.17.3) (2021-12-21)
 
 
