@@ -1,3 +1,37 @@
+# [10.0.0-beta.1](https://github.com/nordnet/ui/compare/v9.17.4...v10.0.0-beta.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* 🐛 disable conflicting eslint rule react/jsx-curly-newline ([c18454f](https://github.com/nordnet/ui/commit/c18454f))
+* 🐛 import badge after atoms, add weight to account badge ([89dbe68](https://github.com/nordnet/ui/commit/89dbe68))
+* 🐛 move Badge to Molecules to avoid weird test failure ([a62fd70](https://github.com/nordnet/ui/commit/a62fd70))
+* 🐛 notification badge cannot have children when size is xs ([f50585a](https://github.com/nordnet/ui/commit/f50585a))
+* 🐛 Put IconBadge among Atoms instead of Molecules ([df58e0c](https://github.com/nordnet/ui/commit/df58e0c))
+* 🐛 remove Avatar component, replace with Badge.AccountBadge ([faf24c6](https://github.com/nordnet/ui/commit/faf24c6))
+* 🐛 Review fixes of misspelled stories and typing ([0cfb215](https://github.com/nordnet/ui/commit/0cfb215))
+* 🐛 simply Badge component defaults and streamline stories ([3fc0265](https://github.com/nordnet/ui/commit/3fc0265))
+
+
+### Features
+
+* 🎸 add AccountBadge ([6cae98e](https://github.com/nordnet/ui/commit/6cae98e))
+* 🎸 add notification badge as sub badge component ([4b777ed](https://github.com/nordnet/ui/commit/4b777ed))
+* 🎸 Add status badge and re-work contract for icon badge ([0d7868c](https://github.com/nordnet/ui/commit/0d7868c))
+* 🎸 Added tooltip sub badge ([02687ce](https://github.com/nordnet/ui/commit/02687ce))
+* 🎸 break out LabelBadge to separate component ([5794ee0](https://github.com/nordnet/ui/commit/5794ee0))
+* 🎸 create shared BadgeBase component and use it in Badge ([26d69ae](https://github.com/nordnet/ui/commit/26d69ae))
+* 🎸 finish TooltipBadge ([2c8350a](https://github.com/nordnet/ui/commit/2c8350a))
+* 🎸 implement more appropriate badge colors ([08c49d0](https://github.com/nordnet/ui/commit/08c49d0))
+* 🎸 pass ref and html props + deny children in some badges ([0f82044](https://github.com/nordnet/ui/commit/0f82044))
+* Setup IconBadge component ([737f946](https://github.com/nordnet/ui/commit/737f946))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove Avatar component
+* 🧨 badge needs a sub badge component attached
+
 ## [9.17.4](https://github.com/nordnet/ui/compare/v9.17.3...v9.17.4) (2022-01-03)
 
 
