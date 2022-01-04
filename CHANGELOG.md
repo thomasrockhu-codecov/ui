@@ -1,3 +1,16 @@
+# [10.0.0-beta.2](https://github.com/nordnet/ui/compare/v10.0.0-beta.1...v10.0.0-beta.2) (2022-01-04)
+
+
+### Features
+
+* 🎸 change Badge sub-component naming convention ([46e306a](https://github.com/nordnet/ui/commit/46e306a))
+
+
+### BREAKING CHANGES
+
+* 🧨 Modify Badge sub-component naming convention to use e.g. <Badge.Label>
+instead of <Badge.LabelBadge>
+
 # [10.0.0-beta.1](https://github.com/nordnet/ui/compare/v9.17.4...v10.0.0-beta.1) (2022-01-03)
 
 
