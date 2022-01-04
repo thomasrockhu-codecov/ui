@@ -3,9 +3,9 @@ import Badge from '../..';
 import { Display } from '../../../../common/Display';
 
 export default {
-  title: 'Molecules / Badge / LabelBadge',
+  title: 'Molecules / Badge / Label',
   parameters: {
-    component: Badge.LabelBadge,
+    component: Badge.Label,
   },
 };
 
@@ -15,37 +15,35 @@ export const Showcase = () => {
       items={[
         {
           title: 'Primary',
-          component: <Badge.LabelBadge>Primary</Badge.LabelBadge>,
+          component: <Badge.Label>Primary</Badge.Label>,
         },
         {
           title: 'Primary Bold',
-          component: <Badge.LabelBadge weight="bold">Primary Bold</Badge.LabelBadge>,
+          component: <Badge.Label weight="bold">Primary Bold</Badge.Label>,
         },
         {
           title: 'Secondary',
-          component: <Badge.LabelBadge type="secondary">Secondary</Badge.LabelBadge>,
+          component: <Badge.Label type="secondary">Secondary</Badge.Label>,
         },
         {
           title: 'Secondary Bold',
           component: (
-            <Badge.LabelBadge type="secondary" weight="bold">
+            <Badge.Label type="secondary" weight="bold">
               Secondary Bold
-            </Badge.LabelBadge>
+            </Badge.Label>
           ),
         },
         {
           title: 'Custom badge color',
           component: (
-            <Badge.LabelBadge badgeColor={(t) => t.color.badgeBackgroundNegative}>
+            <Badge.Label badgeColor={(t) => t.color.badgeBackgroundNegative}>
               Custom badge color
-            </Badge.LabelBadge>
+            </Badge.Label>
           ),
         },
         {
           title: 'Custom text color',
-          component: (
-            <Badge.LabelBadge color={(t) => t.color.warning}>Custom text color</Badge.LabelBadge>
-          ),
+          component: <Badge.Label color={(t) => t.color.warning}>Custom text color</Badge.Label>,
         },
       ]}
     />

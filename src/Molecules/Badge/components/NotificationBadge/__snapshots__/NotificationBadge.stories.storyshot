@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Badge / NotificationBadge Badge with animation 1`] = `
+exports[`Storyshots Molecules / Badge / Notification Badge with animation 1`] = `
 .c4 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -342,7 +342,7 @@ exports[`Storyshots Molecules / Badge / NotificationBadge Badge with animation 1
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / NotificationBadge Common use cases 1`] = `
+exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
 .c7 {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -660,8 +660,7 @@ exports[`Storyshots Molecules / Badge / NotificationBadge Common use cases 1`] =
         <span
           className="c3"
         >
-          Orders
-           
+          Orders 
           <span
             aria-label="7 new orders"
             className="c4 c5"
@@ -713,7 +712,7 @@ exports[`Storyshots Molecules / Badge / NotificationBadge Common use cases 1`] =
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / NotificationBadge Showcase 1`] = `
+exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
 .c7 {
   margin-bottom: 4px;
   background-color: transparent;
@@ -1305,7 +1304,7 @@ exports[`Storyshots Molecules / Badge / NotificationBadge Showcase 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / NotificationBadge Specialized children 1`] = `
+exports[`Storyshots Molecules / Badge / Notification Specialized children 1`] = `
 .c4 {
   margin-top: 8px;
   margin-bottom: 8px;

@@ -10,14 +10,14 @@ The BaseBadge is flexible and exposed externally as Badge, and all the other bad
 
 ❗❗ `<Badge>` should only be used directly as a last resort if none of the other badge components covers your intended use case. Consider implementing a new sub badge component if design requires.
 
-### Account Badge (Badge.AccountBadge)
+### Account Badge (Badge.Account)
 
-This replaces the deprecated `Avatar` component, and is used to display a representation of an entity (e.g. a bank, an account type, etc.).
+Account Badge is used to display a representation of an entity (e.g. a bank, an account type, etc.).
 
 - `badgeColor` - a theme color function used to set the color for the background/badge.
 - `badgeSize` - sets the width/height (symmetric ratio) of the badge. Available sizes are: `'l'`: 48px, `'m'`: 32px, `'s'`: 24px.
 
-### Icon Badge (Badge.IconBadge)
+### Icon Badge (Badge.Icon)
 
 Badge with an `Icon` or `Illustration`. Used to bring flair or bring attention to something.
 
@@ -25,7 +25,7 @@ Badge with an `Icon` or `Illustration`. Used to bring flair or bring attention t
 - `badgeSize` - sets the width/height (symmetric ratio) of the badge. Available sizes are: `'xl'`: 80px, `'l'`: 48px, `'m'`: 40px, `'s'`: 32px.
 - `children` - the `Icon`- or `Illustration`- component.
 
-### Label Badge (Badge.LabelBadge)
+### Label Badge (Badge.Label)
 
 Brings attention to a property on a page entity.
 
@@ -35,7 +35,7 @@ Brings attention to a property on a page entity.
 - `weight` - sets the font weight.
 - `children` - the badge's text content.
 
-### Notification Badge (Badge.NotificationBadge)
+### Notification Badge (Badge.Notification)
 
 Used to display user notifications. Displays the notification as a badge with numbers or as a dot.
 If the `badgeSize` is `xs` the badge cannot have children.
@@ -47,7 +47,7 @@ If the `badgeSize` is `xs` the badge cannot have children.
 - `symmetricShape` - forces the component to be symmetrical. i.e round.
 - `children` - the number of notifications.
 
-### Status Badge (Badge.StatusBadge)
+### Status Badge (Badge.Status)
 
 The Status Badge is used for displaying the statuses like `'create'`, `'complete'`, `'pending',` `'error'`, `'warning'` or `'information'`.
 The status can be passed in as a `string` to `variant` which will render the corresponding `icon` and `badgeColor`.
@@ -55,10 +55,10 @@ The status can be passed in as a `string` to `variant` which will render the cor
 - `badgeSize` - sets the width/height on the badge. Available sizes: `'xl'`: 72px `'l'`: 48px `'m'`: 32px `'s'`: 24px.
 - `variant` - status as a string. Statuses are: `'create'`, `'complete'`, `'pending',` `'error'`, `'warning'` or `'information'`.
 
-### Tooltip Badge (Badge.TooltipBadge)
+### Tooltip Badge (Badge.Tooltip)
 
-TooltipBadge is used to display a clickable/hoverable badge for displaying additonal information in a `Tooltip` or a `Drawer`.
-Consumer have to wrap TooltipBadge in a Tooltip or define their own onClick function.
+Tooltip is used to display a clickable/hoverable badge for displaying additonal information in a `Tooltip` or a `Drawer`.
+Consumer have to wrap Tooltip in a Tooltip or define their own onClick function.
 If the `onClick` prop is passed in to the component, it will add styling to cursor and highlight the badge.
 
 - `badgeSize` - sets the width/height on the badge. Available sizes: `'l'`: 24px `'s'`: 16px.
