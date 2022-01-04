@@ -128,7 +128,7 @@ const AccountValue = () => {
       ) : (
         <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
           <Flexbox item container alignItems="center" basis="32px" grow={0}>
-            <Badge.AccountBadge badgeSize="s">{selectedOption.symbol}</Badge.AccountBadge>
+            <Badge.Account badgeSize="s">{selectedOption.symbol}</Badge.Account>
           </Flexbox>
           <Flexbox item container alignItems="center" grow={1}>
             <Typography type="tertiary" weight="bold" color={(t) => t.color.text}>
@@ -168,7 +168,7 @@ const AccountListItem = ({ index }) => {
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
-          <Badge.AccountBadge badgeSize="s">{option.symbol}</Badge.AccountBadge>
+          <Badge.Account badgeSize="s">{option.symbol}</Badge.Account>
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
           <Flexbox item>

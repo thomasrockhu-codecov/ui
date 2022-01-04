@@ -4,9 +4,9 @@ import Badge from '../..';
 import { Display } from '../../../../common/Display';
 
 export default {
-  title: 'Molecules / Badge / IconBadge',
+  title: 'Molecules / Badge / Icon',
   parameters: {
-    component: Badge.IconBadge,
+    component: Badge.Icon,
   },
 };
 
@@ -17,46 +17,46 @@ export const DefaultAndCommonUseCases = () => {
         {
           title: 'Default use',
           component: (
-            <Badge.IconBadge>
+            <Badge.Icon>
               <Icon.Add8 />
-            </Badge.IconBadge>
+            </Badge.Icon>
           ),
         },
         {
           title: 'Custom icon badge with custom props',
           component: (
-            <Badge.IconBadge badgeColor={(t) => t.color.bulbBackground} badgeSize="l">
+            <Badge.Icon badgeColor={(t) => t.color.bulbBackground} badgeSize="l">
               <Icon.Lightbulb24 color={(t) => t.color.bulbForeground} />
-            </Badge.IconBadge>
+            </Badge.Icon>
           ),
         },
         {
           title: 'Custom icon badge size',
           component: (
-            <Badge.IconBadge badgeColor={(t) => t.color.bulbBackground} badgeSize={30}>
+            <Badge.Icon badgeColor={(t) => t.color.bulbBackground} badgeSize={30}>
               <Icon.Lightbulb24 color={(t) => t.color.bulbForeground} />
-            </Badge.IconBadge>
+            </Badge.Icon>
           ),
         },
         {
           title: 'Badge with illustration default use',
           component: (
-            <Badge.IconBadge badgeSize="xl">
+            <Badge.Icon badgeSize="xl">
               <Illustration.UrgentMailFill64 />
-            </Badge.IconBadge>
+            </Badge.Icon>
           ),
         },
         {
           title: 'Badge with illustration with custom props',
           component: (
-            <Badge.IconBadge badgeSize="xl">
+            <Badge.Icon badgeSize="xl">
               <span>
                 <Illustration.UrgentMailFill64
                   color={(t) => t.color.badgeIconColor}
                   secondaryColor={(t) => t.color.warning}
                 />
               </span>
-            </Badge.IconBadge>
+            </Badge.Icon>
           ),
         },
       ]}

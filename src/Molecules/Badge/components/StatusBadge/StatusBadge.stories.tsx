@@ -4,9 +4,9 @@ import FeedbackBanner from '../../../FeedbackBanner';
 import { Box, Flexbox, Typography } from '../../../..';
 
 export default {
-  title: 'Molecules / Badge / StatusBadge',
+  title: 'Molecules / Badge / Status',
   parameters: {
-    component: Badge.StatusBadge,
+    component: Badge.Status,
   },
 };
 
@@ -15,7 +15,7 @@ export const InformationStatusBadge = () => (
     <Box mb={4}>
       <Typography type="title2">Default Status Badge</Typography>
       <Box>
-        <Badge.StatusBadge />
+        <Badge.Status />
       </Box>
     </Box>
     <Box mb={4}>
@@ -26,45 +26,45 @@ export const InformationStatusBadge = () => (
     </Box>
     <Flexbox container>
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="create" badgeSize="xl" />
-        <Badge.StatusBadge variant="create" badgeSize="l" />
-        <Badge.StatusBadge variant="create" badgeSize="m" />
-        <Badge.StatusBadge variant="create" badgeSize="s" />
+        <Badge.Status variant="create" badgeSize="xl" />
+        <Badge.Status variant="create" badgeSize="l" />
+        <Badge.Status variant="create" badgeSize="m" />
+        <Badge.Status variant="create" badgeSize="s" />
       </Flexbox>
 
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="complete" badgeSize="xl" />
-        <Badge.StatusBadge variant="complete" badgeSize="l" />
-        <Badge.StatusBadge variant="complete" badgeSize="m" />
-        <Badge.StatusBadge variant="complete" badgeSize="s" />
+        <Badge.Status variant="complete" badgeSize="xl" />
+        <Badge.Status variant="complete" badgeSize="l" />
+        <Badge.Status variant="complete" badgeSize="m" />
+        <Badge.Status variant="complete" badgeSize="s" />
       </Flexbox>
 
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="pending" badgeSize="xl" />
-        <Badge.StatusBadge variant="pending" badgeSize="l" />
-        <Badge.StatusBadge variant="pending" badgeSize="m" />
-        <Badge.StatusBadge variant="pending" badgeSize="s" />
+        <Badge.Status variant="pending" badgeSize="xl" />
+        <Badge.Status variant="pending" badgeSize="l" />
+        <Badge.Status variant="pending" badgeSize="m" />
+        <Badge.Status variant="pending" badgeSize="s" />
       </Flexbox>
 
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="error" badgeSize="xl" />
-        <Badge.StatusBadge variant="error" badgeSize="l" />
-        <Badge.StatusBadge variant="error" badgeSize="m" />
-        <Badge.StatusBadge variant="error" badgeSize="s" />
+        <Badge.Status variant="error" badgeSize="xl" />
+        <Badge.Status variant="error" badgeSize="l" />
+        <Badge.Status variant="error" badgeSize="m" />
+        <Badge.Status variant="error" badgeSize="s" />
       </Flexbox>
 
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="warning" badgeSize="xl" />
-        <Badge.StatusBadge variant="warning" badgeSize="l" />
-        <Badge.StatusBadge variant="warning" badgeSize="m" />
-        <Badge.StatusBadge variant="warning" badgeSize="s" />
+        <Badge.Status variant="warning" badgeSize="xl" />
+        <Badge.Status variant="warning" badgeSize="l" />
+        <Badge.Status variant="warning" badgeSize="m" />
+        <Badge.Status variant="warning" badgeSize="s" />
       </Flexbox>
 
       <Flexbox container direction="column">
-        <Badge.StatusBadge variant="information" badgeSize="xl" />
-        <Badge.StatusBadge variant="information" badgeSize="l" />
-        <Badge.StatusBadge variant="information" badgeSize="m" />
-        <Badge.StatusBadge variant="information" badgeSize="s" />
+        <Badge.Status variant="information" badgeSize="xl" />
+        <Badge.Status variant="information" badgeSize="l" />
+        <Badge.Status variant="information" badgeSize="m" />
+        <Badge.Status variant="information" badgeSize="s" />
       </Flexbox>
     </Flexbox>
   </>

@@ -7,12 +7,12 @@ import { AccountBadgeComponent } from './components/AccountBadge/AccountBadge.ty
 import { TooltipBadgeComponent } from './components/TooltipBadge/TooltipBadge.types';
 
 type BadgeVariants = {
-  LabelBadge: LabelBadgeComponent;
-  IconBadge: IconBadgeComponent;
-  StatusBadge: StatusBadgeComponent;
-  NotificationBadge: NotificationBadgeComponent;
-  AccountBadge: AccountBadgeComponent;
-  TooltipBadge: TooltipBadgeComponent;
+  Label: LabelBadgeComponent;
+  Icon: IconBadgeComponent;
+  Status: StatusBadgeComponent;
+  Notification: NotificationBadgeComponent;
+  Account: AccountBadgeComponent;
+  Tooltip: TooltipBadgeComponent;
 };
 
 export type BadgeComponent = BaseBadgeComponent & BadgeVariants;
