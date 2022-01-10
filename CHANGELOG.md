@@ -1,3 +1,10 @@
+## [9.17.5](https://github.com/nordnet/ui/compare/v9.17.4...v9.17.5) (2022-01-10)
+
+
+### Bug Fixes
+
+* add displayName to all icons ([204ccbc](https://github.com/nordnet/ui/commit/204ccbc))
+
 ## [9.17.4](https://github.com/nordnet/ui/compare/v9.17.3...v9.17.4) (2022-01-03)
 
 
