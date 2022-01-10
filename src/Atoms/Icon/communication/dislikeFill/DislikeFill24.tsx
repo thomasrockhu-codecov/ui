@@ -18,4 +18,6 @@ const DislikeFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+DislikeFill24.displayName = 'Icon.DislikeFill';
+
 export default DislikeFill24;

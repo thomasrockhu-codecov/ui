@@ -15,4 +15,6 @@ const Apartment32: React.FC<IconProps> = (props) => {
   );
 };
 
+Apartment32.displayName = 'Icon.Apartment';
+
 export default Apartment32;

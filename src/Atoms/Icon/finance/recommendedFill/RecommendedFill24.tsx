@@ -16,4 +16,6 @@ const RecommendedFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+RecommendedFill24.displayName = 'Icon.RecommendedFill';
+
 export default RecommendedFill24;

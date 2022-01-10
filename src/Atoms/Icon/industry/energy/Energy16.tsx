@@ -16,4 +16,6 @@ const Energy16: React.FC<IconProps> = (props) => {
   );
 };
 
+Energy16.displayName = 'Icon.Energy';
+
 export default Energy16;

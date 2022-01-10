@@ -16,4 +16,6 @@ const Search32: React.FC<IconProps> = (props) => {
   );
 };
 
+Search32.displayName = 'Icon.Search';
+
 export default Search32;

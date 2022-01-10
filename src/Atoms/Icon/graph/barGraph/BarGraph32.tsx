@@ -14,4 +14,6 @@ const BarGraph32: React.FC<IconProps> = (props) => {
   );
 };
 
+BarGraph32.displayName = 'Icon.BarGraph';
+
 export default BarGraph32;

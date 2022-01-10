@@ -20,4 +20,6 @@ const Book24: React.FC<IconProps> = (props) => {
   );
 };
 
+Book24.displayName = 'Icon.Book';
+
 export default Book24;

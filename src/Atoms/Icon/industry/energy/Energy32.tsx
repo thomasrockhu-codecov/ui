@@ -16,4 +16,6 @@ const Energy32: React.FC<IconProps> = (props) => {
   );
 };
 
+Energy32.displayName = 'Icon.Energy';
+
 export default Energy32;

@@ -20,4 +20,6 @@ const Tax24: React.FC<IconProps> = (props) => {
   );
 };
 
+Tax24.displayName = 'Icon.Tax';
+
 export default Tax24;

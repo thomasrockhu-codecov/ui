@@ -15,4 +15,6 @@ const Print24 = (props: IconProps) => (
   </IconBase>
 );
 
+Print24.displayName = 'Icon.Print';
+
 export default Print24;

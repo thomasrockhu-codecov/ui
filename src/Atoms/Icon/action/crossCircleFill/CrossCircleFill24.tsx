@@ -16,4 +16,6 @@ const CrossCircleFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+CrossCircleFill24.displayName = 'Icon.CrossCircleFill';
+
 export default CrossCircleFill24;

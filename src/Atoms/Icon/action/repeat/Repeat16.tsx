@@ -14,4 +14,6 @@ const Repeat16: React.FC<IconProps> = (props) => {
   );
 };
 
+Repeat16.displayName = 'Icon.Repeat';
+
 export default Repeat16;

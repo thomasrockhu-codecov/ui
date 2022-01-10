@@ -14,4 +14,6 @@ const LineGraph16: React.FC<IconProps> = (props) => {
   );
 };
 
+LineGraph16.displayName = 'Icon.LineGraph';
+
 export default LineGraph16;

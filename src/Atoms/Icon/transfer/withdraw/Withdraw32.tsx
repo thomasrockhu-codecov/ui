@@ -22,4 +22,6 @@ const Withdraw32: React.FC<IconProps> = (props) => {
   );
 };
 
+Withdraw32.displayName = 'Icon.Withdraw';
+
 export default Withdraw32;

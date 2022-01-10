@@ -16,4 +16,6 @@ const Environment16: React.FC<IconProps> = (props) => {
   );
 };
 
+Environment16.displayName = 'Icon.Environment';
+
 export default Environment16;

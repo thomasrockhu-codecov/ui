@@ -17,4 +17,6 @@ const Communications24: React.FC<IconProps> = (props) => {
   );
 };
 
+Communications24.displayName = 'Icon.Communications';
+
 export default Communications24;

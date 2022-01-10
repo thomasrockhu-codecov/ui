@@ -20,4 +20,6 @@ const Pension24: React.FC<IconProps> = (props) => {
   );
 };
 
+Pension24.displayName = 'Icon.Pension';
+
 export default Pension24;

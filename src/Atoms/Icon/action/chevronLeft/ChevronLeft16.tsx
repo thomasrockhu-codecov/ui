@@ -11,4 +11,6 @@ const ChevronLeft16: React.FC<IconProps> = (props) => {
   );
 };
 
+ChevronLeft16.displayName = 'Icon.ChevronLeft';
+
 export default ChevronLeft16;

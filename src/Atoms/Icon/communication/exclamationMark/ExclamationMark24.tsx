@@ -16,4 +16,6 @@ const ExclamationMark24: React.FC<IconProps> = (props) => {
   );
 };
 
+ExclamationMark24.displayName = 'Icon.ExclamationMark';
+
 export default ExclamationMark24;

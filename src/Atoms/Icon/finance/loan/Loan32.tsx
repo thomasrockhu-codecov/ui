@@ -16,4 +16,6 @@ const Loan32: React.FC<IconProps> = (props) => {
   );
 };
 
+Loan32.displayName = 'Icon.Loan';
+
 export default Loan32;

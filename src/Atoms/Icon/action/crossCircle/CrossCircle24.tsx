@@ -20,4 +20,6 @@ const CrossCircle24: React.FC<IconProps> = (props) => {
   );
 };
 
+CrossCircle24.displayName = 'Icon.CrossCircle';
+
 export default CrossCircle24;

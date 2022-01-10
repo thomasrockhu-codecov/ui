@@ -11,4 +11,6 @@ const Add24: React.FC<IconProps> = (props) => {
   );
 };
 
+Add24.displayName = 'Icon.Add';
+
 export default Add24;

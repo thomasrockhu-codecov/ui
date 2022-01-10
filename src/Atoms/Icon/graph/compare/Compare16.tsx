@@ -16,4 +16,6 @@ const Compare16: React.FC<IconProps> = (props) => {
   );
 };
 
+Compare16.displayName = 'Icon.Compare';
+
 export default Compare16;

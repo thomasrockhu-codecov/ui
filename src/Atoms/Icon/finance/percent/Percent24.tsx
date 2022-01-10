@@ -23,4 +23,6 @@ const Percent24: React.FC<IconProps> = (props) => {
   );
 };
 
+Percent24.displayName = 'Icon.Percent';
+
 export default Percent24;

@@ -16,4 +16,6 @@ const Check16: React.FC<IconProps> = (props) => {
   );
 };
 
+Check16.displayName = 'Icon.Check';
+
 export default Check16;

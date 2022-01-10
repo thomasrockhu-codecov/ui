@@ -15,4 +15,6 @@ const Fund16: React.FC<IconProps> = (props) => {
   );
 };
 
+Fund16.displayName = 'Icon.Fund';
+
 export default Fund16;

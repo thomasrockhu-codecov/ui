@@ -17,4 +17,6 @@ const Fee16: React.FC<IconProps> = (props) => {
   );
 };
 
+Fee16.displayName = 'Icon.Fee';
+
 export default Fee16;

@@ -19,4 +19,6 @@ const News32: React.FC<IconProps> = (props) => {
   );
 };
 
+News32.displayName = 'Icon.News';
+
 export default News32;

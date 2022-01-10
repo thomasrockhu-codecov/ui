@@ -14,4 +14,6 @@ const Financial16: React.FC<IconProps> = (props) => {
   );
 };
 
+Financial16.displayName = 'Icon.Financial';
+
 export default Financial16;

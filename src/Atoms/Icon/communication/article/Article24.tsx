@@ -17,4 +17,6 @@ const Article24: React.FC<IconProps> = (props) => {
   );
 };
 
+Article24.displayName = 'Icon.Article';
+
 export default Article24;

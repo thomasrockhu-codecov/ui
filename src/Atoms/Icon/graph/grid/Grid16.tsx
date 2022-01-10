@@ -16,4 +16,6 @@ const Grid16: React.FC<IconProps> = (props) => {
   );
 };
 
+Grid16.displayName = 'Icon.Grid';
+
 export default Grid16;

@@ -20,4 +20,6 @@ const Delete24: React.FC<IconProps> = (props) => {
   );
 };
 
+Delete24.displayName = 'Icon.Delete';
+
 export default Delete24;

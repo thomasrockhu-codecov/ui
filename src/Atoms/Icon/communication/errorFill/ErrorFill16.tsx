@@ -16,4 +16,6 @@ const ErrorFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+ErrorFill16.displayName = 'Icon.ErrorFill';
+
 export default ErrorFill16;

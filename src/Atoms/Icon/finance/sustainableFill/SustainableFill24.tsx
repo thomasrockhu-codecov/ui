@@ -14,4 +14,6 @@ const SustainableFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+SustainableFill24.displayName = 'Icon.SustainableFill';
+
 export default SustainableFill24;

@@ -15,4 +15,6 @@ const Logout16: React.FC<IconProps> = (props) => {
   );
 };
 
+Logout16.displayName = 'Icon.Logout';
+
 export default Logout16;

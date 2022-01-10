@@ -21,4 +21,6 @@ const Bank24: React.FC<IconProps> = (props) => {
   );
 };
 
+Bank24.displayName = 'Icon.Bank';
+
 export default Bank24;

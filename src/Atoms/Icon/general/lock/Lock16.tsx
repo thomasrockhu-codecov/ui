@@ -17,4 +17,6 @@ const Lock16: React.FC<IconProps> = (props) => {
   );
 };
 
+Lock16.displayName = 'Icon.Lock';
+
 export default Lock16;

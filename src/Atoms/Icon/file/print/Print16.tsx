@@ -13,4 +13,6 @@ const Print16 = (props: IconProps) => (
   </IconBase>
 );
 
+Print16.displayName = 'Icon.Print';
+
 export default Print16;

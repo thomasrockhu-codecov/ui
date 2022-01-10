@@ -17,4 +17,6 @@ const Transportation16: React.FC<IconProps> = (props) => {
   );
 };
 
+Transportation16.displayName = 'Icon.Transportation';
+
 export default Transportation16;

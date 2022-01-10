@@ -20,4 +20,6 @@ const InvestBull32: React.FC<IconProps> = (props) => {
   );
 };
 
+InvestBull32.displayName = 'Icon.InvestBull';
+
 export default InvestBull32;

@@ -23,4 +23,6 @@ const News24: React.FC<IconProps> = (props) => {
   );
 };
 
+News24.displayName = 'Icon.News';
+
 export default News24;

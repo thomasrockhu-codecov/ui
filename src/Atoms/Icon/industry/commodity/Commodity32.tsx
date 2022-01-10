@@ -18,4 +18,6 @@ const Commodity32: React.FC<IconProps> = (props) => {
   );
 };
 
+Commodity32.displayName = 'Icon.Commodity';
+
 export default Commodity32;

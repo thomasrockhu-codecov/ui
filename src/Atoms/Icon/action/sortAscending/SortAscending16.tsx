@@ -14,4 +14,6 @@ const SortAscending16: React.FC<IconProps> = (props) => {
   );
 };
 
+SortAscending16.displayName = 'Icon.SortAscending';
+
 export default SortAscending16;

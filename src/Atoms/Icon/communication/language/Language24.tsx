@@ -22,4 +22,6 @@ const Language24: React.FC<IconProps> = (props) => {
   );
 };
 
+Language24.displayName = 'Icon.Language';
+
 export default Language24;

@@ -11,4 +11,6 @@ const ChevronRight32: React.FC<IconProps> = (props) => {
   );
 };
 
+ChevronRight32.displayName = 'Icon.ChevronRight';
+
 export default ChevronRight32;

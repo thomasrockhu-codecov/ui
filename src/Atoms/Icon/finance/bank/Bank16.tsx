@@ -15,4 +15,6 @@ const Bank16: React.FC<IconProps> = (props) => {
   );
 };
 
+Bank16.displayName = 'Icon.Bank';
+
 export default Bank16;

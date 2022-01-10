@@ -17,4 +17,6 @@ const Clock32: React.FC<IconProps> = (props) => {
   );
 };
 
+Clock32.displayName = 'Icon.Clock';
+
 export default Clock32;

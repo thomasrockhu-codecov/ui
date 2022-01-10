@@ -20,4 +20,6 @@ const HighLow16: React.FC<IconProps> = (props) => {
   );
 };
 
+HighLow16.displayName = 'Icon.HighLow';
+
 export default HighLow16;

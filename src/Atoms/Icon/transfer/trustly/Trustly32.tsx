@@ -16,4 +16,6 @@ const Trustly32: React.FC<IconProps> = (props) => {
   );
 };
 
+Trustly32.displayName = 'Icon.Trustly';
+
 export default Trustly32;

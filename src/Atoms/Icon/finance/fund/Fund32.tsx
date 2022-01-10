@@ -15,4 +15,6 @@ const Fund32: React.FC<IconProps> = (props) => {
   );
 };
 
+Fund32.displayName = 'Icon.Fund';
+
 export default Fund32;

@@ -20,4 +20,6 @@ const CheckCircle24: React.FC<IconProps> = (props) => {
   );
 };
 
+CheckCircle24.displayName = 'Icon.CheckCircle';
+
 export default CheckCircle24;

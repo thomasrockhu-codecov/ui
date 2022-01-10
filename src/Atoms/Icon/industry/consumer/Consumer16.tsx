@@ -14,4 +14,6 @@ const Consumer16: React.FC<IconProps> = (props) => {
   );
 };
 
+Consumer16.displayName = 'Icon.Consumer';
+
 export default Consumer16;

@@ -19,4 +19,6 @@ const Error32: React.FC<IconProps> = (props) => {
   );
 };
 
+Error32.displayName = 'Icon.Error';
+
 export default Error32;

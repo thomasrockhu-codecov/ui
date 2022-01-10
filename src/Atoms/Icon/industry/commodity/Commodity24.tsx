@@ -18,4 +18,6 @@ const Commodity24: React.FC<IconProps> = (props) => {
   );
 };
 
+Commodity24.displayName = 'Icon.Commodity';
+
 export default Commodity24;

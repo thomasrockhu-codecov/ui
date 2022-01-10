@@ -22,4 +22,6 @@ const Controls16: React.FC<IconProps> = (props) => {
   );
 };
 
+Controls16.displayName = 'Icon.Controls';
+
 export default Controls16;

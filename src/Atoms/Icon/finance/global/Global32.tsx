@@ -16,4 +16,6 @@ const Global32: React.FC<IconProps> = (props) => {
   );
 };
 
+Global32.displayName = 'Icon.Global';
+
 export default Global32;

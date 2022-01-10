@@ -12,4 +12,6 @@ const Ohlc24: React.FC<IconProps> = (props) => {
   );
 };
 
+Ohlc24.displayName = 'Icon.Ohlc';
+
 export default Ohlc24;

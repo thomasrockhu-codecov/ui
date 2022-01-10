@@ -14,4 +14,6 @@ const Repeat32: React.FC<IconProps> = (props) => {
   );
 };
 
+Repeat32.displayName = 'Icon.Repeat';
+
 export default Repeat32;

@@ -20,4 +20,6 @@ const Villa24: React.FC<IconProps> = (props) => {
   );
 };
 
+Villa24.displayName = 'Icon.Villa';
+
 export default Villa24;

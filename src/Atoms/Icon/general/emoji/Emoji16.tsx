@@ -29,4 +29,6 @@ const Emoji16: React.FC<IconProps> = (props) => {
   );
 };
 
+Emoji16.displayName = 'Icon.Emoji';
+
 export default Emoji16;

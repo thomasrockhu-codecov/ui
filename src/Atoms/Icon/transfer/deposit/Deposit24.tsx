@@ -22,4 +22,6 @@ const Deposit24: React.FC<IconProps> = (props) => {
   );
 };
 
+Deposit24.displayName = 'Icon.Deposit';
+
 export default Deposit24;

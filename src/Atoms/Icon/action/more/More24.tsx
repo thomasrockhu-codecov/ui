@@ -16,4 +16,6 @@ const More24: React.FC<IconProps> = (props) => {
   );
 };
 
+More24.displayName = 'Icon.More';
+
 export default More24;

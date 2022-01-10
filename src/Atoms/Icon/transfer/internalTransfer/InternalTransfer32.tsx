@@ -18,4 +18,6 @@ const InternalTransfer32: React.FC<IconProps> = (props) => {
   );
 };
 
+InternalTransfer32.displayName = 'Icon.InternalTransfer';
+
 export default InternalTransfer32;

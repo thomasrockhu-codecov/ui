@@ -13,4 +13,6 @@ const Orders24: React.FC<IconProps> = (props) => {
   );
 };
 
+Orders24.displayName = 'Icon.Orders';
+
 export default Orders24;

@@ -14,4 +14,6 @@ const More16: React.FC<IconProps> = (props) => {
   );
 };
 
+More16.displayName = 'Icon.More';
+
 export default More16;

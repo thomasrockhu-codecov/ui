@@ -16,4 +16,6 @@ const InformationFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+InformationFill24.displayName = 'Icon.InformationFill';
+
 export default InformationFill24;

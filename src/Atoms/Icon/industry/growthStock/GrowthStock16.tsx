@@ -14,4 +14,6 @@ const GrowthStock16: React.FC<IconProps> = (props) => {
   );
 };
 
+GrowthStock16.displayName = 'Icon.GrowthStock';
+
 export default GrowthStock16;

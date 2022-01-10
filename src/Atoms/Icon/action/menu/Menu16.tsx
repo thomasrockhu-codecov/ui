@@ -11,4 +11,6 @@ const Menu16: React.FC<IconProps> = (props) => {
   );
 };
 
+Menu16.displayName = 'Icon.Menu';
+
 export default Menu16;

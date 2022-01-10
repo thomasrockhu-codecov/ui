@@ -17,4 +17,6 @@ const Lock24: React.FC<IconProps> = (props) => {
   );
 };
 
+Lock24.displayName = 'Icon.Lock';
+
 export default Lock24;

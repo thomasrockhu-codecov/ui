@@ -15,4 +15,6 @@ const TabDefault24: React.FC<IconProps> = (props) => {
   );
 };
 
+TabDefault24.displayName = 'Icon.TabDefault';
+
 export default TabDefault24;

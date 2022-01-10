@@ -14,4 +14,6 @@ const Instagram24: React.FC<IconProps> = (props) => {
   );
 };
 
+Instagram24.displayName = 'Icon.Instagram';
+
 export default Instagram24;

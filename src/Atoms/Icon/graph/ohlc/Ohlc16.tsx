@@ -12,4 +12,6 @@ const Ohlc16: React.FC<IconProps> = (props) => {
   );
 };
 
+Ohlc16.displayName = 'Icon.Ohlc';
+
 export default Ohlc16;

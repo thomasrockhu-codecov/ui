@@ -16,4 +16,6 @@ const Market32: React.FC<IconProps> = (props) => {
   );
 };
 
+Market32.displayName = 'Icon.Market';
+
 export default Market32;

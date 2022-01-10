@@ -16,4 +16,6 @@ const Guidance24: React.FC<IconProps> = (props) => {
   );
 };
 
+Guidance24.displayName = 'Icon.Guidance';
+
 export default Guidance24;

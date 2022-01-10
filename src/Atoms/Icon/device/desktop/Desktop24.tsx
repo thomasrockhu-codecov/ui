@@ -17,4 +17,6 @@ const Desktop24: React.FC<IconProps> = (props) => {
   );
 };
 
+Desktop24.displayName = 'Icon.Desktop';
+
 export default Desktop24;

@@ -17,4 +17,6 @@ const Account24: React.FC<IconProps> = (props) => {
   );
 };
 
+Account24.displayName = 'Icon.Account';
+
 export default Account24;

@@ -20,4 +20,6 @@ const MonthlySavings24: React.FC<IconProps> = (props) => {
   );
 };
 
+MonthlySavings24.displayName = 'Icon.MonthlySavings';
+
 export default MonthlySavings24;

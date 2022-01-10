@@ -22,4 +22,6 @@ const UserIdTouch24: React.FC<IconProps> = (props) => {
   );
 };
 
+UserIdTouch24.displayName = 'Icon.UserIdTouch';
+
 export default UserIdTouch24;

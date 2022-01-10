@@ -16,4 +16,6 @@ const Mobile24: React.FC<IconProps> = (props) => {
   );
 };
 
+Mobile24.displayName = 'Icon.Mobile';
+
 export default Mobile24;

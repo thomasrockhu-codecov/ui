@@ -20,4 +20,6 @@ const Faq32: React.FC<IconProps> = (props) => {
   );
 };
 
+Faq32.displayName = 'Icon.Faq';
+
 export default Faq32;

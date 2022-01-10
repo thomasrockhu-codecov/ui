@@ -18,4 +18,6 @@ const LinkedAccounts32: React.FC<IconProps> = (props) => {
   );
 };
 
+LinkedAccounts32.displayName = 'Icon.LinkedAccounts';
+
 export default LinkedAccounts32;

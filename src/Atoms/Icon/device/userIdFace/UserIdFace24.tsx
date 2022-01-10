@@ -14,4 +14,6 @@ const UserIdFace24: React.FC<IconProps> = (props) => {
   );
 };
 
+UserIdFace24.displayName = 'Icon.UserIdFace';
+
 export default UserIdFace24;

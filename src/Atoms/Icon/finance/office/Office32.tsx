@@ -18,4 +18,6 @@ const Office32: React.FC<IconProps> = (props) => {
   );
 };
 
+Office32.displayName = 'Icon.Office';
+
 export default Office32;

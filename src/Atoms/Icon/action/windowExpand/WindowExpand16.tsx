@@ -16,4 +16,6 @@ const WindowExpand16: React.FC<IconProps> = (props) => {
   );
 };
 
+WindowExpand16.displayName = 'Icon.WindowExpand';
+
 export default WindowExpand16;

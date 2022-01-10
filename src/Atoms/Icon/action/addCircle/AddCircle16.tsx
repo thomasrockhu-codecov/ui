@@ -17,4 +17,6 @@ const AddCircle16: React.FC<IconProps> = (props) => {
   );
 };
 
+AddCircle16.displayName = 'Icon.AddCircle';
+
 export default AddCircle16;

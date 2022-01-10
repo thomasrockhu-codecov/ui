@@ -16,4 +16,6 @@ const Glossary16: React.FC<IconProps> = (props) => {
   );
 };
 
+Glossary16.displayName = 'Icon.Glossary';
+
 export default Glossary16;

@@ -16,4 +16,6 @@ const BioTech24: React.FC<IconProps> = (props) => {
   );
 };
 
+BioTech24.displayName = 'Icon.BioTech';
+
 export default BioTech24;

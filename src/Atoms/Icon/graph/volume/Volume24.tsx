@@ -14,4 +14,6 @@ const Volume24: React.FC<IconProps> = (props) => {
   );
 };
 
+Volume24.displayName = 'Icon.Volume';
+
 export default Volume24;

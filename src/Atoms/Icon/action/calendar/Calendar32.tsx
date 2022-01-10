@@ -16,4 +16,6 @@ const Calendar32: React.FC<IconProps> = (props) => {
   );
 };
 
+Calendar32.displayName = 'Icon.Calendar';
+
 export default Calendar32;

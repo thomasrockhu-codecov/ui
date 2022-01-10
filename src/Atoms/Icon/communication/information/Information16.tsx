@@ -17,4 +17,6 @@ const Information16: React.FC<IconProps> = (props) => {
   );
 };
 
+Information16.displayName = 'Icon.Information';
+
 export default Information16;

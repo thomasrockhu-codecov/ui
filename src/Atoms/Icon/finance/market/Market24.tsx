@@ -16,4 +16,6 @@ const Market24: React.FC<IconProps> = (props) => {
   );
 };
 
+Market24.displayName = 'Icon.Market';
+
 export default Market24;

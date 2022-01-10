@@ -17,4 +17,6 @@ const Document16: React.FC<IconProps> = (props) => {
   );
 };
 
+Document16.displayName = 'Icon.Document';
+
 export default Document16;

@@ -16,4 +16,6 @@ const Industrial24: React.FC<IconProps> = (props) => {
   );
 };
 
+Industrial24.displayName = 'Icon.Industrial';
+
 export default Industrial24;
