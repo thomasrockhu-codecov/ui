@@ -17,4 +17,6 @@ const Watchlist16: React.FC<IconProps> = (props) => {
   );
 };
 
+Watchlist16.displayName = 'Icon.Watchlist';
+
 export default Watchlist16;

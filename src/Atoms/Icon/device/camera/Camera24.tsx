@@ -20,4 +20,6 @@ const Camera24: React.FC<IconProps> = (props) => {
   );
 };
 
+Camera24.displayName = 'Icon.Camera';
+
 export default Camera24;

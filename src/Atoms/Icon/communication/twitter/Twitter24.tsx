@@ -14,4 +14,6 @@ const Twitter24: React.FC<IconProps> = (props) => {
   );
 };
 
+Twitter24.displayName = 'Icon.Twitter';
+
 export default Twitter24;

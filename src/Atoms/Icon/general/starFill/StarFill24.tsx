@@ -14,4 +14,6 @@ const StarFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+StarFill24.displayName = 'Icon.StarFill';
+
 export default StarFill24;

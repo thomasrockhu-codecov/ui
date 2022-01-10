@@ -16,4 +16,6 @@ const Check32: React.FC<IconProps> = (props) => {
   );
 };
 
+Check32.displayName = 'Icon.Check';
+
 export default Check32;

@@ -16,4 +16,6 @@ const Share24: React.FC<IconProps> = (props) => {
   );
 };
 
+Share24.displayName = 'Icon.Share';
+
 export default Share24;

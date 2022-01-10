@@ -15,4 +15,6 @@ const Login16: React.FC<IconProps> = (props) => {
   );
 };
 
+Login16.displayName = 'Icon.Login';
+
 export default Login16;

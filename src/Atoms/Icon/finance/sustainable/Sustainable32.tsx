@@ -14,4 +14,6 @@ const Sustainable32: React.FC<IconProps> = (props) => {
   );
 };
 
+Sustainable32.displayName = 'Icon.Sustainable';
+
 export default Sustainable32;

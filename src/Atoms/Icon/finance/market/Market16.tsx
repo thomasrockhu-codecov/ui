@@ -16,4 +16,6 @@ const Market16: React.FC<IconProps> = (props) => {
   );
 };
 
+Market16.displayName = 'Icon.Market';
+
 export default Market16;

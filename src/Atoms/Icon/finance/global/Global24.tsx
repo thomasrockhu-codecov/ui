@@ -16,4 +16,6 @@ const Global24: React.FC<IconProps> = (props) => {
   );
 };
 
+Global24.displayName = 'Icon.Global';
+
 export default Global24;

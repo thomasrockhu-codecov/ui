@@ -16,4 +16,6 @@ const Gold16: React.FC<IconProps> = (props) => {
   );
 };
 
+Gold16.displayName = 'Icon.Gold';
+
 export default Gold16;

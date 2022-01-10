@@ -15,4 +15,6 @@ const Logout24: React.FC<IconProps> = (props) => {
   );
 };
 
+Logout24.displayName = 'Icon.Logout';
+
 export default Logout24;

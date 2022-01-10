@@ -16,4 +16,6 @@ const FundVariety24: React.FC<IconProps> = (props) => {
   );
 };
 
+FundVariety24.displayName = 'Icon.FundVariety';
+
 export default FundVariety24;

@@ -20,4 +20,6 @@ const PriceMarker16: React.FC<IconProps> = (props) => {
   );
 };
 
+PriceMarker16.displayName = 'Icon.PriceMarker';
+
 export default PriceMarker16;

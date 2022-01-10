@@ -14,4 +14,6 @@ const Check8: React.FC<IconProps> = (props) => {
   );
 };
 
+Check8.displayName = 'Icon.Check';
+
 export default Check8;

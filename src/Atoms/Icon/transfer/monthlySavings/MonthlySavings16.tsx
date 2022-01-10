@@ -15,4 +15,6 @@ const MonthlySavings16: React.FC<IconProps> = (props) => {
   );
 };
 
+MonthlySavings16.displayName = 'Icon.MonthlySavings';
+
 export default MonthlySavings16;

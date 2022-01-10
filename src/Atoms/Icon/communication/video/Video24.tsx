@@ -17,4 +17,6 @@ const Video24: React.FC<IconProps> = (props) => {
   );
 };
 
+Video24.displayName = 'Icon.Video';
+
 export default Video24;

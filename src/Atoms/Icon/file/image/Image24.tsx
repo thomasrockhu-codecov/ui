@@ -22,4 +22,6 @@ const Image24: React.FC<IconProps> = (props) => {
   );
 };
 
+Image24.displayName = 'Icon.Image';
+
 export default Image24;

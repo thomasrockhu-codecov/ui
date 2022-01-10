@@ -16,4 +16,6 @@ const SaveGraph24: React.FC<IconProps> = (props) => {
   );
 };
 
+SaveGraph24.displayName = 'Icon.SaveGraph';
+
 export default SaveGraph24;

@@ -16,4 +16,6 @@ const ClockFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+ClockFill16.displayName = 'Icon.ClockFill';
+
 export default ClockFill16;

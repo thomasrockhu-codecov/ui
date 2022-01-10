@@ -19,4 +19,6 @@ const InternalTransfer16: React.FC<IconProps> = (props) => {
   );
 };
 
+InternalTransfer16.displayName = 'Icon.InternalTransfer';
+
 export default InternalTransfer16;

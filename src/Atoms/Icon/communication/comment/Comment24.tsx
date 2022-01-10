@@ -18,4 +18,6 @@ const Comment24: React.FC<IconProps> = (props) => {
   );
 };
 
+Comment24.displayName = 'Icon.Comment';
+
 export default Comment24;

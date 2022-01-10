@@ -11,4 +11,6 @@ const Menu24: React.FC<IconProps> = (props) => {
   );
 };
 
+Menu24.displayName = 'Icon.Menu';
+
 export default Menu24;

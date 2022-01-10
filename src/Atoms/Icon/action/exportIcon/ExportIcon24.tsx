@@ -18,4 +18,6 @@ const ExportIcon24: React.FC<IconProps> = (props) => {
   );
 };
 
+ExportIcon24.displayName = 'Icon.ExportIcon';
+
 export default ExportIcon24;

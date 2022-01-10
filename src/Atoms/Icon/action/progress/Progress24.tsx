@@ -14,4 +14,6 @@ const Progress24: React.FC<IconProps> = (props) => {
   );
 };
 
+Progress24.displayName = 'Icon.Progress';
+
 export default Progress24;

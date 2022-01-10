@@ -19,4 +19,6 @@ const Attention16: React.FC<IconProps> = (props) => {
   );
 };
 
+Attention16.displayName = 'Icon.Attention';
+
 export default Attention16;

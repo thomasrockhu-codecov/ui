@@ -17,4 +17,6 @@ const Pension32: React.FC<IconProps> = (props) => {
   );
 };
 
+Pension32.displayName = 'Icon.Pension';
+
 export default Pension32;

@@ -11,4 +11,6 @@ const Dot8: React.FC<IconProps> = (props) => {
   );
 };
 
+Dot8.displayName = 'Icon.Dot';
+
 export default Dot8;

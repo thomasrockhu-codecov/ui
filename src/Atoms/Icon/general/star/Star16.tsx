@@ -16,4 +16,6 @@ const Star16: React.FC<IconProps> = (props) => {
   );
 };
 
+Star16.displayName = 'Icon.Star';
+
 export default Star16;

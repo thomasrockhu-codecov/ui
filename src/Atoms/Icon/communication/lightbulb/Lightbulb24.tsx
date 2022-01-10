@@ -18,4 +18,6 @@ const Lightbulb24: React.FC<IconProps> = (props) => {
   );
 };
 
+Lightbulb24.displayName = 'Icon.Lightbulb';
+
 export default Lightbulb24;

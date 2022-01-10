@@ -22,4 +22,6 @@ const Fee32: React.FC<IconProps> = (props) => {
   );
 };
 
+Fee32.displayName = 'Icon.Fee';
+
 export default Fee32;

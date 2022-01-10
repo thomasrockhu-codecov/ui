@@ -15,4 +15,6 @@ const Login24: React.FC<IconProps> = (props) => {
   );
 };
 
+Login24.displayName = 'Icon.Login';
+
 export default Login24;

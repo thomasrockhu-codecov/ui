@@ -17,4 +17,6 @@ const Transportation24: React.FC<IconProps> = (props) => {
   );
 };
 
+Transportation24.displayName = 'Icon.Transportation';
+
 export default Transportation24;

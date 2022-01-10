@@ -16,4 +16,6 @@ const Save24: React.FC<IconProps> = (props) => {
   );
 };
 
+Save24.displayName = 'Icon.Save';
+
 export default Save24;

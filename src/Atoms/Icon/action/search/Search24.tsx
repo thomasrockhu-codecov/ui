@@ -16,4 +16,6 @@ const Search24: React.FC<IconProps> = (props) => {
   );
 };
 
+Search24.displayName = 'Icon.Search';
+
 export default Search24;

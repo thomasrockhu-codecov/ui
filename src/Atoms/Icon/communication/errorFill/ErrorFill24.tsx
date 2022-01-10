@@ -16,4 +16,6 @@ const ErrorFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+ErrorFill24.displayName = 'Icon.ErrorFill';
+
 export default ErrorFill24;

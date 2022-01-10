@@ -16,4 +16,6 @@ const WindowCollapse16: React.FC<IconProps> = (props) => {
   );
 };
 
+WindowCollapse16.displayName = 'Icon.WindowCollapse';
+
 export default WindowCollapse16;

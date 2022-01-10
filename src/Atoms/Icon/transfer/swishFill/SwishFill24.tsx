@@ -16,4 +16,6 @@ const SwishFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+SwishFill24.displayName = 'Icon.SwishFill';
+
 export default SwishFill24;

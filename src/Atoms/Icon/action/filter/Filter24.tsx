@@ -11,4 +11,6 @@ const Filter24: React.FC<IconProps> = (props) => {
   );
 };
 
+Filter24.displayName = 'Icon.Filter';
+
 export default Filter24;

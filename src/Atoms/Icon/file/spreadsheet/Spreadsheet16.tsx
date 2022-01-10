@@ -13,4 +13,6 @@ const Spreadsheet16 = (props: IconProps) => (
   </IconBase>
 );
 
+Spreadsheet16.displayName = 'Icon.Spreadsheet';
+
 export default Spreadsheet16;

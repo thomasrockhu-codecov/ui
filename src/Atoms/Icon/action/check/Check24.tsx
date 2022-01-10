@@ -16,4 +16,6 @@ const Check24: React.FC<IconProps> = (props) => {
   );
 };
 
+Check24.displayName = 'Icon.Check';
+
 export default Check24;

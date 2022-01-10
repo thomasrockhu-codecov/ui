@@ -20,4 +20,6 @@ const Help24: React.FC<IconProps> = (props) => {
   );
 };
 
+Help24.displayName = 'Icon.Help';
+
 export default Help24;

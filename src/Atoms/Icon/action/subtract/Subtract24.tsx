@@ -11,4 +11,6 @@ const Subtract24: React.FC<IconProps> = (props) => {
   );
 };
 
+Subtract24.displayName = 'Icon.Subtract';
+
 export default Subtract24;

@@ -16,4 +16,6 @@ const Blocked24: React.FC<IconProps> = (props) => {
   );
 };
 
+Blocked24.displayName = 'Icon.Blocked';
+
 export default Blocked24;

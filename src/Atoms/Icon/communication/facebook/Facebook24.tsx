@@ -14,4 +14,6 @@ const Facebook24: React.FC<IconProps> = (props) => {
   );
 };
 
+Facebook24.displayName = 'Icon.Facebook';
+
 export default Facebook24;

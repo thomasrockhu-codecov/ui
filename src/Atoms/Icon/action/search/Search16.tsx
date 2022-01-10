@@ -16,4 +16,6 @@ const Search16: React.FC<IconProps> = (props) => {
   );
 };
 
+Search16.displayName = 'Icon.Search';
+
 export default Search16;

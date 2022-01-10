@@ -16,4 +16,6 @@ const Filter16: React.FC<IconProps> = (props) => {
   );
 };
 
+Filter16.displayName = 'Icon.Filter';
+
 export default Filter16;

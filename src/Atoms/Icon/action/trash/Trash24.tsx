@@ -21,4 +21,6 @@ const Trash24: React.FC<IconProps> = (props) => {
   );
 };
 
+Trash24.displayName = 'Icon.Trash';
+
 export default Trash24;

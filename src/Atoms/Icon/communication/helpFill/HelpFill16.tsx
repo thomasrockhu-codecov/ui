@@ -16,4 +16,6 @@ const HelpFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+HelpFill16.displayName = 'Icon.HelpFill';
+
 export default HelpFill16;

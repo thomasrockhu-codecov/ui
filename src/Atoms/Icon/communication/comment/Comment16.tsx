@@ -16,4 +16,6 @@ const Comment16: React.FC<IconProps> = (props) => {
   );
 };
 
+Comment16.displayName = 'Icon.Comment';
+
 export default Comment16;

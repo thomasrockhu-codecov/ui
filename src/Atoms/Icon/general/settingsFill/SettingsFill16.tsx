@@ -16,4 +16,6 @@ const SettingsFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+SettingsFill16.displayName = 'Icon.SettingsFill';
+
 export default SettingsFill16;

@@ -22,4 +22,6 @@ const Candlesticks24: React.FC<IconProps> = (props) => {
   );
 };
 
+Candlesticks24.displayName = 'Icon.Candlesticks';
+
 export default Candlesticks24;

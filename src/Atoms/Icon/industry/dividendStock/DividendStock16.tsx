@@ -16,4 +16,6 @@ const DividendStock16: React.FC<IconProps> = (props) => {
   );
 };
 
+DividendStock16.displayName = 'Icon.DividendStock';
+
 export default DividendStock16;

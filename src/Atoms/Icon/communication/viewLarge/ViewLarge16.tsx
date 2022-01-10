@@ -16,4 +16,6 @@ const ViewLarge16: React.FC<IconProps> = (props) => {
   );
 };
 
+ViewLarge16.displayName = 'Icon.ViewLarge';
+
 export default ViewLarge16;

@@ -22,4 +22,6 @@ const Technology24: React.FC<IconProps> = (props) => {
   );
 };
 
+Technology24.displayName = 'Icon.Technology';
+
 export default Technology24;

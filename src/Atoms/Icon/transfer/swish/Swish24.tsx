@@ -16,4 +16,6 @@ const Swish24: React.FC<IconProps> = (props) => {
   );
 };
 
+Swish24.displayName = 'Icon.Swish';
+
 export default Swish24;

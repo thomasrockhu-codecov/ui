@@ -21,4 +21,6 @@ const PieGraph24: React.FC<IconProps> = (props) => {
   );
 };
 
+PieGraph24.displayName = 'Icon.PieGraph';
+
 export default PieGraph24;

@@ -17,4 +17,6 @@ const Deposit16: React.FC<IconProps> = (props) => {
   );
 };
 
+Deposit16.displayName = 'Icon.Deposit';
+
 export default Deposit16;

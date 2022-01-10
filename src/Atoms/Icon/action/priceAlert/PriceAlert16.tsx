@@ -16,4 +16,6 @@ const PriceAlert16: React.FC<IconProps> = (props) => {
   );
 };
 
+PriceAlert16.displayName = 'Icon.PriceAlert';
+
 export default PriceAlert16;

@@ -16,4 +16,6 @@ const CheckCircleFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+CheckCircleFill16.displayName = 'Icon.CheckCircleFill';
+
 export default CheckCircleFill16;

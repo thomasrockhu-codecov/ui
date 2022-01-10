@@ -22,4 +22,6 @@ const Money24: React.FC<IconProps> = (props) => {
   );
 };
 
+Money24.displayName = 'Icon.Money';
+
 export default Money24;

@@ -16,4 +16,6 @@ const RiskMedium24: React.FC<IconProps> = (props) => {
   );
 };
 
+RiskMedium24.displayName = 'Icon.RiskMedium';
+
 export default RiskMedium24;

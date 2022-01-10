@@ -17,4 +17,6 @@ const Percent32: React.FC<IconProps> = (props) => {
   );
 };
 
+Percent32.displayName = 'Icon.Percent';
+
 export default Percent32;

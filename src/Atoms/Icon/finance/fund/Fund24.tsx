@@ -15,4 +15,6 @@ const Fund24: React.FC<IconProps> = (props) => {
   );
 };
 
+Fund24.displayName = 'Icon.Fund';
+
 export default Fund24;

@@ -16,4 +16,6 @@ const Edit16: React.FC<IconProps> = (props) => {
   );
 };
 
+Edit16.displayName = 'Icon.Edit';
+
 export default Edit16;

@@ -16,4 +16,6 @@ const ViewCompact16: React.FC<IconProps> = (props) => {
   );
 };
 
+ViewCompact16.displayName = 'Icon.ViewCompact';
+
 export default ViewCompact16;

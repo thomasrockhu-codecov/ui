@@ -16,4 +16,6 @@ const Logarithmic16: React.FC<IconProps> = (props) => {
   );
 };
 
+Logarithmic16.displayName = 'Icon.Logarithmic';
+
 export default Logarithmic16;

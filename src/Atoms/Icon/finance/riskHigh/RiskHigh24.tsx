@@ -16,4 +16,6 @@ const RiskHigh24: React.FC<IconProps> = (props) => {
   );
 };
 
+RiskHigh24.displayName = 'Icon.RiskHigh';
+
 export default RiskHigh24;

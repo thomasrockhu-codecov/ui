@@ -11,4 +11,6 @@ const ExternalLink8: React.FC<IconProps> = (props) => {
   );
 };
 
+ExternalLink8.displayName = 'Icon.ExternalLink';
+
 export default ExternalLink8;

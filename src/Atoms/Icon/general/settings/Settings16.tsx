@@ -22,4 +22,6 @@ const Settings16: React.FC<IconProps> = (props) => {
   );
 };
 
+Settings16.displayName = 'Icon.Settings';
+
 export default Settings16;

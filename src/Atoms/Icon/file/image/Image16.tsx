@@ -20,4 +20,6 @@ const Image16: React.FC<IconProps> = (props) => {
   );
 };
 
+Image16.displayName = 'Icon.Image';
+
 export default Image16;

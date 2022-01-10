@@ -16,4 +16,6 @@ const Like16: React.FC<IconProps> = (props) => {
   );
 };
 
+Like16.displayName = 'Icon.Like';
+
 export default Like16;

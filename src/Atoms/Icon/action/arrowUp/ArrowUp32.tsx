@@ -14,4 +14,6 @@ const ArrowUp32: React.FC<IconProps> = (props) => {
   );
 };
 
+ArrowUp32.displayName = 'Icon.ArrowUp';
+
 export default ArrowUp32;

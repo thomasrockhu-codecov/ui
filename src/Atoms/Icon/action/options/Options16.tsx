@@ -22,4 +22,6 @@ const Options16: React.FC<IconProps> = (props) => {
   );
 };
 
+Options16.displayName = 'Icon.Options';
+
 export default Options16;

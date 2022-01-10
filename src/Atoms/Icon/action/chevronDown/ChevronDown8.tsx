@@ -11,4 +11,6 @@ const ChevronDown8: React.FC<IconProps> = (props) => {
   );
 };
 
+ChevronDown8.displayName = 'Icon.ChevronDown';
+
 export default ChevronDown8;

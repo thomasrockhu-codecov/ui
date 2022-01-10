@@ -11,4 +11,6 @@ const ArrowLeft16: React.FC<IconProps> = (props) => {
   );
 };
 
+ArrowLeft16.displayName = 'Icon.ArrowLeft';
+
 export default ArrowLeft16;

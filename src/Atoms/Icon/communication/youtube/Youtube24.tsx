@@ -14,4 +14,6 @@ const Youtube24: React.FC<IconProps> = (props) => {
   );
 };
 
+Youtube24.displayName = 'Icon.Youtube';
+
 export default Youtube24;

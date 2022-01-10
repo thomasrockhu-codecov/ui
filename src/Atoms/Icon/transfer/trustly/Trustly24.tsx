@@ -16,4 +16,6 @@ const Trustly24: React.FC<IconProps> = (props) => {
   );
 };
 
+Trustly24.displayName = 'Icon.Trustly';
+
 export default Trustly24;

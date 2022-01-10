@@ -14,4 +14,6 @@ const Growth32: React.FC<IconProps> = (props) => {
   );
 };
 
+Growth32.displayName = 'Icon.Growth';
+
 export default Growth32;

@@ -14,4 +14,6 @@ const SplitAdjusted24: React.FC<IconProps> = (props) => {
   );
 };
 
+SplitAdjusted24.displayName = 'Icon.SplitAdjusted';
+
 export default SplitAdjusted24;

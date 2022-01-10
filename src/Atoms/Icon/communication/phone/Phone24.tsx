@@ -16,4 +16,6 @@ const Phone24: React.FC<IconProps> = (props) => {
   );
 };
 
+Phone24.displayName = 'Icon.Phone';
+
 export default Phone24;

@@ -16,4 +16,6 @@ const InformationFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+InformationFill16.displayName = 'Icon.InformationFill';
+
 export default InformationFill16;

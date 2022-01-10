@@ -16,4 +16,6 @@ const Attention32: React.FC<IconProps> = (props) => {
   );
 };
 
+Attention32.displayName = 'Icon.Attention';
+
 export default Attention32;

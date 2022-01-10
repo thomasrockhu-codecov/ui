@@ -14,4 +14,6 @@ const Repeat24: React.FC<IconProps> = (props) => {
   );
 };
 
+Repeat24.displayName = 'Icon.Repeat';
+
 export default Repeat24;

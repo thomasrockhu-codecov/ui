@@ -16,4 +16,6 @@ const Logarithmic24: React.FC<IconProps> = (props) => {
   );
 };
 
+Logarithmic24.displayName = 'Icon.Logarithmic';
+
 export default Logarithmic24;

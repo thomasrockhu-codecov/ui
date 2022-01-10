@@ -18,4 +18,6 @@ const Utilities32: React.FC<IconProps> = (props) => {
   );
 };
 
+Utilities32.displayName = 'Icon.Utilities';
+
 export default Utilities32;

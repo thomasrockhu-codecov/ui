@@ -20,4 +20,6 @@ const Book32: React.FC<IconProps> = (props) => {
   );
 };
 
+Book32.displayName = 'Icon.Book';
+
 export default Book32;

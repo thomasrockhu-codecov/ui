@@ -18,4 +18,6 @@ const Shareville32: React.FC<IconProps> = (props) => {
   );
 };
 
+Shareville32.displayName = 'Icon.Shareville';
+
 export default Shareville32;

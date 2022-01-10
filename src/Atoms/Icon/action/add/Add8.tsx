@@ -11,4 +11,6 @@ const Add8: React.FC<IconProps> = (props) => {
   );
 };
 
+Add8.displayName = 'Icon.Add';
+
 export default Add8;

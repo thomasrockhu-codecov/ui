@@ -20,4 +20,6 @@ const Copy16: React.FC<IconProps> = (props) => {
   );
 };
 
+Copy16.displayName = 'Icon.Copy';
+
 export default Copy16;

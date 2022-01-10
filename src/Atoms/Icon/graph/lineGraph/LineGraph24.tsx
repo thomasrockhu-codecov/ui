@@ -14,4 +14,6 @@ const LineGraph24: React.FC<IconProps> = (props) => {
   );
 };
 
+LineGraph24.displayName = 'Icon.LineGraph';
+
 export default LineGraph24;

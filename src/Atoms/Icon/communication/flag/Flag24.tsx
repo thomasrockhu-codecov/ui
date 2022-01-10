@@ -16,4 +16,6 @@ const Flag24: React.FC<IconProps> = (props) => {
   );
 };
 
+Flag24.displayName = 'Icon.Flag';
+
 export default Flag24;

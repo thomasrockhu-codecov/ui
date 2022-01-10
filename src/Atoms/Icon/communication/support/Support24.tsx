@@ -16,4 +16,6 @@ const Support24: React.FC<IconProps> = (props) => {
   );
 };
 
+Support24.displayName = 'Icon.Support';
+
 export default Support24;

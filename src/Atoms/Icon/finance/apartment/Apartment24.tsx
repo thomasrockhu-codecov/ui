@@ -15,4 +15,6 @@ const Apartment24: React.FC<IconProps> = (props) => {
   );
 };
 
+Apartment24.displayName = 'Icon.Apartment';
+
 export default Apartment24;

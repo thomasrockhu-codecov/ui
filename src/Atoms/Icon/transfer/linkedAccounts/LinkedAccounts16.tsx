@@ -18,4 +18,6 @@ const LinkedAccounts16: React.FC<IconProps> = (props) => {
   );
 };
 
+LinkedAccounts16.displayName = 'Icon.LinkedAccounts';
+
 export default LinkedAccounts16;

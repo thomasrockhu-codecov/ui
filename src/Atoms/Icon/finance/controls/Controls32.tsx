@@ -28,4 +28,6 @@ const Controls32: React.FC<IconProps> = (props) => {
   );
 };
 
+Controls32.displayName = 'Icon.Controls';
+
 export default Controls32;

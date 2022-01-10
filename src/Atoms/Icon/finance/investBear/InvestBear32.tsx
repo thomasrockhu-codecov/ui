@@ -20,4 +20,6 @@ const InvestBear32: React.FC<IconProps> = (props) => {
   );
 };
 
+InvestBear32.displayName = 'Icon.InvestBear';
+
 export default InvestBear32;
