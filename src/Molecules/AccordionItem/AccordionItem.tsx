@@ -137,7 +137,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
             disabled={disabled}
             withChevron={withChevron}
           >
-            <Typography as={as} type="secondary" weight="bold">
+            <Typography type="secondary" weight="bold">
               {title}
             </Typography>
             <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>

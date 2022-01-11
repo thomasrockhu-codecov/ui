@@ -81,7 +81,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Låg CO₂ risk
+        <span
+          className="c2"
+        >
+          Låg CO₂ risk
+        </span>
         <div
           className="c4"
         >
@@ -181,7 +185,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Sustainability score
+        <span
+          className="c2"
+        >
+          Sustainability score
+        </span>
         <div
           className="c4"
         >
@@ -286,7 +294,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Låg CO₂ risk
+        <span
+          className="c2"
+        >
+          Låg CO₂ risk
+        </span>
         <div
           className="c4"
         >
@@ -386,7 +398,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Sustainability score
+        <span
+          className="c2"
+        >
+          Sustainability score
+        </span>
         <div
           className="c4"
         >

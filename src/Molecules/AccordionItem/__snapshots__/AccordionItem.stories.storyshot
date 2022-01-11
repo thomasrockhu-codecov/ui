@@ -231,7 +231,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Låg CO₂ risk
+        <span
+          className="c2"
+        >
+          Låg CO₂ risk
+        </span>
         <div
           className="c4"
         >
@@ -331,7 +335,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Sustainability score
+        <span
+          className="c2"
+        >
+          Sustainability score
+        </span>
         <div
           className="c4"
         >
@@ -435,7 +443,11 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       onFocus={[Function]}
       type="button"
     >
-      Lemon drops and several cakes for two persons or more
+      <span
+        className="c2"
+      >
+        Lemon drops and several cakes for two persons or more
+      </span>
       <div
         className="c4"
       >
@@ -541,7 +553,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item is disabled
+        <span
+          className="c2"
+        >
+          This accordion item is disabled
+        </span>
         <div
           className="c4"
         >
@@ -650,7 +666,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item is disabled with chevron
+        <span
+          className="c2"
+        >
+          This accordion item is disabled with chevron
+        </span>
         <div
           className="c4"
         >
@@ -772,7 +792,11 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       onFocus={[Function]}
       type="button"
     >
-      Låg CO₂ risk
+      <span
+        className="c2"
+      >
+        Låg CO₂ risk
+      </span>
       <div
         className="c4"
       >
@@ -887,7 +911,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Content is text only
+        <span
+          className="c2"
+        >
+          Content is text only
+        </span>
         <div
           className="c4"
         >
@@ -987,7 +1015,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        Content is a component
+        <span
+          className="c2"
+        >
+          Content is a component
+        </span>
         <div
           className="c4"
         >
@@ -1098,7 +1130,11 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
       onFocus={[Function]}
       type="button"
     >
-      How much risk are you willing to take?
+      <span
+        className="c2"
+      >
+        How much risk are you willing to take?
+      </span>
       <div
         className="c4"
       >
@@ -1227,7 +1263,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom padding
+        </span>
         <div
           className="c4"
         >
@@ -1351,7 +1391,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom horizontal padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom horizontal padding
+        </span>
         <div
           className="c4"
         >
@@ -1475,7 +1519,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom vertical padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom vertical padding
+        </span>
         <div
           className="c4"
         >
@@ -1599,7 +1647,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom top padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom top padding
+        </span>
         <div
           className="c4"
         >
@@ -1723,7 +1775,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom bottom padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom bottom padding
+        </span>
         <div
           className="c4"
         >
@@ -1847,7 +1903,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom left padding
+        <span
+          className="c2"
+        >
+          This accordion item has a custom left padding
+        </span>
         <div
           className="c4"
         >
@@ -1978,7 +2038,11 @@ Array [
         onFocus={[Function]}
         type="button"
       >
-        This accordion item has a custom right padding and chevron to demonstrate
+        <span
+          className="c2"
+        >
+          This accordion item has a custom right padding and chevron to demonstrate
+        </span>
         <div
           className="c4"
         >
@@ -2083,7 +2147,11 @@ exports[`Storyshots Molecules / AccordionItem With Disabled Background Color 1`]
       onFocus={[Function]}
       type="button"
     >
-      This card has its hover and focus color disabled
+      <span
+        className="c2"
+      >
+        This card has its hover and focus color disabled
+      </span>
       <div
         className="c4"
       >
@@ -2186,7 +2254,11 @@ exports[`Storyshots Molecules / AccordionItem With Styled Content 1`] = `
       onFocus={[Function]}
       type="button"
     >
-      Sustainability score
+      <span
+        className="c2"
+      >
+        Sustainability score
+      </span>
       <div
         className="c4"
       >
