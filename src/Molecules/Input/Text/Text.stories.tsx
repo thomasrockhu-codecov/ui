@@ -437,3 +437,24 @@ export const onAColouredBackground = () => (
 onAColouredBackground.story = {
   name: 'On a coloured background',
 };
+
+export const mouseEvents = () => {
+  const Component = () => {
+    const [isHovered, setIsHovered] = useState(false);
+    const label = isHovered ? 'Is hovered' : 'Not hovered';
+
+    return (
+      <Input.Text
+        label={label}
+        placeholder="Placeholder"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      />
+    );
+  };
+  return <Component />;
+};
+
+mouseEvents.story = {
+  name: 'MouseEvents',
+};
