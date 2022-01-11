@@ -1,3 +1,10 @@
+# [9.18.0](https://github.com/nordnet/ui/compare/v9.17.5...v9.18.0) (2022-01-11)
+
+
+### Features
+
+* 🎸 Add mouse events to text input ([a73a899](https://github.com/nordnet/ui/commit/a73a899))
+
 ## [9.17.5](https://github.com/nordnet/ui/compare/v9.17.4...v9.17.5) (2022-01-10)
 
 
