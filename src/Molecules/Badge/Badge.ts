@@ -1,20 +1,21 @@
 import { BadgeComponent } from './Badge.types';
 import {
-  NumberBadge,
+  BaseBadge,
   LabelBadge,
   IconBadge,
   StatusBadge,
+  NumberBadge,
   AccountBadge,
   TooltipBadge,
-  BaseBadge,
 } from './components';
 
 // Typecasts to attach sub badge components below
-export const Badge = BaseBadge as BadgeComponent;
-
-Badge.Icon = IconBadge;
-Badge.Status = StatusBadge;
-Badge.Label = LabelBadge;
-Badge.Number = NumberBadge;
-Badge.Account = AccountBadge;
-Badge.Tooltip = TooltipBadge;
+export const Badge: BadgeComponent = {
+  Base: BaseBadge,
+  Icon: IconBadge,
+  Status: StatusBadge,
+  Label: LabelBadge,
+  Number: NumberBadge,
+  Account: AccountBadge,
+  Tooltip: TooltipBadge,
+};

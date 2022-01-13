@@ -2,13 +2,13 @@
 
 This component(s) is used to display a number, label, or icon/illustration on a colored and rounded/rectangular background. It is split up into several components, each with their specific use cases and design system:
 
-### Base Badge (Badge)
+### Base Badge (Badge.Base)
 
-The BaseBadge is flexible and exposed externally as Badge, and all the other badges specialized BaseBadges.
+The BaseBadge is the base for all other badges and is very flexible.
 
 ❗❗ **OBSERVE:**
 
-❗❗ `<Badge>` should only be used directly as a last resort if none of the other badge components covers your intended use case. Consider implementing a new sub badge component if design requires.
+❗❗ `<Badge.Base>` should only be used directly as a last resort if none of the other badge components covers your intended use case. Consider implementing a new sub badge component if design requires.
 
 ### Account Badge (Badge.Account)
 
