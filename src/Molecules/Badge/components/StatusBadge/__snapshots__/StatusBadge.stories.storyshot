@@ -48,9 +48,9 @@ Array [
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
 }
 
 @media (min-width:760px) {
@@ -78,14 +78,14 @@ Array [
           aria-hidden="true"
           className="c4"
           focusable="false"
-          height={16}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={16}
+          width={32}
         >
           <path
             clipRule="evenodd"
-            d="M7 15V5h2v10H7zM7 3V1h2v2H7z"
+            d="M15 30V8h2v22h-2zM15 5V2h2v3h-2z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -277,48 +277,6 @@ Array [
   display: block;
 }
 
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  height: 72px;
-  width: 72px;
-  border-radius: 72px;
-}
-
 .c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -338,6 +296,48 @@ Array [
   height: 48px;
   width: 48px;
   border-radius: 48px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
 }
 
 .c6 {
@@ -377,9 +377,9 @@ Array [
   text-align: center;
   box-sizing: border-box;
   background-color: #51CB20;
-  height: 72px;
-  width: 72px;
-  border-radius: 72px;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
 }
 
 .c8 {
@@ -461,9 +461,9 @@ Array [
   text-align: center;
   box-sizing: border-box;
   background-color: #FFCF00;
-  height: 72px;
-  width: 72px;
-  border-radius: 72px;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
 }
 
 .c12 {
@@ -545,9 +545,9 @@ Array [
   text-align: center;
   box-sizing: border-box;
   background-color: #FF4733;
-  height: 72px;
-  width: 72px;
-  border-radius: 72px;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
 }
 
 .c16 {
@@ -648,13 +648,13 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
-            d="M11 13v10h2V13h10v-2H13V1h-2v10H1v2h10z"
+            d="M15 17v14h2V17h14v-2H17V1h-2v14H1v2h14z"
             fill="currentColor"
           />
         </svg>
@@ -726,14 +726,14 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
             clipRule="evenodd"
-            d="M8.778 17.435l-6.364-6.364L1 12.485l7.778 7.779 14.85-14.85L22.212 4 8.778 17.435z"
+            d="M11.057 24.132l-9.193-9.193L.45 16.355 11.057 26.96 31.563 6.454 30.148 5.04 11.057 24.132z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -814,18 +814,18 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
-            d="M13 5v6h6v2h-8V5h2z"
+            d="M17 15V7h-2v10h10v-2h-8z"
             fill="currentColor"
           />
           <path
             clipRule="evenodd"
-            d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zm-2 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            d="M31 16c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1c8.284 0 15 6.716 15 15zm-2 0c0 7.18-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3s13 5.82 13 13z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -908,13 +908,13 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
-            d="M12.01 13.425l8.486 8.485 1.414-1.414-8.486-8.486 8.465-8.506-1.414-1.414-8.465 8.506-8.485-8.485-1.414 1.414 8.485 8.485-8.506 8.465 1.414 1.414 8.506-8.464z"
+            d="M3.274 1.86L1.86 3.274l12.728 12.728L1.86 28.73l1.414 1.414 12.728-12.728L28.73 30.144l1.414-1.414-12.728-12.728L30.144 3.274 28.73 1.86 16.002 14.588 3.274 1.86z"
             fill="currentColor"
           />
         </svg>
@@ -986,14 +986,14 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
             clipRule="evenodd"
-            d="M13 1v17h-2V1h2zM13 20v3h-2v-3h2z"
+            d="M17 2v20h-2V2h2zM17 26v4h-2v-4h2z"
             fill="currentColor"
             fillRule="evenodd"
           />
@@ -1070,14 +1070,14 @@ Array [
           aria-hidden="true"
           className="c3"
           focusable="false"
-          height={24}
+          height={32}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          width={24}
+          width={32}
         >
           <path
             clipRule="evenodd"
-            d="M11 22V6h2v16h-2zM11 4V2h2v2h-2z"
+            d="M15 30V8h2v22h-2zM15 5V2h2v3h-2z"
             fill="currentColor"
             fillRule="evenodd"
           />

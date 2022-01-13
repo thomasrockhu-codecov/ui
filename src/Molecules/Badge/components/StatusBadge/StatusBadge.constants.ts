@@ -8,10 +8,11 @@ export const VARIANT_WARNING = 'warning';
 export const VARIANT_INFORMATION = 'information';
 
 export const MAP_BADGE_AND_ICON_SIZES = {
-  s: { badgeSize: 6, iconSize: '16' },
-  m: { badgeSize: 8, iconSize: '16' },
-  l: { badgeSize: 12, iconSize: '24' },
-  xl: { badgeSize: 18, iconSize: '32' },
+  xs: { badgeSize: 6, iconSize: '16' },
+  s: { badgeSize: 8, iconSize: '16' },
+  l: { badgeSize: 12, iconSize: '32' },
+  // TODO: increase iconSize according to design when the corresponding icon sizes exist
+  xl: { badgeSize: 20, iconSize: '32' },
 };
 
 export const MAP_ICON_COMPONENT_NAME = {

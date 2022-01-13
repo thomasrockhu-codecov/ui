@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = `
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c5 {
   color: #212121;
   -webkit-user-select: none;
@@ -13,7 +24,19 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   display: block;
 }
 
-.c7 {
+.c8 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
   color: #282823;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,7 +48,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   display: block;
 }
 
-.c10 {
+.c14 {
   color: #212121;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -37,7 +60,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   display: block;
 }
 
-.c11 {
+.c15 {
   color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -79,7 +102,70 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   border-radius: 40px;
 }
 
-.c6 {
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -100,7 +186,7 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   border-radius: 48px;
 }
 
-.c8 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -119,27 +205,6 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
   height: 120px;
   width: 120px;
   border-radius: 120px;
-}
-
-.c9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  height: 80px;
-  width: 80px;
-  border-radius: 80px;
 }
 
 .c0 {
@@ -247,16 +312,135 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
       <span
         className="c3"
       >
+        Different sizes
+      </span>
+    </div>
+    <div>
+      <div
+        className="c6"
+      >
+        <span
+          className="c7"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            height={32}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={32}
+          >
+            <path
+              d="M12 11H4V9h8v2zM12 16H4v-2h8v2zM8 21H4v-2h4v2zM20 11h8V9h-8v2zM20 16h8v-2h-8v2zM20 21h4v-2h-4v2z"
+              fill="currentColor"
+            />
+            <path
+              clipRule="evenodd"
+              d="M13 4H0v23h13a2 2 0 012 2h2a2 2 0 012-2h13V4H19a3.99 3.99 0 00-3 1.354A3.99 3.99 0 0013 4zm2 4a2 2 0 00-2-2H2v19h11c.729 0 1.412.195 2 .535V8zm2 17.535A3.982 3.982 0 0119 25h11V6H19a2 2 0 00-2 2v17.535z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+        <span
+          className="c9"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            height={24}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={24}
+          >
+             
+            <g
+              fill="currentColor"
+            >
+              <path
+                d="M13 5V1H11V5H13Z"
+              />
+              <path
+                clipRule="evenodd"
+                d="M15.7366 8H8.29508L6.29508 14H2.66667L0 22H24.0029L21.3362 14H17.7366L15.7366 8ZM13.228 16L12.0156 19.6373L10.8032 16H13.228ZM15.6284 14H8.40327L9.7366 10H14.2951L15.6284 14ZM14.0029 20L15.3362 16H19.8947L21.228 20H14.0029ZM8.69499 16H4.10818L2.77485 20H10.0283L8.69499 16Z"
+                fillRule="evenodd"
+              />
+              <path
+                d="M20.1701 8.00003L18.7559 6.58582L21.5843 3.75739L22.9985 5.1716L20.1701 8.00003Z"
+              />
+              <path
+                d="M0.999849 5.1716L3.82828 8.00003L5.24249 6.58581L2.41406 3.75739L0.999849 5.1716Z"
+              />
+            </g>
+          </svg>
+        </span>
+        <span
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            height={16}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={16}
+          >
+            <path
+              d="M8.468 9.618H6.896v-.204c0-.8 0-1.174 1.212-2.16l.115-.093c.473-.384.833-.677.833-1.155 0-.456-.324-.816-.972-.816-.672 0-1.044.42-1.2.924H5.072C5.312 4.482 6.536 3.63 8.12 3.63c1.668 0 2.808.888 2.808 2.292 0 .936-.396 1.428-1.464 2.34l-.044.037c-.48.4-.823.685-.916 1.139l-.036.18zM6.764 10.458h1.884v1.908H6.764v-1.908z"
+              fill="currentColor"
+            />
+            <path
+              clipRule="evenodd"
+              d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-2A6 6 0 108 2a6 6 0 000 12z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+        <span
+          className="c10"
+        >
+          <svg
+            aria-hidden="true"
+            className="c8"
+            focusable="false"
+            height={8}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            width={8}
+          >
+            <path
+              d="M5.167 0L.5 4.5h2.917L2.833 8 7.5 3.5H4.583L5.167 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
         Custom icon badge with custom props
       </span>
     </div>
     <div>
       <span
-        className="c6"
+        className="c11"
       >
         <svg
           aria-hidden="true"
-          className="c7"
+          className="c12"
           focusable="false"
           height={24}
           preserveAspectRatio="xMidYMid meet"
@@ -290,11 +474,11 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
     </div>
     <div>
       <span
-        className="c8"
+        className="c13"
       >
         <svg
           aria-hidden="true"
-          className="c7"
+          className="c12"
           focusable="false"
           height={24}
           preserveAspectRatio="xMidYMid meet"
@@ -328,11 +512,11 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
     </div>
     <div>
       <span
-        className="c9"
+        className="c7"
       >
         <svg
           aria-hidden="true"
-          className="c10"
+          className="c14"
           focusable="false"
           height={64}
           preserveAspectRatio="xMidYMid meet"
@@ -370,12 +554,12 @@ exports[`Storyshots Molecules / Badge / Icon Default and common use cases 1`] = 
     </div>
     <div>
       <span
-        className="c9"
+        className="c7"
       >
         <span>
           <svg
             aria-hidden="true"
-            className="c11"
+            className="c15"
             focusable="false"
             height={64}
             preserveAspectRatio="xMidYMid meet"

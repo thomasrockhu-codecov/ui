@@ -82,7 +82,7 @@ const getStatusBadgeProps = (
 export const StatusBadge: StatusBadgeComponent = React.forwardRef<
   HTMLSpanElement,
   StatusBadgeProps
->(({ variant = 'information', badgeSize = 'm', ...htmlProps }, ref) => {
+>(({ variant = 'information', badgeSize = 'l', ...htmlProps }, ref) => {
   const statusBadgeProps = getStatusBadgeProps(variant, badgeSize);
 
   return (

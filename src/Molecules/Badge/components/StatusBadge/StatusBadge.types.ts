@@ -1,7 +1,7 @@
 import { HtmlProps } from '../BaseBadge/BaseBadge.types';
 
 export type StatusVariant = 'create' | 'complete' | 'pending' | 'error' | 'warning' | 'information';
-export type StatusBadgeSize = 's' | 'm' | 'l' | 'xl';
+export type StatusBadgeSize = 'xs' | 's' | 'l' | 'xl';
 
 export type StatusBadgeProps = HtmlProps & {
   variant?: StatusVariant;

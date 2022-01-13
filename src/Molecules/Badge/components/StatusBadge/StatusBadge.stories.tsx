@@ -28,43 +28,43 @@ export const InformationStatusBadge = () => (
       <Flexbox container direction="column">
         <Badge.Status variant="create" badgeSize="xl" />
         <Badge.Status variant="create" badgeSize="l" />
-        <Badge.Status variant="create" badgeSize="m" />
         <Badge.Status variant="create" badgeSize="s" />
+        <Badge.Status variant="create" badgeSize="xs" />
       </Flexbox>
 
       <Flexbox container direction="column">
         <Badge.Status variant="complete" badgeSize="xl" />
         <Badge.Status variant="complete" badgeSize="l" />
-        <Badge.Status variant="complete" badgeSize="m" />
         <Badge.Status variant="complete" badgeSize="s" />
+        <Badge.Status variant="complete" badgeSize="xs" />
       </Flexbox>
 
       <Flexbox container direction="column">
         <Badge.Status variant="pending" badgeSize="xl" />
         <Badge.Status variant="pending" badgeSize="l" />
-        <Badge.Status variant="pending" badgeSize="m" />
         <Badge.Status variant="pending" badgeSize="s" />
+        <Badge.Status variant="pending" badgeSize="xs" />
       </Flexbox>
 
       <Flexbox container direction="column">
         <Badge.Status variant="error" badgeSize="xl" />
         <Badge.Status variant="error" badgeSize="l" />
-        <Badge.Status variant="error" badgeSize="m" />
         <Badge.Status variant="error" badgeSize="s" />
+        <Badge.Status variant="error" badgeSize="xs" />
       </Flexbox>
 
       <Flexbox container direction="column">
         <Badge.Status variant="warning" badgeSize="xl" />
         <Badge.Status variant="warning" badgeSize="l" />
-        <Badge.Status variant="warning" badgeSize="m" />
         <Badge.Status variant="warning" badgeSize="s" />
+        <Badge.Status variant="warning" badgeSize="xs" />
       </Flexbox>
 
       <Flexbox container direction="column">
         <Badge.Status variant="information" badgeSize="xl" />
         <Badge.Status variant="information" badgeSize="l" />
-        <Badge.Status variant="information" badgeSize="m" />
         <Badge.Status variant="information" badgeSize="s" />
+        <Badge.Status variant="information" badgeSize="xs" />
       </Flexbox>
     </Flexbox>
   </>

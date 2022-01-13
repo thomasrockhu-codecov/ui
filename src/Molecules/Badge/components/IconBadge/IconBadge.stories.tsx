@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Illustration } from '../../../..';
+import { Flexbox, Icon, Illustration } from '../../../..';
 import Badge from '../..';
 import { Display } from '../../../../common/Display';
 
@@ -20,6 +20,25 @@ export const DefaultAndCommonUseCases = () => {
             <Badge.Icon>
               <Icon.Add8 />
             </Badge.Icon>
+          ),
+        },
+        {
+          title: 'Different sizes',
+          component: (
+            <Flexbox container direction="column">
+              <Badge.Icon badgeSize="xl">
+                <Icon.Book32 color={(t) => t.color.badgeIconColor} />
+              </Badge.Icon>
+              <Badge.Icon badgeSize="l">
+                <Icon.Gold24 color={(t) => t.color.badgeIconColor} />
+              </Badge.Icon>
+              <Badge.Icon badgeSize="m">
+                <Icon.Help16 color={(t) => t.color.badgeIconColor} />
+              </Badge.Icon>
+              <Badge.Icon badgeSize="s">
+                <Icon.Bolt8 color={(t) => t.color.badgeIconColor} />
+              </Badge.Icon>
+            </Flexbox>
           ),
         },
         {
