@@ -16,4 +16,6 @@ const Security32: React.FC<IconProps> = (props) => {
   );
 };
 
+Security32.displayName = 'Icon.Security';
+
 export default Security32;

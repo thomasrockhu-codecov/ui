@@ -16,4 +16,6 @@ const Calendar16: React.FC<IconProps> = (props) => {
   );
 };
 
+Calendar16.displayName = 'Icon.Calendar';
+
 export default Calendar16;

@@ -16,4 +16,6 @@ const Consumer24: React.FC<IconProps> = (props) => {
   );
 };
 
+Consumer24.displayName = 'Icon.Consumer';
+
 export default Consumer24;

@@ -16,4 +16,6 @@ const Lock32: React.FC<IconProps> = (props) => {
   );
 };
 
+Lock32.displayName = 'Icon.Lock';
+
 export default Lock32;

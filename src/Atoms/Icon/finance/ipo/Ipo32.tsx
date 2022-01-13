@@ -16,4 +16,6 @@ const Ipo32: React.FC<IconProps> = (props) => {
   );
 };
 
+Ipo32.displayName = 'Icon.Ipo';
+
 export default Ipo32;

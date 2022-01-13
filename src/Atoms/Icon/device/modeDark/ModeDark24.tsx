@@ -16,4 +16,6 @@ const ModeDark24: React.FC<IconProps> = (props) => {
   );
 };
 
+ModeDark24.displayName = 'Icon.ModeDark';
+
 export default ModeDark24;

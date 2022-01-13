@@ -15,4 +15,6 @@ const Notification24: React.FC<IconProps> = (props) => {
   );
 };
 
+Notification24.displayName = 'Icon.Notification';
+
 export default Notification24;

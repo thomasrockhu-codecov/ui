@@ -16,4 +16,6 @@ const Search8: React.FC<IconProps> = (props) => {
   );
 };
 
+Search8.displayName = 'Icon.Search';
+
 export default Search8;

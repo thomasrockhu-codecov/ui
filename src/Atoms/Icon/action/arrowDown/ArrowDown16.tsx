@@ -11,4 +11,6 @@ const ArrowDown16: React.FC<IconProps> = (props) => {
   );
 };
 
+ArrowDown16.displayName = 'Icon.ArrowDown';
+
 export default ArrowDown16;

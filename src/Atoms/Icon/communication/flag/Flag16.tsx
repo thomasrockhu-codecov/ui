@@ -16,4 +16,6 @@ const Flag16: React.FC<IconProps> = (props) => {
   );
 };
 
+Flag16.displayName = 'Icon.Flag';
+
 export default Flag16;

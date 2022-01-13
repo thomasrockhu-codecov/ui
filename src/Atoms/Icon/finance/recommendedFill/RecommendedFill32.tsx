@@ -14,4 +14,6 @@ const RecommendedFill32: React.FC<IconProps> = (props) => {
   );
 };
 
+RecommendedFill32.displayName = 'Icon.RecommendedFill';
+
 export default RecommendedFill32;

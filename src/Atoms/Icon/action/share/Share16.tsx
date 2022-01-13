@@ -16,4 +16,6 @@ const Share16: React.FC<IconProps> = (props) => {
   );
 };
 
+Share16.displayName = 'Icon.Share';
+
 export default Share16;

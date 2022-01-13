@@ -24,4 +24,6 @@ const ScanQR24: React.FC<IconProps> = (props) => {
   );
 };
 
+ScanQR24.displayName = 'Icon.ScanQR';
+
 export default ScanQR24;

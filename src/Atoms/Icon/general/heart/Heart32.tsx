@@ -16,4 +16,6 @@ const Heart32: React.FC<IconProps> = (props) => {
   );
 };
 
+Heart32.displayName = 'Icon.Heart';
+
 export default Heart32;

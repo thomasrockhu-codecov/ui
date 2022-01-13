@@ -20,4 +20,6 @@ const Feedback24: React.FC<IconProps> = (props) => {
   );
 };
 
+Feedback24.displayName = 'Icon.Feedback';
+
 export default Feedback24;

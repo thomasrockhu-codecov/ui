@@ -16,4 +16,6 @@ const BioTech32: React.FC<IconProps> = (props) => {
   );
 };
 
+BioTech32.displayName = 'Icon.BioTech';
+
 export default BioTech32;

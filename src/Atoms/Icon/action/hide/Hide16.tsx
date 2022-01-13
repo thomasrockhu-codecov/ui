@@ -20,4 +20,6 @@ const Hide16: React.FC<IconProps> = (props) => {
   );
 };
 
+Hide16.displayName = 'Icon.Hide';
+
 export default Hide16;

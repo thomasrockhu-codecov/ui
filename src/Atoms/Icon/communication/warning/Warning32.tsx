@@ -19,4 +19,6 @@ const Warning32: React.FC<IconProps> = (props) => {
   );
 };
 
+Warning32.displayName = 'Icon.Warning';
+
 export default Warning32;

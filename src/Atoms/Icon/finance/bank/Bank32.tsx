@@ -21,4 +21,6 @@ const Bank32: React.FC<IconProps> = (props) => {
   );
 };
 
+Bank32.displayName = 'Icon.Bank';
+
 export default Bank32;

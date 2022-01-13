@@ -28,4 +28,6 @@ const Options24: React.FC<IconProps> = (props) => {
   );
 };
 
+Options24.displayName = 'Icon.Options';
+
 export default Options24;

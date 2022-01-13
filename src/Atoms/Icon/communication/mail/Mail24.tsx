@@ -17,4 +17,6 @@ const Mail24: React.FC<IconProps> = (props) => {
   );
 };
 
+Mail24.displayName = 'Icon.Mail';
+
 export default Mail24;

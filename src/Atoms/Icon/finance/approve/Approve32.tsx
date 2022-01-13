@@ -16,4 +16,6 @@ const Approve32: React.FC<IconProps> = (props) => {
   );
 };
 
+Approve32.displayName = 'Icon.Approve';
+
 export default Approve32;

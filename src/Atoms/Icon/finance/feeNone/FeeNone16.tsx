@@ -22,4 +22,6 @@ const FeeNone16: React.FC<IconProps> = (props) => {
   );
 };
 
+FeeNone16.displayName = 'Icon.FeeNone';
+
 export default FeeNone16;

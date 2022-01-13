@@ -17,4 +17,6 @@ const Trash16: React.FC<IconProps> = (props) => {
   );
 };
 
+Trash16.displayName = 'Icon.Trash';
+
 export default Trash16;

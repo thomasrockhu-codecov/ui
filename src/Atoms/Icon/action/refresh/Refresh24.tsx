@@ -14,4 +14,6 @@ const Refresh24: React.FC<IconProps> = (props) => {
   );
 };
 
+Refresh24.displayName = 'Icon.Refresh';
+
 export default Refresh24;

@@ -22,4 +22,6 @@ const Settings24: React.FC<IconProps> = (props) => {
   );
 };
 
+Settings24.displayName = 'Icon.Settings';
+
 export default Settings24;

@@ -16,4 +16,6 @@ const Bolt24: React.FC<IconProps> = (props) => {
   );
 };
 
+Bolt24.displayName = 'Icon.Bolt';
+
 export default Bolt24;

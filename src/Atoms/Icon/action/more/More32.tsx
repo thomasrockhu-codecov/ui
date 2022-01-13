@@ -16,4 +16,6 @@ const More32: React.FC<IconProps> = (props) => {
   );
 };
 
+More32.displayName = 'Icon.More';
+
 export default More32;

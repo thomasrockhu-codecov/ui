@@ -20,4 +20,6 @@ const Approve24: React.FC<IconProps> = (props) => {
   );
 };
 
+Approve24.displayName = 'Icon.Approve';
+
 export default Approve24;

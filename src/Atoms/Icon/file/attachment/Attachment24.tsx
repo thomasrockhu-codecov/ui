@@ -16,4 +16,6 @@ const Attachment24: React.FC<IconProps> = (props) => {
   );
 };
 
+Attachment24.displayName = 'Icon.Attachment';
+
 export default Attachment24;

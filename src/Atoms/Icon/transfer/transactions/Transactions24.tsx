@@ -14,4 +14,6 @@ const Transactions24: React.FC<IconProps> = (props) => {
   );
 };
 
+Transactions24.displayName = 'Icon.Transactions';
+
 export default Transactions24;

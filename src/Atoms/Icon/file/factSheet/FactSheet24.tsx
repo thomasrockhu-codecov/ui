@@ -17,4 +17,6 @@ const FactSheet24: React.FC<IconProps> = (props) => {
   );
 };
 
+FactSheet24.displayName = 'Icon.FactSheet';
+
 export default FactSheet24;

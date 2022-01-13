@@ -16,4 +16,6 @@ const Global16: React.FC<IconProps> = (props) => {
   );
 };
 
+Global16.displayName = 'Icon.Global';
+
 export default Global16;

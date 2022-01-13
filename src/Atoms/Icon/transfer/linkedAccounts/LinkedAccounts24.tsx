@@ -22,4 +22,6 @@ const LinkedAccounts24: React.FC<IconProps> = (props) => {
   );
 };
 
+LinkedAccounts24.displayName = 'Icon.LinkedAccounts';
+
 export default LinkedAccounts24;

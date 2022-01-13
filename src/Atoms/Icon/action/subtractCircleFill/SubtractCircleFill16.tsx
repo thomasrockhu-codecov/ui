@@ -16,4 +16,6 @@ const SubtractCircleFill16: React.FC<IconProps> = (props) => {
   );
 };
 
+SubtractCircleFill16.displayName = 'Icon.SubtractCircleFill';
+
 export default SubtractCircleFill16;

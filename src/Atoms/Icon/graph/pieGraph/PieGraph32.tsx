@@ -20,4 +20,6 @@ const PieGraph32: React.FC<IconProps> = (props) => {
   );
 };
 
+PieGraph32.displayName = 'Icon.PieGraph';
+
 export default PieGraph32;

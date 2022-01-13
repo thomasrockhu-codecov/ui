@@ -20,4 +20,6 @@ const Profile32: React.FC<IconProps> = (props) => {
   );
 };
 
+Profile32.displayName = 'Icon.Profile';
+
 export default Profile32;

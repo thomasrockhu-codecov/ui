@@ -14,4 +14,6 @@ const Cross8: React.FC<IconProps> = (props) => {
   );
 };
 
+Cross8.displayName = 'Icon.Cross';
+
 export default Cross8;

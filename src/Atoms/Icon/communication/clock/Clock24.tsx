@@ -17,4 +17,6 @@ const Clock24: React.FC<IconProps> = (props) => {
   );
 };
 
+Clock24.displayName = 'Icon.Clock';
+
 export default Clock24;

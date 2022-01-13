@@ -15,4 +15,6 @@ const ExportIcon16: React.FC<IconProps> = (props) => {
   );
 };
 
+ExportIcon16.displayName = 'Icon.ExportIcon';
+
 export default ExportIcon16;

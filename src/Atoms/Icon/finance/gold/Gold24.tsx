@@ -21,4 +21,6 @@ const Gold24: React.FC<IconProps> = (props) => {
   );
 };
 
+Gold24.displayName = 'Icon.Gold';
+
 export default Gold24;

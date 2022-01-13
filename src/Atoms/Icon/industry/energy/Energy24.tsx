@@ -16,4 +16,6 @@ const Energy24: React.FC<IconProps> = (props) => {
   );
 };
 
+Energy24.displayName = 'Icon.Energy';
+
 export default Energy24;

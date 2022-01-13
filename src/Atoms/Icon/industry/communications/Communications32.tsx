@@ -18,4 +18,6 @@ const Communications32: React.FC<IconProps> = (props) => {
   );
 };
 
+Communications32.displayName = 'Icon.Communications';
+
 export default Communications32;

@@ -20,4 +20,6 @@ const WhatsNew24: React.FC<IconProps> = (props) => {
   );
 };
 
+WhatsNew24.displayName = 'Icon.WhatsNew';
+
 export default WhatsNew24;

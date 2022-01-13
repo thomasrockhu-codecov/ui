@@ -17,4 +17,6 @@ const Withdraw16: React.FC<IconProps> = (props) => {
   );
 };
 
+Withdraw16.displayName = 'Icon.Withdraw';
+
 export default Withdraw16;

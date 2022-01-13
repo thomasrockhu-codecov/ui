@@ -14,4 +14,6 @@ const Growth24: React.FC<IconProps> = (props) => {
   );
 };
 
+Growth24.displayName = 'Icon.Growth';
+
 export default Growth24;

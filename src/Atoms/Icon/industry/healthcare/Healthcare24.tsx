@@ -15,4 +15,6 @@ const Healthcare24: React.FC<IconProps> = (props) => {
   );
 };
 
+Healthcare24.displayName = 'Icon.Healthcare';
+
 export default Healthcare24;

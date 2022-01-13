@@ -16,4 +16,6 @@ const Like24: React.FC<IconProps> = (props) => {
   );
 };
 
+Like24.displayName = 'Icon.Like';
+
 export default Like24;

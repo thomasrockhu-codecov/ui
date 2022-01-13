@@ -16,4 +16,6 @@ const Compare24: React.FC<IconProps> = (props) => {
   );
 };
 
+Compare24.displayName = 'Icon.Compare';
+
 export default Compare24;

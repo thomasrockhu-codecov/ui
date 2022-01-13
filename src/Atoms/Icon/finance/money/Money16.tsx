@@ -20,4 +20,6 @@ const Money16: React.FC<IconProps> = (props) => {
   );
 };
 
+Money16.displayName = 'Icon.Money';
+
 export default Money16;

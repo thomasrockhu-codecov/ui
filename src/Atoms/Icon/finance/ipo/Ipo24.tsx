@@ -16,4 +16,6 @@ const Ipo24: React.FC<IconProps> = (props) => {
   );
 };
 
+Ipo24.displayName = 'Icon.Ipo';
+
 export default Ipo24;

@@ -16,4 +16,6 @@ const WarningFill32: React.FC<IconProps> = (props) => {
   );
 };
 
+WarningFill32.displayName = 'Icon.WarningFill';
+
 export default WarningFill32;

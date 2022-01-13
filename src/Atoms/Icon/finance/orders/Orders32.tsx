@@ -15,4 +15,6 @@ const Orders32: React.FC<IconProps> = (props) => {
   );
 };
 
+Orders32.displayName = 'Icon.Orders';
+
 export default Orders32;

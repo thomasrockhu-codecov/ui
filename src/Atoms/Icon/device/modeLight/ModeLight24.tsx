@@ -21,4 +21,6 @@ const ModeLight24: React.FC<IconProps> = (props) => {
   );
 };
 
+ModeLight24.displayName = 'Icon.ModeLight';
+
 export default ModeLight24;

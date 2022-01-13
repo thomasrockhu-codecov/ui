@@ -14,4 +14,6 @@ const Cross24: React.FC<IconProps> = (props) => {
   );
 };
 
+Cross24.displayName = 'Icon.Cross';
+
 export default Cross24;

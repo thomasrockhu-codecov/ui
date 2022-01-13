@@ -11,4 +11,6 @@ const ChevronUp24: React.FC<IconProps> = (props) => {
   );
 };
 
+ChevronUp24.displayName = 'Icon.ChevronUp';
+
 export default ChevronUp24;

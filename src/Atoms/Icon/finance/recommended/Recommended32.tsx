@@ -14,4 +14,6 @@ const Recommended32: React.FC<IconProps> = (props) => {
   );
 };
 
+Recommended32.displayName = 'Icon.Recommended';
+
 export default Recommended32;

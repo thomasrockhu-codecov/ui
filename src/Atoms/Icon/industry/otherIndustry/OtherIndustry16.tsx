@@ -16,4 +16,6 @@ const OtherIndustry16: React.FC<IconProps> = (props) => {
   );
 };
 
+OtherIndustry16.displayName = 'Icon.OtherIndustry';
+
 export default OtherIndustry16;

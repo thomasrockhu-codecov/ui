@@ -20,4 +20,6 @@ const Gold32: React.FC<IconProps> = (props) => {
   );
 };
 
+Gold32.displayName = 'Icon.Gold';
+
 export default Gold32;

@@ -19,4 +19,6 @@ const Pdf24 = (props: IconProps) => (
   </IconBase>
 );
 
+Pdf24.displayName = 'Icon.Pdf';
+
 export default Pdf24;

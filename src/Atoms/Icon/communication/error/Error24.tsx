@@ -22,4 +22,6 @@ const Error24: React.FC<IconProps> = (props) => {
   );
 };
 
+Error24.displayName = 'Icon.Error';
+
 export default Error24;

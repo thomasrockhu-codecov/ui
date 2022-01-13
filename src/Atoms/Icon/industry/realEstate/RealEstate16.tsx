@@ -16,4 +16,6 @@ const RealEstate16: React.FC<IconProps> = (props) => {
   );
 };
 
+RealEstate16.displayName = 'Icon.RealEstate';
+
 export default RealEstate16;

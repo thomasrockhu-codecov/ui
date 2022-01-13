@@ -14,4 +14,6 @@ const BuySellDots16: React.FC<IconProps> = (props) => {
   );
 };
 
+BuySellDots16.displayName = 'Icon.BuySellDots';
+
 export default BuySellDots16;

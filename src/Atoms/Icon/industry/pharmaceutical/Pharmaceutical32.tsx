@@ -17,4 +17,6 @@ const Pharmaceutical32: React.FC<IconProps> = (props) => {
   );
 };
 
+Pharmaceutical32.displayName = 'Icon.Pharmaceutical';
+
 export default Pharmaceutical32;

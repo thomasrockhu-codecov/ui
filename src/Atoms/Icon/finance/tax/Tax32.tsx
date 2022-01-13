@@ -24,4 +24,6 @@ const Tax32: React.FC<IconProps> = (props) => {
   );
 };
 
+Tax32.displayName = 'Icon.Tax';
+
 export default Tax32;

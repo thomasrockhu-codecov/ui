@@ -20,4 +20,6 @@ const Hide24: React.FC<IconProps> = (props) => {
   );
 };
 
+Hide24.displayName = 'Icon.Hide';
+
 export default Hide24;

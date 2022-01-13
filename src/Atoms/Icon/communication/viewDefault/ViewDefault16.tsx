@@ -16,4 +16,6 @@ const ViewDefault16: React.FC<IconProps> = (props) => {
   );
 };
 
+ViewDefault16.displayName = 'Icon.ViewDefault';
+
 export default ViewDefault16;

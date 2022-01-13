@@ -14,4 +14,6 @@ const Cross16: React.FC<IconProps> = (props) => {
   );
 };
 
+Cross16.displayName = 'Icon.Cross';
+
 export default Cross16;

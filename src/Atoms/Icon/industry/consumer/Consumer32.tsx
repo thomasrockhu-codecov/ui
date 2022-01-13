@@ -14,4 +14,6 @@ const Consumer32: React.FC<IconProps> = (props) => {
   );
 };
 
+Consumer32.displayName = 'Icon.Consumer';
+
 export default Consumer32;

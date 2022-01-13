@@ -18,4 +18,6 @@ const LikeFill24: React.FC<IconProps> = (props) => {
   );
 };
 
+LikeFill24.displayName = 'Icon.LikeFill';
+
 export default LikeFill24;

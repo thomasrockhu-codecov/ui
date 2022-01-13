@@ -12,4 +12,6 @@ const FactSheet16: React.FC<IconProps> = (props) => {
   );
 };
 
+FactSheet16.displayName = 'Icon.FactSheet';
+
 export default FactSheet16;

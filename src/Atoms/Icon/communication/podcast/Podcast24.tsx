@@ -20,4 +20,6 @@ const Podcast24: React.FC<IconProps> = (props) => {
   );
 };
 
+Podcast24.displayName = 'Icon.Podcast';
+
 export default Podcast24;

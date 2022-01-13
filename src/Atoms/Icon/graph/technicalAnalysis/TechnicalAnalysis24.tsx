@@ -14,4 +14,6 @@ const TechnicalAnalysis24: React.FC<IconProps> = (props) => {
   );
 };
 
+TechnicalAnalysis24.displayName = 'Icon.TechnicalAnalysis';
+
 export default TechnicalAnalysis24;

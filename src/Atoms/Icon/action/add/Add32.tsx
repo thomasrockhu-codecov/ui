@@ -11,4 +11,6 @@ const Add32: React.FC<IconProps> = (props) => {
   );
 };
 
+Add32.displayName = 'Icon.Add';
+
 export default Add32;

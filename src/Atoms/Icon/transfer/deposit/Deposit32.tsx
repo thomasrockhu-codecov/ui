@@ -22,4 +22,6 @@ const Deposit32: React.FC<IconProps> = (props) => {
   );
 };
 
+Deposit32.displayName = 'Icon.Deposit';
+
 export default Deposit32;

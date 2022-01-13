@@ -16,4 +16,6 @@ const EmergingMarkets32: React.FC<IconProps> = (props) => {
   );
 };
 
+EmergingMarkets32.displayName = 'Icon.EmergingMarkets';
+
 export default EmergingMarkets32;

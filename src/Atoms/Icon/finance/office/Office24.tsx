@@ -18,4 +18,6 @@ const Office24: React.FC<IconProps> = (props) => {
   );
 };
 
+Office24.displayName = 'Icon.Office';
+
 export default Office24;

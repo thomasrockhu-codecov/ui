@@ -16,4 +16,6 @@ const Environment24: React.FC<IconProps> = (props) => {
   );
 };
 
+Environment24.displayName = 'Icon.Environment';
+
 export default Environment24;

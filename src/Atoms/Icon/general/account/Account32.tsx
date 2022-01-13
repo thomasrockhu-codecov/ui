@@ -17,4 +17,6 @@ const Account32: React.FC<IconProps> = (props) => {
   );
 };
 
+Account32.displayName = 'Icon.Account';
+
 export default Account32;

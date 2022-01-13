@@ -8,21 +8,12 @@ const storiesDir = process.env.STORYBOOK_DIRECTORY
 module.exports = {
   stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
   addons: [
+    '@storybook/addon-essentials',
     '@storybook/addon-storysource',
     '@storybook/addon-knobs',
-    '@storybook/addon-actions',
     '@storybook/addon-a11y',
     '@storybook/addon-links',
-    '@storybook/addon-viewport',
     'storybook-addon-intl',
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        sourceLoaderOptions: {
-          parser: 'typescript',
-        },
-      },
-    },
     'storybook-dark-mode',
   ],
 

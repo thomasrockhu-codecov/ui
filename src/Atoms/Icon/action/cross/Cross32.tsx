@@ -14,4 +14,6 @@ const Cross32: React.FC<IconProps> = (props) => {
   );
 };
 
+Cross32.displayName = 'Icon.Cross';
+
 export default Cross32;

@@ -20,4 +20,6 @@ const Profile24: React.FC<IconProps> = (props) => {
   );
 };
 
+Profile24.displayName = 'Icon.Profile';
+
 export default Profile24;

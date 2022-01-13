@@ -18,4 +18,6 @@ const Archive16: React.FC<IconProps> = (props) => {
   );
 };
 
+Archive16.displayName = 'Icon.Archive';
+
 export default Archive16;

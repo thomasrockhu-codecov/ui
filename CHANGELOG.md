@@ -1,3 +1,56 @@
+# [9.18.0](https://github.com/nordnet/ui/compare/v9.17.5...v9.18.0) (2022-01-11)
+
+
+### Features
+
+* 🎸 Add mouse events to text input ([a73a899](https://github.com/nordnet/ui/commit/a73a899))
+
+## [9.17.5](https://github.com/nordnet/ui/compare/v9.17.4...v9.17.5) (2022-01-10)
+
+
+### Bug Fixes
+
+* add displayName to all icons ([204ccbc](https://github.com/nordnet/ui/commit/204ccbc))
+
+## [9.17.4](https://github.com/nordnet/ui/compare/v9.17.3...v9.17.4) (2022-01-03)
+
+
+### Bug Fixes
+
+* move storyshots config to root, remove dummy test ([2470aff](https://github.com/nordnet/ui/commit/2470aff))
+* remove duplicated dependencies ([23ddab9](https://github.com/nordnet/ui/commit/23ddab9))
+* yarn.lock ([916c360](https://github.com/nordnet/ui/commit/916c360))
+
+## [9.17.3](https://github.com/nordnet/ui/compare/v9.17.2...v9.17.3) (2021-12-21)
+
+
+### Bug Fixes
+
+* add husky install to prepare step but don't do it if ci ([5f2c7f5](https://github.com/nordnet/ui/commit/5f2c7f5))
+* remove redundant script and fix message ([a5f5aec](https://github.com/nordnet/ui/commit/a5f5aec))
+
+## [9.17.2](https://github.com/nordnet/ui/compare/v9.17.1...v9.17.2) (2021-12-21)
+
+
+### Bug Fixes
+
+* remove husky for now ([d945541](https://github.com/nordnet/ui/commit/d945541))
+
+## [9.17.1](https://github.com/nordnet/ui/compare/v9.17.0...v9.17.1) (2021-12-21)
+
+
+### Bug Fixes
+
+* extract postinstall script ([fcc92bf](https://github.com/nordnet/ui/commit/fcc92bf))
+* this? ([ab47853](https://github.com/nordnet/ui/commit/ab47853))
+
+# [9.17.0](https://github.com/nordnet/ui/compare/v9.16.3...v9.17.0) (2021-12-20)
+
+
+### Features
+
+* 🎸 Add new emoji16 icon ([60b7023](https://github.com/nordnet/ui/commit/60b7023))
+
 ## [9.16.3](https://github.com/nordnet/ui/compare/v9.16.2...v9.16.3) (2021-12-16)
 
 

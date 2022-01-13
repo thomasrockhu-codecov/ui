@@ -14,4 +14,6 @@ const Stock16: React.FC<IconProps> = (props) => {
   );
 };
 
+Stock16.displayName = 'Icon.Stock';
+
 export default Stock16;
