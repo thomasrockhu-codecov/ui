@@ -1,3 +1,15 @@
+# [9.19.0](https://github.com/nordnet/ui/compare/v9.18.0...v9.19.0) (2022-01-13)
+
+
+### Bug Fixes
+
+* update stories ([258a1e2](https://github.com/nordnet/ui/commit/258a1e2))
+
+
+### Features
+
+* replace knobs addon with args controls ([4e701f6](https://github.com/nordnet/ui/commit/4e701f6))
+
 # [9.18.0](https://github.com/nordnet/ui/compare/v9.17.5...v9.18.0) (2022-01-11)
 
 
