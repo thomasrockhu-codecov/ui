@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Badge / Notification Badge with animation 1`] = `
+exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
 .c4 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -62,19 +62,19 @@ exports[`Storyshots Molecules / Badge / Notification Badge with animation 1`] = 
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
 }
 
 .c10 {
   -webkit-animation: scale 0.5s ease-out;
   animation: scale 0.5s ease-out;
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .c12 {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .c7 {
@@ -342,7 +342,7 @@ exports[`Storyshots Molecules / Badge / Notification Badge with animation 1`] = 
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
+exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
 .c7 {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -367,15 +367,6 @@ exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 .c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -392,76 +383,13 @@ exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
-}
-
-.c8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #FF4733;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
-}
-
-.c11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #FFCF00;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
 }
 
 .c5 {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .c0 {
@@ -594,62 +522,6 @@ exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
       <span
         className="c3"
       >
-        Text with extra small Badge
-      </span>
-    </div>
-    <div>
-      <div
-        className="c7"
-      >
-        <div
-          className="c7"
-        >
-          <span
-            className="c8 "
-          />
-          <span
-            className="c9"
-          >
-             Buy order
-          </span>
-        </div>
-        <div
-          className="c7"
-        >
-          <span
-            className="c10 "
-          />
-          <span
-            className="c9"
-          >
-             Sell order
-          </span>
-        </div>
-        <div
-          className="c7"
-        >
-          <span
-            className="c11 "
-          />
-          <span
-            className="c9"
-          >
-             Exchange order
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3"
-      >
         Badge with Aria-label
       </span>
     </div>
@@ -712,7 +584,7 @@ exports[`Storyshots Molecules / Badge / Notification Common use cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
+exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
 .c7 {
   margin-bottom: 4px;
   background-color: transparent;
@@ -736,16 +608,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 1.6;
-}
-
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -754,7 +617,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFCF00;
   margin: 0;
@@ -779,9 +642,9 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
 }
 
 .c8 {
@@ -800,12 +663,12 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 16px;
-  min-width: 16px;
-  border-radius: 16px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 24px;
 }
 
-.c11 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -826,7 +689,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   border-radius: 32px;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -842,9 +705,30 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #51CB20;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FF4733;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
 }
 
 .c14 {
@@ -862,123 +746,18 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  background-color: #FF4733;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
-}
-
-.c15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
   background-color: #FFCF00;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 24px;
-}
-
-.c16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #336BFF;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
-}
-
-.c17 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #51CB20;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
-}
-
-.c18 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #FF4733;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
-}
-
-.c19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #FFCF00;
-  height: 8px;
-  min-width: 8px;
-  border-radius: 8px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 20px;
 }
 
 .c5 {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
-.c9 {
-  padding: 0 4px;
+.c10 {
+  padding: 0 6px;
 }
 
 .c0 {
@@ -1052,7 +831,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
       <span
         className="c3"
       >
-        Default Notification Badge
+        Default Number Badge
       </span>
     </div>
     <div>
@@ -1085,10 +864,10 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c8 c9"
+          className="c4 c5"
         >
           <span
-            className="c10"
+            className="c6"
           >
             1
           </span>
@@ -1098,7 +877,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c4 c5"
+          className="c8 c5"
         >
           <span
             className="c6"
@@ -1111,10 +890,10 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c11 c5"
+          className="c9 c10"
         >
           <span
-            className="c12"
+            className="c11"
           >
             3
           </span>
@@ -1140,7 +919,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c13 c5"
+          className="c12 c5"
         >
           <span
             className="c6"
@@ -1153,7 +932,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c14 c5"
+          className="c13 c5"
         >
           <span
             className="c6"
@@ -1166,7 +945,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c15 c5"
+          className="c14 c5"
         >
           <span
             className="c6"
@@ -1174,50 +953,6 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
             4
           </span>
         </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3"
-      >
-        Extra small Badge size
-      </span>
-    </div>
-    <div>
-      <div
-        className="c7"
-      >
-        <span
-          className="c16 "
-        />
-      </div>
-      <div
-        className="c7"
-      >
-        <span
-          className="c17 "
-        />
-      </div>
-      <div
-        className="c7"
-      >
-        <span
-          className="c18 "
-        />
-      </div>
-      <div
-        className="c7"
-      >
-        <span
-          className="c19 "
-        />
       </div>
     </div>
   </div>
@@ -1239,7 +974,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c4 c5"
       >
         <span
-          className="c20"
+          className="c15"
         >
           5
         </span>
@@ -1264,10 +999,10 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
         className="c7"
       >
         <span
-          className="c8 c9"
+          className="c8 c5"
         >
           <span
-            className="c10"
+            className="c6"
           >
             99
           </span>
@@ -1304,7 +1039,7 @@ exports[`Storyshots Molecules / Badge / Notification Showcase 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Badge / Notification Specialized children 1`] = `
+exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
 .c4 {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -1363,14 +1098,14 @@ exports[`Storyshots Molecules / Badge / Notification Specialized children 1`] = 
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
-  height: 24px;
-  min-width: 24px;
+  height: 20px;
+  min-width: 20px;
   color: #FFFFFF;
-  border-radius: 24px;
+  border-radius: 20px;
 }
 
 .c6 {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .c0 {

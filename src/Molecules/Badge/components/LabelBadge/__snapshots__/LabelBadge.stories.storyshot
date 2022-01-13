@@ -91,12 +91,50 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
   background-color: #FF4733;
 }
 
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #85DA62;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #41A21A;
+}
+
 .c5 {
   padding: 2px 8px;
+  min-width: 24px;
 }
 
 .c8 {
-  padding: 0 4px;
+  padding: 2px 4px;
+  min-width: 20px;
 }
 
 .c0 {
@@ -306,6 +344,56 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
           className="c12"
         >
           Custom text color
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Primary Single Character
+      </span>
+    </div>
+    <div>
+      <span
+        className="c13 c5"
+      >
+        <span
+          className="c7"
+        >
+          8
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Secondary Single Character
+      </span>
+    </div>
+    <div>
+      <span
+        className="c14 c8"
+      >
+        <span
+          className="c10"
+        >
+          9
         </span>
       </span>
     </div>

@@ -6,9 +6,9 @@ import Badge from '../..';
 import { numberWithLimit } from '../../../../common/utils';
 
 export default {
-  title: 'Molecules / Badge / Notification',
+  title: 'Molecules / Badge / Number',
   parameters: {
-    component: Badge.Notification,
+    component: Badge.Number,
   },
 };
 
@@ -16,21 +16,21 @@ export const Showcase = () => (
   <Display
     items={[
       {
-        title: 'Default Notification Badge',
-        component: <Badge.Notification>1</Badge.Notification>,
+        title: 'Default Number Badge',
+        component: <Badge.Number>1</Badge.Number>,
       },
       {
         title: 'Badge with different sizes',
         component: (
           <>
             <Box mb={1}>
-              <Badge.Notification badgeSize="s">1</Badge.Notification>
+              <Badge.Number badgeSize="s">1</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification badgeSize="m">2</Badge.Notification>
+              <Badge.Number badgeSize="m">2</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification badgeSize="l">3</Badge.Notification>
+              <Badge.Number badgeSize="l">3</Badge.Number>
             </Box>
           </>
         ),
@@ -40,67 +40,34 @@ export const Showcase = () => (
         component: (
           <>
             <Box mb={1}>
-              <Badge.Notification badgeColor={(t) => t.color.badgeBackgroundPositive}>
-                2
-              </Badge.Notification>
+              <Badge.Number badgeColor={(t) => t.color.badgeBackgroundPositive}>2</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification badgeColor={(t) => t.color.badgeBackgroundNegative}>
-                3
-              </Badge.Notification>
+              <Badge.Number badgeColor={(t) => t.color.badgeBackgroundNegative}>3</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification badgeColor={(t) => t.color.badgeBackgroundWarning}>
-                4
-              </Badge.Notification>
+              <Badge.Number badgeColor={(t) => t.color.badgeBackgroundWarning}>4</Badge.Number>
             </Box>
           </>
         ),
       },
-      {
-        title: 'Extra small Badge size',
-        component: (
-          <>
-            <Box mb={1}>
-              <Badge.Notification badgeSize="xs" />
-            </Box>
-            <Box mb={1}>
-              <Badge.Notification
-                badgeColor={(t) => t.color.badgeBackgroundPositive}
-                badgeSize="xs"
-              />
-            </Box>
-            <Box mb={1}>
-              <Badge.Notification
-                badgeColor={(t) => t.color.badgeBackgroundNegative}
-                badgeSize="xs"
-              />
-            </Box>
-            <Box mb={1}>
-              <Badge.Notification
-                badgeColor={(t) => t.color.badgeBackgroundWarning}
-                badgeSize="xs"
-              />
-            </Box>
-          </>
-        ),
-      },
+
       {
         title: 'Custom text color',
-        component: <Badge.Notification color={(t) => t.color.warning}>5</Badge.Notification>,
+        component: <Badge.Number color={(t) => t.color.warning}>5</Badge.Number>,
       },
       {
         title: 'Badge with large number',
         component: (
           <>
             <Box mb={1}>
-              <Badge.Notification badgeSize="s">99</Badge.Notification>
+              <Badge.Number badgeSize="m">99</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification>99</Badge.Notification>
+              <Badge.Number>99</Badge.Number>
             </Box>
             <Box mb={1}>
-              <Badge.Notification>123</Badge.Notification>
+              <Badge.Number>123</Badge.Number>
             </Box>
           </>
         ),
@@ -118,40 +85,15 @@ export const CommonUseCases = () => {
       items={[
         {
           title: 'Number with limit',
-          component: <Badge.Notification>{numberWithLimit(1234567, 99)}</Badge.Notification>,
+          component: <Badge.Number>{numberWithLimit(1234567, 99)}</Badge.Number>,
         },
         {
           title: 'Text with Badge',
           component: (
             <Box my={2}>
               <Typography>
-                Orders <Badge.Notification>7</Badge.Notification>
+                Orders <Badge.Number>7</Badge.Number>
               </Typography>
-            </Box>
-          ),
-        },
-        {
-          title: 'Text with extra small Badge',
-          component: (
-            <Box my={2}>
-              <Box my={2}>
-                <Badge.Notification badgeSize="xs" />
-                <Typography type="tertiary"> Buy order</Typography>
-              </Box>
-              <Box my={2}>
-                <Badge.Notification
-                  badgeSize="xs"
-                  badgeColor={(t) => t.color.badgeBackgroundNegative}
-                />
-                <Typography type="tertiary"> Sell order</Typography>
-              </Box>
-              <Box my={2}>
-                <Badge.Notification
-                  badgeSize="xs"
-                  badgeColor={(t) => t.color.badgeBackgroundWarning}
-                />
-                <Typography type="tertiary"> Exchange order</Typography>
-              </Box>
             </Box>
           ),
         },
@@ -160,7 +102,7 @@ export const CommonUseCases = () => {
           component: (
             <Box my={2}>
               <Typography>
-                Orders <Badge.Notification aria-label="7 new orders">7</Badge.Notification>
+                Orders <Badge.Number aria-label="7 new orders">7</Badge.Number>
               </Typography>
             </Box>
           ),
@@ -170,7 +112,7 @@ export const CommonUseCases = () => {
           component: (
             <Box my={2}>
               <Typography>
-                Orders <Badge.Notification>7</Badge.Notification>
+                Orders <Badge.Number>7</Badge.Number>
               </Typography>
             </Box>
           ),
@@ -191,7 +133,7 @@ export const SpecializedChildren = () => {
           title: 'Component as child',
           component: (
             <Box my={2}>
-              <Badge.Notification color={(t) => t.color.badgeTextColor}>
+              <Badge.Number color={(t) => t.color.badgeTextColor}>
                 <>
                   <Typography type="title3" color={(t) => t.color.badgeTextColor}>
                     8
@@ -200,7 +142,7 @@ export const SpecializedChildren = () => {
                     %
                   </Typography>
                 </>
-              </Badge.Notification>
+              </Badge.Number>
               <Typography as="p" type="caption">
                 * It&apos;s up to developer to set child component font (family, size, etc.)
               </Typography>
@@ -211,13 +153,13 @@ export const SpecializedChildren = () => {
           title: 'Function as child',
           component: (
             <Box my={2}>
-              <Badge.Notification color={(t) => t.color.badgeTextColor}>
+              <Badge.Number color={(t) => t.color.badgeTextColor}>
                 {() => (
                   <Typography type="tertiary" color={(t) => t.color.badgeTextColor}>
                     9%
                   </Typography>
                 )}
-              </Badge.Notification>
+              </Badge.Number>
               <Typography as="p" type="caption">
                 * It&apos;s up to developer to set child function font (family, size, etc.)
               </Typography>
@@ -255,9 +197,9 @@ export const BadgeWithAnimation = () => {
                 >
                   -
                 </Button>
-                <Badge.Notification key={notificationsExampleOne} animateOnChange>
+                <Badge.Number key={notificationsExampleOne} animateOnChange>
                   {notificationsExampleOne}
-                </Badge.Notification>
+                </Badge.Number>
                 <Button
                   variant="secondary"
                   onClick={() => setNotificationsExampleOne(notificationsExampleOne + 1)}
@@ -282,12 +224,9 @@ export const BadgeWithAnimation = () => {
                 >
                   -
                 </Button>
-                <Badge.Notification
-                  key={notificationsExampleTwo}
-                  animateOnChange={isNewNotifications}
-                >
+                <Badge.Number key={notificationsExampleTwo} animateOnChange={isNewNotifications}>
                   {notificationsExampleTwo}
-                </Badge.Notification>
+                </Badge.Number>
                 <Button
                   variant="secondary"
                   onClick={() => {

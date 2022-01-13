@@ -35,17 +35,16 @@ Brings attention to a property on a page entity.
 - `weight` - sets the font weight.
 - `children` - the badge's text content.
 
-### Notification Badge (Badge.Notification)
+### Number Badge (Badge.Number)
 
-Used to display user notifications. Displays the notification as a badge with numbers or as a dot.
-If the `badgeSize` is `xs` the badge cannot have children.
+Used to display step progress, number of orders or messages . Displays the number as a badge with numbers.
 
 - `badgeColor` - a theme color function used to set the color for the background/badge.
 - `color` - a theme color function used to set the color for the number.
-- `badgeSize` - sets the width/height of the badge. Available sizes are: `'l'`: 32px, `'m'`: 24px, `'s'`: 16px, `'xs'`: 8px.
+- `badgeSize` - sets the width/height of the badge. Available sizes are: `'l'`: 32px, `'m'`: 24px, `'s'`: 20px.
 - `animateOnChange` - triggers the pulse animation when component is updated.
 - `symmetricShape` - forces the component to be symmetrical. i.e round.
-- `children` - the number of notifications.
+- `children` - the number.
 
 ### Status Badge (Badge.Status)
 

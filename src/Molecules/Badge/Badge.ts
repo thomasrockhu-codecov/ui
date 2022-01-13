@@ -1,6 +1,6 @@
 import { BadgeComponent } from './Badge.types';
 import {
-  NotificationBadge,
+  NumberBadge,
   LabelBadge,
   IconBadge,
   StatusBadge,
@@ -15,6 +15,6 @@ export const Badge = BaseBadge as BadgeComponent;
 Badge.Icon = IconBadge;
 Badge.Status = StatusBadge;
 Badge.Label = LabelBadge;
-Badge.Notification = NotificationBadge;
+Badge.Number = NumberBadge;
 Badge.Account = AccountBadge;
 Badge.Tooltip = TooltipBadge;

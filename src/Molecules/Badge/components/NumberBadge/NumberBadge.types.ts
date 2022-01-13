@@ -15,16 +15,11 @@ type BaseProps = HtmlProps & {
   symmetricShape?: boolean;
 };
 
-export type XSProps = BaseProps & {
-  badgeSize: 'xs';
-  children?: undefined;
-};
-
 export type Props = BaseProps & {
   badgeSize?: 's' | 'm' | 'l' | number;
   children?: React.ReactNode;
 };
 
-export type NotificationBadgeComponent = React.ForwardRefExoticComponent<
-  React.RefAttributes<HTMLSpanElement> & (XSProps | Props)
+export type NumberBadgeComponent = React.ForwardRefExoticComponent<
+  React.RefAttributes<HTMLSpanElement> & Props
 >;

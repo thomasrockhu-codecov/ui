@@ -1,5 +1,5 @@
 export { BaseBadge } from './BaseBadge';
-export { NotificationBadge } from './NotificationBadge';
+export { NumberBadge } from './NumberBadge';
 export { LabelBadge } from './LabelBadge';
 export { IconBadge } from './IconBadge';
 export { StatusBadge } from './StatusBadge';

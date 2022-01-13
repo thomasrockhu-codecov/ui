@@ -3,20 +3,15 @@ import styled, { css } from 'styled-components';
 import { Typography } from '../../../..';
 import { ColorFn } from '../../../../common/Types';
 import { isElement, isFunction } from '../../../../common/utils';
-import {
-  StyledBaseBadgeProps,
-  XSProps,
-  Props,
-  NotificationBadgeComponent,
-} from './NotificationBadge.types';
+import { StyledBaseBadgeProps, Props, NumberBadgeComponent } from './NumberBadge.types';
 import { BaseBadge } from '../BaseBadge';
 import {
   MAP_FONT_SIZE,
   MAP_BADGE_PADDING,
   DEFAULT_PADDING,
   DEFAULT_TYPOGRAPHY_TYPE,
-  NotificationBadgeSize,
-} from './NotificationBadge.constants';
+  NumberBadgeSize,
+} from './NumberBadge.constants';
 
 const animation = css`
   @keyframes scale {
@@ -38,7 +33,7 @@ const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<Styled
   ${(p) => (p.$padding ? `padding: 0 ${p.theme.spacing.unit(p.$padding)}px;` : '')}
 `;
 
-const NotificationBadgeContent: React.FC<{
+const NumberBadgeContent: React.FC<{
   color?: ColorFn;
   typographyType: React.ComponentProps<typeof Typography>['type'];
 }> = ({ children, color, typographyType }) => {
@@ -56,16 +51,13 @@ const NotificationBadgeContent: React.FC<{
   );
 };
 
-export const NotificationBadge: NotificationBadgeComponent = React.forwardRef<
-  HTMLSpanElement,
-  XSProps | Props
->(
+export const NumberBadge: NumberBadgeComponent = React.forwardRef<HTMLSpanElement, Props>(
   (
     {
       badgeColor = (t) => t.color.badgeBackground,
       color = (t) => t.color.badgeTextColor,
       children,
-      badgeSize = 'm',
+      badgeSize = 's',
       animateOnChange = false,
       symmetricShape = false,
       ...htmlProps
@@ -74,11 +66,10 @@ export const NotificationBadge: NotificationBadgeComponent = React.forwardRef<
   ) => {
     const textColorOnParent = isFunction(children) || isElement(children);
 
-    const notificationBadgeSize =
-      typeof badgeSize === 'number' ? badgeSize : NotificationBadgeSize[badgeSize];
+    const numberBadgeSize = typeof badgeSize === 'number' ? badgeSize : NumberBadgeSize[badgeSize];
 
-    const typographyType = MAP_FONT_SIZE[notificationBadgeSize] ?? DEFAULT_TYPOGRAPHY_TYPE;
-    const padding = MAP_BADGE_PADDING[notificationBadgeSize] ?? DEFAULT_PADDING;
+    const typographyType = MAP_FONT_SIZE[numberBadgeSize] ?? DEFAULT_TYPOGRAPHY_TYPE;
+    const padding = MAP_BADGE_PADDING[numberBadgeSize] ?? DEFAULT_PADDING;
 
     return (
       <StyledBaseBadge
@@ -86,16 +77,15 @@ export const NotificationBadge: NotificationBadgeComponent = React.forwardRef<
         ref={ref}
         $animateOnChange={animateOnChange}
         $padding={padding}
-        badgeSize={notificationBadgeSize}
+        badgeSize={numberBadgeSize}
         badgeColor={badgeColor}
         symmetricShape={symmetricShape}
         {...(textColorOnParent && { color })}
       >
-        <NotificationBadgeContent typographyType={typographyType} color={color}>
+        <NumberBadgeContent typographyType={typographyType} color={color}>
           {children}
-        </NotificationBadgeContent>
+        </NumberBadgeContent>
       </StyledBaseBadge>
     );
   },
-  // re-cast explicitly since the intersection type (XSProps | Props) messes up forwardRef typing
-) as NotificationBadgeComponent;
+);
