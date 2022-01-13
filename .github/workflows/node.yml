@@ -69,3 +69,8 @@ jobs:
         run: |
           node -v && npm -v && yarn -v
           yarn semantic-release
+      - name: Preview release
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/preview' }}
+        run: |
+          node -v && npm -v && yarn -v
+          yarn semantic-release
