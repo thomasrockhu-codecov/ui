@@ -12,6 +12,7 @@ export type CollapsibleProps = {
   expandElement?: React.ReactNode | RenderFunc;
   titleRowPaddingY?: number;
   titleRowPaddingX?: number;
+  action?: React.ReactNode;
 };
 
 export type IndicatorsProps = {
@@ -19,4 +20,5 @@ export type IndicatorsProps = {
   $collapsed: boolean;
   $py: number;
   $px: number;
+  $actionExists?: boolean;
 };
