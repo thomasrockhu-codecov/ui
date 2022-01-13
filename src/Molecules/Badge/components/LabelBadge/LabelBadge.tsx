@@ -5,17 +5,25 @@ import { LabelBadgeComponent, LabelBadgeProps, StyledBaseBadgeProps } from './La
 import { BaseBadge } from '../BaseBadge';
 import {
   PRIMARY_HORIZONTAL_PADDING,
-  PRIMARY_VERTICAL_PADDING,
+  VERTICAL_PADDING,
   SECONDARY_HORIZONTAL_PADDING,
+  PRIMARY_MIN_WIDTH,
+  SECONDARY_MIN_WIDTH,
 } from './LabelBadge.constants';
 
 const StyledBaseBadge: React.FC<StyledBaseBadgeProps> = styled(BaseBadge)<StyledBaseBadgeProps>`
   ${(p) =>
     p.$type === 'primary'
-      ? `padding: ${p.theme.spacing.unit(PRIMARY_VERTICAL_PADDING)}px ${p.theme.spacing.unit(
+      ? `padding: ${p.theme.spacing.unit(VERTICAL_PADDING)}px ${p.theme.spacing.unit(
           PRIMARY_HORIZONTAL_PADDING,
         )}px;`
-      : `padding: 0 ${p.theme.spacing.unit(SECONDARY_HORIZONTAL_PADDING)}px;`}
+      : `padding: ${p.theme.spacing.unit(VERTICAL_PADDING)}px ${p.theme.spacing.unit(
+          SECONDARY_HORIZONTAL_PADDING,
+        )}px;`}
+  ${(p) =>
+    p.$type === 'primary'
+      ? `min-width: ${p.theme.spacing.unit(PRIMARY_MIN_WIDTH)}px;`
+      : `min-width: ${p.theme.spacing.unit(SECONDARY_MIN_WIDTH)}px;`}
 `;
 
 export const LabelBadge: LabelBadgeComponent = React.forwardRef<HTMLSpanElement, LabelBadgeProps>(

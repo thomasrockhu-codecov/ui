@@ -45,6 +45,22 @@ export const Showcase = () => {
           title: 'Custom text color',
           component: <Badge.Label color={(t) => t.color.warning}>Custom text color</Badge.Label>,
         },
+        {
+          title: 'Primary Single Character',
+          component: (
+            <Badge.Label badgeColor={(t) => t.color.sfdrArticle8} type="primary" weight="bold">
+              8
+            </Badge.Label>
+          ),
+        },
+        {
+          title: 'Secondary Single Character',
+          component: (
+            <Badge.Label badgeColor={(t) => t.color.sfdrArticle9} type="secondary" weight="bold">
+              9
+            </Badge.Label>
+          ),
+        },
       ]}
     />
   );
