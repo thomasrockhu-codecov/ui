@@ -48,6 +48,7 @@ const Track = styled.span<Pick<SwitchToggleProps, 'trackWidth'>>`
   line-height: ${(p) => p.theme.spacing.unit(TOGGLE_HEIGHT)}px;
   background-color: ${(p) => p.theme.color.orderDepthBackground};
   border: 1px solid ${(p) => p.theme.color.divider};
+  box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.divider};
 `;
 
 const ButtonContent = styled.div`
@@ -162,7 +163,7 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                   alignItems="center"
                   alignContent="center"
                 >
-                  <Typography type="primary" color={(p) => p.color.cta}>
+                  <Typography type="primary" weight="bold" color={(p) => p.color.cta}>
                     {checked ? valueRight : valueLeft}
                   </Typography>
                 </Flexbox>
