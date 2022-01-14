@@ -1,6 +1,7 @@
 import apartment from './apartment';
 import approve from './approve';
 import bank from './bank';
+import bankId from './bankId';
 import controls from './controls';
 import fee from './fee';
 import feeNone from './feeNone';
@@ -37,6 +38,7 @@ export default {
   ...apartment,
   ...approve,
   ...bank,
+  ...bankId,
   ...controls,
   ...fee,
   ...feeNone,
