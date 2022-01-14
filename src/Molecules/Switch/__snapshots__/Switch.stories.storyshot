@@ -90,7 +90,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -137,6 +137,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   line-height: 24px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
+  box-shadow: 0px 1px 3px 1px #EBEBE8;
 }
 
 .c7 {
@@ -546,7 +547,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -593,6 +594,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   line-height: 24px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
+  box-shadow: 0px 1px 3px 1px #EBEBE8;
 }
 
 .c7 {
