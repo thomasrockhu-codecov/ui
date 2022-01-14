@@ -1,6 +1,5 @@
 /** Atoms */
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
-import Badge from './Atoms/Badge';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
@@ -29,9 +28,9 @@ import VisuallyHidden from './Atoms/VisuallyHidden';
 import Truncate from './Atoms/Truncate';
 
 /** Molecules */
+import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
-import Avatar from './Molecules/Avatar';
 import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button from './Molecules/Button';
@@ -125,7 +124,6 @@ export {
   /** @deprecated */ Select,
   Accordion,
   AccordionItem,
-  Avatar,
   Badge,
   BarScale,
   Box,

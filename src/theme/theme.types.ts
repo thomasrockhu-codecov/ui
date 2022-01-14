@@ -161,9 +161,37 @@ export type ThemeColors = {
    */
   badgeBackground: string;
   /**
+   * green500
+   */
+  badgeBackgroundPositive: string;
+  /**
+   * yellow400
+   */
+  badgeBackgroundWarning: string;
+  /**
+   * red500
+   */
+  badgeBackgroundNegative: string;
+  /**
+   * white
+   */
+  badgeIconColor: string;
+  /**
    * white
    */
   badgeTextColor: string;
+  /**
+   * white
+   */
+  tooltipBadgeBackground: string;
+  /**
+   * gray400
+   */
+  tooltipBadgeBorder: string;
+  /**
+   * gray800
+   */
+  tooltipBadgeText: string;
   /**
    * blue500
    */

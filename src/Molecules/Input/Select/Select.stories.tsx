@@ -5,7 +5,7 @@ import R from 'ramda';
 import styled from 'styled-components';
 
 import {
-  Avatar,
+  Badge,
   Box,
   CardWithTitle,
   Flexbox,
@@ -129,7 +129,7 @@ const AccountValue = () => {
       ) : (
         <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
           <Flexbox item container alignItems="center" basis="32px" grow={0}>
-            <Avatar size="s">{selectedOption.symbol}</Avatar>
+            <Badge.Account badgeSize="s">{selectedOption.symbol}</Badge.Account>
           </Flexbox>
           <Flexbox item container alignItems="center" grow={1}>
             <Typography type="tertiary" weight="bold" color={(t) => t.color.text}>
@@ -169,7 +169,7 @@ const AccountListItem = ({ index }) => {
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
-          <Avatar size="s">{option.symbol}</Avatar>
+          <Badge.Account badgeSize="s">{option.symbol}</Badge.Account>
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
           <Flexbox item>
