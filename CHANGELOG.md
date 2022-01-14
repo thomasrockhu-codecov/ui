@@ -33,12 +33,9 @@
 
 ### BREAKING CHANGES
 
-* 🧨 remove <Badge> component. All Badge usage will be done through Badge
-sub-components.
-* 🧨 Modify Badge sub-component naming convention to use e.g. <Badge.Label>
-instead of <Badge.LabelBadge>
-* 🧨 remove Avatar component
-* 🧨 badge needs a sub badge component attached
+* 🧨 remove main <Badge> component. All Badge usage will be done through Badge
+  sub-components, e.g. <Badge.Label>, or <Badge.Number>
+* 🧨 remove Avatar component, use <Badge.Account> instead
 
 # [9.20.0](https://github.com/nordnet/ui/compare/v9.19.0...v9.20.0) (2022-01-14)
 
