@@ -1,3 +1,51 @@
+# [10.0.0-beta.1](https://github.com/nordnet/ui/compare/v9.18.0...v10.0.0-beta.1) (2022-01-14)
+
+
+### Bug Fixes
+
+* 🐛 disable conflicting eslint rule react/jsx-curly-newline ([c18454f](https://github.com/nordnet/ui/commit/c18454f))
+* 🐛 import badge after atoms, add weight to account badge ([89dbe68](https://github.com/nordnet/ui/commit/89dbe68))
+* 🐛 move Badge to Molecules to avoid weird test failure ([a62fd70](https://github.com/nordnet/ui/commit/a62fd70))
+* 🐛 notification badge cannot have children when size is xs ([f50585a](https://github.com/nordnet/ui/commit/f50585a))
+* 🐛 Put IconBadge among Atoms instead of Molecules ([df58e0c](https://github.com/nordnet/ui/commit/df58e0c))
+* 🐛 remove Avatar component, replace with Badge.AccountBadge ([faf24c6](https://github.com/nordnet/ui/commit/faf24c6))
+* 🐛 Review fixes of misspelled stories and typing ([0cfb215](https://github.com/nordnet/ui/commit/0cfb215))
+* 🐛 simply Badge component defaults and streamline stories ([3fc0265](https://github.com/nordnet/ui/commit/3fc0265))
+* add min-width to LabelBadge ([299e44a](https://github.com/nordnet/ui/commit/299e44a))
+* bump beta ([784a90c](https://github.com/nordnet/ui/commit/784a90c))
+* bump beta ([5a800ca](https://github.com/nordnet/ui/commit/5a800ca))
+* changed order of semantic plugings ([d1bee45](https://github.com/nordnet/ui/commit/d1bee45))
+* did a yarn ([6027cdc](https://github.com/nordnet/ui/commit/6027cdc))
+* empty ([95d5607](https://github.com/nordnet/ui/commit/95d5607))
+* empty2 ([c32a3d5](https://github.com/nordnet/ui/commit/c32a3d5))
+
+
+### Features
+
+* 🎸 add AccountBadge ([6cae98e](https://github.com/nordnet/ui/commit/6cae98e))
+* 🎸 add notification badge as sub badge component ([4b777ed](https://github.com/nordnet/ui/commit/4b777ed))
+* 🎸 Add status badge and re-work contract for icon badge ([0d7868c](https://github.com/nordnet/ui/commit/0d7868c))
+* 🎸 Added tooltip sub badge ([02687ce](https://github.com/nordnet/ui/commit/02687ce))
+* 🎸 attach BaseBadge to the root Badge component ([ec92042](https://github.com/nordnet/ui/commit/ec92042))
+* 🎸 break out LabelBadge to separate component ([5794ee0](https://github.com/nordnet/ui/commit/5794ee0))
+* 🎸 change Badge sub-component naming convention ([46e306a](https://github.com/nordnet/ui/commit/46e306a))
+* 🎸 create shared BadgeBase component and use it in Badge ([26d69ae](https://github.com/nordnet/ui/commit/26d69ae))
+* 🎸 finish TooltipBadge ([2c8350a](https://github.com/nordnet/ui/commit/2c8350a))
+* 🎸 implement more appropriate badge colors ([08c49d0](https://github.com/nordnet/ui/commit/08c49d0))
+* 🎸 pass ref and html props + deny children in some badges ([0f82044](https://github.com/nordnet/ui/commit/0f82044))
+* 🎸 update StatusBadge sizes ([eeb1ffb](https://github.com/nordnet/ui/commit/eeb1ffb))
+* Setup IconBadge component ([737f946](https://github.com/nordnet/ui/commit/737f946))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove <Badge> component. All Badge usage will be done through Badge
+sub-components.
+* 🧨 Modify Badge sub-component naming convention to use e.g. <Badge.Label>
+instead of <Badge.LabelBadge>
+* 🧨 remove Avatar component
+* 🧨 badge needs a sub badge component attached
+
 # [10.0.0-beta.1](https://github.com/nordnet/ui/compare/v9.18.0...v10.0.0-beta.1) (2022-01-13)
 
 
