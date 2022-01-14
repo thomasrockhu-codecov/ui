@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { Switch, Typography } from '../..';
+import { Box, Switch, Typography } from '../..';
+import { SwitchToggle } from '.';
 import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules / Switch',
   parameters: {
-    component: Switch,
+    component: [Switch, SwitchToggle],
   },
 };
 
@@ -70,3 +71,73 @@ export const readOnly = () => (
     ]}
   />
 );
+
+export const defaultSwitchToggle = () => {
+  const DefaultSwitchToggle = () => {
+    const toggleOptions = {
+      left: 'SEK',
+      right: '%',
+    };
+
+    const [toggled, setToggled] = useState<boolean>(false);
+    const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+
+    return (
+      <Box py={5}>
+        <SwitchToggle
+          checked={toggled}
+          label={
+            <Box pl={1}>
+              <Typography>{toggledValue} is active | </Typography>
+            </Box>
+          }
+          onClick={() => setToggled((prevState) => !prevState)}
+          valueLeft={toggleOptions.left}
+          valueRight={toggleOptions.right}
+        />
+      </Box>
+    );
+  };
+
+  return <DefaultSwitchToggle />;
+};
+
+defaultSwitchToggle.story = {
+  name: 'Default  Switch Toggle',
+};
+
+export const augmentedWidthSwitchToggle = () => {
+  const AugmentedWidthSwitchToggle = () => {
+    const toggleOptions = {
+      left: 'Swedish',
+      right: 'Finnish',
+    };
+
+    const [toggled, setToggled] = useState<boolean>(false);
+    const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
+
+    return (
+      <Box py={5}>
+        <SwitchToggle
+          checked={toggled}
+          label={
+            <Box pl={1}>
+              <Typography>{toggledValue} is active | </Typography>
+            </Box>
+          }
+          onClick={() => setToggled((prevState) => !prevState)}
+          valueLeft={toggleOptions.left}
+          valueRight={toggleOptions.right}
+          knobWidth={25}
+          trackWidth={48}
+        />
+      </Box>
+    );
+  };
+
+  return <AugmentedWidthSwitchToggle />;
+};
+
+augmentedWidthSwitchToggle.story = {
+  name: 'Augmented Width Switch Toggle',
+};
