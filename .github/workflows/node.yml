@@ -16,31 +16,31 @@ env:
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
-  validate:
-    name: 'Validate'
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version:
-          - 14
-          - 16
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - name: setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install
-        run: yarn install --ignore-engines
-      - name: Validate
-        run: |
-          echo lol
-           # yarn lint
-           # yarn test-ci
+  # validate:
+  #   name: 'Validate'
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       node-version:
+  #         - 14
+  #         - 16
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v2
+  #       with:
+  #         fetch-depth: 0
+  #         persist-credentials: false
+  #     - name: setup Node.js ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  # - name: Install
+  # run: yarn install --ignore-engines
+  # - name: Validate
+  #   run: |
+  #     echo lol
+  #      # yarn lint
+  #      # yarn test-ci
   release:
     name: 'Release'
     needs: validate
@@ -68,6 +68,11 @@ jobs:
           yarn semantic-release
       - name: Beta release
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/beta' }}
+        run: |
+          node -v && npm -v && yarn -v
+          yarn semantic-release
+      - name: Pre release
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/prerelease-test' }}
         run: |
           node -v && npm -v && yarn -v
           yarn semantic-release
