@@ -43,7 +43,7 @@ jobs:
   #      # yarn test-ci
   release:
     name: 'Release'
-    needs: validate
+    # needs: validate
     runs-on: ubuntu-latest
     strategy:
       matrix:
