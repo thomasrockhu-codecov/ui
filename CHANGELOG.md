@@ -1,3 +1,12 @@
+# [9.20.0](https://github.com/nordnet/ui/compare/v9.19.0...v9.20.0) (2022-01-14)
+
+
+### Features
+
+* add 24px bankId icon ([17246e6](https://github.com/nordnet/ui/commit/17246e6))
+* optimize svg ([41d8a34](https://github.com/nordnet/ui/commit/41d8a34))
+* update storyshot ([503d5c7](https://github.com/nordnet/ui/commit/503d5c7))
+
 # [9.19.0](https://github.com/nordnet/ui/compare/v9.18.0...v9.19.0) (2022-01-13)
 
 
