@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - beta
+      - prerelease
 
   # Run tests for any PRs.
   pull_request:
@@ -66,6 +67,11 @@ jobs:
           yarn semantic-release
       - name: Beta release
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/beta' }}
+        run: |
+          node -v && npm -v && yarn -v
+          yarn semantic-release
+      - name: Prerelease
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/prerelease' }}
         run: |
           node -v && npm -v && yarn -v
           yarn semantic-release
