@@ -1,3 +1,10 @@
+## [10.1.1](https://github.com/nordnet/ui/compare/v10.1.0...v10.1.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* introduce useSafeLayoutEffect, avoids error spam during SSR ([519d075](https://github.com/nordnet/ui/commit/519d075))
+
 # [10.1.0](https://github.com/nordnet/ui/compare/v10.0.0...v10.1.0) (2022-01-17)
 
 
