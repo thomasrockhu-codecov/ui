@@ -1,3 +1,15 @@
+# [10.1.0](https://github.com/nordnet/ui/compare/v10.0.0...v10.1.0) (2022-01-17)
+
+
+### Bug Fixes
+
+* **CollapsibleCard:** updated snapshots ([57cdd05](https://github.com/nordnet/ui/commit/57cdd05))
+
+
+### Features
+
+* **CollabsibleCard:** added a possibility to add an action component to the card which does NOT trigger (un)collapsing ([b0a7f36](https://github.com/nordnet/ui/commit/b0a7f36))
+
 # [10.0.0](https://github.com/nordnet/ui/compare/v9.20.0...v10.0.0) (2022-01-14)
 
 
