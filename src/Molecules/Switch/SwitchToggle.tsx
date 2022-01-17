@@ -16,7 +16,7 @@ const Label = styled.label`
 `;
 
 const Knob = styled.span<Pick<SwitchToggleProps, 'knobWidth'>>`
-  background: white;
+  background: ${(p) => p.theme.color.bubbleBackground};
   display: block;
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
   width: ${(p) => {
@@ -31,7 +31,7 @@ const Knob = styled.span<Pick<SwitchToggleProps, 'knobWidth'>>`
   margin-top: -${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
   border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
   box-sizing: border-box;
-  transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
+  transition: transform 0.6s cubic-bezier(0.18, 0.9, 0.35, 1.15);
   background-color: ${(p) => p.theme.color.bubbleBackground};
   margin-left: 3px;
 `;
@@ -44,7 +44,6 @@ const Track = styled.span<Pick<SwitchToggleProps, 'trackWidth'>>`
   }}px;
   margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE - TRACK_HEIGHT) / 2)}px 0;
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT / 2)}px;
-  transition: background-color 0.2s ease-out;
   line-height: ${(p) => p.theme.spacing.unit(TOGGLE_HEIGHT)}px;
   background-color: ${(p) => p.theme.color.orderDepthBackground};
   border: 1px solid ${(p) => p.theme.color.divider};

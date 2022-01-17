@@ -14,7 +14,7 @@ const Label = styled.label`
 `;
 
 const Knob = styled.span`
-  background: white;
+  background: ${(p) => p.theme.color.bubbleBackground};
   display: block;
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
   width: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;

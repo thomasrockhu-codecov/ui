@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { Box, Switch, Typography } from '../..';
+import { Box, Flexbox, Switch, Typography } from '../..';
 import { SwitchToggle } from '.';
 import { Display } from '../../common/Display';
 
@@ -84,17 +84,23 @@ export const defaultSwitchToggle = () => {
 
     return (
       <Box py={5}>
-        <SwitchToggle
-          checked={toggled}
-          label={
+        <Flexbox container gutter={2}>
+          <Flexbox container item>
+            <SwitchToggle
+              checked={toggled}
+              label="finance toggle"
+              onClick={() => setToggled((prevState) => !prevState)}
+              valueLeft={toggleOptions.left}
+              valueRight={toggleOptions.right}
+              hiddenLabel
+            />
+          </Flexbox>
+          <Flexbox container item>
             <Box pl={1}>
-              <Typography>{toggledValue} is active | </Typography>
+              <Typography>Active: {toggledValue}</Typography>
             </Box>
-          }
-          onClick={() => setToggled((prevState) => !prevState)}
-          valueLeft={toggleOptions.left}
-          valueRight={toggleOptions.right}
-        />
+          </Flexbox>
+        </Flexbox>
       </Box>
     );
   };
@@ -118,19 +124,25 @@ export const augmentedWidthSwitchToggle = () => {
 
     return (
       <Box py={5}>
-        <SwitchToggle
-          checked={toggled}
-          label={
+        <Flexbox container gutter={2}>
+          <Flexbox container item>
+            <SwitchToggle
+              checked={toggled}
+              label="language toggle"
+              onClick={() => setToggled((prevState) => !prevState)}
+              valueLeft={toggleOptions.left}
+              valueRight={toggleOptions.right}
+              hiddenLabel
+              knobWidth={25}
+              trackWidth={48}
+            />
+          </Flexbox>
+          <Flexbox container item>
             <Box pl={1}>
-              <Typography>{toggledValue} is active | </Typography>
+              <Typography>Active: {toggledValue}</Typography>
             </Box>
-          }
-          onClick={() => setToggled((prevState) => !prevState)}
-          valueLeft={toggleOptions.left}
-          valueRight={toggleOptions.right}
-          knobWidth={25}
-          trackWidth={48}
-        />
+          </Flexbox>
+        </Flexbox>
       </Box>
     );
   };

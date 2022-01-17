@@ -7,12 +7,39 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   background-color: transparent;
 }
 
-.c4 {
+.c19 {
   padding-left: 4px;
   background-color: transparent;
 }
 
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
 .c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,20 +53,20 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   margin-right: -4px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c3 {
+.c5 {
   box-sizing: border-box;
 }
 
-.c10 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,7 +85,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c14 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -77,16 +104,25 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c5 {
+.c6 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
@@ -95,7 +131,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c15 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -104,12 +140,21 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c1 {
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
   display: inline-block;
 }
 
-.c9 {
-  background: white;
+.c11 {
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 100px;
@@ -119,32 +164,30 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   margin-top: -12px;
   border-radius: 12px;
   box-sizing: border-box;
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   background-color: #FFFFFF;
   margin-left: 3px;
 }
 
-.c13 {
+.c15 {
   display: block;
   height: 28px;
   width: 192px;
   margin: -2px 0;
   border-radius: 14px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
   line-height: 24px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
   box-shadow: 0px 1px 3px 1px #EBEBE8;
 }
 
-.c7 {
+.c9 {
   position: relative;
 }
 
-.c6 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -157,50 +200,50 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   border: 0;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6[aria-checked='true'] .c8 {
+.c8[aria-checked='true'] .c10 {
   -webkit-transform: translate( 88px );
   -ms-transform: translate( 88px );
   transform: translate( 88px );
 }
 
-.c6[disabled] .c12,
-.c6[aria-readonly] .c12 {
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
   background-color: #EBEBE8;
 }
 
-.c6[disabled] .c8,
-.c6[aria-readonly] .c8 {
+.c8[disabled] .c10,
+.c8[aria-readonly] .c10 {
   border: 1px solid #EBEBE8;
   background-color: #F5F5F5;
 }
 
-.c6[aria-checked='true'][aria-readonly] .c12 {
+.c8[aria-checked='true'][aria-readonly] .c14 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c16 {
+.c18 {
   padding-top: 2px;
   width: 100px;
 }
@@ -208,77 +251,98 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
 <div
   className="c0"
 >
-  <label
+  <div
     className="c1"
   >
-    <span
+    <div
       className="c2"
     >
-      <span
+      <label
         className="c3"
       >
-        <div
+        <span
           className="c4"
         >
           <span
             className="c5"
           >
-            Swedish
-             is active | 
+            <div
+              className="c6"
+            >
+              <span
+                className="c7"
+              >
+                language toggle
+              </span>
+            </div>
           </span>
-        </div>
-      </span>
-      <span
-        className="c3"
-      >
-        <button
-          aria-checked={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
-          knobWidth={25}
-          onClick={[Function]}
-          role="switch"
-          trackWidth={48}
-          type="button"
-        >
-          <div
-            className="c7"
+          <span
+            className="c5"
           >
-            <span
-              className="c8 c9"
+            <button
+              aria-checked={false}
+              className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+              knobWidth={25}
+              onClick={[Function]}
+              role="switch"
+              trackWidth={48}
+              type="button"
             >
               <div
-                className="c10"
+                className="c9"
               >
                 <span
-                  className="c11"
+                  className="c10 c11"
                 >
-                  Swedish
-                </span>
-              </div>
-            </span>
-            <span
-              className="c12 c13"
-            >
-              <div
-                className="c14"
-              >
-                <span
-                  className="c15 c16"
-                >
-                  Swedish
+                  <div
+                    className="c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      Swedish
+                    </span>
+                  </div>
                 </span>
                 <span
-                  className="c15 c16"
+                  className="c14 c15"
                 >
-                  Finnish
+                  <div
+                    className="c16"
+                  >
+                    <span
+                      className="c17 c18"
+                    >
+                      Swedish
+                    </span>
+                    <span
+                      className="c17 c18"
+                    >
+                      Finnish
+                    </span>
+                  </div>
                 </span>
               </div>
-            </span>
-          </div>
-        </button>
-      </span>
-    </span>
-  </label>
+            </button>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c19"
+      >
+        <span
+          className="c20"
+        >
+          Active: 
+          Swedish
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -324,7 +388,7 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -464,12 +528,39 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   background-color: transparent;
 }
 
-.c4 {
+.c19 {
   padding-left: 4px;
   background-color: transparent;
 }
 
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
 .c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -483,20 +574,20 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   margin-right: -4px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c3 {
+.c5 {
   box-sizing: border-box;
 }
 
-.c10 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -515,7 +606,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c14 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -534,16 +625,25 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c5 {
+.c6 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
@@ -552,7 +652,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c15 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -561,12 +661,21 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c1 {
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
   display: inline-block;
 }
 
-.c9 {
-  background: white;
+.c11 {
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 48px;
@@ -576,32 +685,30 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   margin-top: -12px;
   border-radius: 12px;
   box-sizing: border-box;
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  -webkit-transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
-  transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   background-color: #FFFFFF;
   margin-left: 3px;
 }
 
-.c13 {
+.c15 {
   display: block;
   height: 28px;
   width: 92px;
   margin: -2px 0;
   border-radius: 14px;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
   line-height: 24px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
   box-shadow: 0px 1px 3px 1px #EBEBE8;
 }
 
-.c7 {
+.c9 {
   position: relative;
 }
 
-.c6 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -614,50 +721,50 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   border: 0;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6[aria-checked='true'] .c8 {
+.c8[aria-checked='true'] .c10 {
   -webkit-transform: translate( 40px );
   -ms-transform: translate( 40px );
   transform: translate( 40px );
 }
 
-.c6[disabled] .c12,
-.c6[aria-readonly] .c12 {
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
   background-color: #EBEBE8;
 }
 
-.c6[disabled] .c8,
-.c6[aria-readonly] .c8 {
+.c8[disabled] .c10,
+.c8[aria-readonly] .c10 {
   border: 1px solid #EBEBE8;
   background-color: #F5F5F5;
 }
 
-.c6[aria-checked='true'][aria-readonly] .c12 {
+.c8[aria-checked='true'][aria-readonly] .c14 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c16 {
+.c18 {
   padding-top: 2px;
   width: 48px;
 }
@@ -665,75 +772,96 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
 <div
   className="c0"
 >
-  <label
+  <div
     className="c1"
   >
-    <span
+    <div
       className="c2"
     >
-      <span
+      <label
         className="c3"
       >
-        <div
+        <span
           className="c4"
         >
           <span
             className="c5"
           >
-            SEK
-             is active | 
+            <div
+              className="c6"
+            >
+              <span
+                className="c7"
+              >
+                finance toggle
+              </span>
+            </div>
           </span>
-        </div>
-      </span>
-      <span
-        className="c3"
-      >
-        <button
-          aria-checked={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
-          onClick={[Function]}
-          role="switch"
-          type="button"
-        >
-          <div
-            className="c7"
+          <span
+            className="c5"
           >
-            <span
-              className="c8 c9"
+            <button
+              aria-checked={false}
+              className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+              onClick={[Function]}
+              role="switch"
+              type="button"
             >
               <div
-                className="c10"
+                className="c9"
               >
                 <span
-                  className="c11"
+                  className="c10 c11"
                 >
-                  SEK
-                </span>
-              </div>
-            </span>
-            <span
-              className="c12 c13"
-            >
-              <div
-                className="c14"
-              >
-                <span
-                  className="c15 c16"
-                >
-                  SEK
+                  <div
+                    className="c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      SEK
+                    </span>
+                  </div>
                 </span>
                 <span
-                  className="c15 c16"
+                  className="c14 c15"
                 >
-                  %
+                  <div
+                    className="c16"
+                  >
+                    <span
+                      className="c17 c18"
+                    >
+                      SEK
+                    </span>
+                    <span
+                      className="c17 c18"
+                    >
+                      %
+                    </span>
+                  </div>
                 </span>
               </div>
-            </span>
-          </div>
-        </button>
-      </span>
-    </span>
-  </label>
+            </button>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c19"
+      >
+        <span
+          className="c20"
+        >
+          Active: 
+          SEK
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -779,7 +907,7 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -954,7 +1082,7 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1129,7 +1257,7 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1314,7 +1442,7 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
 }
 
 .c11 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1624,7 +1752,7 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1808,7 +1936,7 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
 }
 
 .c8 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
