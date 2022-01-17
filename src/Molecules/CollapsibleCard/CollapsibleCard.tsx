@@ -1,6 +1,7 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Card, Flexbox, OldIcon, Typography } from '../..';
+import { useSafeLayoutEffect } from '../../common/Hooks';
 import { isElement, isFunction } from '../../common/utils';
 import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
@@ -76,7 +77,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   const [height, setHeight] = useState(collapsed ? '0px' : null);
   const collapsibleRef = useRef(null);
 
-  useLayoutEffect(() => {
+  useSafeLayoutEffect(() => {
     if (!collapsing && !expanding) {
       return () => null;
     }

@@ -1,6 +1,7 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { isHTMLElement } from '../../common/utils';
+import { useSafeLayoutEffect } from '../../common/Hooks';
 import {
   AverageLabelProps,
   CheckCollision,
@@ -150,7 +151,7 @@ export const LineScale: React.FC<Props> = ({
   const intersectionLeft = useRef<HTMLDivElement>(null);
   const intersectionRight = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useSafeLayoutEffect(() => {
     if (indicatorRef.current && intersectionLeft.current) {
       const hasLeftCollision = xAxisCollision(indicatorRef.current, intersectionLeft.current);
       setLeftCollision(hasLeftCollision);

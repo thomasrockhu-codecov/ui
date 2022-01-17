@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import { RemoveScroll } from 'react-remove-scroll';
@@ -6,7 +6,7 @@ import FocusLock from 'react-focus-lock';
 import { Button, Flexbox, OldIcon, Media, Typography } from '../..';
 import { ColsTrimmerProps, Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
-import { useOnClickOutside, useWindowSize } from '../../common/Hooks';
+import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
 import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
@@ -90,7 +90,7 @@ export const CoachMarks: Component = ({
   const hasNextStep = currentStep + 1 < steps.length;
   const path = referenceElementRect ? makeBackdropPath(referenceElementRect, BACKDROP_PADDING) : '';
 
-  useLayoutEffect(() => {
+  useSafeLayoutEffect(() => {
     if (referenceElement) {
       setReferenceElementRect(referenceElement.getBoundingClientRect());
     }
