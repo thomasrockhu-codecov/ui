@@ -1,9 +1,10 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState } from 'react';
+import { useSafeLayoutEffect } from '../../common/Hooks';
 
 const useOverflow = (ref: React.RefObject<HTMLElement>, deps: React.ReactNode = null) => {
   const [isOverflowing, setIsOverflowing] = useState(true);
 
-  useLayoutEffect(() => {
+  useSafeLayoutEffect(() => {
     const checkIfOverflowing = () => {
       if (ref.current) {
         setIsOverflowing(ref.current.clientHeight < ref.current.scrollHeight);
