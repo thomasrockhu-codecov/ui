@@ -1,6 +1,7 @@
+import { action } from '@storybook/addon-actions';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { CollapsibleCard, Typography } from '../..';
+import { Button, CollapsibleCard, Icon, Typography } from '../..';
 
 const styledText = styled.p`
   margin: 0;
@@ -43,6 +44,30 @@ export const defaultStory = () => {
 
 defaultStory.story = {
   name: 'Default',
+};
+
+const Settings = (
+  <Button variant="neutral" onClick={action('Action Component Clicked')}>
+    <Icon.Settings24 color={(t) => t.color.text} inline />
+  </Button>
+);
+
+export const withActionComponentThatDoesNotTriggerCollapse = () => {
+  return (
+    <CollapsibleCard title="Collapsible" action={Settings}>
+      <Typography type="primary" as={styledText}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Typography>
+    </CollapsibleCard>
+  );
+};
+
+withActionComponentThatDoesNotTriggerCollapse.story = {
+  name: "With an action component that doesn't trigger collapse",
 };
 
 export const collapsedInitially = () => {

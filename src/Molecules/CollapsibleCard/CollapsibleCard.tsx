@@ -25,7 +25,11 @@ const StyledButton = styled.button<IndicatorsProps>`
   cursor: pointer;
   display: block;
   width: 100%;
-  padding: ${(p) => p.theme.spacing.unit(p.$py)}px ${(p) => p.theme.spacing.unit(p.$px)}px;
+  padding: ${(p) => {
+    const py = p.theme.spacing.unit(p.$py);
+    const px = p.theme.spacing.unit(p.$px);
+    return p.$actionExists ? `${py}px ${px / 2}px ${py}px ${px}px` : `${py}px ${px}px`;
+  }};
   border: 0;
 
   &::before {
@@ -40,6 +44,10 @@ const StyledButton = styled.button<IndicatorsProps>`
     transition: opacity 0.16s ease-out;
     opacity: ${(p) => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
   }
+`;
+
+const StyledFlexbox = styled(Flexbox)<Pick<IndicatorsProps, '$px'>>`
+  padding-right: ${(p) => p.theme.spacing.unit(p.$px)}px;
 `;
 
 const AnimatedChevronUp = styled(OldIcon.ChevronUp)<Pick<IndicatorsProps, '$collapsed'>>`
@@ -59,6 +67,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   expandElement,
   titleRowPaddingX = 5,
   titleRowPaddingY = 5,
+  action: ActionComponent = false,
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -148,32 +157,49 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     document.documentElement &&
     'ontouchstart' in document.documentElement;
 
+  const CollapseButton = (
+    <StyledButton
+      type="button"
+      {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
+      $collapsed={collapsed}
+      $noIndicator={noIndicator}
+      aria-expanded={!collapsed}
+      $py={titleRowPaddingY}
+      $px={titleRowPaddingX}
+      $actionExists={!!ActionComponent}
+    >
+      <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
+        <Flexbox item>
+          <Typography type="title3" as={heading}>
+            {title}
+          </Typography>
+        </Flexbox>
+        <Flexbox item>
+          {(() => {
+            if (isFunction(expandElement)) return expandElement(collapsed);
+            if (isElement(expandElement)) return expandElement;
+            return <AnimatedChevronUp size={2} $collapsed={collapsed} />;
+          })()}
+        </Flexbox>
+      </Flexbox>
+    </StyledButton>
+  );
+
+  const CardHeaderTop = () =>
+    ActionComponent ? (
+      <StyledFlexbox container $px={titleRowPaddingX}>
+        {CollapseButton}
+        {ActionComponent}
+      </StyledFlexbox>
+    ) : (
+      <>{CollapseButton}</>
+    );
+
   return (
     <Card className={className}>
-      <StyledButton
-        type="button"
-        {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
-        $collapsed={collapsed}
-        $noIndicator={noIndicator}
-        aria-expanded={!collapsed}
-        $py={titleRowPaddingY}
-        $px={titleRowPaddingX}
-      >
-        <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
-          <Flexbox item>
-            <Typography type="title3" as={heading}>
-              {title}
-            </Typography>
-          </Flexbox>
-          <Flexbox item>
-            {(() => {
-              if (isFunction(expandElement)) return expandElement(collapsed);
-              if (isElement(expandElement)) return expandElement;
-              return <AnimatedChevronUp size={2} $collapsed={collapsed} />;
-            })()}
-          </Flexbox>
-        </Flexbox>
-      </StyledButton>
+      <Flexbox>
+        <CardHeaderTop></CardHeaderTop>
+      </Flexbox>
       <StyledCollapsible
         ref={collapsibleRef}
         height={height}
