@@ -1,3 +1,19 @@
+# [10.2.0](https://github.com/nordnet/ui/compare/v10.1.1...v10.2.0) (2022-01-19)
+
+
+### Bug Fixes
+
+* 🐛 (Molecules/Switch) updated storyshots ([d8d3b6e](https://github.com/nordnet/ui/commit/d8d3b6e))
+* **Molecules/Switch:** added missing snapshots ([bb2d537](https://github.com/nordnet/ui/commit/bb2d537))
+* **Molecules/Switch:** less aggressive animation and use of theme color values ([b816929](https://github.com/nordnet/ui/commit/b816929))
+* **Molecules/Switch:** minor design fixes for SwitchToggle ([9f9d80d](https://github.com/nordnet/ui/commit/9f9d80d))
+* **Molecules/SwitchToggle:** adjust the prop name to silence console warnings for now ([bce3821](https://github.com/nordnet/ui/commit/bce3821))
+
+
+### Features
+
+* **Molecules/Switch:** added new SwitchToggle component was toggling between custom options ([d345362](https://github.com/nordnet/ui/commit/d345362))
+
 ## [10.1.1](https://github.com/nordnet/ui/compare/v10.1.0...v10.1.1) (2022-01-17)
 
 
