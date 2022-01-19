@@ -15,13 +15,13 @@ const Label = styled.label`
   display: inline-block;
 `;
 
-const Knob = styled.span<Pick<SwitchToggleProps, 'knobWidth'>>`
+const Knob = styled.span<Pick<SwitchToggleProps, 'knobwidth'>>`
   background: ${(p) => p.theme.color.bubbleBackground};
   display: block;
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
   width: ${(p) => {
-    if (p.knobWidth) {
-      return p.theme.spacing.unit(p.knobWidth);
+    if (p.knobwidth) {
+      return p.theme.spacing.unit(p.knobwidth);
     }
     return p.theme.spacing.unit(KNOB_WIDTH);
   }}px;
@@ -36,11 +36,11 @@ const Knob = styled.span<Pick<SwitchToggleProps, 'knobWidth'>>`
   margin-left: 3px;
 `;
 
-const Track = styled.span<Pick<SwitchToggleProps, 'trackWidth'>>`
+const Track = styled.span<Pick<SwitchToggleProps, 'trackwidth'>>`
   display: block;
   height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   width: ${(p) => {
-    return p.trackWidth ? p.theme.spacing.unit(p.trackWidth) : p.theme.spacing.unit(TRACK_WIDTH);
+    return p.trackwidth ? p.theme.spacing.unit(p.trackwidth) : p.theme.spacing.unit(TRACK_WIDTH);
   }}px;
   margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE - TRACK_HEIGHT) / 2)}px 0;
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT / 2)}px;
@@ -55,7 +55,7 @@ const ButtonContent = styled.div`
 `;
 
 const Button = styled(NormalizedElements.Button)<
-  Pick<SwitchToggleProps, 'knobWidth' | 'trackWidth'>
+  Pick<SwitchToggleProps, 'knobwidth' | 'trackwidth'>
 >`
   display: block;
   background: none;
@@ -65,8 +65,8 @@ const Button = styled(NormalizedElements.Button)<
     ${Knob} {
       transform: translate(
         ${(p) => {
-          if (p.knobWidth && p.trackWidth) {
-            return p.theme.spacing.unit(p.trackWidth - p.knobWidth - 1);
+          if (p.knobwidth && p.trackwidth) {
+            return p.theme.spacing.unit(p.trackwidth - p.knobwidth - 1);
           }
           return p.theme.spacing.unit(TRACK_WIDTH - KNOB_WIDTH - 1);
         }}px
@@ -93,11 +93,11 @@ const Button = styled(NormalizedElements.Button)<
   }
 `;
 
-const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'knobWidth'>>`
+const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'knobwidth'>>`
   padding-top: 2px;
   width: ${(p) => {
-    if (p.knobWidth) {
-      return p.theme.spacing.unit(p.knobWidth);
+    if (p.knobwidth) {
+      return p.theme.spacing.unit(p.knobwidth);
     }
     return p.theme.spacing.unit(KNOB_WIDTH);
   }}px;
@@ -114,8 +114,8 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
   checkedInitially = false,
   checked: checkedControlled,
   readOnly,
-  knobWidth,
-  trackWidth,
+  knobwidth,
+  trackwidth,
 }) => {
   const isControlled = isBoolean(checkedControlled);
   const titleNode = isElement(label) ? label : <Typography type="secondary">{label}</Typography>;
@@ -150,11 +150,11 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
             onClick={isControlled ? onClick : internalClickHandler}
             disabled={disabled}
             aria-readonly={readOnly}
-            knobWidth={knobWidth}
-            trackWidth={trackWidth}
+            knobwidth={knobwidth}
+            trackwidth={trackwidth}
           >
             <ButtonContent>
-              <Knob knobWidth={knobWidth}>
+              <Knob knobwidth={knobwidth}>
                 <Flexbox
                   container
                   item
@@ -167,7 +167,7 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                   </Typography>
                 </Flexbox>
               </Knob>
-              <Track trackWidth={trackWidth}>
+              <Track trackwidth={trackwidth}>
                 <Flexbox
                   container
                   item
@@ -177,14 +177,14 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                 >
                   <StyledTypography
                     type="primary"
-                    knobWidth={knobWidth}
+                    knobwidth={knobwidth}
                     color={(p) => p.color.disabledText}
                   >
                     {valueLeft}
                   </StyledTypography>
                   <StyledTypography
                     type="primary"
-                    knobWidth={knobWidth}
+                    knobwidth={knobwidth}
                     color={(p) => p.color.disabledText}
                   >
                     {valueRight}

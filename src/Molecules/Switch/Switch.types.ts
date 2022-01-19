@@ -19,6 +19,6 @@ export type Props = {
 export type SwitchToggleProps = Props & {
   valueLeft: string;
   valueRight: string;
-  knobWidth?: number;
-  trackWidth?: number;
+  knobwidth?: number;
+  trackwidth?: number;
 };

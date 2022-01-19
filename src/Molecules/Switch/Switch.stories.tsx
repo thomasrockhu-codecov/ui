@@ -133,8 +133,8 @@ export const augmentedWidthSwitchToggle = () => {
               valueLeft={toggleOptions.left}
               valueRight={toggleOptions.right}
               hiddenLabel
-              knobWidth={25}
-              trackWidth={48}
+              knobwidth={25}
+              trackwidth={48}
             />
           </Flexbox>
           <Flexbox container item>
