@@ -75,7 +75,7 @@ import Select from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';
-import Switch from './Molecules/Switch';
+import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
 import Timeline from './Molecules/Timeline';
@@ -189,6 +189,7 @@ export {
   Spinner,
   StatusModal,
   Switch,
+  SwitchToggle,
   TabTitle,
   Table,
   Tabs,

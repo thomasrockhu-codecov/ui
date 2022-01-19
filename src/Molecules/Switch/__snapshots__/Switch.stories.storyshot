@@ -1,5 +1,351 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
+.c0 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+.c19 {
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c6 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  display: inline-block;
+}
+
+.c11 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  background-color: #FFFFFF;
+  margin-left: 3px;
+}
+
+.c15 {
+  display: block;
+  height: 28px;
+  width: 192px;
+  margin: -2px 0;
+  border-radius: 14px;
+  line-height: 24px;
+  background-color: #EBEBE8;
+  border: 1px solid #EBEBE8;
+  box-shadow: 0px 1px 3px 1px #EBEBE8;
+}
+
+.c9 {
+  position: relative;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c8[aria-checked='true'] .c10 {
+  -webkit-transform: translate( 88px );
+  -ms-transform: translate( 88px );
+  transform: translate( 88px );
+}
+
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
+  background-color: #EBEBE8;
+}
+
+.c8[disabled] .c10,
+.c8[aria-readonly] .c10 {
+  border: 1px solid #EBEBE8;
+  background-color: #F5F5F5;
+}
+
+.c8[aria-checked='true'][aria-readonly] .c14 {
+  background-color: rgba(0,70,255,0.1);
+}
+
+.c18 {
+  padding-top: 2px;
+  width: 100px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <span
+                className="c7"
+              >
+                language toggle
+              </span>
+            </div>
+          </span>
+          <span
+            className="c5"
+          >
+            <button
+              aria-checked={false}
+              className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+              knobwidth={25}
+              onClick={[Function]}
+              role="switch"
+              trackwidth={48}
+              type="button"
+            >
+              <div
+                className="c9"
+              >
+                <span
+                  className="c10 c11"
+                >
+                  <div
+                    className="c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      Swedish
+                    </span>
+                  </div>
+                </span>
+                <span
+                  className="c14 c15"
+                >
+                  <div
+                    className="c16"
+                  >
+                    <span
+                      className="c17 c18"
+                    >
+                      Swedish
+                    </span>
+                    <span
+                      className="c17 c18"
+                    >
+                      Finnish
+                    </span>
+                  </div>
+                </span>
+              </div>
+            </button>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c19"
+      >
+        <span
+          className="c20"
+        >
+          Active: 
+          Swedish
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 .c1 {
   box-sizing: border-box;
@@ -42,7 +388,7 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -175,6 +521,350 @@ exports[`Storyshots Molecules / Switch Controlled behaviour 1`] = `
 </label>
 `;
 
+exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
+.c0 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+.c19 {
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c6 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  display: inline-block;
+}
+
+.c11 {
+  background: #FFFFFF;
+  display: block;
+  height: 24px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
+  background-color: #FFFFFF;
+  margin-left: 3px;
+}
+
+.c15 {
+  display: block;
+  height: 28px;
+  width: 92px;
+  margin: -2px 0;
+  border-radius: 14px;
+  line-height: 24px;
+  background-color: #EBEBE8;
+  border: 1px solid #EBEBE8;
+  box-shadow: 0px 1px 3px 1px #EBEBE8;
+}
+
+.c9 {
+  position: relative;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c8[aria-checked='true'] .c10 {
+  -webkit-transform: translate( 40px );
+  -ms-transform: translate( 40px );
+  transform: translate( 40px );
+}
+
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
+  background-color: #EBEBE8;
+}
+
+.c8[disabled] .c10,
+.c8[aria-readonly] .c10 {
+  border: 1px solid #EBEBE8;
+  background-color: #F5F5F5;
+}
+
+.c8[aria-checked='true'][aria-readonly] .c14 {
+  background-color: rgba(0,70,255,0.1);
+}
+
+.c18 {
+  padding-top: 2px;
+  width: 48px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <span
+                className="c7"
+              >
+                finance toggle
+              </span>
+            </div>
+          </span>
+          <span
+            className="c5"
+          >
+            <button
+              aria-checked={false}
+              className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+              onClick={[Function]}
+              role="switch"
+              type="button"
+            >
+              <div
+                className="c9"
+              >
+                <span
+                  className="c10 c11"
+                >
+                  <div
+                    className="c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      SEK
+                    </span>
+                  </div>
+                </span>
+                <span
+                  className="c14 c15"
+                >
+                  <div
+                    className="c16"
+                  >
+                    <span
+                      className="c17 c18"
+                    >
+                      SEK
+                    </span>
+                    <span
+                      className="c17 c18"
+                    >
+                      %
+                    </span>
+                  </div>
+                </span>
+              </div>
+            </button>
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c19"
+      >
+        <span
+          className="c20"
+        >
+          Active: 
+          SEK
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Switch Default Off 1`] = `
 .c1 {
   box-sizing: border-box;
@@ -217,7 +907,7 @@ exports[`Storyshots Molecules / Switch Default Off 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -392,7 +1082,7 @@ exports[`Storyshots Molecules / Switch Default On 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -567,7 +1257,7 @@ exports[`Storyshots Molecules / Switch Disabled 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -752,7 +1442,7 @@ exports[`Storyshots Molecules / Switch Read Only 1`] = `
 }
 
 .c11 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1062,7 +1752,7 @@ exports[`Storyshots Molecules / Switch With Label prop as ReactNode 1`] = `
 }
 
 .c7 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;
@@ -1246,7 +1936,7 @@ exports[`Storyshots Molecules / Switch With hidden label 1`] = `
 }
 
 .c8 {
-  background: white;
+  background: #FFFFFF;
   display: block;
   height: 24px;
   width: 24px;

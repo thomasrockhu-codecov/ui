@@ -15,3 +15,10 @@ export type Props = {
   onClick?: (e: React.MouseEvent, checked?: boolean) => void;
   readOnly?: boolean;
 };
+
+export type SwitchToggleProps = Props & {
+  valueLeft: string;
+  valueRight: string;
+  knobwidth?: number;
+  trackwidth?: number;
+};
