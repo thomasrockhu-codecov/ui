@@ -1,3 +1,10 @@
+# [10.3.0](https://github.com/nordnet/ui/compare/v10.2.0...v10.3.0) (2022-01-20)
+
+
+### Features
+
+* add pink100 for popularBadgeBackground ([2f73545](https://github.com/nordnet/ui/commit/2f73545))
+
 # [10.2.0](https://github.com/nordnet/ui/compare/v10.1.1...v10.2.0) (2022-01-19)
 
 
