@@ -612,6 +612,8 @@ export type ThemeColors = {
   sfdrArticle8: string;
   /** SFDR Article 9 */
   sfdrArticle9: string;
+  /** pink100 */
+  popularBadgeBackground: string;
   /** Join Shareville Illustration */
   joinSharevilleIllustration: string;
   /** Join Shareville Badge */
