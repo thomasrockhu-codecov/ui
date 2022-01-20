@@ -294,7 +294,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle6: rawColor.gray3,
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
-
+    
+    popularBadgeBackground: rawColor.pink100,
+    
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
@@ -308,6 +310,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     
     worldMapLand: rawColor.blue700, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
+
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
