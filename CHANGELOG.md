@@ -1,3 +1,10 @@
+## [10.3.1](https://github.com/nordnet/ui/compare/v10.3.0...v10.3.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* add xs size number badge ([9f7aace](https://github.com/nordnet/ui/commit/9f7aace))
+
 # [10.3.0](https://github.com/nordnet/ui/compare/v10.2.0...v10.3.0) (2022-01-20)
 
 
