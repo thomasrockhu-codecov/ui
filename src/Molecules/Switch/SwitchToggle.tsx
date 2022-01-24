@@ -5,7 +5,7 @@ import { isBoolean, isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { SwitchToggleProps } from './Switch.types';
 
-const TOGGLE_HEIGHT = 6;
+const TOGGLE_HEIGHT = 5;
 const KNOB_SIZE = TOGGLE_HEIGHT;
 const KNOB_WIDTH = 12;
 const TRACK_HEIGHT = TOGGLE_HEIGHT + 1;
@@ -94,13 +94,16 @@ const Button = styled(NormalizedElements.Button)<
 `;
 
 const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'knobwidth'>>`
-  padding-top: 2px;
   width: ${(p) => {
     if (p.knobwidth) {
       return p.theme.spacing.unit(p.knobwidth);
     }
     return p.theme.spacing.unit(KNOB_WIDTH);
   }}px;
+`;
+
+const StyledKnobText = styled(Typography)`
+  line-height: 1.5;
 `;
 
 export const SwitchToggle: React.FC<SwitchToggleProps> = ({
@@ -162,9 +165,9 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                   alignItems="center"
                   alignContent="center"
                 >
-                  <Typography type="primary" weight="bold" color={(p) => p.color.cta}>
+                  <StyledKnobText type="secondary" weight="bold" color={(p) => p.color.cta}>
                     {checked ? valueRight : valueLeft}
-                  </Typography>
+                  </StyledKnobText>
                 </Flexbox>
               </Knob>
               <Track trackwidth={trackwidth}>
