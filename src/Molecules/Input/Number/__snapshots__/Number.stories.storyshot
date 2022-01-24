@@ -1103,7 +1103,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #BDBDBD;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1202,6 +1202,8 @@ Array [
 .c11:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c11:-webkit-autofill {
@@ -1214,7 +1216,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #BDBDBD;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1309,6 +1311,8 @@ Array [
 .c13:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c13:-webkit-autofill {
@@ -1321,7 +1325,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #CC2269;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1420,6 +1424,8 @@ Array [
 .c14:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c14:-webkit-autofill {
@@ -1432,7 +1438,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #41A21A;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1531,6 +1537,8 @@ Array [
 .c17:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c17:-webkit-autofill {
@@ -1543,7 +1551,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #BDBDBD;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1641,6 +1649,8 @@ Array [
 .c18:focus {
   padding-left: 8px;
   padding-right: 32px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c18:-webkit-autofill {
@@ -1657,7 +1667,7 @@ Array [
   line-height: 1.15;
   margin: 0;
   overflow: visible;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #BDBDBD;
   position: relative;
   border-width: 0 0 2px 0;
@@ -1756,6 +1766,8 @@ Array [
 .c22:focus {
   padding-left: 32px;
   padding-right: 32px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c22:-webkit-autofill {
