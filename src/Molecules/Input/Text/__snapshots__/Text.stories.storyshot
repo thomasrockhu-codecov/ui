@@ -3432,7 +3432,7 @@ Array [
   border-color: #BDBDBD;
   border-width: 0 0 2px 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   font-size: 28px;
   font-weight: bold;
@@ -3513,6 +3513,8 @@ Array [
 .c10:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c14 {
@@ -3533,7 +3535,7 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   border-color: #EBEBE8;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   font-size: 28px;
   font-weight: bold;
@@ -3611,6 +3613,8 @@ Array [
 .c14:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c15 {
@@ -3630,7 +3634,7 @@ Array [
   border-color: #CC2269;
   border-width: 0 0 2px 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   font-size: 28px;
   font-weight: bold;
@@ -3711,6 +3715,8 @@ Array [
 .c15:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c18 {
@@ -3730,7 +3736,7 @@ Array [
   border-color: #41A21A;
   border-width: 0 0 2px 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #336BFF;
   font-size: 28px;
   font-weight: bold;
@@ -3811,6 +3817,8 @@ Array [
 .c18:focus {
   padding-left: 8px;
   padding-right: 0px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c19 {
@@ -3830,7 +3838,7 @@ Array [
   border-color: #BDBDBD;
   border-width: 0 0 2px 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding-right: 40px;
   color: #336BFF;
   font-size: 28px;
@@ -3912,6 +3920,8 @@ Array [
 .c19:focus {
   padding-left: 8px;
   padding-right: 32px;
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c19:focus + .c21 {

@@ -26,10 +26,15 @@ const darkmodeAutocompleteStyles = css`
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
-  background-color: ${(p) =>
-    p.disabled && p.variant !== 'quiet'
-      ? p.theme.color.disabledBackground
-      : p.theme.color.inputBackground};
+  background-color: ${(p) => {
+    if (p.disabled && p.variant !== 'quiet') {
+      return p.theme.color.disabledBackground;
+    }
+    if (p.variant === 'quiet') {
+      return 'transparent';
+    }
+    return p.theme.color.inputBackground;
+  }};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -134,7 +139,9 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
          &:focus {
            padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
-         }`
+           border-width: 0 0 2px 0;
+           outline: none;
+          }`
       : `color: ${p.theme.color.text}; 
          &:disabled {
            color: ${p.theme.color.disabledText};

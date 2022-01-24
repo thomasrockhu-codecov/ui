@@ -7,7 +7,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   background-color: transparent;
 }
 
-.c19 {
+.c20 {
   padding-left: 4px;
   background-color: transparent;
 }
@@ -85,7 +85,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -127,11 +127,11 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   color: #336BFF;
   margin: 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -140,7 +140,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c20 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -156,13 +156,13 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
 .c11 {
   background: #FFFFFF;
   display: block;
-  height: 24px;
+  height: 20px;
   width: 100px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -12px;
-  border-radius: 12px;
+  margin-top: -10px;
+  border-radius: 10px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
@@ -171,13 +171,13 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   margin-left: 3px;
 }
 
-.c15 {
+.c16 {
   display: block;
-  height: 28px;
+  height: 24px;
   width: 192px;
   margin: -2px 0;
-  border-radius: 14px;
-  line-height: 24px;
+  border-radius: 12px;
+  line-height: 20px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
   box-shadow: 0px 1px 3px 1px #EBEBE8;
@@ -228,8 +228,8 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   transform: translate( 88px );
 }
 
-.c8[disabled] .c14,
-.c8[aria-readonly] .c14 {
+.c8[disabled] .c15,
+.c8[aria-readonly] .c15 {
   background-color: #EBEBE8;
 }
 
@@ -239,13 +239,16 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   background-color: #F5F5F5;
 }
 
-.c8[aria-checked='true'][aria-readonly] .c14 {
+.c8[aria-checked='true'][aria-readonly] .c15 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c18 {
-  padding-top: 2px;
+.c19 {
   width: 100px;
+}
+
+.c14 {
+  line-height: 1.5;
 }
 
 <div
@@ -298,25 +301,25 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
                     className="c12"
                   >
                     <span
-                      className="c13"
+                      className="c13 c14"
                     >
                       Swedish
                     </span>
                   </div>
                 </span>
                 <span
-                  className="c14 c15"
+                  className="c15 c16"
                 >
                   <div
-                    className="c16"
+                    className="c17"
                   >
                     <span
-                      className="c17 c18"
+                      className="c18 c19"
                     >
                       Swedish
                     </span>
                     <span
-                      className="c17 c18"
+                      className="c18 c19"
                     >
                       Finnish
                     </span>
@@ -332,10 +335,10 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
       className="c2"
     >
       <div
-        className="c19"
+        className="c20"
       >
         <span
-          className="c20"
+          className="c21"
         >
           Active: 
           Swedish
@@ -528,7 +531,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   background-color: transparent;
 }
 
-.c19 {
+.c20 {
   padding-left: 4px;
   background-color: transparent;
 }
@@ -606,7 +609,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -648,11 +651,11 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   color: #336BFF;
   margin: 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -661,7 +664,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   line-height: 1.5;
 }
 
-.c20 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -677,13 +680,13 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
 .c11 {
   background: #FFFFFF;
   display: block;
-  height: 24px;
+  height: 20px;
   width: 48px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -12px;
-  border-radius: 12px;
+  margin-top: -10px;
+  border-radius: 10px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
@@ -692,13 +695,13 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   margin-left: 3px;
 }
 
-.c15 {
+.c16 {
   display: block;
-  height: 28px;
+  height: 24px;
   width: 92px;
   margin: -2px 0;
-  border-radius: 14px;
-  line-height: 24px;
+  border-radius: 12px;
+  line-height: 20px;
   background-color: #EBEBE8;
   border: 1px solid #EBEBE8;
   box-shadow: 0px 1px 3px 1px #EBEBE8;
@@ -749,8 +752,8 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   transform: translate( 40px );
 }
 
-.c8[disabled] .c14,
-.c8[aria-readonly] .c14 {
+.c8[disabled] .c15,
+.c8[aria-readonly] .c15 {
   background-color: #EBEBE8;
 }
 
@@ -760,13 +763,16 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   background-color: #F5F5F5;
 }
 
-.c8[aria-checked='true'][aria-readonly] .c14 {
+.c8[aria-checked='true'][aria-readonly] .c15 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c18 {
-  padding-top: 2px;
+.c19 {
   width: 48px;
+}
+
+.c14 {
+  line-height: 1.5;
 }
 
 <div
@@ -817,25 +823,25 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
                     className="c12"
                   >
                     <span
-                      className="c13"
+                      className="c13 c14"
                     >
                       SEK
                     </span>
                   </div>
                 </span>
                 <span
-                  className="c14 c15"
+                  className="c15 c16"
                 >
                   <div
-                    className="c16"
+                    className="c17"
                   >
                     <span
-                      className="c17 c18"
+                      className="c18 c19"
                     >
                       SEK
                     </span>
                     <span
-                      className="c17 c18"
+                      className="c18 c19"
                     >
                       %
                     </span>
@@ -851,10 +857,10 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
       className="c2"
     >
       <div
-        className="c19"
+        className="c20"
       >
         <span
-          className="c20"
+          className="c21"
         >
           Active: 
           SEK
