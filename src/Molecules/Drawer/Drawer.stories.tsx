@@ -3,6 +3,8 @@ import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import Box from '../../Atoms/Box';
 import {
+  Accordion,
+  AccordionItem,
   Button,
   Drawer,
   FadedScroll,
@@ -66,6 +68,25 @@ const contentLarge = (
       porttitor, facilisis luctus, metus
     </Typography>
   </>
+);
+
+const ExampleContent = () => (
+  <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat
+  </Typography>
+);
+
+const contentWithAccordion = (
+  <Accordion>
+    <AccordionItem title="Låg CO₂ risk">
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="Sustainability score">
+      <ExampleContent />
+    </AccordionItem>
+  </Accordion>
 );
 
 export const defaultStory = () => {
@@ -468,4 +489,34 @@ export const onAnimationCompleteStory = () => {
 
 onAnimationCompleteStory.story = {
   name: 'With on animation complete',
+};
+
+export const withAccordion = () => {
+  const WithAccordion = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} title="Drawer title" open={open}>
+          {contentWithAccordion}
+        </Drawer>
+      </>
+    );
+  };
+  return <WithAccordion />;
+};
+
+withAccordion.story = {
+  name: 'With Accordion',
 };
