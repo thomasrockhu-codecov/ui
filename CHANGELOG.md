@@ -1,3 +1,12 @@
+## [10.3.2](https://github.com/nordnet/ui/compare/v10.3.1...v10.3.2) (2022-01-24)
+
+
+### Bug Fixes
+
+* 🐛 updated snapshots ([212b711](https://github.com/nordnet/ui/commit/212b711))
+* **Molecules/Input/Text:** remove background color and gray outline on focus from quiet input ([7661189](https://github.com/nordnet/ui/commit/7661189))
+* **Molecules/Switch:** adjusted size of the Switch Toggle ([3250505](https://github.com/nordnet/ui/commit/3250505))
+
 ## [10.3.1](https://github.com/nordnet/ui/compare/v10.3.0...v10.3.1) (2022-01-24)
 
 
