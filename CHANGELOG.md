@@ -1,3 +1,10 @@
+## [10.3.3](https://github.com/nordnet/ui/compare/v10.3.2...v10.3.3) (2022-01-24)
+
+
+### Bug Fixes
+
+* 🐛 removed focus outline and background color from quiet ([d4c4666](https://github.com/nordnet/ui/commit/d4c4666))
+
 ## [10.3.2](https://github.com/nordnet/ui/compare/v10.3.1...v10.3.2) (2022-01-24)
 
 
