@@ -22,17 +22,60 @@ export const Showcase = () => (
       {
         title: 'Badge with different sizes',
         component: (
-          <>
-            <Box mb={1}>
-              <Badge.Number badgeSize="s">1</Badge.Number>
-            </Box>
-            <Box mb={1}>
-              <Badge.Number badgeSize="m">2</Badge.Number>
-            </Box>
-            <Box mb={1}>
-              <Badge.Number badgeSize="l">3</Badge.Number>
-            </Box>
-          </>
+          <table>
+            <tr>
+              <td width="30px">xs</td>
+              <td width="55px">16px</td>
+              <td width="50px">
+                <Badge.Number badgeSize="xs">1</Badge.Number>
+              </td>
+              <td width="50px">
+                <Badge.Number badgeSize="xs">99</Badge.Number>
+              </td>
+              <td width="50px">
+                <Badge.Number badgeSize="xs">123</Badge.Number>
+              </td>
+            </tr>
+            <tr>
+              <td>s</td>
+              <td>20px</td>
+              <td>
+                <Badge.Number badgeSize="s">1</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="s">99</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="s">123</Badge.Number>
+              </td>
+            </tr>
+            <tr>
+              <td>m</td>
+              <td>24px</td>
+              <td>
+                <Badge.Number badgeSize="m">1</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="m">99</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="m">123</Badge.Number>
+              </td>
+            </tr>
+            <tr>
+              <td>l</td>
+              <td>32px</td>
+              <td>
+                <Badge.Number badgeSize="l">1</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="l">99</Badge.Number>
+              </td>
+              <td>
+                <Badge.Number badgeSize="l">123</Badge.Number>
+              </td>
+            </tr>
+          </table>
         ),
       },
       {
@@ -55,22 +98,6 @@ export const Showcase = () => (
       {
         title: 'Custom text color',
         component: <Badge.Number color={(t) => t.color.warning}>5</Badge.Number>,
-      },
-      {
-        title: 'Badge with large number',
-        component: (
-          <>
-            <Box mb={1}>
-              <Badge.Number badgeSize="m">99</Badge.Number>
-            </Box>
-            <Box mb={1}>
-              <Badge.Number>99</Badge.Number>
-            </Box>
-            <Box mb={1}>
-              <Badge.Number>123</Badge.Number>
-            </Box>
-          </>
-        ),
       },
     ]}
   />

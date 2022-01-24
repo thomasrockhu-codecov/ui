@@ -16,7 +16,7 @@ type BaseProps = HtmlProps & {
 };
 
 export type Props = BaseProps & {
-  badgeSize?: 's' | 'm' | 'l' | number;
+  badgeSize?: 'xs' | 's' | 'm' | 'l' | number;
   children?: React.ReactNode;
 };
 
