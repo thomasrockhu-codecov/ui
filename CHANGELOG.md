@@ -1,3 +1,10 @@
+## [10.3.4](https://github.com/nordnet/ui/compare/v10.3.3...v10.3.4) (2022-01-26)
+
+
+### Bug Fixes
+
+* update quickfilter mobile and style fix ([95c7a5d](https://github.com/nordnet/ui/commit/95c7a5d))
+
 ## [10.3.3](https://github.com/nordnet/ui/compare/v10.3.2...v10.3.3) (2022-01-24)
 
 
