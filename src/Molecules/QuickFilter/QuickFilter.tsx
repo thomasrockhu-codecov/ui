@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
-
 import { Props } from './QuickFilter.types';
 
 const FOCUS_RING_SIZES = 2;
@@ -34,6 +33,7 @@ const StyledDiv = styled.div.withConfig({
   color: ${(p) => p.theme.color.quickFilterText};
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => p.theme.spacing.unit(2)}px;
+  height: ${(p) => p.theme.spacing.unit(8)}px;
 
   ${(p) => p.selected && `color: ${p.theme.color.quickFilterSelectedText}`};
   ${(p) => p.disabled && `color: ${p.theme.color.disabledText}`};
@@ -41,7 +41,13 @@ const StyledDiv = styled.div.withConfig({
   ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground}`};
   ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground}`};
 
-  ${(p) => p.hasLabel && `padding: ${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
+    ${(p) => p.hasLabel && `padding: 1px ${p.theme.spacing.unit(3)}px`};
+    ${(p) => p.hasLabel && `height: ${p.theme.spacing.unit(6)}px`};
+  }
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+    ${(p) => p.hasLabel && `padding: 5px ${p.theme.spacing.unit(3)}px`};
+  }
   ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px`};
 
   &:hover {
@@ -51,7 +57,6 @@ const StyledDiv = styled.div.withConfig({
 
 const StyledLabel = styled.label`
   cursor: inherit;
-
   &:focus-within {
     ${StyledDiv} {
       ${browsersNativeFocusStyles}
@@ -63,6 +68,10 @@ const StyledFlexbox = styled(Flexbox)`
   & > * {
     color: inherit;
   }
+`;
+
+const StyledFlexboxItem = styled(Flexbox)`
+  padding-top: 1px !important;
 `;
 
 export const QuickFilter: React.FC<Props> = ({
@@ -95,16 +104,14 @@ export const QuickFilter: React.FC<Props> = ({
           type="checkbox"
           value={value}
         />
-
         <Flexbox container direction="row" gutter={1} alignItems="center">
           {hasIcon && <StyledFlexbox item>{icon}</StyledFlexbox>}
-
           {hasLabel && (
-            <Flexbox item alignSelf="baseline">
+            <StyledFlexboxItem item>
               <Typography color="inherit" type="secondary" weight="bold">
                 {label}
               </Typography>
-            </Flexbox>
+            </StyledFlexboxItem>
           )}
         </Flexbox>
       </StyledDiv>
