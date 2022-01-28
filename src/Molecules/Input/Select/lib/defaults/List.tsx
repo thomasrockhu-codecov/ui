@@ -9,20 +9,20 @@ type ListProps = {
   maxHeight?: string;
   noFormField?: boolean;
   placement?: 'bottom' | 'top';
-  columns?: number;
+  itemsPerColumn?: number;
+  columnWidth?: string;
 };
 
-// special to handle width problem: https://stackoverflow.com/questions/23408539/how-can-i-make-a-displayflex-container-expand-horizontally-with-its-wrapped-con/41209546#41209546
-// more info here: https://stackoverflow.com/questions/33891709/when-flexbox-items-wrap-in-column-mode-container-does-not-grow-its-width
 const StyledColumnsList = styled(UIList)<any>`
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(${(p) => p.itemsPerColumn}, max-content);
+  grid-gap: 0;
+  padding: 0;
   list-style: none;
-  flex-wrap: wrap;
-  ${(p) => (p.maxHeight ? `max-height: ${p.maxHeight};` : '')}
-  writing-mode: vertical-lr;
+  position: relative;
   & li {
-    width: auto;
-    writing-mode: horizontal-tb;
+    width: ${(p) => p.columnWidth || 'auto'};
   }
 `;
 
@@ -51,9 +51,6 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   flex-shrink: 1;
   flex-basis: auto;
   width: 100%;
-
-  padding-top: 8px;
-  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
@@ -80,7 +77,8 @@ export const List: React.FC<ListProps> = ({
   listPosition,
   noFormField,
   placement,
-  columns,
+  itemsPerColumn,
+  columnWidth,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
@@ -91,8 +89,12 @@ export const List: React.FC<ListProps> = ({
         maxHeight={maxHeight || '240px'}
       >
         {searchComponent}
-        {columns ? (
-          <StyledColumnsList maxHeight={maxHeight} columns={columns} role="listbox">
+        {itemsPerColumn ? (
+          <StyledColumnsList
+            itemsPerColumn={itemsPerColumn}
+            columnWidth={columnWidth}
+            role="listbox"
+          >
             {children}
           </StyledColumnsList>
         ) : (

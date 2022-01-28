@@ -663,29 +663,29 @@ export const multiselect = () =>
     );
   });
 
-export const multiselectColumns = () =>
-  createElement(() => {
+const MultiselectColumnsTemplate: Story<{ itemsPerColumn: number; columnWidth: string }> = (
+  args,
+) => {
+  const MultiselectColumnsExample = () => {
     const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = useMemo(
-      () => () => {
-        const [machineState] = useSelectMachineFromContext();
-        const selectedCount = machineState.context.selectedItems.length;
-        return (
-          <FlexedBox px={2}>
-            <Typography
-              type="secondary"
-              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
-            >
-              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-            </Typography>
-          </FlexedBox>
-        );
-      },
-      [],
-    );
+    const CustomSelectedValue = () => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <FlexedBox px={2}>
+          <Typography
+            type="secondary"
+            color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+          >
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </FlexedBox>
+      );
+    };
+
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -697,11 +697,20 @@ export const multiselectColumns = () =>
         multiselect
         label="User account"
         placeholder="Select account"
-        columns
-        listMaxHeight="140px"
+        itemsPerColumn={args.itemsPerColumn}
+        columnWidth={args.columnWidth}
       />
     );
-  });
+  };
+
+  return <MultiselectColumnsExample />;
+};
+
+export const MultiselectColumns = MultiselectColumnsTemplate.bind({});
+MultiselectColumns.args = {
+  itemsPerColumn: 4,
+  columnWidth: '200px',
+};
 
 export const multiselectActions = () =>
   createElement(() => {

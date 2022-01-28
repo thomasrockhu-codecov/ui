@@ -56,7 +56,8 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       maxHeight,
       listPosition,
       placement,
-      columns,
+      itemsPerColumn,
+      columnWidth,
     },
     ref,
   ) => {
@@ -76,7 +77,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         listPosition={listPosition}
         placement={placement}
         $fullscreenOnMobile={fullscreenOnMobile}
-        columns={columns}
+        itemsPerColumn={itemsPerColumn}
       >
         <Component
           searchComponent={searchComponent}
@@ -85,7 +86,8 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
           listPosition={listPosition}
           noFormField={noFormField}
           placement={placement}
-          columns={columns}
+          itemsPerColumn={itemsPerColumn}
+          columnWidth={columnWidth}
         >
           {children}
         </Component>
