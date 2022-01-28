@@ -12,6 +12,8 @@ type ListProps = {
   columns?: number;
 };
 
+// special to handle width problem: https://stackoverflow.com/questions/23408539/how-can-i-make-a-displayflex-container-expand-horizontally-with-its-wrapped-con/41209546#41209546
+// more info here: https://stackoverflow.com/questions/33891709/when-flexbox-items-wrap-in-column-mode-container-does-not-grow-its-width
 const StyledColumnsList = styled(UIList)<any>`
   display: flex;
   list-style: none;
