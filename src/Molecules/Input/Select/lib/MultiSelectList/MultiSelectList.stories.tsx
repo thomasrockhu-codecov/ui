@@ -49,6 +49,18 @@ export const listWithDifferentArrowPositions = () => (
     items={[
       {
         component: (
+          <Wrapper position="left">
+            <Option value={-1} label="Default?" />
+            <Option value={0} label="First" selected />
+            {new Array(10).fill(null)?.map((_, i) => (
+              <Option key={i} value={i + 2} label="Disabled" disabled />
+            ))}
+          </Wrapper>
+        ),
+        title: 'Placement Bottom, Arrow Default (Left)',
+      },
+      {
+        component: (
           <Wrapper>
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
@@ -61,20 +73,7 @@ export const listWithDifferentArrowPositions = () => (
             ))}
           </Wrapper>
         ),
-        title: 'Placement Bottom, Arrow Default (right)',
-      },
-
-      {
-        component: (
-          <Wrapper position="left">
-            <Option value={-1} label="Default?" />
-            <Option value={0} label="First" selected />
-            {new Array(10).fill(null)?.map((_, i) => (
-              <Option key={i} value={i + 2} label="Disabled" disabled />
-            ))}
-          </Wrapper>
-        ),
-        title: 'Placement Bottom, Arrow Left',
+        title: 'Placement Bottom, Arrow Right',
       },
       {
         component: (

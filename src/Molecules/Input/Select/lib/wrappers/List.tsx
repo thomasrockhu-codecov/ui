@@ -35,9 +35,10 @@ const StyledListWrapper = styled.div<any>`
   ${(p) => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
-  padding: ${(p) => (p.$fullscreenOnMobile ? 0 : '4px')};
+  padding: ${(p) => (p.$fullscreenOnMobile ? 0 : '0 4px 4px 4px')};
   width: ${getWidth};
 `;
+
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   (
     {
