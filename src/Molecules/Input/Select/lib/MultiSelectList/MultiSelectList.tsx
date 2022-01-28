@@ -66,7 +66,7 @@ box-sizing: border-box;
   ${(p) =>
     p.disabled
       ? `
-        color: ${p.theme.color.disabledText}
+        color: ${p.theme.color.disabledText};
         pointer-events: none;
       `
       : ``}
