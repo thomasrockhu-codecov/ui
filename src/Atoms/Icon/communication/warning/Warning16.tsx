@@ -6,8 +6,8 @@ import { IconProps } from '../../IconBase.types';
 const Warning16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
-      <path d="M8 10H10L10 5.5H8L8 10Z" fill="#282823" />
-      <path d="M8 12.5H10V10.75H8L8 12.5Z" fill="#282823" />
+      <path d="M8 10H10L10 5.5H8L8 10Z" fill="currentColor" />
+      <path d="M8 12.5H10V10.75H8L8 12.5Z" fill="currentColor" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
