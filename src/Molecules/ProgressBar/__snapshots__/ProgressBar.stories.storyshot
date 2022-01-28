@@ -19,40 +19,19 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
   align-items: center;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c6 {
+.c5 {
+  color: #00C8F5;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #00C8F5;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #00C8F5;
   margin: 0;
@@ -61,7 +40,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
@@ -70,7 +49,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #336BFF;
   margin: 0;
@@ -79,56 +58,99 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FF2B83;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #D2F500;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00F0E1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c2 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c4 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #FF2B83;
-}
-
-.c10 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #D2F500;
-}
-
-.c13 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00F0E1;
+.c7 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c8 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
-}
-
-.c9 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
+  background-color: #D2F500;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   height: 2px;
-  background: #00F0E1;
+  background-color: #00F0E1;
 }
 
 @media (min-width:976px) {
@@ -138,8 +160,10 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c7 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -148,76 +172,81 @@ exports[`Storyshots Molecules / ProgressBar Custom Colors 1`] = `
 >
   <div
     className="c1 c2"
+    hasLabels={true}
     title="progress bar"
   >
-    <div
-      className="c3 c4"
+    <span
+      className="c3"
       title="Done - step done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          width={16}
         >
           <path
-            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            clipRule="evenodd"
+            d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+            fill="currentColor"
+            fillRule="evenodd"
           />
         </svg>
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Done
       </span>
-    </div>
+    </span>
     <div
-      className="c9"
+      className="c8"
     />
-    <div
-      className="c3 c10"
+    <span
+      className="c9"
       title="Active - active step"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         2
       </span>
       <span
         aria-hidden={true}
-        className="c11 c8"
+        className="c10 c7"
       >
         Active
       </span>
-    </div>
+    </span>
     <div
-      className="c12"
+      className="c11"
     />
-    <div
-      className="c3 c13"
+    <span
+      className="c12"
       title="Next - step not done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         3
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Next
       </span>
-    </div>
+    </span>
   </div>
 </div>
 `;
@@ -241,40 +270,19 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   align-items: center;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c6 {
+.c5 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -283,7 +291,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -292,7 +300,7 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -301,56 +309,99 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c2 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c4 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c10 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #0046FF;
-}
-
-.c13 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c7 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c8 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
-}
-
-.c9 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
+  background-color: #0046FF;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
@@ -360,8 +411,10 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c7 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -370,76 +423,81 @@ exports[`Storyshots Molecules / ProgressBar Custom Titles 1`] = `
 >
   <div
     className="c1 c2"
+    hasLabels={true}
     title="Donald's Nephews"
   >
-    <div
-      className="c3 c4"
+    <span
+      className="c3"
       title="Huey - The red one"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          width={16}
         >
           <path
-            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            clipRule="evenodd"
+            d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+            fill="currentColor"
+            fillRule="evenodd"
           />
         </svg>
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Huey
       </span>
-    </div>
+    </span>
     <div
-      className="c9"
+      className="c8"
     />
-    <div
-      className="c3 c10"
+    <span
+      className="c9"
       title="Dewey - The blue one"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         2
       </span>
       <span
         aria-hidden={true}
-        className="c11 c8"
+        className="c10 c7"
       >
         Dewey
       </span>
-    </div>
+    </span>
     <div
-      className="c12"
+      className="c11"
     />
-    <div
-      className="c3 c13"
+    <span
+      className="c12"
       title="Louie - The green one"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         3
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Louie
       </span>
-    </div>
+    </span>
   </div>
 </div>
 `;
@@ -457,40 +515,19 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   align-items: center;
 }
 
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c5 {
+.c4 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -499,7 +536,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -508,7 +545,7 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -517,136 +554,186 @@ exports[`Storyshots Molecules / ProgressBar Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c1 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c3 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c9 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #0046FF;
-}
-
-.c12 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c6 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c7 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
-}
-
-.c8 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
+  background-color: #0046FF;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
   .c1 {
-    padding-bottom: px;
+    padding-bottom: 0px;
   }
 }
 
 @media (min-width:976px) {
-  .c7 {
+  .c6 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
 <div
   className="c0 c1"
+  hasLabels={false}
   title="progress bar"
 >
-  <div
-    className="c2 c3"
+  <span
+    className="c2"
     title="undefined - step done"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       <svg
         aria-hidden="true"
-        className="c5"
+        className="c4"
         focusable="false"
+        height={16}
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
-        viewBox="0 0 24 24"
+        width={16}
       >
         <path
-          d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+          clipRule="evenodd"
+          d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+          fill="currentColor"
+          fillRule="evenodd"
         />
       </svg>
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="c5 c6"
     />
-  </div>
+  </span>
   <div
-    className="c8"
+    className="c7"
   />
-  <div
-    className="c2 c9"
+  <span
+    className="c8"
     title="undefined - active step"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       2
     </span>
     <span
       aria-hidden={true}
-      className="c10 c7"
+      className="c9 c6"
     />
-  </div>
+  </span>
   <div
-    className="c11"
+    className="c10"
   />
-  <div
-    className="c2 c12"
+  <span
+    className="c11"
     title="undefined - step not done"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       3
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="c5 c6"
     />
-  </div>
+  </span>
 </div>
 `;
 
@@ -684,54 +771,19 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c6 {
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -740,7 +792,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -749,7 +801,7 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -758,62 +810,105 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c3 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c5 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c12 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #FF1900;
-}
-
-.c16 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c8 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c9 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #00D200;
 }
 
 .c10 {
   width: 100%;
   height: 2px;
-  background: #00D200;
+  background-color: #FF1900;
 }
 
-.c11 {
+.c13 {
   width: 100%;
   height: 2px;
-  background: #FF1900;
-}
-
-.c15 {
-  width: 100%;
-  height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
@@ -823,8 +918,10 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
 }
 
 @media (min-width:976px) {
-  .c9 {
+  .c8 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -836,118 +933,129 @@ exports[`Storyshots Molecules / ProgressBar Failure Step 1`] = `
   >
     <div
       className="c2 c3"
+      hasLabels={true}
       title="progress bar"
     >
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="One - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           One
         </span>
-      </div>
+      </span>
       <div
-        className="c10"
+        className="c9"
       />
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="Two - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           Two
         </span>
-      </div>
+      </span>
       <div
-        className="c11"
+        className="c10"
       />
-      <div
-        className="c4 c12"
+      <span
+        className="c11"
         title="Failed step - active step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c13"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
-            <polygon
-              points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+            <path
+              d="M9.414 8l5.793-5.793L13.793.793 8 6.586 2.207.793.793 2.207 6.586 8 .793 13.793l1.414 1.414L8 9.414l5.793 5.793 1.414-1.414L9.414 8z"
+              fill="currentColor"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c14 c9"
+          className="c12 c8"
         >
           Failed step
         </span>
-      </div>
+      </span>
       <div
-        className="c15"
+        className="c13"
       />
-      <div
-        className="c4 c16"
+      <span
+        className="c14"
         title="Four - failure step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           4
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           Four
         </span>
-      </div>
+      </span>
     </div>
   </div>
 </div>
@@ -972,40 +1080,19 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   align-items: center;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c6 {
+.c5 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1014,7 +1101,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1023,7 +1110,7 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1032,62 +1119,105 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c2 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c4 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c11 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #0046FF;
-}
-
-.c14 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c7 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c8 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #00D200;
 }
 
 .c9 {
   width: 100%;
   height: 2px;
-  background: #00D200;
+  background-color: #0046FF;
 }
 
-.c10 {
+.c12 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
-}
-
-.c13 {
-  width: 100%;
-  height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
@@ -1097,8 +1227,10 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c7 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -1107,178 +1239,191 @@ exports[`Storyshots Molecules / ProgressBar Lots Of Steps 1`] = `
 >
   <div
     className="c1 c2"
+    hasLabels={true}
     title="progress bar"
   >
-    <div
-      className="c3 c4"
+    <span
+      className="c3"
       title="Lorem - step done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          width={16}
         >
           <path
-            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            clipRule="evenodd"
+            d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+            fill="currentColor"
+            fillRule="evenodd"
           />
         </svg>
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Lorem
       </span>
-    </div>
+    </span>
     <div
-      className="c9"
+      className="c8"
     />
-    <div
-      className="c3 c4"
+    <span
+      className="c3"
       title="Ipsum - step done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          width={16}
         >
           <path
-            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            clipRule="evenodd"
+            d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+            fill="currentColor"
+            fillRule="evenodd"
           />
         </svg>
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Ipsum
       </span>
-    </div>
+    </span>
     <div
-      className="c9"
+      className="c8"
     />
-    <div
-      className="c3 c4"
+    <span
+      className="c3"
       title="Dolor - step done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         <svg
           aria-hidden="true"
-          className="c6"
+          className="c5"
           focusable="false"
+          height={16}
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          width={16}
         >
           <path
-            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            clipRule="evenodd"
+            d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+            fill="currentColor"
+            fillRule="evenodd"
           />
         </svg>
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Dolor
       </span>
-    </div>
+    </span>
     <div
-      className="c10"
+      className="c9"
     />
-    <div
-      className="c3 c11"
+    <span
+      className="c10"
       title="Sit - active step"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         4
       </span>
       <span
         aria-hidden={true}
-        className="c12 c8"
+        className="c11 c7"
       >
         Sit
       </span>
-    </div>
+    </span>
     <div
-      className="c13"
+      className="c12"
     />
-    <div
-      className="c3 c14"
+    <span
+      className="c13"
       title="Amet - step not done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         5
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Amet
       </span>
-    </div>
+    </span>
     <div
-      className="c13"
+      className="c12"
     />
-    <div
-      className="c3 c14"
+    <span
+      className="c13"
       title="Ego - step not done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         6
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Ego
       </span>
-    </div>
+    </span>
     <div
-      className="c13"
+      className="c12"
     />
-    <div
-      className="c3 c14"
+    <span
+      className="c13"
       title="Sum - step not done"
     >
       <span
         aria-hidden={true}
-        className="c5"
+        className="c4"
       >
         7
       </span>
       <span
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
       >
         Sum
       </span>
-    </div>
+    </span>
   </div>
 </div>
 `;
@@ -1317,40 +1462,19 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c13 {
+.c12 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1359,7 +1483,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1368,7 +1492,7 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1377,62 +1501,105 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c3 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c5 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #0046FF;
-}
-
-.c10 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
-}
-
-.c12 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
+.c7 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c8 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
-}
-
-.c9 {
   width: 100%;
   height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
+}
+
+.c13 {
+  width: 100%;
+  height: 2px;
+  background-color: #0046FF;
 }
 
 .c14 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
-}
-
-.c15 {
-  width: 100%;
-  height: 2px;
-  background: #00D200;
+  background-color: #00D200;
 }
 
 @media (min-width:976px) {
@@ -1442,8 +1609,10 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
 }
 
 @media (min-width:976px) {
-  .c8 {
+  .c7 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -1455,222 +1624,237 @@ exports[`Storyshots Molecules / ProgressBar Step Progression 1`] = `
   >
     <div
       className="c2 c3"
+      hasLabels={true}
       title="progress bar"
     >
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="One - active step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           1
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="c6 c7"
         >
           One
         </span>
-      </div>
+      </span>
       <div
-        className="c9"
+        className="c8"
       />
-      <div
-        className="c4 c10"
+      <span
+        className="c9"
         title="Two - step not done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           2
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           Two
         </span>
-      </div>
+      </span>
       <div
-        className="c9"
+        className="c8"
       />
-      <div
-        className="c4 c10"
+      <span
+        className="c9"
         title="Three - step not done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           Three
         </span>
-      </div>
+      </span>
     </div>
     <div
       className="c2 c3"
+      hasLabels={true}
       title="progress bar"
     >
-      <div
-        className="c4 c12"
+      <span
+        className="c11"
         title="One - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c13"
+            className="c12"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           One
         </span>
-      </div>
+      </span>
       <div
-        className="c14"
+        className="c13"
       />
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="Two - active step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           2
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="c6 c7"
         >
           Two
         </span>
-      </div>
+      </span>
       <div
-        className="c9"
+        className="c8"
       />
-      <div
-        className="c4 c10"
+      <span
+        className="c9"
         title="Three - step not done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           Three
         </span>
-      </div>
+      </span>
     </div>
     <div
       className="c2 c3"
+      hasLabels={true}
       title="progress bar"
     >
-      <div
-        className="c4 c12"
+      <span
+        className="c11"
         title="One - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c13"
+            className="c12"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           One
         </span>
-      </div>
+      </span>
       <div
-        className="c15"
+        className="c14"
       />
-      <div
-        className="c4 c12"
+      <span
+        className="c11"
         title="Two - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c13"
+            className="c12"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c11 c8"
+          className="c10 c7"
         >
           Two
         </span>
-      </div>
+      </span>
       <div
-        className="c14"
+        className="c13"
       />
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="Three - active step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           3
         </span>
         <span
           aria-hidden={true}
-          className="c7 c8"
+          className="c6 c7"
         >
           Three
         </span>
-      </div>
+      </span>
     </div>
   </div>
 </div>
@@ -1710,40 +1894,19 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c7 {
+.c6 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1752,7 +1915,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1761,7 +1924,7 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1770,62 +1933,105 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c3 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c5 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c12 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #FFCF00;
-}
-
-.c15 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c8 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c9 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #00D200;
 }
 
 .c10 {
   width: 100%;
   height: 2px;
-  background: #00D200;
+  background-color: #FFCF00;
 }
 
-.c11 {
+.c13 {
   width: 100%;
   height: 2px;
-  background: #FFCF00;
-}
-
-.c14 {
-  width: 100%;
-  height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
@@ -1835,8 +2041,10 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
 }
 
 @media (min-width:976px) {
-  .c9 {
+  .c8 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
@@ -1848,126 +2056,139 @@ exports[`Storyshots Molecules / ProgressBar Warning Step 1`] = `
   >
     <div
       className="c2 c3"
+      hasLabels={true}
       title="progress bar"
     >
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="One - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           One
         </span>
-      </div>
+      </span>
       <div
-        className="c10"
+        className="c9"
       />
-      <div
-        className="c4 c5"
+      <span
+        className="c4"
         title="Two - step done"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={16}
           >
             <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              clipRule="evenodd"
+              d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           Two
         </span>
-      </div>
+      </span>
       <div
-        className="c11"
+        className="c10"
       />
-      <div
-        className="c4 c12"
+      <span
+        className="c11"
         title="Step with warning - active step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           <svg
             aria-hidden="true"
-            className="c7"
+            className="c6"
             focusable="false"
+            height={16}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="2 2 34 34"
+            width={16}
           >
             <path
-              d="M35.104 32.25L18.029.89.893 32.25h34.21zM18.022 6.11l12.873 23.64H5.105L18.022 6.11z"
-              fillRule="nonzero"
+              d="M8 10H10L10 5.5H8L8 10Z"
+              fill="currentColor"
             />
             <path
-              d="M16.75 23.5h2.5V26h-2.5z"
+              d="M8 12.5H10V10.75H8L8 12.5Z"
+              fill="currentColor"
             />
             <path
-              d="M19.375 12.448v8.75h-2.5v-8.75z"
-              fillRule="nonzero"
+              clipRule="evenodd"
+              d="M11.0031 1.90646C10.1128 0.364514 7.88722 0.364512 6.99698 1.90646L1.31186 11.7534C0.421615 13.2953 1.53442 15.2228 3.31491 15.2228H14.6851C16.4656 15.2228 17.5784 13.2953 16.6882 11.7534L11.0031 1.90646ZM8.72903 2.90646C8.84947 2.69785 9.15058 2.69785 9.27102 2.90646L14.9561 12.7534C15.0766 12.962 14.926 13.2228 14.6851 13.2228H3.31491C3.07402 13.2228 2.92347 12.962 3.04391 12.7534L8.72903 2.90646Z"
+              fill="currentColor"
+              fillRule="evenodd"
             />
           </svg>
         </span>
         <span
           aria-hidden={true}
-          className="c13 c9"
+          className="c12 c8"
         >
           Step with warning
         </span>
-      </div>
+      </span>
       <div
-        className="c14"
+        className="c13"
       />
-      <div
-        className="c4 c15"
+      <span
+        className="c14"
         title="Four - warning step"
       >
         <span
           aria-hidden={true}
-          className="c6"
+          className="c5"
         >
           4
         </span>
         <span
           aria-hidden={true}
-          className="c8 c9"
+          className="c7 c8"
         >
           Four
         </span>
-      </div>
+      </span>
     </div>
   </div>
 </div>
@@ -1986,40 +2207,19 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   align-items: center;
 }
 
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c5 {
+.c4 {
+  color: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2028,7 +2228,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2037,7 +2237,7 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2046,56 +2246,99 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #BCBCB6;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
 .c1 {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.c3 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #00D200;
-}
-
-.c9 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #0046FF;
-}
-
-.c12 {
-  position: relative;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  background: #BCBCB6;
+.c6 {
+  display: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .c7 {
-  position: absolute;
-  top: 40px;
-  text-align: center;
-  white-space: nowrap;
-  display: none;
-}
-
-.c8 {
   width: 100%;
   height: 2px;
-  background: #336BFF;
+  background-color: #0046FF;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   height: 2px;
-  background: #BCBCB6;
+  background-color: #BCBCB6;
 }
 
 @media (min-width:976px) {
@@ -2105,82 +2348,89 @@ exports[`Storyshots Molecules / ProgressBar With Labels 1`] = `
 }
 
 @media (min-width:976px) {
-  .c7 {
+  .c6 {
     display: block;
+    position: absolute;
+    top: 40px;
   }
 }
 
 <div
   className="c0 c1"
+  hasLabels={true}
   title="progress bar"
 >
-  <div
-    className="c2 c3"
+  <span
+    className="c2"
     title="Lorem ipsum - step done"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       <svg
         aria-hidden="true"
-        className="c5"
+        className="c4"
         focusable="false"
+        height={16}
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
-        viewBox="0 0 24 24"
+        width={16}
       >
         <path
-          d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+          clipRule="evenodd"
+          d="M15.85 3.657l-9.9 9.9L.293 7.898l1.414-1.414 4.243 4.243 8.485-8.485 1.414 1.414z"
+          fill="currentColor"
+          fillRule="evenodd"
         />
       </svg>
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="c5 c6"
     >
       Lorem ipsum
     </span>
-  </div>
+  </span>
   <div
-    className="c8"
+    className="c7"
   />
-  <div
-    className="c2 c9"
+  <span
+    className="c8"
     title="Dolor sit amet - active step"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       2
     </span>
     <span
       aria-hidden={true}
-      className="c10 c7"
+      className="c9 c6"
     >
       Dolor sit amet
     </span>
-  </div>
+  </span>
   <div
-    className="c11"
+    className="c10"
   />
-  <div
-    className="c2 c12"
+  <span
+    className="c11"
     title="Foo bar - step not done"
   >
     <span
       aria-hidden={true}
-      className="c4"
+      className="c3"
     >
       3
     </span>
     <span
       aria-hidden={true}
-      className="c6 c7"
+      className="c5 c6"
     >
       Foo bar
     </span>
-  </div>
+  </span>
 </div>
 `;
