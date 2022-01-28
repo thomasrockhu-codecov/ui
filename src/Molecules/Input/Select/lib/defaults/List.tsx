@@ -46,16 +46,19 @@ const IE11Wrapper = styled.div`
   flex-direction: row;
 `;
 
-const StyledDropdownBubble = styled(DropdownBubble)`
+const StyledDropdownBubble = styled(DropdownBubble)<any>`
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
-  min-width: ${({ theme }) =>
-    theme.media.lessThan(theme.breakpoints.sm) ? 'auto' : `${theme.spacing.unit(41)}px`};
+  width: ${(p) => (p.itemsPerColumn ? 'auto' : '100%')};
+  min-width: ${(p) => (p.itemsPerColumn ? 'auto' : `${p.theme.spacing.unit(41)}px`)};
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    min-width: auto;
+  }
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
@@ -87,6 +90,7 @@ export const List: React.FC<ListProps> = ({
         position={noFormField ? getTrianglePosition(listPosition) : 'left'}
         placement={placement}
         maxHeight={maxHeight || '240px'}
+        itemsPerColumn={itemsPerColumn}
       >
         {searchComponent}
         {itemsPerColumn ? (
