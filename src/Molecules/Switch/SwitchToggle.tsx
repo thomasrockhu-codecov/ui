@@ -7,11 +7,11 @@ import { SwitchToggleProps, KnobWidth } from './Switch.types';
 
 const TOGGLE_HEIGHT = 5;
 const TRACK_HEIGHT = TOGGLE_HEIGHT;
-const TRACK_WIDTH = 18.75;
+const TRACK_WIDTH = 17.75;
 const TRACK_PADDING = 0.5;
-const TRACK_TO_KNOW_RATIO = 1.875;
+const TRACK_TO_KNOW_RATIO = 1.775;
 const KNOB_HEIGHT = TOGGLE_HEIGHT;
-const KNOB_WIDTH = TRACK_WIDTH / TRACK_TO_KNOW_RATIO;
+const KNOB_WIDTH = TRACK_WIDTH / TRACK_TO_KNOW_RATIO; // 10 if no width is provided
 
 const Label = styled.label`
   display: inline-block;
@@ -26,6 +26,10 @@ const Knob = styled(Flexbox)<KnobWidth>`
     return p.theme.spacing.unit(KNOB_WIDTH);
   }}px;
   position: absolute;
+
+  /* this padding is to battle the typography not being centered properly */
+  padding-top: 1px;
+
   top: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
   left: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
@@ -40,7 +44,8 @@ const Track = styled.span<Pick<SwitchToggleProps, 'width'>>`
   width: ${(p) => {
     return p.width ? p.theme.spacing.unit(p.width) : p.theme.spacing.unit(TRACK_WIDTH);
   }}px;
-  padding: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
+  padding: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px
+    ${(p) => p.theme.spacing.unit(TRACK_PADDING * 2)}px;
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   line-height: ${(p) => p.theme.spacing.unit(TOGGLE_HEIGHT)}px;
   background-color: ${(p) => p.theme.color.background};
@@ -61,9 +66,9 @@ const Button = styled(NormalizedElements.Button)<Pick<SwitchToggleProps, 'width'
       transform: translate(
         ${(p) => {
           if (p.knobwidth && p.width) {
-            return p.theme.spacing.unit(p.width - p.knobwidth);
+            return p.theme.spacing.unit(p.width - p.knobwidth + 1);
           }
-          return p.theme.spacing.unit(TRACK_WIDTH - KNOB_WIDTH);
+          return p.theme.spacing.unit(TRACK_WIDTH - KNOB_WIDTH + 1);
         }}px
       );
     }
@@ -85,10 +90,6 @@ const Button = styled(NormalizedElements.Button)<Pick<SwitchToggleProps, 'width'
       background-color: ${(p) => p.theme.color.switchReadOnlyTrackBg};
     }
   }
-`;
-
-const TrackContentFlexbox = styled(Flexbox)`
-  margin-left: -${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
 `;
 
 const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'width'>>`
@@ -164,7 +165,7 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                 </Typography>
               </Knob>
               <Track width={width}>
-                <TrackContentFlexbox
+                <Flexbox
                   container
                   item
                   justifyContent="space-between"
@@ -185,7 +186,7 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                   >
                     {valueRight}
                   </StyledTypography>
-                </TrackContentFlexbox>
+                </Flexbox>
               </Track>
             </ButtonContent>
           </Button>
