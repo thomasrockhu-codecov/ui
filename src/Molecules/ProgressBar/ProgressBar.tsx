@@ -6,10 +6,13 @@ import { Props } from './ProgressBar.types';
 
 const StyledContainer = styled(Flexbox)<{ hasLabels: boolean | undefined }>`
   width: 100%;
-  padding-bottom: ${({ theme }) => theme.spacing.unit(0)}px;
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     padding-bottom: ${({ theme, hasLabels }) => (hasLabels ? theme.spacing.unit(8) : 0)}px;
   }
+`;
+
+const Bubble = styled(Badge.Icon)`
+  position: relative;
 `;
 
 const StyledTypography = styled(Typography)`
@@ -106,7 +109,7 @@ const ProgressBar: FC<Props> = ({
 
     return (
       <React.Fragment key={stepNumber}>
-        <Badge.Icon title={title} badgeColor={() => getColor(stepActive)} badgeSize={8}>
+        <Bubble title={title} badgeColor={() => getColor(stepActive)} badgeSize={8}>
           <Typography
             type="secondary"
             color={(t) => (colorText ? colorText(t) : t.color.textLight)}
@@ -122,7 +125,7 @@ const ProgressBar: FC<Props> = ({
           >
             {stepLabels && stepLabels[stepNumber - 1]}
           </StyledTypography>
-        </Badge.Icon>
+        </Bubble>
         {stepNumber < numberOfSteps && <StyledLine lineColor={() => getColor(lineActive)} />}
       </React.Fragment>
     );
