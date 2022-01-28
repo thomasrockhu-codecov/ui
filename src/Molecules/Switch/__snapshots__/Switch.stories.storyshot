@@ -4,7 +4,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
 .c0 {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: transparent;
+  background-color: #FFFFFF;
 }
 
 .c20 {
@@ -66,7 +66,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   box-sizing: border-box;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,7 +85,7 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c17 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -136,8 +136,8 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   color: #A0A09B;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c21 {
@@ -153,34 +153,29 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   display: inline-block;
 }
 
-.c11 {
-  background: #FFFFFF;
-  display: block;
+.c12 {
   height: 20px;
-  width: 100px;
+  width: 102.4px;
   position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -10px;
-  border-radius: 10px;
+  top: 2px;
+  left: 2px;
+  border-radius: 20px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   background-color: #FFFFFF;
-  margin-left: 3px;
 }
 
-.c16 {
+.c15 {
   display: block;
-  height: 24px;
+  height: 20px;
   width: 192px;
-  margin: -2px 0;
-  border-radius: 12px;
+  padding: 2px;
+  border-radius: 20px;
   line-height: 20px;
-  background-color: #EBEBE8;
-  border: 1px solid #EBEBE8;
-  box-shadow: 0px 1px 3px 1px #EBEBE8;
+  background-color: #F5F5F5;
+  box-shadow: 0px 1px 3px 1px #F5F5F5;
 }
 
 .c9 {
@@ -222,33 +217,32 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c8[aria-checked='true'] .c10 {
-  -webkit-transform: translate( 88px );
-  -ms-transform: translate( 88px );
-  transform: translate( 88px );
+.c8[aria-checked='true'] .c11 {
+  -webkit-transform: translate( 89.6px );
+  -ms-transform: translate( 89.6px );
+  transform: translate( 89.6px );
 }
 
-.c8[disabled] .c15,
-.c8[aria-readonly] .c15 {
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
   background-color: #EBEBE8;
 }
 
-.c8[disabled] .c10,
-.c8[aria-readonly] .c10 {
-  border: 1px solid #EBEBE8;
+.c8[disabled] .c11,
+.c8[aria-readonly] .c11 {
   background-color: #F5F5F5;
 }
 
-.c8[aria-checked='true'][aria-readonly] .c15 {
+.c8[aria-checked='true'][aria-readonly] .c14 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c19 {
-  width: 100px;
+.c17 {
+  margin-left: -2px;
 }
 
-.c14 {
-  line-height: 1.5;
+.c19 {
+  width: 96px;
 }
 
 <div
@@ -285,33 +279,31 @@ exports[`Storyshots Molecules / Switch Augmented Width Switch Toggle 1`] = `
             <button
               aria-checked={false}
               className="NormalizedButton__Button-sc-ey7f5x-0 c8"
-              knobwidth={25}
+              knobwidth={25.6}
               onClick={[Function]}
               role="switch"
-              trackwidth={48}
               type="button"
+              width={48}
             >
               <div
                 className="c9"
               >
-                <span
-                  className="c10 c11"
+                <div
+                  className="c10 c11 c12"
+                  knobwidth={25.6}
                 >
-                  <div
-                    className="c12"
+                  <span
+                    className="c13"
                   >
-                    <span
-                      className="c13 c14"
-                    >
-                      Swedish
-                    </span>
-                  </div>
-                </span>
+                    Swedish
+                  </span>
+                </div>
                 <span
-                  className="c15 c16"
+                  className="c14 c15"
+                  width={48}
                 >
                   <div
-                    className="c17"
+                    className="c16 c17"
                   >
                     <span
                       className="c18 c19"
@@ -528,7 +520,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
 .c0 {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: transparent;
+  background-color: #FFFFFF;
 }
 
 .c20 {
@@ -590,7 +582,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   box-sizing: border-box;
 }
 
-.c12 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -609,7 +601,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   align-content: center;
 }
 
-.c17 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -660,8 +652,8 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   color: #A0A09B;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c21 {
@@ -677,34 +669,29 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   display: inline-block;
 }
 
-.c11 {
-  background: #FFFFFF;
-  display: block;
+.c12 {
   height: 20px;
-  width: 48px;
+  width: 40px;
   position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -10px;
-  border-radius: 10px;
+  top: 2px;
+  left: 2px;
+  border-radius: 20px;
   box-sizing: border-box;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   -webkit-transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   transition: transform 0.6s cubic-bezier(0.18,0.9,0.35,1.15);
   background-color: #FFFFFF;
-  margin-left: 3px;
 }
 
-.c16 {
+.c15 {
   display: block;
-  height: 24px;
-  width: 92px;
-  margin: -2px 0;
-  border-radius: 12px;
+  height: 20px;
+  width: 75px;
+  padding: 2px;
+  border-radius: 20px;
   line-height: 20px;
-  background-color: #EBEBE8;
-  border: 1px solid #EBEBE8;
-  box-shadow: 0px 1px 3px 1px #EBEBE8;
+  background-color: #F5F5F5;
+  box-shadow: 0px 1px 3px 1px #F5F5F5;
 }
 
 .c9 {
@@ -746,33 +733,32 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c8[aria-checked='true'] .c10 {
-  -webkit-transform: translate( 40px );
-  -ms-transform: translate( 40px );
-  transform: translate( 40px );
+.c8[aria-checked='true'] .c11 {
+  -webkit-transform: translate( 35px );
+  -ms-transform: translate( 35px );
+  transform: translate( 35px );
 }
 
-.c8[disabled] .c15,
-.c8[aria-readonly] .c15 {
+.c8[disabled] .c14,
+.c8[aria-readonly] .c14 {
   background-color: #EBEBE8;
 }
 
-.c8[disabled] .c10,
-.c8[aria-readonly] .c10 {
-  border: 1px solid #EBEBE8;
+.c8[disabled] .c11,
+.c8[aria-readonly] .c11 {
   background-color: #F5F5F5;
 }
 
-.c8[aria-checked='true'][aria-readonly] .c15 {
+.c8[aria-checked='true'][aria-readonly] .c14 {
   background-color: rgba(0,70,255,0.1);
 }
 
-.c19 {
-  width: 48px;
+.c17 {
+  margin-left: -2px;
 }
 
-.c14 {
-  line-height: 1.5;
+.c19 {
+  width: 37.5px;
 }
 
 <div
@@ -809,6 +795,7 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
             <button
               aria-checked={false}
               className="NormalizedButton__Button-sc-ey7f5x-0 c8"
+              knobwidth={10}
               onClick={[Function]}
               role="switch"
               type="button"
@@ -816,24 +803,21 @@ exports[`Storyshots Molecules / Switch Default  Switch Toggle 1`] = `
               <div
                 className="c9"
               >
-                <span
-                  className="c10 c11"
+                <div
+                  className="c10 c11 c12"
+                  knobwidth={10}
                 >
-                  <div
-                    className="c12"
+                  <span
+                    className="c13"
                   >
-                    <span
-                      className="c13 c14"
-                    >
-                      SEK
-                    </span>
-                  </div>
-                </span>
+                    SEK
+                  </span>
+                </div>
                 <span
-                  className="c15 c16"
+                  className="c14 c15"
                 >
                   <div
-                    className="c17"
+                    className="c16 c17"
                   >
                     <span
                       className="c18 c19"

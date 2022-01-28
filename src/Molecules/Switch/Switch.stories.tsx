@@ -83,7 +83,7 @@ export const defaultSwitchToggle = () => {
     const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
 
     return (
-      <Box py={5}>
+      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
         <Flexbox container gutter={2}>
           <Flexbox container item>
             <SwitchToggle
@@ -123,7 +123,7 @@ export const augmentedWidthSwitchToggle = () => {
     const toggledValue = toggled ? toggleOptions.right : toggleOptions.left;
 
     return (
-      <Box py={5}>
+      <Box py={5} backgroundColor={(t) => t.color.bubbleBackground}>
         <Flexbox container gutter={2}>
           <Flexbox container item>
             <SwitchToggle
@@ -133,8 +133,7 @@ export const augmentedWidthSwitchToggle = () => {
               valueLeft={toggleOptions.left}
               valueRight={toggleOptions.right}
               hiddenLabel
-              knobwidth={25}
-              trackwidth={48}
+              width={48}
             />
           </Flexbox>
           <Flexbox container item>
