@@ -1,3 +1,11 @@
+## [10.3.5](https://github.com/nordnet/ui/compare/v10.3.4...v10.3.5) (2022-01-28)
+
+
+### Bug Fixes
+
+* 🐛 adjusted styling and size of the SwitchToggle ([9b42c49](https://github.com/nordnet/ui/commit/9b42c49))
+* 🐛 padding to combat typography not aligning properly ([063663d](https://github.com/nordnet/ui/commit/063663d))
+
 ## [10.3.4](https://github.com/nordnet/ui/compare/v10.3.3...v10.3.4) (2022-01-26)
 
 
