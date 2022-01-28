@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
-import { useMedia } from '../../../../../Atoms/Media';
 
 type ListProps = {
   listPosition?: string;
@@ -10,7 +9,20 @@ type ListProps = {
   maxHeight?: string;
   noFormField?: boolean;
   placement?: 'bottom' | 'top';
+  columns?: number;
 };
+
+const StyledColumnsList = styled(UIList)<any>`
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  ${(p) => (p.maxHeight ? `max-height: ${p.maxHeight};` : '')}
+  writing-mode: vertical-lr;
+  & li {
+    width: auto;
+    writing-mode: horizontal-tb;
+  }
+`;
 
 const StyledList = styled(UIList)<any>`
   display: flex;
@@ -66,20 +78,21 @@ export const List: React.FC<ListProps> = ({
   listPosition,
   noFormField,
   placement,
+  columns,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
-  // media query for IE10+
-  const isIE10Plus = useMedia('all and (-ms-high-contrast: none), (-ms-high-contrast: active)');
   return (
     <IE11Wrapper>
       <StyledDropdownBubble
-        position={noFormField ? getTrianglePosition(listPosition) : 'right'}
+        position={noFormField ? getTrianglePosition(listPosition) : 'left'}
         placement={placement}
         maxHeight={maxHeight || '240px'}
       >
         {searchComponent}
-        {isIE10Plus ? (
-          <StyledList role="listbox">{children}</StyledList>
+        {columns ? (
+          <StyledColumnsList maxHeight={maxHeight} columns={columns} role="listbox">
+            {children}
+          </StyledColumnsList>
         ) : (
           <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
             <StyledList role="listbox">{children}</StyledList>

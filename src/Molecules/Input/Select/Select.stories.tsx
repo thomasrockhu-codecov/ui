@@ -209,16 +209,18 @@ export default {
 } as Meta;
 
 export const defaultStory = () => (
-  <Input.Select
-    id="input-1"
-    options={[
-      { value: 1, label: '1' },
-      { value: 2, label: '2' },
-      { value: 3, label: '3' },
-    ]}
-    label="Label"
-    placeholder="Placeholder"
-  />
+  <div style={{ padding: '10px', height: '200px' }}>
+    <Input.Select
+      id="input-1"
+      options={[
+        { value: 1, label: '1' },
+        { value: 2, label: '2' },
+        { value: 3, label: '3' },
+      ]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+  </div>
 );
 
 export const withLabelTooltip = () => (
@@ -657,6 +659,46 @@ export const multiselect = () =>
         multiselect
         label="User account"
         placeholder="Select account"
+      />
+    );
+  });
+
+export const multiselectColumns = () =>
+  createElement(() => {
+    const [value, setValue] = useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = useMemo(
+      () => () => {
+        const [machineState] = useSelectMachineFromContext();
+        const selectedCount = machineState.context.selectedItems.length;
+        return (
+          <FlexedBox px={2}>
+            <Typography
+              type="secondary"
+              color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+            >
+              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+            </Typography>
+          </FlexedBox>
+        );
+      },
+      [],
+    );
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+        columns
+        listMaxHeight="140px"
       />
     );
   });

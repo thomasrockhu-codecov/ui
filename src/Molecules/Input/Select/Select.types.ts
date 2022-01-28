@@ -89,6 +89,11 @@ export type Props = {
    */
   hideDisabledOptions?: boolean;
   multiselect?: boolean;
+  /**
+   * Wraps options into columns, only multiselect.
+   * When using columns mode you must specify listMaxHeight too.
+   */
+  columns?: boolean;
   actions?: Array<Action>;
   /**
    * Controlled mode for search field
