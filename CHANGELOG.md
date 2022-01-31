@@ -1,3 +1,18 @@
+# [10.4.0](https://github.com/nordnet/ui/compare/v10.3.5...v10.4.0) (2022-01-31)
+
+
+### Bug Fixes
+
+* adjust input select arrow to updated designs ([1992114](https://github.com/nordnet/ui/commit/1992114))
+* more adjustments to show border properly ([edb0a8d](https://github.com/nordnet/ui/commit/edb0a8d))
+* old bug that prevented item disbled ([09dd69a](https://github.com/nordnet/ui/commit/09dd69a))
+* use grid instead of bugged flex ([56ffc2f](https://github.com/nordnet/ui/commit/56ffc2f))
+
+
+### Features
+
+* add columns mode to input select ([fa053f4](https://github.com/nordnet/ui/commit/fa053f4))
+
 ## [10.3.5](https://github.com/nordnet/ui/compare/v10.3.4...v10.3.5) (2022-01-28)
 
 
