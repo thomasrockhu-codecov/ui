@@ -21,6 +21,7 @@ const StyledColumnsList = styled(UIList)<any>`
   padding: 0;
   list-style: none;
   position: relative;
+
   & li {
     width: ${(p) => p.columnWidth || 'auto'};
   }
@@ -50,7 +51,6 @@ const StyledDropdownBubble = styled(DropdownBubble)<any>`
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
@@ -59,6 +59,8 @@ const StyledDropdownBubble = styled(DropdownBubble)<any>`
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     min-width: auto;
   }
+  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
