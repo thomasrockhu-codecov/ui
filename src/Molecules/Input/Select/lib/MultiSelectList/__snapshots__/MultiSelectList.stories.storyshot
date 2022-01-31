@@ -510,7 +510,8 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList Item disabled 1
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B pointer-events:none;
+  color: #A0A09B;
+  pointer-events: none;
 }
 
 .c7 .c12 {
@@ -1207,7 +1208,8 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B pointer-events:none;
+  color: #A0A09B;
+  pointer-events: none;
 }
 
 .c16 .c21 {
@@ -1306,39 +1308,39 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c4:before {
-  right: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
 .c4:after {
-  right: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -1357,39 +1359,39 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c32:before {
-  left: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
 .c32:after {
-  left: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -1408,9 +1410,9 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -1423,10 +1425,10 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
@@ -1437,10 +1439,10 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -1459,39 +1461,39 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c34:before {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
 .c34:after {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 
@@ -1510,39 +1512,39 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c35:before {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
 .c35:after {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 
@@ -1561,9 +1563,9 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -1576,10 +1578,10 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
@@ -1590,10 +1592,10 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 
@@ -1611,7 +1613,7 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
       <span
         className="c3"
       >
-        Placement Bottom, Arrow Default (right)
+        Placement Bottom, Arrow Default (Left)
       </span>
     </div>
     <div>
@@ -1758,71 +1760,6 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
                       className="c24 c28"
                     >
                       First
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="c9"
-              >
-                <div
-                  className="c10 c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <label
-                        className="c14 c15 c16"
-                        hidden={false}
-                      >
-                        <span
-                          className="c17"
-                        >
-                          <div
-                            className="c18"
-                          >
-                            <input
-                              className="c19"
-                              name="example"
-                              readOnly={true}
-                              type="checkbox"
-                            />
-                            <div
-                              className="c20 c21 c22"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                className="c23"
-                                focusable="false"
-                                preserveAspectRatio="xMidYMid meet"
-                                role="presentation"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                                />
-                              </svg>
-                            </div>
-                            <span
-                              className="c24 c25"
-                            >
-                              
-                            </span>
-                          </div>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div
-                    className="c26 c27"
-                  >
-                    <span
-                      className="c24 c28"
-                    >
-                      SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
                     </span>
                   </div>
                 </div>
@@ -2506,7 +2443,7 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
       <span
         className="c3"
       >
-        Placement Bottom, Arrow Left
+        Placement Bottom, Arrow Right
       </span>
     </div>
     <div>
@@ -2653,6 +2590,71 @@ exports[`Storyshots Molecules / Input / Select / MultiSelectList List with diffe
                       className="c24 c28"
                     >
                       First
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10 c11"
+                >
+                  <div
+                    className="c12"
+                  >
+                    <div
+                      className="c13"
+                    >
+                      <label
+                        className="c14 c15 c16"
+                        hidden={false}
+                      >
+                        <span
+                          className="c17"
+                        >
+                          <div
+                            className="c18"
+                          >
+                            <input
+                              className="c19"
+                              name="example"
+                              readOnly={true}
+                              type="checkbox"
+                            />
+                            <div
+                              className="c20 c21 c22"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="c23"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="presentation"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                                />
+                              </svg>
+                            </div>
+                            <span
+                              className="c24 c25"
+                            >
+                              
+                            </span>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    className="c26 c27"
+                  >
+                    <span
+                      className="c24 c28"
+                    >
+                      SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
                     </span>
                   </div>
                 </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
-import { useMedia } from '../../../../../Atoms/Media';
 
 type ListProps = {
   listPosition?: string;
@@ -10,7 +9,22 @@ type ListProps = {
   maxHeight?: string;
   noFormField?: boolean;
   placement?: 'bottom' | 'top';
+  itemsPerColumn?: number;
+  columnWidth?: string;
 };
+
+const StyledColumnsList = styled(UIList)<any>`
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(${(p) => p.itemsPerColumn}, max-content);
+  grid-gap: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  & li {
+    width: ${(p) => p.columnWidth || 'auto'};
+  }
+`;
 
 const StyledList = styled(UIList)<any>`
   display: flex;
@@ -32,19 +46,19 @@ const IE11Wrapper = styled.div`
   flex-direction: row;
 `;
 
-const StyledDropdownBubble = styled(DropdownBubble)`
+const StyledDropdownBubble = styled(DropdownBubble)<any>`
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  width: 100%;
 
-  padding-top: 8px;
-  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   -ms-overflow-y: scroll;
-  min-width: ${({ theme }) =>
-    theme.media.lessThan(theme.breakpoints.sm) ? 'auto' : `${theme.spacing.unit(41)}px`};
+  width: ${(p) => (p.itemsPerColumn ? 'auto' : '100%')};
+  min-width: ${(p) => (p.itemsPerColumn ? 'auto' : `${p.theme.spacing.unit(41)}px`)};
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    min-width: auto;
+  }
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
@@ -66,20 +80,27 @@ export const List: React.FC<ListProps> = ({
   listPosition,
   noFormField,
   placement,
+  itemsPerColumn,
+  columnWidth,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
-  // media query for IE10+
-  const isIE10Plus = useMedia('all and (-ms-high-contrast: none), (-ms-high-contrast: active)');
   return (
     <IE11Wrapper>
       <StyledDropdownBubble
-        position={noFormField ? getTrianglePosition(listPosition) : 'right'}
+        position={noFormField ? getTrianglePosition(listPosition) : 'left'}
         placement={placement}
         maxHeight={maxHeight || '240px'}
+        itemsPerColumn={itemsPerColumn}
       >
         {searchComponent}
-        {isIE10Plus ? (
-          <StyledList role="listbox">{children}</StyledList>
+        {itemsPerColumn ? (
+          <StyledColumnsList
+            itemsPerColumn={itemsPerColumn}
+            columnWidth={columnWidth}
+            role="listbox"
+          >
+            {children}
+          </StyledColumnsList>
         ) : (
           <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
             <StyledList role="listbox">{children}</StyledList>

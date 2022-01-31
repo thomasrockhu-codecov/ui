@@ -4,7 +4,7 @@ import { useSelectMachineFromContext } from '../context';
 
 const getWidth = (p: any) => {
   if (p.width) return p.width;
-  if (p.noFormField) {
+  if (p.noFormField || p.columns) {
     return 'auto';
   }
   return 'calc(100% + 2px)'; // adjusting for border
@@ -35,9 +35,10 @@ const StyledListWrapper = styled.div<any>`
   ${(p) => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
-  padding: ${(p) => (p.$fullscreenOnMobile ? 0 : '4px')};
+  padding: ${(p) => (p.$fullscreenOnMobile ? 0 : '0 4px 4px 4px')};
   width: ${getWidth};
 `;
+
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   (
     {
@@ -55,6 +56,8 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       maxHeight,
       listPosition,
       placement,
+      itemsPerColumn,
+      columnWidth,
     },
     ref,
   ) => {
@@ -74,6 +77,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         listPosition={listPosition}
         placement={placement}
         $fullscreenOnMobile={fullscreenOnMobile}
+        itemsPerColumn={itemsPerColumn}
       >
         <Component
           searchComponent={searchComponent}
@@ -82,6 +86,8 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
           listPosition={listPosition}
           noFormField={noFormField}
           placement={placement}
+          itemsPerColumn={itemsPerColumn}
+          columnWidth={columnWidth}
         >
           {children}
         </Component>

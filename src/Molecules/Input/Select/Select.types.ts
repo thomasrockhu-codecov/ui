@@ -89,6 +89,12 @@ export type Props = {
    */
   hideDisabledOptions?: boolean;
   multiselect?: boolean;
+  /**
+   * Wraps options into columns with number of items per column, only multiselect.
+   * columnWidth is optional, "auto" if not set.
+   */
+  itemsPerColumn?: number;
+  columnWidth?: string;
   actions?: Array<Action>;
   /**
    * Controlled mode for search field
