@@ -1,3 +1,11 @@
+## [10.4.1](https://github.com/nordnet/ui/compare/v10.4.0...v10.4.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* should be some padding on list afterall ([5896c67](https://github.com/nordnet/ui/commit/5896c67))
+* should be some padding on list afterall ([4ee00f4](https://github.com/nordnet/ui/commit/4ee00f4))
+
 # [10.4.0](https://github.com/nordnet/ui/compare/v10.3.5...v10.4.0) (2022-01-31)
 
 
