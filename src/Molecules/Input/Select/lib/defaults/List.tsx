@@ -59,8 +59,8 @@ const StyledDropdownBubble = styled(DropdownBubble)<any>`
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     min-width: auto;
   }
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
