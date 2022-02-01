@@ -3,22 +3,22 @@ import styled from 'styled-components';
 import { Flexbox, Typography, VisuallyHidden } from '../..';
 import { isBoolean, isElement } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
-import { SwitchToggleProps } from './Switch.types';
+import { SwitchToggleProps, KnobWidth } from './Switch.types';
 
 const TOGGLE_HEIGHT = 5;
-const KNOB_SIZE = TOGGLE_HEIGHT;
-const KNOB_WIDTH = 12;
-const TRACK_HEIGHT = TOGGLE_HEIGHT + 1;
-const TRACK_WIDTH = 23;
+const TRACK_HEIGHT = TOGGLE_HEIGHT;
+const TRACK_WIDTH = 17.75;
+const TRACK_PADDING = 0.5;
+const TRACK_TO_KNOW_RATIO = 1.775;
+const KNOB_HEIGHT = TOGGLE_HEIGHT;
+const KNOB_WIDTH = TRACK_WIDTH / TRACK_TO_KNOW_RATIO; // 10 if no width is provided
 
 const Label = styled.label`
   display: inline-block;
 `;
 
-const Knob = styled.span<Pick<SwitchToggleProps, 'knobwidth'>>`
-  background: ${(p) => p.theme.color.bubbleBackground};
-  display: block;
-  height: ${(p) => p.theme.spacing.unit(KNOB_SIZE)}px;
+const Knob = styled(Flexbox)<KnobWidth>`
+  height: ${(p) => p.theme.spacing.unit(KNOB_HEIGHT)}px;
   width: ${(p) => {
     if (p.knobwidth) {
       return p.theme.spacing.unit(p.knobwidth);
@@ -26,37 +26,37 @@ const Knob = styled.span<Pick<SwitchToggleProps, 'knobwidth'>>`
     return p.theme.spacing.unit(KNOB_WIDTH);
   }}px;
   position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
-  border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE / 2)}px;
+
+  /* this padding is to battle the typography not being centered properly */
+  padding-top: 1px;
+
+  top: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
+  left: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px;
+  border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   box-sizing: border-box;
   transition: transform 0.6s cubic-bezier(0.18, 0.9, 0.35, 1.15);
   background-color: ${(p) => p.theme.color.bubbleBackground};
-  margin-left: 3px;
 `;
 
-const Track = styled.span<Pick<SwitchToggleProps, 'trackwidth'>>`
+const Track = styled.span<Pick<SwitchToggleProps, 'width'>>`
   display: block;
   height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   width: ${(p) => {
-    return p.trackwidth ? p.theme.spacing.unit(p.trackwidth) : p.theme.spacing.unit(TRACK_WIDTH);
+    return p.width ? p.theme.spacing.unit(p.width) : p.theme.spacing.unit(TRACK_WIDTH);
   }}px;
-  margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE - TRACK_HEIGHT) / 2)}px 0;
-  border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT / 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(TRACK_PADDING)}px
+    ${(p) => p.theme.spacing.unit(TRACK_PADDING * 2)}px;
+  border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT)}px;
   line-height: ${(p) => p.theme.spacing.unit(TOGGLE_HEIGHT)}px;
-  background-color: ${(p) => p.theme.color.orderDepthBackground};
-  border: 1px solid ${(p) => p.theme.color.divider};
-  box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.divider};
+  background-color: ${(p) => p.theme.color.background};
+  box-shadow: 0px 1px 3px 1px ${(p) => p.theme.color.background};
 `;
 
 const ButtonContent = styled.div`
   position: relative; /* IE fix for nudge on click */
 `;
 
-const Button = styled(NormalizedElements.Button)<
-  Pick<SwitchToggleProps, 'knobwidth' | 'trackwidth'>
->`
+const Button = styled(NormalizedElements.Button)<Pick<SwitchToggleProps, 'width'> & KnobWidth>`
   display: block;
   background: none;
   padding: 0;
@@ -65,10 +65,10 @@ const Button = styled(NormalizedElements.Button)<
     ${Knob} {
       transform: translate(
         ${(p) => {
-          if (p.knobwidth && p.trackwidth) {
-            return p.theme.spacing.unit(p.trackwidth - p.knobwidth - 1);
+          if (p.knobwidth && p.width) {
+            return p.theme.spacing.unit(p.width - p.knobwidth + 1);
           }
-          return p.theme.spacing.unit(TRACK_WIDTH - KNOB_WIDTH - 1);
+          return p.theme.spacing.unit(TRACK_WIDTH - KNOB_WIDTH + 1);
         }}px
       );
     }
@@ -81,7 +81,6 @@ const Button = styled(NormalizedElements.Button)<
     }
 
     ${Knob} {
-      border: 1px solid ${(p) => p.theme.color.disabledBackground};
       background-color: ${(p) => p.theme.color.switchReadOnlyKnobBg};
     }
   }
@@ -93,17 +92,13 @@ const Button = styled(NormalizedElements.Button)<
   }
 `;
 
-const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'knobwidth'>>`
+const StyledTypography = styled(Typography)<Pick<SwitchToggleProps, 'width'>>`
   width: ${(p) => {
-    if (p.knobwidth) {
-      return p.theme.spacing.unit(p.knobwidth);
+    if (p.width) {
+      return p.theme.spacing.unit(p.width / 2);
     }
-    return p.theme.spacing.unit(KNOB_WIDTH);
+    return p.theme.spacing.unit(TRACK_WIDTH / 2);
   }}px;
-`;
-
-const StyledKnobText = styled(Typography)`
-  line-height: 1.5;
 `;
 
 export const SwitchToggle: React.FC<SwitchToggleProps> = ({
@@ -117,13 +112,13 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
   checkedInitially = false,
   checked: checkedControlled,
   readOnly,
-  knobwidth,
-  trackwidth,
+  width,
 }) => {
   const isControlled = isBoolean(checkedControlled);
   const titleNode = isElement(label) ? label : <Typography type="secondary">{label}</Typography>;
   const [checkedInternal, setCheckedInternal] = useState(checkedInitially);
   const checked = isControlled ? checkedControlled : checkedInternal;
+  const knobwidth = width ? width / TRACK_TO_KNOW_RATIO : KNOB_WIDTH;
 
   const internalClickHandler = (e: React.MouseEvent) => {
     const nextCheckedState = !checked;
@@ -154,23 +149,22 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
             disabled={disabled}
             aria-readonly={readOnly}
             knobwidth={knobwidth}
-            trackwidth={trackwidth}
+            width={width}
           >
             <ButtonContent>
-              <Knob knobwidth={knobwidth}>
-                <Flexbox
-                  container
-                  item
-                  justifyContent="center"
-                  alignItems="center"
-                  alignContent="center"
-                >
-                  <StyledKnobText type="secondary" weight="bold" color={(p) => p.color.cta}>
-                    {checked ? valueRight : valueLeft}
-                  </StyledKnobText>
-                </Flexbox>
+              <Knob
+                knobwidth={knobwidth}
+                container
+                item
+                justifyContent="center"
+                alignItems="center"
+                alignContent="center"
+              >
+                <Typography type="secondary" weight="bold" color={(p) => p.color.cta}>
+                  {checked ? valueRight : valueLeft}
+                </Typography>
               </Knob>
-              <Track trackwidth={trackwidth}>
+              <Track width={width}>
                 <Flexbox
                   container
                   item
@@ -179,15 +173,15 @@ export const SwitchToggle: React.FC<SwitchToggleProps> = ({
                   alignContent="center"
                 >
                   <StyledTypography
-                    type="primary"
-                    knobwidth={knobwidth}
+                    type="secondary"
+                    width={width}
                     color={(p) => p.color.disabledText}
                   >
                     {valueLeft}
                   </StyledTypography>
                   <StyledTypography
-                    type="primary"
-                    knobwidth={knobwidth}
+                    type="secondary"
+                    width={width}
                     color={(p) => p.color.disabledText}
                   >
                     {valueRight}

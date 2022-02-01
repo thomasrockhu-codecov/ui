@@ -13,7 +13,11 @@ export default {
 
 const onChange = action('on change triggered');
 
-const Template: Story<Props> = (args) => <QuickFilter {...args} />;
+const Template: Story<Props> = (args) => (
+  <div style={{ padding: '10px', backgroundColor: 'white' }}>
+    <QuickFilter {...args} />
+  </div>
+);
 
 export const OnlyLabel = Template.bind({});
 OnlyLabel.args = {
@@ -23,6 +27,18 @@ OnlyLabel.args = {
 export const OnlyIcon = Template.bind({});
 OnlyIcon.args = {
   icon: <Icon.Money16 />,
+};
+
+export const BothIconAndLabel = Template.bind({});
+BothIconAndLabel.args = {
+  icon: <Icon.MonthlySavings16 />,
+  label: 'Default',
+};
+
+export const AnotherIconAndLabel = Template.bind({});
+AnotherIconAndLabel.args = {
+  icon: <Icon.Money16 />,
+  label: 'Another label yqPomå',
 };
 
 export const WithSelectedInitially = Template.bind({});

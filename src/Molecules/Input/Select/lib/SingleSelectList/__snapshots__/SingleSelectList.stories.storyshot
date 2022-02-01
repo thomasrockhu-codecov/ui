@@ -82,7 +82,8 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList Item disabled 
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B pointer-events:none;
+  color: #A0A09B;
+  pointer-events: none;
 }
 
 .c1:hover {
@@ -394,7 +395,8 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B pointer-events:none;
+  color: #A0A09B;
+  pointer-events: none;
 }
 
 .c16:hover {
@@ -480,39 +482,39 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c4:before {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
 .c4:after {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -531,39 +533,39 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c18:before {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
 .c18:after {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -582,9 +584,9 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+  -ms-transform: translateY(11px);
+  transform: translateY(11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -597,10 +599,10 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: 100%;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #BCBCB6;
 }
 
@@ -611,10 +613,10 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-bottom-color: #FFFFFF;
 }
 
@@ -633,39 +635,39 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c20:before {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
 .c20:after {
-  right: 20px;
+  right: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 
@@ -684,39 +686,39 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
 }
 
 .c21:before {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
 .c21:after {
-  left: 20px;
+  left: 12px;
   position: absolute;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 
@@ -735,9 +737,9 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
   color: #282823;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-11px);
+  -ms-transform: translateY(-11px);
+  transform: translateY(-11px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -750,10 +752,10 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: 100%;
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #BCBCB6;
 }
 
@@ -764,10 +766,10 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   height: 0;
   content: '';
   speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   top: calc(100% - 1px);
-  border-top: 6px solid;
+  border-top: 8px solid;
   border-top-color: #FFFFFF;
 }
 

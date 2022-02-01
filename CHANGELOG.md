@@ -1,3 +1,48 @@
+## [10.4.2](https://github.com/nordnet/ui/compare/v10.4.1...v10.4.2) (2022-02-01)
+
+
+### Bug Fixes
+
+* adjust colors ([a723151](https://github.com/nordnet/ui/commit/a723151))
+
+## [10.4.1](https://github.com/nordnet/ui/compare/v10.4.0...v10.4.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* should be some padding on list afterall ([5896c67](https://github.com/nordnet/ui/commit/5896c67))
+* should be some padding on list afterall ([4ee00f4](https://github.com/nordnet/ui/commit/4ee00f4))
+
+# [10.4.0](https://github.com/nordnet/ui/compare/v10.3.5...v10.4.0) (2022-01-31)
+
+
+### Bug Fixes
+
+* adjust input select arrow to updated designs ([1992114](https://github.com/nordnet/ui/commit/1992114))
+* more adjustments to show border properly ([edb0a8d](https://github.com/nordnet/ui/commit/edb0a8d))
+* old bug that prevented item disbled ([09dd69a](https://github.com/nordnet/ui/commit/09dd69a))
+* use grid instead of bugged flex ([56ffc2f](https://github.com/nordnet/ui/commit/56ffc2f))
+
+
+### Features
+
+* add columns mode to input select ([fa053f4](https://github.com/nordnet/ui/commit/fa053f4))
+
+## [10.3.5](https://github.com/nordnet/ui/compare/v10.3.4...v10.3.5) (2022-01-28)
+
+
+### Bug Fixes
+
+* 🐛 adjusted styling and size of the SwitchToggle ([9b42c49](https://github.com/nordnet/ui/commit/9b42c49))
+* 🐛 padding to combat typography not aligning properly ([063663d](https://github.com/nordnet/ui/commit/063663d))
+
+## [10.3.4](https://github.com/nordnet/ui/compare/v10.3.3...v10.3.4) (2022-01-26)
+
+
+### Bug Fixes
+
+* update quickfilter mobile and style fix ([95c7a5d](https://github.com/nordnet/ui/commit/95c7a5d))
+
 ## [10.3.3](https://github.com/nordnet/ui/compare/v10.3.2...v10.3.3) (2022-01-24)
 
 

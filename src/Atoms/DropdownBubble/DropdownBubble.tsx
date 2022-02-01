@@ -1,19 +1,19 @@
 import styled, { css } from 'styled-components';
 import { Props } from './DropdownBubble.types';
 
-const TRIANGLE_SIZE = 6;
-const TOP_OFFSET = 10;
+const TRIANGLE_SIZE = 8;
+const TOP_OFFSET = 11;
 
 const leftAndRightCss = css<Props>`
   ${(p) => {
     switch (p.position) {
       case 'left':
-        return 'left: 20px;';
+        return 'left: 12px;';
       case 'center':
         return 'left: 50%;';
       case 'right':
       default:
-        return 'right: 20px;';
+        return 'right: 12px;';
     }
   }}
 `;

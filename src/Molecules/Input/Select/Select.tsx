@@ -321,6 +321,8 @@ const Select = (props: Props) => {
           {isOpen && !isFullScreenMode && (
             <ListWrapperComponent
               component={List}
+              itemsPerColumn={props.itemsPerColumn}
+              columnWidth={props.columnWidth}
               triggerElement={selectWrapperRef}
               noFormField={props.noFormField}
               onKeyDown={handleKeyDown}
