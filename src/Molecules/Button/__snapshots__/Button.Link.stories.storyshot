@@ -82,7 +82,7 @@ exports[`Storyshots Molecules / Button Disabled link looking like a button 1`] =
 >
   <span>
     <span
-      className="c1"
+      className="c1 "
     >
       Button
     </span>
@@ -152,7 +152,7 @@ exports[`Storyshots Molecules / Button External link looking like a button 1`] =
 >
   <span>
     <span
-      className="c1"
+      className="c1 "
     >
       Button
     </span>
@@ -353,7 +353,7 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
       >
         <span>
           <span
-            className="c5"
+            className="c5 "
           >
             To Route1
           </span>
@@ -382,7 +382,7 @@ exports[`Storyshots Molecules / Button Link looking like a button 1`] = `
       >
         <span>
           <span
-            className="c5"
+            className="c5 "
           >
             To Route2
           </span>
@@ -453,7 +453,7 @@ exports[`Storyshots Molecules / Button Link looking like a button that is full w
 >
   <span>
     <span
-      className="c1"
+      className="c1 "
     >
       Button
     </span>
@@ -522,7 +522,7 @@ exports[`Storyshots Molecules / Button Link looking like a button with rel as no
 >
   <span>
     <span
-      className="c1"
+      className="c1 "
     >
       Button
     </span>
@@ -750,7 +750,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="c5 "
             >
               Button
             </span>
@@ -779,7 +779,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="c5 "
             >
               Button
             </span>
@@ -1034,7 +1034,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="c5 "
             >
               Button
             </span>
@@ -1063,7 +1063,7 @@ Array [
         >
           <span>
             <span
-              className="c5"
+              className="c5 "
             >
               Button
             </span>
@@ -1230,7 +1230,7 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
     >
       <span>
         <span
-          className="c3"
+          className="c3 "
         >
           Submit
         </span>
@@ -1247,7 +1247,7 @@ exports[`Storyshots Molecules / Button Links looking like buttons composed in a 
     >
       <span>
         <span
-          className="c3"
+          className="c3 "
         >
           Reset
         </span>
