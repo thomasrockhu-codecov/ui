@@ -1,3 +1,10 @@
+## [10.4.2](https://github.com/nordnet/ui/compare/v10.4.1...v10.4.2) (2022-02-01)
+
+
+### Bug Fixes
+
+* adjust colors ([a723151](https://github.com/nordnet/ui/commit/a723151))
+
 ## [10.4.1](https://github.com/nordnet/ui/compare/v10.4.0...v10.4.1) (2022-01-31)
 
 
