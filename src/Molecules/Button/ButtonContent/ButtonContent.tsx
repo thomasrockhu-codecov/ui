@@ -28,12 +28,18 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
-const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
+const IconWrapper = styled.span<{
+  $iconPlacement: 'left' | 'right';
+  $size: ButtonContentProps['size'];
+}>`
   display: block;
+  align-self: center;
 `;
 
-const StyledTypography = styled(Typography)`
-  display: block;
+const StyledTypography = styled(Typography)<{
+  $size: ButtonContentProps['size'];
+}>`
+  ${(p) => (p.$size === 's' ? 'display: block;' : '')}
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
@@ -64,28 +70,33 @@ export const ButtonContent: ButtonContentComponent = (props) => {
 
   const content = (
     <>
-      {size === 's' ? (
-        <Flexbox container gutter={1} justifyContent="space-between" alignItems="center">
-          {icon && iconPlacement === 'left' && (
-            <Flexbox item>
-              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
-            </Flexbox>
+      {icon ? (
+        <Flexbox
+          container
+          gutter={variant === 'neutral' && size === 's' ? 1 : 2}
+          justifyContent="space-between"
+          alignItems="baseline"
+        >
+          {iconPlacement === 'left' && (
+            <IconWrapper $iconPlacement={iconPlacement} $size={size}>
+              {icon}
+            </IconWrapper>
           )}
           <Flexbox item>
-            <StyledTypography type={type} color="inherit" weight="bold">
+            <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
               {children}
             </StyledTypography>
           </Flexbox>
-          {icon && iconPlacement === 'right' && (
-            <Flexbox item>
-              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
-            </Flexbox>
+          {iconPlacement === 'right' && (
+            <IconWrapper $iconPlacement={iconPlacement} $size={size}>
+              {icon}
+            </IconWrapper>
           )}
         </Flexbox>
       ) : (
-        <Typography type={type} color="inherit" weight="bold">
+        <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
           {children}
-        </Typography>
+        </StyledTypography>
       )}
     </>
   );
