@@ -300,9 +300,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     popularBadgeBackground: rawColor.pink100,
 
-    joinSharevilleIllustration: rawColor.green600,
-    joinSharevilleBadge: rawColor.green200,
-    joinSharevilleBanner: rawColor.green100,
+    joinSharevilleIllustration: rawColor.green200,
+    joinSharevilleBadge: rawColor.green800,
+    joinSharevilleBanner: rawColor.green900,
 
     quickFilterSelectedBackground: rawColor.blue800,
     quickFilterBackground: rawColor.gray900,
