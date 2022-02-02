@@ -14,6 +14,7 @@ const Wrapper: WrapperComponent = styled.span<WrapperProps>`
   text-align: center;
   box-sizing: border-box;
   background-color: ${(p) => p.$badgeColor(p.theme)};
+  flex-shrink: 0;
   ${(p) => (p.$badgeSize ? `height: ${p.theme.spacing.unit(p.$badgeSize)}px;` : '')}
   ${(p) => (p.$applyWidth && p.$badgeSize ? `width: ${p.theme.spacing.unit(p.$badgeSize)}px;` : '')}
   ${(p) =>

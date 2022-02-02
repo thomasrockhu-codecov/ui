@@ -31,6 +31,7 @@ import shareville from './shareville';
 import stock from './stock';
 import sustainable from './sustainable';
 import sustainableFill from './sustainableFill';
+import tag from './tag';
 import tax from './tax';
 import villa from './villa';
 
@@ -68,6 +69,7 @@ export default {
   ...stock,
   ...sustainable,
   ...sustainableFill,
+  ...tag,
   ...tax,
   ...villa,
 };
