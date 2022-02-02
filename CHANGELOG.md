@@ -1,3 +1,10 @@
+## [10.5.1](https://github.com/nordnet/ui/compare/v10.5.0...v10.5.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* 🐛 added 1px y padding to mitigate accordion outline gone ([5f2230e](https://github.com/nordnet/ui/commit/5f2230e))
+
 # [10.5.0](https://github.com/nordnet/ui/compare/v10.4.2...v10.5.0) (2022-02-02)
 
 
