@@ -212,7 +212,7 @@ Array [
               type="button"
             >
               <span
-                className="c8 "
+                className="c8"
               >
                 <span
                   className="c9"
@@ -232,7 +232,7 @@ Array [
               type="button"
             >
               <span
-                className="c8 "
+                className="c8"
               >
                 <span
                   className="c9"
@@ -261,7 +261,7 @@ Array [
               type="button"
             >
               <span
-                className="c8 "
+                className="c8"
               >
                 <span
                   className="c9"
@@ -279,7 +279,7 @@ Array [
           type="button"
         >
           <span
-            className="c8 "
+            className="c8"
           >
             <svg
               aria-hidden="true"
@@ -330,11 +330,11 @@ Array [
       Primary
     </span>
   </div>,
-  .c10 {
+  .c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -352,16 +352,16 @@ Array [
   margin-right: -4px;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c8 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -373,7 +373,7 @@ Array [
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -400,7 +400,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -409,15 +409,10 @@ Array [
   line-height: 1.5;
 }
 
-.c8 {
-  display: block;
+.c7 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c6 {
-  display: block;
 }
 
 .c4 {
@@ -490,7 +485,7 @@ Array [
   background-color: hsl(223.5,100%,48%);
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -520,29 +515,29 @@ Array [
   cursor: pointer;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11::before {
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -553,15 +548,15 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   background-color: hsl(223.5,100%,54%);
 }
 
-.c11:active {
+.c10:active {
   background-color: hsl(223.5,100%,48%);
 }
 
-.c13 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -591,29 +586,29 @@ Array [
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13::before {
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -624,11 +619,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: hsl(223.5,100%,54%);
 }
 
-.c13:active {
+.c12:active {
   background-color: hsl(223.5,100%,48%);
 }
 
@@ -719,11 +714,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -736,14 +731,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -756,15 +751,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -779,23 +774,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -808,7 +803,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -823,11 +818,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -840,14 +835,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -866,15 +861,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -889,23 +884,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -924,7 +919,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -939,11 +934,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -956,14 +951,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -978,15 +973,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1001,23 +996,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1032,7 +1027,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1047,11 +1042,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -1064,14 +1059,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1094,15 +1089,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1117,23 +1112,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1156,7 +1151,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1171,11 +1166,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -1188,14 +1183,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1208,15 +1203,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1231,23 +1226,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1260,7 +1255,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1286,13 +1281,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -1302,20 +1297,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1328,15 +1323,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1345,29 +1340,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1380,7 +1375,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1390,13 +1385,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -1406,20 +1401,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1438,15 +1433,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1455,29 +1450,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1496,7 +1491,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1506,13 +1501,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -1522,20 +1517,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1550,15 +1545,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1567,29 +1562,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1604,7 +1599,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1614,13 +1609,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -1630,20 +1625,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1666,15 +1661,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1683,29 +1678,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1728,7 +1723,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1738,13 +1733,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -1754,20 +1749,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1780,15 +1775,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1797,29 +1792,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -1832,7 +1827,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1858,13 +1853,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -1874,20 +1869,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -1900,15 +1895,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Add24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -1917,29 +1912,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Add24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -1952,7 +1947,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -1962,13 +1957,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -1978,20 +1973,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2010,15 +2005,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircle24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -2027,29 +2022,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircle24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2068,7 +2063,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -2078,13 +2073,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -2094,20 +2089,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2122,15 +2117,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircleFill24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -2139,29 +2134,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircleFill24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2176,7 +2171,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -2186,13 +2181,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -2202,20 +2197,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2238,15 +2233,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Archive24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -2255,29 +2250,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Archive24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -2300,7 +2295,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -2310,13 +2305,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -2326,20 +2321,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -2352,15 +2347,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -2369,29 +2364,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -2404,7 +2399,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -2456,11 +2451,11 @@ Array [
       Secondary
     </span>
   </div>,
-  .c10 {
+  .c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2478,16 +2473,16 @@ Array [
   margin-right: -4px;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c8 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2499,7 +2494,7 @@ Array [
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2526,7 +2521,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2535,15 +2530,10 @@ Array [
   line-height: 1.5;
 }
 
-.c8 {
-  display: block;
+.c7 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c6 {
-  display: block;
 }
 
 .c4 {
@@ -2624,7 +2614,7 @@ Array [
   border-color: hsl(223.5,100%,42%);
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2654,29 +2644,29 @@ Array [
   cursor: pointer;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11::before {
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -2687,23 +2677,23 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c11:hover {
+.c10:hover {
   color: hsl(223.5,100%,48%);
 }
 
-.c11:hover::before {
+.c10:hover::before {
   border-color: hsl(223.5,100%,48%);
 }
 
-.c11:active {
+.c10:active {
   color: hsl(223.5,100%,42%);
 }
 
-.c11:active::before {
+.c10:active::before {
   border-color: hsl(223.5,100%,42%);
 }
 
-.c13 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2733,29 +2723,29 @@ Array [
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13::before {
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -2766,19 +2756,19 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   color: hsl(223.5,100%,48%);
 }
 
-.c13:hover::before {
+.c12:hover::before {
   border-color: hsl(223.5,100%,48%);
 }
 
-.c13:active {
+.c12:active {
   color: hsl(223.5,100%,42%);
 }
 
-.c13:active::before {
+.c12:active::before {
   border-color: hsl(223.5,100%,42%);
 }
 
@@ -2869,11 +2859,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -2886,14 +2876,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -2906,15 +2896,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -2929,23 +2919,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -2958,7 +2948,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -2973,11 +2963,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -2990,14 +2980,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3016,15 +3006,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3039,23 +3029,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3074,7 +3064,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3089,11 +3079,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -3106,14 +3096,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3128,15 +3118,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3151,23 +3141,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3182,7 +3172,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3197,11 +3187,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -3214,14 +3204,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3244,15 +3234,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3267,23 +3257,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3306,7 +3296,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3321,11 +3311,11 @@ Array [
               type="button"
             >
               <span>
-                <span
-                  className="c5 c6"
+                <div
+                  className="c5"
                 >
                   Small
-                </span>
+                </div>
               </span>
             </button>
              
@@ -3338,14 +3328,14 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3358,15 +3348,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3381,23 +3371,23 @@ Array [
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c5 c6"
+                    <div
+                      className="c5"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3410,7 +3400,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3436,13 +3426,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -3452,20 +3442,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3478,15 +3468,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3495,29 +3485,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Add16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3530,7 +3520,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3540,13 +3530,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -3556,20 +3546,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3588,15 +3578,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3605,29 +3595,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircle16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3646,7 +3636,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3656,13 +3646,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -3672,20 +3662,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3700,15 +3690,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3717,29 +3707,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       AddCircleFill16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3754,7 +3744,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3764,13 +3754,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -3780,20 +3770,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3816,15 +3806,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3833,29 +3823,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       Archive16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3878,7 +3868,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -3888,13 +3878,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c12 "
+                  className="c11"
                 >
                   Medium
                 </span>
@@ -3904,20 +3894,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3930,15 +3920,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -3947,29 +3937,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c11"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c12 "
+                    <div
+                      className="c11"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -3982,7 +3972,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4008,13 +3998,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -4024,20 +4014,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4050,15 +4040,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Add24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -4067,29 +4057,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Add24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4102,7 +4092,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4112,13 +4102,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -4128,20 +4118,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4160,15 +4150,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircle24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -4177,29 +4167,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircle24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4218,7 +4208,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4228,13 +4218,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -4244,20 +4234,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4272,15 +4262,15 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircleFill24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -4289,29 +4279,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       AddCircleFill24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4326,7 +4316,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4336,13 +4326,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -4352,20 +4342,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4388,15 +4378,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Archive24
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -4405,29 +4395,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       Archive24
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={24}
                       preserveAspectRatio="xMidYMid meet"
@@ -4450,7 +4440,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4460,13 +4450,13 @@ Array [
         <p>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <span
-                  className="c14 "
+                  className="c13"
                 >
                   Large
                 </span>
@@ -4476,20 +4466,20 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -4502,15 +4492,15 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
                 </div>
               </span>
@@ -4519,29 +4509,29 @@ Array [
           </span>
           <span>
             <button
-              className="NormalizedButton__Button-sc-ey7f5x-0 c13"
+              className="NormalizedButton__Button-sc-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
               <span>
                 <div
-                  className="c7"
+                  className="c6"
                 >
                   <div
-                    className="c10"
+                    className="c9"
                   >
-                    <span
-                      className="c14 "
+                    <div
+                      className="c13"
                     >
                       ArrowDown16
-                    </span>
+                    </div>
                   </div>
-                  <span
-                    className="c8"
+                  <div
+                    className="c7"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c8"
                       focusable="false"
                       height={16}
                       preserveAspectRatio="xMidYMid meet"
@@ -4554,7 +4544,7 @@ Array [
                         fill="currentColor"
                       />
                     </svg>
-                  </span>
+                  </div>
                 </div>
               </span>
             </button>
@@ -4606,11 +4596,11 @@ Array [
       Neutral
     </span>
   </div>,
-  .c10 {
+  .c9 {
   box-sizing: border-box;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4628,16 +4618,16 @@ Array [
   margin-right: -4px;
 }
 
-.c12 > * {
+.c11 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c12 > *:not(:first-child) {
+.c11 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4655,16 +4645,16 @@ Array [
   margin-right: -2px;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c8 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4676,7 +4666,7 @@ Array [
   display: block;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4703,7 +4693,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4712,15 +4702,10 @@ Array [
   line-height: 1.5;
 }
 
-.c8 {
-  display: block;
+.c7 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c6 {
-  display: block;
 }
 
 .c4 {
@@ -4860,11 +4845,11 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              <span
-                className="c5 c6"
+              <div
+                className="c5"
               >
                 Small
-              </span>
+              </div>
             </button>
              
           </span>
@@ -4875,14 +4860,14 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -4895,15 +4880,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     Add16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -4916,23 +4901,23 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     Add16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -4945,7 +4930,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -4958,11 +4943,11 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              <span
-                className="c5 c6"
+              <div
+                className="c5"
               >
                 Small
-              </span>
+              </div>
             </button>
              
           </span>
@@ -4973,14 +4958,14 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -4999,15 +4984,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     AddCircle16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5020,23 +5005,23 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     AddCircle16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5055,7 +5040,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5068,11 +5053,11 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              <span
-                className="c5 c6"
+              <div
+                className="c5"
               >
                 Small
-              </span>
+              </div>
             </button>
              
           </span>
@@ -5083,14 +5068,14 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5105,15 +5090,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     AddCircleFill16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5126,23 +5111,23 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     AddCircleFill16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5157,7 +5142,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5170,11 +5155,11 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              <span
-                className="c5 c6"
+              <div
+                className="c5"
               >
                 Small
-              </span>
+              </div>
             </button>
              
           </span>
@@ -5185,14 +5170,14 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5215,15 +5200,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     Archive16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5236,23 +5221,23 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     Archive16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5275,7 +5260,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5288,11 +5273,11 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              <span
-                className="c5 c6"
+              <div
+                className="c5"
               >
                 Small
-              </span>
+              </div>
             </button>
              
           </span>
@@ -5303,14 +5288,14 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5323,15 +5308,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5344,23 +5329,23 @@ Array [
               type="button"
             >
               <div
-                className="c7"
+                className="c6"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c5 c6"
+                  <div
+                    className="c5"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5373,7 +5358,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5403,7 +5388,7 @@ Array [
               type="button"
             >
               <span
-                className="c11 "
+                className="c10"
               >
                 Medium
               </span>
@@ -5417,14 +5402,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5437,15 +5422,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     Add16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5458,23 +5443,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     Add16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5487,7 +5472,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5501,7 +5486,7 @@ Array [
               type="button"
             >
               <span
-                className="c11 "
+                className="c10"
               >
                 Medium
               </span>
@@ -5515,14 +5500,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5541,15 +5526,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     AddCircle16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5562,23 +5547,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     AddCircle16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5597,7 +5582,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5611,7 +5596,7 @@ Array [
               type="button"
             >
               <span
-                className="c11 "
+                className="c10"
               >
                 Medium
               </span>
@@ -5625,14 +5610,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5647,15 +5632,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     AddCircleFill16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5668,23 +5653,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     AddCircleFill16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5699,7 +5684,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5713,7 +5698,7 @@ Array [
               type="button"
             >
               <span
-                className="c11 "
+                className="c10"
               >
                 Medium
               </span>
@@ -5727,14 +5712,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5757,15 +5742,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     Archive16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5778,23 +5763,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     Archive16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5817,7 +5802,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5831,7 +5816,7 @@ Array [
               type="button"
             >
               <span
-                className="c11 "
+                className="c10"
               >
                 Medium
               </span>
@@ -5845,14 +5830,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5865,15 +5850,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -5886,23 +5871,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c11 "
+                  <div
+                    className="c10"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -5915,7 +5900,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -5945,7 +5930,7 @@ Array [
               type="button"
             >
               <span
-                className="c13 "
+                className="c12"
               >
                 Large
               </span>
@@ -5959,14 +5944,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -5979,15 +5964,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     Add24
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -6000,23 +5985,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     Add24
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6029,7 +6014,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -6043,7 +6028,7 @@ Array [
               type="button"
             >
               <span
-                className="c13 "
+                className="c12"
               >
                 Large
               </span>
@@ -6057,14 +6042,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6083,15 +6068,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     AddCircle24
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -6104,23 +6089,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     AddCircle24
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6139,7 +6124,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -6153,7 +6138,7 @@ Array [
               type="button"
             >
               <span
-                className="c13 "
+                className="c12"
               >
                 Large
               </span>
@@ -6167,14 +6152,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6189,15 +6174,15 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     AddCircleFill24
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -6210,23 +6195,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     AddCircleFill24
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6241,7 +6226,7 @@ Array [
                       fillRule="evenodd"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -6255,7 +6240,7 @@ Array [
               type="button"
             >
               <span
-                className="c13 "
+                className="c12"
               >
                 Large
               </span>
@@ -6269,14 +6254,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6299,15 +6284,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     Archive24
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -6320,23 +6305,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     Archive24
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={24}
                     preserveAspectRatio="xMidYMid meet"
@@ -6359,7 +6344,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
@@ -6373,7 +6358,7 @@ Array [
               type="button"
             >
               <span
-                className="c13 "
+                className="c12"
               >
                 Large
               </span>
@@ -6387,14 +6372,14 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -6407,15 +6392,15 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
               </div>
             </button>
@@ -6428,23 +6413,23 @@ Array [
               type="button"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 <div
-                  className="c10"
+                  className="c9"
                 >
-                  <span
-                    className="c13 "
+                  <div
+                    className="c12"
                   >
                     ArrowDown16
-                  </span>
+                  </div>
                 </div>
-                <span
-                  className="c8"
+                <div
+                  className="c7"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c9"
+                    className="c8"
                     focusable="false"
                     height={16}
                     preserveAspectRatio="xMidYMid meet"
@@ -6457,7 +6442,7 @@ Array [
                       fill="currentColor"
                     />
                   </svg>
-                </span>
+                </div>
               </div>
             </button>
              
