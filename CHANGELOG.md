@@ -1,3 +1,20 @@
+# [10.5.0](https://github.com/nordnet/ui/compare/v10.4.2...v10.5.0) (2022-02-02)
+
+
+### Bug Fixes
+
+* correct tag32 display name ([601291f](https://github.com/nordnet/ui/commit/601291f))
+* fix warning16 ([50656d5](https://github.com/nordnet/ui/commit/50656d5))
+
+
+### Features
+
+* add new icons ([cb484ac](https://github.com/nordnet/ui/commit/cb484ac))
+* add relative container ([2a15ad0](https://github.com/nordnet/ui/commit/2a15ad0))
+* refactor progess bar ([be172c1](https://github.com/nordnet/ui/commit/be172c1))
+* update story ([1c10c44](https://github.com/nordnet/ui/commit/1c10c44))
+* update storyshot ([a397c0b](https://github.com/nordnet/ui/commit/a397c0b))
+
 ## [10.4.2](https://github.com/nordnet/ui/compare/v10.4.1...v10.4.2) (2022-02-01)
 
 
