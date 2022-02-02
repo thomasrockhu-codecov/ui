@@ -22,6 +22,6 @@ const Tag32: React.FC<IconProps> = (props) => {
   );
 };
 
-Tag32.displayName = 'Icon.Tax';
+Tag32.displayName = 'Icon.Tag';
 
 export default Tag32;
