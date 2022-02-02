@@ -28,18 +28,8 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
-const IconWrapper = styled.span<{
-  $iconPlacement: 'left' | 'right';
-  $size: ButtonContentProps['size'];
-}>`
-  display: block;
+const IconWrapper = styled.div`
   align-self: center;
-`;
-
-const StyledTypography = styled(Typography)<{
-  $size: ButtonContentProps['size'];
-}>`
-  ${(p) => (p.$size === 's' ? 'display: block;' : '')}
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
@@ -77,26 +67,23 @@ export const ButtonContent: ButtonContentComponent = (props) => {
           justifyContent="space-between"
           alignItems="baseline"
         >
-          {iconPlacement === 'left' && (
-            <IconWrapper $iconPlacement={iconPlacement} $size={size}>
-              {icon}
-            </IconWrapper>
-          )}
+          {iconPlacement === 'left' && <IconWrapper>{icon}</IconWrapper>}
           <Flexbox item>
-            <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
+            <Typography type={type} color="inherit" weight="bold" as="div">
               {children}
-            </StyledTypography>
+            </Typography>
           </Flexbox>
-          {iconPlacement === 'right' && (
-            <IconWrapper $iconPlacement={iconPlacement} $size={size}>
-              {icon}
-            </IconWrapper>
-          )}
+          {iconPlacement === 'right' && <IconWrapper>{icon}</IconWrapper>}
         </Flexbox>
       ) : (
-        <StyledTypography type={type} color="inherit" weight="bold" $size={size}>
+        <Typography
+          type={type}
+          color="inherit"
+          weight="bold"
+          {...(size === 's' ? { as: 'div' } : {})}
+        >
           {children}
-        </StyledTypography>
+        </Typography>
       )}
     </>
   );
