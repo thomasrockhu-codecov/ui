@@ -41,11 +41,11 @@ const StyledDiv = styled.div.withConfig({
   ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground}`};
   ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground}`};
 
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
     ${(p) => p.hasLabel && `padding: 1px ${p.theme.spacing.unit(3)}px`};
     ${(p) => p.hasLabel && `height: ${p.theme.spacing.unit(6)}px`};
   }
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
     ${(p) => p.hasLabel && `padding: 5px ${p.theme.spacing.unit(3)}px`};
   }
   ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px`};
