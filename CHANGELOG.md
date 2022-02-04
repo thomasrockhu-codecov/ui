@@ -1,3 +1,10 @@
+## [10.5.2](https://github.com/nordnet/ui/compare/v10.5.1...v10.5.2) (2022-02-04)
+
+
+### Bug Fixes
+
+* change mobile mode quickfilter to include portrait tablet ([cddb4a8](https://github.com/nordnet/ui/commit/cddb4a8))
+
 ## [10.5.1](https://github.com/nordnet/ui/compare/v10.5.0...v10.5.1) (2022-02-02)
 
 
