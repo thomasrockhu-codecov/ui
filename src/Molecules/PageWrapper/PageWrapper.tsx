@@ -27,12 +27,20 @@ const Inner = styled.div`
   }
 `;
 
-export const PageWrapper: React.FC<Props> = ({ children, background, className }) => {
+const components = { Inner };
+
+export const PageWrapper: React.FC<Props> & { components: typeof components } = ({
+  children,
+  background,
+  className,
+}) => {
   return (
     <Outer background={background} className={className}>
       <Inner>{children}</Inner>
     </Outer>
   );
 };
+
+PageWrapper.components = components;
 
 PageWrapper.displayName = 'PageWrapper';
