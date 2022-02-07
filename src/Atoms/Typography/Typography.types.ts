@@ -3,6 +3,7 @@ import { Property } from 'csstype';
 import { Theme } from '../../theme/theme.types';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
+export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color' | 'children'>;
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Types =
@@ -59,7 +60,7 @@ type WhiteSpace =
   | 'revert'
   | 'unset';
 
-export type Props = {
+export type Props = HtmlProps & {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   color?: 'inherit' | ColorFn;

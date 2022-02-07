@@ -1,3 +1,5 @@
+export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color' | 'children'>;
+
 export type ItemProps = {
   to: string;
   fullServerRedirect?: boolean;
@@ -7,17 +9,17 @@ export type ItemProps = {
   className?: string;
   active?: boolean;
 };
+export type ItemComponent = React.FC<ItemProps>;
 
 export type ContainerProps = {
   height?: number;
   className?: string;
+  children?: React.ReactNode;
+  scrollOptions?: { active: boolean; scrollBarHidden: boolean };
 };
-
-export type ItemComponent = React.FC<ItemProps>;
 export type Component = React.FC<ContainerProps> & { Tab: ItemComponent };
 
-export type TitleComponent = React.FC<TitleProps>;
-export type TitleProps = {
+export type TitleProps = HtmlProps & {
   active: boolean;
   className?: string;
   onClick?: React.MouseEventHandler;
@@ -28,3 +30,4 @@ export type TitleProps = {
   height?: number;
   fullServerRedirect?: boolean;
 };
+export type TitleComponent = React.ForwardRefExoticComponent<TitleProps>;

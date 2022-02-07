@@ -32,23 +32,58 @@ export type ContentProps = {
 const Content = ({ height, hideFirst }: ContentProps) => {
   const route1Match = useRouteMatch('/route1');
   const route2Match = useRouteMatch('/route2');
+  const route3Match = useRouteMatch('/route3');
+  const route4Match = useRouteMatch('/route4');
+  const route5Match = useRouteMatch('/route5');
+  const route6Match = useRouteMatch('/route6');
+  const route7Match = useRouteMatch('/route7');
   return (
     <Flexbox container direction="column" gutter={0}>
       <Flexbox item>
-        <TabsNav height={height}>
+        <TabsNav height={height} scrollOptions={{ active: true, scrollBarHidden: true }}>
           {!hideFirst && (
             <TabsNav.Tab
               title="Link to /route1"
               to="/route1"
-              onTitleClick={action('Clicked title1')}
+              onTitleClick={(event) => console.log(event, 'hej')}
               active={route1Match}
             />
           )}
           <TabsNav.Tab
-            title={<div>Link to /route2</div>}
+            title={<div>Link to Noway</div>}
             to="/route2"
-            onTitleClick={action('Clicked title2')}
+            onTitleClick={(event) => console.log(event, 'hej')}
             active={route2Match}
+          />
+          <TabsNav.Tab
+            title={<div>Link to /route2</div>}
+            to="/route3"
+            onTitleClick={action('Clicked title2')}
+            active={route3Match}
+          />
+          <TabsNav.Tab
+            title={<div>Link to /route3</div>}
+            to="/route4"
+            onTitleClick={action('Clicked title2')}
+            active={route4Match}
+          />
+          <TabsNav.Tab
+            title={<div>Link to /route4</div>}
+            to="/route5"
+            onTitleClick={action('Clicked title2')}
+            active={route5Match}
+          />
+          <TabsNav.Tab
+            title={<div>Link to /route5</div>}
+            to="/route6"
+            onTitleClick={action('Clicked title2')}
+            active={route6Match}
+          />
+          <TabsNav.Tab
+            title={<div>Link to /route6</div>}
+            to="/route7"
+            onTitleClick={action('Clicked title2')}
+            active={route7Match}
           />
         </TabsNav>
       </Flexbox>
