@@ -42,7 +42,7 @@ const StyledFlexbox = styled(Flexbox)<{
   overflow: auto;
   white-space: nowrap;
   ${
-    isNumber(p.$intersectionRightRatio) && p.$intersectionRightRatio !== 1
+    isNumber(p.$intersectionRightRatio) && p.$intersectionRightRatio < 0.9
       ? `
   &:before {
     content: '';
@@ -57,9 +57,9 @@ const StyledFlexbox = styled(Flexbox)<{
   }
   `
       : ``
-  }
+  };
   ${
-    isNumber(p.$intersectionLeftRatio) && p.$intersectionLeftRatio !== 1
+    isNumber(p.$intersectionLeftRatio) && p.$intersectionLeftRatio < 0.9
       ? `
   &:after {
     content: '';
@@ -74,19 +74,17 @@ const StyledFlexbox = styled(Flexbox)<{
   }
   `
       : ``
-  }
-  `
-      : ``};
-
-  ${(p) =>
+  };
+  ${
     p.$scrollOptions.scrollBarHidden
-      ? `
-    ::-webkit-scrollbar {
+      ? ` ::-webkit-scrollbar {
     display: none;
   }
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-`
+  scrollbar-width: none; /* Firefox */`
+      : ``
+  };
+  `
       : ``};
 `;
 

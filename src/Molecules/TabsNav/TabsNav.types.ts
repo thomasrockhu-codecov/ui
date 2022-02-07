@@ -1,4 +1,4 @@
-export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color' | 'children'>;
+export type HtmlProps = Omit<React.HTMLProps<HTMLSpanElement>, 'children'>;
 
 export type ItemProps = {
   to: string;
