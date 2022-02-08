@@ -9,6 +9,12 @@ import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { useLink } from '../../common/Links';
 import { LinkProps } from '../../common/Links/types';
 
+const DEFAULT_SCROLL_OPTIONS = {
+  active: false,
+  scrollBarHidden: false,
+  scrollIntoViewOptions: { behavior: 'smooth', inline: 'center', block: 'end' },
+};
+
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
@@ -67,7 +73,7 @@ export const TabsNav: Component = ({
   children,
   height = 11,
   className,
-  scrollOptions = { active: false, scrollBarHidden: false },
+  scrollOptions = DEFAULT_SCROLL_OPTIONS,
 }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
@@ -79,7 +85,9 @@ export const TabsNav: Component = ({
 
   const scrollToRefCallback = useCallback((ref) => {
     if (ref) {
-      ref.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+      setTimeout(() => {
+        ref.scrollIntoView(scrollOptions.scrollIntoViewOptions);
+      }, 0);
     }
   }, []);
 

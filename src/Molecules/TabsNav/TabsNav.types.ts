@@ -15,7 +15,11 @@ export type ContainerProps = {
   height?: number;
   className?: string;
   children?: React.ReactNode;
-  scrollOptions?: { active: boolean; scrollBarHidden: boolean };
+  scrollOptions?: {
+    active: boolean;
+    scrollBarHidden: boolean;
+    scrollIntoViewOptions?: { behavior?: string; inline?: string; block?: string };
+  };
 };
 export type Component = React.FC<ContainerProps> & { Tab: ItemComponent };
 
