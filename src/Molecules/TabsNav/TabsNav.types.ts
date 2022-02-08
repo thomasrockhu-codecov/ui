@@ -30,4 +30,10 @@ export type TitleProps = HtmlProps & {
   height?: number;
   fullServerRedirect?: boolean;
 };
-export type TitleComponent = React.ForwardRefExoticComponent<TitleProps>;
+
+export type ScrollStyleProps = {
+  $height: number;
+  $scrollOptions: { active: boolean; scrollBarHidden: boolean };
+  $intersectionLeftRatio?: number;
+  $intersectionRightRatio?: number;
+};

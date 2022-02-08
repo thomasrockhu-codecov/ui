@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
-import { HtmlProps } from 'Atoms/Typography/Typography.types';
+import { Component, ItemProps, ScrollStyleProps, TitleProps } from './TabsNav.types';
+import { scrollStyles } from './TabsNav.styles';
 import { useIntersect } from '../../common/Hooks';
 import { Flexbox, TabTitle, Typography } from '../..';
-import { assert, isNumber } from '../../common/utils';
+import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
-import { Component, ItemProps, TitleComponent, TitleProps } from './TabsNav.types';
 import { useLink } from '../../common/Links';
 import { LinkProps } from '../../common/Links/types';
 
@@ -25,78 +25,15 @@ const StyledLink = styled(Link)`
   color: inherit;
 `;
 
-const StyledFlexbox = styled(Flexbox)<{
-  $height: number;
-  $scrollOptions: { active: boolean; scrollBarHidden: boolean };
-  $intersectionLeftRatio?: number;
-  $intersectionRightRatio?: number;
-}>`
+const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
   list-style-type: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-
-  ${(p) =>
-    p.$scrollOptions.active
-      ? `
-  overflow: auto;
-  white-space: nowrap;
-  ${
-    isNumber(p.$intersectionRightRatio) && p.$intersectionRightRatio < 0.9
-      ? `
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    height: ${`${p.theme.spacing.unit(p.$height)}`}px;
-    pointer-events: none;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #FFFFFF 100%);
-    width: 10%;
-  }
-  `
-      : ``
-  };
-  ${
-    isNumber(p.$intersectionLeftRatio) && p.$intersectionLeftRatio < 0.9
-      ? `
-  &:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: ${`${p.theme.spacing.unit(p.$height)}`}px;
-    pointer-events: none;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 100%);
-    width: 10%;
-  }
-  `
-      : ``
-  };
-  ${
-    p.$scrollOptions.scrollBarHidden
-      ? ` ::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */`
-      : ``
-  };
-  `
-      : ``};
+  ${scrollStyles}
 `;
 
-const IntersectionLeft: React.ForwardRefExoticComponent<HtmlProps> = styled.li`
-  pointer-events: none;
-`;
-
-const IntersectionRight: React.ForwardRefExoticComponent<HtmlProps> = styled.li`
-  pointer-events: none;
-`;
-
-const Title: TitleComponent = React.forwardRef<HTMLSpanElement, TitleProps>(
+const Title = React.forwardRef<HTMLSpanElement, TitleProps>(
   ({ active, children, setRef, to, onKeyDown, onClick, height, fullServerRedirect }, ref) => {
     return (
       <Typography type="primary" weight={active ? 'bold' : 'regular'} ref={ref}>
@@ -115,7 +52,7 @@ const Title: TitleComponent = React.forwardRef<HTMLSpanElement, TitleProps>(
       </Typography>
     );
   },
-) as TitleComponent;
+);
 Title.displayName = 'TabsNav.Title';
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
@@ -146,12 +83,25 @@ export const TabsNav: Component = ({
     }
   }, []);
 
+  const setIntersectionRef = (index: number) => {
+    if (!scrollOptions.active) {
+      return null;
+    }
+    if (index === 0) {
+      return setIntersectionLeftRef;
+    }
+    if (index === React.Children.count(children) - 1) {
+      return setIntersectionRightRef;
+    }
+    return null;
+  };
+
   React.Children.forEach(children, (c, i) => {
     if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else if (c) {
       titles.push(
-        <Flexbox item as="li" key={c.props.to}>
+        <Flexbox ref={setIntersectionRef(i)} item as="li" key={c.props.to}>
           <Title
             active={!!c.props.active}
             onClick={c.props.onTitleClick}
@@ -182,9 +132,7 @@ export const TabsNav: Component = ({
       gutter={4}
       sm={{ gutter: 8 }}
     >
-      <IntersectionLeft ref={setIntersectionLeftRef} />
       {titles}
-      <IntersectionRight ref={setIntersectionRightRef} />
     </StyledFlexbox>
   );
 };
