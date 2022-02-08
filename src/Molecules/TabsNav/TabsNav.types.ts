@@ -19,6 +19,7 @@ export type ContainerProps = {
     active: boolean;
     scrollBarHidden: boolean;
     scrollIntoViewOptions?: { behavior?: string; inline?: string; block?: string };
+    scrollFade?: boolean;
   };
 };
 export type Component = React.FC<ContainerProps> & { Tab: ItemComponent };
@@ -37,7 +38,7 @@ export type TitleProps = HtmlProps & {
 
 export type ScrollStyleProps = {
   $height: number;
-  $scrollOptions: { active: boolean; scrollBarHidden: boolean };
+  $scrollOptions: { active: boolean; scrollBarHidden: boolean; scrollFade?: boolean };
   $intersectionLeftRatio?: number;
   $intersectionRightRatio?: number;
 };

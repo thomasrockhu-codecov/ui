@@ -11,7 +11,9 @@ export const scrollStyles = css<ScrollStyleProps>`
   overflow: auto;
   white-space: nowrap;
   ${
-    isNumber(p.$intersectionLeftRatio) && p.$intersectionLeftRatio <= INTERSECTION_RATIO_BREAKPOINT
+    isNumber(p.$intersectionLeftRatio) &&
+    p.$scrollOptions.scrollFade &&
+    p.$intersectionLeftRatio <= INTERSECTION_RATIO_BREAKPOINT
       ? `
   &:before {
     content: '';
@@ -28,6 +30,7 @@ export const scrollStyles = css<ScrollStyleProps>`
   };
   ${
     isNumber(p.$intersectionRightRatio) &&
+    p.$scrollOptions.scrollFade &&
     p.$intersectionRightRatio <= INTERSECTION_RATIO_BREAKPOINT
       ? `
   &:after {

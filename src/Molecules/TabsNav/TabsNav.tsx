@@ -12,7 +12,14 @@ import { LinkProps } from '../../common/Links/types';
 const DEFAULT_SCROLL_OPTIONS = {
   active: false,
   scrollBarHidden: false,
-  scrollIntoViewOptions: { behavior: 'smooth', inline: 'center', block: 'end' },
+  scrollIntoViewOptions: null,
+  scrollFade: false,
+};
+
+const DEFAULT_SCROLL_INTO_VIEW_OPTIONS = {
+  behavior: 'smooth',
+  inline: 'center',
+  block: 'end',
 };
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
@@ -83,13 +90,18 @@ export const TabsNav: Component = ({
   const [setIntersectionLeftRef, intersectionLeftRatio] = useIntersect<HTMLDivElement>();
   const [setIntersectionRightRef, intersectionRightRatio] = useIntersect<HTMLDivElement>();
 
-  const scrollToRefCallback = useCallback((ref) => {
-    if (ref) {
-      setTimeout(() => {
-        ref.scrollIntoView(scrollOptions.scrollIntoViewOptions);
-      }, 0);
-    }
-  }, []);
+  const scrollToRefCallback = useCallback(
+    (ref) => {
+      if (ref && scrollOptions.active) {
+        setTimeout(() => {
+          ref.scrollIntoView(
+            scrollOptions.scrollIntoViewOptions ?? DEFAULT_SCROLL_INTO_VIEW_OPTIONS,
+          );
+        }, 0);
+      }
+    },
+    [scrollOptions.active, scrollOptions.scrollIntoViewOptions],
+  );
 
   const setIntersectionRef = (index: number) => {
     if (!scrollOptions.active) {
@@ -136,11 +148,10 @@ export const TabsNav: Component = ({
       $intersectionRightRatio={intersectionRightRatio || 0}
       className={className}
       container
-      direction="row"
-      gutter={4}
-      sm={{ gutter: 8 }}
     >
-      {titles}
+      <Flexbox container direction="row" gutter={4} sm={{ gutter: 8 }}>
+        {titles}
+      </Flexbox>
     </StyledFlexbox>
   );
 };
