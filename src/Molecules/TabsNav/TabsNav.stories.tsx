@@ -177,7 +177,10 @@ export const HorizontalScrollEnabled = () => {
   return (
     <MemoryRouter>
       <LinkProvider link={MyLink}>
-        <ContentWithManyLinks />
+        <div>
+          This is a title
+          <ContentWithManyLinks />
+        </div>
       </LinkProvider>
     </MemoryRouter>
   );

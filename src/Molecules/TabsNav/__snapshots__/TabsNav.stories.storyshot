@@ -133,11 +133,10 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   content: '';
   position: absolute;
   z-index: 1;
-  top: 0;
-  right: 0;
+  left: 0;
   height: 44px;
   pointer-events: none;
-  background-image: linear-gradient(to right,rgba(255,255,255,0),#FFFFFF 100%);
+  background-image: linear-gradient(to left,rgba(255,255,255,0),#FFFFFF 100%);
   width: 10%;
 }
 
@@ -145,11 +144,10 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   content: '';
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
+  right: 0;
   height: 44px;
   pointer-events: none;
-  background-image: linear-gradient(to left,rgba(255,255,255,0),#FFFFFF 100%);
+  background-image: linear-gradient(to right,rgba(255,255,255,0),#FFFFFF 100%);
   width: 10%;
 }
 
@@ -180,163 +178,166 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   }
 }
 
-<div
-  className="c0"
->
+<div>
+  This is a title
   <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2 c3"
+      className="c1"
     >
-      <li
-        className="c1"
+      <div
+        className="c2 c3"
       >
-        <span
-          className="c4"
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route1"
-            onClick={[Function]}
+          <span
+            className="c4"
           >
-            <span
-              className="c6"
-              height={11}
+            <a
+              className="c5"
+              href="/route1"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route1
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c6"
+                height={11}
+              >
+                <div>
+                  Link to /route1
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route2"
-            onClick={[Function]}
+          <span
+            className="c7"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c5"
+              href="/route2"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route2
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c8"
+                height={11}
+              >
+                <div>
+                  Link to /route2
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route3"
-            onClick={[Function]}
+          <span
+            className="c7"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c5"
+              href="/route3"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route3
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c8"
+                height={11}
+              >
+                <div>
+                  Link to /route3
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route4"
-            onClick={[Function]}
+          <span
+            className="c7"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c5"
+              href="/route4"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route4
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c8"
+                height={11}
+              >
+                <div>
+                  Link to /route4
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route5"
-            onClick={[Function]}
+          <span
+            className="c7"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c5"
+              href="/route5"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route5
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c8"
+                height={11}
+              >
+                <div>
+                  Link to /route5
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route6"
-            onClick={[Function]}
+          <span
+            className="c7"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c5"
+              href="/route6"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route6
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
+              <span
+                className="c8"
+                height={11}
+              >
+                <div>
+                  Link to /route6
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+      </div>
     </div>
-  </div>
-  <div
-    className="c1"
-  >
     <div
-      className="c9"
-    />
-  </div>
-  <div
-    className="c1"
-  >
-    <div
-      className="c10"
+      className="c1"
     >
-      /route1 content
+      <div
+        className="c9"
+      />
+    </div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c10"
+      >
+        /route1 content
+      </div>
     </div>
   </div>
 </div>
