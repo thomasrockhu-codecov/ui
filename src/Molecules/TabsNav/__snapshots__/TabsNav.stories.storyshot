@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
-.c10 {
+.c11 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -28,6 +28,14 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -35,22 +43,22 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   margin-right: -8px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c8 {
+.c9 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -63,7 +71,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -76,7 +84,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   align-items: center;
 }
 
-.c6::after {
+.c7::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -87,7 +95,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -96,7 +104,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -105,7 +113,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -129,34 +137,12 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
   scrollbar-width: none;
 }
 
-.c3:before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  height: 44px;
-  pointer-events: none;
-  background-image: linear-gradient(to left,rgba(255,255,255,0),#FFFFFF 100%);
-  width: 10%;
-}
-
-.c3:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  height: 44px;
-  pointer-events: none;
-  background-image: linear-gradient(to right,rgba(255,255,255,0),#FFFFFF 100%);
-  width: 10%;
-}
-
 .c3::-webkit-scrollbar {
   display: none;
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c4 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -168,12 +154,12 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c4 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c4 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -189,152 +175,156 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
       <div
         className="c2 c3"
       >
-        <li
-          className="c1"
+        <div
+          className="c4"
         >
-          <span
-            className="c4"
+          <li
+            className="c1"
           >
-            <a
+            <span
               className="c5"
-              href="/route1"
-              onClick={[Function]}
             >
-              <span
+              <a
                 className="c6"
-                height={11}
+                href="/route1"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route1
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
-        <li
-          className="c1"
-        >
-          <span
-            className="c7"
+                <span
+                  className="c7"
+                  height={11}
+                >
+                  <div>
+                    Link to /route1
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            className="c1"
           >
-            <a
-              className="c5"
-              href="/route2"
-              onClick={[Function]}
+            <span
+              className="c8"
             >
-              <span
-                className="c8"
-                height={11}
+              <a
+                className="c6"
+                href="/route2"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route2
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
-        <li
-          className="c1"
-        >
-          <span
-            className="c7"
+                <span
+                  className="c9"
+                  height={11}
+                >
+                  <div>
+                    Link to /route2
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            className="c1"
           >
-            <a
-              className="c5"
-              href="/route3"
-              onClick={[Function]}
+            <span
+              className="c8"
             >
-              <span
-                className="c8"
-                height={11}
+              <a
+                className="c6"
+                href="/route3"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route3
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
-        <li
-          className="c1"
-        >
-          <span
-            className="c7"
+                <span
+                  className="c9"
+                  height={11}
+                >
+                  <div>
+                    Link to /route3
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            className="c1"
           >
-            <a
-              className="c5"
-              href="/route4"
-              onClick={[Function]}
+            <span
+              className="c8"
             >
-              <span
-                className="c8"
-                height={11}
+              <a
+                className="c6"
+                href="/route4"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route4
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
-        <li
-          className="c1"
-        >
-          <span
-            className="c7"
+                <span
+                  className="c9"
+                  height={11}
+                >
+                  <div>
+                    Link to /route4
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            className="c1"
           >
-            <a
-              className="c5"
-              href="/route5"
-              onClick={[Function]}
+            <span
+              className="c8"
             >
-              <span
-                className="c8"
-                height={11}
+              <a
+                className="c6"
+                href="/route5"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route5
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
-        <li
-          className="c1"
-        >
-          <span
-            className="c7"
+                <span
+                  className="c9"
+                  height={11}
+                >
+                  <div>
+                    Link to /route5
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            className="c1"
           >
-            <a
-              className="c5"
-              href="/route6"
-              onClick={[Function]}
+            <span
+              className="c8"
             >
-              <span
-                className="c8"
-                height={11}
+              <a
+                className="c6"
+                href="/route6"
+                onClick={[Function]}
               >
-                <div>
-                  Link to /route6
-                </div>
-              </span>
-            </a>
-          </span>
-        </li>
+                <span
+                  className="c9"
+                  height={11}
+                >
+                  <div>
+                    Link to /route6
+                  </div>
+                </span>
+              </a>
+            </span>
+          </li>
+        </div>
       </div>
     </div>
     <div
       className="c1"
     >
       <div
-        className="c9"
+        className="c10"
       />
     </div>
     <div
       className="c1"
     >
       <div
-        className="c10"
+        className="c11"
       >
         /route1 content
       </div>
@@ -344,7 +334,7 @@ exports[`Storyshots Molecules / TabsNav Enabled horizontal scroll 1`] = `
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
-.c10 {
+.c11 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -371,6 +361,14 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -378,22 +376,22 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   margin-right: -8px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c8 {
+.c9 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -406,7 +404,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -419,7 +417,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   align-items: center;
 }
 
-.c6::after {
+.c7::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -430,7 +428,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -439,7 +437,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -448,7 +446,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -466,7 +464,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c4 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -478,12 +476,12 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c4 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c4 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -497,62 +495,66 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
     <div
       className="c2 c3"
     >
-      <li
-        className="c1"
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
+        <li
+          className="c1"
         >
-          <a
+          <span
             className="c5"
-            href="/route1"
-            onClick={[Function]}
           >
-            <span
+            <a
               className="c6"
-              height={11}
+              href="/route1"
+              onClick={[Function]}
             >
-              Link to /route1
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c7"
+                height={11}
+              >
+                Link to /route1
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route2"
-            onClick={[Function]}
+          <span
+            className="c8"
           >
-            <span
-              className="c8"
-              height={11}
+            <a
+              className="c6"
+              href="/route2"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route2
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
+              <span
+                className="c9"
+                height={11}
+              >
+                <div>
+                  Link to /route2
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+      </div>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c9"
+      className="c10"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c10"
+      className="c11"
     >
       /route1 content
     </div>
@@ -561,7 +563,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router 1`] = `
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: With react-router and height modified 1`] = `
-.c10 {
+.c11 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -588,6 +590,14 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -595,22 +605,22 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   margin-right: -8px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c8 {
+.c9 {
   height: 96px;
   position: relative;
   display: -webkit-inline-box;
@@ -623,7 +633,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   align-items: center;
 }
 
-.c6 {
+.c7 {
   height: 96px;
   position: relative;
   display: -webkit-inline-box;
@@ -636,7 +646,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   align-items: center;
 }
 
-.c6::after {
+.c7::after {
   content: '';
   background-color: #336BFF;
   display: block;
@@ -647,7 +657,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   left: 0;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -656,7 +666,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -665,7 +675,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -683,7 +693,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c4 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -695,12 +705,12 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c4 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c4 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -714,62 +724,66 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
     <div
       className="c2 c3"
     >
-      <li
-        className="c1"
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
+        <li
+          className="c1"
         >
-          <a
+          <span
             className="c5"
-            href="/route1"
-            onClick={[Function]}
           >
-            <span
+            <a
               className="c6"
-              height={24}
+              href="/route1"
+              onClick={[Function]}
             >
-              Link to /route1
-            </span>
-          </a>
-        </span>
-      </li>
-      <li
-        className="c1"
-      >
-        <span
-          className="c7"
+              <span
+                className="c7"
+                height={24}
+              >
+                Link to /route1
+              </span>
+            </a>
+          </span>
+        </li>
+        <li
+          className="c1"
         >
-          <a
-            className="c5"
-            href="/route2"
-            onClick={[Function]}
+          <span
+            className="c8"
           >
-            <span
-              className="c8"
-              height={24}
+            <a
+              className="c6"
+              href="/route2"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route2
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
+              <span
+                className="c9"
+                height={24}
+              >
+                <div>
+                  Link to /route2
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+      </div>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c9"
+      className="c10"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c10"
+      className="c11"
     >
       /route1 content
     </div>
@@ -778,7 +792,7 @@ exports[`Storyshots Molecules / TabsNav Integration: With react-router and heigh
 `;
 
 exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] = `
-.c8 {
+.c9 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
@@ -805,6 +819,14 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -812,22 +834,22 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   margin-right: -8px;
 }
 
-.c2 > * {
+.c4 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c4 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c6 {
+.c7 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -840,7 +862,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   align-items: center;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -849,7 +871,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -867,7 +889,7 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c4 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -879,12 +901,12 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c4 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c4 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -898,42 +920,46 @@ exports[`Storyshots Molecules / TabsNav Integration: conditionally hide tab 1`] 
     <div
       className="c2 c3"
     >
-      <li
-        className="c1"
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
+        <li
+          className="c1"
         >
-          <a
+          <span
             className="c5"
-            href="/route2"
-            onClick={[Function]}
           >
-            <span
+            <a
               className="c6"
-              height={11}
+              href="/route2"
+              onClick={[Function]}
             >
-              <div>
-                Link to /route2
-              </div>
-            </span>
-          </a>
-        </span>
-      </li>
+              <span
+                className="c7"
+                height={11}
+              >
+                <div>
+                  Link to /route2
+                </div>
+              </span>
+            </a>
+          </span>
+        </li>
+      </div>
     </div>
   </div>
   <div
     className="c1"
   >
     <div
-      className="c7"
+      className="c8"
     />
   </div>
   <div
     className="c1"
   >
     <div
-      className="c8"
+      className="c9"
     >
       /route1 content
     </div>
