@@ -49,6 +49,7 @@ const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
 const Title = React.forwardRef<HTMLSpanElement, TitleProps>(
   ({ active, children, setRef, to, onKeyDown, onClick, height, fullServerRedirect }, ref) => {
     return (
+      // @ts-expect-error: Typography doesn't accept ref but is actually a React.ForwardRef
       <Typography type="primary" weight={active ? 'bold' : 'regular'} ref={ref}>
         <StyledLink
           to={to}
