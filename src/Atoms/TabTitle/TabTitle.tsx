@@ -7,7 +7,7 @@ const StyledTitle = styled.span<Props>`
   position: relative;
   display: inline-flex;
   align-items: center;
-
+  font-size: ${(props) => (props.variant === 'large' ? '16px' : '14px')};
   ${(props) => {
     if (props.active) {
       return `
@@ -28,9 +28,14 @@ const StyledTitle = styled.span<Props>`
   }}
 `;
 
-export const TabTitle: React.FC<Props> = ({ active = false, height = 8, children }) => {
+export const TabTitle: React.FC<Props> = ({
+  active = false,
+  height = 8,
+  children,
+  variant = 'normal',
+}) => {
   return (
-    <StyledTitle active={active} height={height}>
+    <StyledTitle active={active} height={height} variant={variant}>
       {children}
     </StyledTitle>
   );

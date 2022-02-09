@@ -11,6 +11,7 @@ export type TitleProps = {
   setRef: (el: HTMLButtonElement | null) => void;
   onKeyDown: (e: React.KeyboardEvent) => void;
   height?: number;
+  variant?: 'normal' | 'large';
 };
 
 export type ContainerProps = {
@@ -23,6 +24,7 @@ export type ContainerProps = {
   children: React.ReactNode;
   className?: string;
   height?: number;
+  variant?: 'normal' | 'large';
 };
 
 export type ItemComponent = React.FC<ItemProps>;

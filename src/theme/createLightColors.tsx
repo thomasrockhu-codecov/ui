@@ -262,12 +262,15 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     switchReadOnlyKnobBg: rawColor.gray7,
     switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
-
+    
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
     tableEmphasis: rawColor.blue100,
 
+    tabTitle: rawColor.gray600,
+    tabTitleActive: rawColor.gray800,
+    
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 

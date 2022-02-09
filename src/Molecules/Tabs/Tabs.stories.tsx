@@ -52,6 +52,33 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const largeStory = () => (
+  <Typography type="secondary">
+    <Tabs variant="large" height={8}>
+      <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+        Ones children
+      </Tabs.Tab>
+      <Tabs.Tab
+        title={
+          <div>
+            Node as well
+            <span role="img" aria-label="goodjob">
+              👍
+            </span>
+          </div>
+        }
+        onTitleClick={action('Clicked title2')}
+      >
+        Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the tab
+        panel.
+      </Tabs.Tab>
+    </Tabs>
+  </Typography>
+);
+
+largeStory.story = {
+  name: 'Large variant',
+};
 const StyledTabsContent = styled(Tabs)`
   & ~ ${Tabs.components.TabContent} {
     height: inherit;
