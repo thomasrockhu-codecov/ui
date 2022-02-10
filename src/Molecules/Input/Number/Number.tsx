@@ -71,7 +71,11 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled
     border-width: 1px;
   }
   ${(p) =>
-    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
+    p.disabled && p.variant === 'quiet'
+      ? `border-color: ${
+          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
+        };`
+      : ''}
 `;
 
 const Wrapper = styled(Flexbox)`
@@ -151,7 +155,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       : ''}
   ${(p) =>
     p.variant === 'quiet'
-      ? `color: ${p.theme.color.cta};
+      ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
         &:disabled {
           color: ${p.theme.color.disabledText};
         }

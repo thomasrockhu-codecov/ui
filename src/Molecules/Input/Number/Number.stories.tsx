@@ -372,6 +372,20 @@ export const quietNumber = () => (
             label="Label"
             onChange={action('onChange')}
             variant="quiet"
+            placeholder="0"
+            value="500"
+            rightAddon="SEK"
+          />
+        ),
+        title: 'Filled',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
             noSteppers
             width="100%"
             placeholder="0"

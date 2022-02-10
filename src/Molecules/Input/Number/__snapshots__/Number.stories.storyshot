@@ -995,7 +995,7 @@ Array [
   flex-grow: 1;
 }
 
-.c19 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1011,7 +1011,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c19 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1067,7 +1067,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1081,7 +1081,7 @@ Array [
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c20 {
+.c14 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1116,7 +1116,7 @@ Array [
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -1136,25 +1136,25 @@ Array [
 }
 
 .c11::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c11::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1208,7 +1208,7 @@ Array [
   -webkit-text-fill-color: #336BFF;
 }
 
-.c13 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1218,7 +1218,117 @@ Array [
   border: 1px solid #BDBDBD;
   position: relative;
   border-width: 0 0 2px 0;
-  border-color: #EBEBE8;
+  height: auto;
+  padding: 0px;
+  width: 100%;
+  color: #282823;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c12:hover {
+  border-color: #424242;
+  z-index: 2;
+}
+
+.c12:focus {
+  border-color: #336BFF;
+  z-index: 3;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12::-webkit-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::-moz-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:-ms-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c12:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c12:focus {
+  border-width: 0 0 2px 0;
+  outline: none;
+}
+
+.c12:-webkit-autofill {
+  -webkit-text-fill-color: #336BFF;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: transparent;
+  border: 1px solid #BDBDBD;
+  position: relative;
+  border-width: 0 0 2px 0;
+  border-color: #EEEEEE;
   height: auto;
   padding: 0px;
   width: 100%;
@@ -1228,94 +1338,94 @@ Array [
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
 
-.c13:focus {
+.c16:focus {
   border-color: #336BFF;
   z-index: 3;
 }
 
-.c13:focus {
+.c16:focus {
   border-width: 1px;
 }
 
-.c13::-webkit-input-placeholder {
-  color: #336BFF;
+.c16::-webkit-input-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c13::-moz-placeholder {
-  color: #336BFF;
+.c16::-moz-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c13:-ms-input-placeholder {
-  color: #336BFF;
+.c16:-ms-input-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c13::placeholder {
-  color: #336BFF;
+.c16::placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c13:focus::-webkit-input-placeholder {
+.c16:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c13:focus::-moz-placeholder {
+.c16:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c13:focus:-ms-input-placeholder {
+.c16:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c13:focus::placeholder {
+.c16:focus::placeholder {
   color: #A0A09B;
 }
 
-.c13:disabled::-webkit-input-placeholder {
+.c16:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c13:disabled::-moz-placeholder {
+.c16:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c13:disabled:-ms-input-placeholder {
+.c16:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c13:disabled::placeholder {
+.c16:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c13:disabled {
+.c16:disabled {
   color: #A0A09B;
 }
 
-.c13:disabled {
+.c16:disabled {
   color: #A0A09B;
 }
 
-.c13:focus {
+.c16:focus {
   border-width: 0 0 2px 0;
   outline: none;
 }
 
-.c13:-webkit-autofill {
+.c16:-webkit-autofill {
   -webkit-text-fill-color: #336BFF;
 }
 
-.c14 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1334,118 +1444,7 @@ Array [
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
-  color: #336BFF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.c14:hover {
-  border-color: #424242;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #336BFF;
-  z-index: 3;
-}
-
-.c14:focus {
-  border-width: 1px;
-}
-
-.c14::-webkit-input-placeholder {
-  color: #336BFF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::-moz-placeholder {
-  color: #336BFF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14:-ms-input-placeholder {
-  color: #336BFF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::placeholder {
-  color: #336BFF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14:focus::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:focus::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c14:focus:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:focus::placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c14:disabled {
-  color: #A0A09B;
-}
-
-.c14:disabled {
-  color: #A0A09B;
-}
-
-.c14:focus {
-  border-width: 0 0 2px 0;
-  outline: none;
-}
-
-.c14:-webkit-autofill {
-  -webkit-text-fill-color: #336BFF;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: transparent;
-  border: 1px solid #41A21A;
-  position: relative;
-  border-width: 0 0 2px 0;
-  height: auto;
-  padding: 0px;
-  width: 100%;
-  color: #282823;
-  text-align: left;
-  box-sizing: border-box;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -1465,25 +1464,25 @@ Array [
 }
 
 .c17::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c17::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1537,14 +1536,14 @@ Array [
   -webkit-text-fill-color: #336BFF;
 }
 
-.c18 {
+.c20 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   background-color: transparent;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #41A21A;
   position: relative;
   border-width: 0 0 2px 0;
   height: auto;
@@ -1553,97 +1552,98 @@ Array [
   color: #282823;
   text-align: left;
   box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #336BFF;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
 
-.c18:hover {
+.c20:hover {
   border-color: #424242;
   z-index: 2;
 }
 
-.c18:focus {
+.c20:focus {
   border-color: #336BFF;
   z-index: 3;
 }
 
-.c18:focus {
+.c20:focus {
   border-width: 1px;
 }
 
-.c18::-webkit-input-placeholder {
-  color: #336BFF;
+.c20::-webkit-input-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18::-moz-placeholder {
-  color: #336BFF;
+.c20::-moz-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18:-ms-input-placeholder {
-  color: #336BFF;
+.c20:-ms-input-placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18::placeholder {
-  color: #336BFF;
+.c20::placeholder {
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
-.c18:focus::-webkit-input-placeholder {
+.c20:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:focus::-moz-placeholder {
+.c20:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c18:focus:-ms-input-placeholder {
+.c20:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:focus::placeholder {
+.c20:focus::placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled::-webkit-input-placeholder {
+.c20:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled::-moz-placeholder {
+.c20:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled:-ms-input-placeholder {
+.c20:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled::placeholder {
+.c20:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c18:disabled {
+.c20:disabled {
   color: #A0A09B;
 }
 
-.c18:disabled {
+.c20:disabled {
   color: #A0A09B;
 }
 
-.c18:focus {
+.c20:focus {
   border-width: 0 0 2px 0;
   outline: none;
 }
 
-.c18:-webkit-autofill {
+.c20:-webkit-autofill {
   -webkit-text-fill-color: #336BFF;
 }
 
@@ -1666,7 +1666,7 @@ Array [
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 32px;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -1686,25 +1686,25 @@ Array [
 }
 
 .c21::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c21::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c21:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c21::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -1763,7 +1763,7 @@ Array [
   display: inline-block;
 }
 
-.c12 {
+.c15 {
   width: 100%;
   display: inline-block;
 }
@@ -1899,12 +1899,75 @@ Array [
         <span
           className="c3"
         >
+          Filled
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c8"
+          >
+            <div
+              className="c9 c10"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="0"
+                step={1}
+                type="text"
+                value="500"
+                variant="quiet"
+              />
+              <div
+                className="c13 c14"
+                position="right"
+                variant="quiet"
+              >
+                SEK
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
           Full width
         </span>
       </div>
       <div>
         <div
-          className="c12"
+          className="c15"
         >
           <label
             className="c5"
@@ -1984,7 +2047,7 @@ Array [
               className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
                 disabled={true}
                 id="insert-unique-id"
                 inputMode="decimal"
@@ -2042,7 +2105,7 @@ Array [
             >
               <input
                 aria-invalid={true}
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2058,10 +2121,10 @@ Array [
           </span>
           <div>
             <span
-              className="c15"
+              className="c18"
             >
               <div
-                className="c16"
+                className="c19"
               >
                 Error: 
               </div>
@@ -2110,7 +2173,7 @@ Array [
               className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c20"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2166,7 +2229,7 @@ Array [
               className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2178,7 +2241,7 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c19 c20"
+                className="c13 c14"
                 position="right"
                 variant="quiet"
               >
@@ -2240,7 +2303,7 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c19 c22"
+                className="c13 c22"
                 position="left"
               >
                 <svg
@@ -2313,7 +2376,7 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c19 c22"
+                className="c13 c22"
                 position="left"
               >
                 <svg
@@ -2331,7 +2394,7 @@ Array [
                 </svg>
               </div>
               <div
-                className="c19 c20"
+                className="c13 c14"
                 position="right"
                 variant="quiet"
               >

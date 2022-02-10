@@ -69,12 +69,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   ${hoverBorderStyles}
   ${focusBorderStyles}
   ${(p) =>
-    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
+    p.disabled && p.variant === 'quiet'
+      ? `border-color: ${
+          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
+        };`
+      : ''}
 `;
 
 export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
-    color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
+    color: ${(p) =>
+      p.variant === 'quiet' ? p.theme.color.buttonTextDisabled : p.theme.color.label};
     line-height: inherit;
     opacity: 1;
   }
@@ -130,7 +135,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
       : ''}
   ${(p) =>
     p.variant === 'quiet'
-      ? `color: ${p.theme.color.cta};
+      ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
          &:disabled {
            color: ${p.theme.color.disabledText};
          }

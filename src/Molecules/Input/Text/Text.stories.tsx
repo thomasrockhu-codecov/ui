@@ -340,6 +340,12 @@ export const quiet = () => (
       },
       {
         component: (
+          <Input.Text variant="quiet" label="Label" placeholder="Placeholder" value="Fill State" />
+        ),
+        title: 'Filled',
+      },
+      {
+        component: (
           <Input.Text variant="quiet" label="Label" width="100%" placeholder="Placeholder" />
         ),
         title: 'Full width',
