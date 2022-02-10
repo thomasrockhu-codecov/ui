@@ -93,7 +93,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     dateBadgeUpperBackground: rawColor.gray900,
     dateBadgeLowerBackground: rawColor.gray700,
-    
+
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 
@@ -310,7 +310,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedBackground: rawColor.blue800,
     quickFilterBackground: rawColor.gray900,
     quickFilterText: rawColor.white,
-    quickFilterSelectedText: rawColor.blue500,
+    quickFilterSelectedText: rawColor.blue400,
+    quickFilterFocusOutline: rawColor.blue400,
 
     warning: rawColor.index,
 

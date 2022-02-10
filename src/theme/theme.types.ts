@@ -270,8 +270,10 @@ export type ThemeColors = {
   quickFilterSelectedBackground: string;
   /** gray800 */
   quickFilterText: string;
-  /** blue400 */
+  /** blue500 */
   quickFilterSelectedText: string;
+  /** blue500 */
+  quickFilterFocusOutline: string;
   /** white */
   card: string;
   /** creditsPiePrimary */
