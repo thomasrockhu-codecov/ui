@@ -1,3 +1,11 @@
+## [10.7.2](https://github.com/nordnet/ui/compare/v10.7.1...v10.7.2) (2022-02-10)
+
+
+### Bug Fixes
+
+* 🐛 hover, focus & disable state for input quiet ([7c4e71c](https://github.com/nordnet/ui/commit/7c4e71c))
+* 🐛 remove padding to fix flicker ([078a319](https://github.com/nordnet/ui/commit/078a319))
+
 ## [10.7.1](https://github.com/nordnet/ui/compare/v10.7.0...v10.7.1) (2022-02-10)
 
 
