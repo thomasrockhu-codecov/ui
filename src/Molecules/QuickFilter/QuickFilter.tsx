@@ -5,11 +5,10 @@ import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
 import { Props } from './QuickFilter.types';
 
-const FOCUS_RING_SIZES = 2;
-
-const browsersNativeFocusStyles = css`
-  outline: ${FOCUS_RING_SIZES}px solid Highlight;
-  outline: ${FOCUS_RING_SIZES}px solid -webkit-focus-ring-color;
+const focusStyles = css`
+  outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
+  background: ${(p) => p.theme.color.quickFilterSelectedBackground};
+  color: ${(p) => p.theme.color.quickFilterSelectedText};
 `;
 
 const StyledInput = styled.input`
@@ -59,7 +58,7 @@ const StyledLabel = styled.label`
   cursor: inherit;
   &:focus-within {
     ${StyledDiv} {
-      ${browsersNativeFocusStyles}
+      ${focusStyles}
     }
   }
 `;

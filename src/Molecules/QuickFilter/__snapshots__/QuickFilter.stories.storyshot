@@ -71,7 +71,7 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -79,8 +79,9 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 > * {
@@ -239,7 +240,7 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -247,8 +248,9 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 > * {
@@ -392,7 +394,7 @@ exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -400,8 +402,9 @@ exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 > * {
@@ -530,7 +533,7 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -538,8 +541,9 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 {
@@ -657,12 +661,12 @@ exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
   cursor: pointer;
   padding: 8px;
   height: 32px;
-  color: #6690FF;
+  color: #336BFF;
   background: #EAF0FF;
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -670,8 +674,9 @@ exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 > * {
@@ -805,7 +810,7 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
 }
 
 .c3:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c1 {
@@ -813,8 +818,9 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
 }
 
 .c1:focus-within .c2 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c7 {
