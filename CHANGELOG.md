@@ -1,3 +1,10 @@
+# [10.7.0](https://github.com/nordnet/ui/compare/v10.6.0...v10.7.0) (2022-02-10)
+
+
+### Features
+
+* add inner component to components and export it with pagewrapper ([eab9530](https://github.com/nordnet/ui/commit/eab9530))
+
 # [10.6.0](https://github.com/nordnet/ui/compare/v10.5.2...v10.6.0) (2022-02-10)
 
 
