@@ -23,6 +23,16 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const largeStory = () => (
+  <Container>
+    <TabTitle variant="large">This is large tab title</TabTitle>
+  </Container>
+);
+
+largeStory.story = {
+  name: 'Large',
+};
+
 export const activeStory = () => (
   <Container>
     <TabTitle active>This is tab title</TabTitle>
