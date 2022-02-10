@@ -69,12 +69,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   ${hoverBorderStyles}
   ${focusBorderStyles}
   ${(p) =>
-    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
+    p.disabled && p.variant === 'quiet'
+      ? `border-color: ${
+          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
+        };`
+      : ''}
 `;
 
 export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
-    color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
+    color: ${(p) =>
+      p.variant === 'quiet' ? p.theme.color.buttonTextDisabled : p.theme.color.label};
     line-height: inherit;
     opacity: 1;
   }
@@ -96,14 +101,14 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Varian
   ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
   ${(p) =>
     p.variant === 'quiet'
-      ? `&:not(:focus) {    
+      ? `&:not(:focus) {
           padding-left: 0;
           padding-right: 0;
         }`
       : ''}
   ${(p) =>
     p.variant === 'quiet' && p.position === 'right'
-      ? `&:not(:focus) {   
+      ? `&:not(:focus) {
           right: 0;
         }`
       : ''}
@@ -130,32 +135,24 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
       : ''}
   ${(p) =>
     p.variant === 'quiet'
-      ? `color: ${p.theme.color.cta}; 
+      ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
          &:disabled {
            color: ${p.theme.color.disabledText};
          }
-         font-size: 28px; 
+         font-size: 28px;
          font-weight: bold;
          &:focus {
-           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
-           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
            border-width: 0 0 2px 0;
            outline: none;
           }`
-      : `color: ${p.theme.color.text}; 
+      : `color: ${p.theme.color.text};
          &:disabled {
            color: ${p.theme.color.disabledText};
          }`}
-  ${(p) =>
-    p.variant === 'quiet' && p.rightAddon
-      ? `&:focus + ${AddonBox} {
-          padding-right: ${p.theme.spacing.unit(2)}px;
-        }`
-      : ''}
 
     ${(p) =>
     p.type === 'search' &&
-    ` 
+    `
     &[type="search"] {
       -webkit-appearance: textfield;
     }
