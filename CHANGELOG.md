@@ -1,3 +1,20 @@
+# [10.6.0](https://github.com/nordnet/ui/compare/v10.5.2...v10.6.0) (2022-02-10)
+
+
+### Bug Fixes
+
+* 🐛 revert typing on Typography ([8a1236b](https://github.com/nordnet/ui/commit/8a1236b))
+* add scrollIntoViewOptions as prop ([e219984](https://github.com/nordnet/ui/commit/e219984))
+* fade positioning ([4e2ac84](https://github.com/nordnet/ui/commit/4e2ac84))
+* update storyshots ([2977b8e](https://github.com/nordnet/ui/commit/2977b8e))
+
+
+### Features
+
+* 🎸 make scrollfade optional, change scrollIntoView default ([b33ea79](https://github.com/nordnet/ui/commit/b33ea79))
+* 🎸 WIP enable horizontal scroll on TabsNav on mobile ([f8bd39e](https://github.com/nordnet/ui/commit/f8bd39e))
+* add variant large to tabs and update to new colors ([362dc5e](https://github.com/nordnet/ui/commit/362dc5e))
+
 ## [10.5.2](https://github.com/nordnet/ui/compare/v10.5.1...v10.5.2) (2022-02-04)
 
 
