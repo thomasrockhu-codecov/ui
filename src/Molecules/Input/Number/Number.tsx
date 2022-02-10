@@ -151,15 +151,13 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       : ''}
   ${(p) =>
     p.variant === 'quiet'
-      ? `color: ${p.theme.color.cta}; 
+      ? `color: ${p.theme.color.cta};
         &:disabled {
           color: ${p.theme.color.disabledText};
         }
-        font-size: 28px; 
+        font-size: 28px;
         font-weight: bold;
         &:focus {
-          padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
-          padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
           border-width: 0 0 2px 0;
           outline: none;
         }
@@ -167,12 +165,6 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          -webkit-text-fill-color: ${p.theme.color.cta};
         }
         `
-      : ''}
-  ${(p) =>
-    p.variant === 'quiet' && p.rightAddon
-      ? `&:focus + ${AddonBox} {
-          padding-right: ${p.theme.spacing.unit(2)}px;
-        }`
       : ''}
 `;
 

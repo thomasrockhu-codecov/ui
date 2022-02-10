@@ -370,6 +370,24 @@ export const quiet = () => (
         ),
         title: 'Right addon',
       },
+      {
+        component: (
+          <Input.Text variant="quiet" label="Label" placeholder="Placeholder" leftAddon="$" />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: (
+          <Input.Text
+            variant="quiet"
+            label="Label"
+            placeholder="Placeholder"
+            leftAddon="$"
+            rightAddon="%"
+          />
+        ),
+        title: 'Both addon',
+      },
     ]}
   />
 );

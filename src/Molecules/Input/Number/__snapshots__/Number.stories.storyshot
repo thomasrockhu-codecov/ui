@@ -1026,7 +1026,7 @@ Array [
   cursor: pointer;
 }
 
-.c24 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1081,7 +1081,7 @@ Array [
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c21 {
+.c20 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1089,7 +1089,7 @@ Array [
   right: 8px;
 }
 
-.c23 {
+.c22 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1200,8 +1200,6 @@ Array [
 }
 
 .c11:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -1309,8 +1307,6 @@ Array [
 }
 
 .c13:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -1422,8 +1418,6 @@ Array [
 }
 
 .c14:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -1535,8 +1529,6 @@ Array [
 }
 
 .c17:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -1647,8 +1639,6 @@ Array [
 }
 
 .c18:focus {
-  padding-left: 8px;
-  padding-right: 32px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -1657,11 +1647,7 @@ Array [
   -webkit-text-fill-color: #336BFF;
 }
 
-.c18:focus + .c20 {
-  padding-right: 8px;
-}
-
-.c22 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1685,97 +1671,91 @@ Array [
   font-weight: bold;
 }
 
-.c22:hover {
+.c21:hover {
   border-color: #424242;
   z-index: 2;
 }
 
-.c22:focus {
+.c21:focus {
   border-color: #336BFF;
   z-index: 3;
 }
 
-.c22:focus {
+.c21:focus {
   border-width: 1px;
 }
 
-.c22::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #336BFF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #336BFF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #336BFF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c21::placeholder {
   color: #336BFF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:focus::-webkit-input-placeholder {
+.c21:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:focus::-moz-placeholder {
+.c21:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:focus:-ms-input-placeholder {
+.c21:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:focus::placeholder {
+.c21:focus::placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c21:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c21:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c21:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c21:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled {
+.c21:disabled {
   color: #A0A09B;
 }
 
-.c22:disabled {
+.c21:disabled {
   color: #A0A09B;
 }
 
-.c22:focus {
-  padding-left: 32px;
-  padding-right: 32px;
+.c21:focus {
   border-width: 0 0 2px 0;
   outline: none;
 }
 
-.c22:-webkit-autofill {
+.c21:-webkit-autofill {
   -webkit-text-fill-color: #336BFF;
-}
-
-.c22:focus + .c20 {
-  padding-right: 8px;
 }
 
 .c4 {
@@ -2198,7 +2178,7 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c19 c20 c21"
+                className="c19 c20"
                 position="right"
                 variant="quiet"
               >
@@ -2248,7 +2228,7 @@ Array [
               className="c9 c10"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -2260,12 +2240,85 @@ Array [
                 variant="quiet"
               />
               <div
-                className="c19 c20 c23"
+                className="c19 c22"
                 position="left"
               >
                 <svg
                   aria-hidden="true"
-                  className="c24"
+                  className="c23"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 12 12"
+                >
+                  <path
+                    d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Both addon
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+            </span>
+          </label>
+          <span
+            className="c8"
+          >
+            <div
+              className="c9 c10"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value=""
+                variant="quiet"
+              />
+              <div
+                className="c19 c22"
+                position="left"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c23"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -2278,7 +2331,7 @@ Array [
                 </svg>
               </div>
               <div
-                className="c19 c20 c21"
+                className="c19 c20"
                 position="right"
                 variant="quiet"
               >
