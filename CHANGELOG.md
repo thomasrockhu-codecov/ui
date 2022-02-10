@@ -1,3 +1,10 @@
+## [10.7.1](https://github.com/nordnet/ui/compare/v10.7.0...v10.7.1) (2022-02-10)
+
+
+### Bug Fixes
+
+* quickfilter colors fixed ([3815325](https://github.com/nordnet/ui/commit/3815325))
+
 # [10.7.0](https://github.com/nordnet/ui/compare/v10.6.0...v10.7.0) (2022-02-10)
 
 
