@@ -308,7 +308,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterBackground: rawColor.gray100,
     quickFilterText: rawColor.gray800,
     quickFilterSelectedText: rawColor.blue500,
-    quickFilterFocusOutline: rawColor.blue500,
+    quickFilterFocusOutline: rawColor.gray400,
+    quickFilterFocusSelectedOutline: rawColor.blue500,
 
     warning: rawColor.index,
     

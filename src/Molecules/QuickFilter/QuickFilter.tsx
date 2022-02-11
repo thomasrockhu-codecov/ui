@@ -5,10 +5,18 @@ import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
 import { Props } from './QuickFilter.types';
 
-const focusStyles = css`
+const focusStyles = (selected: boolean) => css<{
+  selected: boolean;
+}>`
   outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
-  background: ${(p) => p.theme.color.quickFilterSelectedBackground};
-  color: ${(p) => p.theme.color.quickFilterSelectedText};
+  background: ${(p) => p.theme.color.quickFilterBackground};
+  color: ${(p) => p.theme.color.quickFilterText};
+
+  ${(p) =>
+    selected &&
+    ` outline: 1px solid ${p.theme.color.quickFilterFocusSelectedOutline};
+      background: ${p.theme.color.quickFilterSelectedBackground};
+      color: ${p.theme.color.quickFilterSelectedText};`};
 `;
 
 const StyledInput = styled.input`
@@ -54,11 +62,13 @@ const StyledDiv = styled.div.withConfig({
   }
 `;
 
-const StyledLabel = styled.label`
+const StyledLabel = styled.label<{
+  selected: boolean;
+}>`
   cursor: inherit;
   &:focus-within {
     ${StyledDiv} {
-      ${focusStyles}
+      ${(p) => focusStyles(p.selected)}
     }
   }
 `;
@@ -94,7 +104,7 @@ export const QuickFilter: React.FC<Props> = ({
   };
 
   return (
-    <StyledLabel>
+    <StyledLabel selected={selected}>
       <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel}>
         <StyledInput
           checked={selected}

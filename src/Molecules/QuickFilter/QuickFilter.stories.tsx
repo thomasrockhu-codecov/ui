@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { Meta, Story } from '@storybook/react';
 
-import { Icon, Card } from '../..';
+import { Box, Flexbox, Icon, Card } from '../..';
 import { QuickFilter } from './QuickFilter';
 import { Props } from './QuickFilter.types';
 
@@ -46,6 +46,19 @@ WithSelectedInitially.args = {
   icon: <Icon.Money16 />,
   selectedInitially: true,
 };
+
+export const WithFourQuickFilters = () => (
+  <Card>
+    <Box p={2}>
+      <Flexbox container gutter={1}>
+        <QuickFilter icon={<Icon.MonthlySavings16 />} value="1" />{' '}
+        <QuickFilter icon={<Icon.MonthlySavings16 />} label="&nbsp;" value="1" />{' '}
+        <QuickFilter icon={<Icon.MonthlySavings16 />} label="label" value="1" />{' '}
+        <QuickFilter label="Label one next to icon one" value="0" />
+      </Flexbox>
+    </Box>
+  </Card>
+);
 
 export const WithValueControlledBehavior = () => {
   const Component = () => {

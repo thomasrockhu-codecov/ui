@@ -308,10 +308,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleBanner: rawColor.green900,
 
     quickFilterSelectedBackground: rawColor.blue800,
-    quickFilterBackground: rawColor.gray900,
+    quickFilterBackground: rawColor.gray700,
     quickFilterText: rawColor.white,
     quickFilterSelectedText: rawColor.blue400,
-    quickFilterFocusOutline: rawColor.blue400,
+    quickFilterFocusOutline: rawColor.gray600,
+    quickFilterFocusSelectedOutline: rawColor.blue400,
 
     warning: rawColor.index,
 
