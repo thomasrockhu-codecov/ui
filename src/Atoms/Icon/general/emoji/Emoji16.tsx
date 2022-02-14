@@ -7,22 +7,13 @@ const Emoji16: React.FC<IconProps> = (props) => {
   return (
     <IconBase {...props} width={16} height={16}>
       <path
-        fill="none"
-        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Z"
-        stroke="currentColor"
-        strokeWidth={1.05}
-        strokeMiterlimit={10}
-      />
-      <path
-        d="M11.36 9.575a3.697 3.697 0 0 1-3.395 2.24 3.656 3.656 0 0 1-3.377-2.222v-.018h6.772Z"
+        d="M8 10.5A1.5 1.5 0 0 1 6.5 9h-2a3.5 3.5 0 1 0 7 0h-2A1.5 1.5 0 0 1 8 10.5ZM6.5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM10.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
         fill="currentColor"
-        stroke="currentColor"
-        strokeWidth={1.05}
-        strokeMiterlimit={10}
-        strokeLinejoin="round"
       />
       <path
-        d="M4.815 6.513a1.032 1.032 0 1 0 0-2.065 1.032 1.032 0 0 0 0 2.065ZM11.063 6.513a1.033 1.033 0 1 0 0-2.065 1.033 1.033 0 0 0 0 2.065Z"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-2 0A6 6 0 1 1 2 8a6 6 0 0 1 12 0Z"
         fill="currentColor"
       />
     </IconBase>

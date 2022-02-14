@@ -150,8 +150,8 @@ const BigTableWithoutStickyHeaderTemplate: Story<{ columns: number; rows: number
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
-                key={`column${index + 1}`}
                 columnId={`column${index + 1}`}
+                key={`column${index + 1}`}
                 sortable
                 onSort={(columnId, nextSortOrder) => {
                   setSort({ columnId, sortOrder: nextSortOrder });
@@ -220,6 +220,7 @@ const MultipleBigTablesWithStickyHeadersTemplate: Story<{ columns: number; rows:
               {[...Array(columnsLength)]?.map((_, index) => (
                 <FlexTable.Header
                   columnId={`column${index + 1}`}
+                  key={`column${index + 1}`}
                   sortable
                   onSort={(columnId, nextSortOrder) => {
                     setSort({ columnId, sortOrder: nextSortOrder });
@@ -242,6 +243,7 @@ const MultipleBigTablesWithStickyHeadersTemplate: Story<{ columns: number; rows:
             {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
                 columnId={`column${index + 1}`}
+                key={`column${index + 1}`}
                 sortable
                 onSort={(columnId, nextSortOrder) => {
                   setSort({ columnId, sortOrder: nextSortOrder });
