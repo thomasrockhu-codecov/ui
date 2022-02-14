@@ -1,3 +1,15 @@
+# [10.8.0](https://github.com/nordnet/ui/compare/v10.7.4...v10.8.0) (2022-02-14)
+
+
+### Bug Fixes
+
+* 🐛 corrects unique key warnings ([554d425](https://github.com/nordnet/ui/commit/554d425))
+
+
+### Features
+
+* **Icon:** updates general emoji icon ([ec7df95](https://github.com/nordnet/ui/commit/ec7df95))
+
 ## [10.7.4](https://github.com/nordnet/ui/compare/v10.7.3...v10.7.4) (2022-02-14)
 
 
