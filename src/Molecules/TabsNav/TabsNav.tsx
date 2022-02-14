@@ -59,7 +59,7 @@ const Title = React.forwardRef<HTMLSpanElement, TitleProps>(
           onClick={onClick}
           fullServerRedirect={fullServerRedirect}
         >
-          <TabTitle active={active} height={height}>
+          <TabTitle active={active} height={height} variant="large">
             {children}
           </TabTitle>
         </StyledLink>
