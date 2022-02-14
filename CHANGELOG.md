@@ -1,3 +1,10 @@
+## [10.7.4](https://github.com/nordnet/ui/compare/v10.7.3...v10.7.4) (2022-02-14)
+
+
+### Bug Fixes
+
+* update TabsNav to use 16px font again ([15cde7b](https://github.com/nordnet/ui/commit/15cde7b))
+
 ## [10.7.3](https://github.com/nordnet/ui/compare/v10.7.2...v10.7.3) (2022-02-11)
 
 
