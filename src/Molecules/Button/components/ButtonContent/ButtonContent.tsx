@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
-import { Flexbox, Spinner, Typography } from '../../..';
+import { Flexbox, Spinner, Typography } from '../../../..';
 
 const LOADING_ANIMATION_DURATION = 0.2;
 
@@ -112,7 +112,9 @@ export const ButtonContent: ButtonContentComponent = (props) => {
             <Spinner
               id={`spinner-${variant}-${size}-${colorFn && colorFn(theme)}`} // TODO: replace with unique id
               color={
-                variant === 'primary' ? (t) => t.color.buttonText : colorFn || ((t) => t.color.cta)
+                variant === 'primary'
+                  ? (t) => t.color.buttonSpinner
+                  : colorFn || ((t) => t.color.buttonSpinnerSecondary)
               }
               size={getSpinnerSize(size)}
               delay={delayLoadingSpinnerAnimation}

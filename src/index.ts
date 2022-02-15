@@ -33,8 +33,7 @@ import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
 import BarScale from './Molecules/BarScale';
 import BottomWizardBar from './Molecules/BottomWizardBar';
-import Button from './Molecules/Button';
-import PillButton from './Molecules/PillButton';
+import Button, { NewButton, PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CoachMarks from './Molecules/CoachMarks';
 import CollapsibleCard from './Molecules/CollapsibleCard';
@@ -168,6 +167,7 @@ export {
   Media,
   Modal,
   MultiStepProgress,
+  NewButton,
   Number,
   OldIcon,
   PageHeaderCard,

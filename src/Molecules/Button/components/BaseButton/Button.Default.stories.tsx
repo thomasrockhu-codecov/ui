@@ -3,11 +3,13 @@ import { action } from '@storybook/addon-actions';
 import MD from 'react-markdown';
 import docs from './Button.md';
 
-import { Button, Flexbox, Typography } from '../..';
-import { Display } from '../../common/Display';
+import { NewButton, Flexbox, Typography } from '../../../..';
+import { Display } from '../../../../common/Display';
+
+const Button = NewButton.Base;
 
 export default {
-  title: 'Molecules / Button',
+  title: 'Molecules / Button / Base (old Button)',
   parameters: {
     component: Button,
   },

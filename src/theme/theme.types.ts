@@ -213,6 +213,14 @@ export type ThemeColors = {
    */
   buttonTextDisabled: string;
   /**
+   * white
+   */
+  buttonSpinner: string;
+  /**
+   * blue500
+   */
+  buttonSpinnerSecondary: string;
+  /**
    * blue500
    */
   buttonBorderSecondary: string;

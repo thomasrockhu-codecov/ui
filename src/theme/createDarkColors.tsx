@@ -75,6 +75,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonTextSecondary: rawColor.white,
     buttonTextDisabled: rawColor.gray600,
 
+    buttonSpinner: rawColor.white,
+    buttonSpinnerSecondary: rawColor.white,
+
     buy: rawColor.blue400,
     buyActive: rawColor.blue700,
     buyHover: rawColor.blue500,
@@ -93,7 +96,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     dateBadgeUpperBackground: rawColor.gray900,
     dateBadgeLowerBackground: rawColor.gray700,
-    
+
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
     datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
 

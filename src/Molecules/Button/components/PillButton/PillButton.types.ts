@@ -1,6 +1,10 @@
 export type PillButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary';
+  /**
+   * @default m
+   */
+  size?: 's' | 'm';
   as?: any;
   children: React.ReactChild | React.ReactChild[];
   className?: string;
@@ -28,3 +32,8 @@ export type InnerProps = Omit<PillButtonProps, 'variant' | 'fullWidth'> & {
   $fullWidth?: PillButtonProps['fullWidth'];
   $loading?: PillButtonProps['loading'];
 };
+
+export type PillButtonComponent = React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<PillButtonProps> &
+    React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
+>;

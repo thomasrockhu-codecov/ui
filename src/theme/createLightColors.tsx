@@ -75,6 +75,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buttonText: rawColor.white,
     buttonTextSecondary: rawColor.blue500,
     buttonTextDisabled: rawColor.gray500,
+    
+    buttonSpinner: rawColor.white,
+    buttonSpinnerSecondary: rawColor.blue500,
 
     buy: rawColor.blue500,
     buyActive: rawColor.blue700,
