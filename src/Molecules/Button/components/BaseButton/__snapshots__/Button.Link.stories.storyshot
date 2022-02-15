@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Button / Base Disabled link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Disabled link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -32,7 +32,6 @@ exports[`Storyshots Molecules / Button / Base Disabled link looking like a butto
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #EEEEEE;
@@ -91,7 +90,7 @@ exports[`Storyshots Molecules / Button / Base Disabled link looking like a butto
 </button>
 `;
 
-exports[`Storyshots Molecules / Button / Base External link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) External link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -117,7 +116,6 @@ exports[`Storyshots Molecules / Button / Base External link looking like a butto
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -162,7 +160,7 @@ exports[`Storyshots Molecules / Button / Base External link looking like a butto
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base Link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -196,7 +194,6 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -239,7 +236,6 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
@@ -397,7 +393,7 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Button / Base Link looking like a button that is full width 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button that is full width 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -423,7 +419,6 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button that is
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -466,7 +461,7 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button that is
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base Link looking like a button with rel as nofollow 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button with rel as nofollow 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -492,7 +487,6 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button with re
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -536,7 +530,7 @@ exports[`Storyshots Molecules / Button / Base Link looking like a button with re
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base Link looking like a button with with colors 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button with with colors 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -601,7 +595,6 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -644,7 +637,6 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #FF1900;
@@ -871,7 +863,6 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
@@ -922,7 +913,6 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
@@ -1097,7 +1087,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules / Button / Base Links looking like buttons composed in a group 1`] = `
+exports[`Storyshots Molecules / Button / Base (old Button) Links looking like buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1149,7 +1139,6 @@ exports[`Storyshots Molecules / Button / Base Links looking like buttons compose
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: #336BFF;
@@ -1193,7 +1182,6 @@ exports[`Storyshots Molecules / Button / Base Links looking like buttons compose
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  outline: 1px solid red;
   padding: 4px 12px;
   min-height: 32px;
   background-color: transparent;
