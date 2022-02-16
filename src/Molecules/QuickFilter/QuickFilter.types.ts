@@ -13,4 +13,6 @@ export type Props = {
   selected?: boolean;
   /** @default false */
   selectedInitially?: boolean;
+  /** @default '' */
+  className?: string;
 };

@@ -91,6 +91,7 @@ export const QuickFilter: React.FC<Props> = ({
   disabled = false,
   selected: controlledSelected,
   selectedInitially = false,
+  className,
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -105,7 +106,7 @@ export const QuickFilter: React.FC<Props> = ({
 
   return (
     <StyledLabel selected={selected}>
-      <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel}>
+      <StyledDiv className={className} disabled={disabled} selected={selected} hasLabel={hasLabel}>
         <StyledInput
           checked={selected}
           disabled={disabled}
