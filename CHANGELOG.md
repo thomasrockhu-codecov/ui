@@ -1,3 +1,10 @@
+## [10.8.1](https://github.com/nordnet/ui/compare/v10.8.0...v10.8.1) (2022-02-16)
+
+
+### Bug Fixes
+
+* 🐛 expose classname prop to quickfilter ([6cf77f7](https://github.com/nordnet/ui/commit/6cf77f7))
+
 # [10.8.0](https://github.com/nordnet/ui/compare/v10.7.4...v10.8.0) (2022-02-14)
 
 
