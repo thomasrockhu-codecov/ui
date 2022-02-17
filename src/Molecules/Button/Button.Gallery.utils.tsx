@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '../..';
+import Icon from '../../Atoms/Icon';
 
 export type IconPickerType = (
   buttonSize: string,

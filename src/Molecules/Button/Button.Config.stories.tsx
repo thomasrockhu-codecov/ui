@@ -27,6 +27,7 @@ const argTypes = {
     control: { type: 'select' },
   },
   iconPlacement: {
+    options: ['left', 'right'],
     control: { type: 'inline-radio' },
   },
 };
