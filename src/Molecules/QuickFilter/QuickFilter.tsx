@@ -80,7 +80,9 @@ const StyledFlexbox = styled(Flexbox)`
 `;
 
 const StyledFlexboxItem = styled(Flexbox)`
-  padding-top: 1px !important;
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+    padding-top: 1px !important;
+  }
 `;
 
 export const QuickFilter: React.FC<Props> = ({
