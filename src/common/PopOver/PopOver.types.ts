@@ -20,6 +20,7 @@ export type Props = {
   className?: string;
   id?: string;
   label: React.ReactNode;
+  offset?: number[];
   position?: Position;
   positionCallback?: (calulatedPostion: Position) => void;
   triggerElement?: Element;

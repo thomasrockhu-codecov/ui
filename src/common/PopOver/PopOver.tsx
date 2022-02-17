@@ -56,6 +56,7 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
       maxWidth,
       triggerElement,
       pointerEvents = true,
+      offset,
       backgroundColor: backgroundColorProp,
       borderColor: borderColorProp,
       ...htmlSpanProps
@@ -64,13 +65,14 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
   ) => {
     const [popperElement, setPopperElement] = useState(null);
     const [arrowElement, setArrowElement] = useState(null);
+    const offestModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
     /**
      We're using Popper.js for convenient tooltip placement.
      */
 
     const popper = usePopper(triggerElement, popperElement, {
-      modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
+      modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offestModifier],
       placement: position,
     });
 

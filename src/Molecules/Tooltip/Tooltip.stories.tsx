@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Flexbox, OldIcon, Modal, Button as UIButton } from '../..';
+import { Box, Drawer, Flexbox, Modal, Button as UIButton, Icon, Typography } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
 
@@ -239,7 +239,7 @@ export const ControlledOpen = () => {
         <Box mt={10}>
           <Tooltip isOpen={isOpen} label="This is a controlled tooltip." position="right">
             <div>
-              <OldIcon.Pen />
+              <Icon.Edit16 />
             </div>
           </Tooltip>
         </Box>
@@ -261,7 +261,7 @@ export const WrapChild = () => {
             position="right"
             wrapChild
           >
-            <OldIcon.Pen />
+            <Icon.Edit16 />
           </Tooltip>
         </Box>
       </Flexbox>
@@ -274,7 +274,7 @@ export const WrapChild = () => {
             position="right"
           >
             <div>
-              <OldIcon.Pen />
+              <Icon.Edit16 />
             </div>
           </Tooltip>
         </Box>
@@ -294,7 +294,7 @@ export const BrokenPositioning = () => {
           label="This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this."
           position="right"
         >
-          <OldIcon.Pen />
+          <Icon.Edit16 />
         </Tooltip>
       </Box>
     </Flexbox>
@@ -315,10 +315,21 @@ export const WithClickableContent = () => {
           wrapChild
         >
           <UIButton variant="neutral" onClick={() => setIsOpen(!isOpen)}>
-            <OldIcon.Pen />
+            <Icon.Edit16 />
           </UIButton>
         </Tooltip>
       </Box>
     </Flexbox>
   );
 };
+
+export const WithOffset = () => (
+  <Box p={20}>
+    <Flexbox container gutter={4} alignItems="center">
+      <Typography type="primary">Hover the pen!</Typography>
+      <Tooltip label="This tooltip has offset" wrapChild offset={[-20, 40]}>
+        <Icon.Edit16 />
+      </Tooltip>
+    </Flexbox>
+  </Box>
+);

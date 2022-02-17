@@ -12,6 +12,7 @@ export type Props = {
   /** max-width in units */
   maxWidth?: number;
   mode?: 'hover' | 'click';
+  offset?: number[];
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;
