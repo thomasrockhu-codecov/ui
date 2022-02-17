@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import TrackingContext from '../../../../common/tracking';
 import Button from '../BaseButton';
-import { PillButtonProps } from './PillButton.types';
+import { PillButtonProps, PillButtonComponent } from './PillButton.types';
 
 const isSecondary = (variant: PillButtonProps['variant']) => variant === 'secondary';
 
@@ -35,10 +35,10 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
   }
 `;
 
-export const PillButton: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<PillButtonProps> &
-    React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
-> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, PillButtonProps>((props, ref) => {
+export const PillButton: PillButtonComponent = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  PillButtonProps
+>((props, ref) => {
   const {
     variant = 'primary',
     size = 's',
@@ -69,4 +69,5 @@ export const PillButton: React.ForwardRefExoticComponent<
     </StyledPillButton>
   );
 });
+
 PillButton.displayName = 'Button.Pill';

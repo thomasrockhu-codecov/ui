@@ -5,13 +5,11 @@ import { action } from '@storybook/addon-actions';
 import { Provider } from '../../../../common/Links/ReactRouterLinkHelper';
 import docs from './PillButton.md';
 
-import { Flexbox, Typography, Icon, NewButton } from '../../../..';
+import { Flexbox, Typography, Icon, PillButton } from '../../../..';
 import { Display } from '../../../../common/Display';
 
-const PillButton = NewButton.Pill;
-
 export default {
-  title: 'Molecules / Button / Pill (old PillButton)',
+  title: 'Molecules / Button / Button.Pill (PillButton)',
   parameters: {
     component: PillButton,
   },

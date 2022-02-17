@@ -1,6 +1,6 @@
-import { Button, NewButton } from './Button';
+import { Button } from './Button';
 
-const PillButton = NewButton.Pill;
+const PillButton = Button.Pill;
 
 export default Button;
-export { NewButton, PillButton };
+export { PillButton };

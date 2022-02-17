@@ -1,7 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Meta, Story } from '@storybook/react';
-import { NewButton as Button, Icon } from '../..';
+import { Button, Icon } from '../..';
 
 const getIcon = (componentName: string) => {
   const IconComponent = Icon[componentName];
@@ -9,11 +9,33 @@ const getIcon = (componentName: string) => {
   return <IconComponent color="currentColor" />;
 };
 
+const include = ['componentName', 'size', 'variant', 'iconName', 'iconPlacement'];
+
+const argTypes = {
+  componentName: {
+    options: [undefined, 'Pill', 'Icon'],
+    control: { type: 'inline-radio' },
+  },
+  size: {
+    control: { type: 'inline-radio' },
+  },
+  variant: {
+    control: { type: 'inline-radio' },
+  },
+  iconName: {
+    options: Object.keys(Icon),
+    control: { type: 'select' },
+  },
+  iconPlacement: {
+    control: { type: 'inline-radio' },
+  },
+};
+
 export default {
   title: 'Molecules / Button',
-  component: (name) => Button[name],
+  component: Button,
   parameters: {
-    controls: { sort: 'alpha' },
+    controls: { sort: 'alpha', include },
     docs: {
       description: {
         component: 'Configure a button here',
@@ -21,33 +43,11 @@ export default {
     },
     viewMode: 'docs',
   },
-  argTypes: {
-    componentName: {
-      options: Object.keys(Button),
-      control: { type: 'inline-radio' },
-    },
-    size: {
-      options: ['s', 'm', 'l'],
-      control: { type: 'inline-radio' },
-    },
-    variant: {
-      options: ['primary', 'secondary', 'neutral'],
-      control: { type: 'inline-radio' },
-    },
-    iconName: {
-      options: Object.keys(Icon),
-      control: { type: 'select' },
-    },
-    iconPlacement: {
-      options: ['left', 'right'],
-      control: { type: 'inline-radio' },
-    },
-  },
+  argTypes,
 } as Meta;
 
 const Template: Story<{}> = ({ componentName, iconName, iconPlacement, ...rest }: any) => {
-  const ButtonComponent = Button[componentName];
-  ButtonComponent.displayName = `Button.${componentName}`;
+  const ButtonComponent = componentName ? Button[componentName] : Button;
   const icon = iconName ? getIcon(iconName) : undefined;
   const commonProps = { onClick: action('clicked') };
   return componentName === 'Icon' ? (
@@ -56,14 +56,11 @@ const Template: Story<{}> = ({ componentName, iconName, iconPlacement, ...rest }
     </ButtonComponent>
   ) : (
     <ButtonComponent {...commonProps} icon={icon} iconPlacement={iconPlacement} {...rest}>
-      Button
+      {ButtonComponent.displayName}
     </ButtonComponent>
   );
 };
 
 export const ButtonConfigStory = Template.bind({});
-ButtonConfigStory.args = {
-  componentName: 'Base',
-};
 
-ButtonConfigStory.storyName = 'Configure a button';
+ButtonConfigStory.storyName = 'Configure a Button';

@@ -1,10 +1,10 @@
 export type PillButtonProps = {
   /** @default primary */
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'neutral';
   /**
    * @default m
    */
-  size?: 's' | 'm';
+  size?: 's' | 'm' | 'l';
   as?: any;
   children: React.ReactChild | React.ReactChild[];
   className?: string;

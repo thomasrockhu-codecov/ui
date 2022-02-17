@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import TrackingContext from '../../../../common/tracking';
 import Button from '../BaseButton';
-import { IconButtonProps } from './IconButton.types';
+import { IconButtonProps, IconButtonComponent } from './IconButton.types';
 
 const SIZE = {
   s: 7,
@@ -41,10 +41,10 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
   }
 `;
 
-export const IconButton: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<IconButtonProps> &
-    React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
-> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, IconButtonProps>((props, ref) => {
+export const IconButton: IconButtonComponent = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  IconButtonProps
+>((props, ref) => {
   const { size = 'm', delayLoadingSpinnerAnimation = true, children, onClick, ...rest } = props;
   const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
@@ -66,4 +66,5 @@ export const IconButton: React.ForwardRefExoticComponent<
     </StyledIconButton>
   );
 });
+
 IconButton.displayName = 'Button.Icon';

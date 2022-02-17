@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { Meta, Story } from '@storybook/react';
 
-import {
-  Box,
-  NewButton as Button,
-  Card,
-  CardWithTitle,
-  Flexbox,
-  Pagination,
-  Typography,
-} from '../..';
+import { Box, Button, Card, CardWithTitle, Flexbox, Pagination, Typography } from '../..';
 import { Display } from '../../common/Display';
-import { ButtonComponentKeyType, ButtonComponentValueType } from './NewButton.types';
 import createIconPicker, { IconPickerType, allSuitableIcons } from './Button.Gallery.utils';
+
+type ButtonComponentKeyType = 'Icon' | 'Pill' | undefined;
+type ButtonComponentValueType = typeof Button.Icon | typeof Button.Pill;
+type IconPlacementType = 'left' | 'right' | undefined;
+type ButtonSizeType = 's' | 'm' | 'l' | undefined;
+type VariantType = 'primary' | 'secondary' | 'neutral' | undefined;
+type DisplayItemComponent = {
+  title: string;
+  component: any;
+};
 
 const PRIMARY = 'primary';
 const SECONDARY = 'secondary';
@@ -28,7 +29,6 @@ const toTitle = (str: string | undefined = '-') => str.charAt(0).toUpperCase() +
 
 const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
   switch (buttonComponent) {
-    case Button.Base:
     default:
       return {
         buttonVariants: [PRIMARY, SECONDARY, NEUTRAL],
@@ -51,12 +51,12 @@ const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
 };
 
 const ButtonDisplays: React.FC<{
-  buttonComponentName: string;
+  buttonComponentName: ButtonComponentKeyType;
   iconPicker: IconPickerType;
   buttonDisabled: boolean;
   buttonLoading: boolean;
 }> = ({ buttonComponentName, iconPicker, buttonDisabled, buttonLoading }) => {
-  const ButtonComponent = Button[buttonComponentName];
+  const ButtonComponent = buttonComponentName ? Button[buttonComponentName] : Button;
   const { buttonVariants, buttonSizes, iconPlacements } = getButtonSettings(ButtonComponent);
 
   return (
@@ -82,11 +82,11 @@ const ButtonDisplays: React.FC<{
                             {...([LEFT, RIGHT].includes(iconPlacement as string)
                               ? {
                                   icon: icon.iconComponent,
-                                  iconPlacement,
+                                  iconPlacement: iconPlacement as IconPlacementType,
                                 }
                               : {})}
-                            size={buttonSize[0]}
-                            variant={variant}
+                            size={buttonSize[0] as ButtonSizeType}
+                            variant={variant as VariantType}
                             onClick={action(`click${buttonSize}`)}
                             disabled={buttonDisabled}
                             loading={buttonLoading}
@@ -98,10 +98,7 @@ const ButtonDisplays: React.FC<{
                     </Flexbox>
                   </Box>
                 )),
-              })) as {
-                title: string;
-                component: any;
-              }[]
+              })) as DisplayItemComponent[]
             }
           />
         </Flexbox>
@@ -150,7 +147,10 @@ const ButtonsWithIconsTemplate: Story<{
       </Card>
 
       {buttonComponentNames.map((buttonComponentName: ButtonComponentKeyType) => (
-        <CardWithTitle key={`${buttonComponentName}`} title={`Button.${buttonComponentName}`}>
+        <CardWithTitle
+          key={`${buttonComponentName}`}
+          title={buttonComponentName ? `Button.${buttonComponentName}` : 'Button'}
+        >
           <Flexbox container wrap="wrap">
             <ButtonDisplays
               buttonComponentName={buttonComponentName}
@@ -174,7 +174,7 @@ ButtonsWithIcons.args = {
     medium: 16,
     large: 16,
   },
-  buttonComponentNames: Object.keys(Button) as ButtonComponentKeyType[],
+  buttonComponentNames: [undefined, 'Pill', 'Icon'] as ButtonComponentKeyType[],
   buttonDisabled: false,
   buttonLoading: false,
 };
@@ -186,7 +186,7 @@ export default {
   component: ButtonsWithIcons,
   argTypes: {
     buttonComponentNames: {
-      options: Object.keys(Button),
+      options: [undefined, 'Pill', 'Icon'],
       control: { type: 'check' },
     },
   },

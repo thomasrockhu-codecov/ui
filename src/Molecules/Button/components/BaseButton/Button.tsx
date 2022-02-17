@@ -1,6 +1,6 @@
 import React, { FC, useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { ButtonProps, InnerProps } from './Button.types';
+import { ButtonProps, InnerProps, BaseButtonComponent } from './Button.types';
 import { assert } from '../../../../common/utils';
 import NormalizedElements from '../../../../common/NormalizedElements';
 import TrackingContext from '../../../../common/tracking';
@@ -50,9 +50,10 @@ const StyledLink = styled(CleanLink)<InnerProps>`
   text-decoration: none;
 `;
 
-export const Button: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<ButtonProps> & React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
-> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonProps>((props, ref) => {
+export const Button: BaseButtonComponent = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  ButtonProps
+>((props, ref) => {
   const {
     className,
     disabled,
@@ -180,4 +181,5 @@ export const Button: React.ForwardRefExoticComponent<
     </StyledButton>
   );
 });
-Button.displayName = 'Button.Base';
+
+Button.displayName = 'Button';

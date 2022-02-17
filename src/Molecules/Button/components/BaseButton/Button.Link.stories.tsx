@@ -2,13 +2,11 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Provider } from '../../../../common/Links/ReactRouterLinkHelper';
 
-import { NewButton, Flexbox } from '../../../..';
+import { Button, Flexbox } from '../../../..';
 import { Display } from '../../../../common/Display';
 
-const Button = NewButton.Base;
-
 export default {
-  title: 'Molecules / Button / Base (old Button)',
+  title: 'Molecules / Button / Button',
   parameters: {
     component: Button,
   },
