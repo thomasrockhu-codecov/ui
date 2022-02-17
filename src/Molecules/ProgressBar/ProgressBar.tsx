@@ -1,113 +1,37 @@
 import React, { FC } from 'react';
 import * as R from 'ramda';
-import styled from 'styled-components';
-
-import { Flexbox, OldIcon, Typography } from '../..';
+import styled, { useTheme } from 'styled-components';
+import { Badge, Flexbox, Icon, Typography } from '../..';
 import { Props } from './ProgressBar.types';
 
-const StyledContainer = styled(Flexbox).withConfig({
-  shouldForwardProp: (prop) => !['hasLabels'].includes(prop),
-})<{ hasLabels: boolean | undefined }>`
+const StyledContainer = styled(Flexbox)<{ hasLabels: boolean | undefined }>`
   width: 100%;
-  padding-bottom: ${({ theme }) => theme.spacing.unit(0)}px;
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    padding-bottom: ${({ theme, hasLabels }) => hasLabels && theme.spacing.unit(8)}px;
+    padding-bottom: ${({ theme, hasLabels }) => (hasLabels ? theme.spacing.unit(8) : 0)}px;
   }
 `;
 
-const StyledBubble = styled(Flexbox).withConfig({
-  shouldForwardProp: (prop) =>
-    ![
-      'done',
-      'active',
-      'failed',
-      'warning',
-      'colorDone',
-      'colorActive',
-      'colorNext',
-      'colorFailure',
-    ].includes(prop),
-})<{
-  done: boolean;
-  active: boolean;
-  failed: boolean;
-  warning: boolean;
-  colorDone: Props['colorDone'];
-  colorActive: Props['colorActive'];
-  colorNext: Props['colorNext'];
-  colorFailure: Props['colorFailure'];
-}>`
+const Bubble = styled(Badge.Icon)`
   position: relative;
-  border-radius: 50%;
-  width: ${({ theme }) => theme.spacing.unit(8)}px;
-  height: ${({ theme }) => theme.spacing.unit(8)}px;
-  color: ${({ theme }) => theme.color.progressBarText};
-  background: ${({
-    theme,
-    done,
-    active,
-    failed,
-    warning,
-    colorDone,
-    colorActive,
-    colorNext,
-    colorFailure,
-  }) => {
-    if (done) {
-      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
-    }
-    if (active && failed) {
-      return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
-    }
-    if (active && warning) {
-      return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
-    }
-    if (active) {
-      return colorActive ? colorActive(theme) : theme.color.progressBarActive;
-    }
-    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
-  }};
 `;
 
 const StyledTypography = styled(Typography)`
-  position: absolute;
-  top: ${({ theme }) => theme.spacing.unit(10)}px;
+  display: none;
   text-align: center;
   white-space: nowrap;
-  display: none;
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     display: block;
+    position: absolute;
+    top: ${({ theme }) => theme.spacing.unit(10)}px;
   }
 `;
 
-const StyledLine = styled.div.withConfig({
-  shouldForwardProp: (prop) =>
-    !['done', 'active', 'failed', 'warning', 'colorDone', 'colorNext'].includes(prop),
-})<{
-  done: boolean;
-  active: boolean;
-  failed: boolean;
-  warning: boolean;
-  colorDone: Props['colorDone'];
-  colorNext: Props['colorNext'];
+const StyledLine = styled.div<{
+  lineColor: () => string | string[];
 }>`
   width: 100%;
   height: 2px;
-  background: ${({ theme, done, active, failed, warning, colorDone, colorNext }) => {
-    if (active && failed) {
-      return theme.color.progressBarFailure;
-    }
-    if (active && warning) {
-      return theme.color.progressBarWarning;
-    }
-    if (active) {
-      return theme.color.cta;
-    }
-    if (done) {
-      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
-    }
-    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
-  }};
+  background-color: ${(p) => p.lineColor};
 `;
 
 const ProgressBar: FC<Props> = ({
@@ -128,6 +52,7 @@ const ProgressBar: FC<Props> = ({
   titleNext,
   titleFailure,
 }) => {
+  const theme = useTheme();
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
     const stepActive = stepNumber === currentStep;
@@ -155,47 +80,36 @@ const ProgressBar: FC<Props> = ({
 
     const getStepIcon = () => {
       if (stepDone) {
-        return (
-          <OldIcon.CheckMark
-            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
-            size={4}
-          />
-        );
+        return <Icon.Check16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
       }
       if (stepActive && failed) {
-        return (
-          <OldIcon.Cross color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={3} />
-        );
+        return <Icon.Cross16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
       }
       if (stepActive && warning) {
-        return (
-          <OldIcon.WarningTriangleHollow
-            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
-            size={4}
-          />
-        );
+        return <Icon.Warning16 color={(t) => (colorText ? colorText(t) : t.color.textLight)} />;
       }
       return stepNumber;
     };
 
+    const getColor = (active: boolean) => {
+      if (active && failed) {
+        return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
+      }
+      if (active && warning) {
+        return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
+      }
+      if (active) {
+        return colorActive ? colorActive(theme) : theme.color.progressBarActive;
+      }
+      if (stepDone) {
+        return colorDone ? colorDone(theme) : theme.color.progressBarDone;
+      }
+      return colorNext ? colorNext(theme) : theme.color.progressBarNext;
+    };
+
     return (
       <React.Fragment key={stepNumber}>
-        <StyledBubble
-          container
-          item
-          shrink={0}
-          alignItems="center"
-          justifyContent="center"
-          done={stepDone}
-          active={stepActive}
-          failed={failed}
-          warning={warning}
-          title={title}
-          colorDone={colorDone}
-          colorActive={colorActive}
-          colorNext={colorNext}
-          colorFailure={colorFailure}
-        >
+        <Bubble title={title} badgeColor={() => getColor(stepActive)} badgeSize={8}>
           <Typography
             type="secondary"
             color={(t) => (colorText ? colorText(t) : t.color.textLight)}
@@ -211,17 +125,8 @@ const ProgressBar: FC<Props> = ({
           >
             {stepLabels && stepLabels[stepNumber - 1]}
           </StyledTypography>
-        </StyledBubble>
-        {stepNumber < numberOfSteps && (
-          <StyledLine
-            done={stepDone}
-            active={lineActive}
-            failed={failed}
-            warning={warning}
-            colorDone={colorDone}
-            colorNext={colorNext}
-          />
-        )}
+        </Bubble>
+        {stepNumber < numberOfSteps && <StyledLine lineColor={() => getColor(lineActive)} />}
       </React.Fragment>
     );
   };

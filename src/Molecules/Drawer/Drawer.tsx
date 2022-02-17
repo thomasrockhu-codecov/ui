@@ -48,9 +48,9 @@ const Content = styled.div`
   overflow-x: hidden;
   margin-bottom: ${(p) => p.theme.spacing.unit(PADDING)}px;
 
-  padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px;
+  padding: 1px ${(p) => p.theme.spacing.unit(PADDING)}px;
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+    padding: 1px ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
   }
 `;
 

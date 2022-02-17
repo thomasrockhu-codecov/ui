@@ -3330,6 +3330,22 @@ Array [
   align-items: center;
 }
 
+.c23 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c17 {
   position: absolute;
   height: 1px;
@@ -3396,7 +3412,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c22 {
+.c21 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3406,13 +3422,28 @@ Array [
   right: 4px;
 }
 
-.c22:not(:focus) {
+.c21:not(:focus) {
   padding-left: 0;
   padding-right: 0;
 }
 
-.c22:not(:focus) {
+.c21:not(:focus) {
   right: 0;
+}
+
+.c24 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c24:not(:focus) {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c10 {
@@ -3433,7 +3464,7 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: transparent;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -3451,25 +3482,25 @@ Array [
 }
 
 .c10::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c10::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c10:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c10::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3511,8 +3542,6 @@ Array [
 }
 
 .c10:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -3534,9 +3563,9 @@ Array [
   border-color: #BDBDBD;
   border-width: 0 0 2px 0;
   position: relative;
-  border-color: #EBEBE8;
+  border-color: #EEEEEE;
   background-color: transparent;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
   cursor: not-allowed;
@@ -3551,25 +3580,25 @@ Array [
 }
 
 .c14::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c14::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c14:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c14::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3611,8 +3640,6 @@ Array [
 }
 
 .c14:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -3635,7 +3662,7 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: transparent;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -3653,25 +3680,25 @@ Array [
 }
 
 .c15::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c15::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c15:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c15::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3713,8 +3740,6 @@ Array [
 }
 
 .c15:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -3737,7 +3762,7 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: transparent;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -3755,25 +3780,25 @@ Array [
 }
 
 .c18::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c18::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c18:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c18::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3815,8 +3840,6 @@ Array [
 }
 
 .c18:focus {
-  padding-left: 8px;
-  padding-right: 0px;
   border-width: 0 0 2px 0;
   outline: none;
 }
@@ -3840,7 +3863,7 @@ Array [
   position: relative;
   background-color: transparent;
   padding-right: 40px;
-  color: #336BFF;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
 }
@@ -3858,25 +3881,25 @@ Array [
 }
 
 .c19::-webkit-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19::-moz-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19:-ms-input-placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
 
 .c19::placeholder {
-  color: #336BFF;
+  color: #9E9E9E;
   line-height: inherit;
   opacity: 1;
 }
@@ -3918,14 +3941,211 @@ Array [
 }
 
 .c19:focus {
-  padding-left: 8px;
-  padding-right: 32px;
   border-width: 0 0 2px 0;
   outline: none;
 }
 
-.c19:focus + .c21 {
-  padding-right: 8px;
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BDBDBD;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: transparent;
+  padding-left: 32px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c22:focus {
+  border-width: 1px;
+}
+
+.c22:hover {
+  border-color: #424242;
+}
+
+.c22:focus {
+  border-color: #336BFF;
+}
+
+.c22::-webkit-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::-moz-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:-ms-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c22:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled {
+  color: #A0A09B;
+}
+
+.c22:focus {
+  border-width: 0 0 2px 0;
+  outline: none;
+}
+
+.c25 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BDBDBD;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: transparent;
+  padding-left: 32px;
+  padding-right: 40px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c25:focus {
+  border-width: 1px;
+}
+
+.c25:hover {
+  border-color: #424242;
+}
+
+.c25:focus {
+  border-color: #336BFF;
+}
+
+.c25::-webkit-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c25::-moz-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c25:-ms-input-placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c25::placeholder {
+  color: #9E9E9E;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c25:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c25:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c25:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c25:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c25:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c25:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c25:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c25:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c25:disabled {
+  color: #A0A09B;
+}
+
+.c25:focus {
+  border-width: 0 0 2px 0;
+  outline: none;
 }
 
 .c9 {
@@ -4047,6 +4267,55 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Filled
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+              <span
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
+                    placeholder="Placeholder"
+                    type="text"
+                    value="Fill State"
                     variant="quiet"
                   />
                 </div>
@@ -4304,7 +4573,124 @@ Array [
                     variant="quiet"
                   />
                   <div
-                    className="c20 c21 c22"
+                    className="c20 c21"
+                    position="right"
+                    variant="quiet"
+                  >
+                    %
+                  </div>
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Left addon
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+              <span
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                  <div
+                    className="c23 c24"
+                    position="left"
+                    variant="quiet"
+                  >
+                    $
+                  </div>
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Both addon
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                Label 
+              </div>
+              <span
+                className="c8"
+              >
+                <div
+                  className="c9"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c25"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                  <div
+                    className="c23 c24"
+                    position="left"
+                    variant="quiet"
+                  >
+                    $
+                  </div>
+                  <div
+                    className="c20 c21"
                     position="right"
                     variant="quiet"
                   >

@@ -278,8 +278,12 @@ export type ThemeColors = {
   quickFilterSelectedBackground: string;
   /** gray800 */
   quickFilterText: string;
-  /** blue400 */
+  /** blue500 */
   quickFilterSelectedText: string;
+  /** gray400 */
+  quickFilterFocusOutline: string;
+  /** blue500 */
+  quickFilterFocusSelectedOutline: string;
   /** white */
   card: string;
   /** creditsPiePrimary */
@@ -568,6 +572,10 @@ export type ThemeColors = {
   tableRowHover: string;
   /** blue100 */
   tableEmphasis: string;
+  /** gray600 */
+  tabTitle: string;
+  /** gray800 */
+  tabTitleActive: string;
   /** gray0 */
   text: string;
   /** white */

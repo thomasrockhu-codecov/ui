@@ -106,7 +106,10 @@ const SizeIllustrations = (size: string) => (
       ?.filter((name) => name[0].includes(size))
       .map(
         ([illustrationName, IllustrationComponent]: [string, React.ComponentType<any>], index) => (
-          <StyledLabeledValue label={<Typography type="tertiary">{illustrationName}</Typography>}>
+          <StyledLabeledValue
+            key={illustrationName}
+            label={<Typography type="tertiary">{illustrationName}</Typography>}
+          >
             <IllustrationComponent title={index} />
           </StyledLabeledValue>
         ),

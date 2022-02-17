@@ -5,11 +5,18 @@ import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
 import { Props } from './QuickFilter.types';
 
-const FOCUS_RING_SIZES = 2;
+const focusStyles = (selected: boolean) => css<{
+  selected: boolean;
+}>`
+  outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
+  background: ${(p) => p.theme.color.quickFilterBackground};
+  color: ${(p) => p.theme.color.quickFilterText};
 
-const browsersNativeFocusStyles = css`
-  outline: ${FOCUS_RING_SIZES}px solid Highlight;
-  outline: ${FOCUS_RING_SIZES}px solid -webkit-focus-ring-color;
+  ${(p) =>
+    selected &&
+    ` outline: 1px solid ${p.theme.color.quickFilterFocusSelectedOutline};
+      background: ${p.theme.color.quickFilterSelectedBackground};
+      color: ${p.theme.color.quickFilterSelectedText};`};
 `;
 
 const StyledInput = styled.input`
@@ -41,11 +48,11 @@ const StyledDiv = styled.div.withConfig({
   ${(p) => p.selected && `background: ${p.theme.color.quickFilterSelectedBackground}`};
   ${(p) => p.disabled && `background: ${p.theme.color.disabledBackground}`};
 
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
     ${(p) => p.hasLabel && `padding: 1px ${p.theme.spacing.unit(3)}px`};
     ${(p) => p.hasLabel && `height: ${p.theme.spacing.unit(6)}px`};
   }
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
     ${(p) => p.hasLabel && `padding: 5px ${p.theme.spacing.unit(3)}px`};
   }
   ${(p) => p.hasLabel && `border-radius: ${p.theme.spacing.unit(4)}px`};
@@ -55,11 +62,13 @@ const StyledDiv = styled.div.withConfig({
   }
 `;
 
-const StyledLabel = styled.label`
+const StyledLabel = styled.label<{
+  selected: boolean;
+}>`
   cursor: inherit;
   &:focus-within {
     ${StyledDiv} {
-      ${browsersNativeFocusStyles}
+      ${(p) => focusStyles(p.selected)}
     }
   }
 `;
@@ -82,6 +91,7 @@ export const QuickFilter: React.FC<Props> = ({
   disabled = false,
   selected: controlledSelected,
   selectedInitially = false,
+  className,
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -95,8 +105,8 @@ export const QuickFilter: React.FC<Props> = ({
   };
 
   return (
-    <StyledLabel>
-      <StyledDiv disabled={disabled} selected={selected} hasLabel={hasLabel}>
+    <StyledLabel selected={selected}>
+      <StyledDiv className={className} disabled={disabled} selected={selected} hasLabel={hasLabel}>
         <StyledInput
           checked={selected}
           disabled={disabled}

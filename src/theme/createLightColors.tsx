@@ -265,12 +265,15 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     switchReadOnlyKnobBg: rawColor.gray7,
     switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
-
+    
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
     tableEmphasis: rawColor.blue100,
 
+    tabTitle: rawColor.gray600,
+    tabTitleActive: rawColor.gray800,
+    
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
@@ -307,7 +310,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterSelectedBackground: rawColor.blue100,
     quickFilterBackground: rawColor.gray100,
     quickFilterText: rawColor.gray800,
-    quickFilterSelectedText: rawColor.blue400,
+    quickFilterSelectedText: rawColor.blue500,
+    quickFilterFocusOutline: rawColor.gray400,
+    quickFilterFocusSelectedOutline: rawColor.blue500,
 
     warning: rawColor.index,
     

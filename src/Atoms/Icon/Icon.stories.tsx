@@ -68,7 +68,7 @@ export const allIconsColored = () => (
     {Object?.entries(Icon)
       ?.sort((a, b) => a[0].localeCompare(b[0]))
       .map(([iconName, IconComponent]: [string, React.ComponentType<any>]) => (
-        <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+        <div key={iconName} style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
           <IconComponent
             {...(iconName === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
             color={(t: any) => t.color.cta}

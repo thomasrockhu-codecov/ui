@@ -18,7 +18,10 @@ const SizeIcons = (size: string) => (
     {Object?.entries(Icon)
       ?.filter((name) => name[0].includes(size))
       .map(([iconName, IconComponent]: [string, React.ComponentType<any>], index) => (
-        <StyledLabeledValue label={<Typography type="tertiary">{iconName}</Typography>}>
+        <StyledLabeledValue
+          key={iconName}
+          label={<Typography type="tertiary">{iconName}</Typography>}
+        >
           <IconComponent title={index + 1} />
         </StyledLabeledValue>
       ))}

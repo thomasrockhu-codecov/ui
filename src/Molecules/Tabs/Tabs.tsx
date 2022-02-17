@@ -12,7 +12,7 @@ export const Item: React.FC<ItemProps> = ({ children }) => {
 };
 (Item as any).displayName = 'Tabs.Content';
 
-const StyledButton = styled(NormalizedElements.Button)`
+const StyledButton = styled(NormalizedElements.Button)<{ active?: boolean }>`
   background: none;
   display: flex;
   border: none;
@@ -20,7 +20,7 @@ const StyledButton = styled(NormalizedElements.Button)`
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: ${(p) => p.theme.color.buttonTextLight};
+  color: ${(p) => (p.active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
 `;
 
 const Title: TitleComponent = ({
@@ -31,6 +31,7 @@ const Title: TitleComponent = ({
   index,
   setRef,
   height,
+  variant,
 }) => {
   const active = activeFromProps;
 
@@ -45,8 +46,9 @@ const Title: TitleComponent = ({
         role="tab"
         id={`tabs-tab-${index}`}
         tabIndex={active ? 0 : -1}
+        active={active}
       >
-        <TabTitle active={active} height={height}>
+        <TabTitle active={active} height={height} variant={variant}>
           {children}
         </TabTitle>
       </StyledButton>
@@ -93,7 +95,14 @@ export const Tabs: ContainerComponent & {
    * `;
    * */
   components: typeof components;
-} = ({ children, initialActiveTabIndex = 0, activeTabIndex, className, height = 8 }) => {
+} = ({
+  children,
+  initialActiveTabIndex = 0,
+  activeTabIndex,
+  className,
+  height = 8,
+  variant = 'normal',
+}) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
@@ -129,6 +138,7 @@ export const Tabs: ContainerComponent & {
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
             height={height}
+            variant={variant}
           >
             {c.props.title}
           </Title>
@@ -156,6 +166,7 @@ export const Tabs: ContainerComponent & {
         container
         direction="row"
         gutter={4}
+        sm={{ gutter: variant === 'large' ? 8 : 4 }}
         as={StyledUl}
         role="tablist"
         className={className}

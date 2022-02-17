@@ -27,7 +27,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
@@ -44,6 +44,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c6::after {
@@ -57,7 +58,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -68,6 +69,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -105,7 +107,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #212121;
 }
 
 .c5,
@@ -130,6 +132,48 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c1 {
   list-style-type: none;
   padding: 0;
@@ -137,8 +181,31 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 <span
@@ -163,6 +230,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
         className="c4"
       >
         <button
+          active={true}
           aria-selected={true}
           className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
@@ -189,8 +257,9 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -199,7 +268,7 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
           type="button"
         >
           <span
-            className="c7"
+            className="c8"
             height={8}
           >
             Two
@@ -209,11 +278,11 @@ exports[`Storyshots Molecules / Tabs Controlled behaviour 1`] = `
     </li>
   </ul>
   <div
-    className="c8"
+    className="c9"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c9"
+    className="c10"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
@@ -250,7 +319,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
@@ -267,6 +336,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c6::after {
@@ -280,7 +350,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -291,6 +361,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -328,7 +399,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #212121;
 }
 
 .c5,
@@ -353,6 +424,48 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c1 {
   list-style-type: none;
   padding: 0;
@@ -360,8 +473,31 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 <span
@@ -380,6 +516,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
         className="c4"
       >
         <button
+          active={true}
           aria-selected={true}
           className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
@@ -406,8 +543,9 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -416,7 +554,7 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
           type="button"
         >
           <span
-            className="c7"
+            className="c8"
             height={8}
           >
             <div>
@@ -434,11 +572,305 @@ exports[`Storyshots Molecules / Tabs Default 1`] = `
     </li>
   </ul>
   <div
-    className="c8"
+    className="c9"
   />
   <section
     aria-labelledby="tabs-tab-0"
+    className="c10"
+    hidden={false}
+    id="tabs-tabpanel-0"
+    role="tabpanel"
+  >
+    Ones children
+  </section>
+</span>
+`;
+
+exports[`Storyshots Molecules / Tabs Large variant 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c6 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.c6::after {
+  content: '';
+  background-color: #336BFF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c8 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #212121;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c1 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c10 {
+  height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c2 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+<span
+  className="c0"
+>
+  <ul
+    className="c1 c2"
+    direction="row"
+    role="tablist"
+  >
+    <li
+      className="c3"
+      role="presentation"
+    >
+      <span
+        className="c4"
+      >
+        <button
+          active={true}
+          aria-selected={true}
+          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="c6"
+            height={8}
+          >
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c3"
+      role="presentation"
+    >
+      <span
+        className="c0"
+      >
+        <button
+          active={false}
+          aria-selected={false}
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c8"
+            height={8}
+          >
+            <div>
+              Node as well
+              <span
+                aria-label="goodjob"
+                role="img"
+              >
+                👍
+              </span>
+            </div>
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
     className="c9"
+  />
+  <section
+    aria-labelledby="tabs-tab-0"
+    className="c10"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
@@ -492,6 +924,7 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -520,7 +953,7 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #6E6E6E;
 }
 
 .c5,
@@ -556,6 +989,29 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
   padding: 0 20px;
 }
 
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
 <span
   className="c0"
 >
@@ -572,6 +1028,7 @@ exports[`Storyshots Molecules / Tabs With conditionally hidden tab 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
           className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-1"
@@ -624,7 +1081,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
@@ -641,6 +1098,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c7::after {
@@ -654,7 +1112,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   left: 0;
 }
 
-.c8 {
+.c9 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -665,6 +1123,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -702,7 +1161,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #212121;
 }
 
 .c6,
@@ -727,6 +1186,48 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c1 {
   list-style-type: none;
   padding: 0;
@@ -734,11 +1235,11 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
   margin-bottom: 0;
 }
 
-.c10 {
+.c11 {
   height: 100%;
 }
 
-.c11 {
+.c12 {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 16px;
@@ -746,6 +1247,29 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
 
 .c3 {
   padding: 0 20px;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 <span
@@ -764,6 +1288,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
         className="c5"
       >
         <button
+          active={true}
           aria-selected={true}
           className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-0"
@@ -790,8 +1315,9 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c8"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -800,7 +1326,7 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
           type="button"
         >
           <span
-            className="c8"
+            className="c9"
             height={8}
           >
             two
@@ -810,17 +1336,17 @@ exports[`Storyshots Molecules / Tabs With custom styling (like spacing) 1`] = `
     </li>
   </ul>
   <div
-    className="c9"
+    className="c10"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c10"
+    className="c11"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
   >
     <div
-      className="c11"
+      className="c12"
     >
       Ones children
     </div>
@@ -855,7 +1381,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
@@ -872,6 +1398,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c6::after {
@@ -885,7 +1412,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   height: 44px;
   position: relative;
   display: -webkit-inline-box;
@@ -896,6 +1423,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -933,7 +1461,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #212121;
 }
 
 .c5,
@@ -958,6 +1486,48 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c1 {
   list-style-type: none;
   padding: 0;
@@ -965,8 +1535,31 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   height: 100%;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 <span
@@ -985,6 +1578,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
         className="c4"
       >
         <button
+          active={true}
           aria-selected={true}
           className="NormalizedButton__Button-sc-ey7f5x-0 c5"
           id="tabs-tab-0"
@@ -1011,8 +1605,9 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1021,7 +1616,7 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
           type="button"
         >
           <span
-            className="c7"
+            className="c8"
             height={11}
           >
             two
@@ -1031,11 +1626,11 @@ exports[`Storyshots Molecules / Tabs With height modified 1`] = `
     </li>
   </ul>
   <div
-    className="c8"
+    className="c9"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c9"
+    className="c10"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"
@@ -1072,7 +1667,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
@@ -1089,6 +1684,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c7::after {
@@ -1102,7 +1698,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   left: 0;
 }
 
-.c8 {
+.c9 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -1113,6 +1709,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .c0 {
@@ -1150,7 +1747,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: #282823;
+  color: #212121;
 }
 
 .c6,
@@ -1175,6 +1772,48 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+  color: #6E6E6E;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c1 {
   list-style-type: none;
   padding: 0;
@@ -1182,13 +1821,36 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
   margin-bottom: 0;
 }
 
-.c11 {
+.c12 {
   height: 100%;
 }
 
-.c3 ~ .c10 {
+.c3 ~ .c11 {
   height: inherit;
   background: #EBEBE8;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .c2 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 <span
@@ -1207,6 +1869,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
         className="c5"
       >
         <button
+          active={true}
           aria-selected={true}
           className="NormalizedButton__Button-sc-ey7f5x-0 c6"
           id="tabs-tab-0"
@@ -1233,8 +1896,9 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
         className="c0"
       >
         <button
+          active={false}
           aria-selected={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c6"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c8"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1243,7 +1907,7 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
           type="button"
         >
           <span
-            className="c8"
+            className="c9"
             height={8}
           >
             Two
@@ -1253,11 +1917,11 @@ exports[`Storyshots Molecules / Tabs With styled tab content 1`] = `
     </li>
   </ul>
   <div
-    className="c9"
+    className="c10"
   />
   <section
     aria-labelledby="tabs-tab-0"
-    className="c10 c11"
+    className="c11 c12"
     hidden={false}
     id="tabs-tabpanel-0"
     role="tabpanel"

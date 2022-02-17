@@ -71,7 +71,7 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -79,8 +79,9 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
 }
 
 .c6 > * {
@@ -91,14 +92,14 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
   padding-top: 1px !important;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
   .c2 {
     padding: 1px 12px;
     height: 24px;
   }
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
   .c2 {
     padding: 5px 12px;
   }
@@ -114,6 +115,7 @@ exports[`Storyshots Molecules / QuickFilter Another Icon And Label 1`] = `
 >
   <label
     className="c0"
+    selected={false}
   >
     <div
       className="c1 c2"
@@ -239,7 +241,7 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -247,8 +249,9 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
 }
 
 .c6 > * {
@@ -259,14 +262,14 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
   padding-top: 1px !important;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
   .c2 {
     padding: 1px 12px;
     height: 24px;
   }
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
   .c2 {
     padding: 5px 12px;
   }
@@ -282,6 +285,7 @@ exports[`Storyshots Molecules / QuickFilter Both Icon And Label 1`] = `
 >
   <label
     className="c0"
+    selected={false}
   >
     <div
       className="c1 c2"
@@ -392,7 +396,7 @@ exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -400,19 +404,20 @@ exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
 }
 
 .c6 > * {
   color: inherit;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
 
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
 
 }
 
@@ -426,6 +431,7 @@ exports[`Storyshots Molecules / QuickFilter Only Icon 1`] = `
 >
   <label
     className="c0"
+    selected={false}
   >
     <div
       className="c1 c2"
@@ -530,7 +536,7 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -538,22 +544,23 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
 }
 
 .c6 {
   padding-top: 1px !important;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
   .c2 {
     padding: 1px 12px;
     height: 24px;
   }
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
   .c2 {
     padding: 5px 12px;
   }
@@ -569,6 +576,7 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
 >
   <label
     className="c0"
+    selected={false}
   >
     <div
       className="c1 c2"
@@ -596,6 +604,348 @@ exports[`Storyshots Molecules / QuickFilter Only Label 1`] = `
       </div>
     </div>
   </label>
+</div>
+`;
+
+exports[`Storyshots Molecules / QuickFilter With Four Quick Filters 1`] = `
+.c1 {
+  padding: 8px;
+  background-color: transparent;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c2 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c7 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c7 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c10 {
+  color: #212121;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.c5 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #F5F5F5;
+  color: #212121;
+  cursor: pointer;
+  padding: 8px;
+  height: 32px;
+}
+
+.c5:hover {
+  color: #336BFF;
+}
+
+.c11 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #F5F5F5;
+  color: #212121;
+  cursor: pointer;
+  padding: 8px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c11:hover {
+  color: #336BFF;
+}
+
+.c3 {
+  cursor: inherit;
+}
+
+.c3:focus-within .c4 {
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
+}
+
+.c9 > * {
+  color: inherit;
+}
+
+.c12 {
+  padding-top: 1px !important;
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+  .c11 {
+    padding: 1px 12px;
+    height: 24px;
+  }
+}
+
+@media (max-width:975px) {
+  .c11 {
+    padding: 5px 12px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+        selected={false}
+      >
+        <div
+          className="c4 c5"
+        >
+          <input
+            checked={false}
+            className="c6"
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <svg
+                aria-hidden="true"
+                className="c10"
+                focusable="false"
+                height={16}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                width={16}
+              >
+                <path
+                  d="M4.5 1v.5h7v-1h1v1h3v14H.5v-14h3v-1h1V1zm-1 2v-.5h-2v3h13v-3h-2v1h-1v-1h-7v1h-1V3zM2 6.5h-.5v8h13v-8H2zm10.5 5a1 1 0 11-2 0 1 1 0 012 0z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </label>
+       
+      <label
+        className="c3"
+        selected={false}
+      >
+        <div
+          className="c4 c11"
+        >
+          <input
+            checked={false}
+            className="c6"
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <svg
+                aria-hidden="true"
+                className="c10"
+                focusable="false"
+                height={16}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                width={16}
+              >
+                <path
+                  d="M4.5 1v.5h7v-1h1v1h3v14H.5v-14h3v-1h1V1zm-1 2v-.5h-2v3h13v-3h-2v1h-1v-1h-7v1h-1V3zM2 6.5h-.5v8h13v-8H2zm10.5 5a1 1 0 11-2 0 1 1 0 012 0z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                />
+              </svg>
+            </div>
+            <div
+              className="c8 c12"
+            >
+              <span
+                className="c13"
+              >
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+      </label>
+       
+      <label
+        className="c3"
+        selected={false}
+      >
+        <div
+          className="c4 c11"
+        >
+          <input
+            checked={false}
+            className="c6"
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <svg
+                aria-hidden="true"
+                className="c10"
+                focusable="false"
+                height={16}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                width={16}
+              >
+                <path
+                  d="M4.5 1v.5h7v-1h1v1h3v14H.5v-14h3v-1h1V1zm-1 2v-.5h-2v3h13v-3h-2v1h-1v-1h-7v1h-1V3zM2 6.5h-.5v8h13v-8H2zm10.5 5a1 1 0 11-2 0 1 1 0 012 0z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                />
+              </svg>
+            </div>
+            <div
+              className="c8 c12"
+            >
+              <span
+                className="c13"
+              >
+                label
+              </span>
+            </div>
+          </div>
+        </div>
+      </label>
+       
+      <label
+        className="c3"
+        selected={false}
+      >
+        <div
+          className="c4 c11"
+        >
+          <input
+            checked={false}
+            className="c6"
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+            value="0"
+          />
+          <div
+            className="c7"
+          >
+            <div
+              className="c8 c12"
+            >
+              <span
+                className="c13"
+              >
+                Label one next to icon one
+              </span>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
 </div>
 `;
 
@@ -657,12 +1007,12 @@ exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
   cursor: pointer;
   padding: 8px;
   height: 32px;
-  color: #6690FF;
+  color: #336BFF;
   background: #EAF0FF;
 }
 
 .c2:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c0 {
@@ -670,19 +1020,23 @@ exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
 }
 
 .c0:focus-within .c1 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
+  outline: 1px solid #336BFF;
+  background: #EAF0FF;
+  color: #336BFF;
 }
 
 .c6 > * {
   color: inherit;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
 
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
 
 }
 
@@ -696,6 +1050,7 @@ exports[`Storyshots Molecules / QuickFilter With Selected Initially 1`] = `
 >
   <label
     className="c0"
+    selected={true}
   >
     <div
       className="c1 c2"
@@ -805,7 +1160,7 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
 }
 
 .c3:hover {
-  color: #6690FF;
+  color: #336BFF;
 }
 
 .c1 {
@@ -813,22 +1168,23 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
 }
 
 .c1:focus-within .c2 {
-  outline: 2px solid Highlight;
-  outline: 2px solid -webkit-focus-ring-color;
+  outline: 1px solid #BDBDBD;
+  background: #F5F5F5;
+  color: #212121;
 }
 
 .c7 {
   padding-top: 1px !important;
 }
 
-@media (min-width:760px) {
+@media (min-width:976px) {
   .c3 {
     padding: 1px 12px;
     height: 24px;
   }
 }
 
-@media (max-width:759px) {
+@media (max-width:975px) {
   .c3 {
     padding: 5px 12px;
   }
@@ -839,6 +1195,7 @@ exports[`Storyshots Molecules / QuickFilter With Value Controlled Behavior 1`] =
 >
   <label
     className="c1"
+    selected={false}
   >
     <div
       className="c2 c3"

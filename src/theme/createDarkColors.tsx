@@ -271,6 +271,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     tableRowHover: rawColor.gray700,
     tableEmphasis: rawColor.blue800,
 
+    tabTitle: rawColor.gray400,
+    tabTitleActive: rawColor.white,
+
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
 
@@ -308,9 +311,11 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     joinSharevilleBanner: rawColor.green900,
 
     quickFilterSelectedBackground: rawColor.blue800,
-    quickFilterBackground: rawColor.gray900,
+    quickFilterBackground: rawColor.gray700,
     quickFilterText: rawColor.white,
-    quickFilterSelectedText: rawColor.blue500,
+    quickFilterSelectedText: rawColor.blue400,
+    quickFilterFocusOutline: rawColor.gray600,
+    quickFilterFocusSelectedOutline: rawColor.blue400,
 
     warning: rawColor.index,
 

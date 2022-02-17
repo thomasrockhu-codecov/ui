@@ -1,3 +1,106 @@
+## [10.8.1](https://github.com/nordnet/ui/compare/v10.8.0...v10.8.1) (2022-02-16)
+
+
+### Bug Fixes
+
+* 🐛 expose classname prop to quickfilter ([6cf77f7](https://github.com/nordnet/ui/commit/6cf77f7))
+
+# [10.8.0](https://github.com/nordnet/ui/compare/v10.7.4...v10.8.0) (2022-02-14)
+
+
+### Bug Fixes
+
+* 🐛 corrects unique key warnings ([554d425](https://github.com/nordnet/ui/commit/554d425))
+
+
+### Features
+
+* **Icon:** updates general emoji icon ([ec7df95](https://github.com/nordnet/ui/commit/ec7df95))
+
+## [10.7.4](https://github.com/nordnet/ui/compare/v10.7.3...v10.7.4) (2022-02-14)
+
+
+### Bug Fixes
+
+* update TabsNav to use 16px font again ([15cde7b](https://github.com/nordnet/ui/commit/15cde7b))
+
+## [10.7.3](https://github.com/nordnet/ui/compare/v10.7.2...v10.7.3) (2022-02-11)
+
+
+### Bug Fixes
+
+* update quick filter colors ([f4c1caf](https://github.com/nordnet/ui/commit/f4c1caf))
+
+## [10.7.2](https://github.com/nordnet/ui/compare/v10.7.1...v10.7.2) (2022-02-10)
+
+
+### Bug Fixes
+
+* 🐛 hover, focus & disable state for input quiet ([7c4e71c](https://github.com/nordnet/ui/commit/7c4e71c))
+* 🐛 remove padding to fix flicker ([078a319](https://github.com/nordnet/ui/commit/078a319))
+
+## [10.7.1](https://github.com/nordnet/ui/compare/v10.7.0...v10.7.1) (2022-02-10)
+
+
+### Bug Fixes
+
+* quickfilter colors fixed ([3815325](https://github.com/nordnet/ui/commit/3815325))
+
+# [10.7.0](https://github.com/nordnet/ui/compare/v10.6.0...v10.7.0) (2022-02-10)
+
+
+### Features
+
+* add inner component to components and export it with pagewrapper ([eab9530](https://github.com/nordnet/ui/commit/eab9530))
+
+# [10.6.0](https://github.com/nordnet/ui/compare/v10.5.2...v10.6.0) (2022-02-10)
+
+
+### Bug Fixes
+
+* 🐛 revert typing on Typography ([8a1236b](https://github.com/nordnet/ui/commit/8a1236b))
+* add scrollIntoViewOptions as prop ([e219984](https://github.com/nordnet/ui/commit/e219984))
+* fade positioning ([4e2ac84](https://github.com/nordnet/ui/commit/4e2ac84))
+* update storyshots ([2977b8e](https://github.com/nordnet/ui/commit/2977b8e))
+
+
+### Features
+
+* 🎸 make scrollfade optional, change scrollIntoView default ([b33ea79](https://github.com/nordnet/ui/commit/b33ea79))
+* 🎸 WIP enable horizontal scroll on TabsNav on mobile ([f8bd39e](https://github.com/nordnet/ui/commit/f8bd39e))
+* add variant large to tabs and update to new colors ([362dc5e](https://github.com/nordnet/ui/commit/362dc5e))
+
+## [10.5.2](https://github.com/nordnet/ui/compare/v10.5.1...v10.5.2) (2022-02-04)
+
+
+### Bug Fixes
+
+* change mobile mode quickfilter to include portrait tablet ([cddb4a8](https://github.com/nordnet/ui/commit/cddb4a8))
+
+## [10.5.1](https://github.com/nordnet/ui/compare/v10.5.0...v10.5.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* 🐛 added 1px y padding to mitigate accordion outline gone ([5f2230e](https://github.com/nordnet/ui/commit/5f2230e))
+
+# [10.5.0](https://github.com/nordnet/ui/compare/v10.4.2...v10.5.0) (2022-02-02)
+
+
+### Bug Fixes
+
+* correct tag32 display name ([601291f](https://github.com/nordnet/ui/commit/601291f))
+* fix warning16 ([50656d5](https://github.com/nordnet/ui/commit/50656d5))
+
+
+### Features
+
+* add new icons ([cb484ac](https://github.com/nordnet/ui/commit/cb484ac))
+* add relative container ([2a15ad0](https://github.com/nordnet/ui/commit/2a15ad0))
+* refactor progess bar ([be172c1](https://github.com/nordnet/ui/commit/be172c1))
+* update story ([1c10c44](https://github.com/nordnet/ui/commit/1c10c44))
+* update storyshot ([a397c0b](https://github.com/nordnet/ui/commit/a397c0b))
+
 ## [10.4.2](https://github.com/nordnet/ui/compare/v10.4.1...v10.4.2) (2022-02-01)
 
 

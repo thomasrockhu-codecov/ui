@@ -62,6 +62,9 @@ exports[`Storyshots Molecules / Badge / Number Badge with animation 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -383,6 +386,9 @@ exports[`Storyshots Molecules / Badge / Number Common use cases 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -651,6 +657,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -672,6 +681,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 16px;
   min-width: 16px;
   border-radius: 16px;
@@ -693,6 +705,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 24px;
   min-width: 24px;
   border-radius: 24px;
@@ -714,6 +729,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 32px;
   min-width: 32px;
   border-radius: 32px;
@@ -735,6 +753,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #51CB20;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -756,6 +777,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #FF4733;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -777,6 +801,9 @@ exports[`Storyshots Molecules / Badge / Number Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   border-radius: 20px;
@@ -1210,6 +1237,9 @@ exports[`Storyshots Molecules / Badge / Number Specialized children 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 20px;
   min-width: 20px;
   color: #FFFFFF;

@@ -71,6 +71,9 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c11 {
@@ -89,6 +92,9 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #FF4733;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c13 {
@@ -107,6 +113,9 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #85DA62;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c14 {
@@ -125,6 +134,9 @@ exports[`Storyshots Molecules / Badge / Label Showcase 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #41A21A;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c5 {
