@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Button / Base (old Button) Disabled link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Button Disabled link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -90,7 +90,7 @@ exports[`Storyshots Molecules / Button / Base (old Button) Disabled link looking
 </button>
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) External link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Button External link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -160,7 +160,7 @@ exports[`Storyshots Molecules / Button / Base (old Button) External link looking
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button 1`] = `
+exports[`Storyshots Molecules / Button / Button Link looking like a button 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -393,7 +393,7 @@ exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a b
 </div>
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button that is full width 1`] = `
+exports[`Storyshots Molecules / Button / Button Link looking like a button that is full width 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -461,7 +461,7 @@ exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a b
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button with rel as nofollow 1`] = `
+exports[`Storyshots Molecules / Button / Button Link looking like a button with rel as nofollow 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -530,7 +530,7 @@ exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a b
 </a>
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) Link looking like a button with with colors 1`] = `
+exports[`Storyshots Molecules / Button / Button Link looking like a button with with colors 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1087,7 +1087,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules / Button / Base (old Button) Links looking like buttons composed in a group 1`] = `
+exports[`Storyshots Molecules / Button / Button Links looking like buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
