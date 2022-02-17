@@ -1,5 +1,6 @@
-import { ColorFn } from 'common/Types';
 import React from 'react';
+import { ColorFn } from 'common/Types';
+import { OffsetArg } from '../../Molecules/Tooltip/Tooltip.types';
 
 export type InModal = boolean;
 export type Position =
@@ -20,7 +21,7 @@ export type Props = {
   className?: string;
   id?: string;
   label: React.ReactNode;
-  offset?: number[];
+  offset?: OffsetArg;
   position?: Position;
   positionCallback?: (calulatedPostion: Position) => void;
   triggerElement?: Element;

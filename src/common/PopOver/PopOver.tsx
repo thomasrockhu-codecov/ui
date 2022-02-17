@@ -16,7 +16,6 @@ const StyledSpan = styled.span<StyledSpanProps>`
   z-index: ${(p) => (p.$inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
 
   ${(p) => (p.$pointerEvents ? '' : 'pointer-events: none;')}
-
   &[data-popper-placement^='top'] {
     padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
   }
@@ -65,12 +64,12 @@ const PopOver = forwardRef<HTMLSpanElement, Props>(
   ) => {
     const [popperElement, setPopperElement] = useState(null);
     const [arrowElement, setArrowElement] = useState(null);
+
     const offsetModifier = offset ? [{ name: 'offset', options: { offset } }] : [];
 
     /**
-     We're using Popper.js for convenient tooltip placement.
-     */
-
+         We're using Popper.js for convenient tooltip placement.
+         */
     const popper = usePopper(triggerElement, popperElement, {
       modifiers: [{ name: 'arrow', options: { element: arrowElement } }, ...offsetModifier],
       placement: position,

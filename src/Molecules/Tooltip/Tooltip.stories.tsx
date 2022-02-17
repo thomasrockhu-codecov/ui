@@ -333,3 +333,27 @@ export const WithOffset = () => (
     </Flexbox>
   </Box>
 );
+
+export const WithOffsetAsAFunction = () => (
+  <Box p={20}>
+    <Flexbox container gutter={4} alignItems="center">
+      <Typography type="primary">Hover the pen!</Typography>
+      <Tooltip
+        position="bottom"
+        label="This tooltip has offset"
+        wrapChild
+        offset={
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          ({ placement, reference, popper }) => {
+            if (placement === 'bottom') {
+              return [0, popper.height * 4];
+            }
+            return [];
+          }
+        }
+      >
+        <Icon.Edit16 />
+      </Tooltip>
+    </Flexbox>
+  </Box>
+);
