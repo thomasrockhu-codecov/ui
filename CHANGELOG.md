@@ -1,3 +1,12 @@
+## [10.9.1](https://github.com/nordnet/ui/compare/v10.9.0...v10.9.1) (2022-02-17)
+
+
+### Bug Fixes
+
+* 🐛 fix push error ([aaa76b0](https://github.com/nordnet/ui/commit/aaa76b0))
+* 🐛 remove 1px padding hack on mobile ([7739628](https://github.com/nordnet/ui/commit/7739628))
+* 🐛 remove quickfilter padding hack on mobile ([79ff0d1](https://github.com/nordnet/ui/commit/79ff0d1))
+
 # [10.9.0](https://github.com/nordnet/ui/compare/v10.8.1...v10.9.0) (2022-02-17)
 
 
