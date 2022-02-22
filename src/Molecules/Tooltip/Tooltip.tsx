@@ -27,6 +27,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       mode = 'hover',
       inModal,
       maxWidth = 50,
+      offset,
       openDelay = 100,
       closeDelay = 500,
       isOpen: controlledIsOpen,
@@ -75,6 +76,7 @@ export const Tooltip: TooltipComponent = forwardRef(
             position={position}
             inModal={inModal}
             maxWidth={maxWidth}
+            offset={offset}
             pointerEvents={pointerEvents}
           />
         )}

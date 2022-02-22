@@ -1,4 +1,17 @@
+import React from 'react';
 import { InModal, Position } from 'common/PopOver/PopOver.types';
+import { BasePlacement, Rect } from '@popperjs/core';
+
+type OffsetFunctionArg = {
+  popper: Rect;
+  reference: Rect;
+  placement: BasePlacement;
+};
+
+type BareOffset = [number, number];
+type EmptyOffset = [];
+type Offset = BareOffset | EmptyOffset;
+export type OffsetArg = Offset | ((arg: OffsetFunctionArg) => Offset);
 
 export type Props = {
   label: React.ReactNode;
@@ -12,6 +25,7 @@ export type Props = {
   /** max-width in units */
   maxWidth?: number;
   mode?: 'hover' | 'click';
+  offset?: OffsetArg;
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;

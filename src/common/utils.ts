@@ -49,7 +49,8 @@ export const isString = (x: any): x is string => typeof x === 'string';
 export const isBoolean = (x: any): x is boolean => typeof x === 'boolean';
 export const isArray = (x: any): x is [] => Array.isArray(x);
 export const isFunction = (x: any): x is Function => typeof x === 'function';
-export const isHTMLElement = (x: any): x is HTMLElement => x instanceof HTMLElement;
+export const isHTMLElement = (x: any): x is HTMLElement =>
+  typeof HTMLElement !== 'undefined' ? x instanceof HTMLElement : false;
 
 export const pickAriaAttributes = R.pickBy((_, key: string | number) =>
   R.test(/^aria-/, key as string),

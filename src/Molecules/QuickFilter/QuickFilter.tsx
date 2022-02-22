@@ -1,23 +1,9 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { Flexbox, Typography } from '../..';
 import { isBoolean, isFunction } from '../../common/utils';
 import { Props } from './QuickFilter.types';
-
-const focusStyles = (selected: boolean) => css<{
-  selected: boolean;
-}>`
-  outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
-  background: ${(p) => p.theme.color.quickFilterBackground};
-  color: ${(p) => p.theme.color.quickFilterText};
-
-  ${(p) =>
-    selected &&
-    ` outline: 1px solid ${p.theme.color.quickFilterFocusSelectedOutline};
-      background: ${p.theme.color.quickFilterSelectedBackground};
-      color: ${p.theme.color.quickFilterSelectedText};`};
-`;
 
 const StyledInput = styled.input`
   opacity: 0;
@@ -68,7 +54,15 @@ const StyledLabel = styled.label<{
   cursor: inherit;
   &:focus-within {
     ${StyledDiv} {
-      ${(p) => focusStyles(p.selected)}
+      outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
+      background: ${(p) => p.theme.color.quickFilterBackground};
+      color: ${(p) => p.theme.color.quickFilterText};
+
+      ${(p) =>
+        p.selected &&
+        `outline: 1px solid ${p.theme.color.quickFilterFocusSelectedOutline};
+      background: ${p.theme.color.quickFilterSelectedBackground};
+      color: ${p.theme.color.quickFilterSelectedText};`};
     }
   }
 `;
@@ -80,7 +74,8 @@ const StyledFlexbox = styled(Flexbox)`
 `;
 
 const StyledFlexboxItem = styled(Flexbox)`
-  padding-top: 1px !important;
+  padding-top: ${(p) =>
+    p.theme.media.greaterThan(p.theme.breakpoints.md) ? '1px !important' : ''};
 `;
 
 export const QuickFilter: React.FC<Props> = ({
