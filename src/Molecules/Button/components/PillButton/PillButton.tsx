@@ -21,7 +21,7 @@ const StyledPillButton = styled(Button)<PillButtonProps>`
     isSecondary(p.variant) &&
     !p.disabled &&
     `
-    color: ${p.theme.color.buttonBorderSecondary};
+    color: ${p.theme.color.link};
     &:hover {
       color: ${p.theme.color.buttonHoverSecondary};
     }

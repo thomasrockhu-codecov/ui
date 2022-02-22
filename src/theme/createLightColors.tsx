@@ -75,7 +75,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     buttonText: rawColor.white,
     buttonTextSecondary: rawColor.blue500,
     buttonTextDisabled: rawColor.gray500,
-    
+    buttonTextNegative: rawColor.red500,
+
     buttonSpinner: rawColor.white,
     buttonSpinnerSecondary: rawColor.blue500,
 
@@ -265,7 +266,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     switchReadOnlyKnobBg: rawColor.gray7,
     switchReadOnlyTrackBg: Color(rawColor.cta).alpha(0.1).rgb().string(),
-    
+
     tableBorder: rawColor.gray0,
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
@@ -273,7 +274,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     tabTitle: rawColor.gray600,
     tabTitleActive: rawColor.gray800,
-    
+
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
@@ -300,9 +301,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     sfdrArticle6: rawColor.gray3,
     sfdrArticle8: rawColor.sfdrArticle8,
     sfdrArticle9: rawColor.sfdrArticle9,
-    
+
     popularBadgeBackground: rawColor.pink100,
-    
+
     joinSharevilleIllustration: rawColor.green600,
     joinSharevilleBadge: rawColor.green200,
     joinSharevilleBanner: rawColor.green100,
@@ -315,10 +316,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue500,
 
     warning: rawColor.index,
-    
+
     worldMapLand: rawColor.blue700, // not yet in use
     worldMapWater: rawColor.gray800, // not yet in use
-
 
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,

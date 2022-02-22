@@ -266,6 +266,8 @@ export type ThemeColors = {
   buttonTextSecondary: string;
   /** gray0 */
   buttonTextLight: string;
+  /** red500 */
+  buttonTextNegative: string;
   /** blue500 */
   buy: string;
   /** blue700 */

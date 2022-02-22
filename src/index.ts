@@ -174,7 +174,7 @@ export {
   Pagination,
   PersistentTooltip,
   Pill,
-  PillButton,
+  /** @deprecated */ PillButton,
   Portal,
   ProgressBar,
   Rating,

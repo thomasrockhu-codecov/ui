@@ -74,6 +74,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     buttonText: rawColor.white,
     buttonTextSecondary: rawColor.white,
     buttonTextDisabled: rawColor.gray600,
+    buttonTextNegative: rawColor.red500,
 
     buttonSpinner: rawColor.white,
     buttonSpinnerSecondary: rawColor.white,
