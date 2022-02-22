@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonContentComponent, ButtonContentProps } from './ButtonContent.types';
-import { Flexbox, Spinner, Typography } from '../../..';
+import { Flexbox, Spinner, Typography } from '../../../..';
 
 const LOADING_ANIMATION_DURATION = 0.2;
 
@@ -28,12 +28,8 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
-const IconWrapper = styled.span<{ $iconPlacement: 'left' | 'right' }>`
-  display: block;
-`;
-
-const StyledTypography = styled(Typography)`
-  display: block;
+const IconWrapper = styled.div`
+  align-self: center;
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
@@ -64,26 +60,28 @@ export const ButtonContent: ButtonContentComponent = (props) => {
 
   const content = (
     <>
-      {size === 's' ? (
-        <Flexbox container gutter={1} justifyContent="space-between" alignItems="center">
-          {icon && iconPlacement === 'left' && (
-            <Flexbox item>
-              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
-            </Flexbox>
-          )}
+      {icon ? (
+        <Flexbox
+          container
+          gutter={variant === 'neutral' && size === 's' ? 1 : 2}
+          justifyContent="space-between"
+          alignItems="baseline"
+        >
+          {iconPlacement === 'left' && <IconWrapper>{icon}</IconWrapper>}
           <Flexbox item>
-            <StyledTypography type={type} color="inherit" weight="bold">
+            <Typography type={type} color="inherit" weight="bold" as="div">
               {children}
-            </StyledTypography>
+            </Typography>
           </Flexbox>
-          {icon && iconPlacement === 'right' && (
-            <Flexbox item>
-              <IconWrapper $iconPlacement={iconPlacement}>{icon}</IconWrapper>
-            </Flexbox>
-          )}
+          {iconPlacement === 'right' && <IconWrapper>{icon}</IconWrapper>}
         </Flexbox>
       ) : (
-        <Typography type={type} color="inherit" weight="bold">
+        <Typography
+          type={type}
+          color="inherit"
+          weight="bold"
+          {...(size === 's' ? { as: 'div' } : {})}
+        >
           {children}
         </Typography>
       )}
@@ -114,7 +112,9 @@ export const ButtonContent: ButtonContentComponent = (props) => {
             <Spinner
               id={`spinner-${variant}-${size}-${colorFn && colorFn(theme)}`} // TODO: replace with unique id
               color={
-                variant === 'primary' ? (t) => t.color.buttonText : colorFn || ((t) => t.color.cta)
+                variant === 'primary'
+                  ? (t) => t.color.buttonSpinner
+                  : colorFn || ((t) => t.color.buttonSpinnerSecondary)
               }
               size={getSpinnerSize(size)}
               delay={delayLoadingSpinnerAnimation}

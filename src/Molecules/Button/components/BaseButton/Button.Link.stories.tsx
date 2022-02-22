@@ -1,12 +1,12 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Provider } from '../../common/Links/ReactRouterLinkHelper';
+import { Provider } from '../../../../common/Links/ReactRouterLinkHelper';
 
-import { Button, Flexbox } from '../..';
-import { Display } from '../../common/Display';
+import { Button, Flexbox } from '../../../..';
+import { Display } from '../../../../common/Display';
 
 export default {
-  title: 'Molecules / Button',
+  title: 'Molecules / Button / Button',
   parameters: {
     component: Button,
   },

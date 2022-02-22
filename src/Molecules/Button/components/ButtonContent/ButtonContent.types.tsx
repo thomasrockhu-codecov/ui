@@ -1,4 +1,4 @@
-import { Theme } from '../../../theme/theme.types';
+import { Theme } from '../../../../theme/theme.types';
 
 type Colors = Theme['color'];
 type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];

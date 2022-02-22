@@ -158,7 +158,7 @@ export const neutralStyles = css<InnerProps>`
 
   ${(p) => {
     const color = p.theme.isDarkMode
-      ? p.theme.color.buttonTextLight
+      ? (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.buttonTextLight
       : (p.$colorFn && p.$colorFn(p.theme)) || p.theme.color.text;
 
     return `

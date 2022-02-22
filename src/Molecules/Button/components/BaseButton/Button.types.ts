@@ -1,5 +1,5 @@
 import React from 'react';
-import { Theme } from '../../theme/theme.types';
+import { Theme } from '../../../../theme/theme.types';
 
 type Colors = Theme['color'];
 type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
@@ -50,3 +50,7 @@ export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'c
   $size: Exclude<ButtonProps['size'], undefined>;
   $colorFn?: ColorFn;
 };
+
+export type BaseButtonComponent = React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<ButtonProps> & React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
+>;

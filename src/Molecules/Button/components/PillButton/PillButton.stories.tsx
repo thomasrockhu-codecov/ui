@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import MD from 'react-markdown';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import { Provider } from '../../common/Links/ReactRouterLinkHelper';
+import { Provider } from '../../../../common/Links/ReactRouterLinkHelper';
 import docs from './PillButton.md';
 
-import { PillButton, Flexbox, Typography, Icon } from '../..';
-import { Display } from '../../common/Display';
+import { Flexbox, Typography, Icon, PillButton } from '../../../..';
+import { Display } from '../../../../common/Display';
 
 export default {
-  title: 'Molecules / PillButton',
+  title: 'DEPRECATED / Molecules / PillButton (use Button.Pill instead)',
   parameters: {
     component: PillButton,
   },

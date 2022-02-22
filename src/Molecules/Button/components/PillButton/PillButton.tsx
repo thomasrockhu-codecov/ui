@@ -1,26 +1,47 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import TrackingContext from '../../common/tracking';
-import { Button } from '../Button/Button';
-import { PillButtonProps } from './PillButton.types';
+import TrackingContext from '../../../../common/tracking';
+import Button from '../BaseButton';
+import { PillButtonProps, PillButtonComponent } from './PillButton.types';
 
 const isSecondary = (variant: PillButtonProps['variant']) => variant === 'secondary';
 
+const BORDER_RADIUS = {
+  s: 3,
+  m: 4,
+  l: 5,
+};
+
 const StyledPillButton = styled(Button)<PillButtonProps>`
-  border-radius: ${(p) => p.theme.spacing.unit(3)}px;
+  border-radius: ${(p) => p.theme.spacing.unit(BORDER_RADIUS[p.size || 's'])}px;
   ${(p) => isSecondary(p.variant) && `background-color: ${p.theme.color.background}`};
+
+  ${(p) =>
+    isSecondary(p.variant) &&
+    !p.disabled &&
+    `
+    color: ${p.theme.color.link};
+    &:hover {
+      color: ${p.theme.color.buttonHoverSecondary};
+    }
+    &:active {
+      color: ${p.theme.color.buttonActiveSecondary};
+    }
+  `};
+
   &::before {
     display: none;
   }
 `;
 
-export const PillButton: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<PillButtonProps> &
-    React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
-> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, PillButtonProps>((props, ref) => {
+export const PillButton: PillButtonComponent = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  PillButtonProps
+>((props, ref) => {
   const {
     variant = 'primary',
+    size = 's',
     iconPlacement = 'left',
     delayLoadingSpinnerAnimation = true,
     children,
@@ -37,9 +58,8 @@ export const PillButton: React.ForwardRefExoticComponent<
     <StyledPillButton
       {...rest}
       ref={ref as React.Ref<HTMLButtonElement>}
-      size="s"
+      size={size}
       type="button"
-      innerRef={ref as React.Ref<HTMLAnchorElement>}
       onClick={trackClick}
       iconPlacement={iconPlacement}
       variant={variant}
@@ -49,4 +69,5 @@ export const PillButton: React.ForwardRefExoticComponent<
     </StyledPillButton>
   );
 });
-PillButton.displayName = 'PillButton';
+
+PillButton.displayName = 'Button.Pill';

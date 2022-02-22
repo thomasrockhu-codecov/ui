@@ -15,7 +15,7 @@ const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
   if (color === 'inherit') {
     return color;
   }
-  return theme.color.cta;
+  return theme.color.link;
 };
 
 const getSharedStyle = (
