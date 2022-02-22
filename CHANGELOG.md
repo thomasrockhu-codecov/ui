@@ -1,3 +1,22 @@
+# [10.10.0](https://github.com/nordnet/ui/compare/v10.9.1...v10.10.0) (2022-02-22)
+
+
+### Bug Fixes
+
+* 🐛 Button.Icon darkmode color fixes ([b662ae5](https://github.com/nordnet/ui/commit/b662ae5))
+* 🐛 darkmode color fixes ([343716d](https://github.com/nordnet/ui/commit/343716d))
+* 🐛 deprecate PillButton ([9190699](https://github.com/nordnet/ui/commit/9190699))
+* enable icon prop to be used for all buttons ([d56c883](https://github.com/nordnet/ui/commit/d56c883))
+* enable icon prop to be used for all buttons ([9405fe0](https://github.com/nordnet/ui/commit/9405fe0))
+* import fix in Button ([de274d6](https://github.com/nordnet/ui/commit/de274d6))
+* keep Button component backwards compatible ([0756f73](https://github.com/nordnet/ui/commit/0756f73))
+* neutral button color prop ([e2d4fc6](https://github.com/nordnet/ui/commit/e2d4fc6))
+
+
+### Features
+
+* 🎸 new Button component to replace Button and PillButton ([893f936](https://github.com/nordnet/ui/commit/893f936))
+
 ## [10.9.1](https://github.com/nordnet/ui/compare/v10.9.0...v10.9.1) (2022-02-17)
 
 
