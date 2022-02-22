@@ -28,11 +28,11 @@ const StyledIconButton = styled(Button)<{ size: 's' | 'm' }>`
       : `
     &:hover {
       background-color: ${p.theme.color.quickFilterBackground};
-      color: ${p.theme.color.ctaHover};
+      color: ${p.theme.color.link};
     }
     &:active {
       background-color: ${p.theme.color.quickFilterSelectedBackground};
-      color: ${p.theme.color.ctaHover};
+      color: ${p.theme.color.link};
     }
   `;
   }}
