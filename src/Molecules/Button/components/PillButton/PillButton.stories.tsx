@@ -9,7 +9,7 @@ import { Flexbox, Typography, Icon, PillButton } from '../../../..';
 import { Display } from '../../../../common/Display';
 
 export default {
-  title: 'Molecules / Button / Button.Pill (PillButton)',
+  title: 'DEPRECATED / Molecules / PillButton (use Button.Pill instead)',
   parameters: {
     component: PillButton,
   },
