@@ -1,3 +1,10 @@
+## [10.10.1-beta.1](https://github.com/nordnet/ui/compare/v10.10.0...v10.10.1-beta.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* 🐛 use scroll-into-view-if-needed to solve bug on ios ([47371d7](https://github.com/nordnet/ui/commit/47371d7))
+
 # [10.10.0](https://github.com/nordnet/ui/compare/v10.9.1...v10.10.0) (2022-02-22)
 
 
