@@ -1,3 +1,5 @@
+import { StandardBehaviorOptions } from 'scroll-into-view-if-needed';
+
 export type HtmlProps = Omit<React.HTMLProps<HTMLSpanElement>, 'children'>;
 
 export type ItemProps = {
@@ -18,7 +20,11 @@ export type ContainerProps = {
   scrollOptions?: {
     active: boolean;
     scrollBarHidden: boolean;
-    scrollIntoViewOptions?: { behavior?: string; inline?: string; block?: string };
+    scrollIntoViewOptions?: {
+      behavior?: StandardBehaviorOptions['behavior'];
+      inline?: StandardBehaviorOptions['inline'];
+      block?: StandardBehaviorOptions['block'];
+    };
     scrollFade?: boolean;
   };
 };

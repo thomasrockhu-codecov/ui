@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
+import scrollIntoView, { StandardBehaviorOptions } from 'scroll-into-view-if-needed';
 import { Component, ItemProps, ScrollStyleProps, TitleProps } from './TabsNav.types';
 import { scrollStyles } from './TabsNav.styles';
 import { useIntersect } from '../../common/Hooks';
@@ -16,7 +17,7 @@ const DEFAULT_SCROLL_OPTIONS = {
   scrollFade: false,
 };
 
-const DEFAULT_SCROLL_INTO_VIEW_OPTIONS = {
+const DEFAULT_SCROLL_INTO_VIEW_OPTIONS: StandardBehaviorOptions = {
   behavior: 'smooth',
   inline: 'center',
   block: 'end',
@@ -95,13 +96,14 @@ export const TabsNav: Component = ({
     (ref) => {
       if (ref && scrollOptions.active) {
         setTimeout(() => {
-          ref.scrollIntoView(
-            scrollOptions.scrollIntoViewOptions ?? DEFAULT_SCROLL_INTO_VIEW_OPTIONS,
+          scrollIntoView(
+            ref,
+            scrollOptions?.scrollIntoViewOptions ?? DEFAULT_SCROLL_INTO_VIEW_OPTIONS,
           );
         }, 0);
       }
     },
-    [scrollOptions.active, scrollOptions.scrollIntoViewOptions],
+    [scrollOptions.active, scrollOptions?.scrollIntoViewOptions],
   );
 
   const setIntersectionRef = (index: number) => {
