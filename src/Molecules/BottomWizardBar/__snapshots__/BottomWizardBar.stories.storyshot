@@ -146,6 +146,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   text-decoration: none;
 }
 
+.c7:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c13 {
   position: relative;
   box-sizing: border-box;
@@ -186,6 +191,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 
 .c13:active {
   background-color: #1F4099;
+}
+
+.c13:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {

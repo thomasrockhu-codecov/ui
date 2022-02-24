@@ -184,38 +184,16 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   flex: 1;
 }
 
-.c24 {
+.c23 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c26 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c27 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c1 {
@@ -245,7 +223,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   line-height: 1.5;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -468,18 +446,6 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   }
 }
 
-@media not all and (max-width:975px) {
-  .c22 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c25 {
-    display: none !important;
-  }
-}
-
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
@@ -646,49 +612,26 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
+              height={8}
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
-              viewBox="0 0 24 24"
+              width={8}
             >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c25"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c23"
-          >
-            <svg
-              aria-hidden="true"
-              className="c26 c27"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              <path
+                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                fill="currentColor"
               />
             </svg>
           </span>
@@ -761,49 +704,26 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
+              height={8}
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
-              viewBox="0 0 24 24"
+              width={8}
             >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c25"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c23"
-          >
-            <svg
-              aria-hidden="true"
-              className="c26 c27"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              <path
+                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                fill="currentColor"
               />
             </svg>
           </span>
@@ -876,49 +796,26 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c23"
               focusable="false"
+              height={8}
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
-              viewBox="0 0 24 24"
+              width={8}
             >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-sc-ey7f5x-0 c21 c25"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c23"
-          >
-            <svg
-              aria-hidden="true"
-              className="c26 c27"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              <path
+                d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                fill="currentColor"
               />
             </svg>
           </span>
