@@ -89,7 +89,7 @@ export const TabsNav: Component = ({
     (ref) => {
       if (ref && scrollRef && scrollRef.current && scrollOptions.active) {
         const offsetleft = ref.offsetLeft;
-        const tabWidth = ref.getBoundingClientRect().width;
+        const { width: tabWidth } = ref.getBoundingClientRect();
         const containerWidth = scrollRef.current.getBoundingClientRect().width;
 
         const scrollToLeft = offsetleft + tabWidth / 2 - containerWidth / 2;
