@@ -1,3 +1,13 @@
+## [10.10.2](https://github.com/nordnet/ui/compare/v10.10.1...v10.10.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* always 8px chevron DISCO-6993 ([ab67d80](https://github.com/nordnet/ui/commit/ab67d80))
+* button as link underline on hover DISCO-6995 ([88bb91e](https://github.com/nordnet/ui/commit/88bb91e))
+* new color DISCO-6996 ([3edd069](https://github.com/nordnet/ui/commit/3edd069))
+* update storyshots ([bd91de9](https://github.com/nordnet/ui/commit/bd91de9))
+
 ## [10.10.1](https://github.com/nordnet/ui/compare/v10.10.0...v10.10.1) (2022-02-24)
 
 
