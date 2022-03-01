@@ -1,3 +1,10 @@
+## [10.10.3](https://github.com/nordnet/ui/compare/v10.10.2...v10.10.3) (2022-03-01)
+
+
+### Bug Fixes
+
+* 🐛 resolve bug for unwanted scroll to top ([a574941](https://github.com/nordnet/ui/commit/a574941))
+
 ## [10.10.2](https://github.com/nordnet/ui/compare/v10.10.1...v10.10.2) (2022-03-01)
 
 
