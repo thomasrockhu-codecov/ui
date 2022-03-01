@@ -1,11 +1,10 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
 import styled from 'styled-components';
-import scrollIntoView, { StandardBehaviorOptions } from 'scroll-into-view-if-needed';
 import { Component, ItemProps, ScrollStyleProps, TitleProps } from './TabsNav.types';
 import { scrollStyles } from './TabsNav.styles';
 import { useIntersect } from '../../common/Hooks';
 import { Flexbox, TabTitle, Typography } from '../..';
-import { assert } from '../../common/utils';
+import { assert, mergeRefs } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { useLink } from '../../common/Links';
 import { LinkProps } from '../../common/Links/types';
@@ -13,14 +12,7 @@ import { LinkProps } from '../../common/Links/types';
 const DEFAULT_SCROLL_OPTIONS = {
   active: false,
   scrollBarHidden: false,
-  scrollIntoViewOptions: null,
   scrollFade: false,
-};
-
-const DEFAULT_SCROLL_INTO_VIEW_OPTIONS: StandardBehaviorOptions = {
-  behavior: 'smooth',
-  inline: 'center',
-  block: 'end',
 };
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
@@ -91,19 +83,26 @@ export const TabsNav: Component = ({
 
   const [setIntersectionLeftRef, intersectionLeftRatio] = useIntersect<HTMLDivElement>();
   const [setIntersectionRightRef, intersectionRightRatio] = useIntersect<HTMLDivElement>();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scrollToRefCallback = useCallback(
     (ref) => {
-      if (ref && scrollOptions.active) {
+      if (ref && scrollRef && scrollRef.current && scrollOptions.active) {
+        const offsetleft = ref.offsetLeft;
+        const { width: tabWidth } = ref.getBoundingClientRect();
+        const containerWidth = scrollRef.current.getBoundingClientRect().width;
+
+        const scrollToLeft = offsetleft + tabWidth / 2 - containerWidth / 2;
+
         setTimeout(() => {
-          scrollIntoView(
-            ref,
-            scrollOptions?.scrollIntoViewOptions ?? DEFAULT_SCROLL_INTO_VIEW_OPTIONS,
-          );
+          scrollRef.current?.scrollTo({
+            left: scrollToLeft,
+            behavior: 'smooth',
+          });
         }, 0);
       }
     },
-    [scrollOptions.active, scrollOptions?.scrollIntoViewOptions],
+    [scrollOptions.active],
   );
 
   const setIntersectionRef = (index: number) => {
@@ -124,7 +123,15 @@ export const TabsNav: Component = ({
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else if (c) {
       titles.push(
-        <Flexbox ref={setIntersectionRef(i)} item as="li" key={c.props.to}>
+        <Flexbox
+          ref={mergeRefs([
+            scrollOptions.scrollFade ? setIntersectionRef(i) : null,
+            c.props.active ? scrollToRefCallback : null,
+          ])}
+          item
+          as="li"
+          key={c.props.to}
+        >
           <Title
             active={!!c.props.active}
             onClick={c.props.onTitleClick}
@@ -134,7 +141,6 @@ export const TabsNav: Component = ({
             onKeyDown={onKeyDown}
             height={height}
             className={c.props.className}
-            ref={c.props.active ? scrollToRefCallback : null}
           >
             {c.props.title}
           </Title>
@@ -151,6 +157,7 @@ export const TabsNav: Component = ({
       $intersectionRightRatio={intersectionRightRatio || 0}
       className={className}
       container
+      ref={scrollRef}
     >
       <Flexbox container direction="row" gutter={4} sm={{ gutter: 8 }}>
         {titles}
