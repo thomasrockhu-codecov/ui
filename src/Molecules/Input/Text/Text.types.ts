@@ -25,6 +25,8 @@ export type Props = {
   size?: 's';
   /** @default normal */
   variant?: Variant;
+  pattern?: string;
+  inputMode?: string;
   /**
    * You need to specify width
    * (better in pixels), because
