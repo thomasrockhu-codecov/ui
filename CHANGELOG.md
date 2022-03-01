@@ -1,3 +1,10 @@
+# [10.11.0](https://github.com/nordnet/ui/compare/v10.10.3...v10.11.0) (2022-03-01)
+
+
+### Features
+
+* add pattern and inputmode props to input text ([8a80422](https://github.com/nordnet/ui/commit/8a80422))
+
 ## [10.10.3](https://github.com/nordnet/ui/compare/v10.10.2...v10.10.3) (2022-03-01)
 
 
