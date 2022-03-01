@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Provider } from '../../../../common/Links/ReactRouterLinkHelper';
 
-import { Button, Flexbox } from '../../../..';
+import { Button, Flexbox, Icon } from '../../../..';
 import { Display } from '../../../../common/Display';
 
 export default {
@@ -174,4 +174,38 @@ export const linkLookingLikeAButtonWithWithColors = () => (
 
 linkLookingLikeAButtonWithWithColors.story = {
   name: 'Link looking like a button with with colors',
+};
+
+export const neutralButtonLookingLikeLinkUnderlineOnHover = () => (
+  <Provider>
+    <Display
+      items={[
+        {
+          title: 'Reset',
+          component: (
+            <Button variant="neutral" to="/route1">
+              To Route1
+            </Button>
+          ),
+        },
+        {
+          title: 'Reset',
+          component: (
+            <Button
+              icon={<Icon.ArrowDown16 />}
+              iconPlacement="right"
+              variant="neutral"
+              to="/route1"
+            >
+              To Route1
+            </Button>
+          ),
+        },
+      ]}
+    />
+  </Provider>
+);
+
+neutralButtonLookingLikeLinkUnderlineOnHover.story = {
+  name: 'Neutral button looking like link',
 };

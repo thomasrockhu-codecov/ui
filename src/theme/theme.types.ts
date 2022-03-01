@@ -638,6 +638,8 @@ export type ThemeColors = {
   joinSharevilleBadge: string;
   /** Join Shareville Banner */
   joinSharevilleBanner: string;
+  /** Monthly Savings Transfer Type Inactive */
+  monthlySavingsTransferTypeInactive: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */

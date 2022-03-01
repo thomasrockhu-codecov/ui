@@ -48,6 +48,10 @@ const StyledLink = styled(CleanLink)<InnerProps>`
     return primaryStyles;
   }}
   text-decoration: none;
+
+  &:hover {
+    text-decoration: ${(p) => (isNeutral(p.$variant) ? `underline` : `none`)};
+  }
 `;
 
 export const Button: BaseButtonComponent = React.forwardRef<

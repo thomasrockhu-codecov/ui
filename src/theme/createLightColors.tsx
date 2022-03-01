@@ -315,6 +315,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusOutline: rawColor.gray400,
     quickFilterFocusSelectedOutline: rawColor.blue500,
 
+    monthlySavingsTransferTypeInactive: rawColor.gray500,
+
     warning: rawColor.index,
 
     worldMapLand: rawColor.blue700, // not yet in use

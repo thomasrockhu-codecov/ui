@@ -56,38 +56,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   flex: 1;
 }
 
-.c19 {
+.c18 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c22 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c8 {
@@ -108,7 +86,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   line-height: 1.5;
 }
 
-.c18 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -323,18 +301,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   }
 }
 
-@media not all and (max-width:975px) {
-  .c17 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c20 {
-    display: none !important;
-  }
-}
-
 @media (min-width:976px) {
   .c11 {
     -webkit-flex: 0 40px;
@@ -458,49 +424,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -559,49 +502,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -660,49 +580,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -768,6 +665,18 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   flex: 1;
 }
 
+.c20 {
+  color: #A0A09B;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -780,40 +689,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c23 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c24 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c8 {
@@ -1100,18 +975,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   }
 }
 
-@media not all and (max-width:975px) {
-  .c20 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c22 {
-    display: none !important;
-  }
-}
-
 @media (min-width:976px) {
   .c11 {
     -webkit-flex: 0 40px;
@@ -1275,7 +1138,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1285,39 +1148,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c20"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c16"
-        >
-          <svg
-            aria-hidden="true"
-            className="c23 c24"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -1404,7 +1244,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1414,39 +1254,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c20"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c16"
-        >
-          <svg
-            aria-hidden="true"
-            className="c23 c24"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -1533,7 +1350,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -1543,39 +1360,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
         >
           <svg
             aria-hidden="true"
-            className="c21"
+            className="c20"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c22"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c16"
-        >
-          <svg
-            aria-hidden="true"
-            className="c23 c24"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -1676,38 +1470,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   flex: 1;
 }
 
-.c25 {
+.c24 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c27 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c28 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c5 {
@@ -1746,7 +1518,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   line-height: 1.5;
 }
 
-.c24 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1968,18 +1740,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   }
 }
 
-@media not all and (max-width:975px) {
-  .c23 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c26 {
-    display: none !important;
-  }
-}
-
 @media (min-width:976px) {
   .c17 {
     -webkit-flex: 0 40px;
@@ -2177,49 +1937,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c22 c23"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c22"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c24"
+          className="c23"
         >
           <svg
             aria-hidden="true"
-            className="c25"
+            className="c24"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c22 c26"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c24"
-        >
-          <svg
-            aria-hidden="true"
-            className="c27 c28"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -2285,38 +2022,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   flex: 1;
 }
 
-.c19 {
+.c18 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c22 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c8 {
@@ -2337,7 +2052,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   line-height: 1.5;
 }
 
-.c18 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2346,7 +2061,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   line-height: 1.4285714285714286;
 }
 
-.c25 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2493,7 +2208,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   top: 0px;
 }
 
-.c23 {
+.c19 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -2504,7 +2219,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   padding-bottom: 5px;
 }
 
-.c24 {
+.c20 {
   overflow: hidden;
   padding-top: 5px !important;
   padding-bottom: 5px;
@@ -2569,18 +2284,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-  }
-}
-
-@media not all and (max-width:975px) {
-  .c17 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c20 {
-    display: none !important;
   }
 }
 
@@ -2707,49 +2410,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -2808,49 +2488,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -2909,49 +2566,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c17"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c16"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c18"
+          className="c17"
         >
           <svg
             aria-hidden="true"
-            className="c19"
+            className="c18"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c16 c20"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c18"
-        >
-          <svg
-            aria-hidden="true"
-            className="c21 c22"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
@@ -2959,60 +2593,60 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
     </div>
   </div>
   <div
-    className="c1 c2 c23"
+    className="c1 c2 c19"
     role="row"
   >
     <div
-      className="c4 c24"
+      className="c4 c20"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c25 c9"
+          className="c21 c9"
         >
           Footer 1
         </span>
       </div>
     </div>
     <div
-      className="c4 c24"
+      className="c4 c20"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c25 c9"
+          className="c21 c9"
         >
           Footer 2
         </span>
       </div>
     </div>
     <div
-      className="c4 c24"
+      className="c4 c20"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c25 c9"
+          className="c21 c9"
         >
           Footer 3
         </span>
       </div>
     </div>
     <div
-      className="c10 c24 c11"
+      className="c10 c20 c11"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c25 c9"
+          className="c21 c9"
         />
       </div>
     </div>
@@ -3076,38 +2710,16 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   flex: 1;
 }
 
-.c22 {
+.c21 {
+  color: #A0A09B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #A0A09B;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
-}
-
-.c24 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #A0A09B;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c2 {
@@ -3137,7 +2749,7 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   line-height: 1.5;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3363,18 +2975,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   }
 }
 
-@media not all and (max-width:975px) {
-  .c20 {
-    display: none !important;
-  }
-}
-
-@media not all and (min-width:976px) {
-  .c23 {
-    display: none !important;
-  }
-}
-
 @media (min-width:760px) {
   .c2 {
     font-size: 20px;
@@ -3517,49 +3117,26 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
     >
       <button
         aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c20"
+        className="NormalizedButton__Button-sc-ey7f5x-0 c19"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c21"
+          className="c20"
         >
           <svg
             aria-hidden="true"
-            className="c22"
+            className="c21"
             focusable="false"
+            height={8}
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            width={8}
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </span>
-      </button>
-      <button
-        aria-expanded={false}
-        className="NormalizedButton__Button-sc-ey7f5x-0 c19 c23"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c21"
-        >
-          <svg
-            aria-hidden="true"
-            className="c24 c25"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            <path
+              d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+              fill="currentColor"
             />
           </svg>
         </span>
