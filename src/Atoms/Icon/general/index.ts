@@ -5,6 +5,7 @@ import glossary from './glossary';
 import heart from './heart';
 import heartFill from './heartFill';
 import lock from './lock';
+import popsicle from './popsicle';
 import profile from './profile';
 import security from './security';
 import settings from './settings';
@@ -20,6 +21,7 @@ export default {
   ...heart,
   ...heartFill,
   ...lock,
+  ...popsicle,
   ...profile,
   ...security,
   ...settings,
