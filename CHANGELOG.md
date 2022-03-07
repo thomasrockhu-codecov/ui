@@ -1,3 +1,11 @@
+# [10.12.0](https://github.com/nordnet/ui/compare/v10.11.0...v10.12.0) (2022-03-07)
+
+
+### Features
+
+* add new icons ([b16649e](https://github.com/nordnet/ui/commit/b16649e))
+* update storyshot ([a94bbf0](https://github.com/nordnet/ui/commit/a94bbf0))
+
 # [10.11.0](https://github.com/nordnet/ui/compare/v10.10.3...v10.11.0) (2022-03-01)
 
 
