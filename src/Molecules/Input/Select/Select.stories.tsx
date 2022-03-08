@@ -1872,6 +1872,25 @@ const CustomHeightTemplate: Story<Props> = (args) => (
   </Box>
 );
 
+export const preventScroll = () => (
+  <Flexbox height="150vh" container direction="column">
+    <Flexbox height="20vh" container direction="column">
+      stuff
+    </Flexbox>
+    <Input.Select
+      id="onchange-select"
+      autoFocus
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      preventScroll
+    />
+    <Flexbox height="20vh" container direction="column">
+      more stuff
+    </Flexbox>
+  </Flexbox>
+);
+
 export const WithCustomHeight = CustomHeightTemplate.bind({});
 WithCustomHeight.args = {
   height: 20,
