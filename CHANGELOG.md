@@ -1,3 +1,11 @@
+# [10.13.0](https://github.com/nordnet/ui/compare/v10.12.0...v10.13.0) (2022-03-10)
+
+
+### Features
+
+* prop to prevent scroll on input focus and update stories ([11d8939](https://github.com/nordnet/ui/commit/11d8939))
+* remove extra story and use old ([ccc0dd4](https://github.com/nordnet/ui/commit/ccc0dd4))
+
 # [10.12.0](https://github.com/nordnet/ui/compare/v10.11.0...v10.12.0) (2022-03-07)
 
 
