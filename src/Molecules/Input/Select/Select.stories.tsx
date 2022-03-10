@@ -1603,6 +1603,7 @@ export const focusWithoutScrolling = () => (
       options={accountOptions}
       label="User account"
       placeholder="Select account"
+      preventScroll
     />
     <br />
     <br />

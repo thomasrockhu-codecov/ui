@@ -110,6 +110,7 @@ const Select = (props: Props) => {
       actions: props.actions || [],
       disableSearchComponent: isDisableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
+      preventScroll: props.preventScroll || false,
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -159,6 +160,7 @@ const Select = (props: Props) => {
       actions: props.actions || [],
       disableSearchComponent: isDisableSearchComponent,
       fullscreenOnMobile: isFullscreenOnMobile || false,
+      preventScroll: props.preventScroll || false,
     },
     [
       send,
@@ -177,6 +179,7 @@ const Select = (props: Props) => {
       props.searchQuery,
       isDisableSearchComponent,
       isFullscreenOnMobile,
+      props.preventScroll,
     ],
   );
 
@@ -216,7 +219,7 @@ const Select = (props: Props) => {
 
   /******      Focus management      ******/
   useAutofocus(buttonRef, props.autoFocus);
-  useFocusFromMachine(machineState, buttonRef, itemRefs, searchRef);
+  useFocusFromMachine(machineState, buttonRef, itemRefs, searchRef, props.preventScroll);
   const { handleBlur, handleFocus } = useOnBlurAndOnFocus(
     machineState,
     send,
