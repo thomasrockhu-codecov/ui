@@ -1,3 +1,10 @@
+# [10.14.0](https://github.com/nordnet/ui/compare/v10.13.0...v10.14.0) (2022-03-10)
+
+
+### Features
+
+* 🎸 add withIcon prop to FeedbackBanner ([ca920c9](https://github.com/nordnet/ui/commit/ca920c9))
+
 # [10.13.0](https://github.com/nordnet/ui/compare/v10.12.0...v10.13.0) (2022-03-10)
 
 
