@@ -39,6 +39,12 @@ export const displayingTitle = () => (
   />
 );
 
+export const withoutIcon = () => (
+  <FeedbackBanner title="Disable icon" variant="info" withIcon={false}>
+    This banner has no icon
+  </FeedbackBanner>
+);
+
 export const differentVariant = () => (
   <Display
     items={[

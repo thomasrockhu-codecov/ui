@@ -55,13 +55,14 @@ export const FeedbackBanner: FeedbackBannerComponent = ({
   variant = 'info',
   scope = 'module',
   title,
+  withIcon = true,
   children,
   className,
 }) => {
   return (
     <StyledContainer className={className} variant={variant} scope={scope}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
-        <>{getIcon(variant)}</>
+        {withIcon && <>{getIcon(variant)}</>}
         <TextFlexbox container item direction="column">
           {title && (
             <Typography type="secondary" weight="bold">
