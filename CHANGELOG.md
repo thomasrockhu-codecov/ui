@@ -1,3 +1,10 @@
+## [10.14.1](https://github.com/nordnet/ui/compare/v10.14.0...v10.14.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* removes (not set) actions ([d42853b](https://github.com/nordnet/ui/commit/d42853b))
+
 # [10.14.0](https://github.com/nordnet/ui/compare/v10.13.0...v10.14.0) (2022-03-10)
 
 
