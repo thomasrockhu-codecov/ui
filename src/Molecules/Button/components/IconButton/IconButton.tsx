@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import TrackingContext from '../../../../common/tracking';
 import Button from '../BaseButton';
 import { IconButtonProps, IconButtonComponent } from './IconButton.types';
 
@@ -46,9 +45,7 @@ export const IconButton: IconButtonComponent = React.forwardRef<
   IconButtonProps
 >((props, ref) => {
   const { size = 'm', delayLoadingSpinnerAnimation = true, children, onClick, ...rest } = props;
-  const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
-    if (trackContext) trackContext.track('iconbutton', e, props);
     if (onClick) onClick(e);
   };
 
