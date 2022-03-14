@@ -185,3 +185,33 @@ export const withConditionallyHiddenTab = () => {
 withConditionallyHiddenTab.story = {
   name: 'With conditionally hidden tab',
 };
+export const withHorizontalScroll = () => {
+  return (
+    <Typography type="secondary">
+      <Tabs scrollOptions={{ active: true, scrollBarHidden: true }}>
+        <Tabs.Tab title="Tab One" onTitleClick={action('Clicked title1')}>
+          <SpacingInside>Ones children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="Tab Two" onTitleClick={action('Clicked title2')}>
+          <SpacingInside>Twos children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="Tab Three" onTitleClick={action('Clicked title3')}>
+          <SpacingInside>Threes children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="Tab Four" onTitleClick={action('Clicked title4')}>
+          <SpacingInside>Fours children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="Tab Five" onTitleClick={action('Clicked title5')}>
+          <SpacingInside>Fives children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="Tab Six" onTitleClick={action('Clicked title6')}>
+          <SpacingInside>Sixs children</SpacingInside>
+        </Tabs.Tab>
+      </Tabs>
+    </Typography>
+  );
+};
+
+withHorizontalScroll.story = {
+  name: 'With horizontal scroll',
+};
