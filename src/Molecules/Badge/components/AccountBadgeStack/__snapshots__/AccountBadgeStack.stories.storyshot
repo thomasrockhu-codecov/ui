@@ -1,0 +1,3019 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
+.c1 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c12 {
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
+}
+
+.c19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 160px;
+  width: 160px;
+  border-radius: 160px;
+}
+
+.c8 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c8:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+}
+
+.c8:not(:first-of-type) {
+  margin-left: -11px;
+}
+
+.c13 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c13:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
+  mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
+}
+
+.c13:not(:first-of-type) {
+  margin-left: -15px;
+}
+
+.c15 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c15:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 48px,transparent 25px,white 26px );
+  mask: radial-gradient( circle at 48px,transparent 25px,white 26px );
+}
+
+.c15:not(:first-of-type) {
+  margin-left: -23px;
+}
+
+.c18 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c18:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 160px,transparent 81px,white 82px );
+  mask: radial-gradient( circle at 160px,transparent 81px,white 82px );
+}
+
+.c18:not(:first-of-type) {
+  margin-left: -79px;
+}
+
+.c7 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 {
+  font-weight: 800;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c3 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c4 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c5 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0 > div:nth-child(3n + 1) {
+  padding-left: 20px;
+  padding-top: 12px;
+}
+
+@media (min-width:760px) {
+  .c2 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size s
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="column"
+  >
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                +1
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with more truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                +3
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          10 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          1 badge
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c10 c11"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c12"
+  />
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size m
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="column"
+  >
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                +1
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with more truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                +3
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          10 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          1 badge
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c13"
+          >
+            <span
+              className="c14"
+            >
+              <span
+                className="c10 c11"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c12"
+  />
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size l
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="column"
+  >
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                +1
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with more truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                +3
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          10 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          1 badge
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <span
+                className="c17 c11"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c12"
+  />
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      custom size 40
+    </span>
+  </div>
+  <div
+    className="c3"
+    direction="column"
+  >
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                +1
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          3 badges, with more truncation
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                +3
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          10 badges
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                AF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                ISK
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c4"
+      direction="row"
+    >
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          1 badge
+        </span>
+      </div>
+      <div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c18"
+          >
+            <span
+              className="c19"
+            >
+              <span
+                className="c10 c11"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c12"
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Size s
+    </span>
+  </div>,
+  .c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c14 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c14 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  box-sizing: border-box;
+}
+
+.c17 {
+  color: currentColor;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+
+.c8 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c8:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+  mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
+}
+
+.c8:not(:first-of-type) {
+  margin-left: -11px;
+}
+
+.c7 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 {
+  font-weight: 800;
+}
+
+.c16 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #336BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c4:hover {
+  background-color: #2650BF;
+}
+
+.c4:active {
+  background-color: #1F4099;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: transparent;
+  color: #336BFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #336BFF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12:hover {
+  color: #2650BF;
+}
+
+.c12:hover::before {
+  border-color: #2650BF;
+}
+
+.c12:active {
+  color: #1F4099;
+}
+
+.c12:active::before {
+  border-color: #1F4099;
+}
+
+.c5 {
+  border-radius: 16px;
+}
+
+.c5::before {
+  display: none;
+}
+
+.c13 {
+  border-radius: 16px;
+  background-color: #F5F5F5;
+  color: #336BFF;
+}
+
+.c13:hover {
+  color: #2650BF;
+}
+
+.c13:active {
+  color: #1F4099;
+}
+
+.c13::before {
+  display: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          2 badges
+        </span>
+      </div>
+      <div>
+        <button
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      TJP
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      TJP
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          2 badges in secondary button
+        </span>
+      </div>
+      <div>
+        <div
+          style={
+            Object {
+              "background": "white",
+              "padding": "12px",
+            }
+          }
+        >
+          <button
+            className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              <div
+                className="c14"
+              >
+                <div
+                  className="c15"
+                >
+                  <div
+                    className="c6"
+                  >
+                    <div
+                      className="c7"
+                    >
+                      <div
+                        className="c8"
+                      >
+                        <span
+                          className="c9"
+                        >
+                          <span
+                            className="c10 c11"
+                          >
+                            TJP
+                          </span>
+                        </span>
+                      </div>
+                      <div
+                        className="c8"
+                      >
+                        <span
+                          className="c9"
+                        >
+                          <span
+                            className="c10 c11"
+                          >
+                            TJP
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="c16"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c17"
+                    focusable="false"
+                    height={8}
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    width={8}
+                  >
+                    <path
+                      d="M0 .59l4 4 4-4v2.828l-4 4-4-4V.59z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          3 badges with carret
+        </span>
+      </div>
+      <div>
+        <button
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      KF
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      AF
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      ISK
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          3 badges, with truncation
+        </span>
+      </div>
+      <div>
+        <button
+          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      KF
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      AF
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="c8"
+                >
+                  <span
+                    className="c9"
+                  >
+                    <span
+                      className="c10 c11"
+                    >
+                      +3
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      With different colors
+    </span>
+  </div>,
+  .c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #00D200;
+  margin: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #336BFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #336BFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FF1900;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #000000;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+
+.c5 {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c5:not(:last-of-type) {
+  -webkit-mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
+  mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
+}
+
+.c5:not(:first-of-type) {
+  margin-left: -15px;
+}
+
+.c4 {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c8 {
+  font-weight: 800;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Other banks
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <span
+              className="c6"
+            >
+              <span
+                className="c7 c8"
+              >
+                SEB
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c7 c8"
+              >
+                HB
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c10"
+            >
+              <span
+                className="c7 c8"
+              >
+                AVA
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c9"
+            >
+              <span
+                className="c7 c8"
+              >
+                NN
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Custom label
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c12"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c13"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c14"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c15"
+              >
+                TJP
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Custom truncation item
+        </span>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c7 c8"
+              >
+                KF
+              </span>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <span
+              className="c11"
+            >
+              <span
+                className="c16"
+              >
+                +2
+                !
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
