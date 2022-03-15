@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { scrollStyles } from './Tabs.styles';
+import { ScrollStyleProps, ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
+import { useIntersect } from '../../common/Hooks';
 import { Flexbox, Separator, TabTitle, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
+const DEFAULT_SCROLL_OPTIONS = {
+  active: false,
+  scrollBarHidden: false,
+  scrollFade: false,
+};
+const StyledFlexbox = styled(Flexbox)<ScrollStyleProps>`
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  ${scrollStyles}
+`;
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;
@@ -56,14 +70,6 @@ const Title: TitleComponent = ({
   );
 };
 Title.displayName = 'Tabs.Title';
-
-const StyledUl = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-`;
-
 const TabContent = styled.section`
   height: 100%;
 `;
@@ -78,7 +84,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
 
 const components = {
   TabContent,
-  TabBar: StyledUl,
+  TabBar: StyledFlexbox,
 };
 
 export const Tabs: ContainerComponent & {
@@ -102,10 +108,35 @@ export const Tabs: ContainerComponent & {
   className,
   height = 8,
   variant = 'normal',
+  scrollOptions = DEFAULT_SCROLL_OPTIONS,
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
+
+  const [, intersectionLeftRatio] = useIntersect<HTMLDivElement>();
+  const [, intersectionRightRatio] = useIntersect<HTMLDivElement>();
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRefCallback = useCallback(
+    (ref) => {
+      if (ref && scrollRef && scrollRef.current && scrollOptions.active) {
+        const offsetleft = ref.offsetLeft;
+        const { width: tabWidth } = ref.getBoundingClientRect();
+        const containerWidth = scrollRef.current.getBoundingClientRect().width;
+
+        const scrollToLeft = offsetleft + tabWidth / 2 - containerWidth / 2;
+
+        setTimeout(() => {
+          scrollRef.current?.scrollTo({
+            left: scrollToLeft,
+            behavior: 'smooth',
+          });
+        }, 0);
+      }
+    },
+    [scrollOptions.active],
+  );
 
   if (isControlled) active = activeTabIndex!;
 
@@ -129,8 +160,14 @@ export const Tabs: ContainerComponent & {
       assert(false, 'There should be only <Tabs.Tab> children inside of <Tabs> component');
     } else if (c) {
       titles.push(
-        // eslint-disable-next-line react/no-array-index-key
-        <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>
+        <Flexbox
+          ref={isActive ? scrollToRefCallback : null}
+          item
+          as="li"
+          role="presentation"
+          // eslint-disable-next-line react/no-array-index-key
+          key={`tabs-${i}`}
+        >
           <Title
             active={isActive}
             index={i}
@@ -162,17 +199,20 @@ export const Tabs: ContainerComponent & {
 
   return (
     <>
-      <Flexbox
+      <StyledFlexbox
         container
-        direction="row"
-        gutter={4}
-        sm={{ gutter: variant === 'large' ? 8 : 4 }}
-        as={StyledUl}
         role="tablist"
         className={className}
+        $height={height}
+        $scrollOptions={scrollOptions}
+        $intersectionLeftRatio={intersectionLeftRatio || 0}
+        $intersectionRightRatio={intersectionRightRatio || 0}
+        ref={scrollRef}
       >
-        {titles}
-      </Flexbox>
+        <Flexbox container direction="row" gutter={4} sm={{ gutter: variant === 'large' ? 8 : 4 }}>
+          {titles}
+        </Flexbox>
+      </StyledFlexbox>
       <Separator />
 
       {contents}
