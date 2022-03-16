@@ -11,6 +11,8 @@ export type InnerProps = {
   fullScreenMobile?: boolean;
   /** @default false */
   closeOnBackdropClick?: boolean;
+  /** @default true */
+  closeOnEscapePress?: boolean;
   isStatusModal?: boolean;
   onAnimationComplete?: () => void;
   showBackdrop?: boolean;

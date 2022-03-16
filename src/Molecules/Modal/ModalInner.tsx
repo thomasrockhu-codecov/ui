@@ -161,6 +161,7 @@ export const ModalInner: React.FC<Props> = ({
   footer,
   hideClose = false,
   closeOnBackdropClick = false,
+  closeOnEscapePress = true,
   fullScreenMobile = true,
   isStatusModal = false,
   showBackdrop = true,
@@ -213,10 +214,10 @@ export const ModalInner: React.FC<Props> = ({
   }, []);
 
   useEffect(() => {
-    if (escapePress && isFunction(onClose)) {
+    if (closeOnEscapePress && escapePress && isFunction(onClose)) {
       onClose();
     }
-  }, [escapePress, onClose]);
+  }, [closeOnEscapePress, escapePress, onClose]);
 
   return (
     <>
