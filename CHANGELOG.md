@@ -1,3 +1,17 @@
+# [10.15.0](https://github.com/nordnet/ui/compare/v10.14.1...v10.15.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* 🐛 accordionItem gets correct color in darkmode ([f3c33e4](https://github.com/nordnet/ui/commit/f3c33e4))
+* 🐛 firefox support for dark mode ([faaca85](https://github.com/nordnet/ui/commit/faaca85))
+* 🐛 update snaps and fix unique key error ([828f2d4](https://github.com/nordnet/ui/commit/828f2d4))
+
+
+### Features
+
+* 🎸 add horizontal scroll to Tabs ([7b500bd](https://github.com/nordnet/ui/commit/7b500bd))
+
 ## [10.14.1](https://github.com/nordnet/ui/compare/v10.14.0...v10.14.1) (2022-03-11)
 
 
