@@ -120,6 +120,11 @@ export type Props = {
    * possibility to display list items(options) in Modal
    */
   fullscreenOnMobile?: boolean;
+  /**
+   * @default false
+   * possibility to prevent input scroll on focus behaviour
+   */
+  preventScroll?: boolean;
 };
 
 export type OptionItem = {

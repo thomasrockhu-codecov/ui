@@ -25,6 +25,18 @@ export type ContainerProps = {
   className?: string;
   height?: number;
   variant?: 'normal' | 'large';
+  scrollOptions?: {
+    active: boolean;
+    scrollBarHidden: boolean;
+    scrollFade?: boolean;
+  };
+};
+
+export type ScrollStyleProps = {
+  $height: number;
+  $scrollOptions: { active: boolean; scrollBarHidden: boolean; scrollFade?: boolean };
+  $intersectionLeftRatio?: number;
+  $intersectionRightRatio?: number;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

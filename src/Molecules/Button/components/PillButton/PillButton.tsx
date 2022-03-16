@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import TrackingContext from '../../../../common/tracking';
 import Button from '../BaseButton';
 import { PillButtonProps, PillButtonComponent } from './PillButton.types';
 
@@ -48,9 +47,7 @@ export const PillButton: PillButtonComponent = React.forwardRef<
     onClick,
     ...rest
   } = props;
-  const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
-    if (trackContext) trackContext.track('pillbutton', e, props);
     if (onClick) onClick(e);
   };
 

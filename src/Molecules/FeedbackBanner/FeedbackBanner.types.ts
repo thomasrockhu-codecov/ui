@@ -6,6 +6,7 @@ export type FeedbackBannerProps = {
   /** @default module */
   scope?: 'module' | 'page';
   title?: string | React.ReactChild | React.ReactChild[];
+  withIcon?: boolean;
   className?: string;
 };
 

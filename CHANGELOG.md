@@ -1,3 +1,39 @@
+# [10.15.0](https://github.com/nordnet/ui/compare/v10.14.1...v10.15.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* 🐛 accordionItem gets correct color in darkmode ([f3c33e4](https://github.com/nordnet/ui/commit/f3c33e4))
+* 🐛 firefox support for dark mode ([faaca85](https://github.com/nordnet/ui/commit/faaca85))
+* 🐛 update snaps and fix unique key error ([828f2d4](https://github.com/nordnet/ui/commit/828f2d4))
+
+
+### Features
+
+* 🎸 add horizontal scroll to Tabs ([7b500bd](https://github.com/nordnet/ui/commit/7b500bd))
+
+## [10.14.1](https://github.com/nordnet/ui/compare/v10.14.0...v10.14.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* removes (not set) actions ([d42853b](https://github.com/nordnet/ui/commit/d42853b))
+
+# [10.14.0](https://github.com/nordnet/ui/compare/v10.13.0...v10.14.0) (2022-03-10)
+
+
+### Features
+
+* 🎸 add withIcon prop to FeedbackBanner ([ca920c9](https://github.com/nordnet/ui/commit/ca920c9))
+
+# [10.13.0](https://github.com/nordnet/ui/compare/v10.12.0...v10.13.0) (2022-03-10)
+
+
+### Features
+
+* prop to prevent scroll on input focus and update stories ([11d8939](https://github.com/nordnet/ui/commit/11d8939))
+* remove extra story and use old ([ccc0dd4](https://github.com/nordnet/ui/commit/ccc0dd4))
+
 # [10.12.0](https://github.com/nordnet/ui/compare/v10.11.0...v10.12.0) (2022-03-07)
 
 

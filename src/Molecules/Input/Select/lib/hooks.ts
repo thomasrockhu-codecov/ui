@@ -14,6 +14,7 @@ export const useFocusFromMachine = (
   buttonRef: React.RefObject<HTMLButtonElement>,
   itemRefs: Array<HTMLElement>,
   searchRef: React.RefObject<HTMLInputElement>,
+  preventScroll?: boolean,
 ) => {
   const isInButtonFocusState = machineState.matches('interaction.enabled.active.focus.button');
   useEffect(() => {
@@ -28,7 +29,8 @@ export const useFocusFromMachine = (
         if (
           machineState.context.itemFocusIdx !== null &&
           itemRefs[machineState.context.itemFocusIdx] &&
-          itemRefs[machineState.context.itemFocusIdx].scrollIntoView
+          itemRefs[machineState.context.itemFocusIdx].scrollIntoView &&
+          !preventScroll
         ) {
           scrollIntoView(itemRefs[machineState.context.itemFocusIdx!], {
             behavior: 'auto',
