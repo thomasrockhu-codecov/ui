@@ -81,8 +81,8 @@ availableIllustrations.story = {
 export const allIllustrationsColored = () => (
   <>
     {Object?.entries(Illustration)?.map(
-      ([_, IllustrationComponent]: [string, React.ComponentType<any>]) => (
-        <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
+      ([illustrationName, IllustrationComponent]: [string, React.ComponentType<any>]) => (
+        <div key={illustrationName} style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
           <IllustrationComponent color={(t: any) => t.color.cta} />
         </div>
       ),
