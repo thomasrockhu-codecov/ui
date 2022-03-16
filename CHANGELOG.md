@@ -1,3 +1,10 @@
+# [10.16.0](https://github.com/nordnet/ui/compare/v10.15.0...v10.16.0) (2022-03-16)
+
+
+### Features
+
+* 🎸 Adds prop closeOnEscapePress to Modal ([9dd846d](https://github.com/nordnet/ui/commit/9dd846d))
+
 # [10.15.0](https://github.com/nordnet/ui/compare/v10.14.1...v10.15.0) (2022-03-16)
 
 
