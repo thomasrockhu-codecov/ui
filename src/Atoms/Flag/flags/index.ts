@@ -1,20 +1,40 @@
+import au from './au';
+import br from './br';
 import ca from './ca';
+import cn from './cn';
 import de from './de';
-import eu from './eu';
-import fr from './fr';
-import ru from './ru';
-import gb from './gb';
 import dk from './dk';
+import eu from './eu';
 import fi from './fi';
+import fr from './fr';
+import gb from './gb';
+import hk from './hk';
+import india from './in';
+import jp from './jp';
 import no from './no';
+import ru from './ru';
 import se from './se';
 import us from './us';
-import jp from './jp';
-import cn from './cn';
-import india from './in';
 import za from './za';
-import hk from './hk';
-import br from './br';
-import au from './au';
 
-export default { ca, de, eu, fr, ru, gb, dk, fi, no, se, us, jp, cn, in: india, za, hk, br, au };
+export default {
+  au,
+  br,
+  ca,
+  cn,
+  de,
+  dk,
+  eu,
+  fi,
+  fr,
+  gb,
+  hk,
+  in: india,
+  jp,
+  no,
+  ru,
+  se,
+  uk: gb,
+  us,
+  za,
+};
