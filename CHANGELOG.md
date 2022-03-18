@@ -1,3 +1,10 @@
+## [10.16.1](https://github.com/nordnet/ui/compare/v10.16.0...v10.16.1) (2022-03-18)
+
+
+### Bug Fixes
+
+* add uk flag export same as gb ([5ca951f](https://github.com/nordnet/ui/commit/5ca951f))
+
 # [10.16.0](https://github.com/nordnet/ui/compare/v10.15.0...v10.16.0) (2022-03-16)
 
 
