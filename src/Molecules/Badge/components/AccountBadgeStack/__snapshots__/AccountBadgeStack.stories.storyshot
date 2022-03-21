@@ -218,10 +218,6 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
 .c7 {
   white-space: nowrap;
   overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c11 {
@@ -1812,38 +1808,17 @@ exports[`Storyshots Molecules / Badge / Account / Stack Default 1`] = `
 `;
 
 exports[`Storyshots Molecules / Badge / Account / Stack Inside a button 1`] = `
-Array [
-  .c0 {
+.c1 {
   margin-bottom: 16px;
   background-color: transparent;
 }
 
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+.c21 {
+  margin-bottom: 32px;
+  background-color: transparent;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
-  >
-    <span
-      className="c1"
-    >
-      Size s
-    </span>
-  </div>,
-  .c14 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1861,20 +1836,20 @@ Array [
   margin-right: -4px;
 }
 
-.c14 > * {
+.c17 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c14 > *:not(:first-child) {
+.c17 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c15 {
+.c18 {
   box-sizing: border-box;
 }
 
-.c17 {
+.c20 {
   color: currentColor;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1886,7 +1861,16 @@ Array [
   display: block;
 }
 
-.c3 {
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1895,7 +1879,7 @@ Array [
   line-height: 1.5;
 }
 
-.c6 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1904,7 +1888,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1913,7 +1897,7 @@ Array [
   line-height: 1.6;
 }
 
-.c9 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1937,7 +1921,7 @@ Array [
   border-radius: 24px;
 }
 
-.c8 {
+.c11 {
   border-radius: 50%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1946,35 +1930,31 @@ Array [
   position: relative;
 }
 
-.c8:not(:last-of-type) {
+.c11:not(:last-of-type) {
   -webkit-mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
   mask: radial-gradient( circle at 24px,transparent 13px,white 14px );
 }
 
-.c8:not(:first-of-type) {
+.c11:not(:first-of-type) {
   margin-left: -11px;
 }
 
-.c7 {
+.c10 {
   white-space: nowrap;
   overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-.c11 {
+.c14 {
   font-weight: 800;
 }
 
-.c16 {
+.c19 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c4 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2004,29 +1984,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4::before {
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -2037,15 +2017,15 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c4:hover {
+.c7:hover {
   background-color: #2650BF;
 }
 
-.c4:active {
+.c7:active {
   background-color: #1F4099;
 }
 
-.c12 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2075,29 +2055,29 @@ Array [
   cursor: pointer;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c12::before {
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -2108,49 +2088,49 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c12:hover {
+.c15:hover {
   color: #2650BF;
 }
 
-.c12:hover::before {
+.c15:hover::before {
   border-color: #2650BF;
 }
 
-.c12:active {
+.c15:active {
   color: #1F4099;
 }
 
-.c12:active::before {
+.c15:active::before {
   border-color: #1F4099;
 }
 
-.c5 {
+.c8 {
   border-radius: 16px;
 }
 
-.c5::before {
+.c8::before {
   display: none;
 }
 
-.c13 {
+.c16 {
   border-radius: 16px;
   background-color: #F5F5F5;
   color: #336BFF;
 }
 
-.c13:hover {
+.c16:hover {
   color: #2650BF;
 }
 
-.c13:active {
+.c16:active {
   color: #1F4099;
 }
 
-.c13::before {
+.c16::before {
   display: none;
 }
 
-.c0 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2169,13 +2149,13 @@ Array [
   border: 0px;
 }
 
-.c0 > * {
+.c3 > * {
   padding: 0px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c1 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2194,74 +2174,94 @@ Array [
   border: 1px solid #eee;
 }
 
-.c1 > * {
+.c4 > * {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c2 {
+.c5 {
   border-right: 1px solid #eee;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-@media (min-width:760px) {
+.c0 > div:nth-child(3n + 1) {
+  padding-left: 20px;
+  padding-top: 12px;
+}
 
+@media (min-width:760px) {
+  .c2 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
 }
 
 <div
-    className="c0"
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size s
+    </span>
+  </div>
+  <div
+    className="c3"
     direction="column"
   >
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           2 badges
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c6"
+              className="c9"
             >
               <div
-                className="c7"
+                className="c10"
               >
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       TJP
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       TJP
                     </span>
@@ -2274,14 +2274,14 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           2 badges in secondary button
         </span>
@@ -2296,44 +2296,44 @@ Array [
           }
         >
           <button
-            className="NormalizedButton__Button-sc-ey7f5x-0 c12 c13"
+            className="NormalizedButton__Button-sc-ey7f5x-0 c15 c16"
             onClick={[Function]}
             type="button"
           >
             <span>
               <div
-                className="c14"
+                className="c17"
               >
                 <div
-                  className="c15"
+                  className="c18"
                 >
                   <div
-                    className="c6"
+                    className="c9"
                   >
                     <div
-                      className="c7"
+                      className="c10"
                     >
                       <div
-                        className="c8"
+                        className="c11"
                       >
                         <span
-                          className="c9"
+                          className="c12"
                         >
                           <span
-                            className="c10 c11"
+                            className="c13 c14"
                           >
                             TJP
                           </span>
                         </span>
                       </div>
                       <div
-                        className="c8"
+                        className="c11"
                       >
                         <span
-                          className="c9"
+                          className="c12"
                         >
                           <span
-                            className="c10 c11"
+                            className="c13 c14"
                           >
                             TJP
                           </span>
@@ -2343,11 +2343,11 @@ Array [
                   </div>
                 </div>
                 <div
-                  className="c16"
+                  className="c19"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c17"
+                    className="c20"
                     focusable="false"
                     height={8}
                     preserveAspectRatio="xMidYMid meet"
@@ -2367,67 +2367,67 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           3 badges with carret
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c6"
+              className="c9"
             >
               <div
-                className="c7"
+                className="c10"
               >
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       KF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       AF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
-                      ISK
+                      +1
                     </span>
                   </span>
                 </div>
@@ -2438,65 +2438,65 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           3 badges, with truncation
         </span>
       </div>
       <div>
         <button
-          className="NormalizedButton__Button-sc-ey7f5x-0 c4 c5"
+          className="NormalizedButton__Button-sc-ey7f5x-0 c7 c8"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c6"
+              className="c9"
             >
               <div
-                className="c7"
+                className="c10"
               >
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       KF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       AF
                     </span>
                   </span>
                 </div>
                 <div
-                  className="c8"
+                  className="c11"
                 >
                   <span
-                    className="c9"
+                    className="c12"
                   >
                     <span
-                      className="c10 c11"
+                      className="c13 c14"
                     >
                       +3
                     </span>
@@ -2508,30 +2508,25 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
-  .c0 {
-  margin-bottom: 32px;
-  background-color: transparent;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
-  />,
-]
+  </div>
+  <div
+    className="c21"
+  />
+</div>
 `;
 
 exports[`Storyshots Molecules / Badge / Account / Stack Other variants 1`] = `
-Array [
-  .c0 {
+.c1 {
   margin-bottom: 16px;
   background-color: transparent;
 }
 
-.c1 {
+.c17 {
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2540,23 +2535,7 @@ Array [
   line-height: 1.1666666666666667;
 }
 
-@media (min-width:760px) {
-  .c1 {
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-  }
-}
-
-<div
-    className="c0"
-  >
-    <span
-      className="c1"
-    >
-      With different colors
-    </span>
-  </div>,
-  .c3 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2565,7 +2544,7 @@ Array [
   line-height: 1.5;
 }
 
-.c7 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2574,7 +2553,7 @@ Array [
   line-height: 1.6;
 }
 
-.c12 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #00D200;
   margin: 0;
@@ -2583,31 +2562,13 @@ Array [
   line-height: 1.6;
 }
 
-.c13 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
   font-weight: 700;
   font-size: 10px;
   line-height: 1.6;
-}
-
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #336BFF;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c16 {
@@ -2619,7 +2580,7 @@ Array [
   line-height: 1.5;
 }
 
-.c6 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2643,7 +2604,7 @@ Array [
   border-radius: 32px;
 }
 
-.c9 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2667,31 +2628,7 @@ Array [
   border-radius: 32px;
 }
 
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #FF1900;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
-}
-
-.c11 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2715,7 +2652,7 @@ Array [
   border-radius: 32px;
 }
 
-.c5 {
+.c8 {
   border-radius: 50%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2724,29 +2661,25 @@ Array [
   position: relative;
 }
 
-.c5:not(:last-of-type) {
+.c8:not(:last-of-type) {
   -webkit-mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
   mask: radial-gradient( circle at 32px,transparent 17px,white 18px );
 }
 
-.c5:not(:first-of-type) {
+.c8:not(:first-of-type) {
   margin-left: -15px;
 }
 
-.c4 {
+.c7 {
   white-space: nowrap;
   overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-.c8 {
+.c11 {
   font-weight: 800;
 }
 
-.c0 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2765,13 +2698,13 @@ Array [
   border: 0px;
 }
 
-.c0 > * {
+.c3 > * {
   padding: 0px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c1 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2790,93 +2723,100 @@ Array [
   border: 1px solid #eee;
 }
 
-.c1 > * {
+.c4 > * {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.c2 {
+.c5 {
   border-right: 1px solid #eee;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-@media (min-width:760px) {
+.c0 > div:nth-child(3n + 1) {
+  padding-left: 20px;
+  padding-top: 12px;
+}
 
+@media (min-width:760px) {
+  .c2 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
 }
 
 <div
-    className="c0"
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      With different colors
+    </span>
+  </div>
+  <div
+    className="c3"
     direction="column"
   >
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           Other banks
         </span>
       </div>
       <div>
         <div
-          className="c4"
+          className="c7"
         >
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c6"
+              className="c9"
             >
               <span
-                className="c7 c8"
+                className="c10 c11"
               >
                 SEB
               </span>
             </span>
           </div>
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c9"
+              className="c12"
             >
               <span
-                className="c7 c8"
+                className="c10 c11"
               >
                 HB
               </span>
             </span>
           </div>
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c10"
+              className="c13"
             >
               <span
-                className="c7 c8"
+                className="c10 c11"
               >
-                AVA
-              </span>
-            </span>
-          </div>
-          <div
-            className="c5"
-          >
-            <span
-              className="c9"
-            >
-              <span
-                className="c7 c8"
-              >
-                NN
+                +2
               </span>
             </span>
           </div>
@@ -2884,53 +2824,27 @@ Array [
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           Custom label
         </span>
       </div>
       <div>
         <div
-          className="c4"
+          className="c7"
         >
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c11"
-            >
-              <span
-                className="c12"
-              >
-                TJP
-              </span>
-            </span>
-          </div>
-          <div
-            className="c5"
-          >
-            <span
-              className="c11"
-            >
-              <span
-                className="c13"
-              >
-                TJP
-              </span>
-            </span>
-          </div>
-          <div
-            className="c5"
-          >
-            <span
-              className="c11"
+              className="c13"
             >
               <span
                 className="c14"
@@ -2940,10 +2854,10 @@ Array [
             </span>
           </div>
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c11"
+              className="c13"
             >
               <span
                 className="c15"
@@ -2952,44 +2866,57 @@ Array [
               </span>
             </span>
           </div>
+          <div
+            className="c8"
+          >
+            <span
+              className="c13"
+            >
+              <span
+                className="c10 c11"
+              >
+                +2
+              </span>
+            </span>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       direction="row"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <span
-          className="c3"
+          className="c6"
         >
           Custom truncation item
         </span>
       </div>
       <div>
         <div
-          className="c4"
+          className="c7"
         >
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c11"
+              className="c13"
             >
               <span
-                className="c7 c8"
+                className="c10 c11"
               >
                 KF
               </span>
             </span>
           </div>
           <div
-            className="c5"
+            className="c8"
           >
             <span
-              className="c11"
+              className="c13"
             >
               <span
                 className="c16"
@@ -3002,18 +2929,9 @@ Array [
         </div>
       </div>
     </div>
-  </div>,
-  .c0 {
-  margin-bottom: 32px;
-  background-color: transparent;
-}
-
-@media (min-width:760px) {
-
-}
-
-<div
-    className="c0"
-  />,
-]
+  </div>
+  <div
+    className="c17"
+  />
+</div>
 `;
