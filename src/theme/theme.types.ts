@@ -416,6 +416,10 @@ export type ThemeColors = {
   negative: string;
   /** negative or brandPink */
   negativeBlackBackground: string;
+  /** green600, pink600, blue500, teal600 */
+  newsLabelTextColors: string[];
+  /** green100, pink100, blue100, teal100 */
+  newsLabelBackgroundColors: string[];
   /** brandBlue */
   onboardingAccentBlue: string;
   /** brandGreen */
