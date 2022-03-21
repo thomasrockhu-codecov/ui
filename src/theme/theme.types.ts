@@ -322,6 +322,28 @@ export type ThemeColors = {
   disabledBackground: string;
   /** gray3 */
   disabledText: string;
+
+  /** light: gray800, dark: white */
+  dropDownButtonText: string;
+  /** light: blue500, dark: blue400 */
+  dropDownButtonTextHover: string;
+  /** light: blue500, dark: blue400 */
+  dropDownButtonTextActive: string;
+  /** light: gray400, dark: gray600 */
+  dropDownButtonTextDisabled: string;
+  /** light: gray100, dark: gray700 */
+  dropDownButtonBackground: string;
+  /** light: gray100, dark: gray700 */
+  dropDownButtonBackgroundHover: string;
+  /** light: blue100, dark: blue800 */
+  dropDownButtonBackgroundActive: string;
+  /** light: gray200, dark: gray900 */
+  dropDownButtonBackgroundDisabled: string;
+  /** light: gray200, dark: gray800 */
+  dropDownButtonBackgroundLoading: string;
+  /** light: red500, dark: red500 */
+  dropDownButtonBorderError: string;
+
   /** gray6 */
   divider: string;
   /** gray4 */
