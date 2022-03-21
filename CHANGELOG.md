@@ -1,3 +1,10 @@
+## [10.16.2](https://github.com/nordnet/ui/compare/v10.16.1...v10.16.2) (2022-03-21)
+
+
+### Bug Fixes
+
+* handle xl prop for flexbox component ([fc22203](https://github.com/nordnet/ui/commit/fc22203))
+
 ## [10.16.1](https://github.com/nordnet/ui/compare/v10.16.0...v10.16.1) (2022-03-18)
 
 
