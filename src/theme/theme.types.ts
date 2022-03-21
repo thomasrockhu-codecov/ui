@@ -663,6 +663,8 @@ export type ColorSets = {
 
 export type Theme = {
   color: ThemeColors;
+  lightColor: ThemeColors;
+  darkColor: ThemeColors;
   spacing: {
     /**
      * One unit, all spacing should be handled with this
