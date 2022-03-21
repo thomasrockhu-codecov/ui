@@ -139,6 +139,7 @@ export const withBreakpointProps = () => {
       sm={{ gutter: 6 }}
       md={{ gutter: 6, direction: 'row' }}
       lg={{ gutter: 10, direction: 'row' }}
+      xl={{ gutter: 10, direction: 'row' }}
     >
       <Flexbox item>
         <Content>First element here</Content>

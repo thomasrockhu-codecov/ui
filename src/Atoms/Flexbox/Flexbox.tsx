@@ -142,6 +142,7 @@ const StyledFlexbox = styled(SanitizedDiv)<Props>`
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
   ${(p) => (p.md ? getStylesForSize('md') : '')}
   ${(p) => (p.lg ? getStylesForSize('lg') : '')}
+  ${(p) => (p.xl ? getStylesForSize('xl') : '')}
 `;
 
 export const Flexbox = React.forwardRef<HTMLDivElement, Props>((props, ref) => (

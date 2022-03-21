@@ -290,6 +290,19 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
   }
 }
 
+@media (min-width:1600px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c11 {
     display: -webkit-box;
@@ -955,6 +968,19 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   }
 }
 
+@media (min-width:1600px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c11 {
     display: -webkit-box;
@@ -1575,6 +1601,19 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
   }
 }
 
+@media (min-width:1600px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c11 {
     display: -webkit-box;
@@ -2162,6 +2201,19 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
 }
 
 @media (min-width:1280px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1600px) {
   .c2 {
     display: -webkit-box;
     display: -webkit-flex;

@@ -282,6 +282,19 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   }
 }
 
+@media (min-width:1600px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c10 {
     display: -webkit-box;
@@ -944,6 +957,19 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
 }
 
 @media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1600px) {
   .c1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1721,6 +1747,19 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   }
 }
 
+@media (min-width:1600px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c16 {
     display: -webkit-box;
@@ -2256,6 +2295,19 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
 }
 
 @media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1600px) {
   .c1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2944,6 +2996,19 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
 }
 
 @media (min-width:1280px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1600px) {
   .c4 {
     display: -webkit-box;
     display: -webkit-flex;
