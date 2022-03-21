@@ -38,7 +38,6 @@ const CircleWrapper = styled.div<{ $size: number }>`
 const StyledContainer = styled.div`
   white-space: nowrap;
   overflow: hidden;
-  display: inline-flex;
 `;
 
 const disabledColorFn = () => 'currentColor';
@@ -52,17 +51,20 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
       className,
       items,
       badgeSize = 's',
-      maxElementsInStack,
+      maxElementsInStack = 3,
+      truncated = true,
       truncationBadgeColor,
       truncationWrapper,
       disabled,
     },
     ref,
   ) => {
+    const isTruncated = truncated && maxElementsInStack;
+
     const size = typeof badgeSize === 'number' ? badgeSize : AccountBadgeSize[badgeSize];
-    const exceedsMax = maxElementsInStack ? items.length >= maxElementsInStack : false;
-    const passThroughIndex = maxElementsInStack ? maxElementsInStack - 1 : items.length;
-    const amountOfTruncatedBadges = maxElementsInStack ? items.length - maxElementsInStack + 1 : 0;
+    const exceedsMax = isTruncated ? items.length >= maxElementsInStack : false;
+    const passThroughIndex = isTruncated ? maxElementsInStack - 1 : items.length;
+    const amountOfTruncatedBadges = isTruncated ? items.length - maxElementsInStack + 1 : 0;
 
     return (
       <StyledContainer className={className} ref={ref}>

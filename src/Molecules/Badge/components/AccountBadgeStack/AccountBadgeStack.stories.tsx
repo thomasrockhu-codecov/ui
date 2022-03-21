@@ -41,19 +41,19 @@ export const Default: Story<AccountBadgeStackProps> = () => {
         title="Size s"
         items={[
           {
-            component: <Badge.Account.Stack items={threeArray} />,
+            component: <Badge.Account.Stack items={threeArray} truncated={false} />,
             title: '3 badges',
           },
           {
-            component: <Badge.Account.Stack items={threeArray} maxElementsInStack={3} />,
+            component: <Badge.Account.Stack items={threeArray} />,
             title: '3 badges, with truncation',
           },
           {
-            component: <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} />,
+            component: <Badge.Account.Stack items={fiveArray} />,
             title: '3 badges, with more truncation',
           },
           {
-            component: <Badge.Account.Stack items={tenArray} />,
+            component: <Badge.Account.Stack items={tenArray} truncated={false} />,
             title: '10 badges',
           },
           {
@@ -66,23 +66,19 @@ export const Default: Story<AccountBadgeStackProps> = () => {
         title="Size m"
         items={[
           {
-            component: <Badge.Account.Stack items={threeArray} badgeSize="m" />,
+            component: <Badge.Account.Stack items={threeArray} badgeSize="m" truncated={false} />,
             title: '3 badges',
           },
           {
-            component: (
-              <Badge.Account.Stack items={threeArray} badgeSize="m" maxElementsInStack={3} />
-            ),
+            component: <Badge.Account.Stack items={threeArray} badgeSize="m" />,
             title: '3 badges, with truncation',
           },
           {
-            component: (
-              <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} badgeSize="m" />
-            ),
+            component: <Badge.Account.Stack items={fiveArray} badgeSize="m" />,
             title: '3 badges, with more truncation',
           },
           {
-            component: <Badge.Account.Stack items={tenArray} badgeSize="m" />,
+            component: <Badge.Account.Stack items={tenArray} badgeSize="m" truncated={false} />,
             title: '10 badges',
           },
           {
@@ -95,23 +91,19 @@ export const Default: Story<AccountBadgeStackProps> = () => {
         title="Size l"
         items={[
           {
-            component: <Badge.Account.Stack items={threeArray} badgeSize="l" />,
+            component: <Badge.Account.Stack items={threeArray} badgeSize="l" truncated={false} />,
             title: '3 badges',
           },
           {
-            component: (
-              <Badge.Account.Stack items={threeArray} badgeSize="l" maxElementsInStack={3} />
-            ),
+            component: <Badge.Account.Stack items={threeArray} badgeSize="l" />,
             title: '3 badges, with truncation',
           },
           {
-            component: (
-              <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} badgeSize="l" />
-            ),
+            component: <Badge.Account.Stack items={fiveArray} badgeSize="l" />,
             title: '3 badges, with more truncation',
           },
           {
-            component: <Badge.Account.Stack items={tenArray} badgeSize="l" />,
+            component: <Badge.Account.Stack items={tenArray} badgeSize="l" truncated={false} />,
             title: '10 badges',
           },
           {
@@ -125,23 +117,19 @@ export const Default: Story<AccountBadgeStackProps> = () => {
         title="custom size 40"
         items={[
           {
-            component: <Badge.Account.Stack items={threeArray} badgeSize={40} />,
+            component: <Badge.Account.Stack items={threeArray} badgeSize={40} truncated={false} />,
             title: '3 badges',
           },
           {
-            component: (
-              <Badge.Account.Stack items={threeArray} badgeSize={40} maxElementsInStack={3} />
-            ),
+            component: <Badge.Account.Stack items={threeArray} badgeSize={40} />,
             title: '3 badges, with truncation',
           },
           {
-            component: (
-              <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} badgeSize={40} />
-            ),
+            component: <Badge.Account.Stack items={fiveArray} badgeSize={40} />,
             title: '3 badges, with more truncation',
           },
           {
-            component: <Badge.Account.Stack items={tenArray} badgeSize={40} />,
+            component: <Badge.Account.Stack items={tenArray} badgeSize={40} truncated={false} />,
             title: '10 badges',
           },
           {

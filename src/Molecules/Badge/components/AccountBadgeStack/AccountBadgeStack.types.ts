@@ -16,10 +16,15 @@ export type AccountBadgeStackProps = {
    */
   items: Item[];
   /**
-   * The number of badges that will be rendered. If the length of @param labels is larger than or equal to this number,
+   * The number of badges that will be rendered. If the length of @param items is larger than or equal to this number,
    * the number of rendered bagdes will be truncated by a badge with the label of how many badges were truncated.
+   * Defaults to three elements - including truncation badge.
    */
   maxElementsInStack?: number;
+  /**
+   * Boolean that decides if stack should be truncated or not. Defaults to true.
+   */
+  truncated?: boolean;
   /**
    * The badge color of the badge that indicates the number of truncated items
    */
