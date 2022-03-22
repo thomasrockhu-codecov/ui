@@ -172,6 +172,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     negative: rawColor.negative,
     negativeBlackBackground: rawColor.negative,
 
+    newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
+    newsLabelBackgroundColors: [rawColor.green100, rawColor.pink100, rawColor.blue100, rawColor.teal100],
+
     onboardingAccentBlue: rawColor.brandBlue,
     onboardingAccentGreen: rawColor.brandGreen,
     onboardingAccentPink: rawColor.brandPink,

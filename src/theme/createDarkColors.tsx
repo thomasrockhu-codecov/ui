@@ -172,6 +172,14 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     negative: rawColor.negative,
     negativeBlackBackground: rawColor.negative,
 
+    newsLabelTextColors: [rawColor.green450, rawColor.pink500, rawColor.blue400, rawColor.teal400],
+    newsLabelBackgroundColors: [
+      rawColor.green800,
+      rawColor.pink900,
+      rawColor.blue800,
+      rawColor.teal800,
+    ],
+
     onboardingAccentBlue: rawColor.brandTurquoise,
     onboardingAccentGreen: rawColor.brandGreen,
     onboardingAccentPink: rawColor.brandPink,
