@@ -1,1 +1,1 @@
-export { AccountBadge } from './AccountBadge';
+export { CompoundAccountBadge as AccountBadge } from './AccountBadge';

@@ -17,6 +17,17 @@ Account Badge is used to display a representation of an entity (e.g. a bank, an 
 - `badgeColor` - a theme color function used to set the color for the background/badge.
 - `badgeSize` - sets the width/height (symmetric ratio) of the badge. Available sizes are: `'l'`: 48px, `'m'`: 32px, `'s'`: 24px.
 
+### Account Badge Stack (Badge.Account.Stack)
+
+Accound Badge Stack is used to display a set of Account Badges stacked on top of each other.
+
+- `useCurrentColor` - toggles the color for the badge background to the currentColor.
+- `items` - a list of badges that will be rendered. An item should consist of a label and an optional theme color function.
+- `maxElementsInStack` - defines how many badges that should be rendered, including the truncation badge.
+- `truncated` - defines if stack should be truncated or not.
+- `truncationBadgeColor` - a theme color function used to set the color for the truncation badge.
+- `truncationWrapper` - a React.FC component used to set custom typography for the truncation badge. The badge label will be passed as a children prop to the wrapper.
+
 ### Icon Badge (Badge.Icon)
 
 Badge with an `Icon` or `Illustration`. Used to bring flair or bring attention to something.

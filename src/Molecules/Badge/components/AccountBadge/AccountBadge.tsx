@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AccountBadgeComponent, AccountBadgeProps } from './AccountBadge.types';
+import {
+  AccountBadgeComponent,
+  AccountBadgeCompoundComponent,
+  AccountBadgeProps,
+} from './AccountBadge.types';
 import { BaseBadge } from '..';
 import { Typography } from '../../../..';
 import { isElement, isFunction } from '../../../../common/utils';
 import { AccountBadgeSize } from './AccountBadge.constants';
+import { AccountBadgeStack } from '../AccountBadgeStack';
 
 const StyledTypography = styled(Typography)`
   font-weight: 800;
@@ -24,10 +29,7 @@ const AccountBadgeContent: React.FC<{
   );
 };
 
-export const AccountBadge: AccountBadgeComponent = React.forwardRef<
-  HTMLSpanElement,
-  AccountBadgeProps
->(
+const AccountBadge: AccountBadgeComponent = React.forwardRef<HTMLSpanElement, AccountBadgeProps>(
   (
     { children, badgeSize = 'm', badgeColor = (t) => t.color.accountBadgeBackground, ...htmlProps },
     ref,
@@ -48,3 +50,10 @@ export const AccountBadge: AccountBadgeComponent = React.forwardRef<
     );
   },
 );
+
+// eslint-disable-next-line prefer-object-spread
+const CompoundAccountBadge: AccountBadgeCompoundComponent = Object.assign({}, AccountBadge, {
+  Stack: AccountBadgeStack,
+});
+
+export { CompoundAccountBadge };
