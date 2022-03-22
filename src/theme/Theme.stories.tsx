@@ -84,8 +84,8 @@ export const lightColors = () => {
         </Typography>
 
         <Typography type="primary">
-          Good for then you do not want the color to change on dark mode. For instance text on
-          background image. <br />
+          Do not use this unless you have very specific needs for this. For example when you do not
+          want the color to change on dark mode. For instance text on background image. <br />
           Use like <pre>theme.lightColor.text</pre>
         </Typography>
       </Box>
@@ -118,12 +118,12 @@ export const darkColors = () => {
     <>
       <Box py={4}>
         <Typography type="title1" as="h1">
-          Light Colors
+          Dark Colors
         </Typography>
 
         <Typography type="primary">
-          Good for then you do not want the color to change on light mode. For instance text on
-          background image. <br />
+          Do not use this unless you have very specific needs for this. For example when you do not
+          want the color to change on light mode. For instance text on background image. <br />
           Use like <pre>theme.darkColor.text</pre>
         </Typography>
       </Box>
