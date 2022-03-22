@@ -396,6 +396,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   }
 }
 
+@media (min-width:1600px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c21 {
     display: -webkit-box;
@@ -1317,6 +1330,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   }
 }
 
+@media (min-width:1600px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c14 {
     display: -webkit-box;
@@ -2094,6 +2120,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   }
 }
 
+@media (min-width:1600px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
   .c14 {
     display: -webkit-box;
@@ -2792,6 +2831,19 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
 }
 
 @media (min-width:1280px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1600px) {
   .c3 {
     display: -webkit-box;
     display: -webkit-flex;

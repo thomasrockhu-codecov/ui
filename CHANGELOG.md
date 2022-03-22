@@ -1,3 +1,38 @@
+## [10.17.1](https://github.com/nordnet/ui/compare/v10.17.0...v10.17.1) (2022-03-22)
+
+
+### Bug Fixes
+
+* add news label colors ([eb06cf8](https://github.com/nordnet/ui/commit/eb06cf8))
+
+# [10.17.0](https://github.com/nordnet/ui/compare/v10.16.2...v10.17.0) (2022-03-22)
+
+
+### Features
+
+* 🎸 option to turn off autocomplete for input number ([e3c959f](https://github.com/nordnet/ui/commit/e3c959f))
+
+## [10.16.2](https://github.com/nordnet/ui/compare/v10.16.1...v10.16.2) (2022-03-21)
+
+
+### Bug Fixes
+
+* handle xl prop for flexbox component ([fc22203](https://github.com/nordnet/ui/commit/fc22203))
+
+## [10.16.1](https://github.com/nordnet/ui/compare/v10.16.0...v10.16.1) (2022-03-18)
+
+
+### Bug Fixes
+
+* add uk flag export same as gb ([5ca951f](https://github.com/nordnet/ui/commit/5ca951f))
+
+# [10.16.0](https://github.com/nordnet/ui/compare/v10.15.0...v10.16.0) (2022-03-16)
+
+
+### Features
+
+* 🎸 Adds prop closeOnEscapePress to Modal ([9dd846d](https://github.com/nordnet/ui/commit/9dd846d))
+
 # [10.15.0](https://github.com/nordnet/ui/compare/v10.14.1...v10.15.0) (2022-03-16)
 
 

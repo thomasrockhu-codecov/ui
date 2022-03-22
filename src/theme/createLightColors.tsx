@@ -105,6 +105,17 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     disabledBackground: rawColor.gray6,
     disabledText: rawColor.gray3,
 
+    dropDownButtonText: rawColor.gray800,
+    dropDownButtonTextHover: rawColor.blue500,
+    dropDownButtonTextActive:rawColor.blue500,
+    dropDownButtonTextDisabled: rawColor.gray400,
+    dropDownButtonBackground: rawColor.gray100,
+    dropDownButtonBackgroundHover: rawColor.gray100,
+    dropDownButtonBackgroundActive: rawColor.blue100,
+    dropDownButtonBackgroundDisabled: rawColor.gray200,
+    dropDownButtonBackgroundLoading: rawColor.gray200,
+    dropDownButtonBorderError: rawColor.red500,
+
     divider: rawColor.gray6,
     pageWrapperDivider: rawColor.gray700,
     emptyState: rawColor.gray4,
@@ -171,6 +182,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     negative: rawColor.negative,
     negativeBlackBackground: rawColor.negative,
+
+    newsLabelTextColors: [rawColor.green600, rawColor.pink600, rawColor.blue500, rawColor.teal600],
+    newsLabelBackgroundColors: [rawColor.green100, rawColor.pink100, rawColor.blue100, rawColor.teal100],
 
     onboardingAccentBlue: rawColor.brandBlue,
     onboardingAccentGreen: rawColor.brandGreen,

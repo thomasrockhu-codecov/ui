@@ -4,6 +4,7 @@ export type Variant = 'normal' | 'quiet';
 
 export type Props = {
   autoFocus?: boolean;
+  autoComplete?: 'on' | 'off';
   className?: string;
   defaultValue?: string | number;
   disabled?: boolean;

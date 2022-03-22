@@ -30,6 +30,19 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const defaultStoryWithAutoCompleteOff = () => (
+  <Input.Number
+    id="insert-unique-id"
+    label="Label"
+    onChange={action('onChange')}
+    autoComplete="off"
+  />
+);
+
+defaultStoryWithAutoCompleteOff.story = {
+  name: 'Default with Auto Complete off',
+};
+
 export const withValueControlledBehaviour = () => {
   const Component = () => {
     const [value, setValue] = useState(10);

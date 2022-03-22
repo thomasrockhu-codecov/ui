@@ -1300,3 +1300,28 @@ export const modalWithoutBackdrop = () => {
 modalWithoutBackdrop.story = {
   name: 'Modal without backdrop',
 };
+
+export const modalWithDisabledEscapePress = () => {
+  return (
+    <Modal
+      onClose={() => {
+        // eslint-disable-next-line no-alert
+        alert('This should never be called when pressing the escape-key');
+      }}
+      title="Dialog information"
+      open
+      closeOnEscapePress={false}
+    >
+      <Box mb={2}>
+        <Typography type="primary" as="p">
+          Pressing the escape-key will usually call the modal&apos;s onClose function. The prop
+          closeOnEscapePress=false will prevent this functionality.
+        </Typography>
+      </Box>
+    </Modal>
+  );
+};
+
+modalWithDisabledEscapePress.story = {
+  name: 'Modal with disabled escape-key press',
+};
