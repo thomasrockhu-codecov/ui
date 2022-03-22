@@ -104,6 +104,17 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     disabledBackground: rawColor.gray900,
     disabledText: rawColor.gray600,
 
+    dropDownButtonText: rawColor.white,
+    dropDownButtonTextHover: rawColor.blue400,
+    dropDownButtonTextActive:rawColor.blue400,
+    dropDownButtonTextDisabled: rawColor.gray600,
+    dropDownButtonBackground: rawColor.gray700,
+    dropDownButtonBackgroundHover: rawColor.gray700,
+    dropDownButtonBackgroundActive: rawColor.blue800,
+    dropDownButtonBackgroundDisabled: rawColor.gray900,
+    dropDownButtonBackgroundLoading: rawColor.gray800,
+    dropDownButtonBorderError: rawColor.red500,
+
     divider: rawColor.gray900,
     pageWrapperDivider: rawColor.gray800,
     emptyState: rawColor.gray4,
