@@ -162,6 +162,14 @@ export const InsideButton = () => {
           },
           {
             component: (
+              <Button.Pill size="m">
+                <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} />
+              </Button.Pill>
+            ),
+            title: '3 badges, with truncation',
+          },
+          {
+            component: (
               <div style={{ background: 'white', padding: '12px' }}>
                 <Button.Pill
                   onClick={action('Ouch')}
@@ -178,19 +186,11 @@ export const InsideButton = () => {
           },
           {
             component: (
-              <Button.Pill size="m">
-                <Badge.Account.Stack items={threeArray} />
+              <Button.Pill size="m" variant="primary" disabled>
+                <Badge.Account.Stack items={[...singleArray, ...singleArray]} useCurrentColor />
               </Button.Pill>
             ),
-            title: '3 badges with carret',
-          },
-          {
-            component: (
-              <Button.Pill size="m">
-                <Badge.Account.Stack items={fiveArray} maxElementsInStack={3} />
-              </Button.Pill>
-            ),
-            title: '3 badges, with truncation',
+            title: '2 badges with current color inherited',
           },
         ]}
       />
@@ -273,9 +273,9 @@ export const OtherVariants = () => {
               <Badge.Account.Stack
                 badgeSize="m"
                 maxElementsInStack={2}
-                truncationWrapper={({ children }) => (
+                truncationWrapper={({ truncatedItems }) => (
                   <Typography weight="bold" type="primary" color={(t) => t.color.negative}>
-                    {children}!
+                    {truncatedItems.length}!
                   </Typography>
                 )}
                 items={threeArray}

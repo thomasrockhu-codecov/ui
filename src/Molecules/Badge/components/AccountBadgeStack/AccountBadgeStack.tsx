@@ -38,9 +38,10 @@ const CircleWrapper = styled.div<{ $size: number }>`
 const StyledContainer = styled.div`
   white-space: nowrap;
   overflow: hidden;
+  display: flex;
 `;
 
-const disabledColorFn = () => 'currentColor';
+const currentColorFn = () => 'currentColor';
 
 export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
   HTMLDivElement,
@@ -55,7 +56,7 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
       truncated = true,
       truncationBadgeColor,
       truncationWrapper,
-      disabled,
+      useCurrentColor,
     },
     ref,
   ) => {
@@ -65,6 +66,7 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
     const exceedsMax = isTruncated ? items.length >= maxElementsInStack : false;
     const passThroughIndex = isTruncated ? maxElementsInStack - 1 : items.length;
     const amountOfTruncatedBadges = isTruncated ? items.length - maxElementsInStack + 1 : 0;
+    const truncatedItems = items.slice(passThroughIndex);
 
     return (
       <StyledContainer className={className} ref={ref}>
@@ -73,7 +75,7 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
             <CircleWrapper $size={size}>
               <Badge.Account
                 badgeSize={badgeSize}
-                badgeColor={disabled ? disabledColorFn : passedItem.badgeColor}
+                badgeColor={useCurrentColor ? currentColorFn : passedItem.badgeColor}
               >
                 {passedItem.label}
               </Badge.Account>
@@ -85,10 +87,10 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
           <CircleWrapper $size={size}>
             <Badge.Account
               badgeSize={badgeSize}
-              badgeColor={disabled ? disabledColorFn : truncationBadgeColor}
+              badgeColor={useCurrentColor ? currentColorFn : truncationBadgeColor}
             >
               {typeof truncationWrapper === 'function'
-                ? truncationWrapper({ children: `+${amountOfTruncatedBadges}` })
+                ? truncationWrapper({ truncatedItems })
                 : `+${amountOfTruncatedBadges}`}
             </Badge.Account>
           </CircleWrapper>
