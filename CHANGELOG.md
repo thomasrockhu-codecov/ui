@@ -1,3 +1,10 @@
+# [10.18.0](https://github.com/nordnet/ui/compare/v10.17.1...v10.18.0) (2022-03-22)
+
+
+### Features
+
+* **theme:** add dropdown button colors ([3014c0e](https://github.com/nordnet/ui/commit/3014c0e))
+
 ## [10.17.1](https://github.com/nordnet/ui/compare/v10.17.0...v10.17.1) (2022-03-22)
 
 
