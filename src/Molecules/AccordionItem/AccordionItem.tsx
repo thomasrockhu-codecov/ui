@@ -122,9 +122,11 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       );
     })();
 
-    const padding = { p, px, py, pt, pb, pl, pr };
     const hasRightAddon = React.isValidElement(rightAddon);
-    const hasRighAddonOrChevron = hasRightAddon || withChevron;
+    const padding = { p, px, py, pt, pb, pl, pr };
+    const contentPadding = { pt: 1, pb: 3, pl: 6, pr: 0 };
+    const contentWithChevronPadding = { pl: 0, pr: 6 };
+    const contentWithRightAddonPadding = { pl: 0, pr: 0 };
 
     return (
       <Item
@@ -142,7 +144,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
             onBlur={() => setHasFocus(false)}
             onFocus={() => setHasFocus(true)}
             disabled={disabled}
-            addonOnRightSide={hasRighAddonOrChevron}
+            addonOnRightSide={hasRightAddon || withChevron}
           >
             <Typography type="secondary" weight="bold">
               {title}
@@ -168,10 +170,9 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
               transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
               <Content
-                pt={1}
-                pb={3}
-                pl={hasRighAddonOrChevron ? 0 : 6}
-                pr={hasRighAddonOrChevron ? 6 : 0}
+                {...contentPadding}
+                {...(withChevron ? contentWithChevronPadding : contentPadding)}
+                {...(hasRightAddon ? contentWithRightAddonPadding : contentPadding)}
               >
                 {isString(children) ? (
                   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
