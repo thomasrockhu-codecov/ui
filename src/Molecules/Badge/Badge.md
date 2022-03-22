@@ -21,7 +21,7 @@ Account Badge is used to display a representation of an entity (e.g. a bank, an 
 
 Accound Badge Stack is used to display a set of Account Badges stacked on top of each other.
 
-- `disabled` - toggles the color for the badge background to the currentColor.
+- `useCurrentColor` - toggles the color for the badge background to the currentColor.
 - `items` - a list of badges that will be rendered. An item should consist of a label and an optional theme color function.
 - `maxElementsInStack` - defines how many badges that should be rendered, including the truncation badge.
 - `truncated` - defines if stack should be truncated or not.
