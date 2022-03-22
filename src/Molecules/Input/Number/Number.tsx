@@ -194,6 +194,7 @@ const NumberInput: NumberComponent & {
 } = (props) => {
   const {
     autoFocus,
+    autoComplete,
     defaultValue,
     disabled,
     error,
@@ -365,6 +366,7 @@ const NumberInput: NumberComponent & {
               variant,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
+            {...(autoComplete ? { autocomplete: autoComplete } : {})}
           />
           {showSteppers && (
             <>
