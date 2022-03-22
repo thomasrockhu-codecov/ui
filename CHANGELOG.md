@@ -1,3 +1,10 @@
+## [10.17.1](https://github.com/nordnet/ui/compare/v10.17.0...v10.17.1) (2022-03-22)
+
+
+### Bug Fixes
+
+* add news label colors ([eb06cf8](https://github.com/nordnet/ui/commit/eb06cf8))
+
 # [10.17.0](https://github.com/nordnet/ui/compare/v10.16.2...v10.17.0) (2022-03-22)
 
 
