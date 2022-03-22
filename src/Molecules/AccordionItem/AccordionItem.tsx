@@ -24,7 +24,10 @@ const Item = styled.div<ItemProps>`
   `}
 `;
 
-const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
+const Button = styled.button<{
+  addonOnRightSide?: boolean;
+  disabled?: boolean;
+}>`
   font: inherit;
   width: 100%;
   border: 0;
@@ -37,7 +40,7 @@ const Button = styled.button<{ withChevron?: boolean; disabled?: boolean }>`
   padding: ${(p) => p.theme.spacing.unit(3)}px 0;
   cursor: ${(p) => (p.disabled ? 'default' : 'pointer')};
   color: ${({ disabled, theme }) => (disabled ? theme.color.disabledText : '')};
-  justify-content: ${({ withChevron }) => (withChevron ? 'space-between' : 'flex-start')};
+  justify-content: ${({ addonOnRightSide }) => (addonOnRightSide ? 'space-between' : 'flex-start')};
 `;
 
 const IconWrapper = styled.div<{ withChevron?: boolean }>`
@@ -81,6 +84,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
       pb,
       pl,
       pr,
+      rightAddon,
     },
     ref,
   ) => {
@@ -119,6 +123,9 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
     })();
 
     const padding = { p, px, py, pt, pb, pl, pr };
+    const hasRightAddon = React.isValidElement(rightAddon);
+    const hasRighAddonOrChevron = hasRightAddon || withChevron;
+
     return (
       <Item
         className={className}
@@ -135,14 +142,19 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
             onBlur={() => setHasFocus(false)}
             onFocus={() => setHasFocus(true)}
             disabled={disabled}
-            withChevron={withChevron}
+            addonOnRightSide={hasRighAddonOrChevron}
           >
             <Typography type="secondary" weight="bold">
               {title}
             </Typography>
-            <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>
+            {hasRightAddon ? (
+              rightAddon
+            ) : (
+              <IconWrapper withChevron={withChevron}>{icon}</IconWrapper>
+            )}
           </Button>
         </Typography>
+
         <AnimatePresence initial={false}>
           {expanded && (
             <motion.section
@@ -155,7 +167,12 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
               }}
               transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
-              <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
+              <Content
+                pt={1}
+                pb={3}
+                pl={hasRighAddonOrChevron ? 0 : 6}
+                pr={hasRighAddonOrChevron ? 6 : 0}
+              >
                 {isString(children) ? (
                   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
                     {children}

@@ -105,6 +105,14 @@ export const withChevron = () => (
     <ExampleContent />
   </AccordionItem>
 );
+export const withRightAddon = () => (
+  <AccordionItem
+    title="How much risk are you willing to take?"
+    rightAddon={<Button.Pill onClick={() => {}}>right addon</Button.Pill>}
+  >
+    <ExampleContent />
+  </AccordionItem>
+);
 
 export const withDisabledBackgroundColor = () => (
   <AccordionItem title="This card has its hover and focus color disabled" disableBackgroundColor>
