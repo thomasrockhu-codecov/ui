@@ -1,3 +1,16 @@
+# [10.19.0](https://github.com/nordnet/ui/compare/v10.18.0...v10.19.0) (2022-03-22)
+
+
+### Bug Fixes
+
+* **account-badge-stack:** add validation on props. renamed disabled to useCurrentColor. update custom truncation function to pass all truncated children instead of hardcoded string ([2d7b508](https://github.com/nordnet/ui/commit/2d7b508))
+* **account-badge-stack:** update badge readme ([3b03fdc](https://github.com/nordnet/ui/commit/3b03fdc))
+
+
+### Features
+
+* **AccountBadgeStack:** add account badge stack component ([05d1c2f](https://github.com/nordnet/ui/commit/05d1c2f))
+
 # [10.18.0](https://github.com/nordnet/ui/compare/v10.17.1...v10.18.0) (2022-03-22)
 
 
