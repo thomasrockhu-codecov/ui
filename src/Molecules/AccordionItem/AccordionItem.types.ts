@@ -19,6 +19,7 @@ export type Props = {
   pb?: number;
   pl?: number;
   pr?: number;
+  rightAddon?: React.ReactNode;
 };
 
 export type ItemProps = {
