@@ -1,3 +1,15 @@
+# [10.20.0](https://github.com/nordnet/ui/compare/v10.19.0...v10.20.0) (2022-03-23)
+
+
+### Bug Fixes
+
+* 🐛 adding padding to content based on props ([3721cac](https://github.com/nordnet/ui/commit/3721cac))
+
+
+### Features
+
+* 🎸 add right addon prop to accordion item ([ef6dc6b](https://github.com/nordnet/ui/commit/ef6dc6b))
+
 # [10.19.0](https://github.com/nordnet/ui/compare/v10.18.0...v10.19.0) (2022-03-22)
 
 
