@@ -124,9 +124,6 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
 
     const hasRightAddon = React.isValidElement(rightAddon);
     const padding = { p, px, py, pt, pb, pl, pr };
-    const contentPadding = { pt: 1, pb: 3, pl: 6, pr: 0 };
-    const contentWithChevronPadding = { pl: 0, pr: 6 };
-    const contentWithRightAddonPadding = { pl: 0, pr: 0 };
 
     return (
       <Item
@@ -169,11 +166,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
               }}
               transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
             >
-              <Content
-                {...contentPadding}
-                {...(withChevron ? contentWithChevronPadding : contentPadding)}
-                {...(hasRightAddon ? contentWithRightAddonPadding : contentPadding)}
-              >
+              <Content pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
                 {isString(children) ? (
                   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
                     {children}
