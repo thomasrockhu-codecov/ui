@@ -1,3 +1,15 @@
+# [10.21.0](https://github.com/nordnet/ui/compare/v10.20.0...v10.21.0) (2022-03-24)
+
+
+### Bug Fixes
+
+* 🐛 copy in story for light and dark colors ([eafcb6d](https://github.com/nordnet/ui/commit/eafcb6d))
+
+
+### Features
+
+* 🎸 add lightColor and darkColor on theme ([984190f](https://github.com/nordnet/ui/commit/984190f))
+
 # [10.20.0](https://github.com/nordnet/ui/compare/v10.19.0...v10.20.0) (2022-03-23)
 
 
