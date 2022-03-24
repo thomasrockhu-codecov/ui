@@ -4,8 +4,15 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Props = {
-  className?: string;
   barColor?: ColorFn;
   noPadding?: boolean;
   children: React.ReactNode;
+  className?: string;
+};
+
+export type RoundedProps = {
+  className?: string;
+  label: string;
+  color: ColorFn;
+  onClose?: () => void;
 };

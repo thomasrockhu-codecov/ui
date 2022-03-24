@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css, ThemedStyledProps } from 'styled-components';
 import R from 'ramda';
 
-import { Props } from './Pill.types';
+import { Props, RoundedProps } from './Pill.types';
 import { Theme } from '../../theme/theme.types';
 import { isFunction } from '../../common/utils';
 
@@ -38,4 +38,22 @@ export const Pill: React.FC<Props> = ({ barColor, className, children, noPadding
     {children}
   </StyledDiv>
 );
+
+const StyledDivRounded = styled.div<Pick<RoundedProps, 'color'>>`
+  display: inline-block;
+  box-sizing: border-box;
+  background: ${({ theme }) => theme.color.background};
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.21);
+  border-radius: 100px;
+  padding: 2px 12px;
+`;
+
+export const Rounded: React.FC<RoundedProps> = ({ className, label, color, onClose }) => {
+  return (
+    <StyledDivRounded className={className} color={color}>
+      {label}
+    </StyledDivRounded>
+  );
+};
+
 Pill.displayName = 'Pill';
