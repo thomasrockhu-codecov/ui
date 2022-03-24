@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
 import { propOr } from 'ramda';
-import { createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr } from '..';
+import { Box, createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr, Typography } from '..';
 import defaultColors from './defaultColors';
 import accessabilityColors from './accessabilityColors';
 import colorDocs from './Colors.md';
@@ -72,6 +72,82 @@ export const colorsSemantic = () => {
 
 colorsSemantic.story = {
   name: 'Colors (semantic)',
+};
+
+export const lightColors = () => {
+  const a11yTheme = createTheme({ a11yColors: true });
+  return (
+    <>
+      <Box py={4}>
+        <Typography type="title1" as="h1">
+          Light Colors
+        </Typography>
+
+        <Typography type="primary">
+          Do not use this unless you have very specific needs for this. For example when you do not
+          want the color to change on dark mode. For instance text on background image. <br />
+          Use like <pre>theme.lightColor.text</pre>
+        </Typography>
+      </Box>
+
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {Object.keys(theme.lightColor)?.map((title) => (
+            <Tr key={`theme-${title}`}>
+              <Td>{title}</Td>
+              <Td>{colorWithValue(theme.lightColor[title])}</Td>
+              <Td>{colorWithValue(a11yTheme.lightColor[title])}</Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    </>
+  );
+};
+
+export const darkColors = () => {
+  const a11yTheme = createTheme({ a11yColors: true });
+  return (
+    <>
+      <Box py={4}>
+        <Typography type="title1" as="h1">
+          Dark Colors
+        </Typography>
+
+        <Typography type="primary">
+          Do not use this unless you have very specific needs for this. For example when you do not
+          want the color to change on light mode. For instance text on background image. <br />
+          Use like <pre>theme.darkColor.text</pre>
+        </Typography>
+      </Box>
+
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Default</Th>
+            <Th>A11y</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {Object.keys(theme.darkColor)?.map((title) => (
+            <Tr key={`theme-${title}`}>
+              <Td>{title}</Td>
+              <Td>{colorWithValue(theme.darkColor[title])}</Td>
+              <Td>{colorWithValue(a11yTheme.darkColor[title])}</Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
+    </>
+  );
 };
 
 export const colorsPalette = () => {

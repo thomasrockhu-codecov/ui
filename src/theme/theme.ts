@@ -76,6 +76,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     breakpoints,
     color,
+    lightColor: createLightColors(getColorLightScheme(type)),
+    darkColor: createDarkColors(getColorDarkScheme(type)),
     isHighContrastMode: a11yColors,
     isDarkMode: darkColors,
     media: {
