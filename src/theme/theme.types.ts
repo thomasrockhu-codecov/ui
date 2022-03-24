@@ -528,6 +528,8 @@ export type ThemeColors = {
   progressBarText: string;
   /** index */
   progressBarWarning: string;
+  /** gray100 */
+  pillBackground: string;
   /** gray1 */
   searchBackground: string;
   /** gray1 */

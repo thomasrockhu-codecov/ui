@@ -219,6 +219,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     placeholderText: rawColor.gray3,
 
+    pillBackground: rawColor.gray900,
+
     positive: rawColor.positive,
 
     infoBarBackgroundSuccess: rawColor.green800,
