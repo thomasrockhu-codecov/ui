@@ -70,9 +70,10 @@ export const AccountBadgeStack: AccountBadgeStackComponent = React.forwardRef<
 
     return (
       <StyledContainer className={className} ref={ref}>
-        {items.slice(0, passThroughIndex).map((passedItem) => {
+        {items.slice(0, passThroughIndex).map((passedItem, index) => {
+          const key = `${passedItem.label}_${index}`;
           return (
-            <CircleWrapper $size={size}>
+            <CircleWrapper $size={size} key={key}>
               <Badge.Account
                 badgeSize={badgeSize}
                 badgeColor={useCurrentColor ? currentColorFn : passedItem.badgeColor}
