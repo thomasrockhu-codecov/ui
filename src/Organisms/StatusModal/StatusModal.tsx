@@ -7,10 +7,13 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
 
   const { status, title, text, textConfirm, textCancel } = options || {};
 
-  const closeModal = useCallback(() => {
-    if (onClose) onClose();
-    setShowModal(false);
-  }, [onClose, setShowModal]);
+  const closeModal = useCallback(
+    (confirmed) => {
+      if (onClose) onClose(confirmed);
+      setShowModal(false);
+    },
+    [onClose, setShowModal],
+  );
 
   useEffect(() => {
     if (loading) {
@@ -62,7 +65,7 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
               <Flexbox item>
                 <Box pt={2}>
                   {textConfirm && (
-                    <Button size="l" onClick={closeModal}>
+                    <Button size="l" onClick={() => closeModal(true)}>
                       {textConfirm}
                     </Button>
                   )}
@@ -74,7 +77,7 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textCancel && (
-                      <Button size="l" variant="secondary" onClick={closeModal}>
+                      <Button size="l" variant="secondary" onClick={() => closeModal(false)}>
                         {textCancel}
                       </Button>
                     )}
@@ -83,7 +86,7 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
                 <Flexbox item flex="0">
                   <Box pt={2}>
                     {textConfirm && (
-                      <Button size="l" variant="primary" onClick={closeModal}>
+                      <Button size="l" variant="primary" onClick={() => closeModal(true)}>
                         {textConfirm}
                       </Button>
                     )}

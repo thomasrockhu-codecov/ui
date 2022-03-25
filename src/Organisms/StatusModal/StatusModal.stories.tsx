@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { StatusModal } from '../..';
 import { Status } from './StatusModal.types';
@@ -49,6 +49,28 @@ storiesOf('Organisms / StatusModal', module)
   .add('Success', () => <StatusModal {...defaultProps} loading={false} options={successOptions} />)
   .add('Warning', () => <StatusModal {...defaultProps} loading={false} options={warningOptions} />)
   .add('Error', () => <StatusModal {...defaultProps} loading={false} options={errorOptions} />)
-  .add('With two buttons', () => (
-    <StatusModal {...defaultProps} loading={false} options={twoButtonsOptions} />
-  ));
+  .add('With two buttons', () => {
+    const [buttonClicked, setButtonClicked] = useState('');
+    return (
+      <>
+        {buttonClicked === 'CONFIRM' && (
+          <h1 style={{ color: 'green' }}>
+            Confirm button was pressed. onClose was called with confirmed = true
+          </h1>
+        )}
+        {buttonClicked === 'CANCEL' && (
+          <h1 style={{ color: 'red' }}>
+            Cancel button was pressed. onClose was called with confirmed = false
+          </h1>
+        )}
+        <StatusModal
+          {...defaultProps}
+          loading={false}
+          options={twoButtonsOptions}
+          onClose={(confirmed: boolean) => {
+            setButtonClicked(confirmed ? 'CONFIRM' : 'CANCEL');
+          }}
+        />
+      </>
+    );
+  });
