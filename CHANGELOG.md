@@ -1,3 +1,10 @@
+## [10.21.1](https://github.com/nordnet/ui/compare/v10.21.0...v10.21.1) (2022-03-25)
+
+
+### Bug Fixes
+
+* add key prop when looping badges ([c7dfed9](https://github.com/nordnet/ui/commit/c7dfed9))
+
 # [10.21.0](https://github.com/nordnet/ui/compare/v10.20.0...v10.21.0) (2022-03-24)
 
 
