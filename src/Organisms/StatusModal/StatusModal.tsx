@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Box, Button, Flexbox, Modal, Spinner, Typography, OldIcon } from '../..';
 import { Props } from './StatusModal.types';
+import { isFunction } from '../../common/utils';
 
 const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, options = {} }) => {
   const [showModal, setShowModal] = useState(false);
@@ -9,7 +10,9 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
 
   const closeModal = useCallback(
     (confirmed) => {
-      if (onClose) onClose(confirmed);
+      if (isFunction(onClose)) {
+        onClose(confirmed);
+      }
       setShowModal(false);
     },
     [onClose, setShowModal],
