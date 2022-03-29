@@ -1,17 +1,17 @@
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 
-import { Props } from './RoundedPill.types';
+import { Props, CircleProps } from './RoundedPill.types';
 import { Theme } from '../../../../theme/theme.types';
 import { isFunction } from '../../../../common/utils';
 import { Flexbox, Icon, Button } from '../../../..';
 
 // TODO: move this into a shared utils file
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
-  const { color, theme } = props;
+const getColor = (props: ThemedStyledProps<CircleProps, Theme>) => {
+  const { $color, theme } = props;
 
-  if (isFunction(color)) {
-    return color(theme);
+  if (isFunction($color)) {
+    return $color(theme);
   }
 
   return 'transparent';
@@ -36,7 +36,7 @@ const StyledDivRounded = styled.div<{ $hasOnClose: boolean }>`
   }
 `;
 
-const Circle = styled.div<Props>`
+const Circle = styled.div<CircleProps>`
   border-radius: 100%;
   height: 8px;
   width: 8px;
@@ -49,7 +49,7 @@ export const RoundedPill: React.FC<Props> = ({ className, label, color, onClose 
       <Button variant="neutral" onClick={onClose}>
         <Flexbox container alignItems="center" gutter={1}>
           <Flexbox item>
-            <Circle color={color} />
+            <Circle $color={color} />
           </Flexbox>
           <Flexbox item>{label}</Flexbox>
           <Flexbox item>{isFunction(onClose) ? <StyledCross /> : <></>}</Flexbox>

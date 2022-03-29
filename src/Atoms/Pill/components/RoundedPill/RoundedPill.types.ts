@@ -5,7 +5,11 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Props = {
   className?: string;
-  label: string;
-  color: ColorFn;
+  label?: string;
+  color?: ColorFn;
   onClose?: () => void;
+};
+
+export type CircleProps = {
+  $color?: string | ColorFn;
 };
