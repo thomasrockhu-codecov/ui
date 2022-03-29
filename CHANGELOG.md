@@ -1,3 +1,11 @@
+## [10.21.2](https://github.com/nordnet/ui/compare/v10.21.1...v10.21.2) (2022-03-29)
+
+
+### Bug Fixes
+
+* statusmodal - add argument in onclose to be able to determine which button was pressed ([dc1f297](https://github.com/nordnet/ui/commit/dc1f297))
+* use isFunction to check onClose call ([f501dfe](https://github.com/nordnet/ui/commit/f501dfe))
+
 ## [10.21.1](https://github.com/nordnet/ui/compare/v10.21.0...v10.21.1) (2022-03-25)
 
 
