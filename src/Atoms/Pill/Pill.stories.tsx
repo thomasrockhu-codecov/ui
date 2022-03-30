@@ -28,8 +28,21 @@ basicPill.story = {
   name: 'Basic Pill',
 };
 
+export const roundedPill = () => (
+  <Pill.Rounded label="OMXS30" color={(t) => t.color.cta} onClose={() => {}}>
+    <Typography type="tertiary" weight="bold">
+      OMXS30
+    </Typography>{' '}
+    <Typography type="tertiary">1567</Typography>
+  </Pill.Rounded>
+);
+
+roundedPill.story = {
+  name: 'Rounded Pill',
+};
+
 export const pillWithBar = () => (
-  <Pill barColor={(t) => t.color.background}>
+  <Pill barColor={(t) => t.color.cta}>
     <Flexbox container gutter={1} alignItems="center">
       <Flexbox item>
         <Button type="button" variant="neutral">
@@ -51,6 +64,11 @@ export const pillWithBar = () => (
 pillWithBar.story = {
   name: 'Pill with colored bar',
 };
+
+export const pillRounded = () => {
+  return <div> hello</div>;
+};
+
 export const pillWithNoPadding = () => (
   <Pill barColor={(t) => t.color.background} noPadding>
     <Typography type="tertiary" weight="bold">

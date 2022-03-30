@@ -214,6 +214,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     placeholderText: rawColor.gray2,
 
+    pillBackground: rawColor.gray100,
+
     positive: rawColor.positive,
 
     infoBarBackgroundSuccess: rawColor.green100,
