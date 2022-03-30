@@ -1,3 +1,16 @@
+# [10.22.0](https://github.com/nordnet/ui/compare/v10.21.2...v10.22.0) (2022-03-30)
+
+
+### Bug Fixes
+
+* 🐛 remove box shadow on rounded pill ([0e06f14](https://github.com/nordnet/ui/commit/0e06f14))
+
+
+### Features
+
+* 🎸 add RoundedPill ([af4a9cb](https://github.com/nordnet/ui/commit/af4a9cb))
+* 🎸 I like my pills rounded ([5b3a63c](https://github.com/nordnet/ui/commit/5b3a63c))
+
 ## [10.21.2](https://github.com/nordnet/ui/compare/v10.21.1...v10.21.2) (2022-03-29)
 
 
