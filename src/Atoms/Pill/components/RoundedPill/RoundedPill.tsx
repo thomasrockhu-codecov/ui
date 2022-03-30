@@ -27,7 +27,6 @@ const StyledDivRounded = styled.div<{ $hasOnClose: boolean }>`
   display: inline-block;
   box-sizing: border-box;
   background: ${({ theme }) => theme.color.pillBackground};
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.21);
   border-radius: 100px;
   padding: 2px ${(p) => p.theme.spacing.unit(3)}px;
 
