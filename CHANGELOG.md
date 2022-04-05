@@ -1,3 +1,11 @@
+## [10.22.1](https://github.com/nordnet/ui/compare/v10.22.0...v10.22.1) (2022-04-05)
+
+
+### Bug Fixes
+
+* 🐛 li elements in tabs now have a ul parent ([b60644c](https://github.com/nordnet/ui/commit/b60644c))
+* 🐛 render titles container as ul in nav tabs ([423c063](https://github.com/nordnet/ui/commit/423c063))
+
 # [10.22.0](https://github.com/nordnet/ui/compare/v10.21.2...v10.22.0) (2022-03-30)
 
 
