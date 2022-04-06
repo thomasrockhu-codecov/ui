@@ -1,3 +1,10 @@
+## [10.22.1-beta.1](https://github.com/nordnet/ui/compare/v10.22.0...v10.22.1-beta.1) (2022-04-06)
+
+
+### Bug Fixes
+
+* 🐛 update positive and negative colors ([f000cbe](https://github.com/nordnet/ui/commit/f000cbe))
+
 # [10.22.0](https://github.com/nordnet/ui/compare/v10.21.2...v10.22.0) (2022-03-30)
 
 
