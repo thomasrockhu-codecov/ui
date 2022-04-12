@@ -57,9 +57,9 @@ const AnimatedChevronUp = styled(OldIcon.ChevronUp)<Pick<IndicatorsProps, '$coll
   transition: transform 0.16s ease-out;
 `;
 
-const StyledFlexboxItem = styled(Flexbox)<{ fullWidthTitle: boolean | undefined }>`
-  ${(props) =>
-    props.fullWidthTitle &&
+const StyledFlexboxItem = styled(Flexbox)<Pick<IndicatorsProps, '$fullWidthTitle'>>`
+  ${({ $fullWidthTitle }) =>
+    $fullWidthTitle &&
     css`
       width: 100%;
     `}
@@ -77,7 +77,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   titleRowPaddingX = 5,
   titleRowPaddingY = 5,
   action: ActionComponent = false,
-  fullWidthTitle,
+  fullWidthTitle = false,
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -179,7 +179,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       $actionExists={!!ActionComponent}
     >
       <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
-        <StyledFlexboxItem item fullWidthTitle={fullWidthTitle}>
+        <StyledFlexboxItem item $fullWidthTitle={fullWidthTitle}>
           <Typography type="title3" as={heading}>
             {title}
           </Typography>

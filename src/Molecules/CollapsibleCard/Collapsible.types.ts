@@ -22,4 +22,5 @@ export type IndicatorsProps = {
   $py: number;
   $px: number;
   $actionExists?: boolean;
+  $fullWidthTitle?: boolean;
 };
