@@ -241,6 +241,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
+    periodScrollButtonBackground: rawColor.gray100,
+    periodScrollButtonIcon: rawColor.gray800,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
@@ -293,6 +296,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
+
+    technicalAnalysisPlotBands: rawColor.gray200,
 
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.negative,

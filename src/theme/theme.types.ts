@@ -660,6 +660,12 @@ export type ThemeColors = {
   sfdrArticle9: string;
   /** pink100 */
   popularBadgeBackground: string;
+  /** gray800 */
+  periodScrollButtonBackground: string;
+  /** gray100 */
+  periodScrollButtonIcon: string;
+  /** gray200 */
+  technicalAnalysisPlotBands: string;
   /** Join Shareville Illustration */
   joinSharevilleIllustration: string;
   /** Join Shareville Badge */
