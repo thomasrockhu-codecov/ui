@@ -106,7 +106,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     dropDownButtonText: rawColor.white,
     dropDownButtonTextHover: rawColor.blue400,
-    dropDownButtonTextActive:rawColor.blue400,
+    dropDownButtonTextActive: rawColor.blue400,
     dropDownButtonTextDisabled: rawColor.gray600,
     dropDownButtonBackground: rawColor.gray700,
     dropDownButtonBackgroundHover: rawColor.gray700,
@@ -340,7 +340,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue400,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
-    inputTextInactive: rawColor.gray600,
+    inputTextInactive: rawColor.gray400,
 
     warning: rawColor.index,
 
