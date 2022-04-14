@@ -134,6 +134,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
+    graphCrosshair: rawColor.gray600,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),

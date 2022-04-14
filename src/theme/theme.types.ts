@@ -358,6 +358,7 @@ export type ThemeColors = {
   flagBorder: string;
   /** gray2 */
   fundExchange: string;
+
   /** complementaryGreen1 */
   generationSavingsTimelineColor1: string;
   /** complementaryPink1 */
@@ -368,6 +369,8 @@ export type ThemeColors = {
   generationSavingsTimelineColor4: string;
   /** gray100 */
   keyFiguresBackground: string;
+  /** grey400 */
+  graphCrosshair: string;
   /** gray5 */
   graphVolume: string;
   /** gray4 */
