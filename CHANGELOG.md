@@ -1,3 +1,11 @@
+# [10.24.0](https://github.com/nordnet/ui/compare/v10.23.0...v10.24.0) (2022-04-19)
+
+
+### Features
+
+* 🎸 add new crosshair color ([949f7ae](https://github.com/nordnet/ui/commit/949f7ae))
+* add new graph colors ([b298cf4](https://github.com/nordnet/ui/commit/b298cf4))
+
 # [10.23.0](https://github.com/nordnet/ui/compare/v10.22.1...v10.23.0) (2022-04-19)
 
 
