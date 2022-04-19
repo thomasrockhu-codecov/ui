@@ -1,3 +1,16 @@
+# [10.23.0](https://github.com/nordnet/ui/compare/v10.22.1...v10.23.0) (2022-04-19)
+
+
+### Bug Fixes
+
+* change dark and type ([7557162](https://github.com/nordnet/ui/commit/7557162))
+* make more semantic ([ae08977](https://github.com/nordnet/ui/commit/ae08977))
+
+
+### Features
+
+* add new color ([c1db459](https://github.com/nordnet/ui/commit/c1db459))
+
 ## [10.22.1](https://github.com/nordnet/ui/compare/v10.22.0...v10.22.1) (2022-04-05)
 
 
