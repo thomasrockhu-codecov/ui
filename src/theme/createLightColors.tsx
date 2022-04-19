@@ -332,7 +332,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue500,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
-    inputTextInactive: rawColor.gray600,
+    daySelectInputTextInactive: rawColor.gray600,
 
     warning: rawColor.index,
 

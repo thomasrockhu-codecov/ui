@@ -668,8 +668,8 @@ export type ThemeColors = {
   joinSharevilleBanner: string;
   /** Monthly Savings Transfer Type Inactive */
   monthlySavingsTransferTypeInactive: string;
-  /** input inactive */
-  inputTextInactive: string;
+  /** day select input inactive */
+  daySelectInputTextInactive: string;
   /** @deprecated * gray3 */
   disabled: string;
   /** @deprecated * complementaryBlue2 */
