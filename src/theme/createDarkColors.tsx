@@ -106,7 +106,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     dropDownButtonText: rawColor.white,
     dropDownButtonTextHover: rawColor.blue400,
-    dropDownButtonTextActive:rawColor.blue400,
+    dropDownButtonTextActive: rawColor.blue400,
     dropDownButtonTextDisabled: rawColor.gray600,
     dropDownButtonBackground: rawColor.gray700,
     dropDownButtonBackgroundHover: rawColor.gray700,
@@ -134,6 +134,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     graphVolume: rawColor.gray2,
     graphVolumeHover: rawColor.gray3,
+    graphCrosshair: rawColor.gray600,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
@@ -206,7 +207,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
 
     paletteBlue: rawColor.palettes.blue,
     paletteGreen: rawColor.palettes.green,
-    paletteLineGraph: [rawColor.complementaryTurquoise1, rawColor.index, ...lineColors],
+    paletteLineGraph: [rawColor.teal400, rawColor.index, ...lineColors],
     paletteMap: [
       rawColor.complementaryTurquoise2,
       rawColor.complementaryTurquoise1,
@@ -220,6 +221,9 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     placeholderText: rawColor.gray3,
 
     pillBackground: rawColor.gray900,
+
+    periodScrollButtonBackground: rawColor.gray1,
+    periodScrollButtonIcon: rawColor.white,
 
     positive: rawColor.positive,
 
@@ -299,6 +303,8 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     text: rawColor.gray7,
     textLight: rawColor.gray0, // FIXME: to be removed later
 
+    technicalAnalysisPlotBands: rawColor.gray900,
+
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.negative,
     timelineNext: rawColor.gray4,
@@ -340,6 +346,7 @@ export const createDarkColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue400,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
+    daySelectInputTextInactive: rawColor.gray400,
 
     warning: rawColor.index,
 

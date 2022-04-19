@@ -135,6 +135,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
 
     graphVolume: rawColor.gray5,
     graphVolumeHover: rawColor.gray4,
+    graphCrosshair: rawColor.gray400,
 
     guidanceSelectionCardIcon: rawColor.brandPink,
     iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
@@ -241,6 +242,9 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     progressBarText: rawColor.white,
     progressBarWarning: rawColor.index,
 
+    periodScrollButtonBackground: rawColor.gray100,
+    periodScrollButtonIcon: rawColor.gray800,
+
     searchBackground: rawColor.gray1,
     searchText: rawColor.gray7,
 
@@ -294,6 +298,8 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
 
+    technicalAnalysisPlotBands: rawColor.gray200,
+
     timelineActive: rawColor.cta,
     timelineFailure: rawColor.negative,
     timelineNext: rawColor.gray4,
@@ -332,6 +338,7 @@ export const createLightColors = (rawColor: RawColors): ThemeColors => {
     quickFilterFocusSelectedOutline: rawColor.blue500,
 
     monthlySavingsTransferTypeInactive: rawColor.gray500,
+    daySelectInputTextInactive: rawColor.gray600,
 
     warning: rawColor.index,
 
